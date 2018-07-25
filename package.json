@@ -19,14 +19,19 @@
     "nuxt-i18n": "^4.1.0"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1",
+    "autoprefixer": "^9.0.0",
     "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.0.4",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-vue": "^4.0.0",
-    "autoprefixer": "^9.0.0",
-    "tailwindcss": "^0.6.1",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "postcss-combine-duplicated-selectors": "^6.0.1",
+    "postcss-import": "^11.1.0",
+    "postcss-preset-env": "^5.3.0",
+    "tailwindcss": "^0.6.1"
   },
   "engines": {
     "node": "8.x",
