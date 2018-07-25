@@ -41,7 +41,24 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // https://nuxt-community.github.io/nuxt-i18n/
+    ['nuxt-i18n', {
+      locales: [
+        { code: 'en', iso: 'en-US', name: 'English', file: 'en.js' },
+        { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.js' }
+      ],
+      defaultLocale: 'en',
+      lazy: true,
+      langDir: './locales/',
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'statusfy.lang_redirected'
+      },
+      vueI18n: {
+        fallbackLocale: 'en'
+      }
+    }]
   ],
   /*
   ** Axios module configuration

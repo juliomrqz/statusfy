@@ -6,11 +6,15 @@
         Statusfy
       </h1>
       <h2 class="subtitle">
-        A painless open source Status Page System
+        {{ $t('slogan') }}
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+        <nuxt-link
+          v-for="locale in $i18n.locales"
+          v-if="locale.code !== $i18n.locale"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+          class="button--grey">{{ locale.name }}</nuxt-link>
       </div>
     </div>
   </section>
