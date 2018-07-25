@@ -1,0 +1,34 @@
+{
+  "name": "Statusfy",
+  "version": "0.0.1",
+  "description": "A painless open source Status Page System",
+  "author": "Julio Marquez",
+  "private": true,
+  "scripts": {
+    "dev": "npx cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "npx nuxt build",
+    "start": "npx cross-env NODE_ENV=production node server/index.js",
+    "generate": "npx nuxt generate",
+    "lint": "npx eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "express": "^4.15.3",
+    "nuxt-edge": "latest"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "autoprefixer": "^9.0.0",
+    "tailwindcss": "^0.6.1",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  }
+}
