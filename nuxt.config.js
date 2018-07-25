@@ -1,8 +1,8 @@
 const pkg = require('./package')
 
 module.exports = {
+  srcDir: './client/',
   mode: 'universal',
-
   /*
   ** Headers of the page
   */
