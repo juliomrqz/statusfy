@@ -84,6 +84,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    /*
+    ** Webpack plugins
+    */
+    plugins: [
+      new require('stylelint-webpack-plugin')({
+        files: ['client/**/*.vue']
+      })
+    ]
   }
 }
