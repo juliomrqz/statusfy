@@ -61,16 +61,10 @@ module.exports = {
     }]
   ],
   /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  /*
   ** Build configuration
   */
   build: {
+    publicPath: '/static/',
     /*
     ** You can extend webpack config here
     */
@@ -92,6 +86,35 @@ module.exports = {
       new require('stylelint-webpack-plugin')({
         files: ['client/**/*.vue']
       })
-    ]
+    ],
+    /*
+    ** Webpack bundle analyzer
+    */
+    analyze: {
+      analyzerMode: 'static'
+    },
+    /*
+    ** Router
+    */
+    router: {
+      linkActiveClass: 'active',
+      linkExactActiveClass: 'exact'
+    },
+  },
+  /*
+   ** Generate Configuration
+   */
+  generate: {
+    minify: {
+      removeOptionalTags: false
+    },
+    subFolders: false
+  },
+  // Modules Configurations
+  /*
+   ** Axios module configuration
+   */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
   }
 }
