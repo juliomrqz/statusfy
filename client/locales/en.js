@@ -1,4 +1,4 @@
 export default {
   welcome: 'Welcome',
-  slogan: 'A painless open source Status Page System'
+  slogan: 'A marvelous open source Status Page system'
 }

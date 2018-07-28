@@ -1,6 +1,6 @@
 # Statusfy
 
-> A painless open source Status Page System
+> A marvelous open source Status Page system
 
 ## Build Setup
 
