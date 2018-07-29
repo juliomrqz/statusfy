@@ -5,6 +5,7 @@
 [![David](https://img.shields.io/david/dev/bazzite/statusfy.svg)](https://david-dm.org/bazzite/statusfy?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/bazzite/statusfy.svg)](https://greenkeeper.io/)
 [![License](https://img.shields.io/github/license/bazzite/statusfy.svg)][license-page]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_shield)
 
 # Statusfy
 
@@ -52,8 +53,6 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 ## License
 
 Code released under the [BSD-3-Clause][license-page].
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_large)
 
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [contributing]: https://github.com/bazzite/statusfy/blob/develop/CONTRIBUTING.md
