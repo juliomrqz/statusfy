@@ -27,23 +27,23 @@ program
 
 program
   .command('dev')
-  .description('start development server')
+  .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
   .option('-p, --port <port>', 'use specified port (default: 8080)')
-  .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
+  .option('-H, --host <host>', 'use specified host (default: 0.0.0.0)')
   .action(({ host, port }) => {
     wrapCommand(dev)(sourceDir, { host, port })
   })
 
 program
   .command('build')
-  .description('build files for the site server')
+  .description('Compiles the application for production deployment')
   .action(() => {
     wrapCommand(build)(sourceDir, {  })
   })
 
 program
   .command('generate')
-  .description('generate static site')
+  .description('Generate a static web application (server-rendered)')
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
   .action(({ dest }) => {
     const outDir = dest ? path.resolve(dest) : null
@@ -52,9 +52,9 @@ program
 
 program
   .command('start')
-  .description('start production server')
+  .description(`Starts the application in production mode. The application should be compiled with ${chalk.cyan(`statusfy build`)} first.`)
   .option('-p, --port <port>', 'use specified port (default: 8080)')
-  .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
+  .option('-H, --host <host>', 'use specified host (default: 0.0.0.0)')
   .action(({ host, port }) => {
     wrapCommand(start)(sourceDir, { host, port })
   })
