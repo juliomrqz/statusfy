@@ -1,20 +1,40 @@
 {
-  "name": "Statusfy",
-  "version": "0.0.1",
+  "name": "statusfy",
+  "version": "0.0.1a",
   "description": "A marvelous open source Status Page system",
   "author": "Julio Marquez",
-  "private": true,
+  "main": "lib/index.js",
+  "bin": {
+    "statusfy": "bin/statusfy.js"
+  },
   "scripts": {
-    "dev": "npx cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "build": "npx nuxt build",
-    "start": "npx cross-env NODE_ENV=production node server/index.js",
-    "generate": "npx nuxt generate",
-    "lint": "npx eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "cd demo && npm run dev",
+    "build": "cd demo && npm run build",
+    "start": "cd demo && npm run start",
+    "generate": "cd demo && npm run generate",
+    "lint": "npx eslint --ext .js,.vue --ignore-path .gitignore .  bin/ lib/ ",
     "lint:css": "stylelint 'client/**/*.{css,vue}'",
     "precommit": "npm run lint && npm run lint:css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://statusfy.co",
+  "keywords": [
+    "bazzite",
+    "statusfy",
+    "generator",
+    "web-application",
+    "statuspage"
+  ],
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "commander": "^2.17.1",
+    "consola": "^1.4.1",
     "express": "^4.15.3",
     "gray-matter": "^4.0.1",
     "markdown-it": "^8.4.1",
@@ -22,6 +42,7 @@
     "markdown-it-emoji": "^1.4.0",
     "nuxt-edge": "latest",
     "nuxt-i18n": "^4.1.0",
+    "semver": "^5.5.0",
     "toml": "^2.3.3",
     "validator": "^10.4.0"
   },
@@ -47,7 +68,7 @@
     "tailwindcss": "^0.6.1"
   },
   "engines": {
-    "node": "8.x",
-    "npm": "5.x"
+    "node": ">=8.10",
+    "npm": ">=5"
   }
 }

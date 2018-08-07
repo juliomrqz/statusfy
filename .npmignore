@@ -1,0 +1,14 @@
+# Basic
+*.log
+.temp
+statusfy
+.eslintrc.js
+package-lock.json
+.github
+
+# Nuxt.js
+.nuxt
+dist
+
+# Demo
+demo/node_modules
