@@ -1,0 +1,25 @@
+{
+  "name": "statusfy-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Statusfy demo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ../bin/statusfy dev",
+    "build": "node ../bin/statusfy build",
+    "start": "node ../bin/statusfy start",
+    "generate": "node ../bin/statusfy generate"
+  },
+  "author": "Julio Marquez",
+  "license": "MIT",
+  "dependencies": {
+    "statusfy": "../"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  }
+}
