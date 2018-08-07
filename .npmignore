@@ -12,3 +12,4 @@ dist
 
 # Demo
 demo/node_modules
+demo/.statusfy
