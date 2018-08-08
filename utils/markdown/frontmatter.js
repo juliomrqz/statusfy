@@ -36,9 +36,9 @@ function frontmatter (md, state, start, end, silent) {
 
   // Parse front-matter
   const matterData = matter(state.src, {
+    excerpt: false,
     engines: {
-      toml: toml.parse.bind(toml),
-      excerpt: false
+      toml: toml.parse.bind(toml)
     }
   })
 
