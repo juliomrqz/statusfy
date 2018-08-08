@@ -3,8 +3,8 @@ module.exports = {
   description: 'A marvelous open source Status Page system',
   defaultLocale: 'en',
   locales: [
-    { code: 'en', iso: 'en-US', name: 'English' },
-    { code: 'es', iso: 'es-ES', name: 'Español' }
+    { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
+    { code: 'es', iso: 'es-ES', name: 'Español', file: 'en.json' }
   ],
   contentConfig: {
     systems: [

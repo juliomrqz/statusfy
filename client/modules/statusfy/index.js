@@ -18,13 +18,15 @@ module.exports = function Statusfy () {
     // Default locale
     const defaultLocalePath = path.resolve(__dirname, '../../', 'locales', `${locale.code}-default.json`)
     if (fs.existsSync(defaultLocalePath)) {
-      localePaths.push(defaultLocalePath)
+      localePaths.push(`./${locale.code}-default.json`)
     }
 
     // User locale
-    const userLocalePath = path.join(options.sourceDir, 'locales', `${locale.code}.json`)
-    if (fs.existsSync(userLocalePath)) {
-      localePaths.push(userLocalePath)
+    if (locale.file) {
+      const userLocalePath = path.join(options.sourceDir, 'locales', locale.file)
+      if (fs.existsSync(userLocalePath)) {
+        localePaths.push(userLocalePath)
+      }
     }
 
     // Crate locale file content
