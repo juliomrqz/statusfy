@@ -30,8 +30,9 @@ program
   .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
   .option('-p, --port <port>', 'use specified port (default: 3000)')
   .option('-H, --host <host>', 'use specified host (default: 127.0.0.1)')
-  .action(({ host, port }) => {
-    wrapCommand(dev)(sourceDir, { host, port })
+  .option('-s, --ssr', 'force SSR')
+  .action(({ host, port, ssr }) => {
+    wrapCommand(dev)(sourceDir, { host, port, ssr })
   })
 
 program
