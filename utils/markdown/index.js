@@ -3,8 +3,7 @@ const emoji = require('markdown-it-emoji')
 const containers = require('./containers')
 const frontmatter = require('./frontmatter')
 
-
-module.exports = ({ markdown = {}} = {}) => {
+module.exports = ({ markdown = {} } = {}) => {
   const md = require('markdown-it')({
     html: true
   })

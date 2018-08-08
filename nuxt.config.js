@@ -18,7 +18,7 @@ module.exports = {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -75,7 +75,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && process.client) {
         config.module.rules.push({
@@ -90,6 +90,7 @@ module.exports = {
     ** Webpack plugins
     */
     plugins: [
+      /* eslint-disable no-new-require, new-cap */
       new require('stylelint-webpack-plugin')({
         files: ['client/**/*.vue']
       })
@@ -106,7 +107,7 @@ module.exports = {
     router: {
       linkActiveClass: 'active',
       linkExactActiveClass: 'exact'
-    },
+    }
   },
   /*
    ** Generate Configuration

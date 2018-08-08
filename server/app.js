@@ -4,7 +4,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { Nuxt } = require('nuxt-edge')
 
-module.exports = async function createApp(config, host, port) {
+module.exports = async function createApp (config, host, port) {
   const app = express()
 
   app.set('port', port)

@@ -33,7 +33,7 @@ The Conversion Process is back to normal and we'll continue to monitor.
 
 console.log('------ START ------')
 
-console.log('content:', md.render(text));
-console.log('frontmatter:', md.frontmatter);
+console.log('content:', md.render(text))
+console.log('frontmatter:', md.frontmatter)
 
 console.log('------ END ------')

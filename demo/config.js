@@ -15,7 +15,7 @@ module.exports = {
         'site-delivery': 'Site delivery',
         api: 'API'
       },
-      en: {
+      es: {
         cdn: 'CDN',
         conversions: 'Conversiones',
         'site-delivery': 'Entrega del Sitio',

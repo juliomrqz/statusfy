@@ -38,7 +38,7 @@ program
   .command('build')
   .description('Compiles the application for production deployment')
   .action(() => {
-    wrapCommand(build)(sourceDir, {  })
+    wrapCommand(build)(sourceDir, { })
   })
 
 program

@@ -8,7 +8,7 @@ module.exports = md => {
   })
 }
 
-function frontmatter(md, state, start, end, silent) {
+function frontmatter (md, state, start, end, silent) {
   const lines = state.src.split('\n')
 
   if (start !== 0 || state.blkIndent !== 0 || state.tShift[start] < 0) {

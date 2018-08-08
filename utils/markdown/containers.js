@@ -9,7 +9,7 @@ function createUpdateContainer (klass) {
   const parseInfo = (info) => info.match(/^update\s+(.*)\s+\|\s+(.*)$/)
 
   return [container, klass, {
-    validate: function(params) {
+    validate: function (params) {
       const match = parseInfo(params.trim())
 
       if (match !== null) {
