@@ -28,8 +28,8 @@ program
 program
   .command('dev')
   .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
-  .option('-p, --port <port>', 'use specified port (default: 8080)')
-  .option('-H, --host <host>', 'use specified host (default: 0.0.0.0)')
+  .option('-p, --port <port>', 'use specified port (default: 3000)')
+  .option('-H, --host <host>', 'use specified host (default: 127.0.0.1)')
   .action(({ host, port }) => {
     wrapCommand(dev)(sourceDir, { host, port })
   })
@@ -53,8 +53,8 @@ program
 program
   .command('start')
   .description(`Starts the application in production mode. The application should be compiled with ${chalk.cyan(`statusfy build`)} first.`)
-  .option('-p, --port <port>', 'use specified port (default: 8080)')
-  .option('-H, --host <host>', 'use specified host (default: 0.0.0.0)')
+  .option('-p, --port <port>', 'use specified port (default: 3000)')
+  .option('-H, --host <host>', 'use specified host (default: 127.0.0.1)')
   .action(({ host, port }) => {
     wrapCommand(start)(sourceDir, { host, port })
   })
