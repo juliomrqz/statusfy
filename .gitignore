@@ -262,4 +262,7 @@ $RECYCLE.BIN/
 
 # Nuxt generate
 dist
-.statusfy
+
+# Demo
+demo/.statusfy
+demo/.tmp
