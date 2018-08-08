@@ -2,6 +2,8 @@ const path = require('path')
 
 const pkg = require('./package')
 
+const langDir = 'locales/'
+
 module.exports = {
   srcDir: path.join(__dirname, './client/'),
   mode: 'universal',
@@ -51,13 +53,10 @@ module.exports = {
     '@nuxtjs/axios',
     // https://nuxt-community.github.io/nuxt-i18n/
     ['nuxt-i18n', {
-      locales: [
-        { code: 'en', iso: 'en-US', name: 'English', file: 'en.js' },
-        { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.js' }
-      ],
+      locales: [ ],
       defaultLocale: 'en',
       lazy: true,
-      langDir: './locales/',
+      langDir,
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'statusfy.lang_redirected'
@@ -65,7 +64,8 @@ module.exports = {
       vueI18n: {
         fallbackLocale: 'en'
       }
-    }]
+    }],
+    '~/modules/statusfy'
   ],
   /*
   ** Build configuration
@@ -128,5 +128,7 @@ module.exports = {
   /*
    ** Statusfy module configuration
    */
-  statusfy: { }
+  statusfy: {
+    langDir
+  }
 }

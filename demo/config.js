@@ -7,20 +7,11 @@ module.exports = {
     { code: 'es', iso: 'es-ES', name: 'Español' }
   ],
   contentConfig: {
-    dir: 'content',
-    systems: {
-      en: {
-        cdn: 'CDN',
-        conversions: 'Conversions',
-        'site-delivery': 'Site delivery',
-        api: 'API'
-      },
-      es: {
-        cdn: 'CDN',
-        conversions: 'Conversiones',
-        'site-delivery': 'Entrega del Sitio',
-        api: 'API'
-      }
-    }
+    systems: [
+      'cdn',
+      'conversions',
+      'site-delivery',
+      'api'
+    ]
   }
 }

@@ -260,9 +260,9 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,sublimetext,visualstudiocode,intellij+all
 
-# Nuxt generate
-dist
-
-# Demo
+# Statusfy
+client/.tmp
+client/locales/*.js
 demo/.statusfy
 demo/.tmp
+dist

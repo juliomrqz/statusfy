@@ -1,0 +1,8 @@
+{
+  "systems": {
+    "cdn": "CDN",
+    "conversions": "Conversiones",
+    "site-delivery": "Entrega del Sitio",
+    "api": "API"
+  }
+}
