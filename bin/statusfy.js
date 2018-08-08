@@ -18,7 +18,7 @@ if (!semver.satisfies(process.version, requiredVersion)) {
 const path = require('path')
 const program = require('commander')
 
-const { dev, build, generate, start } = require('../lib')
+const { dev, build, generate, start, newIncident } = require('../lib')
 const sourceDir = path.resolve('.')
 
 program
@@ -57,6 +57,13 @@ program
   .option('-H, --host <host>', 'use specified host (default: 127.0.0.1)')
   .action(({ host, port }) => {
     wrapCommand(start)(sourceDir, { host, port })
+  })
+
+program
+  .command('new-incident')
+  .description(`Starts the application in production mode. The application should be compiled with ${chalk.cyan(`statusfy build`)} first.`)
+  .action(() => {
+    wrapCommand(newIncident)(sourceDir, { })
   })
 
 // output help information on unknown commands

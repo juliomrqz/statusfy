@@ -7,6 +7,7 @@ module.exports = {
     { code: 'es', iso: 'es-ES', name: 'Español', file: 'en.json' }
   ],
   contentConfig: {
+    frontMatterFormat: 'yaml',
     systems: [
       'cdn',
       'conversions',

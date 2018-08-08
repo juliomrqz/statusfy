@@ -8,7 +8,8 @@
     "dev": "node ../bin/statusfy dev",
     "build": "node ../bin/statusfy build",
     "start": "node ../bin/statusfy start",
-    "generate": "node ../bin/statusfy generate"
+    "generate": "node ../bin/statusfy generate",
+    "new-incident": "node ../bin/statusfy new-incident"
   },
   "author": "Julio Marquez",
   "license": "MIT",
