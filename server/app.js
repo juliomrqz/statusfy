@@ -7,7 +7,7 @@ const { Nuxt } = require('nuxt-edge')
 const language = require('./middlewares/language')
 const api = require('./api')
 
-module.exports = async function createApp (config, host, port, siteConfig) {
+module.exports = async function createApp (siteConfig, nuxtConfig, host, port) {
   const app = express()
 
   app.set('port', port)
@@ -20,7 +20,7 @@ module.exports = async function createApp (config, host, port, siteConfig) {
     next()
   })
 
-  if (config && !config.dev) {
+  if (nuxtConfig && !nuxtConfig.dev) {
     app.use(
       helmet({
         dnsPrefetchControl: false
@@ -35,12 +35,12 @@ module.exports = async function createApp (config, host, port, siteConfig) {
 
   app.use('/api/v1', api)
 
-  if (config) {
+  if (nuxtConfig) {
     // Init Nuxt.js
-    const nuxt = new Nuxt(config)
+    const nuxt = new Nuxt(nuxtConfig)
 
     // Build only in dev mode
-    if (config.dev) {
+    if (nuxtConfig.dev) {
       const {
         Builder
       } = require('nuxt-edge')
