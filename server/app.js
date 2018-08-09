@@ -4,24 +4,23 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { Nuxt } = require('nuxt-edge')
 
-module.exports = async function createApp (config, host, port) {
+const language = require('./middlewares/language')
+const api = require('./api')
+
+module.exports = async function createApp (config, host, port, siteConfig) {
   const app = express()
 
   app.set('port', port)
   app.set('host', host)
 
-  // Init Nuxt.js
-  const nuxt = new Nuxt(config)
+  // Save Config
+  app.use((req, res, next) => {
+    req.app.set('siteConfig', siteConfig)
 
-  // Build only in dev mode
-  if (config.dev) {
-    const { Builder } = require('nuxt-edge')
+    next()
+  })
 
-    const builder = new Builder(nuxt)
-    await builder.build()
-  }
-
-  if (!config.dev) {
+  if (config && !config.dev) {
     app.use(
       helmet({
         dnsPrefetchControl: false
@@ -32,9 +31,27 @@ module.exports = async function createApp (config, host, port) {
   app.use(cors())
   // parse application/json
   app.use(bodyParser.json())
+  app.use(language)
 
-  // Give nuxt middleware to express
-  app.use(nuxt.render)
+  app.use('/api/v1', api)
+
+  if (config) {
+    // Init Nuxt.js
+    const nuxt = new Nuxt(config)
+
+    // Build only in dev mode
+    if (config.dev) {
+      const {
+        Builder
+      } = require('nuxt-edge')
+
+      const builder = new Builder(nuxt)
+      await builder.build()
+    }
+
+    // Give nuxt middleware to express
+    app.use(nuxt.render)
+  }
 
   return app
 }
