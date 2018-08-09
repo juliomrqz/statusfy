@@ -1,7 +1,7 @@
 const path = require('path')
 
 const loadConfig = require('../lib/config/load')
-const createServer = require('./server')
+const createServer = require('./index')
 
 const sourceDir = path.join(__dirname, '..', 'demo')
 const siteConfig = loadConfig(sourceDir)
