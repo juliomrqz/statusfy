@@ -1,34 +1,37 @@
 const { Router } = require('express')
 
 const createDatabase = require('../../lib/content/database')
+const response = require('../utils/response')
 
 const router = Router()
 
-const cacheHeaderName =
-  process.env.NODE_ENV === 'production' ? 'Cache-Control' : 'X-Cache-Control'
-
-router.get('/incidents', async function (req, res, next) {
+router.get('/incidents', async (req, res, next) => {
   const language = req.app.get('language')
+  const send = response(res, language)
 
   try {
     const database = await createDatabase(req.app.get('siteConfig'))
 
-    res.set(cacheHeaderName, 'public, max-age=600, s-maxage=14400')
-    res.json(database.all(language))
+    send.json(database.all(language))
   } catch (error) {
     next(error)
   }
 })
 
-router.get('/incidents/:id', async function (req, res, next) {
+router.get('/incidents/:id', async (req, res, next) => {
   const { id } = req.params
   const language = req.app.get('language')
+  const send = response(res, language)
 
   try {
     const database = await createDatabase(req.app.get('siteConfig'))
+    const incident = database.get(id, language)
 
-    res.set(cacheHeaderName, 'public, max-age=600, s-maxage=14400')
-    res.json(database.get(id, language))
+    if (incident) {
+      send.json(database.get(id, language))
+    } else {
+      send.notFound('Incident not found.')
+    }
   } catch (error) {
     next(error)
   }
