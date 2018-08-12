@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "8"
+  - "10"
 
 cache:
   directories:
@@ -8,8 +9,9 @@ cache:
 
 install:
   - npm install
-  - npm run test
-  - npm run generate
 
 script:
-  - echo "Skipping tests"
+  - npm run lint && npm run lint:css
+  - npm run test
+
+  - npm run generate
