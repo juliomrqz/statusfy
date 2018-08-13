@@ -41,7 +41,7 @@
     "cors": "^2.8.4",
     "cross-spawn": "^6.0.5",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
@@ -57,7 +57,7 @@
     "markdown-it-emoji": "^1.4.0",
     "nuxt-edge": "latest",
     "nuxt-i18n": "^5.1.0",
-    "opener": "^1.4.3",
+    "opener": "^1.5.0",
     "semver": "^5.5.0",
     "slugify": "^1.3.1",
     "toml": "^2.3.3",
@@ -65,7 +65,7 @@
     "validator": "^10.4.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.1.1",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^23.4.2",
     "cross-env": "^5.0.1",
