@@ -5,7 +5,7 @@ module.exports = {
   defaultLocale: 'en',
   locales: [
     { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
-    { code: 'es', iso: 'es-ES', name: 'Español', file: 'en.json' }
+    { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' }
   ],
   contentConfig: {
     frontMatterFormat: 'yaml',

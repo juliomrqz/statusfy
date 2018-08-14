@@ -34,6 +34,10 @@
     "statuspage"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-regular-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
     "@nuxtjs/axios": "^5.0.0",
     "body-parser": "^1.18.3",
     "commander": "^2.17.1",
@@ -50,6 +54,8 @@
     "markdown-it": "^8.4.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
     "nuxt-edge": "latest",
     "nuxt-i18n": "^5.1.0",
     "opener": "^1.5.0",
@@ -57,6 +63,7 @@
     "slugify": "^1.3.1",
     "toml": "^2.3.3",
     "tomlify-j0.4": "^3.0.0",
+    "v-tooltip": "^2.0.0-rc.33",
     "validator": "^10.4.0"
   },
   "devDependencies": {

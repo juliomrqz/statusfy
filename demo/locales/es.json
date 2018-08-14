@@ -1,8 +1,20 @@
 {
   "systems": {
-    "cdn": "CDN",
-    "conversions": "Conversiones",
-    "site-delivery": "Entrega del Sitio",
-    "api": "API"
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "conversions": {
+        "title": "Conversiones",
+        "description": "Conversión de un archivo a otro"
+      },
+      "site-delivery": {
+        "title": "Entrega del Sitio"
+      },
+      "api": {
+        "title": "API",
+        "description": "Los puntos finales del API a los que cualquier desarrollador puede acceder"
+      }
+    }
   }
 }

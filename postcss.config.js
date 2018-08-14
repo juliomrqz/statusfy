@@ -3,8 +3,8 @@ const tailwindJS = join(__dirname, 'tailwind.js')
 
 module.exports = {
   plugins: [
-    require('tailwindcss')(tailwindJS),
     require('postcss-import'),
+    require('tailwindcss')(tailwindJS),
     require('autoprefixer'),
     require('postcss-preset-env'),
     require('css-mqpacker'),

@@ -7,7 +7,9 @@ export default function ({ $axios, error, app }) {
   })
 
   $axios.onRequest(config => {
-    // Send client language
-    config.headers.common['Accept-Language'] = app.i18n.locale
+    if (!process.static) {
+      // Send client language
+      config.headers.common['Accept-Language'] = app.i18n.locale
+    }
   })
 }

@@ -5,9 +5,9 @@ const helmet = require('helmet')
 const { Nuxt } = require('nuxt-edge')
 
 const language = require('./middlewares/language')
-const api = require('./api')
+const buildApiRouter = require('./api')
 
-module.exports = async function createApp (siteConfig, nuxtConfig, host, port) {
+module.exports = async function createApp (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
   const app = express()
 
   app.set('port', port)
@@ -33,7 +33,7 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port) {
   app.use(bodyParser.json())
   app.use(language)
 
-  app.use('/api/v1', api)
+  app.use(`${apiPrefix}/api/v1`, buildApiRouter(siteConfig))
 
   if (nuxtConfig) {
     // Init Nuxt.js

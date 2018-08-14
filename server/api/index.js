@@ -1,12 +1,16 @@
 const { Router } = require('express')
 
-const incidents = require('./incidents')
-const systems = require('./systems')
+const buildIncidentsRouter = require('./incidents')
+const buildSystemsRouter = require('./systems')
 
-const router = Router()
+const buildRouter = (siteConfig) => {
+  const router = Router()
 
-// Add Routes
-router.use(incidents)
-router.use(systems)
+  // Add Routes
+  router.use(buildIncidentsRouter(siteConfig))
+  router.use(buildSystemsRouter(siteConfig))
 
-module.exports = router
+  return router
+}
+
+module.exports = buildRouter

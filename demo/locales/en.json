@@ -1,8 +1,20 @@
 {
   "systems": {
-    "cdn": "CDN",
-    "conversions": "Conversions",
-    "site-delivery": "Site delivery",
-    "api": "API"
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "conversions": {
+        "title": "Conversions",
+        "description": "Conversion from one file to another"
+      },
+      "site-delivery": {
+        "title": "Site delivery"
+      },
+      "api": {
+        "title": "API",
+        "description": "The API Endpoints any developers can access to"
+      }
+    }
   }
 }

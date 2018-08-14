@@ -43,13 +43,18 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/axios'
+    '~/plugins/axios',
+    {
+      src: '~/plugins/vue-fontawesome',
+      ssr: false
+    }
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '~/modules/statusfy',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // https://nuxt-community.github.io/nuxt-i18n/
@@ -63,10 +68,10 @@ module.exports = {
         cookieKey: 'statusfy.lang_redirected'
       },
       vueI18n: {
-        fallbackLocale: 'en'
+        fallbackLocale: 'en',
+        silentTranslationWarn: process.env.NODE_ENV === 'production'
       }
-    }],
-    '~/modules/statusfy'
+    }]
   ],
   /*
   ** Build configuration
@@ -124,7 +129,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    browserBaseURL: '/'
   },
   /*
    ** Statusfy module configuration
