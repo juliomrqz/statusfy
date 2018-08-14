@@ -6,7 +6,7 @@ const response = require('../utils/response')
 const buildRouter = (siteConfig) => {
   const router = Router()
   const incidentsPath = siteConfig.build.isStatic
-    ? '/incidents.:page.:lang.json'
+    ? '/incidents.page-:page.:lang.json'
     : '/incidents'
   const incidentTimelinePath = siteConfig.build.isStatic
     ? '/incidents/timeline.:lang.json'

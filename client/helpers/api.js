@@ -6,10 +6,23 @@ export default class API {
     this.basePath = '/api/v1'
   }
 
-  buildUrl (path) {
-    let finalPath = this.isStatic ? '/static/content' : ''
-    finalPath += this.basePath + path
-    finalPath += this.isStatic ? `.${this.lang}.json` : ''
+  buildUrl (path, queryStrings = {}) {
+    const queryStringsKeys = Object.keys(queryStrings)
+
+    let builtQueryStrings
+    let finalPath = `${this.basePath}${path}`
+
+    if (this.isStatic) {
+      builtQueryStrings = queryStringsKeys.map(key => `${key}-${queryStrings[key]}`).join('.')
+
+      finalPath = '/static/content' + finalPath
+      finalPath += builtQueryStrings ? `.${builtQueryStrings}` : ''
+      finalPath += `.${this.lang}.json`
+    } else {
+      let builtQueryStrings = queryStringsKeys.map(key => `${key}=${queryStrings[key]}`).join('&')
+
+      finalPath += builtQueryStrings ? `?${builtQueryStrings}` : ''
+    }
 
     return finalPath
   }
@@ -18,7 +31,7 @@ export default class API {
     return this.axios.$get(this.buildUrl('/systems'))
   }
 
-  async getAllIncidents () {
-    return this.axios.$get(this.buildUrl('/incidents'))
+  async getAllIncidents (page = 1) {
+    return this.axios.$get(this.buildUrl('/incidents', { page: 1 }))
   }
 }
