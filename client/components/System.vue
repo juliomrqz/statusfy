@@ -41,11 +41,11 @@ export default {
   computed: {
     description () {
       const $t = this.$t.bind(this)
+      const $te = this.$te.bind(this)
       const key = `systems.items.${this.system.name}.description`
-      const result = $t(key)
 
-      if (result !== key) {
-        return result
+      if ($te(key)) {
+        return $t(key)
       } else {
         return null
       }
