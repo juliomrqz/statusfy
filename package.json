@@ -44,6 +44,7 @@
     "consola": "^1.4.2",
     "cors": "^2.8.4",
     "cross-spawn": "^6.0.5",
+    "dayjs": "^1.7.5",
     "express": "^4.15.3",
     "fs-extra": "^7.0.0",
     "gray-matter": "^4.0.1",

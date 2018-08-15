@@ -1,32 +1,30 @@
 <template>
   <section class="container">
+    <!-- System Status -->
     <system-status :systems="systems" />
-    <!--  -->
-    <h2 class="text-2xl">Incidents</h2>
-    <incident
-      v-for="incident in incidents"
-      :key="incident.id"
-      :incident="incident" />
+
+    <!-- Timeline -->
+    <incidents-timeline :data="timelineData" />
   </section>
 </template>
 
 <script>
 import API from '~/helpers/api'
-import Incident from '~/components/Incident'
+import IncidentsTimeline from '~/components/IncidentsTimeline'
 import SystemStatus from '~/components/SystemStatus'
 
 export default {
   components: {
-    Incident,
+    IncidentsTimeline,
     SystemStatus
   },
   async asyncData ({ app }) {
     const api = new API(app.$axios, app.i18n.locale)
 
     const systems = await api.getAllSystems()
-    const incidents = (await api.getAllIncidents()).incidents
+    const timelineData = await api.allIncidentsTimeline()
 
-    return { systems, incidents }
+    return { systems, timelineData }
   }
 }
 </script>

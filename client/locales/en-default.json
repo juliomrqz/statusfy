@@ -1,13 +1,25 @@
 {
   "welcome": "Welcome",
   "slogan": "A marvelous open source Status Page system",
-  "systems": {
-    "statuses": {
-      "under-maintenance": "Under Maintenance",
-      "degraded-performance": "Degraded Performance",
-      "partial-outage": "Partial Outage",
-      "major-outage": "Major Outage",
-      "operational": "Operational"
+  "statuses": {
+    "under-maintenance": "Under Maintenance",
+    "degraded-performance": "Degraded Performance",
+    "partial-outage": "Partial Outage",
+    "major-outage": "Major Outage",
+    "operational": "Operational"
+  },
+  "dates": {
+    "formats": {
+      "short": "MMM D, YYYY",
+      "long": "MMM D, HH:mm Z"
     }
+  },
+  "incidents": {
+    "incidents": "Incidents",
+    "incidents-history": "Incidents History",
+    "latest-incidents": "Latest Incidents",
+    "no-incidents": "No incidents reported.",
+    "resolved": "Resolved",
+    "unresolved": "Unresolved"
   }
 }

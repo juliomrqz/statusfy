@@ -42,7 +42,7 @@ module.exports = async function Statusfy () {
   this.addPlugin({
     src: path.resolve(__dirname, 'plugin.js.tpl'),
     fileName: 'statusfy.js',
-    statusfyOptions
+    options: statusfyOptions
   })
 
   this.nuxt.hook('build:before', async builder => {

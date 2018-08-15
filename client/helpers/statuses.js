@@ -10,7 +10,7 @@ export default ($t = null) => {
 
   let i18nKeys
   if ($t) {
-    i18nKeys = keys.reduce((acc, cur) => { acc[cur] = $t(`systems.statuses.${cur}`); return acc }, {})
+    i18nKeys = keys.reduce((acc, cur) => { acc[cur] = $t(`statuses.${cur}`); return acc }, {})
   }
 
   const colors = {

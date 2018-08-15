@@ -6,7 +6,7 @@ affectedsystems:
   - cdn
   - conversions
   - site-delivery
-resolved: false
+resolved: true
 ---
 
 El sistema API está experimentando algunos problemas

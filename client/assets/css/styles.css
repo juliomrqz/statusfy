@@ -2,3 +2,38 @@
 body {
   @apply bg-grey-lightest font-sans;
 }
+
+/* timeline */
+.timeline::before {
+  top: 4px;
+  left: 2rem;
+  width: 2px;
+  margin-left: -23px;
+  content: '';
+
+  @apply bg-grey-light absolute h-full;
+}
+
+.timeline .incident-content > p {
+  @apply my-4 text-lg;
+}
+
+.timeline .incident-content .update-block {
+  @apply flex flex-col-reverse border-b mb-0 py-2;
+}
+
+.timeline .incident-content .update-block:last-child {
+  @apply border-b-0;
+}
+
+.timeline .incident-content .update-block-date {
+  @apply text-grey-dark my-2;
+}
+
+.timeline .incident-content .update-block-content {
+  @apply flex-initial my-2;
+}
+
+.timeline .incident-content .update-block-title {
+  @apply font-semibold mb-2 text-lg;
+}

@@ -21,7 +21,12 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
     apply (compiler) {
       compiler.plugin('emit', (compilation, cb) => {
         nuxt.options.statusfy.locales.forEach(locale => {
-          compilation.assets[`${pathPrefix}/systems.${locale.code}.json`] = asset(database.allSystems(locale.code))
+          // Systems
+          compilation.assets[`${pathPrefix}/systems.${locale.code}.json`] =
+            asset(database.allSystems(locale.code))
+          // Timeline
+          compilation.assets[`${pathPrefix}/incidents/timeline.${locale.code}.json`] =
+            asset(database.allIncidentsTimeline(locale.code))
         })
 
         cb()

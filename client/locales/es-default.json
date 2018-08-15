@@ -1,13 +1,25 @@
 {
   "welcome": "Bienvenido",
   "slogan": "Un estupendo sistema de Página de Estado de código abierto",
-  "systems": {
-    "statuses": {
-      "under-maintenance": "En Mantenimiento",
-      "degraded-performance": "Rendimiento Degradado",
-      "partial-outage": "Interrupción Parcial",
-      "major-outage": "Interrupción Mayor",
-      "operational": "Operational"
+  "statuses": {
+    "under-maintenance": "En Mantenimiento",
+    "degraded-performance": "Rendimiento Degradado",
+    "partial-outage": "Interrupción Parcial",
+    "major-outage": "Interrupción Mayor",
+    "operational": "Operativo"
+  },
+  "dates": {
+    "formats": {
+      "short": "MMM D, YYYY",
+      "long": "MMM D, HH:mm Z"
     }
+  },
+  "incidents": {
+    "incidents": "Incidentes",
+    "incidents-history": "Historial de Incidentes",
+    "latest-incidents": "Últimos Incidentes",
+    "no-incidents": "No se reportaron incidentes.",
+    "resolved": "Resuelto",
+    "unresolved": "Sin Resolver"
   }
 }
