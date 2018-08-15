@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
 import {
   faClock,
   faCheckCircle,
@@ -9,6 +9,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+config.autoAddCss = false
 
 library.add(
   faQuestionCircle,
