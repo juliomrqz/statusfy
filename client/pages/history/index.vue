@@ -23,7 +23,7 @@ export default {
   },
   async asyncData ({ app }) {
     const api = new API(app.$axios, app.i18n.locale)
-    const incidentsRes = await api.getAllIncidents()
+    const incidentsRes = await api.getIncidents()
 
     return {
       incidents: incidentsRes.incidents,

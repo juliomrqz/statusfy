@@ -16,7 +16,7 @@ const buildRouter = (siteConfig) => {
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
 
-      send.json(database.allSystems(language))
+      send.json(database.systems(language))
     } catch (error) {
       next(error)
     }

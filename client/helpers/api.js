@@ -27,15 +27,15 @@ export default class API {
     return finalPath
   }
 
-  async getAllSystems () {
+  async getSystems () {
     return this.axios.$get(this.buildUrl('/systems'))
   }
 
-  async getAllIncidents (page = 1) {
+  async getIncidents (page = 1) {
     return this.axios.$get(this.buildUrl('/incidents', { page }))
   }
 
-  async allIncidentsTimeline () {
+  async getIncidentsTimeline () {
     return this.axios.$get(this.buildUrl('/incidents/timeline'))
   }
 }

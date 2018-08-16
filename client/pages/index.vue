@@ -21,8 +21,8 @@ export default {
   async asyncData ({ app }) {
     const api = new API(app.$axios, app.i18n.locale)
 
-    const systems = await api.getAllSystems()
-    const timelineData = await api.allIncidentsTimeline()
+    const systems = await api.getSystems()
+    const timelineData = await api.getIncidentsTimeline()
 
     return { systems, timelineData }
   }

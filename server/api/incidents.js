@@ -22,7 +22,7 @@ const buildRouter = (siteConfig) => {
 
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
-      const data = database.allIncidents(language, Number(page))
+      const data = database.incidents(language, Number(page))
 
       if (data.page > data.total_pages) {
         send.notFound()
@@ -41,7 +41,7 @@ const buildRouter = (siteConfig) => {
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
 
-      send.json(database.allIncidentsTimeline(language))
+      send.json(database.incidentsTimeline(language))
     } catch (error) {
       next(error)
     }
@@ -54,10 +54,10 @@ const buildRouter = (siteConfig) => {
 
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
-      const incident = database.getIncident(id, language)
+      const incident = database.incident(id, language)
 
       if (incident) {
-        send.json(database.getIncident(id, language))
+        send.json(database.incident(id, language))
       } else {
         send.notFound('Incident not found.')
       }

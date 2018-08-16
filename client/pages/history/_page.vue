@@ -25,7 +25,7 @@ export default {
   },
   async asyncData ({ app, params }) {
     const api = new API(app.$axios, app.i18n.locale)
-    const incidentsRes = await api.getAllIncidents(params.page)
+    const incidentsRes = await api.getIncidents(params.page)
 
     return {
       incidents: incidentsRes.incidents,
