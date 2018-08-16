@@ -1,6 +1,6 @@
 <template>
   <div class="mt-6">
-    <h2 class="text-2xl mb-2">{{ $t('incidents.latest-incidents') }}</h2>
+    <h2 class="text-2xl mb-2 font-medium">{{ $t('incidents.latest-incidents') }}</h2>
 
     <ul class="timeline relative list-reset my-4">
       <li
@@ -32,7 +32,9 @@
     </ul>
 
     <div class="text-center">
-      <nuxt-link :to="localePath('history')">
+      <nuxt-link
+        :to="localePath('history')"
+        class="inline-block bg-white rounded-full font-semibold border py-2 px-4 shadow">
         {{ $t('incidents.incidents-history') }}
       </nuxt-link>
     </div>

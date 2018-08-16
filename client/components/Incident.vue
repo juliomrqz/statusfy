@@ -21,7 +21,10 @@
     <div class="flex flex-col sm:flex-row items-center justify-between mt-2 mb-4">
       <div
         :class="`text-${status.color}`"
-        class="mb-2 sm:mb-0">{{ status.title }}</div>
+        class="mb-2 sm:mb-0">
+        <font-awesome-icon :icon="status.icon" />
+        {{ status.title }}
+      </div>
 
       <div>
         <nice-date
@@ -31,6 +34,13 @@
     </div>
 
     <div
+      v-if="summary"
+      class="mt-4">
+      <div v-if="incident.description">{{ incident.description }}</div>
+    </div>
+
+    <div
+      v-else
       ref="content"
       class="incident-content mt-4"
       v-html="incident.content"/>
@@ -49,6 +59,10 @@ export default {
     incident: {
       type: Object,
       required: true
+    },
+    summary: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -71,14 +85,17 @@ export default {
   },
   mounted () {
     const $t = this.$t.bind(this)
-    const blockElements = this.$refs.content.querySelectorAll('.update-block')
 
-    blockElements.forEach((el, i) => {
-      const dateEl = el.querySelectorAll('.update-block-date')[0]
-      const date = this.$statusfy.dayjs(dateEl.innerHTML)
+    if (this.$refs.content) {
+      const blockElements = this.$refs.content.querySelectorAll('.update-block')
 
-      dateEl.innerHTML = date.locale(this.$i18n.locale).format($t(`dates.formats.long`))
-    })
+      blockElements.forEach((el, i) => {
+        const dateEl = el.querySelectorAll('.update-block-date')[0]
+        const date = this.$statusfy.dayjs(dateEl.innerHTML)
+
+        dateEl.innerHTML = date.locale(this.$i18n.locale).format($t(`dates.formats.long`))
+      })
+    }
   },
   methods: {
     getStatusInfo (status) {

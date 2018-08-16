@@ -4,6 +4,10 @@ export default function ({ $axios, error, app }) {
     if (code === 404) {
       error({ statusCode: 404, message: 'Not found' })
     }
+
+    if (process.env.isDev) {
+      console.error(errorValue)
+    }
   })
 
   $axios.onRequest(config => {

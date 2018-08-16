@@ -7,11 +7,11 @@ a {
   color: inherit;
   text-decoration: none;
 
-  @apply text-grey-darker
+  @apply text-grey-darker;
 }
 
 a:hover {
-  @apply text-black
+  @apply text-black;
 }
 
 /* timeline */
@@ -25,26 +25,27 @@ a:hover {
   @apply bg-grey-light absolute h-full;
 }
 
-.timeline .incident-content > p {
+/* Incidents */
+.incident-content > p {
   @apply my-4 text-lg;
 }
 
-.timeline .incident-content .update-block {
+.incident-content .update-block {
   @apply flex flex-col-reverse border-b mb-0 py-2;
 }
 
-.timeline .incident-content .update-block:last-child {
+.incident-content .update-block:last-child {
   @apply border-b-0;
 }
 
-.timeline .incident-content .update-block-date {
+.incident-content .update-block-date {
   @apply text-grey-dark my-2;
 }
 
-.timeline .incident-content .update-block-content {
+.incident-content .update-block-content {
   @apply flex-initial my-2;
 }
 
-.timeline .incident-content .update-block-title {
+.incident-content .update-block-title {
   @apply font-semibold mb-2 text-lg;
 }

@@ -32,7 +32,7 @@ export default class API {
   }
 
   async getAllIncidents (page = 1) {
-    return this.axios.$get(this.buildUrl('/incidents', { page: 1 }))
+    return this.axios.$get(this.buildUrl('/incidents', { page }))
   }
 
   async allIncidentsTimeline () {

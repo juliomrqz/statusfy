@@ -5,7 +5,9 @@ import {
   faCheckCircle,
   faExclamationCircle,
   faTimesCircle,
-  faMinusCircle
+  faMinusCircle,
+  faChevronLeft,
+  faChevronRight
 } from '@fortawesome/free-solid-svg-icons'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -18,7 +20,9 @@ library.add(
   faCheckCircle,
   faExclamationCircle,
   faTimesCircle,
-  faMinusCircle
+  faMinusCircle,
+  faChevronLeft,
+  faChevronRight
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
