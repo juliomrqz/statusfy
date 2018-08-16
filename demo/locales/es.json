@@ -1,4 +1,11 @@
 {
+  "title": "Statusfy Demo",
+  "description": "A marvelous open source Status Page system",
+  "links": {
+    "contact": "https://www.bazzite.com/es/contact",
+    "suport": "https://www.bazzite.com/es/support",
+    "home": "https://www.bazzite.com/es/"
+  },
   "systems": {
     "items": {
       "cdn": {

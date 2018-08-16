@@ -1,6 +1,10 @@
 {
-  "welcome": "Welcome",
-  "slogan": "A marvelous open source Status Page system",
+  "labels": {
+    "contact": "Contact",
+    "support": "Support",
+    "home": "Home",
+    "powered-by": "Powered by"
+  },
   "statuses": {
     "under-maintenance": "Under Maintenance",
     "degraded-performance": "Degraded Performance",

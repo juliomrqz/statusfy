@@ -1,6 +1,17 @@
 /* Custom Styles */
 body {
-  @apply bg-grey-lightest font-sans;
+  @apply bg-grey-lightest font-sans text-black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @apply text-grey-darker
+}
+
+a:hover {
+  @apply text-black
 }
 
 /* timeline */

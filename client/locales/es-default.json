@@ -1,6 +1,10 @@
 {
-  "welcome": "Bienvenido",
-  "slogan": "Un estupendo sistema de Página de Estado de código abierto",
+  "labels": {
+    "contact": "Contacto",
+    "support": "Soporte",
+    "home": "Inicio",
+    "powered-by": "Respaldado por"
+  },
   "statuses": {
     "under-maintenance": "En Mantenimiento",
     "degraded-performance": "Rendimiento Degradado",
