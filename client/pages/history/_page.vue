@@ -35,6 +35,10 @@ export default {
         totalPages: incidentsRes.total_pages
       }
     }
+  },
+  validate ({ params }) {
+    // Must be a number
+    return /^\d+$/.test(params.page)
   }
 }
 </script>

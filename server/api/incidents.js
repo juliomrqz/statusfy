@@ -22,8 +22,13 @@ const buildRouter = (siteConfig) => {
 
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
+      const data = database.allIncidents(language, Number(page))
 
-      send.json(database.allIncidents(language, Number(page)))
+      if (data.page > data.total_pages) {
+        send.notFound()
+      } else {
+        send.json(data)
+      }
     } catch (error) {
       next(error)
     }
