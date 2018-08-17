@@ -2,11 +2,15 @@
   <div class="incident p-4 pt-6 bg-white shadow rounded my-4">
     <div class="flex flex-col sm:flex-row items-center justify-between">
       <nuxt-link :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
+        <span
+          :class="`bg-${resolved.color}`"
+          class="inline-block text-white rounded-full text-sm font-semibold py-1 p-3 mr-2">
+          {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
+        </span>
         <component
           :is="`h${level}`"
           :class="`text-${resolved.color}`"
-          class="text-lg block mb-4 sm:mb-0">
-          [{{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}]
+          class="text-lg block mb-4 sm:mb-0 inline-block">
           {{ incident.title }}
         </component>
       </nuxt-link>
@@ -51,7 +55,7 @@
 </template>
 
 <script>
-import Statuses from '~/helpers/statuses'
+import { getStatusInfo } from '~/helpers/statuses'
 import NiceDate from '~/components/NiceDate'
 
 export default {
@@ -83,14 +87,16 @@ export default {
   },
   computed: {
     status () {
-      return this.getStatusInfo(this.incident.severity)
+      const $t = this.$t.bind(this)
+      return getStatusInfo($t, this.incident.severity)
     },
     resolved () {
+      const $t = this.$t.bind(this)
       const statusKey = this.incident.resolved ? 'operational' : this.incident.severity
 
       return {
         value: this.incident.resolved,
-        ...this.getStatusInfo(statusKey)
+        ...getStatusInfo($t, statusKey)
       }
     }
   },
@@ -106,18 +112,6 @@ export default {
 
         dateEl.innerHTML = date.locale(this.$i18n.locale).format($t(`dates.formats.long`))
       })
-    }
-  },
-  methods: {
-    getStatusInfo (status) {
-      const $t = this.$t.bind(this)
-      const statuses = Statuses($t)
-
-      return {
-        title: statuses.i18nKeys[status],
-        color: statuses.colors[status],
-        icon: statuses.icons[status]
-      }
     }
   }
 }

@@ -33,6 +33,16 @@ export default {
         totalPages: incidentsRes.total_pages
       }
     }
+  },
+  head () {
+    const $t = this.$t.bind(this)
+
+    return {
+      title: $t('incidents.incidents-history'),
+      meta: [
+        { hid: 'description', name: 'description', content: $t('incidents.incidents-history-description') }
+      ]
+    }
   }
 }
 </script>

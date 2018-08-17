@@ -20,15 +20,19 @@
   },
   "incidents": {
     "incidents": "Incidents",
+    "incident": "Incident",
     "incidents-history": "Incidents History",
+    "incidents-history-description": "Current & Historical operational interruptions to our service.",
     "latest-incidents": "Latest Incidents",
     "current-status": "Current Status",
+    "current-status-description": "Keep up to date with real-time and historical interruptions to our service which may be affecting you.",
     "no-incidents": "No incidents reported.",
     "resolved": "Resolved",
     "unresolved": "Unresolved",
     "paginator": {
       "previous": "Previous Page",
-      "next": "Next Page"
+      "next": "Next Page",
+      "page": "Page"
     }
   }
 }

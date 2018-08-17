@@ -17,7 +17,7 @@
 
 <script>
 import System from '~/components/System'
-import Statuses from '~/helpers/statuses'
+import { statusesInfo } from '~/helpers/statuses'
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
   computed: {
     status () {
       const $t = this.$t.bind(this)
-      const statuses = Statuses($t)
+      const statuses = statusesInfo($t)
 
       let statusKey = 'operational'
 

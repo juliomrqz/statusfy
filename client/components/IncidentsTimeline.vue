@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import Statuses from '~/helpers/statuses'
+import { statusesInfo } from '~/helpers/statuses'
 import Incident from './Incident'
 import NiceDate from '~/components/NiceDate'
 
@@ -71,7 +71,7 @@ export default {
   methods: {
     getDayStatus (incidents) {
       const $t = this.$t.bind(this)
-      const statuses = Statuses($t)
+      const statuses = statusesInfo($t)
 
       let statusKey = 'operational'
 

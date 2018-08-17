@@ -20,15 +20,19 @@
   },
   "incidents": {
     "incidents": "Incidentes",
+    "incident": "Incidente",
     "incidents-history": "Historial de Incidentes",
+    "incidents-history-description": "Interrupciones operativas actuales e históricas de nuestro servicio.",
     "latest-incidents": "Últimos Incidentes",
     "current-status": "Estado Actual",
+    "current-status-description": "Mantente al día con las interrupciones históricas y en tiempo real de nuestro servicio que pueden estar afectándote.",
     "no-incidents": "No se reportaron incidentes.",
     "resolved": "Resuelto",
     "unresolved": "Sin Resolver",
     "paginator": {
       "previous": "Página Anterior",
-      "next": "Siguiente Página"
+      "next": "Siguiente Página",
+      "page": "Página"
     }
   }
 }

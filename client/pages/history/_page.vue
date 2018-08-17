@@ -36,6 +36,16 @@ export default {
       }
     }
   },
+  head () {
+    const $t = this.$t.bind(this)
+
+    return {
+      title: `${$t('incidents.incidents-history')} - ${$t('incidents.paginator.page')} ${this.pageInfo.page}`,
+      meta: [
+        { hid: 'description', name: 'description', content: $t('incidents.incidents-history-description') }
+      ]
+    }
+  },
   validate ({ params }) {
     // Must be a number
     return /^\d+$/.test(params.page)

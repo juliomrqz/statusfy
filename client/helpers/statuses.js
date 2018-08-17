@@ -1,4 +1,4 @@
-export default ($t = null) => {
+export const statusesInfo = ($t) => {
   // Important order of relevance
   const keys = [
     'under-maintenance',
@@ -33,5 +33,15 @@ export default ($t = null) => {
     i18nKeys,
     colors,
     icons
+  }
+}
+
+export const getStatusInfo = ($t, status) => {
+  const statuses = statusesInfo($t)
+
+  return {
+    title: statuses.i18nKeys[status],
+    color: statuses.colors[status],
+    icon: statuses.icons[status]
   }
 }

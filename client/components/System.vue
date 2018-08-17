@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Statuses from '~/helpers/statuses'
+import { getStatusInfo } from '~/helpers/statuses'
 
 export default {
   components: {
@@ -52,13 +52,8 @@ export default {
     },
     status () {
       const $t = this.$t.bind(this)
-      const statuses = Statuses($t)
 
-      return {
-        title: statuses.i18nKeys[this.system.status],
-        color: statuses.colors[this.system.status],
-        icon: statuses.icons[this.system.status]
-      }
+      return getStatusInfo($t, this.system.status)
     }
   }
 }

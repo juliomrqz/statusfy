@@ -27,6 +27,7 @@
 <script>
 import API from '~/helpers/api'
 import Incident from '~/components/Incident'
+import { getStatusInfo } from '~/helpers/statuses'
 
 export default {
   components: {
@@ -38,6 +39,24 @@ export default {
 
     return {
       incident
+    }
+  },
+  head () {
+    const $t = this.$t.bind(this)
+    let description = this.incident.description
+
+    if (!description) {
+      const ressolvedStatus = this.incident.resolved ? $t('incidents.resolved') : $t('incidents.unresolved')
+      const severity = getStatusInfo($t, this.incident.severity).title
+
+      description = `[${ressolvedStatus}] ${$t('incidents.incident')} #${this.incident.id}: ${this.incident.title} - ${severity}`
+    }
+
+    return {
+      title: `${$t('incidents.incident')}: ${this.incident.title}`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   },
   validate ({ params }) {

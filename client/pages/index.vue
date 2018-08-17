@@ -25,6 +25,16 @@ export default {
     const timelineData = await api.getIncidentsTimeline()
 
     return { systems, timelineData }
+  },
+  head () {
+    const $t = this.$t.bind(this)
+
+    return {
+      title: $t('incidents.current-status'),
+      meta: [
+        { hid: 'description', name: 'description', content: $t('incidents.current-status-description') }
+      ]
+    }
   }
 }
 </script>
