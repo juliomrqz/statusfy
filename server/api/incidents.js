@@ -8,6 +8,9 @@ const buildRouter = (siteConfig) => {
   const incidentsPath = siteConfig.build.isStatic
     ? '/incidents.page-:page.:lang.json'
     : '/incidents'
+  const incidentsHistoryPath = siteConfig.build.isStatic
+    ? '/incidents/history.page-:page.:lang.json'
+    : '/incidents/history'
   const incidentTimelinePath = siteConfig.build.isStatic
     ? '/incidents/timeline.:lang.json'
     : '/incidents/timeline'
@@ -23,6 +26,25 @@ const buildRouter = (siteConfig) => {
     try {
       const database = await createDatabase(req.app.get('siteConfig'))
       const data = database.incidents(language, Number(page))
+
+      if (data.page > data.total_pages) {
+        send.notFound()
+      } else {
+        send.json(data)
+      }
+    } catch (error) {
+      next(error)
+    }
+  })
+
+  router.get(incidentsHistoryPath, async (req, res, next) => {
+    const language = req.params.lang || req.app.get('language')
+    const page = req.query.page || req.params.lang || 1
+    const send = response(res, language)
+
+    try {
+      const database = await createDatabase(req.app.get('siteConfig'))
+      const data = database.incidentsHistory(language, Number(page))
 
       if (data.page > data.total_pages) {
         send.notFound()

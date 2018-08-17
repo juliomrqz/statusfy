@@ -13,7 +13,7 @@ export default {
     },
     format: {
       default: 'short',
-      validator: (value) => ['short', 'long'].indexOf(value) !== -1
+      validator: (value) => ['short', 'long', 'month'].indexOf(value) !== -1
     }
   },
   computed: {

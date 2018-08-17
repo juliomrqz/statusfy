@@ -15,7 +15,8 @@
   "dates": {
     "formats": {
       "short": "MMM D, YYYY",
-      "long": "MMM D, HH:mm Z"
+      "long": "MMM D, HH:mm Z",
+      "month": "MMMM YYYY"
     }
   },
   "incidents": {
@@ -33,6 +34,10 @@
       "previous": "Previous Page",
       "next": "Next Page",
       "page": "Page"
+    },
+    "collapse": {
+      "show": "Show all {count} Incidents",
+      "hide": "Show less Incidents"
     }
   }
 }

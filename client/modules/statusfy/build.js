@@ -30,14 +30,14 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
             asset(database.incidentsTimeline(locale.code))
 
           // History Pages
-          const historyPage1 = database.incidents(locale.code)
+          const historyPage1 = database.incidentsHistory(locale.code)
           let currentPage = 1
           let totalPages = historyPage1.total_pages
 
           while (currentPage <= totalPages) {
-            const data = database.incidents(locale.code, currentPage)
+            const data = database.incidentsHistory(locale.code, currentPage)
 
-            compilation.assets[`${pathPrefix}/incidents.page-${currentPage}.${locale.code}.json`] =
+            compilation.assets[`${pathPrefix}/incidents/history.page-${currentPage}.${locale.code}.json`] =
               asset(data)
 
             currentPage = data.page + 1
@@ -64,7 +64,7 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
     const prefix = locale.code === nuxt.options.statusfy.siteConfig.defaultLocale ? '' : `/${locale.code}`
 
     // History Pages
-    let totalPages = database.incidents(locale.code).total_pages
+    let totalPages = database.incidentsHistory(locale.code).total_pages
 
     for (let i = 2; i <= totalPages; i++) {
       nuxt.options.generate.routes.push(`${prefix}/history/${i}`)

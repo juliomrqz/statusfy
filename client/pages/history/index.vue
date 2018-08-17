@@ -1,10 +1,6 @@
 <template>
   <div>
-    <incident
-      v-for="incident in incidents"
-      :key="incident.id"
-      :incident="incident"
-      :summary="true" />
+    <incidents-history :periods="periods" />
 
     <incidents-paginator :info="pageInfo" />
   </div>
@@ -12,25 +8,25 @@
 
 <script>
 import API from '~/helpers/api'
-import Incident from '~/components/Incident'
 import IncidentsPaginator from '~/components/IncidentsPaginator'
+import IncidentsHistory from '~/components/IncidentsHistory'
 
 export default {
   layout: 'incidents',
   components: {
-    Incident,
+    IncidentsHistory,
     IncidentsPaginator
   },
   async asyncData ({ app }) {
     const api = new API(app.$axios, app.i18n.locale)
-    const incidentsRes = await api.getIncidents()
+    const history = await api.getIncidentsHistory()
 
     return {
-      incidents: incidentsRes.incidents,
+      periods: history.periods,
       pageInfo: {
-        page: incidentsRes.page,
-        pageSize: incidentsRes.page_size,
-        totalPages: incidentsRes.total_pages
+        page: history.page,
+        pageSize: history.page_size,
+        totalPages: history.total_pages
       }
     }
   },

@@ -76,7 +76,7 @@ export default {
       default: 4,
       validator: (value) => {
         // The value must match one of these numbers
-        return [1, 4].indexOf(value) !== -1
+        return [1, 3, 4].indexOf(value) !== -1
       }
     }
   },
