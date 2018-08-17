@@ -2,6 +2,7 @@ const { Router } = require('express')
 
 const createDatabase = require('../../lib/content/database')
 const response = require('../utils/response')
+const request = require('../utils/request')
 
 const buildRouter = (siteConfig) => {
   const router = Router()
@@ -10,11 +11,11 @@ const buildRouter = (siteConfig) => {
     : '/systems'
 
   router.get(systemsPath, async (req, res, next) => {
-    const language = req.params.lang || req.app.get('language')
+    const { language, siteConfig } = request(req)
     const send = response(res, language)
 
     try {
-      const database = await createDatabase(req.app.get('siteConfig'))
+      const database = await createDatabase(siteConfig)
 
       send.json(database.systems(language))
     } catch (error) {

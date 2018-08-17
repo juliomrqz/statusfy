@@ -2,6 +2,7 @@ const { Router } = require('express')
 
 const createDatabase = require('../../lib/content/database')
 const response = require('../utils/response')
+const request = require('../utils/request')
 
 const buildRouter = (siteConfig) => {
   const router = Router()
@@ -19,12 +20,11 @@ const buildRouter = (siteConfig) => {
     : '/incidents/:id'
 
   router.get(incidentsPath, async (req, res, next) => {
-    const language = req.params.lang || req.app.get('language')
-    const page = req.query.page || req.params.lang || 1
+    const { language, page, siteConfig } = request(req)
     const send = response(res, language)
 
     try {
-      const database = await createDatabase(req.app.get('siteConfig'))
+      const database = await createDatabase(siteConfig)
       const data = database.incidents(language, Number(page))
 
       if (data.page > data.total_pages) {
@@ -38,12 +38,11 @@ const buildRouter = (siteConfig) => {
   })
 
   router.get(incidentsHistoryPath, async (req, res, next) => {
-    const language = req.params.lang || req.app.get('language')
-    const page = req.query.page || req.params.lang || 1
+    const { language, page, siteConfig } = request(req)
     const send = response(res, language)
 
     try {
-      const database = await createDatabase(req.app.get('siteConfig'))
+      const database = await createDatabase(siteConfig)
       const data = database.incidentsHistory(language, Number(page))
 
       if (data.page > data.total_pages) {
@@ -57,11 +56,11 @@ const buildRouter = (siteConfig) => {
   })
 
   router.get(incidentTimelinePath, async (req, res, next) => {
-    const language = req.params.lang || req.app.get('language')
+    const { language, siteConfig } = request(req)
     const send = response(res, language)
 
     try {
-      const database = await createDatabase(req.app.get('siteConfig'))
+      const database = await createDatabase(siteConfig)
 
       send.json(database.incidentsTimeline(language))
     } catch (error) {
@@ -71,11 +70,11 @@ const buildRouter = (siteConfig) => {
 
   router.get(incidentPath, async (req, res, next) => {
     const { id } = req.params
-    const language = req.params.lang || req.app.get('language')
+    const { language, siteConfig } = request(req)
     const send = response(res, language)
 
     try {
-      const database = await createDatabase(req.app.get('siteConfig'))
+      const database = await createDatabase(siteConfig)
       const incident = database.incident(id, language)
 
       if (incident) {
