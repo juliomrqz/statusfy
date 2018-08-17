@@ -10,7 +10,7 @@
           <nuxt-link
             :to="localePath('index')"
             class="inline-block bg-white rounded-full font-medium border py-2 px-4 shadow">
-            {{ $t('incidents.current-incidents') }}
+            {{ $t('incidents.current-status') }}
           </nuxt-link>
         </div>
       </div>

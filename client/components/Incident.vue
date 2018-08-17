@@ -1,12 +1,15 @@
 <template>
   <div class="incident p-4 pt-6 bg-white shadow rounded my-4">
     <div class="flex flex-col sm:flex-row items-center justify-between">
-      <h4
-        :class="`text-${resolved.color}`"
-        class="text-lg block mb-4 sm:mb-0">
-        [{{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}]
-        {{ incident.title }}
-      </h4>
+      <nuxt-link :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
+        <component
+          :is="`h${level}`"
+          :class="`text-${resolved.color}`"
+          class="text-lg block mb-4 sm:mb-0">
+          [{{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}]
+          {{ incident.title }}
+        </component>
+      </nuxt-link>
 
       <div class="mb-2 sm:mb-0">
         <span
@@ -63,6 +66,14 @@ export default {
     summary: {
       type: Boolean,
       default: false
+    },
+    level: {
+      type: Number,
+      default: 4,
+      validator: (value) => {
+        // The value must match one of these numbers
+        return [1, 4].indexOf(value) !== -1
+      }
     }
   },
   data () {

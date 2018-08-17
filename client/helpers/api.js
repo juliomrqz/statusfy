@@ -35,6 +35,10 @@ export default class API {
     return this.axios.$get(this.buildUrl('/incidents', { page }))
   }
 
+  async getIncident (id) {
+    return this.axios.$get(this.buildUrl(`/incidents/${id}`))
+  }
+
   async getIncidentsTimeline () {
     return this.axios.$get(this.buildUrl('/incidents/timeline'))
   }

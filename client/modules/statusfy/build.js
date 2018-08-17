@@ -42,6 +42,14 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
 
             currentPage = data.page + 1
           }
+
+          // Incident Detail Pages
+          const incidents = database.incidents(locale.code, 1, -1).incidents
+
+          incidents.forEach(incident => {
+            compilation.assets[`${pathPrefix}/incidents/${incident.id}.${locale.code}.json`] =
+            asset(incident)
+          })
         })
 
         cb()
@@ -61,5 +69,12 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
     for (let i = 2; i <= totalPages; i++) {
       nuxt.options.generate.routes.push(`${prefix}/history/${i}`)
     }
+
+    // Incident Detail Pages
+    const incidents = database.incidents(locale.code, 1, -1).incidents
+
+    incidents.forEach(incident => {
+      nuxt.options.generate.routes.push(`${prefix}/incidents/${incident.id}`)
+    })
   })
 }
