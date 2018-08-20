@@ -48,6 +48,18 @@ module.exports = async function Statusfy () {
   this.nuxt.hook('build:before', async builder => {
     const isStatic = builder.isStatic
 
+    this.nuxt.hook('build:done', async generator => {
+      // Copy user public files
+      if (statusfyOptions.isPublicFilesDefined) {
+        logger.debug('Copying public files')
+
+        fse.copySync(
+          path.join(statusfyOptions.sourceDir, 'public'),
+          this.options.generate.dir
+        )
+      }
+    })
+
     if (isStatic) {
       this.nuxt.hook('build:done', async generator => {
         if (isStatic) {
