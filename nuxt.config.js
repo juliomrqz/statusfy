@@ -3,6 +3,7 @@ const path = require('path')
 const pkg = require('./package')
 
 const langDir = 'locales/'
+const mainColor = '#1a2c5b'
 
 module.exports = {
   srcDir: path.join(__dirname, './client/'),
@@ -27,7 +28,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: { color: mainColor },
 
   /*
   ** Global CSS
@@ -66,7 +67,9 @@ module.exports = {
         fallbackLocale: 'en',
         silentTranslationWarn: process.env.NODE_ENV === 'production'
       }
-    }]
+    }],
+    // Doc: https://pwa.nuxtjs.org/
+    '@nuxtjs/pwa'
   ],
   /*
   ** Build configuration
@@ -135,5 +138,30 @@ module.exports = {
       // Prefer absolute path name
       mainLogo: path.join(__dirname, 'client', 'assets/img/logo.svg')
     }
+  },
+  // PWA
+  manifest: {
+    publicPath: '/static/',
+    name: pkg.name,
+    short_name: pkg.name,
+    lang: 'en',
+    start_url: '/?standalone=true&utm_source=web_app&utm_medium=pwa',
+    version: pkg.version,
+    description: pkg.description
+  },
+  meta: {
+    charset: 'utf-8',
+    mobileApp: false,
+    mobileAppIOS: false,
+    theme_color: mainColor,
+    ogTitle: false,
+    ogDescription: false,
+    author: 'Statusfy'
+  },
+  workbox: {
+    publicPath: '/static/'
+  },
+  icon: {
+    iconSrc: path.join(__dirname, 'client/static/icon.png')
   }
 }

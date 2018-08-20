@@ -266,3 +266,4 @@ client/locales/*.js
 demo/.statusfy
 demo/.tmp
 dist
+sw.*
