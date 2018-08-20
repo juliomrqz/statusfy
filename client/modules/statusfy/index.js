@@ -7,6 +7,19 @@ const logger = require('../../../lib/utils/logger')
 const createServer = require('../../../server')
 const buildContent = require('./build')
 
+const copyPublicFiles = async (src, dest) => {
+  if (src) {
+    logger.debug('Copying public files', dest)
+
+    try {
+      await fse.copy(src, dest)
+    } catch (error) {
+      logger.error('Couldn\'t copy public files', dest)
+      logger.error(error)
+    }
+  }
+}
+
 module.exports = async function Statusfy () {
   // Merge all option sources
   const statusfyOptions = this.options.statusfy
@@ -48,18 +61,6 @@ module.exports = async function Statusfy () {
   this.nuxt.hook('build:before', async builder => {
     const isStatic = builder.isStatic
 
-    this.nuxt.hook('build:done', async generator => {
-      // Copy user public files
-      if (statusfyOptions.isPublicFilesDefined) {
-        logger.debug('Copying public files')
-
-        fse.copySync(
-          path.join(statusfyOptions.sourceDir, 'public'),
-          this.options.generate.dir
-        )
-      }
-    })
-
     if (isStatic) {
       this.nuxt.hook('build:done', async generator => {
         if (isStatic) {
@@ -85,6 +86,14 @@ module.exports = async function Statusfy () {
 
     // Build dynamic content pages
     await buildContent(this, isStatic)
+  })
+
+  this.nuxt.hook('build:done', async generator => {
+    await copyPublicFiles(statusfyOptions.publicFilesPath, path.join(this.options.buildDir, 'dist'))
+  })
+
+  this.nuxt.hook('generate:done', async generator => {
+    await copyPublicFiles(statusfyOptions.publicFilesPath, this.options.generate.dir)
   })
 }
 

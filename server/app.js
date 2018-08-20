@@ -33,11 +33,8 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port, a
   app.use(bodyParser.json())
   app.use(language)
 
-  if (nuxtConfig && nuxtConfig.dev && nuxtConfig.statusfy.isPublicFilesDefined) {
-    const path = require('path')
-    const serveStatic = require('serve-static')
-
-    app.use(serveStatic(path.join(nuxtConfig.statusfy.sourceDir, 'public')))
+  if (nuxtConfig && nuxtConfig.statusfy.publicFilesPath) {
+    app.use(require('serve-static')(nuxtConfig.statusfy.publicFilesPath))
   }
 
   app.use(`${apiPrefix}/api/v1`, buildApiRouter(siteConfig))
