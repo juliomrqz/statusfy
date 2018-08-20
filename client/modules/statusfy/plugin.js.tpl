@@ -4,7 +4,10 @@ import dayjs from 'dayjs'
 
 export default (ctx, inject) => {
   const statusfy = {
-    dayjs
+    dayjs,
+    assets: {
+      mainLogo: require('<%= options.assets.mainLogo %>')
+    }
   }
 
   // Inject Statusfy to the context as $statusfy

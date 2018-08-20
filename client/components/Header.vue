@@ -3,7 +3,7 @@
     <nuxt-link :to="localePath('index')">
       <img
         :alt="$t('title')"
-        src="~/assets/img/logo.svg"
+        :src="$statusfy.assets.mainLogo"
         class="h-10">
     </nuxt-link>
   </div>

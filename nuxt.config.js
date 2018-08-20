@@ -133,6 +133,10 @@ module.exports = {
    ** Statusfy module configuration
    */
   statusfy: {
-    langDir
+    langDir,
+    assets: {
+      // Prefer absolute path name
+      mainLogo: path.join(__dirname, 'client', 'assets/img/logo.svg')
+    }
   }
 }
