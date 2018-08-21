@@ -1,0 +1,28 @@
+[build]
+  command = "npm run generate"
+  publish = "dist"
+
+[build.environment]
+  NODE_ENV="production"
+  NPM_CONFIG_PRODUCTION="false"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  X-Frame-Options = "DENY"
+  X-XSS-Protection = "1; mode=block"
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+  Cache-Control = "max-age=0, no-cache, no-store, must-revalidate"
+
+[[redirects]]
+  from = "/incidents"
+  to = "/"
+  status = 301
+  force = false
+[[redirects]]
+  from = "/es/incidents"
+  to = "/es"
+  status = 301
+  force = false
