@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Based on https://github.com/vuejs/vuepress/blob/master/bin/vuepress.js
 const chalk = require('chalk')
 const semver = require('semver')
