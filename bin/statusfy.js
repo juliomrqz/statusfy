@@ -40,17 +40,19 @@ program
 program
   .command('build')
   .description('Compiles the application for production deployment')
-  .action(() => {
-    wrapCommand(build)(sourceDir, { })
+  .option('-a, --analyze', 'launch final bundle analysis')
+  .action(({ analyze }) => {
+    wrapCommand(build)(sourceDir, { analyze })
   })
 
 program
   .command('generate')
   .description('Generate a static web application (server-rendered)')
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
-  .action(({ dest }) => {
+  .option('-a, --analyze', 'launch final bundle analysis')
+  .action(({ dest, analyze }) => {
     const outDir = dest ? path.resolve(dest) : null
-    wrapCommand(generate)(sourceDir, { outDir })
+    wrapCommand(generate)(sourceDir, { outDir, analyze })
   })
 
 program
