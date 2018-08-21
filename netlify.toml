@@ -15,6 +15,14 @@
   for = "/sw.js"
   [headers.values]
   Cache-Control = "max-age=0, no-cache, no-store, must-revalidate"
+[[headers]]
+  for = "/static/*.js"
+  [headers.values]
+  Cache-Control = "public, max-age=604800, must-revalidate"
+[[headers]]
+  for = "/static/*.json"
+  [headers.values]
+  Cache-Control = "public, max-age=0, must-revalidate"
 
 [[redirects]]
   from = "/incidents"
