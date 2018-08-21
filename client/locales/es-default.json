@@ -39,5 +39,16 @@
       "show": "Mostrar todos los {count} incidentes",
       "hide": "Mostrar menos incidentes"
     }
+  },
+  "error": {
+    "go-back-link": "Volver a la página de inicio",
+    "404": {
+      "title": "Página no encontrada",
+      "description": "La página que estabas buscando no fue encontrada"
+    },
+    "other": {
+      "title": "Ocurrió un error",
+      "description": "Lo sentimos, pero no podemos cumplir con tu solicitud"
+    }
   }
 }

@@ -39,5 +39,16 @@
       "show": "Show all {count} Incidents",
       "hide": "Show less Incidents"
     }
+  },
+  "error": {
+    "go-back-link": "Go back to homepage",
+    "404": {
+      "title": "Page not found",
+      "description": "The page you were looking for was not found"
+    },
+    "other": {
+      "title": "An error occurred",
+      "description": "We're sorry, but we cannot fulfill your request"
+    }
   }
 }
