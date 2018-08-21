@@ -7,6 +7,7 @@ const mainColor = '#1a2c5b'
 
 module.exports = {
   srcDir: path.join(__dirname, './client/'),
+  modulesDir: [path.join(__dirname, 'node_modules')],
   mode: 'universal',
   /*
   ** Environment variables
