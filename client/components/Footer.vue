@@ -11,9 +11,11 @@
       </div>
 
       <div>
-        {{ $t('labels.powered-by') }} <a
+        {{ $t('labels.powered-by') }}
+        <a
           :href="statusfyHomeLink"
-          target="_blank">Statusfy</a>
+          target="_blank"
+          rel="noopener">Statusfy</a>
       </div>
     </div>
     <div
