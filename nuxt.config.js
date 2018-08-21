@@ -120,7 +120,8 @@ module.exports = {
     minify: {
       removeOptionalTags: false
     },
-    subFolders: false
+    subFolders: false,
+    fallback: '404.html'
   },
   // Modules Configurations
   /*
