@@ -89,7 +89,7 @@ module.exports = async function Statusfy () {
   })
 
   this.nuxt.hook('build:done', async generator => {
-    await copyPublicFiles(statusfyOptions.publicFilesPath, path.join(this.options.buildDir, 'dist'))
+    await copyPublicFiles(statusfyOptions.publicFilesPath, path.join(this.options.buildDir, 'dist', 'client'))
   })
 
   this.nuxt.hook('generate:done', async generator => {
