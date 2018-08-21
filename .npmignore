@@ -1,15 +1,15 @@
 # Basic
 *.log
 .temp
-statusfy
 .eslintrc.js
 package-lock.json
 .github
+.statusfy
+test
 
 # Nuxt.js
 .nuxt
 dist
 
 # Demo
-demo/node_modules
-demo/.statusfy
+demo
