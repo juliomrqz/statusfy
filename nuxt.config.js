@@ -45,7 +45,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/axios',
-    '~/plugins/vue-fontawesome'
+    '~/plugins/vue-svgicon'
   ],
 
   /*

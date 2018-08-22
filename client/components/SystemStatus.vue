@@ -4,7 +4,11 @@
       :class="`bg-${status.color}`"
       class="flex justify-center content-center py-4 px-2 text-white shadow rounded my-4 text-2xl">
       <span>{{ status.title }}</span>
-      <span class="ml-2"><font-awesome-icon :icon="status.icon"/></span>
+      <span class="ml-2">
+        <svgicon
+          :name="`fortawesome/${status.icon}-solid`"
+          class="svg-inline--fa fa-w-16"/>
+      </span>
     </div>
     <div class="flex flex-col py-2 px-2 bg-white shadow rounded my-4">
       <system
@@ -16,8 +20,14 @@
 </template>
 
 <script>
-import System from '~/components/System'
 import { statusesInfo } from '~/helpers/statuses'
+
+import System from '~/components/System'
+import '~/components/icons/fortawesome/clock-solid'
+import '~/components/icons/fortawesome/exclamation-circle-solid'
+import '~/components/icons/fortawesome/minus-circle-solid'
+import '~/components/icons/fortawesome/times-circle-solid'
+import '~/components/icons/fortawesome/check-circle-solid'
 
 export default {
   components: {

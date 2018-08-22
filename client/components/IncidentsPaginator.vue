@@ -6,9 +6,9 @@
       v-if="info.page !== 1"
       :to="previousLink"
       class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
-      <font-awesome-icon
-        :icon="'chevron-left'"
-        class="mr-1" />
+      <svgicon
+        name="chevron-left-solid"
+        class="svg-inline--fa fa-w-16 mr-1"/>
       {{ $t('incidents.paginator.previous') }}
     </nuxt-link>
 
@@ -17,14 +17,17 @@
       :to="localePath({ name: 'history-page', params: { page: info.page + 1 } })"
       class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
       {{ $t('incidents.paginator.next') }}
-      <font-awesome-icon
-        :icon="'chevron-right'"
-        class="ml-1" />
+      <svgicon
+        name="chevron-left-right"
+        class="svg-inline--fa fa-w-16 mr-1"/>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import '~/components/icons/fortawesome/chevron-right-solid'
+import '~/components/icons/fortawesome/chevron-left-solid'
+
 export default {
   props: {
     info: {

@@ -10,7 +10,9 @@
         popover-class="absolute bg-grey-darkest text-white rounded px-4 py-3 shadow m-1 max-w-xs text-center text-sm"
         class="hidden sm:inline">
         <span class="cursor-pointer text-grey-dark">
-          <font-awesome-icon :icon="['far', 'question-circle']" />
+          <svgicon
+            name="fortawesome/question-circle-regular"
+            class="svg-inline--fa fa-w-16"/>
         </span>
 
         <template slot="popover">{{ description }}</template>
@@ -19,7 +21,9 @@
     <div class="flex-1 text-grey-darker text-right">
       <span :class="`text-${status.color}`">
         <span class="hidden sm:inline">{{ status.title }}</span>
-        <font-awesome-icon :icon="status.icon" />
+        <svgicon
+          :name="`fortawesome/${status.icon}-solid`"
+          class="svg-inline--fa fa-w-16"/>
       </span>
     </div>
   </div>
@@ -27,6 +31,13 @@
 
 <script>
 import { getStatusInfo } from '~/helpers/statuses'
+
+import '~/components/icons/fortawesome/question-circle-regular'
+import '~/components/icons/fortawesome/clock-solid'
+import '~/components/icons/fortawesome/exclamation-circle-solid'
+import '~/components/icons/fortawesome/minus-circle-solid'
+import '~/components/icons/fortawesome/times-circle-solid'
+import '~/components/icons/fortawesome/check-circle-solid'
 
 export default {
   components: {

@@ -31,7 +31,9 @@
       <div
         :class="`text-${status.color}`"
         class="my-2">
-        <font-awesome-icon :icon="status.icon" />
+        <svgicon
+          :name="`fortawesome/${status.icon}-solid`"
+          class="svg-inline--fa fa-w-16"/>
         {{ status.title }}
       </div>
 
@@ -58,6 +60,12 @@
 
 <script>
 import { getStatusInfo } from '~/helpers/statuses'
+
+import '~/components/icons/fortawesome/clock-solid'
+import '~/components/icons/fortawesome/exclamation-circle-solid'
+import '~/components/icons/fortawesome/minus-circle-solid'
+import '~/components/icons/fortawesome/times-circle-solid'
+import '~/components/icons/fortawesome/check-circle-solid'
 import NiceDate from '~/components/NiceDate'
 
 export default {
