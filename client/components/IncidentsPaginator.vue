@@ -7,7 +7,7 @@
       :to="previousLink"
       class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
       <svgicon
-        name="chevron-left-solid"
+        name="fortawesome/chevron-left-solid"
         class="svg-inline--fa fa-w-16 mr-1"/>
       {{ $t('incidents.paginator.previous') }}
     </nuxt-link>
@@ -18,7 +18,7 @@
       class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
       {{ $t('incidents.paginator.next') }}
       <svgicon
-        name="chevron-left-right"
+        name="fortawesome/chevron-right-solid"
         class="svg-inline--fa fa-w-16 mr-1"/>
     </nuxt-link>
   </div>
