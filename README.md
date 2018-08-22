@@ -30,6 +30,10 @@ $ npm start
 $ npm run generate
 ```
 
+## Demo
+
+A Demo application is at [https://demo.statusfy.co][demo].
+
 ## Documentation & Support
 
 If you want extra details of how to configure and use this project, the full documentation is available at [https://docs.statusfy.co][documentation].
@@ -54,6 +58,7 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [BSD-3-Clause][license-page].
 
+[demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [contributing]: https://github.com/bazzite/statusfy/blob/develop/CONTRIBUTING.md
 [code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy
