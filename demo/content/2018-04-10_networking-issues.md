@@ -1,9 +1,11 @@
 ---
-title: Networking Issues
+title: "Networking Issues"
+description: "We detected a networking problem that caused temporary issues for our API and origin servers."
 date: 2018-04-10T03:25:07.000Z
-severity: degraded-performance
+modified: 2018-04-10T03:25:07.000Z
+severity: "degraded-performance"
 affectedsystems:
-  - site-delivery
+  - "site-delivery"
 resolved: true
 ---
 
