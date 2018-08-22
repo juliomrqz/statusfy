@@ -7,6 +7,12 @@
 [![License](https://img.shields.io/github/license/bazzite/statusfy.svg)][license-page]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_shield)
 
+<p align="center">
+  <a href="https://statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy" target="_blank">
+    <img src="https://raw.githubusercontent.com/bazzite/statusfy-docs/master/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
+  </a>
+</p>
+
 # Statusfy
 
 > A marvelous open source Status Page system
