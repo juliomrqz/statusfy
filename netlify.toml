@@ -1,6 +1,6 @@
 [build]
-  command = "npm run generate"
-  publish = "dist"
+  command = "cd demo && npm run generate && cd .."
+  publish = "demo/dist"
 
 [build.environment]
   NODE_ENV="production"
