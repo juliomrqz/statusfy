@@ -112,7 +112,10 @@ module.exports = {
     */
     router: {
       linkActiveClass: 'active',
-      linkExactActiveClass: 'exact'
+      linkExactActiveClass: 'exact',
+      scrollBehavior: (to, from, savedPosition) => {
+        return { x: 0, y: 0 }
+      }
     }
   },
   /*
