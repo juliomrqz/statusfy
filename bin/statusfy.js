@@ -66,7 +66,7 @@ program
 
 program
   .command('new-incident')
-  .description(`Starts the application in production mode. The application should be compiled with ${chalk.cyan(`statusfy build`)} first.`)
+  .description(`Creates a new incident answering a few questions.`)
   .action(() => {
     wrapCommand(newIncident)(sourceDir, { })
   })
