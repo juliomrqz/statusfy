@@ -3,6 +3,10 @@ body {
   @apply bg-grey-lightest font-sans text-black;
 }
 
+main {
+  min-height: calc(100vh - 14rem);
+}
+
 a {
   color: inherit;
   text-decoration: none;

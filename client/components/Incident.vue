@@ -3,14 +3,19 @@
     <div class="flex flex-col sm:flex-row justify-between">
       <nuxt-link
         :to="localePath({ name: 'incidents-id', params: { id: incident.id } })"
-        class="flex content-center justify-between flex-row-reverse sm:flex-row mb-4">
+        :class="{
+          'flex content-center justify-between flex-row-reverse sm:flex-row': level > 0,
+          'text-center': level === 0
+        }"
+        class="mb-4">
         <span
           :class="`bg-${resolved.color}`"
           class="block text-white rounded-full text-sm font-semibold py-1 p-3 sm:mr-2">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
         <component
-          :is="level > 0 ? `h${level}` : 'div'"
+          v-if="level > 0"
+          :is="`h${level}`"
           :class="`text-${resolved.color}`"
           class="text-lg block">
           {{ incident.title }}

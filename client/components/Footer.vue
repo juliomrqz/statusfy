@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="flex flex-col sm:flex-row items-center justify-between py-4 mt-4 mb-2 text-grey-dark">
-      <div>
+    <div class="flex flex-col sm:flex-row items-center justify-between py-4 text-grey-dark">
+      <div class="my-2">
         <a
           v-for="link in links"
           :key="link.key"
@@ -10,7 +10,7 @@
           class="mr-4">{{ link.title }}</a>
       </div>
 
-      <div>
+      <div class="my-2">
         {{ $t('labels.powered-by') }}
         <a
           :href="statusfyHomeLink"
@@ -20,7 +20,7 @@
     </div>
     <div
       v-if="$i18n.locales.length > 1"
-      class="text-center mb-6">
+      class="text-center mb-6 mt-4 sm:mt-2">
       <template v-for="locale in $i18n.locales">
         <nuxt-link
           v-if="locale.code !== $i18n.locale"

@@ -1,30 +1,30 @@
 <template>
   <div>
-    <div class="flex flex-col sm:flex-row items-center justify-between">
-      <h1 class="font-medium mb-4">{{ incident.title }}</h1>
-
-      <div class="flex flex-col sm:flex-row items-center justify-between">
-        <div class="text-center">
-          <nuxt-link
-            :to="localePath('history')"
-            class="inline-block bg-white rounded-full font-medium border py-2 px-4 mb-4 sm:mx-2 shadow">
-            {{ $t('incidents.incidents-history') }}
-          </nuxt-link>
-        </div>
-        <div class="text-center">
-          <nuxt-link
-            :to="localePath('index')"
-            class="inline-block bg-white rounded-full font-medium border py-2 px-4 mb-4 shadow">
-            {{ $t('incidents.current-status') }}
-          </nuxt-link>
-        </div>
-      </div>
+    <div class="text-center">
+      <h1 class="font-medium mb-5">{{ incident.title }}</h1>
     </div>
 
     <incident
       :key="incident.id"
       :incident="incident"
       :level="0" />
+
+    <div class="flex flex-col sm:flex-row items-center justify-between sm:pt-2 pt-4">
+      <div class="text-center">
+        <nuxt-link
+          :to="localePath('history')"
+          class="inline-block bg-white rounded-full font-medium border py-2 px-4 mb-4 shadow">
+          {{ $t('incidents.incidents-history') }}
+        </nuxt-link>
+      </div>
+      <div class="text-center">
+        <nuxt-link
+          :to="localePath('index')"
+          class="inline-block bg-white rounded-full font-medium border py-2 px-4 mb-4 shadow">
+          {{ $t('incidents.current-status') }}
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
