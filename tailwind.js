@@ -851,7 +851,7 @@ module.exports = {
     height: [],
     leading: false,
     lists: [],
-    margin: [],
+    margin: ['responsive'],
     maxHeight: false,
     maxWidth: [],
     minHeight: false,

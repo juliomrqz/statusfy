@@ -1,21 +1,23 @@
 <template>
   <div class="incident p-4 pt-6 bg-white shadow rounded my-4">
-    <div class="flex flex-col sm:flex-row items-center justify-between">
-      <nuxt-link :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
+    <div class="flex flex-col sm:flex-row justify-between">
+      <nuxt-link
+        :to="localePath({ name: 'incidents-id', params: { id: incident.id } })"
+        class="flex content-center justify-between flex-row-reverse sm:flex-row mb-4">
         <span
           :class="`bg-${resolved.color}`"
-          class="inline-block text-white rounded-full text-sm font-semibold py-1 p-3 mr-2">
+          class="block text-white rounded-full text-sm font-semibold py-1 p-3 sm:mr-2">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
         <component
-          :is="`h${level}`"
+          :is="level > 0 ? `h${level}` : 'div'"
           :class="`text-${resolved.color}`"
-          class="text-lg block mb-4 sm:mb-0 inline-block">
+          class="text-lg block">
           {{ incident.title }}
         </component>
       </nuxt-link>
 
-      <div class="mb-2 sm:mb-0">
+      <div class="mb-2 text-center">
         <span
           v-for="system of incident.affectedsystems"
           :key="system"
@@ -25,10 +27,10 @@
       </div>
     </div>
 
-    <div class="flex flex-col sm:flex-row items-center justify-between mt-2 mb-4">
+    <div class="flex flex-col sm:flex-row items-center justify-between mb-4">
       <div
         :class="`text-${status.color}`"
-        class="mb-2 sm:mb-0">
+        class="my-2">
         <font-awesome-icon :icon="status.icon" />
         {{ status.title }}
       </div>
@@ -76,7 +78,7 @@ export default {
       default: 4,
       validator: (value) => {
         // The value must match one of these numbers
-        return [1, 3, 4].indexOf(value) !== -1
+        return [0, 3, 4].indexOf(value) !== -1
       }
     }
   },
