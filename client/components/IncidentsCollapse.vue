@@ -43,7 +43,9 @@ export default {
 </script>
 
 <style scoped>
-.collapse li:nth-child(n + 4) {
-  display: none;
+.collapse {
+  li:nth-child(n + 4) {
+    display: none;
+  }
 }
 </style>
