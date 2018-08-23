@@ -52,7 +52,7 @@
     "fs-extra": "^7.0.0",
     "gray-matter": "^4.0.1",
     "helmet": "^3.13.0",
-    "inquirer": "^6.1.0",
+    "inquirer": "^6.2.0",
     "lodash": "^4.17.10",
     "lru-cache": "^4.1.3",
     "markdown-it": "^8.4.1",
