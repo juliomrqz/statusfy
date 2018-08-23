@@ -75,6 +75,16 @@ a {
     @apply my-4 text-lg;
   }
 
+  a {
+    @apply text-indigo;
+
+    &.external {
+      svg {
+        @apply text-grey-dark;
+      }
+    }
+  }
+
   .update-block {
     @apply flex flex-col-reverse border-b mb-0 py-2;
 

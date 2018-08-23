@@ -62,6 +62,14 @@
       ref="content"
       class="incident-content mt-4"
       v-html="incident.content"/>
+
+    <div class="hidden">
+      <svgicon
+        ref="external-link-icon"
+        name="fortawesome/external-link-alt-solid"
+        class="svg-inline--fa fa-w-12 ml-1"
+      />
+    </div>
   </div>
 </template>
 
@@ -73,6 +81,7 @@ import '~/components/icons/fortawesome/exclamation-circle-solid'
 import '~/components/icons/fortawesome/minus-circle-solid'
 import '~/components/icons/fortawesome/times-circle-solid'
 import '~/components/icons/fortawesome/check-circle-solid'
+import '~/components/icons/fortawesome/external-link-alt-solid'
 import NiceDate from '~/components/NiceDate'
 
 export default {
@@ -122,12 +131,18 @@ export default {
 
     if (this.$refs.content) {
       const blockElements = this.$refs.content.querySelectorAll('.update-block')
+      const externalLinksElements = this.$refs.content.querySelectorAll('a.external')
+      const iconElement = this.$refs['external-link-icon'].$el
 
       blockElements.forEach((el, i) => {
         const dateEl = el.querySelectorAll('.update-block-date')[0]
         const date = this.$statusfy.dayjs(dateEl.innerHTML)
 
         dateEl.innerHTML = date.locale(this.$i18n.locale).format($t(`dates.formats.long`))
+      })
+
+      externalLinksElements.forEach((el, i) => {
+        el.appendChild(iconElement)
       })
     }
   }
