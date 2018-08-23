@@ -1,10 +1,9 @@
 <template>
   <div class="incident p-4 pt-6 bg-white shadow rounded my-4">
     <div class="flex flex-col sm:flex-row justify-between">
-      <nuxt-link
-        :to="localePath({ name: 'incidents-id', params: { id: incident.id } })"
+      <div
         :class="{
-          'flex content-center justify-between flex-row-reverse sm:flex-row': level > 0,
+          'flex items-start sm:items-center justify-between flex-row-reverse sm:flex-row': level > 0,
           'text-center': level === 0
         }"
         class="mb-4">
@@ -13,14 +12,17 @@
           class="block text-white rounded-full text-sm font-semibold py-1 p-3 sm:mr-2">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
-        <component
+        <nuxt-link
           v-if="level > 0"
-          :is="`h${level}`"
-          :class="`text-${resolved.color}`"
-          class="text-lg block">
-          {{ incident.title }}
-        </component>
-      </nuxt-link>
+          :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
+          <component
+            :is="`h${level}`"
+            :class="`text-${resolved.color}`"
+            class="text-lg block">
+            {{ incident.title }}
+          </component>
+        </nuxt-link>
+      </div>
 
       <div class="mb-2 text-center">
         <span
