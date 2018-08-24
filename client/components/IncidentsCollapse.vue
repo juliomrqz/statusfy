@@ -14,7 +14,7 @@
 
       <div
         v-if="incidents.length > 3"
-        class="incident py-2 px-4 bg-white shadow rounded-full my-4 text-center cursor-pointer"
+        class="incident py-2 px-4 bg-white shadow rounded-full my-4 text-center cursor-pointer border-grey-light border"
         @click="collapsed = !collapsed">
         <template v-if="collapsed">+ {{ $t('incidents.collapse.show', { count: incidents.length }) }}</template>
         <template v-else>- {{ $t('incidents.collapse.hide') }}</template>

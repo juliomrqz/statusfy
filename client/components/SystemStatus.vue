@@ -10,7 +10,7 @@
           class="svg-inline--fa fa-w-16"/>
       </span>
     </div>
-    <div class="flex flex-col py-2 px-2 bg-white shadow rounded my-4">
+    <div class="flex flex-col py-2 px-2 bg-white shadow rounded my-4 border-grey-light border">
       <system
         v-for="system in systems"
         :key="system.name"

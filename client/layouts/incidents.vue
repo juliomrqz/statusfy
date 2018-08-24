@@ -9,7 +9,7 @@
         <div class="sm:mt-0 mt-2">
           <nuxt-link
             :to="localePath('index')"
-            class="inline-block bg-white rounded-full font-medium border py-2 px-4 shadow mb-4">
+            class="btn mb-0 sm:mb-4">
             {{ $t('incidents.current-status') }}
           </nuxt-link>
         </div>

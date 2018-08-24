@@ -1,6 +1,6 @@
 <template>
-  <div class="incident p-4 pt-6 bg-white shadow rounded my-4">
-    <div class="flex flex-col sm:flex-row justify-between">
+  <div class="incident leading-normal p-4 pt-6 shadow rounded my-4 border">
+    <div class="incident-head flex flex-col sm:flex-row justify-between">
       <div
         :class="{
           'flex items-start sm:items-center justify-between flex-row-reverse sm:flex-row': level > 0,
@@ -17,7 +17,7 @@
           :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
           <component
             :is="`h${level}`"
-            :class="`text-${resolved.color}`"
+            :class="!resolved.value ? `text-${resolved.color}` : 'text-grey-darkest'"
             class="text-lg block">
             {{ incident.title }}
           </component>
@@ -34,10 +34,10 @@
       </div>
     </div>
 
-    <div class="flex flex-col sm:flex-row items-center justify-between mb-4">
+    <div class="incident-sub-head flex flex-col sm:flex-row items-center justify-between">
       <div
         :class="`text-${status.color}`"
-        class="my-2">
+        class="my-2 sm:mb-0">
         <svgicon
           :name="`fortawesome/${status.icon}-solid`"
           class="svg-inline--fa fa-w-16"/>
@@ -51,17 +51,18 @@
       </div>
     </div>
 
-    <div
-      v-if="summary"
-      class="mt-4">
-      <div v-if="incident.description">{{ incident.description }}</div>
-    </div>
 
-    <div
-      v-else
-      ref="content"
-      class="incident-content mt-4"
-      v-html="incident.content"/>
+    <div class="incident-body">
+      <div v-if="summary">
+        <div v-if="incident.description">{{ incident.description }}</div>
+      </div>
+
+      <div
+        v-else
+        ref="content"
+        class="markdown"
+        v-html="incident.content"/>
+    </div>
 
     <div class="hidden">
       <svgicon

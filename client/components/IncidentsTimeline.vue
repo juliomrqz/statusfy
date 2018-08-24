@@ -1,19 +1,19 @@
 <template>
   <div class="mt-6">
-    <h2 class="text-2xl mb-2 font-medium">{{ $t('incidents.latest-incidents') }}</h2>
+    <h2 class="text-2xl mb-4 font-medium">{{ $t('incidents.latest-incidents') }}</h2>
 
-    <ul class="timeline">
+    <ul class="timeline list-reset m-0 p-0">
       <li
         v-for="day of days"
         :key="day.date"
         :class="day.status.key"
-        class="timeline-incident">
+        class="timeline-incident border-l-2 border-grey-light ml-2 relative pt-0 pb-6 pl-6">
 
-        <h3 class="timeline-incident-title">
+        <h3 class="timeline-incident-title text-xl font-medium mb-4">
           <nice-date :date="day.date" />
         </h3>
 
-        <div class="timeline-incident-body">
+        <div class="timeline-incident-body pb-2">
           <div
             v-if="day.incidents.length === 0"
             class="text-grey-darker">
@@ -31,7 +31,7 @@
     <div class="text-center">
       <nuxt-link
         :to="localePath('history')"
-        class="inline-block bg-white rounded-full font-semibold border py-2 px-4 shadow">
+        class="btn mb-4">
         {{ $t('incidents.incidents-history') }}
       </nuxt-link>
     </div>

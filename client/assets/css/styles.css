@@ -1,6 +1,38 @@
 /* Custom Styles */
+:root {
+  /* Colors */
+  --transparent: config('colors.transparent');
+  --black: config('colors.black');
+  --grey-darkest: config('colors.grey-darkest');
+  --grey-darker: config('colors.grey-darker');
+  --grey-dark: config('colors.grey-dark');
+  --grey: config('colors.grey');
+  --grey-light: config('colors.grey-light');
+  --grey-lighter: config('colors.grey-lighter');
+  --grey-lightest: config('colors.grey-lightest');
+  --white: config('colors.white');
+
+  --blue: config('colors.blue');
+  --indigo: config('colors.indigo');
+  --green: config('colors.green');
+  --orange: config('colors.orange');
+  --red: config('colors.red');
+
+  /* Breakpoints */
+  --breakpoint-sm: config('screens.sm');
+  --breakpoint-md: config('screens.md');
+  --breakpoint-lg: config('screens.lg');
+
+  /* Fonts */
+  --font-family-sans-serif: config('fonts.sans');
+  --font-family-monospace: config('fonts.mono');
+}
+
 body {
-  @apply bg-grey-lightest font-sans text-black;
+  background-color: config('globalGuidelines.body-bg');
+  color: config('globalGuidelines.body-color');
+
+  @apply font-sans text-black text-base;
 }
 
 main {
@@ -18,15 +50,13 @@ a {
   }
 }
 
+.btn {
+  background-color: config('globalGuidelines.btn-bg');
+
+  @apply inline-block rounded-full font-medium border py-2 px-4 shadow
+}
+
 /* timeline */
-.timeline {
-  @apply list-reset m-0 p-0
-}
-
-.timeline-incident {
-  @apply border-l-2 border-grey-light ml-2 .relative pt-0 pb-6 pl-6
-}
-
 .timeline-incident {
   &:last-child {
     @apply border-transparent
@@ -39,26 +69,28 @@ a {
 
     @apply w-6 h-6 bg-white border-2 border-grey-light absolute rounded-full z-10
   }
-}
 
-.under-maintenance.timeline-incident::before {
-  @apply border-grey-darker
-}
+  &::before {
+    .under-maintenance& {
+      border-color: var(--grey-darker);
+    }
 
-.degraded-performance.timeline-incident::before {
-  @apply border-indigo
-}
+    .degraded-performance& {
+      border-color: var(--indigo);
+    }
 
-.partial-outage.timeline-incident::before {
-  @apply border-orange
-}
+    .partial-outage& {
+      border-color: var(--orange);
+    }
 
-.major-outage.timeline-incident::before {
-  @apply border-red
-}
+    .major-outage& {
+      border-color: var(--red);
+    }
 
-.operational.timeline-incident::before {
-  @apply border-grey-light
+    .operational& {
+      border-color: var(--grey-light);
+    }
+  }
 }
 
 .timeline-incident-title {
@@ -70,13 +102,23 @@ a {
 }
 
 /* Incidents */
-.incident-content {
-  > p {
-    @apply my-4 text-lg;
+.incident {
+  background-color: config('globalGuidelines.incident-bg');
+  border-color: config('globalGuidelines.incident-border-color');
+}
+
+.incident-body {
+  > p,
+  > div {
+    @apply my-4;
+  }
+
+  .markdown {
+    @apply mb-0
   }
 
   a {
-    @apply text-indigo;
+    @apply text-blue;
 
     &.external {
       svg {
@@ -88,8 +130,20 @@ a {
   .update-block {
     @apply flex flex-col-reverse border-b mb-0 py-2;
 
+    &:first-child {
+      @apply pt-0;
+
+      .update-block-content {
+        @apply mt-0
+      }
+    }
+
     &:last-child {
-      @apply border-b-0;
+      @apply border-b-0 mb-0 pb-0;
+
+      .update-block-date {
+        @apply mb-0
+      }
     }
   }
 

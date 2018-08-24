@@ -1,11 +1,11 @@
 <template>
   <div
     v-if="info.totalPages > 1"
-    class="text-center p-4">
+    class="text-center pb-4 mb-2">
     <nuxt-link
       v-if="info.page !== 1"
       :to="previousLink"
-      class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
+      class="btn mx-2">
       <svgicon
         name="fortawesome/chevron-left-solid"
         class="svg-inline--fa fa-w-16 mr-1"/>
@@ -15,7 +15,7 @@
     <nuxt-link
       v-if="info.page !== info.totalPages"
       :to="localePath({ name: 'history-page', params: { page: info.page + 1 } })"
-      class="inline-block bg-white rounded-full font-medium border py-2 px-4 mx-2 shadow">
+      class="btn mx-2">
       {{ $t('incidents.paginator.next') }}
       <svgicon
         name="fortawesome/chevron-right-solid"
