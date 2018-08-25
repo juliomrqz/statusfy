@@ -50,5 +50,10 @@
       "title": "An error occurred",
       "description": "We're sorry, but we cannot fulfill your request"
     }
+  },
+  "offline": {
+    "title": "You're Offline",
+    "subtitle": "Sorry!",
+    "description": "We were unable to load the page you requested. Please check your network connection and try again."
   }
 }

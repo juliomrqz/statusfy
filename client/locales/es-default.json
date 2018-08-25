@@ -50,5 +50,10 @@
       "title": "Ocurrió un error",
       "description": "Lo sentimos, pero no podemos cumplir con tu solicitud"
     }
+  },
+  "offline": {
+    "title": "Estás Fuera de Línea",
+    "subtitle": "¡Lo sentimos!",
+    "description": "No pudimos cargar la página solicitada. Verifica tu conexión de red y vuelve a intentarlo."
   }
 }

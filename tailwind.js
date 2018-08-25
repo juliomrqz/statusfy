@@ -48,7 +48,7 @@ const colors = {
   'indigo': '#6610f2',
   'green': '#4CAF50',
   'orange': '#fd7e14',
-  'red': '#e51c23',
+  'red': '#e51c23'
 }
 
 const globalGuidelines = {
@@ -58,7 +58,7 @@ const globalGuidelines = {
   'incident-bg': colors['white'],
   'incident-border-color': colors['grey-light'],
 
-  'btn-bg': colors['white'],
+  'btn-bg': colors['white']
 }
 
 module.exports = {
@@ -175,7 +175,7 @@ module.exports = {
   leading: {
     'none': 1,
     'tight': 1.25,
-    'normal': 1.5,
+    'normal': 1.5
     // 'loose': 2
   },
 
@@ -302,7 +302,7 @@ module.exports = {
     // '64': '16rem',
     // '1/2': '50%',
     // '1/3': '33.33333%',
-    '2/3': '66.66667%'
+    '2/3': '66.66667%',
     // '1/4': '25%',
     // '3/4': '75%',
     // '1/5': '20%',
@@ -311,7 +311,7 @@ module.exports = {
     // '4/5': '80%',
     // '1/6': '16.66667%',
     // '5/6': '83.33333%',
-    // 'full': '100%',
+    'full': '100%'
     // 'screen': '100vw'
   },
 
@@ -380,8 +380,8 @@ module.exports = {
   */
 
   maxWidth: {
-    'xs': '20rem'
-    // 'sm': '30rem',
+    'xs': '20rem',
+    'sm': '30rem',
     // 'md': '40rem',
     // 'lg': '50rem',
     // 'xl': '60rem',
@@ -390,6 +390,7 @@ module.exports = {
     // '4xl': '90rem',
     // '5xl': '100rem',
     // 'full': '100%'
+    'screen': '100vw'
   },
 
   /*
@@ -600,12 +601,12 @@ module.exports = {
     leading: [],
     lists: [],
     margin: ['responsive'],
-    maxHeight: false,
+    maxHeight: [],
     maxWidth: [],
     minHeight: false,
     minWidth: false,
     negativeMargin: false,
-    opacity: false,
+    opacity: [],
     outline: ['focus'],
     overflow: false,
     padding: [],

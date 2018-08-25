@@ -165,7 +165,8 @@ module.exports = {
     author: 'Statusfy'
   },
   workbox: {
-    publicPath: '/static/'
+    publicPath: '/static/',
+    offlinePage: '/offline'
   },
   icon: {
     iconSrc: path.join(__dirname, 'client/static/icon.png')

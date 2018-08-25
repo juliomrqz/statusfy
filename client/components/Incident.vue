@@ -51,7 +51,6 @@
       </div>
     </div>
 
-
     <div class="incident-body">
       <div v-if="summary">
         <div v-if="incident.description">{{ incident.description }}</div>
