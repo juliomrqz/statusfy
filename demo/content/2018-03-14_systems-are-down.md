@@ -5,7 +5,7 @@ severity: major-outage
 affectedsystems:
   - cdn
   - conversions
-resolved: false
+resolved: true
 ---
 
 Systems are currently down.
