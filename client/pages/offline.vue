@@ -36,7 +36,7 @@ export default {
 
 <style>
   .absolute {
-    top: 12%;
+    top: 5rem;
     left: 0;
   }
 </style>
