@@ -20,12 +20,21 @@ if (!semver.satisfies(process.version, requiredVersion)) {
 const path = require('path')
 const program = require('commander')
 
-const { dev, build, generate, start, newIncident } = require('../lib')
+const { init, dev, build, generate, start, newIncident } = require('../lib')
 const sourceDir = path.resolve('.')
 
 program
   .version(require('../package.json').version)
   .usage('<command> [options]')
+
+program
+  .command('init')
+  .description('Install a new version of Statusfy')
+  .option('-d, --dir <outDir>', 'specify the installation directory')
+  .action(({ dir }) => {
+    const outDir = dir ? path.resolve(dir) : null
+    wrapCommand(init)(sourceDir, { outDir })
+  })
 
 program
   .command('dev')
