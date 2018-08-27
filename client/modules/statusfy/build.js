@@ -1,4 +1,3 @@
-const env = require('std-env')
 const createDatabase = require('../../../lib/content/database')
 
 const asset = object => {
@@ -6,7 +5,7 @@ const asset = object => {
   const content = JSON.stringify(
     object,
     null,
-    env.production ? 0 : 2
+    process.env.NODE_ENV === 'production' ? 0 : 2
   )
   return {
     source: () => content,

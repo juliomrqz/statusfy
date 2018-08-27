@@ -1,5 +1,4 @@
 const path = require('path')
-const env = require('std-env')
 
 const pkg = require('./package')
 
@@ -14,7 +13,7 @@ module.exports = {
   ** Environment variables
   */
   env: {
-    isDev: !env.production
+    isDev: process.env.NODE_ENV !== 'production'
   },
   /*
   ** Headers of the page
@@ -68,7 +67,7 @@ module.exports = {
       },
       vueI18n: {
         fallbackLocale: 'en',
-        silentTranslationWarn: env.production
+        silentTranslationWarn: process.env.NODE_ENV === 'production'
       }
     }],
     // Doc: https://pwa.nuxtjs.org/
