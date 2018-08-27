@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config:site advanced 1`] = `
+Object {
+  "baseUrl": "https://demo.statusfy.co",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "frontMatterFormat": "yaml",
+    "systems": Array [
+      "cdn",
+      "conversions",
+      "site-delivery",
+      "api",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "Description",
+  "ga": "UA-XXXXXXXXX-Y",
+  "head": Object {
+    "link": Array [
+      Object {
+        "color": "#3e4e88",
+        "href": "/icons/safari-pinned-tab.svg",
+        "rel": "mask-icon",
+      },
+    ],
+    "meta": Array [
+      Object {
+        "charset": "utf-8",
+      },
+      Object {
+        "content": "width=device-width, initial-scale=1",
+        "name": "viewport",
+      },
+      Object {
+        "content": "Statusfy",
+        "name": "generator",
+      },
+      Object {
+        "content": "",
+        "hid": "description",
+        "name": "description",
+      },
+      Object {
+        "content": "",
+        "hid": "description",
+        "name": "description",
+      },
+      Object {
+        "content": "Description",
+        "hid": "description",
+        "name": "description",
+      },
+    ],
+    "title": "Title",
+    "titleTemplate": "%s | Title",
+  },
+  "locales": Array [
+    Object {
+      "code": "en",
+      "file": "en.json",
+      "iso": "en-US",
+      "name": "English",
+    },
+    Object {
+      "code": "es",
+      "file": "es.json",
+      "iso": "es-ES",
+      "name": "Español",
+    },
+  ],
+  "name": "title",
+  "sourceDir": "../../demo",
+  "title": "Title",
+}
+`;
+
+exports[`config:site cli 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "file": "en.json",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "name": "title",
+  "sourceDir": "../../demo",
+  "title": "Title",
+}
+`;
+
+exports[`config:site invalid 1`] = `
+"The default Front Matter Format ([33mcontent.frontMatterFormat[39m) is invalid. These are the valid formats: [36myaml, yml, toml, json[39m.
+The Base URL ([33mbaseUrl[39m) is invalid. Example: [36mhttps://status.yourbaseurl.com[39m.
+The Default Locale ([33mdefaultLocale[39m) value must be included in the locales list. Current value [36mit[39m, defined codes: [36men, es[39m."
+`;
+
+exports[`config:site simple 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "name": "title",
+  "sourceDir": "../../demo",
+  "title": "Title",
+}
+`;
