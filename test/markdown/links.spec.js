@@ -6,7 +6,7 @@ const mdL = md().use(links)
 const internalLinkAsserts = {
   '/': '/',
   '/foo/': '/foo/',
-  '/foo/#hash': '/foo/#hash',
+  '/foo/#hash': '/foo/#hash'
 }
 
 const externalLinks = [
