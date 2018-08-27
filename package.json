@@ -91,7 +91,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^23.4.2",
-    "babel-plugin-dynamic-import-node": "^2.0.0",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-loader": "^2.0.0",
