@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`containers investigating 1`] = `
+<div class="update-block">
+  <div class="update-block-date">2018-04-24T06:39:09.000Z</div>
+  <div class="update-block-content">
+    <div class="update-block-title">Investigating</div>
+    <div class="update-block-body">
+      <p>Our <strong>Files Conversion</strong> Process is responding slowly and we've investigating what is causing this issue.</p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`containers monitoring 1`] = `
+<div class="update-block">
+  <div class="update-block-date">2018-04-12T03:45:12.000Z</div>
+  <div class="update-block-content">
+    <div class="update-block-title">Monitoring</div>
+    <div class="update-block-body">
+      <p>We've added capacity to our origin and are seeing improved system behavior. We continue to monitor the situation.</p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`containers resolved 1`] = `
+<div class="update-block">
+  <div class="update-block-date">2018-04-24T07:24:09.000Z</div>
+  <div class="update-block-content">
+    <div class="update-block-title">Resolved</div>
+    <div class="update-block-body">
+      <p>The Conversion Process is back to normal and we'll continue to monitor.</p>
+      <p>:tada: :100:</p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,17 @@
+import { md, getFragment } from './utils'
+import containers from '@/markdown/containers.js'
+
+const mdC = md().use(containers)
+
 describe('containers', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(1 + 2).toBe(3)
+  const containerLabels = ['investigating', 'resolved', 'monitoring']
+
+  containerLabels.forEach(label => {
+    test(label, async () => {
+      const input = await getFragment(`container-${label}`)
+      const output = mdC.render(input)
+
+      expect(output).toMatchSnapshot()
+    })
   })
 })

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`frontmatter json 1`] = `
+Object {
+  "affectedsystems": Array [
+    "conversions",
+  ],
+  "date": "2018-03-20T02:36:09.000Z",
+  "description": "Our Files Conversion System were not responding properly.",
+  "modified": "2018-03-20T04:20:09.000Z",
+  "resolved": true,
+  "severity": "major-outage",
+  "title": "Files Conversion Issues",
+}
+`;
+
+exports[`frontmatter toml 1`] = `
+Object {
+  "affectedsystems": Array [
+    "conversions",
+  ],
+  "date": 2018-03-20T02:36:09.000Z,
+  "description": "Our Files Conversion System were not responding properly.",
+  "modified": 2018-03-20T04:20:09.000Z,
+  "resolved": true,
+  "severity": "major-outage",
+  "title": "Files Conversion Issues",
+}
+`;
+
+exports[`frontmatter yaml 1`] = `
+Object {
+  "affectedsystems": Array [
+    "conversions",
+  ],
+  "date": 2018-03-20T02:36:09.000Z,
+  "description": "Our Files Conversion System were not responding properly.",
+  "modified": 2018-03-20T04:20:09.000Z,
+  "resolved": true,
+  "severity": "major-outage",
+  "title": "Files Conversion Issues",
+}
+`;
