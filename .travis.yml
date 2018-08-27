@@ -18,5 +18,6 @@ script:
 
   # Test demo
   - cd demo
-  - npm add github:bazzite/statusfy#develop
-  - npx statusfy generate
+  - npm install
+  - npm run build
+  - npm run generate
