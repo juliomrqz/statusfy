@@ -65,7 +65,7 @@
     "markdown-it-emoji": "^1.4.0",
     "moment": "^2.22.2",
     "moment-range": "^4.0.1",
-    "nodemon": "^1.18.3",
+    "nodemon": "^1.18.4",
     "nuxt-edge": "latest",
     "nuxt-i18n": "^5.2.1",
     "opener": "^1.5.0",
