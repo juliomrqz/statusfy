@@ -86,7 +86,7 @@
     "vue-svgicon": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-rc.4",
+    "@babel/core": "^7.0.0",
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
