@@ -52,7 +52,6 @@
     "dayjs": "^1.7.5",
     "esm": "^3.0.80",
     "express": "^4.15.3",
-    "fast-glob": "^2.2.2",
     "fs-extra": "^7.0.0",
     "gray-matter": "^4.0.1",
     "helmet": "^3.13.0",
