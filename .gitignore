@@ -268,3 +268,4 @@ demo/.tmp
 demo/content/**/*.md
 dist
 sw.*
+test/.tmp

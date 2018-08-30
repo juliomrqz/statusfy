@@ -16,7 +16,7 @@
     "lint": "npx eslint --fix --ext .js,.vue --ignore-path .gitignore . bin/ lib/ client/ test/",
     "lint:css": "stylelint 'client/**/*.{css,vue}'",
     "precommit": "npm run lint && npm run lint:css",
-    "test": "jest --config test/jest.config.js",
+    "test": "node test/prepare.js && jest --config test/jest.config.js",
     "svg": "vsvg -s ./client/assets/icons -t ./client/components/icons --es6"
   },
   "repository": {

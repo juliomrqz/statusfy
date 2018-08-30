@@ -22,7 +22,7 @@ Object {
       "scrollBehavior": [Function],
     },
   },
-  "buildDir": "../../demo/.statusfy",
+  "buildDir": "../.tmp/advanced/.statusfy",
   "css": Array [
     "~/assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
@@ -32,7 +32,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../../demo/dist",
+    "dir": "../.tmp/advanced/dist",
     "fallback": "404.html",
     "minify": Object {
       "removeOptionalTags": false,
@@ -79,7 +79,7 @@ Object {
     "titleTemplate": "%s | Title",
   },
   "icon": Object {
-    "iconSrc": "../../demo/assets/icon.png",
+    "iconSrc": "../.tmp/advanced/assets/icon.png",
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -154,7 +154,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
-    "../../demo/node_modules",
+    "../.tmp/advanced/node_modules",
   ],
   "plugins": Array [
     "~/plugins/axios",
@@ -168,7 +168,7 @@ Object {
   "srcDir": "../../client",
   "statusfy": Object {
     "assets": Object {
-      "mainLogo": "../../demo/assets/img/logo.svg",
+      "mainLogo": "../.tmp/advanced/assets/img/logo.svg",
     },
     "langDir": "locales/",
     "locales": Array [
@@ -185,7 +185,7 @@ Object {
         "name": "Español",
       },
     ],
-    "publicFilesPath": "../../demo/public",
+    "publicFilesPath": "../.tmp/advanced/public",
     "siteConfig": Object {
       "baseUrl": "https://demo.statusfy.co",
       "build": Object {
@@ -258,14 +258,14 @@ Object {
         },
       ],
       "name": "title",
-      "sourceDir": "../../demo",
+      "sourceDir": "../.tmp/advanced",
       "title": "Title",
     },
-    "sourceDir": "../../demo",
+    "sourceDir": "../.tmp/advanced",
   },
   "workbox": Object {
     "cacheId": "title",
-    "globDirectory": "../../demo/.statusfy/dist/client",
+    "globDirectory": "../.tmp/advanced/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
   },
@@ -294,7 +294,7 @@ Object {
       "scrollBehavior": [Function],
     },
   },
-  "buildDir": "../../demo/.statusfy",
+  "buildDir": "../.tmp/cli/.statusfy",
   "css": Array [
     "~/assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
@@ -304,7 +304,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../../demo/dist",
+    "dir": "../.tmp/cli/dist",
     "fallback": "404.html",
     "minify": Object {
       "removeOptionalTags": false,
@@ -339,7 +339,7 @@ Object {
     "titleTemplate": "%s | Title",
   },
   "icon": Object {
-    "iconSrc": "../../demo/assets/icon.png",
+    "iconSrc": "../../client/static/icon.png",
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -402,7 +402,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
-    "../../demo/node_modules",
+    "../.tmp/cli/node_modules",
   ],
   "plugins": Array [
     "~/plugins/axios",
@@ -416,7 +416,7 @@ Object {
   "srcDir": "../../client",
   "statusfy": Object {
     "assets": Object {
-      "mainLogo": "../../demo/assets/img/logo.svg",
+      "mainLogo": "../../client/assets/img/logo.svg",
     },
     "langDir": "locales/",
     "locales": Array [
@@ -427,7 +427,7 @@ Object {
         "name": "English",
       },
     ],
-    "publicFilesPath": "../../demo/public",
+    "publicFilesPath": "../.tmp/cli/public",
     "siteConfig": Object {
       "baseUrl": "/",
       "build": Object {
@@ -453,14 +453,14 @@ Object {
         },
       ],
       "name": "title",
-      "sourceDir": "../../demo",
+      "sourceDir": "../.tmp/cli",
       "title": "Title",
     },
-    "sourceDir": "../../demo",
+    "sourceDir": "../.tmp/cli",
   },
   "workbox": Object {
     "cacheId": "title",
-    "globDirectory": "../../demo/.statusfy/dist/client",
+    "globDirectory": "../.tmp/cli/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
   },
@@ -489,7 +489,7 @@ Object {
       "scrollBehavior": [Function],
     },
   },
-  "buildDir": "../../demo/.statusfy",
+  "buildDir": "../.tmp/simple/.statusfy",
   "css": Array [
     "~/assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
@@ -499,7 +499,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../../demo/dist",
+    "dir": "../.tmp/simple/dist",
     "fallback": "404.html",
     "minify": Object {
       "removeOptionalTags": false,
@@ -529,7 +529,7 @@ Object {
     "titleTemplate": "%s | Title",
   },
   "icon": Object {
-    "iconSrc": "../../demo/assets/icon.png",
+    "iconSrc": "../../client/static/icon.png",
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -586,7 +586,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
-    "../../demo/node_modules",
+    "../.tmp/simple/node_modules",
   ],
   "plugins": Array [
     "~/plugins/axios",
@@ -600,7 +600,7 @@ Object {
   "srcDir": "../../client",
   "statusfy": Object {
     "assets": Object {
-      "mainLogo": "../../demo/assets/img/logo.svg",
+      "mainLogo": "../../client/assets/img/logo.svg",
     },
     "langDir": "locales/",
     "locales": Array [
@@ -610,7 +610,7 @@ Object {
         "name": "English",
       },
     ],
-    "publicFilesPath": "../../demo/public",
+    "publicFilesPath": null,
     "siteConfig": Object {
       "baseUrl": "/",
       "build": Object {
@@ -635,14 +635,14 @@ Object {
         },
       ],
       "name": "title",
-      "sourceDir": "../../demo",
+      "sourceDir": "../.tmp/simple",
       "title": "Title",
     },
-    "sourceDir": "../../demo",
+    "sourceDir": "../.tmp/simple",
   },
   "workbox": Object {
     "cacheId": "title",
-    "globDirectory": "../../demo/.statusfy/dist/client",
+    "globDirectory": "../.tmp/simple/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
   },

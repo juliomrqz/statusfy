@@ -73,7 +73,7 @@ Object {
     },
   ],
   "name": "title",
-  "sourceDir": "../../demo",
+  "sourceDir": "../.tmp/advanced",
   "title": "Title",
 }
 `;
@@ -104,7 +104,7 @@ Object {
     },
   ],
   "name": "title",
-  "sourceDir": "../../demo",
+  "sourceDir": "../.tmp/cli",
   "title": "Title",
 }
 `;
@@ -140,7 +140,7 @@ Object {
     },
   ],
   "name": "title",
-  "sourceDir": "../../demo",
+  "sourceDir": "../.tmp/simple",
   "title": "Title",
 }
 `;

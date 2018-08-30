@@ -2,8 +2,7 @@ import path, { isAbsolute } from 'path'
 import _ from 'lodash'
 
 import generateConfig from '@/config/generate'
-import { getFragment } from './utils'
-const sourceDir = path.resolve(__dirname, '../../demo')
+const tempPath = path.resolve(__dirname, '../.tmp')
 
 const relative = (dir) => {
   return path.relative(__dirname, dir)
@@ -14,8 +13,9 @@ describe('config:nuxt', () => {
 
   configLabels.forEach(label => {
     test(label, () => {
-      const content = getFragment(label)
-      const generatedConfig = generateConfig(sourceDir, {}, content)
+      const sourceDir = path.resolve(tempPath, label)
+
+      const generatedConfig = generateConfig(sourceDir, {})
       let nuxtConfig = generatedConfig.nuxtConfig
 
       // Check absolute dirs
@@ -25,7 +25,9 @@ describe('config:nuxt', () => {
       expect(isAbsolute(nuxtConfig.rootDir)).toBeTruthy()
       // expect(isAbsolute(nuxtConfig.srcDir)).toBeTruthy()
       expect(isAbsolute(nuxtConfig.statusfy.assets.mainLogo)).toBeTruthy()
-      expect(isAbsolute(nuxtConfig.statusfy.publicFilesPath)).toBeTruthy()
+      if (nuxtConfig.statusfy.publicFilesPath) {
+        expect(isAbsolute(nuxtConfig.statusfy.publicFilesPath)).toBeTruthy()
+      }
       expect(isAbsolute(nuxtConfig.statusfy.siteConfig.sourceDir)).toBeTruthy()
       expect(isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
       for (const dir of nuxtConfig.modulesDir) {
