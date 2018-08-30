@@ -5,10 +5,11 @@
   "description": "Statusfy demo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ../bin/statusfy dev",
-    "build": "node ../bin/statusfy build",
-    "start": "node ../bin/statusfy start",
-    "generate": "node ../bin/statusfy generate",
+    "prepare": "node scripts/prepare.js",
+    "dev": "npm run prepare && node ../bin/statusfy dev",
+    "build": "npm run prepare && node ../bin/statusfy build",
+    "start": "npm run prepare && node ../bin/statusfy start",
+    "generate": "npm run prepare && node ../bin/statusfy generate",
     "new-incident": "node ../bin/statusfy new-incident"
   },
   "author": "Julio Marquez",

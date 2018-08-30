@@ -265,5 +265,6 @@ client/.tmp
 client/locales/*.js
 demo/.statusfy
 demo/.tmp
+demo/content/**/*.md
 dist
 sw.*
