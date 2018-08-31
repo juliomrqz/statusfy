@@ -12,10 +12,6 @@ const severities = [
   'major-outage'
 ]
 
-const getRandom = (max, min = 1) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
 const getDaySubtraction = (index) => {
   // Two incidents per day
   // a_n = 1/4 (2 n + (-1)^(n + 1) - 3)
@@ -23,6 +19,8 @@ const getDaySubtraction = (index) => {
 
   return (1 / 4) * ((2 * index) + Math.pow(-1, 1 + index) - 3)
 }
+
+const getId = (n, length) => n % length
 
 const incidentTemplate = _.template(`---
 id: <%= data.id %>
@@ -45,7 +43,7 @@ affectedsystems:
 <% }); %>
 `)
 
-module.exports = function generateContent (dest, finalDate, amount = 50) {
+module.exports = function generateContent (dest, finalDate, amount = 20) {
   // Empty Destination
   fs.emptyDirSync(dest)
   fs.outputFileSync(path.resolve(dest, '.keep'), '')
@@ -58,12 +56,12 @@ module.exports = function generateContent (dest, finalDate, amount = 50) {
       monthSubtraction += 1
     }
 
-    const titleIndex = getRandom(data.title.en.length) - 1
-    const contentIndex = getRandom(data.content.en.length) - 1
+    const titleIndex = getId(i, data.title.en.length)
+    const contentIndex = getId(i, data.content.en.length)
     const updatesContentIds = [
-      getRandom(data.updates.content.en.length) - 1,
-      getRandom(data.updates.content.en.length) - 1,
-      getRandom(data.updates.content.en.length) - 1
+      getId(i, data.updates.content.en.length),
+      getId(i + 1, data.updates.content.en.length),
+      getId(i + 2, data.updates.content.en.length)
     ]
     const date = moment(finalDate)
       .subtract(getDaySubtraction(i), 'd')
@@ -74,8 +72,8 @@ module.exports = function generateContent (dest, finalDate, amount = 50) {
       date: date.toISOString(),
       modified: date.add(2, 'h').toISOString(),
       resolved: i > 1,
-      severity: severities[getRandom(4) - 1],
-      affectedsystems: data.affectedsystems.slice(0, getRandom(4)),
+      severity: severities[getId(i, 4)],
+      affectedsystems: data.affectedsystems.slice(0, getId(i, 4) + 1),
       title: {
         en: data.title.en[titleIndex],
         es: data.title.es[titleIndex]

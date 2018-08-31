@@ -5,7 +5,8 @@ const generateContent = require('../../test/demo/generate-content')
 const prepare = () => {
   generateContent(
     path.resolve(__dirname, '../content'),
-    new Date()
+    new Date(),
+    50
   )
 }
 

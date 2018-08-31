@@ -16,7 +16,7 @@
     "lint": "npx eslint --fix --ext .js,.vue --ignore-path .gitignore . bin/ lib/ client/ test/",
     "lint:css": "stylelint 'client/**/*.{css,vue}'",
     "precommit": "npm run lint && npm run lint:css",
-    "test": "node test/prepare.js && jest --config test/jest.config.js",
+    "test": "cross-env NODE_ENV=test node test/prepare.js && jest --config test/jest.config.js",
     "svg": "vsvg -s ./client/assets/icons -t ./client/components/icons --es6"
   },
   "repository": {
@@ -45,7 +45,6 @@
     "commander": "^2.17.1",
     "consola": "^1.4.3",
     "cors": "^2.8.4",
-    "cross-env": "^5.0.1",
     "cross-spawn": "^6.0.5",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.0",
@@ -90,6 +89,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
+    "cross-env": "^5.2.0",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.0.0",
