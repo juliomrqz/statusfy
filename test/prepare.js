@@ -17,7 +17,7 @@ const prepare = async () => {
   await renameP(tempBasePath, path.resolve(tempPath, 'advanced'))
   await fse.emptyDir(path.resolve(tempBasePath, 'content'))
 
-  generateContent(path.resolve(tempBasePath, 'content'), new Date('2018-08-30'), 10)
+  generateContent(path.resolve(tempBasePath, 'content'), new Date('2018-08-31T19:03:43.219Z'))
 
   const testProjects = ['simple', 'cli', 'advanced', 'invalid']
 
