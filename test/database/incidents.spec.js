@@ -11,7 +11,7 @@ describe('database:incidents', () => {
   let database
 
   beforeAll(async () => {
-    database = await createDatabase(siteConfig)
+    database = await createDatabase(siteConfig, '2018-08-31T19:03:43.219Z')
   })
 
   test('all', async () => {
