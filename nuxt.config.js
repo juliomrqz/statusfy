@@ -4,6 +4,7 @@ const pkg = require('./package')
 
 const langDir = 'locales/'
 const mainColor = '#1a2c5b'
+const iconSizes = [16, 120, 144, 152, 192, 384, 512]
 
 module.exports = {
   srcDir: path.join(__dirname, './client/'),
@@ -143,7 +144,8 @@ module.exports = {
     assets: {
       // Prefer absolute path name
       mainLogo: path.join(__dirname, 'client', 'assets/img/logo.svg')
-    }
+    },
+    iconSizes
   },
   // PWA
   manifest: {
@@ -169,6 +171,7 @@ module.exports = {
     offlinePage: '/offline'
   },
   icon: {
-    iconSrc: path.join(__dirname, 'client/static/icon.png')
+    iconSrc: path.join(__dirname, 'client/static/icon.png'),
+    sizes: iconSizes
   }
 }

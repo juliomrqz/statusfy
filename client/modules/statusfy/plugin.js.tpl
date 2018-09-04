@@ -7,7 +7,8 @@ export default (ctx, inject) => {
     dayjs,
     assets: {
       mainLogo: require('<%= options.assets.mainLogo %>')
-    }
+    },
+    iconSizes: [<%= options.iconSizes.join(', ') %>]
   }
 
   // Inject Statusfy to the context as $statusfy

@@ -80,6 +80,15 @@ Object {
   },
   "icon": Object {
     "iconSrc": "../.tmp/advanced/assets/icon.png",
+    "sizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -170,6 +179,15 @@ Object {
     "assets": Object {
       "mainLogo": "../.tmp/advanced/assets/img/logo.svg",
     },
+    "iconSizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
     "langDir": "locales/",
     "locales": Array [
       Object {
@@ -340,6 +358,15 @@ Object {
   },
   "icon": Object {
     "iconSrc": "../../client/static/icon.png",
+    "sizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -418,6 +445,15 @@ Object {
     "assets": Object {
       "mainLogo": "../../client/assets/img/logo.svg",
     },
+    "iconSizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
     "langDir": "locales/",
     "locales": Array [
       Object {
@@ -530,6 +566,15 @@ Object {
   },
   "icon": Object {
     "iconSrc": "../../client/static/icon.png",
+    "sizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
   },
   "loading": Object {
     "color": "#1a2c5b",
@@ -602,6 +647,15 @@ Object {
     "assets": Object {
       "mainLogo": "../../client/assets/img/logo.svg",
     },
+    "iconSizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
     "langDir": "locales/",
     "locales": Array [
       Object {

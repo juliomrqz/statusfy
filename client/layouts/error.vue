@@ -16,7 +16,10 @@
 </template>
 
 <script>
+import Head from '~/components/mixins/head'
+
 export default {
+  mixins: [Head],
   props: {
     error: {
       type: Object,
