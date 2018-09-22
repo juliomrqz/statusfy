@@ -168,7 +168,26 @@ module.exports = {
   },
   workbox: {
     publicPath: '/static/',
-    offlinePage: '/offline'
+    offlinePage: '/offline',
+    _runtimeCaching: [
+      {
+        urlPattern: '/static/(?!content).*$',
+        handler: 'cacheFirst',
+        method: 'GET'
+      }
+    ],
+    runtimeCaching: [
+      {
+        urlPattern: '(/static/content)?/api/v1/.*',
+        strategyOptions: {
+          cacheName: 'api',
+          cacheExpiration: {
+            maxEntries: 10,
+            maxAgeSeconds: 300
+          }
+        }
+      }
+    ]
   },
   icon: {
     iconSrc: path.join(__dirname, 'client/static/icon.png'),
