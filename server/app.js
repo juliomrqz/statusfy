@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const helmet = require('helmet')
-const { Nuxt } = require('nuxt-edge')
+const { Nuxt } = require('nuxt')
 
 const language = require('./middlewares/language')
 const buildApiRouter = require('./api')
@@ -47,7 +47,7 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port, a
     if (nuxtConfig.dev) {
       const {
         Builder
-      } = require('nuxt-edge')
+      } = require('nuxt')
 
       const builder = new Builder(nuxt)
       await builder.build()

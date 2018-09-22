@@ -24,7 +24,7 @@ Object {
   },
   "buildDir": "../.tmp/advanced/.statusfy",
   "css": Array [
-    "~/assets/css/tailwind.css",
+    "~assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
   "dev": true,
@@ -314,7 +314,7 @@ Object {
   },
   "buildDir": "../.tmp/cli/.statusfy",
   "css": Array [
-    "~/assets/css/tailwind.css",
+    "~assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
   "dev": true,
@@ -527,7 +527,7 @@ Object {
   },
   "buildDir": "../.tmp/simple/.statusfy",
   "css": Array [
-    "~/assets/css/tailwind.css",
+    "~assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
   "dev": true,

@@ -37,7 +37,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/tailwind.css',
+    '~assets/css/tailwind.css',
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
