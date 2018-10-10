@@ -282,10 +282,29 @@ Object {
     "sourceDir": "../.tmp/advanced",
   },
   "workbox": Object {
+    "_runtimeCaching": Array [
+      Object {
+        "handler": "cacheFirst",
+        "method": "GET",
+        "urlPattern": "/static/(?!content).*$",
+      },
+    ],
     "cacheId": "title",
     "globDirectory": "../.tmp/advanced/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
+    "runtimeCaching": Array [
+      Object {
+        "strategyOptions": Object {
+          "cacheExpiration": Object {
+            "maxAgeSeconds": 300,
+            "maxEntries": 10,
+          },
+          "cacheName": "title_title_title_api",
+        },
+        "urlPattern": "(/static/content)?/api/v1/.*",
+      },
+    ],
   },
 }
 `;
@@ -495,10 +514,29 @@ Object {
     "sourceDir": "../.tmp/cli",
   },
   "workbox": Object {
+    "_runtimeCaching": Array [
+      Object {
+        "handler": "cacheFirst",
+        "method": "GET",
+        "urlPattern": "/static/(?!content).*$",
+      },
+    ],
     "cacheId": "title",
     "globDirectory": "../.tmp/cli/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
+    "runtimeCaching": Array [
+      Object {
+        "strategyOptions": Object {
+          "cacheExpiration": Object {
+            "maxAgeSeconds": 300,
+            "maxEntries": 10,
+          },
+          "cacheName": "title_title_api",
+        },
+        "urlPattern": "(/static/content)?/api/v1/.*",
+      },
+    ],
   },
 }
 `;
@@ -695,10 +733,29 @@ Object {
     "sourceDir": "../.tmp/simple",
   },
   "workbox": Object {
+    "_runtimeCaching": Array [
+      Object {
+        "handler": "cacheFirst",
+        "method": "GET",
+        "urlPattern": "/static/(?!content).*$",
+      },
+    ],
     "cacheId": "title",
     "globDirectory": "../.tmp/simple/.statusfy/dist/client",
     "offlinePage": "/offline",
     "publicPath": "/static/",
+    "runtimeCaching": Array [
+      Object {
+        "strategyOptions": Object {
+          "cacheExpiration": Object {
+            "maxAgeSeconds": 300,
+            "maxEntries": 10,
+          },
+          "cacheName": "title_api",
+        },
+        "urlPattern": "(/static/content)?/api/v1/.*",
+      },
+    ],
   },
 }
 `;
