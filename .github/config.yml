@@ -1,4 +1,3 @@
-
 updateDocsWhiteList:
   - BUG
   - Chore
@@ -11,7 +10,7 @@ requestInfoReplyComment: >
 requestInfoLabelToAdd: request-more-info
 
 newPRWelcomeComment: >
-  Thanks so much for opening your first pull request! Please check out our contributing guidelines. 
+  Thanks so much for opening your first pull request! Please check out our contributing guidelines.
 firstPRMergeComment: >
   Congrats on merging your first pull request here! :tada:
 newIssueWelcomeComment: >
@@ -19,10 +18,10 @@ newIssueWelcomeComment: >
 sentimentBotToxicityThreshold: .7
 
 sentimentBotReplyComment: >
-  Please be sure to review the code of conduct and be respectful of other users. cc/ @juliomrqz @patriciajumper
+  Please be sure to review the code of conduct and be respectful of other users. cc/ @juliomrqz @giovagnoli @patriciajumper
 lockThreads:
   toxicityThreshold: .7
   numComments: 2
   setTimeInHours: 72
   replyComment: >
-    This thread is being locked due to exceeding the toxicity minimums. cc/ @juliomrqz @patriciajumper
+    This thread is being locked due to exceeding the toxicity minimums. cc/ @juliomrqz @giovagnoli @patriciajumper

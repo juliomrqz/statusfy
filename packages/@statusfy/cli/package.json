@@ -1,0 +1,25 @@
+{
+  "name": "@statusfy/cli",
+  "version": "0.0.1-alpha.1",
+  "description": "CLI for Statusfy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "author": "Julio Marquez",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://github.com/bazzite/statusfy#readme",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "semver": "^5.5.0"
+  },
+  "peerDependencies": {
+    "@statusfy/core": "^0.0.1-alpha.1",
+    "@statusfy/editor": "^0.0.1-alpha.1",
+    "@statusfy/shared-utils": "^0.0.1-alpha.1"
+  }
+}

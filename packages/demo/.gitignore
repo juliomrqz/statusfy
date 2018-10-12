@@ -1,0 +1,6 @@
+.statusfy
+dist
+
+# only for demo
+.tmp
+content/**/*.md

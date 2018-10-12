@@ -259,13 +259,3 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,sublimetext,visualstudiocode,intellij+all
-
-# Statusfy
-client/.tmp
-client/locales/*.js
-demo/.statusfy
-demo/.tmp
-demo/content/**/*.md
-dist
-sw.*
-test/.tmp

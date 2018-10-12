@@ -9,15 +9,15 @@ cache:
     - "demo/node_modules"
 
 install:
-  - npm install
+  - yarn install
+  - yarn run lerna bootstrap
 
 script:
   # Test Statusfy
-  - npm run lint && npm run lint:css
-  - npm run test
+  - yarn run lint
+  - yarn run test
 
   # Test demo
-  - cd demo
-  - npm install
-  - npm run build
-  - npm run generate
+  - cd packages/demo
+  - yarn run build
+  - yarn run generate

@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "statusfy-website",
+  "version": "0.0.1-alpha.1",
+  "description": "Website for Statusfy",
+  "author": "Julio Marquez",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.3",
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/sitemap": "^0.1.1",
+    "nuxt": "^2.1.0",
+    "nuxt-i18n": "^5.4.2",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.14.3"
+  },
+  "engines": {
+    "node": ">=8.10"
+  }
+}

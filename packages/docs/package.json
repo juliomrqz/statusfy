@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "statusfy-docs",
+  "version": "0.0.1-alpha.1",
+  "description": "Statusfy Documentation",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vuepress dev src",
+    "build": "npx vuepress build src"
+  },
+  "engines": {
+    "node": ">=8.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy-docs.git"
+  },
+  "keywords": [
+    "statusfy",
+    "documentation"
+  ],
+  "author": "Julio Marquez",
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy-docs/issues"
+  },
+  "homepage": "https://docs.statusfy.co",
+  "devDependencies": {
+    "@statusfy/shared-utils": "^0.0.1-alpha.1",
+    "vuepress": "^0.14.4"
+  }
+}

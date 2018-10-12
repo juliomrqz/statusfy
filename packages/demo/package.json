@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "statusfy-demo",
+  "version": "0.0.1-alpha.1",
+  "description": "Statusfy demo",
+  "scripts": {
+    "prepare": "node scripts/prepare.js",
+    "dev": "npm run prepare && statusfy dev",
+    "build": "npm run prepare && statusfy build",
+    "start": "npm run prepare && statusfy start",
+    "generate": "npm run prepare && statusfy generate",
+    "new-incident": "statusfy new-incident"
+  },
+  "author": "Julio Marquez",
+  "license": "MIT",
+  "dependencies": {
+    "statusfy": "^0.0.1-alpha.1"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  }
+}

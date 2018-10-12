@@ -1,0 +1,21 @@
+{
+  "name": "Statusfy Documentation",
+  "short_name": "Statusfy Docs",
+  "description": "A marvelous open source Status Page system",
+  "icons": [
+    {
+      "src": "/assets/icons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3e4e88"
+}

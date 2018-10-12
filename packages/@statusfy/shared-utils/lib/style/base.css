@@ -1,0 +1,47 @@
+/* Custom Styles */
+:root {
+  /* Colors */
+  --transparent: config('colors.transparent');
+  --black: config('colors.black');
+  --grey-darkest: config('colors.grey-darkest');
+  --grey-darker: config('colors.grey-darker');
+  --grey-dark: config('colors.grey-dark');
+  --grey: config('colors.grey');
+  --grey-light: config('colors.grey-light');
+  --grey-lighter: config('colors.grey-lighter');
+  --grey-lightest: config('colors.grey-lightest');
+  --white: config('colors.white');
+
+  --blue: config('colors.blue');
+  --indigo: config('colors.indigo');
+  --green: config('colors.green');
+  --orange: config('colors.orange');
+  --red: config('colors.red');
+
+  /* Breakpoints */
+  --breakpoint-sm: config('screens.sm');
+  --breakpoint-md: config('screens.md');
+  --breakpoint-lg: config('screens.lg');
+
+  /* Fonts */
+  --font-family-sans-serif: config('fonts.sans');
+  --font-family-monospace: config('fonts.mono');
+}
+
+body {
+  background-color: config('globalGuidelines.body-bg');
+  color: config('globalGuidelines.body-color');
+
+  @apply font-sans text-black text-base;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @apply text-grey-darker;
+
+  &:hover {
+    @apply text-black;
+  }
+}

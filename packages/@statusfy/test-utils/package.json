@@ -1,0 +1,15 @@
+{
+  "name": "@statusfy/test-utils",
+  "version": "0.0.1-alpha.1",
+  "description": "Test Utils for Statusfy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "author": "Julio Marquez",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://github.com/bazzite/statusfy#readme"
+}

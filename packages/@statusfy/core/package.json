@@ -1,0 +1,82 @@
+{
+  "name": "@statusfy/core",
+  "version": "0.0.1-alpha.1",
+  "description": "Core of Statusfy",
+  "author": "Julio Marquez",
+  "license": "BSD-3-Clause",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint:scripts": "eslint --fix --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
+    "lint:css": "stylelint 'client/**/*.{css,vue}'",
+    "lint": "npm run lint:scripts && npm run lint:css",
+    "prepare-test": "cross-env NODE_ENV=test node test/prepare.js",
+    "svg": "vsvg -s ./client/assets/icons -t ./client/components/icons --es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://statusfy.co",
+  "keywords": [
+    "bazzite",
+    "statusfy",
+    "generator",
+    "web-application",
+    "statuspage"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.5",
+    "@nuxtjs/axios": "^5.3.3",
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.5.0",
+    "@statusfy/markdown": "^0.0.1-alpha.1",
+    "@statusfy/shared-utils": "^0.0.1-alpha.1",
+    "body-parser": "^1.18.3",
+    "browser-sync": "^2.26.0",
+    "cors": "^2.8.4",
+    "cross-spawn": "^6.0.5",
+    "dayjs": "^1.7.7",
+    "esm": "^3.0.83",
+    "express": "^4.15.3",
+    "helmet": "^3.14.0",
+    "inquirer": "^6.2.0",
+    "locale-code": "^2.0.1",
+    "lodash.clonedeepwith": "^4.5.0",
+    "lodash.drop": "^4.1.1",
+    "lodash.isstring": "^4.0.1",
+    "lodash.sortby": "^4.7.0",
+    "lru-cache": "^4.1.3",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "nuxt": "^2.1.0",
+    "nuxt-i18n": "^5.4.0",
+    "opener": "^1.5.0",
+    "portfinder": "^1.0.17",
+    "stylelint": "^9.6.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "v-tooltip": "^2.0.0-rc.33",
+    "vue-svgicon": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
+    "@statusfy/test-utils": "^0.0.1-alpha.1",
+    "babel-core": "^7.0.0-0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recess-order": "^2.0.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  }
+}

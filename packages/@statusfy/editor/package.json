@@ -1,0 +1,16 @@
+{
+  "name": "@statusfy/editor",
+  "version": "0.0.1-alpha.1",
+  "description": "Editor for Statusfy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "author": "Julio Marquez",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://github.com/bazzite/statusfy#readme"
+}

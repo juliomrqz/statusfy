@@ -19,21 +19,24 @@
 
 :warning: This project is in alpha state, under active development.
 
-## Build Setup
+## Install
 
 ``` bash
 # install dependencies
-$ npm install
+$ yarn add vuepress -D
+```
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Development
 
-# build for production and launch server
-$ npm run build
-$ npm start
+:warning: You must at least use `node >= 8.10`.
 
-# generate static project
-$ npm run generate
+``` bash
+# install dependencies
+yarn
+# serves Statusfy's own demo
+yarn demo:dev 
+# make sure your code change pass the test
+yarn test
 ```
 
 ## Demo
