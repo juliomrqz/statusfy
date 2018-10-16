@@ -11,7 +11,7 @@ const modulesDir = [
 
 // Hack: allow to execute using lerna/yarn workspaces
 if (process.env.STATUSFY_LERNA) {
-  modulesDir.push(path.join(__dirname, '..', '..', '..', 'node_modules'))
+  modulesDir.push(path.relative(__dirname, path.join(__dirname, '..', '..', '..', 'node_modules')))
 }
 
 module.exports = {

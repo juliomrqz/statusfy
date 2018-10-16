@@ -158,6 +158,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
+    "../../../node_modules",
     "../.tmp/simple/node_modules",
     "../.tmp/cli/node_modules",
     "../.tmp/advanced/node_modules",
@@ -440,6 +441,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
+    "../../../node_modules",
     "../.tmp/simple/node_modules",
     "../.tmp/cli/node_modules",
   ],
@@ -657,6 +659,7 @@ Object {
   ],
   "modulesDir": Array [
     "../../node_modules",
+    "../../../node_modules",
     "../.tmp/simple/node_modules",
   ],
   "plugins": Array [

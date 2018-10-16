@@ -32,7 +32,7 @@ describe('config:nuxt', () => {
       expect(isAbsolute(nuxtConfig.statusfy.siteConfig.sourceDir)).toBeTruthy()
       expect(isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
       for (const dir of nuxtConfig.modulesDir) {
-        expect(isAbsolute(dir)).toBeTruthy()
+        expect(isString(dir)).toBeTruthy()
       }
 
       expect(nuxtConfig.modulesDir.length).toBeGreaterThanOrEqual(2)

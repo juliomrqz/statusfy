@@ -9,8 +9,7 @@ cache:
     - "demo/node_modules"
 
 install:
-  - yarn install
-  - yarn run lerna bootstrap
+  - yarn run install-dependencies
 
 script:
   # Test Statusfy
@@ -18,6 +17,5 @@ script:
   - yarn run test
 
   # Test demo
-  - cd packages/demo
-  - yarn run build
-  - yarn run generate
+  - yarn run demo:build
+  - yarn run demo:generate
