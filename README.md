@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy" target="_blank">
-    <img src="https://raw.githubusercontent.com/bazzite/statusfy-docs/master/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
+    <img src="https://raw.githubusercontent.com/bazzite/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
   </a>
 </p>
 
