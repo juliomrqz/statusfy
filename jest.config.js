@@ -24,5 +24,10 @@ module.exports = {
   },
   snapshotSerializers: [
     '<rootDir>/node_modules/jest-serializer-vue'
-  ]
+  ],
+  globals: {
+    'vue-jest': {
+      babelConfig: './babel.config.js'
+    }
+  }
 }
