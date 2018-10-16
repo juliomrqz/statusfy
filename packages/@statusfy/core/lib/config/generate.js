@@ -1,20 +1,27 @@
 const path = require('path')
 const fs = require('fs')
 const defaultsDeep = require('lodash/defaultsDeep')
-const esm = require('esm')(module, {
-  cache: true,
-  cjs: {
-    cache: true,
-    vars: true,
-    namedExports: true
-  }
-})
+const { esm, logger, style } = require('@statusfy/shared-utils')
 
 const loadConfig = require('./load')
+const { colors } = style
 
 module.exports = function generateConfig (sourceDir, cliOptions) {
   const nuxtConfig = esm(path.join(__dirname, '../../nuxt.config.js'))
-  const siteConfig = loadConfig(sourceDir)
+  const loadedConfig = loadConfig(sourceDir)
+
+  const siteConfig = loadedConfig.config
+  const siteConfigErrors = loadedConfig.errors
+
+  try {
+    if (siteConfigErrors && siteConfigErrors.length > 0) {
+      logger.fatal('Your site configuration is invalid', siteConfigErrors.join('\n'))
+      process.exit(1)
+    }
+  } catch (error) {
+    logger.error(error)
+    process.exit(1)
+  }
 
   // General
   nuxtConfig.dev = !(process.env.NODE_ENV === 'production')
@@ -22,6 +29,10 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   nuxtConfig.buildDir = path.join(sourceDir, '.statusfy')
   nuxtConfig.modulesDir.push(path.join(sourceDir, 'node_modules'))
   nuxtConfig.modulesDir = [...new Set(nuxtConfig.modulesDir)]
+
+  // Style
+  nuxtConfig.loading.color = colors.black
+  nuxtConfig.meta.theme_color = colors.black
 
   // Statusfy module configuration
   nuxtConfig.server = {

@@ -6,9 +6,7 @@ Object {
     "browserBaseURL": "/",
   },
   "build": Object {
-    "analyze": Object {
-      "analyzerMode": "static",
-    },
+    "analyze": true,
     "extend": [Function],
     "plugins": Array [
       Object {
@@ -88,7 +86,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#1a2c5b",
+    "color": "#22292f",
   },
   "manifest": Object {
     "description": "Description",
@@ -107,7 +105,7 @@ Object {
     "ogDescription": false,
     "ogHost": "https://demo.statusfy.co",
     "ogTitle": false,
-    "theme_color": "#1a2c5b",
+    "theme_color": "#22292f",
   },
   "mode": "universal",
   "modules": Array [
@@ -314,9 +312,7 @@ Object {
     "browserBaseURL": "/",
   },
   "build": Object {
-    "analyze": Object {
-      "analyzerMode": "static",
-    },
+    "analyze": true,
     "extend": [Function],
     "plugins": Array [
       Object {
@@ -384,7 +380,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#1a2c5b",
+    "color": "#22292f",
   },
   "manifest": Object {
     "description": "",
@@ -403,7 +399,7 @@ Object {
     "ogDescription": false,
     "ogHost": "/",
     "ogTitle": false,
-    "theme_color": "#1a2c5b",
+    "theme_color": "#22292f",
   },
   "mode": "universal",
   "modules": Array [
@@ -544,9 +540,7 @@ Object {
     "browserBaseURL": "/",
   },
   "build": Object {
-    "analyze": Object {
-      "analyzerMode": "static",
-    },
+    "analyze": true,
     "extend": [Function],
     "plugins": Array [
       Object {
@@ -609,7 +603,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#1a2c5b",
+    "color": "#22292f",
   },
   "manifest": Object {
     "description": "",
@@ -628,7 +622,7 @@ Object {
     "ogDescription": false,
     "ogHost": "/",
     "ogTitle": false,
-    "theme_color": "#1a2c5b",
+    "theme_color": "#22292f",
   },
   "mode": "universal",
   "modules": Array [

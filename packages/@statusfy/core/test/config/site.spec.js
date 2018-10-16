@@ -1,7 +1,8 @@
 import path from 'path'
-import consola from 'consola'
 
 import generateConfig from '@/core/lib/config/generate'
+import loadConfig from '@/core/lib/config/load'
+
 const tempPath = path.resolve(__dirname, '../.tmp')
 
 describe('config:site', () => {
@@ -21,18 +22,11 @@ describe('config:site', () => {
   })
 
   test('invalid', () => {
-    const realProcess = process
-    const exitMock = jest.fn()
-    consola.clear().add({
-      log: jest.fn()
-    })
-    global.process = { ...realProcess, exit: exitMock }
-
     const sourceDir = path.resolve(tempPath, 'invalid')
-    generateConfig(sourceDir, {})
+    const loadedConfig = loadConfig(sourceDir)
 
-    expect(consola.reporters[0]['log'].mock['calls'][0][0]['additional']).toMatchSnapshot()
-    expect(exitMock).toHaveBeenCalledWith(1)
-    global.process = realProcess
+    const siteConfigErrors = loadedConfig.errors
+
+    expect(siteConfigErrors).toMatchSnapshot()
   })
 })

@@ -1,12 +1,9 @@
 const path = require('path')
 
-const { style } = require('@statusfy/shared-utils')
 const pkg = require('./package')
 
-const { colors } = style
-
 const langDir = 'locales/'
-const mainColor = colors.black
+const mainColor = '#000000'
 const iconSizes = [16, 120, 144, 152, 192, 384, 512]
 const modulesDir = [
   path.join(__dirname, 'node_modules')

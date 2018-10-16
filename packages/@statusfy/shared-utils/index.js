@@ -13,3 +13,12 @@ exports.tomlify = require('yaml')
 exports.chalk = require('chalk')
 exports.fse = require('fs-extra')
 exports.hash = require('hash-sum')
+
+exports.esm = require('esm')(module, {
+  cache: true,
+  cjs: {
+    cache: true,
+    vars: true,
+    namedExports: true
+  }
+})

@@ -37,6 +37,7 @@ function parseConfig (filePath) {
 module.exports = function loadConfig (sourceDir) {
   const configFiles = ['config.yml', 'config.toml', 'config.js']
   let configContent = {}
+  let errors = []
 
   // resolve configContent
   for (let configFile of configFiles) {
@@ -57,16 +58,14 @@ module.exports = function loadConfig (sourceDir) {
 
   // Run Validation
   try {
-    const errors = validateConfig(config)
-
-    if (errors && errors.length > 0) {
-      logger.fatal('Your site configuration is invalid', errors.join('\n'))
-      process.exit(1)
-    }
+    errors = validateConfig(config)
   } catch (error) {
     logger.error(error)
     process.exit(1)
   }
 
-  return config
+  return {
+    config,
+    errors
+  }
 }
