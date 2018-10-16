@@ -6,19 +6,27 @@ import loadConfig from '@/core/lib/config/load'
 const tempPath = path.resolve(__dirname, '../.tmp')
 
 describe('config:site', () => {
-  const configLabels = ['simple', 'cli', 'advanced']
+  const executeConfigTest = label => {
+    const sourceDir = path.resolve(tempPath, label)
+    const { siteConfig } = generateConfig(sourceDir, {})
+    const siteConfigSourceDir = siteConfig.sourceDir
 
-  configLabels.forEach(label => {
-    test(label, () => {
-      const sourceDir = path.resolve(tempPath, label)
-      const { siteConfig } = generateConfig(sourceDir, {})
-      const siteConfigSourceDir = siteConfig.sourceDir
+    siteConfig.sourceDir = path.relative(__dirname, sourceDir)
 
-      siteConfig.sourceDir = path.relative(__dirname, sourceDir)
+    expect(path.isAbsolute(siteConfigSourceDir)).toBeTruthy()
+    expect(siteConfig).toMatchSnapshot()
+  }
 
-      expect(path.isAbsolute(siteConfigSourceDir)).toBeTruthy()
-      expect(siteConfig).toMatchSnapshot()
-    })
+  test('simple', () => {
+    executeConfigTest('simple')
+  })
+
+  test('cli', () => {
+    executeConfigTest('cli')
+  })
+
+  test('advanced', () => {
+    executeConfigTest('advanced')
   })
 
   test('invalid', () => {
