@@ -3,6 +3,9 @@
   "version": "0.0.1-alpha.1",
   "description": "CLI for Statusfy",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bazzite/statusfy.git"

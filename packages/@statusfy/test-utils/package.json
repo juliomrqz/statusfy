@@ -2,6 +2,9 @@
   "name": "@statusfy/test-utils",
   "version": "0.0.1-alpha.1",
   "description": "Test Utils for Statusfy",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bazzite/statusfy.git"

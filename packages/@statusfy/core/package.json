@@ -5,6 +5,9 @@
   "author": "Julio Marquez",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint:scripts": "eslint --fix --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
     "lint:css": "stylelint 'client/**/*.{css,vue}'",
