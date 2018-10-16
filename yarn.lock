@@ -15328,10 +15328,10 @@ vue-i18n@^8.1.0:
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.2.1.tgz#7e21fed5f18dec6025992522500e9bd62cbe6668"
   integrity sha512-eiqkUBP9uoADmHa1vz0jLS/JNvR+dODjn2nz14/ZD14hTaWpbOXoUZ0C5Nd2vbP6vOaxXjmkvkzJn/VISvX1BQ==
 
-vue-jest@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-2.6.0.tgz#23dc99a4dce0bb59fea3946e1317b234968cf12a"
-  integrity sha512-kVgKGcycJ1ce3tUc48JKFSSXsbRNy5QOCAcK9k1aYDRD0m6tTbbFm8Q8yGkfsXLyFeUsvO1OEgsCYxZeD5GL2g==
+vue-jest@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-3.0.0.tgz#e5b0ad60c37bbeebe214124420de9eb911596cdc"
+  integrity sha512-naYRHx600YmwfUCoCUsbNlgQ6uk8L0Nn76bVZyMIJYOLlvS+f/1BqOX7ASXlYnNqNobYSC5AtWSlNzRBtYz/mw==
   dependencies:
     babel-plugin-transform-es2015-modules-commonjs "^6.26.0"
     chalk "^2.1.0"

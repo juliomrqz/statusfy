@@ -40,7 +40,7 @@
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^3.4.3",
     "regenerator-runtime": "^0.12.1",
-    "vue-jest": "^2.6.0"
+    "vue-jest": "^3.0.0"
   },
   "engines": {
     "node": ">=8.10",
