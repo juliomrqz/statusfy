@@ -1,5 +1,10 @@
 const slugify = require('slugify')
+const isString = require('lodash.isstring')
 
-module.exports = (input, replacement = '_') => {
-  return slugify(input, { replacement, lower: true });
+module.exports = (text, replacement = '_') => {
+  if (isString(text)) {
+    return slugify(text, { replacement, lower: true });
+  } else {
+    return ''
+  }
 }
