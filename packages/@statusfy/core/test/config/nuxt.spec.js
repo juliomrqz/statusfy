@@ -40,7 +40,7 @@ describe('config:nuxt', () => {
         const relativePath = path.normalize(relative(value))
 
         if (relativePath.split('../').length <= 3) {
-          return path.normalize(relative(value))
+          return path.toUnix(path.normalize(relative(value)))
         }
       }
     })
