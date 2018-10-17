@@ -1,8 +1,8 @@
-const path = require('path')
 const hash = require('hash-sum')
 const _ = require('lodash')
 const moment = require('moment')
 const fse = require('fs-extra')
+const path = require('upath')
 
 const data = require('./data.json')
 const severities = [

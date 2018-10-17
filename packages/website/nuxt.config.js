@@ -1,4 +1,4 @@
-const { join } = require('path')
+import { path } from '@statusfy/common'
 const pkg = require('./package')
 
 const title = 'Statusfy'
@@ -9,8 +9,8 @@ const secondColor = '#eff0f4'
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'universal' : 'spa',
   modulesDir: [
-    join(__dirname, 'node_modules'),
-    join(__dirname, '..', '..', 'node_modules')
+    path.join(__dirname, 'node_modules'),
+    path.join(__dirname, '..', '..', 'node_modules')
   ],
   env: {
     mainColor,

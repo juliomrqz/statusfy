@@ -36,6 +36,7 @@
     "tailwindcss": "^0.6.6",
     "toml": "^2.3.3",
     "tomlify-j0.4": "^3.0.0",
+    "upath": "1.1.0",
     "validator": "^10.8.0",
     "yaml": "^1.0.0"
   }

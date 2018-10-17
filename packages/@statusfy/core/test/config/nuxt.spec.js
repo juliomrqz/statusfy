@@ -1,6 +1,6 @@
-import path, { isAbsolute } from 'path'
 import isString from 'lodash.isstring'
 import cloneDeepWith from 'lodash.clonedeepwith'
+import { path } from '@statusfy/common'
 
 import generateConfig from '@/core/lib/config/generate'
 const tempPath = path.resolve(__dirname, '../.tmp')
@@ -17,17 +17,17 @@ describe('config:nuxt', () => {
     let nuxtConfig = generatedConfig.nuxtConfig
 
     // Check absolute dirs
-    expect(isAbsolute(nuxtConfig.buildDir)).toBeTruthy()
-    expect(isAbsolute(nuxtConfig.generate.dir)).toBeTruthy()
-    expect(isAbsolute(nuxtConfig.icon.iconSrc)).toBeTruthy()
-    expect(isAbsolute(nuxtConfig.rootDir)).toBeTruthy()
-    // expect(isAbsolute(nuxtConfig.srcDir)).toBeTruthy()
-    expect(isAbsolute(nuxtConfig.statusfy.assets.mainLogo)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.buildDir)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.generate.dir)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.icon.iconSrc)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.rootDir)).toBeTruthy()
+    // expect(path.isAbsolute(nuxtConfig.srcDir)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.statusfy.assets.mainLogo)).toBeTruthy()
     if (nuxtConfig.statusfy.publicFilesPath) {
-      expect(isAbsolute(nuxtConfig.statusfy.publicFilesPath)).toBeTruthy()
+      expect(path.isAbsolute(nuxtConfig.statusfy.publicFilesPath)).toBeTruthy()
     }
-    expect(isAbsolute(nuxtConfig.statusfy.siteConfig.sourceDir)).toBeTruthy()
-    expect(isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.statusfy.siteConfig.sourceDir)).toBeTruthy()
+    expect(path.isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
     for (const dir of nuxtConfig.modulesDir) {
       expect(isString(dir)).toBeTruthy()
     }
@@ -36,7 +36,7 @@ describe('config:nuxt', () => {
 
     // Convert absolute paths to relative
     nuxtConfig = cloneDeepWith(nuxtConfig, (value) => {
-      if (isString(value) && isAbsolute(value)) {
+      if (isString(value) && path.isAbsolute(value)) {
         const relativePath = path.normalize(relative(value))
 
         if (relativePath.split('../').length <= 3) {

@@ -1,5 +1,4 @@
-import path from 'path'
-import { fse } from '@statusfy/common'
+import { fse, path } from '@statusfy/common'
 
 export function md () {
   return require('markdown-it')()

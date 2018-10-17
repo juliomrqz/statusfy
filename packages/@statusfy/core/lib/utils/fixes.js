@@ -1,12 +1,11 @@
-const { join } = require('path')
-const { fse } = require('@statusfy/common')
+const { fse, path } = require('@statusfy/common')
 
 // Nuxt bug: Fix the home page file of each locale
 exports.fixHomePages = (siteConfig, destDir) => {
   siteConfig.locales.forEach(locale => {
     if (locale.code !== siteConfig.defaultLocale) {
-      const from = join(destDir, locale.code, '.html')
-      const to = join(destDir, `${locale.code}.html`)
+      const from = path.join(destDir, locale.code, '.html')
+      const to = path.join(destDir, `${locale.code}.html`)
 
       fse.moveSync(from, to)
     }

@@ -1,4 +1,4 @@
-const path = require('path')
+const { path } = require('@statusfy/common')
 
 const pkg = require('./package')
 

@@ -1,9 +1,8 @@
 const fs = require('fs')
-const path = require('path')
 const inquirer = require('inquirer')
 const opener = require('opener')
 
-const { logger, fse, frontMatter, slugify } = require('@statusfy/common')
+const { logger, fse, frontMatter, slugify, path } = require('@statusfy/common')
 const loadConfig = require('./config/load')
 
 function generateIncident (data, content, format) {

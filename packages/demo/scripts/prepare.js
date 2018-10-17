@@ -1,6 +1,4 @@
-const path = require('path')
-
-const { generateDemoContent } = require('@statusfy/common')
+const { generateDemoContent, path } = require('@statusfy/common')
 
 const prepare = () => {
   generateDemoContent(

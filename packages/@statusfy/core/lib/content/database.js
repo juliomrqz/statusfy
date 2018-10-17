@@ -1,6 +1,5 @@
 const { readdir, stat, readFile } = require('fs')
 const { promisify } = require('util')
-const path = require('path')
 const LRU = require('lru-cache')
 const spawn = require('cross-spawn')
 const drop = require('lodash.drop')
@@ -9,7 +8,7 @@ const Moment = require('moment')
 const MomentRange = require('moment-range')
 
 const createMarkdown = require('@statusfy/markdown')
-const { logger, hash } = require('@statusfy/common')
+const { logger, hash, path } = require('@statusfy/common')
 
 const moment = MomentRange.extendMoment(Moment)
 const readdirP = promisify(readdir)

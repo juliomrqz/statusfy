@@ -1,4 +1,4 @@
-import path from 'path'
+import { path } from '@statusfy/common'
 
 import generateConfig from '@/core/lib/config/generate'
 import loadConfig from '@/core/lib/config/load'

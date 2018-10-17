@@ -1,7 +1,6 @@
-const path = require('path')
 const fs = require('fs')
 const defaultsDeep = require('lodash/defaultsDeep')
-const { esm, logger, style } = require('@statusfy/common')
+const { esm, logger, style, path } = require('@statusfy/common')
 
 const loadConfig = require('./load')
 const { colors } = style

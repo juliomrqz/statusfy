@@ -1,8 +1,7 @@
 // Inspired on https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/cli/index.js
-const path = require('path')
 const program = require('commander')
 const semver = require('semver')
-const { chalk } = require('@statusfy/common')
+const { chalk, path } = require('@statusfy/common')
 
 const packageError = (name) => {
   console.log(chalk.red(

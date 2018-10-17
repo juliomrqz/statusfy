@@ -1,4 +1,4 @@
-const path = require('path')
+const { path } = require('@statusfy/common')
 
 const loadConfig = require('../lib/config/load')
 const createServer = require('./index')
