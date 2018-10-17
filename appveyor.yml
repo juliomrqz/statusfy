@@ -1,0 +1,35 @@
+# Test against the latest version of this Node.js version
+environment:
+  matrix:
+    - nodejs_version: "8"
+    - nodejs_version: "10"
+
+cache:
+  - node_modules
+
+# Install scripts. (runs after repo cloning)
+install:
+  # Get the latest stable version of Node.js
+  - ps: Install-Product node $env:nodejs_version
+  # install modules
+  - yarn run install-dependencies
+
+# Post-install test scripts.
+test_script:
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+
+  # run tests
+  - yarn run lint
+  - yarn run test
+
+  # demo building
+  - yarn run demo:build
+  - yarn run demo:generate
+
+# Don't actually build.
+build: off
+
+# Do not build feature branch with open Pull Requests
+skip_branch_with_pr: true
