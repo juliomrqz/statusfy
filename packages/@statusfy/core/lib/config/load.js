@@ -3,7 +3,7 @@ const defaultsDeep = require('lodash/defaultsDeep')
 
 const defaultConfig = require('./default')
 const validateConfig = require('./validate')
-const { logger, fse, chalk, toml, yaml, slugify } = require('@statusfy/shared-utils')
+const { logger, fse, chalk, toml, yaml, slugify } = require('@statusfy/common')
 
 function parseConfig (filePath) {
   const extension = path.extname(filePath)

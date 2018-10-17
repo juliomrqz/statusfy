@@ -1,4 +1,4 @@
-const { validator } = require('@statusfy/shared-utils')
+const { validator } = require('@statusfy/common')
 
 module.exports = md => {
   // Remember old renderer, if overridden, or proxy to default renderer

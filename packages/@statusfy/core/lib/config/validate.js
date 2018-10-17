@@ -1,5 +1,5 @@
 const url = require('url')
-const { chalk, validator } = require('@statusfy/shared-utils')
+const { chalk, validator } = require('@statusfy/common')
 
 const validFrontMatterFormats = ['yaml', 'yml', 'toml', 'json']
 

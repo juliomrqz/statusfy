@@ -26,7 +26,7 @@
   },
   "homepage": "https://docs.statusfy.co",
   "devDependencies": {
-    "@statusfy/shared-utils": "^0.0.1-alpha.1",
+    "@statusfy/common": "^0.0.1-alpha.1",
     "vuepress": "^0.14.4"
   }
 }

@@ -2,7 +2,7 @@
 const path = require('path')
 const program = require('commander')
 const semver = require('semver')
-const { chalk } = require('@statusfy/shared-utils')
+const { chalk } = require('@statusfy/common')
 
 const packageError = (name) => {
   console.log(chalk.red(

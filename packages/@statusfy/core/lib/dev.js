@@ -1,7 +1,7 @@
 const path = require('path')
 const nodemon = require('nodemon')
 
-const { logger } = require('@statusfy/shared-utils')
+const { logger } = require('@statusfy/common')
 
 module.exports = async function dev (sourceDir, cliOptions = {}) {
   process.env.NODE_ENV = 'development'

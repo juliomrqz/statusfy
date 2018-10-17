@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const defaultsDeep = require('lodash/defaultsDeep')
 
-const { logger, fse } = require('@statusfy/shared-utils')
+const { logger, fse } = require('@statusfy/common')
 const createServer = require('../../../server')
 const buildContent = require('./build')
 

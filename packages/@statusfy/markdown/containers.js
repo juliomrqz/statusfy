@@ -1,5 +1,5 @@
 const container = require('markdown-it-container')
-const { validator } = require('@statusfy/shared-utils')
+const { validator } = require('@statusfy/common')
 
 module.exports = md => {
   md.use(...createUpdateContainer('update'))

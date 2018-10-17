@@ -1,5 +1,5 @@
 const createApp = require('./app')
-const { logger } = require('@statusfy/shared-utils')
+const { logger } = require('@statusfy/common')
 
 module.exports = async function createServer (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
   const app = await createApp(siteConfig, nuxtConfig, host, port, apiPrefix)

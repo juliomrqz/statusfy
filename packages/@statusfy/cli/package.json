@@ -23,6 +23,6 @@
   "peerDependencies": {
     "@statusfy/core": "^0.0.1-alpha.1",
     "@statusfy/editor": "^0.0.1-alpha.1",
-    "@statusfy/shared-utils": "^0.0.1-alpha.1"
+    "@statusfy/common": "^0.0.1-alpha.1"
   }
 }

@@ -5,7 +5,7 @@ const bs = require('browser-sync').create()
 
 const createServer = require('../../server')
 const generateConfig = require('../config/generate')
-const { logger } = require('@statusfy/shared-utils')
+const { logger } = require('@statusfy/common')
 
 const start = async () => {
   process.env.NODE_ENV = 'development'

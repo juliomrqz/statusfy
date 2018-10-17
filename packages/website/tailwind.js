@@ -31,7 +31,7 @@ View the full documentation at https://tailwindcss.com.
 |-------------------------------------------------------------------------------
 */
 
-const { style } = require('@statusfy/shared-utils')
+const { style } = require('@statusfy/common')
 
 const { colors, globalGuidelines } = style
 

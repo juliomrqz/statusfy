@@ -3,7 +3,7 @@ const { promisify } = require('util')
 const fs = require('fs')
 
 const renameP = promisify(fs.rename)
-const { logger, fse, generateDemoContent } = require('@statusfy/shared-utils')
+const { logger, fse, generateDemoContent } = require('@statusfy/common')
 
 const tempPath = path.resolve(__dirname, '.tmp')
 const demoPath = path.resolve(__dirname, '../../../demo')

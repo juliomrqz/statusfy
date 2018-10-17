@@ -1,5 +1,5 @@
 const { join } = require('path')
-const { fse } = require('@statusfy/shared-utils')
+const { fse } = require('@statusfy/common')
 
 // Nuxt bug: Fix the home page file of each locale
 exports.fixHomePages = (siteConfig, destDir) => {

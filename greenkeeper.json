@@ -15,7 +15,7 @@
         "packages/@statusfy/core/package.json",
         "packages/@statusfy/editor/package.json",
         "packages/@statusfy/markdown/package.json",
-        "packages/@statusfy/shared-utils/package.json",
+        "packages/@statusfy/common/package.json",
         "packages/@statusfy/test-utils/package.json"
       ]
     }

@@ -9,7 +9,7 @@ const Moment = require('moment')
 const MomentRange = require('moment-range')
 
 const createMarkdown = require('@statusfy/markdown')
-const { logger, hash } = require('@statusfy/shared-utils')
+const { logger, hash } = require('@statusfy/common')
 
 const moment = MomentRange.extendMoment(Moment)
 const readdirP = promisify(readdir)

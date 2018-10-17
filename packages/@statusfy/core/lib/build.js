@@ -2,7 +2,7 @@
 const { Nuxt, Builder } = require('nuxt')
 
 const generateConfig = require('./config/generate')
-const { logger } = require('@statusfy/shared-utils')
+const { logger } = require('@statusfy/common')
 
 module.exports = async function build (sourceDir, cliOptions = {}) {
   process.env.NODE_ENV = 'production'

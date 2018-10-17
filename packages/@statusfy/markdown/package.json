@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
-    "@statusfy/shared-utils": "^0.0.1-alpha.1",
+    "@statusfy/common": "^0.0.1-alpha.1",
     "markdown-it": "^8.4.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0"

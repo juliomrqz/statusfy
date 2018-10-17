@@ -3,7 +3,7 @@ const fs = require('fs')
 const template = require('lodash/template')
 const inquirer = require('inquirer')
 const localeCode = require('locale-code')
-const { chalk, logger, fse, tomlify, yaml, slugify } = require('@statusfy/shared-utils')
+const { chalk, logger, fse, tomlify, yaml, slugify } = require('@statusfy/common')
 
 const pkg = require('../package.json')
 const configTemplate = template(fs.readFileSync(join(__dirname, 'init', 'template-config.json.tpl'), 'utf-8'))

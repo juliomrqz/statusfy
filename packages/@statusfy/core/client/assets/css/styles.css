@@ -1,5 +1,5 @@
 /* Custom Styles */
-@import '@statusfy/shared-utils/lib/style/base';
+@import '@statusfy/common/lib/style/base';
 
 main {
   min-height: calc(100vh - 14rem);

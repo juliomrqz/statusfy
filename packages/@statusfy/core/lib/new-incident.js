@@ -3,7 +3,7 @@ const path = require('path')
 const inquirer = require('inquirer')
 const opener = require('opener')
 
-const { logger, fse, frontMatter, slugify } = require('@statusfy/shared-utils')
+const { logger, fse, frontMatter, slugify } = require('@statusfy/common')
 const loadConfig = require('./config/load')
 
 function generateIncident (data, content, format) {

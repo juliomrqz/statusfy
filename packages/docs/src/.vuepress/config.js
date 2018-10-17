@@ -1,4 +1,4 @@
-const { postcss } = require('@statusfy/shared-utils')
+const { postcss } = require('@statusfy/common')
 
 module.exports = {
   title: 'Statusfy Documentation',

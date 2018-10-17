@@ -2,7 +2,7 @@ const { join } = require('path')
 const { Nuxt, Builder, Generator } = require('nuxt')
 
 const generateConfig = require('./config/generate')
-const { logger } = require('@statusfy/shared-utils')
+const { logger } = require('@statusfy/common')
 const { fixHomePages } = require('./utils/fixes')
 
 module.exports = async function generate (sourceDir, cliOptions = {}) {

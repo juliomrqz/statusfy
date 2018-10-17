@@ -1,4 +1,4 @@
-const { grayMatter } = require('@statusfy/shared-utils')
+const { grayMatter } = require('@statusfy/common')
 
 module.exports = md => {
   md.frontmatter = md.frontmatter || {}

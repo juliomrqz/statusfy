@@ -1,5 +1,5 @@
 const join = require('path').join
-const { postcss } = require('@statusfy/shared-utils')
+const { postcss } = require('@statusfy/common')
 
 const tailwindJS = join(__dirname, 'tailwind.js')
 
