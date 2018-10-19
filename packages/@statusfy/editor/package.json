@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/bazzite/statusfy.git"
   },
-  "author": "Julio Marquez",
-  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bazzite/statusfy/issues"
   },

@@ -65,7 +65,7 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 ## License
 
-Code released under the [BSD-3-Clause][license-page].
+Code released under the [Apache License 2.0][license-page].
 
 [demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy

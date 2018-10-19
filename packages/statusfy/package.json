@@ -2,8 +2,12 @@
   "name": "statusfy",
   "version": "0.0.1-alpha.1",
   "description": "A marvelous open source Status Page system",
-  "author": "Julio Marquez",
-  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
   "main": "statusfy.js",
   "bin": {
     "statusfy": "statusfy.js"

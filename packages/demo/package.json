@@ -11,8 +11,12 @@
     "generate": "npm run prepare && statusfy generate",
     "new-incident": "statusfy new-incident"
   },
-  "author": "Julio Marquez",
-  "license": "MIT",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "statusfy": "^0.0.1-alpha.1"
   },

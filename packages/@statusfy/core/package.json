@@ -2,8 +2,12 @@
   "name": "@statusfy/core",
   "version": "0.0.1-alpha.1",
   "description": "Core of Statusfy",
-  "author": "Julio Marquez",
-  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
   "main": "lib/index.js",
   "publishConfig": {
     "access": "public"

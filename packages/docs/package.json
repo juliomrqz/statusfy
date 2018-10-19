@@ -3,7 +3,7 @@
   "name": "statusfy-docs",
   "version": "0.0.1-alpha.1",
   "description": "Statusfy Documentation",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "index.js",
   "scripts": {
     "dev": "npx vuepress dev src",
@@ -20,7 +20,11 @@
     "statusfy",
     "documentation"
   ],
-  "author": "Julio Marquez",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
   "bugs": {
     "url": "https://github.com/bazzite/statusfy-docs/issues"
   },

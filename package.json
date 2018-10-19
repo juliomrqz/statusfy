@@ -8,7 +8,21 @@
     "packages/website"
   ],
   "description": "A marvelous open source Status Page system",
-  "author": "Julio Marquez",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "contributors": [{
+      "name": "Julio Marquez (@juliomrqz)"
+    },
+    {
+      "name": "Patricia Mora (@patriciajumper)"
+    },
+    {
+      "name": "Claude Giovagnoli (@giovagnoli)"
+    }
+  ],
   "scripts": {
     "lerna": "lerna",
     "lint": "lerna run lint",
