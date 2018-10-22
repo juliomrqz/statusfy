@@ -20,7 +20,7 @@ const prepare = async () => {
 
   for (const key of testProjects) {
     const dest = path.join(tempPath, key)
-    const configFile = path.resolve(__dirname, `config/fragments/${key}.js`)
+    const configFile = path.resolve(__dirname, `config/fragments/config/${key}.js`)
 
     await fse.copy(tempBasePath, dest)
     await fse.copy(configFile, path.join(dest, 'config.js'))

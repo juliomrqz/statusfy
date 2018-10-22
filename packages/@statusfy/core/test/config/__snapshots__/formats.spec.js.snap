@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config:formats js-es5 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "The ES5 Config Format Example",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "file": "en.json",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "manifest": false,
+  "name": "es5_config_format",
+  "serviceWorker": true,
+  "sourceDir": "fragments/formats/js-es5",
+  "title": "ES5 Config Format",
+}
+`;
+
+exports[`config:formats js-es6 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "default": Object {
+    "defaultLocale": "en",
+    "description": "The ES6 Config Format Example",
+    "locales": Array [
+      Object {
+        "code": "en",
+        "file": "en.json",
+        "iso": "en-US",
+        "name": "English",
+      },
+    ],
+    "manifest": false,
+    "name": "es6_config_format",
+    "serviceWorker": true,
+    "title": "ES6 Config Format",
+  },
+  "defaultLocale": "en",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "manifest": true,
+  "name": "",
+  "serviceWorker": true,
+  "sourceDir": "fragments/formats/js-es6",
+}
+`;
+
+exports[`config:formats toml 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "The TOML Config Format Example",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "file": "en.json",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "manifest": false,
+  "name": "toml-config-format",
+  "serviceWorker": true,
+  "sourceDir": "fragments/formats/toml",
+  "title": "TOML Config Format",
+}
+`;
+
+exports[`config:formats yaml 1`] = `
+Object {
+  "baseUrl": "/",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "systems": Array [
+      "api",
+      "cdn",
+      "dns",
+      "site-delivery",
+    ],
+  },
+  "defaultLocale": "en",
+  "description": "YAML Config Format",
+  "locales": Array [
+    Object {
+      "code": "en",
+      "file": "en.json",
+      "iso": "en-US",
+      "name": "English",
+    },
+  ],
+  "manifest": false,
+  "name": "yaml-config-format",
+  "serviceWorker": true,
+  "sourceDir": "fragments/formats/yaml",
+  "title": "YAML Config Format",
+}
+`;

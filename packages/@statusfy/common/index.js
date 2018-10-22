@@ -9,7 +9,7 @@ exports.esm = require('./lib/esm')
 
 exports.toml = require('toml')
 exports.tomlify = require('tomlify-j0.4')
-exports.tomlify = require('yaml')
+exports.yaml = require('yaml')
 
 exports.chalk = require('chalk')
 exports.fse = require('fs-extra')

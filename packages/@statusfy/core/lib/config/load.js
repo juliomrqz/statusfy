@@ -15,7 +15,7 @@ function parseConfig (filePath) {
     case '.yml':
       logger.debug(`Reading configuration from ${chalk.yellow('config.yml')}`)
 
-      data = yaml.safeLoad(content)
+      data = yaml.parse(content)
       break
 
     case '.toml':
