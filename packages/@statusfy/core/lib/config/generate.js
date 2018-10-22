@@ -6,7 +6,7 @@ const loadConfig = require('./load')
 const { colors } = style
 
 module.exports = function generateConfig (sourceDir, cliOptions) {
-  const nuxtConfig = esm(path.join(__dirname, '../../nuxt.config.js'))
+  const nuxtConfig = Object.assign({}, esm(path.join(__dirname, '../../nuxt.config.js')))
   const loadedConfig = loadConfig(sourceDir)
 
   const siteConfig = loadedConfig.config
@@ -84,24 +84,33 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   }
 
   // PWA Module
+  if (siteConfig.serviceWorker === true) {
+    nuxtConfig.workbox.cacheId = siteConfig.name
+    nuxtConfig.workbox.globDirectory = path.resolve(nuxtConfig.buildDir, 'dist', 'client')
+
+    nuxtConfig.workbox.runtimeCaching.forEach(runtime => {
+      if (runtime.strategyOptions) {
+        runtime.strategyOptions.cacheName = `${siteConfig.name}_${runtime.strategyOptions.cacheName}`
+      }
+    })
+  } else {
+    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(item => item[0] === '@nuxtjs/pwa')[1]
+    nuxtiPwaModuleConfig.workbox = false
+
+    delete nuxtConfig.workbox
+  }
+
   nuxtConfig.manifest.name = siteConfig.title
   nuxtConfig.manifest.short_name = siteConfig.title
   nuxtConfig.manifest.description = siteConfig.description
   nuxtConfig.manifest.lang = siteConfig.defaultLocale
+
   nuxtConfig.meta.ogHost = siteConfig.baseUrl
-  nuxtConfig.workbox.cacheId = siteConfig.name
-  nuxtConfig.workbox.globDirectory = path.resolve(nuxtConfig.buildDir, 'dist', 'client')
 
   const customIconPath = path.join(sourceDir, 'assets', 'icon.png')
   if (fs.existsSync(customIconPath)) {
     nuxtConfig.icon.iconSrc = customIconPath
   }
-
-  nuxtConfig.workbox.runtimeCaching.forEach(runtime => {
-    if (runtime.strategyOptions) {
-      runtime.strategyOptions.cacheName = `${siteConfig.name}_${runtime.strategyOptions.cacheName}`
-    }
-  })
 
   // Google Analytics Module
   if (siteConfig.ga && !nuxtConfig.dev) {

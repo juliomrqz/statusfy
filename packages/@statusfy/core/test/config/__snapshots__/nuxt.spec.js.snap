@@ -154,7 +154,12 @@ Object {
         },
       },
     ],
-    "@nuxtjs/pwa",
+    Array [
+      "@nuxtjs/pwa",
+      Object {
+        "workbox": false,
+      },
+    ],
   ],
   "modulesDir": Array [
     "../../node_modules",
@@ -274,6 +279,7 @@ Object {
         },
       ],
       "name": "title",
+      "serviceWorker": true,
       "sourceDir": "../.tmp/advanced",
       "title": "Title",
     },
@@ -298,7 +304,7 @@ Object {
             "maxAgeSeconds": 300,
             "maxEntries": 10,
           },
-          "cacheName": "title_title_title_api",
+          "cacheName": "title_title_api",
         },
         "urlPattern": "(/static/content)?/api/v1/.*",
       },
@@ -437,7 +443,12 @@ Object {
         },
       },
     ],
-    "@nuxtjs/pwa",
+    Array [
+      "@nuxtjs/pwa",
+      Object {
+        "workbox": false,
+      },
+    ],
   ],
   "modulesDir": Array [
     "../../node_modules",
@@ -503,6 +514,7 @@ Object {
         },
       ],
       "name": "title",
+      "serviceWorker": true,
       "sourceDir": "../.tmp/cli",
       "title": "Title",
     },
@@ -527,7 +539,7 @@ Object {
             "maxAgeSeconds": 300,
             "maxEntries": 10,
           },
-          "cacheName": "title_title_api",
+          "cacheName": "title_api",
         },
         "urlPattern": "(/static/content)?/api/v1/.*",
       },
@@ -655,7 +667,12 @@ Object {
         },
       },
     ],
-    "@nuxtjs/pwa",
+    Array [
+      "@nuxtjs/pwa",
+      Object {
+        "workbox": false,
+      },
+    ],
   ],
   "modulesDir": Array [
     "../../node_modules",
@@ -718,35 +735,11 @@ Object {
         },
       ],
       "name": "title",
+      "serviceWorker": false,
       "sourceDir": "../.tmp/simple",
       "title": "Title",
     },
     "sourceDir": "../.tmp/simple",
-  },
-  "workbox": Object {
-    "_runtimeCaching": Array [
-      Object {
-        "handler": "cacheFirst",
-        "method": "GET",
-        "urlPattern": "/static/(?!content).*$",
-      },
-    ],
-    "cacheId": "title",
-    "globDirectory": "../.tmp/simple/.statusfy/dist/client",
-    "offlinePage": "/offline",
-    "publicPath": "/static/",
-    "runtimeCaching": Array [
-      Object {
-        "strategyOptions": Object {
-          "cacheExpiration": Object {
-            "maxAgeSeconds": 300,
-            "maxEntries": 10,
-          },
-          "cacheName": "title_api",
-        },
-        "urlPattern": "(/static/content)?/api/v1/.*",
-      },
-    ],
   },
 }
 `;

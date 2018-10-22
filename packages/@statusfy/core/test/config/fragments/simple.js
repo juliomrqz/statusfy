@@ -1,4 +1,5 @@
 module.exports = {
   title: 'Title',
-  description: ''
+  description: '',
+  serviceWorker: false
 }

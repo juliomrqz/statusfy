@@ -73,6 +73,7 @@ Object {
     },
   ],
   "name": "title",
+  "serviceWorker": true,
   "sourceDir": "../.tmp/advanced",
   "title": "Title",
 }
@@ -104,6 +105,7 @@ Object {
     },
   ],
   "name": "title",
+  "serviceWorker": true,
   "sourceDir": "../.tmp/cli",
   "title": "Title",
 }
@@ -142,6 +144,7 @@ Object {
     },
   ],
   "name": "title",
+  "serviceWorker": false,
   "sourceDir": "../.tmp/simple",
   "title": "Title",
 }

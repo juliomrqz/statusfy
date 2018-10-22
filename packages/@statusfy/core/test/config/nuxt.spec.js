@@ -23,11 +23,16 @@ describe('config:nuxt', () => {
     expect(path.isAbsolute(nuxtConfig.rootDir)).toBeTruthy()
     // expect(path.isAbsolute(nuxtConfig.srcDir)).toBeTruthy()
     expect(path.isAbsolute(nuxtConfig.statusfy.assets.mainLogo)).toBeTruthy()
+
     if (nuxtConfig.statusfy.publicFilesPath) {
       expect(path.isAbsolute(nuxtConfig.statusfy.publicFilesPath)).toBeTruthy()
     }
     expect(path.isAbsolute(nuxtConfig.statusfy.siteConfig.sourceDir)).toBeTruthy()
-    expect(path.isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
+
+    if (nuxtConfig.workbox) {
+      expect(path.isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy()
+    }
+
     for (const dir of nuxtConfig.modulesDir) {
       expect(isString(dir)).toBeTruthy()
     }

@@ -15,5 +15,6 @@ module.exports = {
   },
   build: {
     isStatic: false
-  }
+  },
+  serviceWorker: true
 }

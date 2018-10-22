@@ -25,7 +25,7 @@ sidebar: auto
 ### serviceWorker
 
 - Type: `boolean`
-- Default: `false`
+- Default: `true`
 
 ### ga
 

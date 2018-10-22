@@ -80,7 +80,9 @@ module.exports = {
       }
     }],
     // Doc: https://pwa.nuxtjs.org/
-    '@nuxtjs/pwa'
+    ['@nuxtjs/pwa', {
+      workbox: true
+    }]
   ],
   /*
   ** Build configuration
