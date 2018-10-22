@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Title',
   description: '',
-  serviceWorker: false
+  serviceWorker: false,
+  manifest: false
 }

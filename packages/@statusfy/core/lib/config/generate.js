@@ -100,10 +100,17 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
     delete nuxtConfig.workbox
   }
 
-  nuxtConfig.manifest.name = siteConfig.title
-  nuxtConfig.manifest.short_name = siteConfig.title
-  nuxtConfig.manifest.description = siteConfig.description
-  nuxtConfig.manifest.lang = siteConfig.defaultLocale
+  if (siteConfig.manifest === true) {
+    nuxtConfig.manifest.name = siteConfig.title
+    nuxtConfig.manifest.short_name = siteConfig.title
+    nuxtConfig.manifest.description = siteConfig.description
+    nuxtConfig.manifest.lang = siteConfig.defaultLocale
+  } else {
+    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(item => item[0] === '@nuxtjs/pwa')[1]
+    nuxtiPwaModuleConfig.manifest = false
+
+    delete nuxtConfig.manifest
+  }
 
   nuxtConfig.meta.ogHost = siteConfig.baseUrl
 

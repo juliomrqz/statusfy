@@ -16,5 +16,6 @@ module.exports = {
   build: {
     isStatic: false
   },
-  serviceWorker: true
+  serviceWorker: true,
+  manifest: true
 }

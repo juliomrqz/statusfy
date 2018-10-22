@@ -81,7 +81,8 @@ module.exports = {
     }],
     // Doc: https://pwa.nuxtjs.org/
     ['@nuxtjs/pwa', {
-      workbox: true
+      workbox: true,
+      manifest: true
     }]
   ],
   /*

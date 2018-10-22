@@ -157,6 +157,7 @@ Object {
     Array [
       "@nuxtjs/pwa",
       Object {
+        "manifest": false,
         "workbox": false,
       },
     ],
@@ -278,6 +279,7 @@ Object {
           "name": "Español",
         },
       ],
+      "manifest": true,
       "name": "title",
       "serviceWorker": true,
       "sourceDir": "../.tmp/advanced",
@@ -446,6 +448,7 @@ Object {
     Array [
       "@nuxtjs/pwa",
       Object {
+        "manifest": false,
         "workbox": false,
       },
     ],
@@ -513,6 +516,7 @@ Object {
           "name": "English",
         },
       ],
+      "manifest": true,
       "name": "title",
       "serviceWorker": true,
       "sourceDir": "../.tmp/cli",
@@ -619,15 +623,6 @@ Object {
   "loading": Object {
     "color": "#22292f",
   },
-  "manifest": Object {
-    "description": "",
-    "lang": "en",
-    "name": "Title",
-    "publicPath": "/static/",
-    "short_name": "Title",
-    "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.0.1-alpha.1",
-  },
   "meta": Object {
     "author": "Statusfy",
     "charset": "utf-8",
@@ -670,6 +665,7 @@ Object {
     Array [
       "@nuxtjs/pwa",
       Object {
+        "manifest": false,
         "workbox": false,
       },
     ],
@@ -734,6 +730,7 @@ Object {
           "name": "English",
         },
       ],
+      "manifest": false,
       "name": "title",
       "serviceWorker": false,
       "sourceDir": "../.tmp/simple",

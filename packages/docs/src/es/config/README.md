@@ -27,6 +27,11 @@ sidebar: auto
 - Type: `boolean`
 - Default: `true`
 
+### manifest
+
+- Type: `boolean`
+- Default: `true`
+
 ### ga
 
 - Type: `string`
