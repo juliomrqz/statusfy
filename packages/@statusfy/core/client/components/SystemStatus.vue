@@ -1,16 +1,16 @@
 <template>
   <div>
     <div
-      :class="`bg-${status.color}`"
-      class="flex justify-center content-center py-4 px-2 text-white shadow rounded my-4 text-2xl">
+      :class="status.key"
+      class="global-status flex justify-center">
       <span>{{ status.title }}</span>
-      <span class="ml-2">
+      <span class="global-status-icon">
         <svgicon
           :name="`fortawesome/${status.icon}-solid`"
           class="svg-inline--fa fa-w-16"/>
       </span>
     </div>
-    <div class="flex flex-col py-2 px-2 bg-white shadow rounded my-4 border-grey-light border">
+    <div class="systems-container flex flex-col">
       <system
         v-for="system in systems"
         :key="system.name"
@@ -56,8 +56,8 @@ export default {
 
       return {
         title: statuses.i18nKeys[statusKey],
-        color: statuses.colors[statusKey],
-        icon: statuses.icons[statusKey]
+        icon: statuses.icons[statusKey],
+        key: statusKey
       }
     }
   }

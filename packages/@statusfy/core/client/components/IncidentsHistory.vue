@@ -1,11 +1,12 @@
 <template>
-  <div class="my-4">
+  <div class="incidents-container">
     <div
       v-for="period of periods"
-      :key="period.date">
+      :key="period.date"
+      class="incidents-period">
 
-      <div class="py-4 relative">
-        <h2 class="text-xl pt-1 font-medium mb-4">
+      <div>
+        <h2 class="incidents-period-title">
           <nice-date
             :date="period.id"
             format="month" />
@@ -13,7 +14,7 @@
 
         <div
           v-if="period.incidents.length === 0"
-          class="text-grey-darker">
+          class="incidents-message">
           {{ $t('incidents.no-incidents') }}
         </div>
 
@@ -40,3 +41,21 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.incidents-container {
+  @apply my-4;
+}
+
+.incidents-period {
+  @apply py-4 relative;
+}
+
+.incidents-period-title {
+  @apply text-xl pt-1 font-medium mb-4;
+}
+
+.incidents-message {
+  color: var(--grey-darker);
+}
+</style>

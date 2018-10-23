@@ -13,13 +13,6 @@ export const statusesInfo = ($t) => {
     i18nKeys = keys.reduce((acc, cur) => { acc[cur] = $t(`statuses.${cur}`); return acc }, {})
   }
 
-  const colors = {
-    'under-maintenance': 'grey-darker',
-    'degraded-performance': 'indigo',
-    'partial-outage': 'orange',
-    'major-outage': 'red',
-    'operational': 'green'
-  }
   const icons = {
     'under-maintenance': 'clock',
     'degraded-performance': 'exclamation-circle',
@@ -31,7 +24,6 @@ export const statusesInfo = ($t) => {
   return {
     keys,
     i18nKeys,
-    colors,
     icons
   }
 }
@@ -41,7 +33,6 @@ export const getStatusInfo = ($t, status) => {
 
   return {
     title: statuses.i18nKeys[status],
-    color: statuses.colors[status],
     icon: statuses.icons[status]
   }
 }

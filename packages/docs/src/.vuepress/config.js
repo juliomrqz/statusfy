@@ -65,6 +65,10 @@ module.exports = {
           {
             text: 'Changelog',
             link: 'https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md'
+          },
+          {
+            text: 'Demo',
+            link: 'http://demo.statusfy.co'
           }
         ],
         sidebar: {
@@ -95,6 +99,10 @@ module.exports = {
           {
             text: 'Changelog',
             link: 'https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md'
+          },
+          {
+            text: 'Demo',
+            link: 'http://demo.statusfy.co/es/'
           }
         ],
         sidebar: {

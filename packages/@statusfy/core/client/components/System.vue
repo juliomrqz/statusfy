@@ -1,15 +1,17 @@
 <template>
-  <div class="flex p-4 m-2 bg-grey-lighter block rounded">
-    <div class="flex-1 text-grey-darker">
+  <div
+    :class="system.status"
+    class="system flex flex-row justify-between">
+    <div class="system-title flex-1">
       {{ $t(`systems.items.${system.name}.title`) }}
 
       <v-popover
         v-if="description"
         trigger="hover focus"
         placement="top"
-        popover-class="absolute bg-grey-darkest text-white rounded px-4 py-3 shadow m-1 max-w-xs text-center text-sm"
+        popover-class="popover"
         class="hidden sm:inline">
-        <span class="cursor-pointer text-grey-dark">
+        <span class="system-title-info">
           <svgicon
             name="fortawesome/question-circle-regular"
             class="svg-inline--fa fa-w-16"/>
@@ -18,13 +20,11 @@
         <template slot="popover">{{ description }}</template>
       </v-popover>
     </div>
-    <div class="flex-1 text-grey-darker text-right">
-      <span :class="`text-${status.color}`">
-        <span class="hidden sm:inline">{{ status.title }}</span>
-        <svgicon
-          :name="`fortawesome/${status.icon}-solid`"
-          class="svg-inline--fa fa-w-16"/>
-      </span>
+    <div class="system-status flex-1">
+      <span class="hidden sm:inline">{{ status.title }}</span>
+      <svgicon
+        :name="`fortawesome/${status.icon}-solid`"
+        class="svg-inline--fa fa-w-16"/>
     </div>
   </div>
 </template>

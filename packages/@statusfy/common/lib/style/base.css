@@ -13,15 +13,11 @@
   --white: config('colors.white');
 
   --blue: config('colors.blue');
-  --indigo: config('colors.indigo');
+  --purple: config('colors.purple');
   --green: config('colors.green');
   --orange: config('colors.orange');
   --red: config('colors.red');
-
-  /* Breakpoints */
-  --breakpoint-sm: config('screens.sm');
-  --breakpoint-md: config('screens.md');
-  --breakpoint-lg: config('screens.lg');
+  --yellow: config('colors.yellow');
 
   /* Fonts */
   --font-family-sans-serif: config('fonts.sans');
@@ -29,19 +25,19 @@
 }
 
 body {
-  background-color: config('globalGuidelines.body-bg');
-  color: config('globalGuidelines.body-color');
+  background-color: var(--grey-lightest);
+  color: var(--black);
+  font-family: var(--font-family-sans-serif);
 
-  @apply font-sans text-black text-base;
+  @apply text-base;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-
-  @apply text-grey-darker;
+  color: var(--blue);
 
   &:hover {
-    @apply text-black;
+    color: var(--black);
   }
 }

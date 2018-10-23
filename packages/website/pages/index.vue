@@ -8,9 +8,7 @@
         <img
           src="~/assets/img/logo.svg"
           alt="Statusfy"
-          width="70"
           height="70">
-        <h1 class="font-nunito font-light text-6xl mt-2 ml-3">Statusfy</h1>
       </div>
       <p class="text-xl pb-4">{{ $t('slogan') }}</p>
     </main>
@@ -31,6 +29,13 @@
               v-html="$t('documentationLink')"/>
             <li>
               <a
+                href="http://demo.statusfy.co"
+                class="mr-2"
+                target="_blank"
+                rel="noopener">Demo</a>
+            </li>
+            <li>
+              <a
                 href="https://github.com/statusfy/statusfy"
                 target="_blank"
                 rel="noopener">Github</a>
@@ -44,10 +49,3 @@
     </footer>
   </div>
 </template>
-
-
-<style scoppd>
-h1 {
-  text-shadow: 0 1px 2px rgba(26, 44, 91, 0.4);
-}
-</style>

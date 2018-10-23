@@ -33,15 +33,9 @@ View the full documentation at https://tailwindcss.com.
 
 const { style } = require('@statusfy/common')
 
-const { colors, globalGuidelines } = style
+const { colors } = style
 
 module.exports = {
-  /*
-    Global Guidelines
-  */
-
-  globalGuidelines: globalGuidelines,
-
   /*
   |-----------------------------------------------------------------------------
   | Colors                                  https://tailwindcss.com/docs/colors
@@ -556,12 +550,12 @@ module.exports = {
   modules: {
     appearance: false,
     backgroundAttachment: false,
-    backgroundColors: [],
+    backgroundColors: false,
     backgroundPosition: false,
     backgroundRepeat: false,
     backgroundSize: false,
     borderCollapse: false,
-    borderColors: [],
+    borderColors: false,
     borderRadius: [],
     borderStyle: false,
     borderWidths: [],
@@ -591,7 +585,7 @@ module.exports = {
     svgFill: false,
     svgStroke: false,
     textAlign: [],
-    textColors: [],
+    textColors: false,
     textSizes: [],
     textStyle: false,
     tracking: false,

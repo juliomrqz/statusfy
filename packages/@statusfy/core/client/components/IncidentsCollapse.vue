@@ -14,7 +14,7 @@
 
       <div
         v-if="incidents.length > 3"
-        class="incident py-2 px-4 bg-white shadow rounded-full my-4 text-center cursor-pointer border-grey-light border"
+        class="btn"
         @click="collapsed = !collapsed">
         <template v-if="collapsed">+ {{ $t('incidents.collapse.show', { count: incidents.length }) }}</template>
         <template v-else>- {{ $t('incidents.collapse.hide') }}</template>
@@ -47,5 +47,12 @@ export default {
   li:nth-child(n + 4) {
     display: none;
   }
+}
+
+.btn {
+  @apply py-2 px-4 shadow rounded-full my-4 text-center cursor-pointer border w-full;
+
+  background-color: var(--white);
+  border-color: var(--grey-light);
 }
 </style>

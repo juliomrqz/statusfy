@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.aacbdw8jag4.svg
+heroImage: /hero.bvdrsr4sre5.svg
 actionText: Get Started →
 actionLink: /guide/
 footer: Copyright © 2018-present Bazzite, LLC

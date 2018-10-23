@@ -1,34 +1,24 @@
 const colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'black': '#1b1f23',
+  'grey-darkest': '#586069',
+  'grey-darker': '#6a737d',
+  'grey-dark': '#959da5',
+  'grey': '#d1d5da',
+  'grey-light': '#e1e4e8',
+  'grey-lighter': '#f6f8fa',
+  'grey-lightest': '#fafbfc',
   'white': '#ffffff',
 
-  'blue': '#2196F3',
-  'indigo': '#6610f2',
-  'green': '#4CAF50',
-  'orange': '#fd7e14',
-  'red': '#e51c23'
-}
-
-const globalGuidelines = {
-  'body-bg': colors['grey-lightest'],
-  'body-color': colors['black'],
-
-  'incident-bg': colors['white'],
-  'incident-border-color': colors['grey-light'],
-
-  'btn-bg': colors['white']
+  'blue': '#0366d6',
+  'purple': '#6f42c1',
+  'green': '#28a745',
+  'orange': '#f66a0a',
+  'red': '#d73a49',
+  'yellow': '#ffd33d'
 }
 
 module.exports = {
-  colors,
-  globalGuidelines
+  colors
 }

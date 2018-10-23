@@ -1,12 +1,12 @@
 <template>
-  <div class="text-center">
-    <h1 class="text-5xl font-medium my-4">{{ $t('offline.subtitle') }}</h1>
+  <div class="offline-container">
+    <h1 class="offline-title">{{ $t('offline.subtitle') }}</h1>
 
-    <p class="text-xl leading-normal max-w-sm mx-auto">
+    <p class="offline-description">
       {{ $t('offline.description') }}
     </p>
 
-    <div class="text-grey absolute max-w-screen max-h-screen opacity-25 w-full">
+    <div class="offline-message">
       <svgicon
         name="fortawesome/unlink-solid"
         width="15em"
@@ -34,9 +34,24 @@ export default {
 }
 </script>
 
-<style>
-  .absolute {
-    top: 5rem;
-    left: 0;
-  }
+<style scopped>
+.offline-container {
+  @apply text-center;
+}
+
+.offline-title {
+  @apply text-5xl font-medium my-4;
+}
+
+.offline-description {
+  @apply text-xl leading-normal max-w-sm mx-auto;
+}
+
+.offline-message {
+  @apply absolute max-w-screen max-h-screen opacity-25 w-full;
+
+  top: 5rem;
+  left: 0;
+  color: var(--grey);
+}
 </style>

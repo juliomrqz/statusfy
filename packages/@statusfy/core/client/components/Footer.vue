@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <div class="flex flex-col sm:flex-row items-center justify-between py-4 text-grey-dark">
-      <div class="my-2">
+  <div class="footer">
+    <div class="footer-links">
+      <div>
         <a
           v-for="link in links"
           :key="link.key"
           :href="link.url"
-          :title="link.title"
-          class="mr-4">{{ link.title }}</a>
+          :title="link.title">{{ link.title }}</a>
       </div>
 
-      <div class="my-2">
+      <div>
         {{ $t('labels.powered-by') }}
         <a
           :href="statusfyHomeLink"
@@ -20,20 +19,20 @@
     </div>
     <div
       v-if="$i18n.locales.length > 1"
-      class="text-center mb-6 mt-4 sm:mt-2">
+      class="footer-language-swticher">
       <template v-for="locale in $i18n.locales">
         <nuxt-link
           v-if="locale.code !== $i18n.locale"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          :class="{ 'font-medium text-black': locale.code === $i18n.locale }"
-          class="mx-2">{{ locale.name }}</nuxt-link>
+          :class="{ 'active': locale.code === $i18n.locale }">
+          {{ locale.name }}</nuxt-link>
         <a
           v-else
           :key="locale.code"
           :href="switchLocalePath(locale.code)"
-          :class="{ 'font-medium text-black': locale.code === $i18n.locale }"
-          class="mx-2">{{ locale.name }}</a>
+          :class="{ 'active': locale.code === $i18n.locale }">
+          {{ locale.name }}</a>
       </template>
     </div>
   </div>

@@ -1,22 +1,22 @@
 <template>
-  <div class="mt-6">
-    <h2 class="text-2xl mb-4 font-medium">{{ $t('incidents.latest-incidents') }}</h2>
+  <div class="timeline-container">
+    <h2>{{ $t('incidents.latest-incidents') }}</h2>
 
-    <ul class="timeline list-reset m-0 p-0">
+    <ul class="timeline">
       <li
         v-for="day of days"
         :key="day.date"
         :class="day.status.key"
-        class="timeline-incident border-l-2 border-grey-light ml-2 relative pt-0 pb-6 pl-6">
+        class="timeline-incident">
 
-        <h3 class="timeline-incident-title text-xl font-medium mb-4">
+        <h3 class="timeline-incident-title">
           <nice-date :date="day.date" />
         </h3>
 
-        <div class="timeline-incident-body pb-2">
+        <div class="timeline-incident-body">
           <div
             v-if="day.incidents.length === 0"
-            class="text-grey-darker">
+            class="message">
             {{ $t('incidents.no-incidents') }}
           </div>
 
@@ -84,7 +84,6 @@ export default {
       return {
         key: statusKey,
         title: statuses.i18nKeys[statusKey],
-        color: statuses.colors[statusKey],
         icon: statuses.icons[statusKey]
       }
     }

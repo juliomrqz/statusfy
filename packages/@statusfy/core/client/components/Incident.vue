@@ -1,43 +1,33 @@
 <template>
-  <div class="incident leading-normal p-4 pt-6 shadow rounded my-4 border">
-    <div class="incident-head flex flex-col sm:flex-row justify-between">
-      <div
-        :class="{
-          'flex items-start sm:items-center justify-between flex-row-reverse sm:flex-row': level > 0,
-          'text-center': level === 0
-        }"
-        class="mb-4">
-        <span
-          :class="`bg-${resolved.color}`"
-          class="block text-white rounded-full text-sm font-semibold py-1 p-3 sm:mr-2">
+  <div
+    :class="`${incident.severity} ${resolved.value ? 'resolved' : 'unresolved'}`"
+    class="incident">
+    <div class="incident-header">
+      <div class="incident-title">
+        <span class="badge">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
         <nuxt-link
           v-if="level > 0"
           :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
-          <component
-            :is="`h${level}`"
-            :class="!resolved.value ? `text-${resolved.color}` : 'text-grey-darkest'"
-            class="text-lg block">
+          <component :is="`h${level}`">
             {{ incident.title }}
           </component>
         </nuxt-link>
       </div>
 
-      <div class="mb-2 text-center">
+      <div class="incident-systems">
         <span
           v-for="system of incident.affectedsystems"
           :key="system"
-          class="inline-block bg-grey-lighter rounded-full text-sm font-semibold text-grey-darker py-1 p-3 ml-2">
+          class="badge">
           {{ $t(`systems.items.${system}.title`) }}
         </span>
       </div>
     </div>
 
-    <div class="incident-sub-head flex flex-col sm:flex-row items-center justify-between">
-      <div
-        :class="`text-${status.color}`"
-        class="my-2 sm:mb-0">
+    <div class="incident-subtitle">
+      <div class="status">
         <svgicon
           :name="`fortawesome/${status.icon}-solid`"
           class="svg-inline--fa fa-w-16"/>

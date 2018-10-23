@@ -6,23 +6,54 @@ main {
 }
 
 .btn {
-  background-color: config('globalGuidelines.btn-bg');
+  background-color: var(--white);
 
   @apply inline-block rounded-full font-medium border py-2 px-4 shadow
 }
 
+
+.badge {
+  @apply rounded-full text-sm font-semibold px-3 py-1;
+}
+
+.popover {
+  @apply absolute rounded px-4 py-3 shadow m-1 max-w-xs text-center text-sm;
+
+  color: var(--white);
+  background-color: var(--grey-darkest);
+}
+
 /* timeline */
+.timeline-container {
+  @apply mt-6;
+
+  > h2 {
+    @apply text-2xl mb-4 font-medium;
+  }
+}
+
+.timeline {
+  @apply list-reset m-0 p-0;
+}
+
 .timeline-incident {
+  @apply border-l-2 ml-2 relative pt-0 pb-6 pl-6;
+
+  border-color: var(--grey-light);
+
   &:last-child {
-    @apply border-transparent
+    border-color: var(--transparent);
   }
 
   &::before {
+    @apply w-6 h-6 border-2 absolute rounded-full z-10;
+
+    background-color: var(--white);
+    border-color: var(--grey-light);
     content: ' ';
     left: -13px;
     top: 0;
 
-    @apply w-6 h-6 bg-white border-2 border-grey-light absolute rounded-full z-10
   }
 
   &::before {
@@ -31,7 +62,7 @@ main {
     }
 
     .degraded-performance& {
-      border-color: var(--indigo);
+      border-color: var(--purple);
     }
 
     .partial-outage& {
@@ -49,17 +80,168 @@ main {
 }
 
 .timeline-incident-title {
-  @apply text-xl font-medium mb-4
+  @apply text-xl font-medium mb-4;
 }
 
 .timeline-incident-body {
-  @apply pb-2
+  @apply pb-2;
+
+  .message {
+    color: var(--grey-darker);
+  }
 }
 
 /* Incidents */
 .incident {
-  background-color: config('globalGuidelines.incident-bg');
-  border-color: config('globalGuidelines.incident-border-color');
+  background-color: var(--white);
+  border-color: var(--grey-light);
+
+  @apply leading-normal p-4 pt-6 shadow rounded my-4 border;
+
+  .incident-header {
+    @apply flex flex-col justify-between;
+
+    @screen sm {
+      @apply flex-row;
+    }
+  }
+
+  .incident-title {
+    @apply flex items-start justify-between flex-row-reverse mb-4;
+
+    @screen sm {
+      @apply items-center flex-row;
+    }
+
+    &.level-0 {
+      @apply text-center;
+    }
+
+    .badge {
+      @apply block;
+
+      color: var(--white);
+
+      @screen sm {
+        @apply mr-2;
+      }
+    }
+
+    a * {
+      @apply text-lg block;
+    }
+  }
+
+  .incident-subtitle {
+    @apply flex flex-col items-center justify-between;
+
+    @screen sm {
+      @apply flex-row;
+    }
+
+    time {
+      @apply text-sm;
+    }
+
+    .status {
+      @apply my-2;
+
+      @screen sm {
+        @apply mb-0;
+      }
+    }
+  }
+
+  .incident-systems {
+    @apply mb-2 text-center;
+
+    .badge {
+      @apply inline-block ml-2 mb-2;
+
+      color: var(--grey-darker);
+      background-color: var(--grey-lighter);
+    }
+  }
+
+  &.under-maintenance {
+    &.unresolved {
+      .incident-title {
+        .badge {
+          background-color: var(--grey-darker);
+        }
+
+        a {
+          color: var(--grey-darker);
+        }
+      }
+    }
+
+    .incident-subtitle .status {
+      color: var(--grey-darker);
+    }
+  }
+
+  &.degraded-performance {
+    &.unresolved {
+      .incident-title {
+        .badge {
+          background-color: var(--purple);
+        }
+
+        a {
+          color: var(--purple);
+        }
+      }
+    }
+
+    .incident-subtitle .status {
+      color: var(--purple);
+    }
+  }
+
+  &.partial-outage {
+    &.unresolved {
+      .incident-title {
+        .badge {
+          background-color: var(--orange);
+        }
+
+        a {
+          color: var(--orange);
+        }
+      }
+    }
+
+    .incident-subtitle .status {
+      color: var(--orange);
+    }
+  }
+
+  &.major-outage {
+    &.unresolved {
+      .incident-title {
+        .badge {
+          background-color: var(--red);
+        }
+
+        a {
+          color: var(--red);
+        }
+      }
+    }
+
+    .incident-subtitle .status {
+      color: var(--red);
+    }
+  }
+
+  &.resolved {
+    .incident-title {
+      .badge {
+        background-color: var(--green);
+      }
+    }
+  }
 }
 
 .incident-body {
@@ -73,11 +255,11 @@ main {
   }
 
   a {
-    @apply text-blue;
+    color: var(--blue);
 
     &.external {
       svg {
-        @apply text-grey-dark;
+        color: var(--grey-dark);
       }
     }
   }
@@ -103,7 +285,8 @@ main {
   }
 
   .update-block-date {
-    @apply text-grey-dark my-2;
+    @apply my-2 text-sm;
+    color: var(--grey-dark);
   }
 
   .update-block-content {
@@ -112,5 +295,131 @@ main {
 
   .update-block-title {
     @apply font-semibold mb-2 text-lg;
+  }
+}
+
+/* Systems */
+.systems-container {
+  @apply py-2 px-2 shadow rounded my-4 border;
+
+  background-color: var(--white);
+  border-color: var(--grey-light);
+}
+
+.system {
+  @apply p-4 m-2 rounded;
+  background-color: var(--grey-lighter);
+
+  .system-title {
+    color: var(--grey-darker);
+  }
+
+  .system-title-info {
+    @apply cursor-pointer;
+    color: var(--grey-dark)
+  }
+
+  .system-status {
+    @apply text-right;
+    color: var(--grey-darker);
+  }
+
+  &.under-maintenance {
+    .system-status {
+      color: var(--grey-darker);
+    }
+  }
+
+  &.degraded-performance {
+    .system-status {
+      color: var(--purple);
+    }
+  }
+
+  &.partial-outage {
+    .system-status {
+      color: var(--orange);
+    }
+  }
+
+  &.major-outage {
+    .system-status {
+      color: var(--red);
+    }
+  }
+
+  &.operational {
+    .system-status {
+      color: var(--green);
+    }
+  }
+}
+
+/* Systems */
+.global-status {
+  @apply content-center py-4 px-2 shadow rounded my-4 text-2xl;
+  background-color: var(--grey-lighter);
+  color: var(--white);
+
+  .global-status-icon {
+    @apply ml-2;
+  }
+
+  &.under-maintenance {
+    background-color: var(--grey-darker);
+  }
+
+  &.degraded-performance {
+    background-color: var(--purple);
+  }
+
+  &.partial-outage {
+    background-color: var(--orange);
+  }
+
+  &.major-outage {
+    background-color: var(--red);
+  }
+
+  &.operational {
+    background-color: var(--green);
+  }
+}
+
+
+/* Footer */
+.footer {
+  .footer-links {
+    @apply flex flex-col items-center justify-between py-4;
+    color: var(--grey-dark);
+
+    > div {
+      @apply my-2;
+
+      > a:not(:last-child) {
+        @apply mr-4;
+      }
+    }
+
+    @screen sm {
+      @apply flex-row;
+    }
+  }
+
+  .footer-language-swticher {
+    @apply text-center mb-6 mt-4;
+
+    @screen sm {
+      @apply mt-2;
+    }
+
+    a {
+      @apply mx-2;
+
+      &.active {
+        @apply font-medium;
+        color: var(--black);
+      }
+    }
   }
 }
