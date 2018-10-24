@@ -6,6 +6,7 @@ main {
 }
 
 .btn {
+  color: var(--black);
   background-color: var(--white);
 
   @apply inline-block rounded-full font-medium border py-2 px-4 shadow
@@ -104,6 +105,12 @@ main {
     @screen sm {
       @apply flex-row;
     }
+
+    &.level-0 {
+      .incident-title {
+        @apply block;
+      }
+    }
   }
 
   .incident-title {
@@ -118,7 +125,7 @@ main {
     }
 
     .badge {
-      @apply block;
+      @apply block text-center;
 
       color: var(--white);
 
@@ -127,8 +134,12 @@ main {
       }
     }
 
-    a * {
-      @apply text-lg block;
+    a {
+      color: var(--black);
+
+      * {
+        @apply text-lg block;
+      }
     }
   }
 
@@ -389,6 +400,14 @@ main {
 
 /* Footer */
 .footer {
+  a {
+    color: var(--grey-darker);
+
+    &:hover {
+      color: var(--black) !important;
+    }
+  }
+
   .footer-links {
     @apply flex flex-col items-center justify-between py-4;
     color: var(--grey-dark);

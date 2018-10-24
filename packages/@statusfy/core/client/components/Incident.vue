@@ -2,7 +2,9 @@
   <div
     :class="`${incident.severity} ${resolved.value ? 'resolved' : 'unresolved'}`"
     class="incident">
-    <div class="incident-header">
+    <div
+      :class="`level-${level}`"
+      class="incident-header">
       <div class="incident-title">
         <span class="badge">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
