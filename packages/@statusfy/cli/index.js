@@ -67,7 +67,7 @@ program
 program
   .command('build')
   .description('Compiles the application for production deployment')
-  .option('-a, --analyze', 'launch final bundle analysis')
+  .option('-a, --analyze', 'launch the final bundle analysis')
   .action(({ analyze }) => {
     wrapCommand(build)(sourceDir, { analyze })
   })
@@ -76,7 +76,7 @@ program
   .command('generate')
   .description('Generate a static web application (server-rendered)')
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
-  .option('-a, --analyze', 'launch final bundle analysis')
+  .option('-a, --analyze', 'launch the final bundle analysis')
   .action(({ dest, analyze }) => {
     const outDir = dest ? path.resolve(dest) : null
     wrapCommand(generate)(sourceDir, { outDir, analyze })
@@ -93,7 +93,7 @@ program
 
 program
   .command('new-incident')
-  .description(`Creates a new incident answering a few questions.`)
+  .description(`Creates a new incident after answering a few questions.`)
   .action(() => {
     wrapCommand(newIncident)(sourceDir, { })
   })

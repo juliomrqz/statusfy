@@ -121,10 +121,11 @@ function genSidebarConfig(title, section = 'guide') {
       'getting-started',
       'directory-structure',
       'basic-config',
-      'markdown',
       'i18n',
       'incidents',
       'pwa',
+      'theme-customization',
+      'commands',
       'deploy',
     ],
     config: [
