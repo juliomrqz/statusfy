@@ -6,7 +6,7 @@ Statusfy is a simple open source Status Page system designed to be built and mai
 
 ## How It Works
 
-A Statusfy site is a SPA (Simple Page Application) Website created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind](https://tailwindcss.com/). But, don't worry, you don't need to know how to use these amazing Technologies, you just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the needed logic of your Status Page System.
+A Statusfy site is a SPA (Simple Page Application) Website created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind CSS](https://tailwindcss.com/). But, don't worry, you don't need to know how to use these amazing Technologies, you just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the needed logic of your Status Page System.
 
 The final Web Aplication can be [generated or built](../guide/deploy.md) from a single CLI, can be [easily configured](../guide/pwa.md) or [customized](../guide/theme-customization.md) with your Style requirements. 
 
@@ -27,11 +27,10 @@ The final Web Aplication can be [generated or built](../guide/deploy.md) from a 
 Statusfy is still a work in progress. There are a few things that are not currently supported but are planned:
 
 - A Statusfy GUI: create and manage your project in an easier way.
-- Notifications
-- Metrics
-- RSS
-- Plugins support
-- Custom Themes support
+- Notifications.
+- Metrics.
+- RSS.
+- Custom Themes support.
 - Different Data Sources: MySQL, PostgreSQL, SQLite, etc.
 
-[Contributions are welcome!](https://github.com/bazzite/statusfy)
+[:nerd_face: Contributions are welcome!](https://github.com/bazzite/statusfy)

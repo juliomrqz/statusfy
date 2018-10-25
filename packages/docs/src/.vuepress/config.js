@@ -129,7 +129,7 @@ function genSidebarConfig(title, section = 'guide') {
       '',
       'getting-started',
       'directory-structure',
-      'basic-config',
+      'configuration',
       'i18n',
       'incidents',
       'pwa',

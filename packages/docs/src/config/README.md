@@ -26,8 +26,8 @@ The Description for the site. This will be rendered as a `<meta>` tag in the pag
 
 The base URL the site will be deployed at. It can be just a slash or a valid URL that shouldn't end with a slash.
 
-::: warning Warning
-You should set the baseUrl option to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md).
+::: warning WARNING
+You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
 
 ## serviceWorker
@@ -69,7 +69,7 @@ The app's default locale, URLs for this locale won't have a prefix. It is also u
 - Type: `[{ code: string, iso: string, name: string }]`
 - Default: `[{ code: 'en', iso: 'en-US', name: 'English' }]`
 
-Specify locales for i18n support. For more details, see the guide on [Internationalization](../guide/i18n.md).
+Specify locales for i18n support. For more details, see the guide on [Internationalization](../guide/i18n.md#configuration).
 
 ## content
 
@@ -83,14 +83,14 @@ Parameters that define some content considerations for your Incidents.
 - Type: `string`
 - Default: `content`
 
-The path that define the location of your incidents' markdown source files.
+The path that defines the location of your incidents' markdown source files.
 
 ### frontMatterFormat
 
 - Type: `string`
 - Default: `undefined`
 
-Define the format of the Incidents' Front Matter. You can choose one of the following: yaml, yml, toml, json. For more details, see the guide on [Incidents' Front Matter](../guide/markdown.md#front-matter).
+Define the default format of the Incidents' Front Matter used by the `new-incident` command (More info [here](../guide/commands.md#new-incident)). You can choose one of the following: yaml, yml, toml, json. For more details, see the guide on [Incidents' Front Matter](../guide/incidents.md#front-matter).
 
 ### systems
 

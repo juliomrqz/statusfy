@@ -1,14 +1,15 @@
 # Directory Structure
 
+Statusfy is designed to be easy to use and organize with [Internationalization](../guide/i18n.md) in mind, the recommended document structure is as follows:
 
-```
+```bash
 .
 ├─ .statusfy/         # (internal)
 ├─ assets/            # (optional)
 ├─ content/           # (required)
 │   ├── 2018-01-16_incident_1.md
 │   ├── 2018-01-17_incident_2.md
-│   ├── es
+│   ├── es           # (optional)
 │   │   ├── 2018-01-16_incident_1.md
 │   │   └── 2018-01-17_incident_2.md
 ├─ locales/           # (recomended)
@@ -21,12 +22,12 @@
 ```
 
 ::: warning Note
-Please note the capitalization of the directory name.
+The capitalization of the directories names is important in order to avoid errors.
 :::
 
-- **`.statusfy/`**: It is used to store the built files needed for your application during development or the [production dynamic mode](../guide/deploy.md#dynamic).
+- **`.statusfy/`**: It is used to store the built files needed for your application during development or the Production [Server Rendered Mode](../guide/deploy.md#server-rendered).
 - **`assets/`**: The assets directory contains your un-compiled assets such as Images.
-- **`content/`**: The markdown source files of your incidents. This file path can be changed, more information [here](../config/README.md#dir).
-- **`locales/`**: Directory that contains translations files.
-- **`public/`**: Static files directory. Each file inside this directory is mapped to `/`. **For example:** `/public/robots.txt` is mapped as `/robots.txt`.
-- **`config.js`**: Your [Config File](../guide/basic-config.md#config-file).
+- **`content/`**: The Markdown source files of your Incidents. This file path can be changed, more information in the [Config Reference](../config/README.md#dir).
+- **`locales/`**: Directory that contains translations files. More information in the [Internationalization Guide](../guide/i18n.md).
+- **`public/`**: Static files directory. Each file inside this directory is mapped to `/`. For example: `/public/robots.txt` is mapped as `/robots.txt`.
+- **`config.js`**: Your Configuration File. More information in the [Configuration Guide](../guide/configuration.md#config-file).

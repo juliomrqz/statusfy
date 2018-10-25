@@ -3,6 +3,7 @@
 
 ## Config File
 
+Without any configuration, Statusfy will use default values in order to make work your Status Page System. The configuration file must be places at root of your project:
 
 ```
 .
@@ -19,10 +20,8 @@ module.exports = {
 }
 ```
 
-...
-
 Consult the [Config Reference](../config/README.md) for a full list of options.
 
-::: tip Alternative Config Formats
+## Alternative Config Formats
+
 You can also use YAML (`./config.yml`) or TOML (`./config.toml`) formats for the configuration file.
-:::

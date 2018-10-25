@@ -29,4 +29,4 @@ Please note the capitalization of the directory name.
 - **`content/`**: The markdown source files of your incidents. This file path can be changed, more information [here](../config/README.md#dir).
 - **`locales/`**: Directory that contains translations files.
 - **`public/`**: Static files directory. Each file inside this directory is mapped to `/`. **For example:** `/public/robots.txt` is mapped as `/robots.txt`.
-- **`config.js`**: Your [Config File](../guide/basic-config.md#config-file).
+- **`config.js`**: Your [Config File](../guide/configuration.md#config-file).

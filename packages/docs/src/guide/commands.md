@@ -76,8 +76,20 @@ The application should be compiled with [`statusfy build`](#build) first.
 
 ## new-incident
 
-Creates a new incident after answering a few questions.
+Creates a new incident after answering a few questions. An initial Markdown file is generated for your incident for all the available languages.
 
 ``` bash
 statusfy new-incident
 ```
+
+The name of the created file follows this pattern:
+
+```
+YYYY-MM-DD_slug.md
+```
+
+where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***.
+
+::: tip TIP
+You can skip the Front Matter Format Question by defining the `frontMatterFormat` field in your configuration file. More information in the [Config Reference Guide](../config/README.md#frontmatterformat).
+:::

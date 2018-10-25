@@ -28,12 +28,17 @@ If you want to reduce your deployment time or just not want to use a Static Host
 ### Advantages
 
 - For a Status Page System with a huge amount of Incidents, the pages generation time is not an issue.
+- Redirection based on user's browser language
 
 ### Disavantages
 
 - You can't use a static hosting.
 - You are limited to use a hosting service that supports Node.js.
 - Node.js Hosting can be more expensive than a Static Hosting.
+
+::: tip NOTE
+Node.js is used as the backend technology used to run the Status Page System in a Server.
+:::
 
 ## Services
 
@@ -60,6 +65,7 @@ The following guides are based on a few shared assumptions:
 {
   "scripts": {
     "dev": "statusfy dev",
+    "generate": "statusfy generate",
     "build": "statusfy build",
     "start": "statusfy start"
   }
