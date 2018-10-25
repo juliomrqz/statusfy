@@ -3,7 +3,6 @@ home: true
 heroImage: /hero.bvdrsr4sre5.svg
 actionText: Empezemos →
 actionLink: /es/guide/
-footer: Copyright © 2018-presente Bazzite, LLC
 features:
 - title: Simplicidad
   details: ""
@@ -39,3 +38,6 @@ statusfy start
 ::: warning NOTA DE COMPATIBILIDAD
 Statusfy requiere Node.js >= 8.
 :::
+
+<!-- Footer Component -->
+<Footer />
