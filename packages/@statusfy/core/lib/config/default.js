@@ -1,4 +1,6 @@
 module.exports = {
+  title: 'Statusfy Demo',
+  description: 'A marvelous open source Status Page system',
   baseUrl: '/',
   defaultLocale: 'en',
   locales: [
