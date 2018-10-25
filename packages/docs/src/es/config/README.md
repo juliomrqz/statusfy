@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+sidebarDepth: 4
 ---
 
 # Referencia de Configuración
