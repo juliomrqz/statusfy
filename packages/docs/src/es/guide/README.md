@@ -6,7 +6,7 @@ Esta documentación está en desarrollo
 
 
 
-![An image](/assets/img/statusfy-home-es.png)
+![Página de Inicio de Statusfy](/assets/img/statusfy-home-es.png =1280x829)
 
 ## How It Works
 

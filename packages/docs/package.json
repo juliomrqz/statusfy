@@ -31,6 +31,8 @@
   "homepage": "https://docs.statusfy.co",
   "devDependencies": {
     "@statusfy/common": "^0.0.1-alpha.1",
+    "markdown-it-block-image": "0.0.3",
+    "markdown-it-imsize": "^2.0.1",
     "vuepress": "^0.14.4"
   }
 }

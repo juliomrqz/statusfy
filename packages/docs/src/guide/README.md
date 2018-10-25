@@ -2,7 +2,7 @@
 
 Statusfy is a simple open source Status Page system designed to be built and maintained with minimum effort. You can easily create a fast Status Page Website either [**Static Generated**](../guide/deploy.md#static-generated) or [**Server Rendered**](../guide/deploy.md#server-rendered) and easily deploy it to a variety of [hosting services](../guide/deploy.md#services).
 
-![An image](/assets/img/statusfy-home-en.png)
+![Statusfy Homepage](/assets/img/statusfy-home-en.png =1280x829)
 
 ## How It Works
 
@@ -32,6 +32,6 @@ Statusfy is still a work in progress. There are a few things that are not curren
 - RSS
 - Plugins support
 - Custom Themes support
-- Different Data Sources: MySQL, PostgreSQL, NoSQL alternatives, etc.
+- Different Data Sources: MySQL, PostgreSQL, SQLite, etc.
 
 [Contributions are welcome!](https://github.com/bazzite/statusfy)

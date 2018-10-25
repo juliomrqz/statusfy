@@ -9,6 +9,15 @@ module.exports = {
   postcss: {
     puglins: postcss.plugins()
   },
+  markdown: {
+    config: md => {
+      md.use(require('markdown-it-imsize'));
+      md.use(require("markdown-it-block-image"), {
+        outputContainer: 'p',
+        containerClassName: 'img-container'
+      });
+    }
+  },
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/icons/favicon-16x16.png' }],
