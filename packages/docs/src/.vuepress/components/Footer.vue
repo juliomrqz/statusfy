@@ -1,16 +1,27 @@
 <template>
   <div class="footer">
-    <div v-if="language === 'en'">
-      Copyright © 2018 <a href="https://www.bazzite.com?ref=statusfy-docs" target="_blank" rel="noopener">Bazzite, LLC</a>. All Rights Reserved.
-    </div>
-    <div v-else-if="language === 'es'">
-      Copyright © 2018 <a href="https://www.bazzite.com/es/?ref=statusfy-docs" target="_blank" rel="noopener">Bazzite, LLC</a>. Todos los derechos reservados.
-    </div>
+    {{ text[language].prefix }} <a :href="text[language].link" target="_blank" rel="noopener">Bazzite</a>.
+    <br>
+    {{ text[language].copyright }}
   </div>
 </template>
 
 <script>
 export default {
+  data: () => ({
+    text: {
+      en: {
+        prefix: 'Made with ❤️ by',
+        link: 'https://www.bazzite.com?ref=statusfy-docs',
+        copyright: 'Copyright © 2018 Bazzite, LLC. All Rights Reserved.'
+      },
+      es: {
+        prefix: 'Hecho con ❤️ por',
+        link: 'https://www.bazzite.com/es/?ref=statusfy-docs',
+        copyright: 'Copyright © 2018 Bazzite, LLC. Todos los derechos reservados.'
+      }
+    }
+  }),
   computed: {
     language() {
       return this.$lang.split('-')[0];
