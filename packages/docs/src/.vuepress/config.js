@@ -77,7 +77,7 @@ module.exports = {
           },
           {
             text: 'Demo',
-            link: 'http://demo.statusfy.co'
+            link: 'https://demo.statusfy.co'
           }
         ],
         sidebar: {
@@ -111,7 +111,7 @@ module.exports = {
           },
           {
             text: 'Demo',
-            link: 'http://demo.statusfy.co/es/'
+            link: 'https://demo.statusfy.co/es/'
           }
         ],
         sidebar: {
