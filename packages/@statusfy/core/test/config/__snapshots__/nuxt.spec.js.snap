@@ -86,7 +86,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#22292f",
+    "color": "#1b1f23",
   },
   "manifest": Object {
     "description": "Description",
@@ -105,7 +105,7 @@ Object {
     "ogDescription": false,
     "ogHost": "https://demo.statusfy.co",
     "ogTitle": false,
-    "theme_color": "#22292f",
+    "theme_color": "#1b1f23",
   },
   "mode": "universal",
   "modules": Array [
@@ -389,7 +389,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#22292f",
+    "color": "#1b1f23",
   },
   "manifest": Object {
     "description": "",
@@ -408,7 +408,7 @@ Object {
     "ogDescription": false,
     "ogHost": "/",
     "ogTitle": false,
-    "theme_color": "#22292f",
+    "theme_color": "#1b1f23",
   },
   "mode": "universal",
   "modules": Array [
@@ -621,7 +621,7 @@ Object {
     ],
   },
   "loading": Object {
-    "color": "#22292f",
+    "color": "#1b1f23",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -631,7 +631,7 @@ Object {
     "ogDescription": false,
     "ogHost": "/",
     "ogTitle": false,
-    "theme_color": "#22292f",
+    "theme_color": "#1b1f23",
   },
   "mode": "universal",
   "modules": Array [

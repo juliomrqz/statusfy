@@ -65,6 +65,7 @@ Object {
     "title": "ES6 Config Format",
   },
   "defaultLocale": "en",
+  "description": "A marvelous open source Status Page system",
   "locales": Array [
     Object {
       "code": "en",
@@ -73,9 +74,10 @@ Object {
     },
   ],
   "manifest": true,
-  "name": "",
+  "name": "statusfy_demo",
   "serviceWorker": true,
   "sourceDir": "fragments/formats/js-es6",
+  "title": "Statusfy Demo",
 }
 `;
 
