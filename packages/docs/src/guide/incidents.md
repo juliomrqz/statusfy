@@ -8,7 +8,7 @@ Incidents are the core of Statusfy: there is no Status Page System with a record
 
 The Incidents information is stored in a Markdown file with attributes and a content that provides extra information to your users.
 
-You must create the incidents in the `./content` folder (this pathname can be changed, more information [here](../config/README.md#dir)) in order to be discovered by Statusfy. It's generated an HTML page for Each of your Incidents, and they are listed in the History Section of your Status Page System.
+You must create the incidents in the `./content` folder (this path name can be changed, more information [here](../config/README.md#dir)) to be discovered by Statusfy. It's generated an HTML page for Each of your Incidents, and they are listed in the History Section of your Status Page System.
 
 ::: warning REMEMBER
 You must create a sub-folder for each of your [Secondary Languages](../guide/i18n.md#configuration) and place the source of the translation of your incidents.
@@ -26,7 +26,7 @@ With this command, after you answer a few questions, an initial Markdown file is
 
 ## Naming Convention
 
-You can name the file of your Incidents in the way you desired the mosth but recomend this pattern `YYYY-MM-DD_slug.md`, where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***. For example:
+You can name the file of your Incidents in the way you desired the most but we recommend this pattern `YYYY-MM-DD_slug.md`, where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***. For example:
 
 ```
 /content/2018-11-21_networking-issues.md
@@ -34,7 +34,7 @@ You can name the file of your Incidents in the way you desired the mosth but rec
 /content/2018-11-22_origin-server-errors_2.md
 ```
 
-This way you can easily sort by date your incidents and guarantee a unique file name.
+This way you can easily sort by date your incidents and guarantee a unique filename.
 
 
 ::: tip TIP
@@ -67,51 +67,69 @@ resolved: true
 - Type: `string`
 - Requirement: `optional`
 
+A unique identifier for the incident. It must be alphanumeric in order to prevent errors when generating/building/accessing the system.
+
+If this value is not explicitly defined, it will be automatically generated a unique string based on the filename of the incident.
+
 #### title
 
 - Type: `string`
 - Requirement: `mandatory`
 
+The title of the Incident.
+
 #### description
 
 - Type: `string`
-- Requirement: `optional but recomended`
+- Requirement: `optional but recommended`
+
+A short description of the Incident. It's used as a meta description and as a summary for the incident in the History section.
 
 #### date
 
 - Type: `string`
 - Requirement: `mandatory`
 
+The creation date of the Incident in [ISO-8601 format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString): `YYYY-MM-DDTHH:mm:ss.sssZ`.
+
 #### modified
 
 - Type: `string`
 - Requirement: `optional`
 
-Predefined value
-Git
+The last modification of the incident. If a value is defined, you must update it every time the incident is updated. 
+
+
+::: tip TIP
+If you use `git` in your project, this value can be automatically generated from the date of the file's last git commit. 
+:::
 
 #### severity
 
 - Type: `string`
 - Requirement: `mandatory`
 
-Available values:
+The severity of the Incident. There are 4 values available:
 
-- *under-maintenance*:
-- *major-outage*:
-- *partial-outage*:
-- *degraded-performance*:
-
+- *under-maintenance*: The system(s) cannot handle requests due to a temporary maintenance update.
+- *major-outage*: No one can access the system(s) because it is completely down.
+- *partial-outage*: Limited access to the system(s), because it's probably experiencing difficulties.
+- *degraded-performance*: The system(s) is not stable, it's working slow otherwise impacted in a minor way. 
 
 #### affectedsystems
 
 - Type: `string`
 - Requirement: `mandatory`
 
+The affected system(s) the incident is referring to. The values that can be used must be defined in the configuration file (More information in the [Config Reference](../config/README.md#systems)).
+
 #### resolved
 
 - Type: `boolean`
 - Requirement: `mandatory`
+- Default: `false`
+
+If this field is set to true, the incident is Marked as Resolved.
 
 ### Alternative Front Matter Formats
 
@@ -137,7 +155,7 @@ JSON front matter needs to start and end in curly braces and needs to be explici
 ---
 ```
 
-And TOML front matter also needs to be explicitly marked as TOML:
+And TOML front matter also needs to be explicitly marked, as TOML:
 
 ```markdown
 ---toml
@@ -161,21 +179,33 @@ Statusfy only supports the [version 0.4.0](https://github.com/toml-lang/toml/blo
 
 ## Content
 
-
+The content of the Incidents are wirting in valid Markdown format but there are extra Extensions that Statsufy provides.
 
 ### Updates Containers
 
+These containers are the way the Updates of Incidents are defined. 
+
+```markdown
+::: update Resolved | 2018-02-06T01:24:45.752Z
+We detected a networking problem that caused temporary issues for our API and origin servers. All systems are back to normal now, but we're monitoring closely.
+:::
+```
+
+You must provide a Title, a Date in [ISO-8601 format][iso-format](`YYYY-MM-DDTHH:mm:ss.sssZ`) and a valid Markdown content.
 
 ### Links
 
 #### Internal Links
 
+Any absolute or relative link is treated as an internal link.
+
 #### External Links
 
-Outbound links automatically gets `target="_blank" rel="noopener noreferrer" class="external"`:
-
+A link with a defined domain is identified as an outbound link and automatically gets `target="_blank" rel="noopener noreferrer" class="external"`:
 
 ### Emojis :nerd_face:
+
+Emojis can also be used.
 
 **Input**
 
@@ -223,4 +253,8 @@ The Files Conversion System is back to normal and we'll continue to monitor.
 :::
 ```
 
-This file will be redered as a HTML page silimiar to this one: [Demo Incident - #382ee1ab](https://demo.statusfy.co/incidents/382ee1ab)
+This file will be rendered as an HTML page similar to this one: [Demo Incident - #382ee1ab](https://demo.statusfy.co/incidents/382ee1ab)
+
+
+
+[iso-format]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
