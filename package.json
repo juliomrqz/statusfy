@@ -31,7 +31,9 @@
     "prepare": "cross-env STATUSFY_LERNA=true lerna run prepare",
     "prepare-test": "cross-env STATUSFY_LERNA=true lerna run prepare-test",
     "jest": "cross-env STATUSFY_LERNA=true jest",
+    "update-readme": "cp -f README.md ./packages/statusfy/",
     "update-version": "lerna publish --skip-git --skip-npm --force-publish '*'",
+    "pre-release": "yarn run update-readme && yarn run update-version",
     "install-dependencies": "yarn install && lerna bootstrap",
     "docs:dev": "yarn workspace statusfy-docs dev",
     "docs:build": "yarn workspace statusfy-docs build",
@@ -67,7 +69,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint"
+      "pre-commit": "yarn run lint"
     }
   }
 }
