@@ -47,7 +47,7 @@ and launch the development server with:
 npm run dev # OR yarn dev
 ```
 
-You can generate a Static Generated Website (pre-built HTML files) with:
+You can generate a [Static Generated](../guide/architecture.md#static-generated) Website (pre-built HTML files) with:
 
 ``` bash
 npm run generate # OR yarn generate
@@ -57,7 +57,7 @@ npm run generate # OR yarn generate
 The built files will be in `./dist`, which can be configured via the `--dest` argument. More info in the [Commands Guide](../guide/commands.md#generate).
 :::
 
-or generate a Server Rendered Website with:
+or generate a [Server Rendered](../guide/architecture.md#server-rendered) Website with:
 
 ``` bash
 # generate static assets
@@ -69,4 +69,7 @@ npm run start # OR yarn start
 
 By default, the Markdown source files will be in `./content`, which can be configured via the [dir field](../config/README.md#dir) in `./config.js`.
 
-The built files can be deployed as **Static Generated** or **Server Rendered** Website. See [Deployment Guide](../guide/deploy.md) for guides on deploying to popular services.
+The built files can be deployed as [**Static Generated**](../guide/architecture.md#static-generated) or [**Server Rendered**](../guide/architecture.md#server-rendered) Website. See [Deployment Guide](../guide/deploy.md) for guides on deploying to popular services.
+
+
+

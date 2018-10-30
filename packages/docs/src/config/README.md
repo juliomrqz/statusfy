@@ -12,6 +12,13 @@ sidebarDepth: 2
 
 The Title for the site. This will be the suffix for all page titles and displayed in the navbar. It is also used in the [Manifest File](../guide/pwa.md#manifest). 
 
+## name
+
+- Type: `string`
+- Default: `undefined`
+
+
+
 ## description
 
 - Type: `string`
@@ -108,13 +115,28 @@ You must define, in your [locales files](../guide/i18n.md), the Human-Friendly t
 - Type: `object`
 - Default: `undefined`
 
-Extra tags to be injected to the page HTML `<head>`. Each tag can be specified in the form of `{tagCategory: [tagName, { attrName: attrValue }]}`. For example, to add a custom mask-icon:
+Extra tags to be injected to the page HTML `<head>`. Each tag can be specified in the form of `{tagCategory: [tagName, { attrName: attrValue }]}`. For example, you can add a custom mask-icon:
 
 ``` js
 module.exports = {
   head: {
     link: [
       { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3e4e88' }
+    ]
+  }
+}
+```
+
+or define a meta tag site verification:
+
+``` js
+module.exports = {
+  head: {
+    meta: [
+      { 
+        name: 'google-site-verification', 
+        content: '+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=' 
+      }
     ]
   }
 }

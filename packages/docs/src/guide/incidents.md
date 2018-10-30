@@ -179,7 +179,7 @@ Statusfy only supports the [version 0.4.0](https://github.com/toml-lang/toml/blo
 
 ## Content
 
-The content of the Incidents are wirting in valid Markdown format but there are extra Extensions that Statsufy provides.
+The content of the Incidents are wirted in valid Markdown format but there are extra Extensions that Statsufy provides.
 
 ### Updates Containers
 
