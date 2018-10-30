@@ -72,6 +72,10 @@ module.exports = {
             link: '/config/',
           },
           {
+            text: 'Contributing',
+            link: '/contributing/',
+          },
+          {
             text: 'Changelog',
             link: 'https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md'
           },
