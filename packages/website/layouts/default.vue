@@ -1,11 +1,26 @@
 <template>
-  <div class="text-center h-100 w-100">
+  <div class="h-100 w-100">
+    <GlobalMessage />
+
+    <Navbar />
+
     <nuxt/>
+
+    <Footer />
   </div>
 </template>
 
 <script>
+import Navbar from '~/components/Navbar'
+import Footer from '~/components/Footer'
+import GlobalMessage from '~/components/common/GlobalMessage'
+
 export default {
+  components: {
+    Navbar,
+    Footer,
+    GlobalMessage
+  },
   head() {
     return {
       __dangerouslyDisableSanitizers: ['script'],

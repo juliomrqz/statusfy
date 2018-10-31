@@ -54,9 +54,9 @@ module.exports = {
 
   screens: {
     sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px'
+    // md: '768px',
+    lg: '992px'
+    // xl: '1200px'
   },
 
   /*
@@ -94,16 +94,16 @@ module.exports = {
   */
 
   textSizes: {
-    xs: '.75rem', // 12px
+    // xs: '.75rem', // 12px
     sm: '.875rem', // 14px
     base: '1rem', // 16px
     lg: '1.125rem', // 18px
     xl: '1.25rem', // 20px
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
-    '4xl': '2.25rem', // 36px
-    '5xl': '3rem', // 48px
-    '6xl': '3.5rem' // 56px
+    '4xl': '2.25rem' // 36px
+    // '5xl': '3rem', // 48px
+    // '6xl': '3.5rem' // 56px
   },
 
   /*
@@ -426,21 +426,21 @@ module.exports = {
   */
 
   negativeMargin: {
-    px: '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem'
+    // px: '1px',
+    // '0': '0',
+    // '1': '0.25rem',
+    // '2': '0.5rem',
+    // '3': '0.75rem',
+    // '4': '1rem',
+    // '5': '1.25rem',
+    '6': '1.5rem'
+    // '8': '2rem',
+    // '10': '2.5rem',
+    // '12': '3rem',
+    // '16': '4rem',
+    // '20': '5rem',
+    // '24': '6rem',
+    // '32': '8rem'
   },
 
   /*
@@ -472,10 +472,10 @@ module.exports = {
     auto: 'auto',
     '0': 0,
     '10': 10,
-    '20': 20,
-    '30': 30,
-    '40': 40,
-    '50': 50
+    '20': 20
+    // '30': 30,
+    // '40': 40,
+    // '50': 50
   },
 
   /*
@@ -487,10 +487,10 @@ module.exports = {
   */
 
   opacity: {
-    '0': '0',
-    '25': '.25',
-    '50': '.5',
-    '75': '.75',
+    // '0': '0',
+    // '25': '.25',
+    // '50': '.5',
+    // '75': '.75',
     '100': '1'
   },
 
@@ -538,53 +538,54 @@ module.exports = {
   */
 
   modules: {
-    appearance: false,
-    backgroundAttachment: false,
-    backgroundColors: false,
-    backgroundPosition: false,
-    backgroundRepeat: false,
-    backgroundSize: false,
-    borderCollapse: false,
-    borderColors: [],
-    borderRadius: false,
-    borderStyle: false,
-    borderWidths: [],
-    cursor: [],
-    display: [],
-    flexbox: [],
-    float: false,
-    fonts: [],
-    fontWeights: [],
-    height: [],
-    leading: [],
-    lists: [],
-    margin: [],
-    maxHeight: [],
-    maxWidth: [],
-    minHeight: false,
-    minWidth: false,
-    negativeMargin: false,
-    opacity: false,
-    outline: [],
-    overflow: false,
-    padding: [],
-    pointerEvents: false,
-    position: [],
-    resize: false,
-    shadows: [],
-    svgFill: false,
-    svgStroke: false,
-    textAlign: [],
-    textColors: [],
-    textSizes: [],
-    textStyle: ['hover'],
-    tracking: false,
-    userSelect: false,
-    verticalAlign: false,
-    visibility: false,
-    whitespace: false,
-    width: [],
-    zIndex: []
+    appearance: ['responsive'],
+    backgroundAttachment: ['responsive'],
+    backgroundColors: ['responsive', 'hover', 'focus'],
+    backgroundPosition: ['responsive'],
+    backgroundRepeat: ['responsive'],
+    backgroundSize: ['responsive'],
+    borderCollapse: [],
+    borderColors: ['responsive', 'hover', 'focus'],
+    borderRadius: ['responsive'],
+    borderStyle: ['responsive'],
+    borderWidths: ['responsive'],
+    cursor: ['responsive'],
+    display: ['responsive'],
+    flexbox: ['responsive'],
+    float: ['responsive'],
+    fonts: ['responsive'],
+    fontWeights: ['responsive', 'hover', 'focus'],
+    height: ['responsive'],
+    leading: ['responsive'],
+    lists: ['responsive'],
+    margin: ['responsive'],
+    maxHeight: ['responsive'],
+    maxWidth: ['responsive'],
+    minHeight: ['responsive'],
+    minWidth: ['responsive'],
+    negativeMargin: ['responsive'],
+    opacity: ['responsive'],
+    outline: ['focus'],
+    overflow: ['responsive'],
+    padding: ['responsive'],
+    pointerEvents: ['responsive'],
+    position: ['responsive'],
+    resize: ['responsive'],
+    shadows: ['responsive', 'hover', 'focus'],
+    svgFill: [],
+    svgStroke: [],
+    tableLayout: ['responsive'],
+    textAlign: ['responsive'],
+    textColors: ['responsive', 'hover', 'focus'],
+    textSizes: ['responsive'],
+    textStyle: ['responsive', 'hover', 'focus'],
+    tracking: ['responsive'],
+    userSelect: ['responsive'],
+    verticalAlign: ['responsive'],
+    visibility: ['responsive'],
+    whitespace: ['responsive'],
+    width: ['responsive'],
+    zIndex: ['responsive']
   },
 
   /*

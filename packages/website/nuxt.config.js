@@ -7,7 +7,7 @@ const mainColor = '#3e4e88'
 const secondColor = '#eff0f4'
 
 module.exports = {
-  mode: process.env.NODE_ENV === 'production' ? 'universal' : 'spa',
+  mode: 'universal',
   modulesDir: [
     path.join(__dirname, 'node_modules'),
     path.join(__dirname, '..', '..', 'node_modules')
@@ -40,14 +40,21 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/css/tailwind.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    'animate.css/source/_base.css',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    'prismjs/themes/prism-tomorrow.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-svgicon.js',
+    '~/plugins/vue-lazyload.js',
     {
-      src: '~/plugins/webfontloader.js',
+      src: '~/plugins/vue-scrollto.js',
       ssr: false
     }
   ],
@@ -64,12 +71,11 @@ module.exports = {
     '@nuxtjs/google-analytics',
     // Doc: https://github.com/nuxt-community/sitemap-module
     '@nuxtjs/sitemap',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    // ['bootstrap-vue/nuxt', { css: false }],
     // https://nuxt-community.github.io/nuxt-i18n/
     [
       'nuxt-i18n',
       {
+        parsePages: false,
         locales: [
           { code: 'en', iso: 'en-US', name: 'English', file: 'en.js' },
           { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.js' }

@@ -1,2 +1,24 @@
 /* Custom Styles */
 @import '@statusfy/common/lib/style/base';
+
+.btn {
+  @apply inline-block px-6 py-3 leading-none border rounded-lg whitespace-no-wrap text-lg;
+}
+
+.btn-blue {
+  @apply text-white border-blue-dark bg-blue;
+
+  &:hover,
+  &.active {
+    @apply text-grey-lighter bg-blue-dark;
+  }
+}
+
+.btn-grey {
+  @apply text-black border-grey bg-grey-light;
+
+  &:hover,
+  &.active {
+    @apply border-grey-dark bg-grey;
+  }
+}
