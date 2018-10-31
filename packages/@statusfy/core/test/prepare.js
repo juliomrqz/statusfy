@@ -10,7 +10,7 @@ const tempBasePath = path.resolve(tempPath, 'base')
 
 const prepare = async () => {
   await fse.emptyDir(tempPath)
-  await fse.copy(demoPath, tempBasePath)
+  await fse.copy(demoPath, tempBasePath, { filter: (src, _) => !src.includes('test') })
   await renameP(tempBasePath, path.resolve(tempPath, 'advanced'))
   await fse.emptyDir(path.resolve(tempBasePath, 'content'))
 

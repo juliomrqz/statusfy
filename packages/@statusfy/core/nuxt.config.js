@@ -9,7 +9,7 @@ const modulesDir = [
   path.join(__dirname, 'node_modules')
 ]
 
-// Hack: allow to execute using lerna/yarn workspaces
+// Hack: allow to execute using lerna/yarn workspaces on testing
 if (process.env.STATUSFY_LERNA) {
   modulesDir.push(path.relative(__dirname, path.join(__dirname, '..', '..', '..', 'node_modules')))
 }

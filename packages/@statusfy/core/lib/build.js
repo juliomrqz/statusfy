@@ -1,8 +1,9 @@
 // Based on https://github.com/nuxt/nuxt.js/blob/dev/bin/nuxt-build
 const { Nuxt, Builder } = require('nuxt')
 
-const generateConfig = require('./config/generate')
 const { logger } = require('@statusfy/common')
+
+const generateConfig = require('./config/generate')
 
 module.exports = async function build (sourceDir, cliOptions = {}) {
   process.env.NODE_ENV = 'production'
@@ -30,8 +31,10 @@ module.exports = async function build (sourceDir, cliOptions = {}) {
     process.exit(0)
   }
 
-  builder
-    .build()
-    .then(close)
-    .catch(err => logger.fatal(err))
+  try {
+    await builder.build()
+    close()
+  } catch (error) {
+    logger.fatal(error)
+  }
 }

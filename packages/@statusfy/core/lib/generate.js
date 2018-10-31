@@ -24,12 +24,12 @@ module.exports = async function generate (sourceDir, cliOptions = {}) {
     build: true
   }
 
-  generator
-    .generate(generateOptions)
-    .then(() => {
-      fixHomePages(siteConfig, outDir)
+  try {
+    await generator.generate(generateOptions)
 
-      process.exit(0)
-    })
-    .catch(err => logger.fatal(err))
+    fixHomePages(siteConfig, outDir)
+    process.exit(0)
+  } catch (error) {
+    logger.fatal(error)
+  }
 }

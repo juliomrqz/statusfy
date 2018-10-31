@@ -7,11 +7,11 @@ sidebarDepth: 3
 
 ## Styles
 
-The look of Statusfy can be easily changed with a StyleSheet localed at `/theme/default/style.{css, less, sass, scss, styl, stylus}`.
+The look of Statusfy can be easily changed with a StyleSheet localed at `theme/default/style.{css, less, sass, scss, styl, stylus}`.
 
 ### CSS
 
-Using a CSS file (`/theme/default/style.css`) is the easier way to customize the styles. You can change the predefined CSS variables or extend the existing styles with any CSS instruction without extra dependencies.
+Using a CSS file (`theme/default/style.css`) is the easier way to customize the styles. You can change the predefined CSS variables or extend the existing styles with any CSS instruction without extra dependencies.
 
 These are the available CSS variables:
 
@@ -59,17 +59,17 @@ npm install --save-dev stylus-loader stylus
 yarn add -D stylus-loader stylus
 ```
 
-and then define your custom style in `/theme/default/style.styl` or `/theme/default/style.stylus`.
+and then define your custom style in `theme/default/style.styl` or `theme/default/style.stylus`.
 
 ## Assets
 
 ### Logo
 
-You can replace the default logo placing an image at the location `/theme/default/img/logo.svg`. The available extensions are: `png`, `jpg`, `jpeg`, `gif` and `svg`.
+You can replace the default logo placing an image at the location `theme/default/img/logo.svg`. The supported formats are: `png`, `jpg`, `gif` and `svg`.
 
 ### Icon
 
-The Icon of the application must be placed at `/theme/default/img/icon.png` and it's used to generate favicons and the [App Icons](./pwa.md#icons). It should be a square image in PNG format with a minimum size of 512px.
+The Icon of the application must be placed at `theme/default/img/icon.png` and it's used to generate favicons and the [App Icons](./pwa.md#icons). It should be a square image in PNG format with a minimum size of 512px.
 
 ### Public
 

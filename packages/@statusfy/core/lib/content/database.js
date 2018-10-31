@@ -90,7 +90,7 @@ const readFileIncidents = async (dirPath) => {
       }
     }
   } catch (error) {
-    logger.error(error)
+    logger.fatal(error)
   }
 
   return allIncidents
