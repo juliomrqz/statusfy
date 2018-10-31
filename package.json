@@ -27,6 +27,7 @@
   "scripts": {
     "lerna": "lerna",
     "lint": "lerna run lint",
+    "test:demo": "yarn run demo:build && yarn run demo:generate",
     "test": "yarn run prepare && yarn run prepare-test && yarn run jest",
     "prepare": "cross-env STATUSFY_LERNA=true lerna run prepare",
     "prepare-test": "cross-env STATUSFY_LERNA=true lerna run prepare-test",
@@ -55,6 +56,7 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-jest": "^21.24.1",
     "eslint-plugin-vue": "^4.7.1",
+    "glob-promise": "^3.4.0",
     "husky": "^1.1.1",
     "jest": "^23.6.0",
     "jest-serializer-vue": "^2.0.2",

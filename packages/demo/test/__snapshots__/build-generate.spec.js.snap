@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`build-generate manifest.json 1`] = `
+Object {
+  "background_color": "#ffffff",
+  "description": "A marvelous open source Status Page system",
+  "display": "standalone",
+  "icons": Array [
+    Object {
+      "sizes": "16x16",
+      "src": "/static/icons/icon_16.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "120x120",
+      "src": "/static/icons/icon_120.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "144x144",
+      "src": "/static/icons/icon_144.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "152x152",
+      "src": "/static/icons/icon_152.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "192x192",
+      "src": "/static/icons/icon_192.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "384x384",
+      "src": "/static/icons/icon_384.png",
+      "type": "image/png",
+    },
+    Object {
+      "sizes": "512x512",
+      "src": "/static/icons/icon_512.png",
+      "type": "image/png",
+    },
+  ],
+  "lang": "en",
+  "name": "Statusfy Demo",
+  "publicPath": "/static/",
+  "short_name": "Statusfy Demo",
+  "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
+  "theme_color": "#1b1f23",
+  "version": "0.1.0-alpha.0",
+}
+`;
