@@ -45,7 +45,9 @@ const buildRouter = (siteConfig) => {
       const database = await createDatabase(siteConfig)
       const data = database.incidentsHistory(language, Number(page))
 
-      if (data.page > data.total_pages) {
+      if (data.count === 0) {
+        send.json(data)
+      } else if (data.page > data.total_pages) {
         send.notFound()
       } else {
         send.json(data)

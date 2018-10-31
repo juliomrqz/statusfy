@@ -1,8 +1,16 @@
 <template>
   <div>
-    <incidents-history :periods="periods" />
+    <div v-if="count > 0">
+      <incidents-history :periods="periods" />
 
-    <incidents-paginator :info="pageInfo" />
+      <incidents-paginator :info="pageInfo" />
+    </div>
+
+    <div
+      v-else
+      class="text-center">
+      <h2>{{ $t('incidents.no-incidents') }}</h2>
+    </div>
   </div>
 </template>
 
@@ -22,6 +30,7 @@ export default {
     const history = await api.getIncidentsHistory()
 
     return {
+      count: history.count,
       periods: history.periods,
       pageInfo: {
         page: history.page,

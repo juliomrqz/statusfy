@@ -8,7 +8,7 @@ const Moment = require('moment')
 const MomentRange = require('moment-range')
 
 const createMarkdown = require('@statusfy/markdown')
-const { logger, hash, path } = require('@statusfy/common')
+const { logger, hash, path, fse } = require('@statusfy/common')
 
 const moment = MomentRange.extendMoment(Moment)
 const readdirP = promisify(readdir)
@@ -66,31 +66,37 @@ class Incident {
 const readFileIncidents = async (dirPath) => {
   const allIncidents = []
 
-  try {
-    const files = (await readdirP(dirPath)).map(f => path.join(dirPath, f))
+  const exists = await fse.pathExists(dirPath)
 
-    for (let i = 0; i < files.length; i++) {
-      const filePath = files[i]
-      const isFile = (await statP(filePath)).isFile()
+  if (!exists) {
+    logger.warn('Content Directory not found:', dirPath)
+  } else {
+    try {
+      const files = (await readdirP(dirPath)).map(f => path.join(dirPath, f))
 
-      if (isFile && path.extname(filePath) === '.md') {
-        const fileName = path.relative(dirPath, filePath)
-        const fileContent = (await readFileP(filePath)).toString('utf8')
-        const incident = new Incident(fileContent, fileName).getData()
+      for (let i = 0; i < files.length; i++) {
+        const filePath = files[i]
+        const isFile = (await statP(filePath)).isFile()
 
-        if (!incident.modified) {
-          try {
-            incident.modified = new Date(getGitLastUpdatedTimeStamp(filePath)).toISOString()
-          } catch (error) {
-            incident.modified = null
+        if (isFile && path.extname(filePath) === '.md') {
+          const fileName = path.relative(dirPath, filePath)
+          const fileContent = (await readFileP(filePath)).toString('utf8')
+          const incident = new Incident(fileContent, fileName).getData()
+
+          if (!incident.modified) {
+            try {
+              incident.modified = new Date(getGitLastUpdatedTimeStamp(filePath)).toISOString()
+            } catch (error) {
+              incident.modified = null
+            }
           }
-        }
 
-        allIncidents.push(incident)
+          allIncidents.push(incident)
+        }
       }
+    } catch (error) {
+      logger.error(error)
     }
-  } catch (error) {
-    logger.fatal(error)
   }
 
   return allIncidents
