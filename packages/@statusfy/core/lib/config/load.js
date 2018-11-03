@@ -8,25 +8,21 @@ function parseConfig (filePath) {
   const extension = path.extname(filePath)
   let data
 
+  logger.info(`Reading configuration from ${chalk.yellow(`config${extension}`)}`)
+
   if (extension !== '.js') {
     const content = fse.readFileSync(filePath, 'utf-8')
 
     switch (extension) {
     case '.yml':
-      logger.debug(`Reading configuration from ${chalk.yellow('config.yml')}`)
-
       data = yaml.parse(content)
       break
 
     case '.toml':
-      logger.debug(`Reading configuration from ${chalk.yellow('config.toml')}`)
-
       data = toml.parse(content)
       break
     }
   } else {
-    logger.debug(`Reading configuration from ${chalk.yellow('config.js')}`)
-
     data = require(filePath)
   }
 
