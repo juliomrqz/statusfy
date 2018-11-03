@@ -23,7 +23,7 @@
   "dependencies": {
     "autoprefixer": "^9.1.5",
     "chalk": "^2.3.2",
-    "consola": "^1.4.3",
+    "consola": "^2.0.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.4",
     "esm": "^3.0.83",
