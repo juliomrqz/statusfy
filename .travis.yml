@@ -6,7 +6,6 @@ node_js:
 cache:
   directories:
     - "node_modules"
-    - "demo/node_modules"
 
 install:
   - yarn run install-dependencies
