@@ -22,3 +22,13 @@
     @apply border-grey-dark bg-grey;
   }
 }
+
+.markdown-body {
+  @apply font-open-sans text-black;
+
+  p {
+    & > img {
+      @apply mt-2;
+    }
+  }
+}

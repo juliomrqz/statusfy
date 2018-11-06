@@ -8,7 +8,7 @@
 
     <GetStarted />
 
-    <LatestPosts />
+    <LatestPosts :posts="posts"/>
   </div>
 </template>
 
@@ -26,6 +26,27 @@ export default {
     HowItWorks,
     LatestPosts,
     GetStarted
+  },
+  mounted() {
+    this.$store.commit('SET_NAVBAR_STYLE', 'light')
+  },
+  async asyncData({ app }) {
+    let response = { results: [] }
+
+    try {
+      response = await app.$axios.$get('blog?tags=statusfy')
+    } catch (error) {
+      console.log(error)
+    }
+
+    return {
+      posts: response.results.slice(0, 3)
+    }
+  },
+  head() {
+    return {
+      titleTemplate: 'Statusfy'
+    }
   }
 }
 </script>

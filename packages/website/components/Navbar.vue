@@ -1,9 +1,18 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-white p-6 pb-2">
+  <nav
+    :class="$store.state.navbarStyle"
+    class="flex items-center justify-between flex-wrap bg-white p-6 py-2">
     <div class="flex items-center flex-no-shrink mr-6">
       <nuxt-link
         :to="localePath('index')">
         <img
+          v-if="$store.state.navbarStyle === 'dark'"
+          :height="1049 / 2.5"
+          :width="363 / 2.5"
+          src="~/assets/img/logo-light.svg"
+          alt="Statusfy Logo">
+        <img
+          v-else
           :height="1049 / 2.5"
           :width="363 / 2.5"
           src="~/assets/img/logo.svg"
@@ -12,7 +21,7 @@
     </div>
     <div class="block lg:hidden">
       <button
-        class="menu-toggler flex items-center px-3 py-2 border rounded text-blue border-blue focus:outline-none hover:text-black hover:border-black"
+        class="menu-toggler flex items-center px-3 py-2 border rounded text-blue border-blue border-2 focus:outline-none hover:text-black hover:border-black"
         @click="showMenu = !showMenu">
         <span v-if="!showMenu">Menu</span>
         <svgicon
@@ -47,7 +56,7 @@
           <nuxt-link
             :to="localePath('blog')"
             class="menu-item">
-            Blog
+            {{ $t('blog.title') }}
           </nuxt-link>
           <a
             :href="$t('links.demo.url')"
@@ -65,7 +74,7 @@
         <div class="hidden lg:block">
           <a
             :href="$t('links.getStarted.url')"
-            class="btn btn-blue mt-4 lg:mt-0">
+            class="btn btn-blue border-2 border-blue mt-4 lg:mt-0">
             {{ $t('links.getStarted.title') }}
           </a>
         </div>
@@ -131,6 +140,46 @@ export default {
 
     &::hover {
       @apply text-black;
+    }
+  }
+}
+
+/* Dark */
+nav.dark {
+  @apply bg-black;
+
+  .menu-container {
+    @apply border-black border-2 bg-white;
+
+    .menu-item {
+      @apply text-grey-darkest;
+
+      &:hover {
+        @apply text-black;
+      }
+    }
+  }
+
+  .btn,
+  .menu-toggler {
+    @apply bg-transparent text-grey border-grey-dark border-2;
+
+    &:hover {
+      @apply text-grey-lighter border-grey-lighter;
+    }
+  }
+
+  @screen lg {
+    .menu-container {
+      @apply bg-transparent;
+
+      .menu-item {
+        @apply text-grey;
+
+        &:hover {
+          @apply text-grey-lighter;
+        }
+      }
     }
   }
 }

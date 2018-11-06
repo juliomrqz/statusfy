@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { path } from '@statusfy/common'
 const pkg = require('./package')
 
@@ -5,6 +6,12 @@ const title = 'Statusfy'
 const description = 'A marvelous open source Status Page system'
 const mainColor = '#3e4e88'
 const secondColor = '#eff0f4'
+const baseHost = 'https://statusfy.co'
+const twitterUserEn = 'BazziteTech'
+const twitterUserEs = 'BazziteEs'
+const apiBaseURL = process.env.API_URL || 'http://127.0.0.1:8000/api/v1/'
+const generateRouteBaseURL =
+  process.env.GENRATE_ROUTES_URL || `${apiBaseURL}blog?tags=statusfy`
 
 module.exports = {
   mode: 'universal',
@@ -14,12 +21,16 @@ module.exports = {
   ],
   env: {
     mainColor,
-    secondColor
+    secondColor,
+    baseHost,
+    twitterUserEn,
+    twitterUserEs
   },
   /*
   ** Headers of the page
   */
   head: {
+    titleTemplate: '%s | Statusfy',
     title,
     meta: [
       { charset: 'utf-8' },
@@ -41,6 +52,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'github-markdown-css/github-markdown.css',
     '~/assets/css/tailwind.css',
     'animate.css/source/_base.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
@@ -51,10 +63,17 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-svgicon.js',
+    '~/plugins/axios.js',
+    '~/plugins/vue-disqus',
     '~/plugins/vue-lazyload.js',
+    '~/plugins/vue-social-sharing.js',
+    '~/plugins/vue-svgicon.js',
     {
       src: '~/plugins/vue-scrollto.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/web-font-loader.js',
       ssr: false
     }
   ],
@@ -125,14 +144,37 @@ module.exports = {
    */
   generate: {
     subFolders: false,
-    fallback: '404.html'
+    fallback: '404.html',
+    routes: async () => {
+      const generateRoutes = async lang => {
+        const prefix = lang === 'es' ? '/es' : ''
+
+        const postsEn = await axios.get(generateRouteBaseURL, {
+          headers: {
+            'Accept-Language': lang
+          }
+        })
+
+        return postsEn.data.results.map(post => {
+          return {
+            route: `${prefix}/blog/${post.slug}`,
+            payload: post
+          }
+        })
+      }
+
+      const routesEn = await generateRoutes('en')
+      const routesEs = await generateRoutes('es')
+
+      return [...routesEn, ...routesEs]
+    }
   },
   // Modules Configurations
   /*
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: apiBaseURL
   },
   /*
    ** PWA module configuration
@@ -144,8 +186,10 @@ module.exports = {
     author: 'Bazzite',
     description,
     theme_color: mainColor,
-    ogHost: 'https://statusfy.co',
-    twitterCard: 'summary_large_image'
+    ogHost: baseHost,
+    twitterCard: 'summary_large_image',
+    twitterSite: `@${twitterUserEn}`,
+    twitterCreator: `@${twitterUserEn}`
   },
   manifest: {
     name: title,
@@ -168,7 +212,7 @@ module.exports = {
    */
   sitemap: {
     path: '/sitemap.xml',
-    hostname: 'https://statusfy.co',
+    hostname: baseHost,
     cacheTime: 1000 * 60 * 15,
     gzip: false,
     generate: true

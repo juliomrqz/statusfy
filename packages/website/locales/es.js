@@ -2,7 +2,7 @@ export default {
   welcome: 'Bienvenido',
   slogan: 'Un estupendo sistema de Página de Estado de código abierto',
   description:
-    'Statusfy es un sistema de Página de Estado de código abierto simple diseñado para ser construido y mantenido con el mínimo esfuerzo. Puedes crear fácilmente un Sitio Web rápido, ya sea <strong>Estático</strong> o <strong>Renderizado por Servidor</strong>, e implementarlo fácilmente en una <strong>variedad de servicios de alojamiento</string>.',
+    'Statusfy es un sistema de Página de Estado de código abierto simple diseñado para ser construido y mantenido con el mínimo esfuerzo. Puedes crear fácilmente un Sitio Web rápido, ya sea <strong>Estático</strong> o <strong>Renderizado por Servidor</strong>, e implementarlo fácilmente en una <strong>variedad de servicios de alojamiento</strong>.',
   globalMessage:
     'Statusfy está bajo desarrollo activo. Este sitio web y la documentación aún no están listos.',
   links: {
@@ -75,7 +75,13 @@ export default {
   },
   blog: {
     title: 'Blog',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    titleLatest: 'Últimas Publicaciones'
+    description: 'Guías y Artículos acerca de Statusfy.',
+    titleLatest: 'Últimas Publicaciones',
+    on: 'el',
+    readMore: 'Leer Más',
+    publishedAt: 'Publicado originalmente en',
+    minRead: 'min de lectura',
+    comments: 'Comentarios',
+    noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.'
   }
 }

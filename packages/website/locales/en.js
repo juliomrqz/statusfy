@@ -75,7 +75,13 @@ export default {
   },
   blog: {
     title: 'Blog',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    titleLatest: 'Latest Posts'
+    description: 'Guides and articles about Statusfy.',
+    titleLatest: 'Latest Posts',
+    on: 'on',
+    readMore: 'Read More',
+    publishedAt: 'Originally published at',
+    minRead: 'min read',
+    comments: 'Comments',
+    noPosts: "We're currently creating new content.</br>Stay tuned."
   }
 }

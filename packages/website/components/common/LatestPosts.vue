@@ -11,10 +11,49 @@
         <p class="text-xl sm:text-2xl text-blue-darker font-normal leading-tight mb-8">
           {{ $t('blog.description') }}
         </p>
+
+      </div>
+      <div class="max-w-md mx-auto">
+        <AticleCard
+          v-for="post in posts"
+          :key="post.slug"
+          :post="post"/>
+
+        <div
+          v-if="posts.length === 0"
+          class="text-center pb-8">
+          <h2
+            class="text-xl font-semibold pb-8 text-blue"
+            v-html="$t('blog.noPosts')"/>
+        </div>
+      </div>
+
+      <div class="text-center mb-8">
+        <nuxt-link
+          :to="localePath('blog')"
+          class="btn btn-blue">
+          {{ $t('blog.readMore') }}
+        </nuxt-link>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import AticleCard from '~/components/blog/ArticleCard'
+
+export default {
+  components: {
+    AticleCard
+  },
+  props: {
+    posts: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>
 
 
 <style scoped>

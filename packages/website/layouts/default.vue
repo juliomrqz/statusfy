@@ -50,7 +50,13 @@ export default {
               {
                 '@type': 'Organization',
                 name: 'Bazzite',
-                url: 'https://www.bazzite.com'
+                url: 'https://www.bazzite.com',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://media.bazzite.com/logo/logotype.png',
+                  width: '6170 px',
+                  height: '1650 px'
+                }
               }
             ]
           }),

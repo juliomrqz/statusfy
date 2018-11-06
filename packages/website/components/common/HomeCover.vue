@@ -10,7 +10,7 @@
           </h1>
           <h2
             class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2"
-            v-html="$t('description')"/>
+            v-html="$t('description')" />
           <div class="flex flex-col sm:flex-row justify-center lg:justify-start pt-8">
             <a
               :href="$t('links.getStarted.url')"

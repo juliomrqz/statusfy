@@ -82,7 +82,21 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif'
     ],
-    nunito: ['Nunito', 'sans-serif']
+    'open-sans': [
+      'Open Sans',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif'
+    ]
   },
 
   /*
@@ -549,7 +563,7 @@ module.exports = {
     borderRadius: [],
     borderStyle: false,
     borderWidths: [],
-    cursor: false,
+    cursor: [],
     display: ['responsive'],
     flexbox: ['responsive'],
     float: false,
@@ -571,7 +585,7 @@ module.exports = {
     pointerEvents: false,
     position: ['responsive'],
     resize: false,
-    shadows: [],
+    shadows: ['hover'],
     svgFill: false,
     svgStroke: false,
     tableLayout: false,
