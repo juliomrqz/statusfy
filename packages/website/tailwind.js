@@ -54,9 +54,9 @@ module.exports = {
 
   screens: {
     sm: '576px',
-    // md: '768px',
-    lg: '992px'
-    // xl: '1200px'
+    md: '768px',
+    lg: '992px',
+    xl: '1200px'
   },
 
   /*
@@ -538,54 +538,54 @@ module.exports = {
   */
 
   modules: {
-    appearance: ['responsive'],
-    backgroundAttachment: ['responsive'],
-    backgroundColors: ['responsive', 'hover', 'focus'],
-    backgroundPosition: ['responsive'],
-    backgroundRepeat: ['responsive'],
-    backgroundSize: ['responsive'],
+    appearance: false,
+    backgroundAttachment: [],
+    backgroundColors: ['responsive'],
+    backgroundPosition: [],
+    backgroundRepeat: [],
+    backgroundSize: [],
     borderCollapse: [],
-    borderColors: ['responsive', 'hover', 'focus'],
-    borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
-    cursor: ['responsive'],
+    borderColors: ['hover'],
+    borderRadius: [],
+    borderStyle: false,
+    borderWidths: [],
+    cursor: false,
     display: ['responsive'],
     flexbox: ['responsive'],
-    float: ['responsive'],
-    fonts: ['responsive'],
-    fontWeights: ['responsive', 'hover', 'focus'],
-    height: ['responsive'],
-    leading: ['responsive'],
-    lists: ['responsive'],
+    float: false,
+    fonts: [],
+    fontWeights: [],
+    height: [],
+    leading: [],
+    lists: false,
     margin: ['responsive'],
-    maxHeight: ['responsive'],
-    maxWidth: ['responsive'],
-    minHeight: ['responsive'],
-    minWidth: ['responsive'],
-    negativeMargin: ['responsive'],
+    maxHeight: false,
+    maxWidth: [],
+    minHeight: false,
+    minWidth: false,
+    negativeMargin: false,
     opacity: ['responsive'],
     outline: ['focus'],
-    overflow: ['responsive'],
+    overflow: false,
     padding: ['responsive'],
-    pointerEvents: ['responsive'],
+    pointerEvents: false,
     position: ['responsive'],
-    resize: ['responsive'],
-    shadows: ['responsive', 'hover', 'focus'],
-    svgFill: [],
-    svgStroke: [],
-    tableLayout: ['responsive'],
+    resize: false,
+    shadows: [],
+    svgFill: false,
+    svgStroke: false,
+    tableLayout: false,
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover', 'focus'],
+    textColors: ['hover', 'focus'],
     textSizes: ['responsive'],
-    textStyle: ['responsive', 'hover', 'focus'],
-    tracking: ['responsive'],
-    userSelect: ['responsive'],
-    verticalAlign: ['responsive'],
-    visibility: ['responsive'],
-    whitespace: ['responsive'],
+    textStyle: [],
+    tracking: [],
+    userSelect: false,
+    verticalAlign: [],
+    visibility: false,
+    whitespace: [],
     width: ['responsive'],
-    zIndex: ['responsive']
+    zIndex: []
   },
 
   /*
@@ -604,8 +604,8 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
+      center: true,
+      padding: '1rem'
     })
   ],
 

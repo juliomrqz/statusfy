@@ -1,10 +1,10 @@
 <template>
   <section
     :style="`background-image: url(${require('~/assets/img/dividers/inclined-line.svg')});`"
-    class="bg-bottom bg-repeat-x h-full pb-8 px-5 bg-white">
-    <div class="max-w-3xl ml-auto mr-auto h-full">
-      <div class="flex flex-wrap items-center justify-center text-center lg:text-left h-full px-6">
-        <div class="w-full lg:w-1/3 p-4">
+    class="h-full bg-bottom bg-repeat-x pt-2 pb-8 bg-white">
+    <div class="container">
+      <div class="flex flex-wrap items-center justify-center text-center lg:text-left">
+        <div class="w-full lg:w-1/3 pb-4 lg:pr-4">
           <h1 class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4">
             {{ $t('slogan') }}
           </h1>
@@ -24,7 +24,7 @@
             </button>
           </div>
         </div>
-        <div class="w-full lg:w-2/3 p-4 z-20">
+        <div class="w-full lg:w-2/3 pb-4 lg:pl-4 z-20">
           <div v-lazy-container="{ selector: 'img' }">
             <img
               :title="$t('slogan')"

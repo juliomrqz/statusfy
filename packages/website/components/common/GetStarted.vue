@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white py-8">
-    <div class="w-5/6 max-w-xl ml-auto mr-auto my-8">
+    <div class="container my-8">
       <div class="flex lg:items-center flex-col lg:flex-row lg:justify-between">
         <div class="mb-8 lg:mb-0 lg:pr-4">
           <h2 class="text-2xl font-normal tracking-tight leading-none mb-3">

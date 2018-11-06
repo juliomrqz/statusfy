@@ -3,8 +3,8 @@
     id="features"
     :style="`background-image: url(${require('~/assets/img/dividers/wave-curve.svg')});`"
     class="bg-bottom bg-repeat-x bg-black py-6 z-10">
-    <div class="w-5/6 max-w-2xl ml-auto mr-auto mt-4 mb-8 h-full">
-      <div class="text-center text-white mb-8 h-full">
+    <div class="container mt-4 mb-8">
+      <div class="text-center text-white mb-8">
         <h2 class="text-3xl sm:text-3xl font-semibold leading-none tracking-tight mb-4">
           {{ $t('features.title') }}
         </h2>
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap -mx-6 -my-6 lg:text-center bg-white rounded m-6 shadow p-6 h-full">
+      <div class="flex flex-wrap lg:text-center bg-white rounded my-6 shadow p-6 h-full">
         <div
           v-for="(feature, key) in features"
           :key="key"
@@ -81,10 +81,3 @@ export default {
   }
 }
 </script>
-
-
-<style scoped>
-section {
-  background-size: 100% 125px;
-}
-</style>

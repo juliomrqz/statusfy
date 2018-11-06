@@ -1,8 +1,8 @@
 <template>
   <section
-    class="bg-bottom bg-repeat-x h-full pb-8 px-5 bg-white">
-    <div class="max-w-3xl ml-auto mr-auto h-full">
-      <div class="flex flex-wrap items-center justify-center text-center lg:text-left h-full px-6">
+    class="bg-bottom bg-repeat-x h-full pb-8 bg-white">
+    <div class="container">
+      <div class="flex flex-wrap items-center justify-center text-center lg:text-left">
         <div class="w-full p-4">
           <h1 class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4">
             {{ $t('blog.title') }}
