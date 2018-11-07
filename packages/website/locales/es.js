@@ -65,9 +65,29 @@ export default {
         'Statusfy utiliza el poder de la <strong>Generación de Sitios Estáticos</strong> o la <strong>Representación del lado del Servidor</strong>, de modo que puede implementarse fácilmente en una variedad de servicios de hospedaje <strong>sin costos elevados de servidor</strong>.'
     }
   },
-  howItWorks: {
-    title: 'Cómo Funciona Statusfy',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  howToUse: {
+    title: 'Cómo Usar Statusfy',
+    description: 'Escribe, Previsualiza, Construye y Despliega. ¡Eso es Todo!.',
+    step1: {
+      title: 'Escribe',
+      description: 'Escribe tus incidentes en formato <strong>Markdown</strong> con atributos adicionales.',
+      link: 'https://docs.statusfy.co/es/guide/incidents.html'
+    },
+    step2: {
+      title: 'Previsualiza',
+      description: 'Obtén una vista previa de tu sitio en <strong>Modo de Desarrollo</strong> y asegúrate de que los cambios sean correctos.',
+      link: 'https://docs.statusfy.co/es/guide/commands.html#dev'
+    },
+    step3: {
+      title: 'Construye',
+      description: 'Crea un sitio web <strong>Estático</strong> o <strong>Renderizado por Servidor</strong>.',
+      link: 'https://docs.statusfy.co/es/guide/commands.html#build'
+    },
+    step4: {
+      title: 'Despliega',
+      description: 'Despliega a una variedad de servicios de alojamiento <strong>sin costos elevados de servidor</strong>.',
+      link: 'https://docs.statusfy.co/es/guide/deploy.html'
+    }
   },
   getStarted: {
     title: '¿Todavía con Interes?',

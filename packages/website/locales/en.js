@@ -65,9 +65,29 @@ export default {
         'Statusfy uses the power of blazing-fast <strong>Static Site Generation</strong> or <strong>Server-Side Rendering</strong>, so you can easily deploy to a variety of hosting services with <strong>no expensive server costs</strong>.'
     }
   },
-  howItWorks: {
-    title: 'How Statusfy Works',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  howToUse: {
+    title: 'How to use Statusfy',
+    description: 'Write, Preview, Build and Deploy. That\'s it!.',
+    step1: {
+      title: 'Write',
+      description: 'Write your Incidents in <strong>Markdown</strong> format with extra attributes.',
+      link: 'https://docs.statusfy.co/guide/incidents.html'
+    },
+    step2: {
+      title: 'Preview',
+      description: 'Preview your site in <strong>Development Mode</strong> and make sure that changes are right.',
+      link: 'https://docs.statusfy.co/guide/commands.html#dev'
+    },
+    step3: {
+      title: 'Build',
+      description: 'Build a <strong>Static Generated</strong> or <strong>Server-Side Rendered</strong> website.',
+      link: 'https://docs.statusfy.co/guide/commands.html#build'
+    },
+    step4: {
+      title: 'Deploy',
+      description: 'Deploy to a variety of hosting services with <strong>no expensive server costs</strong>.',
+      link: 'https://docs.statusfy.co/guide/deploy.html'
+    }
   },
   getStarted: {
     title: 'Interested yet?',

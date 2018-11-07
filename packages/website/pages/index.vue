@@ -4,7 +4,7 @@
 
     <Features />
 
-    <HowItWorks />
+    <HowToUse />
 
     <GetStarted />
 
@@ -15,7 +15,7 @@
 <script>
 import HomeCover from '~/components/common/HomeCover'
 import Features from '~/components/common/Features'
-import HowItWorks from '~/components/common/HowItWorks'
+import HowToUse from '~/components/common/HowToUse'
 import LatestPosts from '~/components/common/LatestPosts'
 import GetStarted from '~/components/common/GetStarted'
 
@@ -23,7 +23,7 @@ export default {
   components: {
     HomeCover,
     Features,
-    HowItWorks,
+    HowToUse,
     LatestPosts,
     GetStarted
   },
