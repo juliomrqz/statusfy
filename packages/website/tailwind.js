@@ -585,7 +585,7 @@ module.exports = {
     pointerEvents: false,
     position: ['responsive'],
     resize: false,
-    shadows: ['hover'],
+    shadows: ['hover', 'group-hover'],
     svgFill: false,
     svgStroke: false,
     tableLayout: false,

@@ -2,7 +2,7 @@
   <div class="h-100 w-100">
     <GlobalMessage />
 
-    <Navbar />
+    <Navbar mode="dark" />
 
     <nuxt />
 

@@ -107,6 +107,7 @@ import '~/components/icons/fortawesome/facebook-square-brands'
 import '~/components/icons/fortawesome/linkedin-brands'
 
 export default {
+  layout: 'dark',
   components: {
     AuthorCard
   },
@@ -270,9 +271,6 @@ export default {
         ? process.env.twitterUserEs
         : process.env.twitterUserEn
     }
-  },
-  mounted() {
-    this.$store.commit('SET_NAVBAR_STYLE', 'light')
   }
 }
 </script>

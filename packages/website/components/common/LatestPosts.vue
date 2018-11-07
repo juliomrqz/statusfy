@@ -1,7 +1,7 @@
 <template>
   <section
     :style="
-      `background-image: url(${require('~/assets/img/dividers/top-left-curve.svg')});`
+      `background-image: url(${require('~/assets/img/dividers/top-curve.svg')});`
     "
     class="bg-top bg-repeat-x py-6 z-10"
   >
@@ -64,6 +64,6 @@ export default {
 
 <style scoped>
 section {
-  background-size: 100% 50px;
+  background-size: 100% 80px;
 }
 </style>

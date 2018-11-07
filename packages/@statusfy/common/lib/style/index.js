@@ -12,7 +12,7 @@ const colors = {
   'grey-lightest': '#fafbfc',
   'white': '#ffffff',
 
-  'blue-dark': '#044289',
+  'blue-dark': '#005cc5',
   'blue': '#0366d6',
 
   'purple': '#6f42c1',

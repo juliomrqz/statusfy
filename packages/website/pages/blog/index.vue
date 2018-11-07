@@ -50,11 +50,9 @@ import format from 'date-fns/format'
 import AticleCard from '~/components/blog/ArticleCard'
 
 export default {
+  layout: 'dark',
   components: {
     AticleCard
-  },
-  mounted() {
-    this.$store.commit('SET_NAVBAR_STYLE', 'dark')
   },
   async asyncData({ app }) {
     let response = { results: [] }

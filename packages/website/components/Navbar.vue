@@ -1,12 +1,12 @@
 <template>
   <nav
-    :class="$store.state.navbarStyle"
+    :class="mode"
     class="flex items-center justify-between flex-wrap bg-white p-6 py-2"
   >
     <div class="flex items-center flex-no-shrink mr-6">
       <nuxt-link :to="localePath('index')">
         <img
-          v-if="$store.state.navbarStyle === 'dark'"
+          v-if="mode === 'dark'"
           :height="1049 / 2.5"
           :width="363 / 2.5"
           src="~/assets/img/logo-light.svg"
@@ -23,10 +23,10 @@
     </div>
     <div class="block lg:hidden">
       <button
-        class="menu-toggler flex items-center px-3 py-2 border rounded text-blue border-blue border-2 focus:outline-none hover:text-black hover:border-black"
+        class="menu-toggler flex items-center px-3 py-2 border-2 rounded text-blue border-blue focus:outline-none hover:text-black hover:border-black"
         @click="showMenu = !showMenu"
       >
-        <span v-if="!showMenu">Menu</span>
+        <span v-if="!showMenu">{{ $t('menu') }}</span>
         <svgicon
           v-else
           name="fortawesome/times-solid"
@@ -80,7 +80,7 @@
         <div class="hidden lg:block">
           <a
             :href="$t('links.getStarted.url')"
-            class="btn btn-blue border-2 border-blue mt-4 lg:mt-0"
+            class="btn-get-started btn btn-blue mt-4 lg:mt-0"
           >
             {{ $t('links.getStarted.title') }}
           </a>
@@ -94,6 +94,12 @@
 import '~/components/icons/fortawesome/times-solid'
 
 export default {
+  props: {
+    mode: {
+      type: String,
+      default: 'light'
+    }
+  },
   data() {
     return {
       showMenu: false
@@ -108,6 +114,10 @@ export default {
 
 .menu-toggler {
   transition: all 150ms ease 0s;
+}
+
+.btn-get-started {
+  @apply border-2;
 }
 
 .menu-container {
@@ -156,7 +166,7 @@ nav.dark {
   @apply bg-black;
 
   .menu-container {
-    @apply border-black border-2 bg-white;
+    @apply border-black bg-white border-2;
 
     .menu-item {
       @apply text-grey-darkest;
@@ -178,7 +188,7 @@ nav.dark {
 
   @screen lg {
     .menu-container {
-      @apply bg-transparent;
+      @apply bg-transparent border-0;
 
       .menu-item {
         @apply text-grey;

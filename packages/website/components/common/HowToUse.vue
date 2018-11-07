@@ -26,25 +26,25 @@
         <div
           v-for="(step, key, index) in step"
           :key="key"
-          class="w-full sm:w-full lg:w-1/4 mb-8"
+          class="w-full sm:w-full lg:w-1/4 mb-10"
         >
           <a
             :href="$t(`howToUse.${key}.link`)"
             target="_blank"
             rel="noopener"
-            class="relative block mx-4 p-4 bg-white rounded shadow h-full cursor-pointer hover:shadow-md">
-            <div class="absolute text-right text-grey-darkest pin-t pin-r mr-3 mt-2 text-lg font-semibold">
+            class="group relative block mx-4 p-4 bg-white rounded shadow h-full cursor-pointer hover:shadow-md">
+            <div class="absolute text-right pin-t pin-r mr-3 mt-2 text-lg font-semibold text-black">
               {{ index + 1 }}
             </div>
             <div
               :class="`bg-${step.color}`"
-              class="sub-title absolute pin-t pin-l text-white rounded shadow py-4 px-4 ml-3">
+              class="sub-title absolute pin-t pin-l text-white rounded shadow group-hover:shadow-md py-4 px-4 ml-3">
               <h3 class="text-base font-semibold leading-none">
                 {{ $t(`howToUse.${key}.title`) }}
               </h3>
             </div>
             <p
-              class="leading-normal text-grey-darkest mt-6"
+              class="leading-normal text-black mt-6"
               v-html="$t(`howToUse.${key}.description`)"/>
           </a>
         </div>
@@ -83,6 +83,6 @@ section {
 }
 
 .sub-title {
-  transform: translateY(-40%);
+  transform: translateY(-45%);
 }
 </style>

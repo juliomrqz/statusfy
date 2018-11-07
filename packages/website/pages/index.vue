@@ -27,9 +27,6 @@ export default {
     LatestPosts,
     GetStarted
   },
-  mounted() {
-    this.$store.commit('SET_NAVBAR_STYLE', 'light')
-  },
   async asyncData({ app }) {
     let response = { results: [] }
 
