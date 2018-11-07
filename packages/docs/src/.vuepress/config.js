@@ -139,6 +139,7 @@ function genSidebarConfig(title, section = 'guide') {
       'incidents',
       'theme-customization',
       'pwa',
+      'api',
       'commands',
       'deploy',
     ],
