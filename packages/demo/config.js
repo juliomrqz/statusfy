@@ -4,6 +4,9 @@ module.exports = {
   baseUrl: 'https://demo.statusfy.co',
   analytics: {
     ga: process.env.GA_TRACKING_ID || 'UA-XXXXXXXXX-Y',
+    mixpanel: process.env.MIXPANEL_TOKEN || 'mixpanel-token',
+    facebook: process.env.FACEBOOK_TOKEN || 'facebook-token',
+    segment: process.env.SEGMENT_TOKEN || 'segment-token'
   },
   defaultLocale: 'en',
   locales: [

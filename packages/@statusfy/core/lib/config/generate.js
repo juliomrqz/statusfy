@@ -40,6 +40,8 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   }
 
   // Statusfy module configuration
+  nuxtConfig.statusfy.version = nuxtConfig.manifest.version
+  nuxtConfig.statusfy.dev = nuxtConfig.dev
   nuxtConfig.statusfy.locales = siteConfig.locales
   nuxtConfig.statusfy.sourceDir = sourceDir
   nuxtConfig.statusfy.siteConfig = siteConfig
@@ -118,17 +120,6 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   const customIconPath = path.join(sourceDir, 'theme', 'default', 'img', 'icon.png')
   if (fs.existsSync(customIconPath)) {
     nuxtConfig.icon.iconSrc = customIconPath
-  }
-
-  // Google Analytics Module
-  if (siteConfig.analytics && siteConfig.analytics.ga && !nuxtConfig.dev) {
-    // Doc: https://github.com/nuxt-community/analytics-module#usage
-    nuxtConfig.modules.push('@nuxtjs/google-analytics')
-
-    // Google Analytics
-    nuxtConfig['google-analytics'] = {
-      id: siteConfig.analytics.ga
-    }
   }
 
   // Custom Styles

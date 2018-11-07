@@ -37,7 +37,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.5",
     "@nuxtjs/axios": "^5.3.3",
-    "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.5.0",
     "@statusfy/common": "^0.1.0-alpha.0",
     "@statusfy/markdown": "^0.1.0-alpha.0",
@@ -66,6 +65,7 @@
     "stylelint": "^9.6.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "v-tooltip": "^2.0.0-rc.33",
+    "vue-multianalytics": "^1.9.7",
     "vue-svgicon": "^3.2.0"
   },
   "devDependencies": {

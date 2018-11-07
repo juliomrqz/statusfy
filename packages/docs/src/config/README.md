@@ -71,6 +71,27 @@ The analytics services.
 
 Provide the Google Analytics ID to enable integration.
 
+### mixpanel
+
+- Type: `string`
+- Default: `undefined`
+
+Provide the Mixpanel Token to enable integration.
+
+### facebook
+
+- Type: `string`
+- Default: `undefined`
+
+Provide the Facebook Pixel App ID to enable integration.
+
+### segment
+
+- Type: `string`
+- Default: `undefined`
+
+Provide the Segment Token to enable integration.
+
 ## defaultLocale
 
 - Type: `string`

@@ -189,6 +189,7 @@ Object {
     "assets": Object {
       "mainLogo": "../.tmp/advanced/theme/default/img/logo.svg",
     },
+    "dev": true,
     "iconSizes": Array [
       16,
       120,
@@ -294,6 +295,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/advanced",
+    "version": "0.1.0-alpha.0",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -481,6 +483,7 @@ Object {
     "assets": Object {
       "mainLogo": "../../client/assets/img/logo.svg",
     },
+    "dev": true,
     "iconSizes": Array [
       16,
       120,
@@ -531,6 +534,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/cli",
+    "version": "0.1.0-alpha.0",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -697,6 +701,7 @@ Object {
     "assets": Object {
       "mainLogo": "../../client/assets/img/logo.svg",
     },
+    "dev": true,
     "iconSizes": Array [
       16,
       120,
@@ -745,6 +750,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/simple",
+    "version": "0.1.0-alpha.0",
   },
 }
 `;
