@@ -12,6 +12,7 @@ import VueMultianalytics from 'vue-multianalytics'
 export default (ctx, inject) => {
   // Analytics
   <% if (typeof(options.siteConfig.analytics) !== 'undefined') { %>
+  if (process.browser) {
     <% if (options.dev === true) { %>/*<% } %>
     const modules = {}
 
@@ -52,6 +53,7 @@ export default (ctx, inject) => {
       }
     })
     <% if (options.dev === true) { %>*/<% } %>
+  }
   <% } %>
 
   //
