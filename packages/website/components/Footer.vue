@@ -33,6 +33,7 @@
             :key="link.url"
             :href="link.url"
             target="_blank"
+            rel="noopener"
             class="link"
           >
             {{ link.title }}

@@ -11,6 +11,7 @@
         <a
           :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
           target="_blank"
+          rel="noopener"
         >
           {{ post.author.first_name }} {{ post.author.last_name }}
         </a>
@@ -32,6 +33,7 @@
               `https://www.bazzite.com/blog/author/${post.author.username}`
             "
             target="_blank"
+            rel="noopener"
           >
             {{ post.author.first_name }} {{ post.author.last_name }}
           </a>

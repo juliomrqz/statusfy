@@ -40,7 +40,12 @@ module.exports = {
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'msapplication-navbutton-color', content: mainColor }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: true },
+      { rel: 'dns-prefetch', href: 'https://www.google-analytics.com' }
+    ]
   },
 
   /*
@@ -195,11 +200,27 @@ module.exports = {
     name: title,
     short_name: title,
     description,
-    start_url: null,
-    display: null,
+    start_url: '/blog?standalone=true&utm_source=web_app&utm_medium=pwa',
+    display: 'standalone',
     background_color: secondColor,
     theme_color: mainColor,
     version: pkg.version
+  },
+  workbox: {
+    publicPath: '/static/',
+    offlinePage: '/offline',
+    runtimeCaching: [
+      {
+        urlPattern: `${apiBaseURL}blog.*`,
+        strategyOptions: {
+          cacheName: 'api',
+          cacheExpiration: {
+            maxEntries: 10,
+            maxAgeSeconds: 300
+          }
+        }
+      }
+    ]
   },
   /*
    ** Google Analytics configuration

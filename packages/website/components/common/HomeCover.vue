@@ -40,20 +40,13 @@
           <div v-lazy-container="{ selector: 'img' }">
             <img
               :title="$t('slogan')"
-              :data-src="require(`~/assets/img/home-cover-${$i18n.locale}.png`)"
-              :data-srcset="
-                `${require(`~/assets/img/home-cover-${
-                  $i18n.locale
-                }.png`)} 1x, ${require(`~/assets/img/home-cover-${
-                  $i18n.locale
-                }@2x.png`)} 2x`
-              "
-              src="~assets/img/home-cover-loading.svg"
+              :data-src="require(`~/assets/img/home-cover/home-cover-${$i18n.locale}.jpg`)"
+              :data-srcset="`${require(`~/assets/img/home-cover/home-cover-${$i18n.locale}.jpg`)} 1x, ${require(`~/assets/img/home-cover/home-cover-${$i18n.locale}@2x.jpg`)} 2x`"
+              src="~assets/img/home-cover/home-cover-loading.svg"
               alt="Statusfy"
               class="rounded shadow"
               width="1027"
-              height="697"
-            >
+              height="697">
           </div>
         </div>
       </div>

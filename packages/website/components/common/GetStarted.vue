@@ -16,6 +16,7 @@
               :href="$t('links.getStarted.url')"
               class="btn btn-blue mr-4"
               target="__blank"
+              rel="noopener"
             >
               {{ $t('links.getStarted.title') }}
             </a>
@@ -23,6 +24,7 @@
               :href="$t('links.github.url')"
               class="btn btn-grey"
               target="__blank"
+              rel="noopener"
             >
               {{ $t('links.github.title') }}
             </a>
