@@ -3,8 +3,7 @@ export default {
   slogan: 'A marvelous Open Source Status Page system',
   description:
     'Statusfy is a simple open source Status Page system designed to be built and maintained with minimum effort. You can easily create a fast Website either <strong>Static Generated</strong> or <strong>Server Rendered</strong> and easily deploy it to a <strong>variety of hosting services</strong>.',
-  globalMessage:
-    'Statusfy is under Active Development. This Website and the Documentation are not ready yet.',
+  globalMessage: '',
   links: {
     documentation: {
       title: 'Documentation',

@@ -112,7 +112,7 @@ export default {
 
 .menu-container {
   left: 23px;
-  top: 80px;
+  top: 60px;
   width: calc(100% - 46px);
   transform-origin: right top 0px;
 
