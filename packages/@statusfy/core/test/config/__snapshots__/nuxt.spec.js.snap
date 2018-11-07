@@ -24,6 +24,12 @@ Object {
   "css": Array [
     "~assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
+    "../.tmp/advanced/theme/default/style.css",
+    "../.tmp/advanced/theme/default/style.less",
+    "../.tmp/advanced/theme/default/style.sass",
+    "../.tmp/advanced/theme/default/style.scss",
+    "../.tmp/advanced/theme/default/style.styl",
+    "../.tmp/advanced/theme/default/style.stylus",
   ],
   "dev": true,
   "env": Object {

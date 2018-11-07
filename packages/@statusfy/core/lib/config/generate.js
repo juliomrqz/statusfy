@@ -130,6 +130,24 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
     }
   }
 
+  // Custom Styles
+  const validStylesExtension = ['css', 'less', 'sass', 'scss', 'styl', 'stylus']
+  const stylesPath = []
+
+  for (let ext of validStylesExtension) {
+    const filePath = path.join(sourceDir, 'theme', 'default', `style.${ext}`)
+
+    if (fs.existsSync(filePath)) {
+      stylesPath.push(filePath)
+    }
+  }
+
+  if (stylesPath.length > 0) {
+    logger.info('Loading Styles from: ', stylesPath.map(p => path.relative(sourceDir, p)).join('\n'))
+
+    nuxtConfig.css.push(...stylesPath)
+  }
+
   return {
     nuxtConfig,
     siteConfig

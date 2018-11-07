@@ -42,7 +42,7 @@ Statusfy includes support for [`postcss-preset-env`](https://github.com/csstools
 
 ### Sass, Less and Stylus
 
-If you want to use another CSS preprocessor, Statusfy supports styles from Sass, LESS and Stylus. But you must install some extra Node.js dependencies:
+If you want to use another CSS preprocessor, Statusfy supports styles from Sass, LESS and Stylus. But take into consideration that you must install extra Node.js dependencies:
 
 | CSS Preprocessor |    Extension(s)    |          Dependencies         |
 |:----------------:|:------------------:|:-----------------------------:|
