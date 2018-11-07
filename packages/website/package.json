@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "statusfy-website",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "Website for Statusfy",
   "author": {
     "name": "Bazzite",
@@ -24,9 +24,9 @@
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/sitemap": "^0.1.1",
     "animate.css": "^3.7.0",
-    "intersection-observer": "^0.5.1",
     "date-fns": "1.29.0",
     "github-markdown-css": "^2.10.0",
+    "intersection-observer": "^0.5.1",
     "nuxt": "^2.1.0",
     "nuxt-i18n": "^5.4.2",
     "vue-disqus": "^3.0.5",

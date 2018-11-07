@@ -72,7 +72,7 @@ Statsufy creates a valid [Web App Manifest](https://developers.google.com/web/fu
     "background_color": "#ffffff",
     "theme_color": "#1b1f23",
     "lang": "en",
-    "version": "0.1.0-alpha.0"
+    "version": "0.1.0-alpha.1"
 }
 ```
 
