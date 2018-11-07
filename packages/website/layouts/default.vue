@@ -4,21 +4,21 @@
 
     <Navbar />
 
-    <nuxt/>
+    <nuxt />
 
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar'
-import Footer from '~/components/Footer'
+import TheFooter from '~/components/Footer'
 import GlobalMessage from '~/components/common/GlobalMessage'
 
 export default {
   components: {
     Navbar,
-    Footer,
+    TheFooter,
     GlobalMessage
   },
   head() {

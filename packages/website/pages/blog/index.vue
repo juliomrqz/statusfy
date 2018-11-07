@@ -1,15 +1,24 @@
 <template>
   <div>
     <section
-      :style="`background-image: url(${require('~/assets/img/dividers/wave-curve.svg')});`"
-      class="bg-bottom bg-repeat-x bg-black h-full pb-32 text-white">
+      :style="
+        `background-image: url(${require('~/assets/img/dividers/wave-curve.svg')});`
+      "
+      class="bg-bottom bg-repeat-x bg-black h-full pb-32 text-white"
+    >
       <div class="container">
-        <div class="flex flex-wrap items-center justify-center text-center lg:text-left">
+        <div
+          class="flex flex-wrap items-center justify-center text-center lg:text-left"
+        >
           <div class="w-full p-4">
-            <h1 class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4">
+            <h1
+              class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4"
+            >
               {{ $t('blog.title') }}
             </h1>
-            <h2 class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2">
+            <h2
+              class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2"
+            >
               {{ $t('blog.description') }}
             </h2>
           </div>
@@ -21,14 +30,14 @@
         <AticleCard
           v-for="post in posts"
           :key="post.slug"
-          :post="post"/>
+          :post="post" />
 
         <div
           v-if="posts.length === 0"
           class="text-center pb-8">
           <h2
             class="text-3xl font-semibold pb-8"
-            v-html="$t('blog.noPosts')"/>
+            v-html="$t('blog.noPosts')" />
         </div>
       </div>
     </section>

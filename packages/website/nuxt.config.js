@@ -27,8 +27,8 @@ module.exports = {
     twitterUserEs
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     titleTemplate: '%s | Statusfy',
     title,
@@ -44,13 +44,13 @@ module.exports = {
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: mainColor },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     'github-markdown-css/github-markdown.css',
     '~/assets/css/tailwind.css',
@@ -60,8 +60,8 @@ module.exports = {
   ],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
     '~/plugins/axios.js',
     '~/plugins/vue-disqus',
@@ -79,8 +79,8 @@ module.exports = {
   ],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
@@ -113,13 +113,13 @@ module.exports = {
     ]
   ],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     publicPath: '/static/',
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && process.client) {
@@ -132,8 +132,8 @@ module.exports = {
       }
     },
     /*
-    ** Router
-    */
+     ** Router
+     */
     router: {
       linkActiveClass: 'active',
       linkExactActiveClass: 'exact'

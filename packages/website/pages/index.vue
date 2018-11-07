@@ -8,7 +8,7 @@
 
     <GetStarted />
 
-    <LatestPosts :posts="posts"/>
+    <LatestPosts :posts="posts" />
   </div>
 </template>
 

@@ -1,44 +1,49 @@
 <template>
   <nav
     :class="$store.state.navbarStyle"
-    class="flex items-center justify-between flex-wrap bg-white p-6 py-2">
+    class="flex items-center justify-between flex-wrap bg-white p-6 py-2"
+  >
     <div class="flex items-center flex-no-shrink mr-6">
-      <nuxt-link
-        :to="localePath('index')">
+      <nuxt-link :to="localePath('index')">
         <img
           v-if="$store.state.navbarStyle === 'dark'"
           :height="1049 / 2.5"
           :width="363 / 2.5"
           src="~/assets/img/logo-light.svg"
-          alt="Statusfy Logo">
+          alt="Statusfy Logo"
+        >
         <img
           v-else
           :height="1049 / 2.5"
           :width="363 / 2.5"
           src="~/assets/img/logo.svg"
-          alt="Statusfy Logo">
+          alt="Statusfy Logo"
+        >
       </nuxt-link>
     </div>
     <div class="block lg:hidden">
       <button
         class="menu-toggler flex items-center px-3 py-2 border rounded text-blue border-blue border-2 focus:outline-none hover:text-black hover:border-black"
-        @click="showMenu = !showMenu">
+        @click="showMenu = !showMenu"
+      >
         <span v-if="!showMenu">Menu</span>
         <svgicon
           v-else
           name="fortawesome/times-solid"
-          class="svg-inline--fa fa-w-16"/>
+          class="svg-inline--fa fa-w-16"
+        />
       </button>
     </div>
     <transition
       enter-active-class="animated zoomIn"
-      leave-active-class="animated zoomOut">
+      leave-active-class="animated zoomOut"
+    >
       <div
         :key="showMenu"
         :class="{
           // Toggle
-          'block': showMenu,
-          'hidden': !showMenu,
+          block: showMenu,
+          hidden: !showMenu,
           // Large Screens
           'flex-grow lg:block lg:flex lg:items-center lg:w-auto lg:text-right': true,
           // Small Screens
@@ -46,7 +51,8 @@
           // Global Message
           'global-message': $t('globalMessage') && $t('globalMessage') !== ''
         }"
-        class="menu-container">
+        class="menu-container"
+      >
         <div class="text-sm lg:flex-grow px-4">
           <a
             :href="$t('links.documentation.url')"
@@ -74,7 +80,8 @@
         <div class="hidden lg:block">
           <a
             :href="$t('links.getStarted.url')"
-            class="btn btn-blue border-2 border-blue mt-4 lg:mt-0">
+            class="btn btn-blue border-2 border-blue mt-4 lg:mt-0"
+          >
             {{ $t('links.getStarted.title') }}
           </a>
         </div>

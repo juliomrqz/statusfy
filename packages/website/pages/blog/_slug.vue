@@ -15,16 +15,22 @@
 
             <div
               class="markdown-body text-lg sm:text-xl font-normal leading-normal"
-              v-html="post.content_html" />
+              v-html="post.content_html"
+            />
 
-            <hr class="section-divider block my-12 overflow-visible text-center" >
+            <hr
+              class="section-divider block my-12 overflow-visible text-center"
+            >
 
             <div class="text-xl mb-12 italic">
-              {{ $t('blog.publishedAt') }} <a
+              {{ $t('blog.publishedAt') }}
+              <a
                 :href="parentBlogUrl"
                 target="_blank"
-                rel="noopener">{{ parentBlogUrl
-              }}</a> {{ $t('blog.on') }} {{ formatDate(post.created) }}.
+                rel="noopener">{{
+                  parentBlogUrl
+                }}</a>
+              {{ $t('blog.on') }} {{ formatDate(post.created) }}.
             </div>
 
             <div class="flex flex-wrap items-center justify-between mb-12">
@@ -38,14 +44,16 @@
                   :description="post.description"
                   :twitter-user="twitterUser"
                   class="text-grey-darkest"
-                  inline-template>
+                  inline-template
+                >
                   <div>
                     <network network="twitter">
                       <svgicon
                         name="fortawesome/twitter-square-brands"
                         class="svg-inline--fa fa-w-20 cursor-pointer"
                         width="32"
-                        height="32"/>
+                        height="32"
+                      />
                     </network>
 
                     <network network="facebook">
@@ -53,7 +61,8 @@
                         name="fortawesome/facebook-square-brands"
                         class="svg-inline--fa fa-w-20 cursor-pointer"
                         width="32"
-                        height="32"/>
+                        height="32"
+                      />
                     </network>
 
                     <network network="linkedin">
@@ -61,7 +70,8 @@
                         name="fortawesome/linkedin-brands"
                         class="svg-inline--fa fa-w-20 cursor-pointer"
                         width="32"
-                        height="32"/>
+                        height="32"
+                      />
                     </network>
                   </div>
                 </social-sharing>
@@ -78,7 +88,8 @@
                 :identifier="`bazzite-blog-${post.slug}`"
                 :title="post.title"
                 :url="parentBlogUrl"
-                shortname="bazzite"/>
+                shortname="bazzite"
+              />
             </div>
           </div>
         </div>

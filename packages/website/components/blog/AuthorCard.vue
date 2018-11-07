@@ -1,38 +1,44 @@
 <template>
   <div>
-    <div 
-      v-if="mode === 'simple'" 
-      class="flex flex-wrap items-center text-grey-darker">
+    <div
+      v-if="mode === 'simple'"
+      class="flex flex-wrap items-center text-grey-darker"
+    >
       <img
         :src="post.author.avatar"
         class="rounded-full w-10 h-10" >
       <span class="ml-4 font-semibold relative z-10">
         <a
           :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
-          target="_blank">
+          target="_blank"
+        >
           {{ post.author.first_name }} {{ post.author.last_name }}
         </a>
       </span>
       <span>&nbsp;{{ $t('blog.on') }}&nbsp;</span>
       <time :datetime="post.created">{{ formatDate(post.created) }}</time>
     </div>
-    <div 
-      v-else-if="mode === 'advanced'" 
-      class="flex flex-wrap items-center text-grey-darker">
+    <div
+      v-else-if="mode === 'advanced'"
+      class="flex flex-wrap items-center text-grey-darker"
+    >
       <img
         :src="post.author.avatar"
         class="rounded-full w-12 h-12" >
       <div class="flex flex-col ml-4">
         <span class="font-semibold mb-1">
           <a
-            :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
-            target="_blank">
+            :href="
+              `https://www.bazzite.com/blog/author/${post.author.username}`
+            "
+            target="_blank"
+          >
             {{ post.author.first_name }} {{ post.author.last_name }}
           </a>
         </span>
         <div>
           <time :datetime="post.created">{{ formatDate(post.created) }}</time>
-          <span class="dot-divider"/>
+          <span class="dot-divider" />
           <span>{{ post.reading_time }} {{ $t('blog.minRead') }}</span>
         </div>
       </div>

@@ -1,30 +1,37 @@
 <template>
   <section
-    :style="`background-image: url(${require('~/assets/img/dividers/top-left-curve.svg')});`"
-    class="bg-top bg-repeat-x py-6 z-10">
+    :style="
+      `background-image: url(${require('~/assets/img/dividers/top-left-curve.svg')});`
+    "
+    class="bg-top bg-repeat-x py-6 z-10"
+  >
     <div class="container mb-8">
       <div class="text-center mb-8">
-        <h2 class="text-3xl sm:text-3xl font-semibold leading-none tracking-tight mb-4">
+        <h2
+          class="text-3xl sm:text-3xl font-semibold leading-none tracking-tight mb-4"
+        >
           {{ $t('blog.titleLatest') }}
         </h2>
 
-        <p class="text-xl sm:text-2xl text-blue-darker font-normal leading-tight mb-8">
+        <p
+          class="text-xl sm:text-2xl text-blue-darker font-normal leading-tight mb-8"
+        >
           {{ $t('blog.description') }}
         </p>
-
       </div>
       <div class="max-w-md mx-auto">
         <AticleCard
           v-for="post in posts"
           :key="post.slug"
-          :post="post"/>
+          :post="post" />
 
         <div
           v-if="posts.length === 0"
           class="text-center pb-8">
           <h2
             class="text-xl font-semibold pb-8 text-blue"
-            v-html="$t('blog.noPosts')"/>
+            v-html="$t('blog.noPosts')"
+          />
         </div>
       </div>
 
@@ -54,7 +61,6 @@ export default {
   }
 }
 </script>
-
 
 <style scoped>
 section {
