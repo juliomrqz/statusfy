@@ -80,7 +80,7 @@ Object {
     "titleTemplate": "%s | Title",
   },
   "icon": Object {
-    "iconSrc": "../.tmp/advanced/assets/icon.png",
+    "iconSrc": "../.tmp/advanced/theme/default/img/icon.png",
     "sizes": Array [
       16,
       120,
@@ -187,7 +187,7 @@ Object {
   "srcDir": "../../client",
   "statusfy": Object {
     "assets": Object {
-      "mainLogo": "../.tmp/advanced/assets/img/logo.svg",
+      "mainLogo": "../.tmp/advanced/theme/default/img/logo.svg",
     },
     "iconSizes": Array [
       16,

@@ -50,7 +50,8 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   const validLogoExtension = ['png', 'jpg', 'jpeg', 'gif', 'svg']
 
   for (let ext of validLogoExtension) {
-    const filePath = path.join(sourceDir, 'assets', 'img', `logo.${ext}`)
+    const filePath = path.join(sourceDir, 'theme', 'default', 'img', `logo.${ext}`)
+
     if (fs.existsSync(filePath)) {
       nuxtConfig.statusfy.assets.mainLogo = filePath
       break
@@ -114,7 +115,7 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
 
   nuxtConfig.meta.ogHost = siteConfig.baseUrl
 
-  const customIconPath = path.join(sourceDir, 'assets', 'icon.png')
+  const customIconPath = path.join(sourceDir, 'theme', 'default', 'img', 'icon.png')
   if (fs.existsSync(customIconPath)) {
     nuxtConfig.icon.iconSrc = customIconPath
   }
