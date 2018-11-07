@@ -121,13 +121,13 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   }
 
   // Google Analytics Module
-  if (siteConfig.ga && !nuxtConfig.dev) {
+  if (siteConfig.analytics && siteConfig.analytics.ga && !nuxtConfig.dev) {
     // Doc: https://github.com/nuxt-community/analytics-module#usage
     nuxtConfig.modules.push('@nuxtjs/google-analytics')
 
     // Google Analytics
     nuxtConfig['google-analytics'] = {
-      id: siteConfig.ga
+      id: siteConfig.analytics.ga
     }
   }
 

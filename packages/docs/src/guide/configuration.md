@@ -52,7 +52,9 @@ module.exports = {
   title: 'Title',
   description: 'Description',
   baseUrl: 'https://demo.statusfy.co',
-  ga: 'UA-XXXXXXXXX-Y',
+  analytics: {
+    ga: 'UA-XXXXXXXXX-Y',
+  },
   defaultLocale: 'en',
   locales: [
     { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },

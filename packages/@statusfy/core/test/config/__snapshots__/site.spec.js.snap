@@ -2,6 +2,9 @@
 
 exports[`config:site advanced 1`] = `
 Object {
+  "analytics": Object {
+    "ga": "UA-XXXXXXXXX-Y",
+  },
   "baseUrl": "https://demo.statusfy.co",
   "build": Object {
     "isStatic": false,
@@ -18,7 +21,6 @@ Object {
   },
   "defaultLocale": "en",
   "description": "Description",
-  "ga": "UA-XXXXXXXXX-Y",
   "head": Object {
     "link": Array [
       Object {

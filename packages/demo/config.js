@@ -2,7 +2,9 @@ module.exports = {
   title: 'Statusfy Demo',
   description: 'A marvelous open source Status Page system',
   baseUrl: 'https://demo.statusfy.co',
-  ga: process.env.GA_TRACKING_ID || 'UA-XXXXXXXXX-Y',
+  analytics: {
+    ga: process.env.GA_TRACKING_ID || 'UA-XXXXXXXXX-Y',
+  },
   defaultLocale: 'en',
   locales: [
     { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },

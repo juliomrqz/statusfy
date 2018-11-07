@@ -57,7 +57,14 @@ Also, only enable this if you are able to deploy your site with SSL, since servi
 
 Generate a valid **Web App Manifest**. For more details, see the guide on [Progressive Web App (PWA)](../guide/pwa.html#web-app-manifest).
 
-## ga
+## analytics
+
+- Type: `object`
+- Default: `undefined`
+
+The analytics services.
+
+### ga
 
 - Type: `string`
 - Default: `undefined`
