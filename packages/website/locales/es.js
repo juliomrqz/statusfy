@@ -23,7 +23,7 @@ export default {
     },
     github: {
       title: 'Github',
-      url: 'https://github.com/statusfy/statusfy'
+      url: 'https://github.com/bazzite/statusfy'
     }
   },
   footer: {
