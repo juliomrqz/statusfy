@@ -1,2 +1,21 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+
 /sw.js
   Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+
+/static/*.js
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/static/*.json
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/static/**/*.png
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/static/**/*.jpg
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/static/**/*.svg
+  Cache-Control: public, max-age=604800, must-revalidate
