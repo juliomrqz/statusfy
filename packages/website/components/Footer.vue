@@ -25,8 +25,11 @@
             :key="locale.code"
             :to="switchLocalePath(locale.code)"
             class="link"
-          >{{ locale.name }}</nuxt-link
-          >
+          >{{ locale.name }}</nuxt-link>
+
+          <nuxt-link 
+            :to="localePath('support')" 
+            class="link">{{ $t('support.title') }}</nuxt-link>
 
           <a
             v-for="link in links"

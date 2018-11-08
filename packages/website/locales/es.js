@@ -24,6 +24,18 @@ export default {
     github: {
       title: 'Github',
       url: 'https://github.com/bazzite/statusfy'
+    },
+    issues: {
+      title: 'Issues',
+      url: 'https://github.com/bazzite/statusfy/issues'
+    },
+    stackoverflow: {
+      title: 'Stack Overflow',
+      url: 'https://es.stackoverflow.com/questions/ask/advice?tags=statusfy'
+    },
+    bazzite: {
+      title: 'Bazzite',
+      url: 'https://www.bazzite.com/es'
     }
   },
   footer: {
@@ -103,5 +115,37 @@ export default {
     minRead: 'min de lectura',
     comments: 'Comentarios',
     noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.'
+  },
+  support: {
+    title: 'Soporte',
+    description: 'Aprenda dónde obtener artículos útiles, soporte de la comunidad y soporte por correo electrónico.'
+  },
+  support: {
+    title: 'Soporte',
+    description: 'Aprende dónde obtener Artículos útiles, Soporte de la Comunidad y Soporte por Correo Electrónico.',
+    supportEmail: 'hola@statusfy.co',
+    supportTwitter: 'BazziteEs',
+    community: {
+      title: 'Soporte de la Comunidad',
+      items: {
+        docs: 'Si desea detalles adicionales sobre cómo configurar y usar este proyecto, la <strong>documentación completa</strong> está disponible en <a href="{docs_url}" target="_blank" rel="noopener">{docs_url}</a>.',
+        issues: 'Para <strong>informes de errores</strong> o <strong>solicitudes de funcionalidades</strong>, usa la <a href="{issues_url}" target="_blank" rel="noopener">Sección de Issues</a> en <a href="{github_url}" target="_blank" rel="noopener">Github</a>.',
+        questions: 'Si tienes alguna pregunta, ve a <a href="{stackoverflow_url}" target="_blank" rel="noopener">Stack Overflow</a>.'
+      }
+    },
+    email: {
+      title: 'Soporte por Correo Electrónico',
+      items: {
+        description: 'Proporcionamos <strong>Soporte Comercial</strong> a través de Correo Electrónico. Si necesitas asistencia profesional en tu(s) proyecto(s) o quieres hacer preguntas generales, <a href="mailto:{email}">enviándonos un correo electrónico</a>.',
+        cost: '<small>*Las instalaciones comienzan desde $99. Descuentos disponibles para organizaciones sin fines de lucro y estudiantes.</small>'
+      }
+    },
+    updates: {
+      title: 'Actualizaciones',
+      items: {
+        blog: 'Puedes encontrar artículos útiles en nuestro <a href="{blog_url}" rel="noopener">Blog</a>. Publicamos <strong>tutoriales, consejos y actualizaciones</strong> relacionados con Statusfy.',
+        twitter: 'Este proyecto está patrocinado por <a href="{bazzite_url}" target="_blank" rel="noopener">Bazzite</a>, por lo que también puedes seguirnos en <a href="https://www.twitter.com/{twitter_username} "target="_ blank" rel="noopener">@{twitter_username}</a>, donde publicamos actualizaciones y noticias sobre Statusfy y otros temas.'
+      }
+    }
   }
 }
