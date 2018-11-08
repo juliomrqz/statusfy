@@ -1,2 +1,15 @@
+# DO NOT USER THIS FILE ON YOUR PROJECT
+# NO USES ESTE ARCHIVO EN TU PROYECTO
+
 User-agent: *
+Allow: /$
+Allow: /history$
+Allow: /es$
+Allow: /es/history$
+Disallow: /
+Disallow: /es
+Disallow: /history
+Disallow: /es/history
+Disallow: /incidents
+Disallow: /es/incidents
 Disallow: /cgi-bin/
