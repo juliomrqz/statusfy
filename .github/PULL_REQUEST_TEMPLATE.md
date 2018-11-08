@@ -12,10 +12,11 @@
 - [ ] Feature
 - [ ] Code style update
 - [ ] Refactor
+- [ ] Docs
 - [ ] Build-related changes
 - [ ] Other, please describe:
 
-If changing the UI of default theme, please provide the **before/after** screenshot: 
+If changing the UI of default theme, please provide the **before/after** screenshot:
 
 **Does this PR introduce a breaking change?** (check one)
 
