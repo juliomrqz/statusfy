@@ -38,6 +38,10 @@ export default {
       url: 'https://www.bazzite.com/es'
     }
   },
+  home: {
+    title: 'Statusfy - Un estupendo sistema de Página de Estado de código abierto',
+    description: 'Statusfy es un sistema de Página de Estado de código abierto simple diseñado para ser construido y mantenido con el mínimo esfuerzo sin costos elevados de servidor.'
+  },
   footer: {
     prefix: 'Hecho con ❤️ por',
     link: 'https://www.bazzite.com/es/?ref=statusfy-website',

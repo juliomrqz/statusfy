@@ -1,6 +1,6 @@
 <template>
   <article class="bg-white">
-    <div>
+    <div v-if="post">
       <div class="max-w-lg mx-auto">
         <div class="flex flex-wrap items-center justify-center">
           <div class="w-full p-4">
@@ -107,7 +107,6 @@ import '~/components/icons/fortawesome/facebook-square-brands'
 import '~/components/icons/fortawesome/linkedin-brands'
 
 export default {
-  layout: 'dark',
   components: {
     AuthorCard
   },
@@ -117,20 +116,17 @@ export default {
     const response = payload || (await app.$axios.$get(`blog/${slug}`))
 
     return {
-      post: response
+      post: response,
+      title: `${response.title} - ${app.i18n.t('blog.title')}`,
+      description: response.description
     }
   },
   head() {
     const $t = this.$t.bind(this)
 
     return {
-      title: `${this.post.title} - ${$t('blog.title')}`,
+      title: this.post.title,
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.post.description
-        },
         {
           hid: 'og:type',
           name: 'og:type',

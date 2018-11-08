@@ -83,10 +83,20 @@
 import format from 'date-fns/format'
 
 import AticleCard from '~/components/blog/ArticleCard'
+import SeoHead from '~/components/mixins/SeoHead'
 
 export default {
   components: {
     AticleCard
+  },
+  mixins: [SeoHead],
+  data() {
+    const $t = this.$t.bind(this)
+
+    return {
+      title: $t('support.title'),
+      description: $t('support.description')
+    }
   },
   computed: {
     supportItems() {
@@ -120,20 +130,6 @@ export default {
       }
 
       return data
-    }
-  },
-  head() {
-    const $t = this.$t.bind(this)
-
-    return {
-      title: $t('support.title'),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: $t('support.description')
-        }
-      ]
     }
   }
 }

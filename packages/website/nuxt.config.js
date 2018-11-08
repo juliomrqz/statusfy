@@ -200,7 +200,9 @@ module.exports = {
     ogHost: baseHost,
     twitterCard: 'summary_large_image',
     twitterSite: `@${twitterUserEn}`,
-    twitterCreator: `@${twitterUserEn}`
+    twitterCreator: `@${twitterUserEn}`,
+    ogDescription: false,
+    ogTitle: false
   },
   manifest: {
     name: title,

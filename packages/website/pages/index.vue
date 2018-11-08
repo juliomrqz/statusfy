@@ -18,6 +18,7 @@ import Features from '~/components/common/Features'
 import HowToUse from '~/components/common/HowToUse'
 import LatestPosts from '~/components/common/LatestPosts'
 import GetStarted from '~/components/common/GetStarted'
+import SeoHead from '~/components/mixins/SeoHead'
 
 export default {
   components: {
@@ -27,6 +28,7 @@ export default {
     LatestPosts,
     GetStarted
   },
+  mixins: [SeoHead],
   async asyncData({ app }) {
     let response = { results: [] }
 
@@ -37,12 +39,10 @@ export default {
     }
 
     return {
-      posts: response.results.slice(0, 3)
-    }
-  },
-  head() {
-    return {
-      titleTemplate: 'Statusfy'
+      posts: response.results.slice(0, 3),
+      title: app.i18n.t('home.title'),
+      description: app.i18n.t('home.description'),
+      titleTemplate: '%s'
     }
   }
 }

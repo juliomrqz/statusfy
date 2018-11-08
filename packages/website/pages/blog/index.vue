@@ -48,12 +48,14 @@
 import format from 'date-fns/format'
 
 import AticleCard from '~/components/blog/ArticleCard'
+import SeoHead from '~/components/mixins/SeoHead'
 
 export default {
   layout: 'dark',
   components: {
     AticleCard
   },
+  mixins: [SeoHead],
   async asyncData({ app }) {
     let response = { results: [] }
 
@@ -64,21 +66,9 @@ export default {
     }
 
     return {
-      posts: response.results
-    }
-  },
-  head() {
-    const $t = this.$t.bind(this)
-
-    return {
-      title: $t('blog.title'),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: $t('blog.description')
-        }
-      ]
+      posts: response.results,
+      title: app.i18n.t('blog.title'),
+      description: app.i18n.t('blog.description')
     }
   }
 }

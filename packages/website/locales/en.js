@@ -38,6 +38,10 @@ export default {
       url: 'https://www.bazzite.com'
     }
   },
+  home: {
+    title: 'Statusfy - A marvelous Open Source Status Page system',
+    description: 'Statusfy is a simple open source Status Page system designed to be built and maintained with minimum effort with no expensive server costs.'
+  },
   footer: {
     prefix: 'Made with ❤️ by',
     link: 'https://www.bazzite.com?ref=statusfy-website',
