@@ -46,15 +46,19 @@ A Demo application is at [https://demo.statusfy.co][demo].
 
 ## Documentation & Support
 
-If you want extra details of how to configure and use this project, the full documentation is available at [https://docs.statusfy.co][documentation].
+If you want extra details of how to configure and use this project, the **full documentation** is available at [https://docs.statusfy.co][documentation].
 
-For questions and support, use the [Issues section][issues].
+For **Bug reports** or **Feature requests**, use the [Issues section][issues].
+
+For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
+
+You can find usefull **articles** in [our blog][statusfy-blog].
 
 You may also want to [follow the company supporting this project on Twitter][twitter].
 
 ### Commercial Support
 
-This project is sponsored by [Bazzite][bazzite-website]. If you require assistance on your project(s), please contact us at [https://www.bazzite.com/contact][contact-page].
+This project is sponsored by [Bazzite][bazzite-website]. If you require professional assistance on your project(s), please contact us at [https://statusfy.co/support][support-page].
 
 ## Contributing
 
@@ -75,5 +79,6 @@ Code released under the [Apache License 2.0][license-page].
 [issues]: https://github.com/bazzite/statusfy/issues
 [twitter]: https://twitter.com/BazziteTech
 [bazzite-website]: https://www.bazzite.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy
-[contact-page]: https://www.bazzite.com/contact?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[support-page]: https://statusfy.co/support?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[statusfy-blog]: https://statusfy.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [license-page]: https://github.com/bazzite/statusfy/blob/develop/LICENSE
