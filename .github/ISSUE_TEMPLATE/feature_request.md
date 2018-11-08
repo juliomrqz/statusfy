@@ -14,7 +14,7 @@ about: Suggest an idea for this project
 
 <!-- Please ask questions on StackOverflow. -->
 <!-- Free Support: https://stackoverflow.com/questions/ask?tags=statusfy -->
-<!-- Commercial Support: This project is sponsored by Bazzite. If you require assistance on your project(s), please contact us at https://www.bazzite.com/contact. -->
+<!-- Commercial Support: This project is sponsored by https://www.bazzite.com. If you require professional assistance on your project(s), please contact us at https://statusfy.co/support. -->
 
 <!-- Issues which contain questions or support requests will be closed. -->
 
