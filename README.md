@@ -4,6 +4,7 @@
 [![David](https://img.shields.io/david/bazzite/statusfy.svg)](https://david-dm.org/bazzite/statusfy)
 [![David](https://img.shields.io/david/dev/bazzite/statusfy.svg)](https://david-dm.org/bazzite/statusfy?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/bazzite/statusfy.svg)](https://greenkeeper.io/)
+[![version](https://img.shields.io/npm/v/statusfy.svg)](https://www.npmjs.com/package/statusfy)
 [![License](https://img.shields.io/github/license/bazzite/statusfy.svg)][license-page]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_shield)
 
