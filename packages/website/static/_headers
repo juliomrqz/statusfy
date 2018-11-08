@@ -19,3 +19,6 @@
 
 /static/**/*.svg
   Cache-Control: public, max-age=604800, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=604800, must-revalidate

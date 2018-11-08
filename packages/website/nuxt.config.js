@@ -13,6 +13,16 @@ const apiBaseURL = process.env.API_URL || 'http://127.0.0.1:8000/api/v1/'
 const generateRouteBaseURL =
   process.env.GENRATE_ROUTES_URL || `${apiBaseURL}blog?tags=statusfy`
 
+const getPosts = async (lang = 'en') => {
+  const posts = await axios.get(generateRouteBaseURL, {
+    headers: {
+      'Accept-Language': lang
+    }
+  })
+
+  return posts
+}
+
 module.exports = {
   mode: 'universal',
   modulesDir: [
@@ -154,11 +164,7 @@ module.exports = {
       const generateRoutes = async lang => {
         const prefix = lang === 'es' ? '/es' : ''
 
-        const postsEn = await axios.get(generateRouteBaseURL, {
-          headers: {
-            'Accept-Language': lang
-          }
-        })
+        const postsEn = await getPosts(lang)
 
         return postsEn.data.results.map(post => {
           return {
@@ -234,8 +240,49 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml',
     hostname: baseHost,
-    cacheTime: 1000 * 60 * 15,
-    gzip: false,
-    generate: true
+    cacheTime: 604800, // 7 days
+    gzip: true,
+    generate: true,
+    routes: async () => {
+      const websitePages = ['', 'support', 'blog']
+      const routesEn = []
+      const routesEs = []
+
+      // Generate Website routes
+      websitePages.forEach(page => {
+        routesEn.push({
+          url: `/${page}`,
+          changefreq: 'weekly',
+          priority: 0.8,
+          lastmodISO: new Date().toISOString()
+        })
+      })
+
+      // Generate from Blog Posts
+      try {
+        const posts = await getPosts()
+
+        posts.data.results.forEach(post => {
+          routesEn.push({
+            url: `/blog/${post.slug}`,
+            changefreq: 'daily',
+            priority: 0.7,
+            lastmodISO: post.created
+          })
+        })
+      } catch (error) {
+        throw new Error(error);
+      }
+
+      // Generate Spanish Version
+      routesEn.forEach(route => {
+        routesEs.push({
+          ...route,
+          url: `/es${route.url === '/' ? '' : route.url}`,
+        })
+      })
+
+      return [...routesEn, ...routesEs]
+    }
   }
 }
