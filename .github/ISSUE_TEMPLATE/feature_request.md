@@ -4,13 +4,19 @@ about: Suggest an idea for this project
 
 ---
 
-<!-- Based on https://github.com/vuejs/vuepress/blob/master/.github/ISSUE_TEMPLATE/feature_request.md --
+<!-- Based on https://github.com/vuejs/vuepress/blob/master/.github/ISSUE_TEMPLATE/feature_request.md -->
 <!-- Please don't delete this template or we'll close your issue -->
 <!-- Before creating an issue please make sure you are using the latest version of Statusfy. -->
 
 ## Feature request
 
-<!-- Issues which contain support requests will be closed. -->
+- [ ] I confirm that this is a feature request rather than a question.
+
+<!-- Please ask questions on StackOverflow. -->
+<!-- Free Support: https://stackoverflow.com/questions/ask?tags=statusfy -->
+<!-- Commercial Support: This project is sponsored by Bazzite. If you require assistance on your project(s), please contact us at https://www.bazzite.com/contact. -->
+
+<!-- Issues which contain questions or support requests will be closed. -->
 
 #### What problem does this feature solve?
 
