@@ -146,12 +146,15 @@ module.exports = {
         })
       }
     },
-    /*
-     ** Router
-     */
-    router: {
-      linkActiveClass: 'active',
-      linkExactActiveClass: 'exact'
+  },
+  /*
+    ** Router
+    */
+  router: {
+    linkActiveClass: 'active',
+    linkExactActiveClass: 'exact',
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
     }
   },
   /*
