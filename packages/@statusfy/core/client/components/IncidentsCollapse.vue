@@ -50,9 +50,6 @@ export default {
 }
 
 .btn {
-  @apply py-2 px-4 shadow rounded-full my-4 text-center cursor-pointer border w-full;
-
-  background-color: var(--white);
-  border-color: var(--grey-light);
+  @apply my-4 text-center cursor-pointer w-full;
 }
 </style>

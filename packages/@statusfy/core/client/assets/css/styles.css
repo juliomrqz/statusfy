@@ -6,10 +6,17 @@ main {
 }
 
 .btn {
-  color: var(--black);
-  background-color: var(--white);
+  @apply inline-block rounded font-medium border py-2 px-4 shadow;
 
-  @apply inline-block rounded-full font-medium border py-2 px-4 shadow
+  color: var(--grey-darkest);
+  background-color: var(--white);
+  border-color: var(--grey-light);
+
+  &:hover {
+    @apply shadow-md;
+    color: var(--black);
+    border-color: var(--grey);
+  }
 }
 
 
