@@ -48,12 +48,12 @@ export default {
     copyright: 'Copyright © 2018 Bazzite, LLC. Todos los derechos reservados.'
   },
   features: {
-    title: 'Caracteristicas',
+    title: 'Funcionalidades',
     description: 'Statusfy es realmente fácil, solo te concentras en escribir tus Reportes de Incidentes y dejas que la magia suceda.',
     markdown: {
       title: 'Soporte para Markdown',
       description:
-        'Simplemente escribe los Incidentes con Markdown y Statusfy generará un conjunto de contenido HTML. Todas las características del <strong>format de Markdown de GitHub</strong> son compatibles.'
+        'Simplemente escribe los Incidentes con Markdown y Statusfy generará un conjunto de contenido HTML. Todas las características del <strong>formato de Markdown de GitHub</strong> son compatibles.'
     },
     pwa: {
       title: 'Aplicación Web Progresiva',
@@ -61,7 +61,7 @@ export default {
         'Solo se cargan primero los archivos críticos de HTML, CSS, JavaScript y Datos. Por lo tanto, <strong>hacer clic en el sitio se siente increíblemente rápido</strong> sin recargar la página, incluso sin conexión.'
     },
     i18n: {
-      title: 'Soporte Multi-idioma',
+      title: 'Soporte Multiidioma',
       description:
         'Los idiomas son una parte clave de lo que somos. Statusfy fue diseñado teniendo en cuenta la Internacionalización, por lo que puedes <strong>mantener actualizados a tus usuarios en cualquier idioma</strong> con simplicidad y rapidez.'
     },
@@ -106,7 +106,7 @@ export default {
     }
   },
   getStarted: {
-    title: '¿Todavía con Interes?',
+    title: '¿Todavía con Interés?',
     description: '¡Solo toma unos minutos comenzar!'
   },
   blog: {

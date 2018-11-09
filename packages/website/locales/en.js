@@ -137,7 +137,7 @@ export default {
       title: 'Email Support',
       items: {
         description: 'We provide <strong>Commercial Support</strong> through Email. If you require professional assistance on your project(s) or want to ask general questions, <a href="mailto:{email}">email us directly</a>.',
-        cost: '<small>*Installations start from $99. Not for profit and student discounts available.</small>'
+        cost: '<small>*Installations start from $99. Non-Profit And Student discounts available.</small>'
       }
     },
     updates: {
