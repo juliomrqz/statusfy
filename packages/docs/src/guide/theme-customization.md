@@ -7,11 +7,11 @@ sidebarDepth: 3
 
 ## Styles
 
-The look of Statusfy can be easily changed with a StyleSheet localed at `theme/default/style.{css, less, sass, scss, styl, stylus}`.
+The look of Statusfy can be easily changed with a StyleSheet located at `theme/default/style.{css, less, sass, scss, styl, stylus}`.
 
 ### CSS
 
-Using a CSS file (`theme/default/style.css`) is the easier way to customize the styles. You can change the predefined CSS variables or extend the existing styles with any CSS instruction without extra dependencies.
+Using a CSS file (`theme/default/style.css`) is the simplest way to customize the styles. You can change the predefined CSS variables or extend the existing styles with any CSS instruction without extra dependencies.
 
 These are the available CSS variables:
 
@@ -40,7 +40,7 @@ These are the available CSS variables:
 Statusfy includes support for [`postcss-preset-env`](https://github.com/csstools/postcss-preset-env), so you can use any modern CSS instructions from here: [PostCSS Preset Env Features](https://preset-env.cssdb.org/features).
 :::
 
-### Sass, Less and Stylus
+### Sass, Less, and Stylus
 
 If you want to use another CSS preprocessor, Statusfy supports styles from Sass, LESS and Stylus. But take into consideration that you must install extra Node.js dependencies:
 

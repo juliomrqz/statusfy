@@ -17,7 +17,7 @@ The Title for the site. This will be the suffix for all page titles and displaye
 - Type: `string`
 - Default: `undefined`
 
-The Name of the Application. It is also used in the [Manifest File](../guide/pwa.md#manifest) and as a id for assets caching with [Service Worker](../guide/pwa.md#service-worker).
+The Name of the Application. It is also used in the [Manifest File](../guide/pwa.md#manifest) and as id for assets caching with [Service Worker](../guide/pwa.md#service-worker).
 
 ## description
 
@@ -80,7 +80,7 @@ If set to `true`, Statusfy will automatically generate and register a service wo
 ::: tip Important
 To make your site fully PWA-compliant, you will need to enable the [Web App Manifest](./#manifest).
 
-Also, only enable this if you are able to deploy your site with SSL, since service worker can only be registered under HTTPs URLs.
+Also, only enable this if you are able to deploy your site with SSL since service worker can only be registered under HTTPs URLs.
 :::
 
 ## manifest

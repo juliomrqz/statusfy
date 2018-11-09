@@ -35,5 +35,5 @@ The capitalization of the directories names is important in order to avoid error
 - **`content/`**: The Markdown source files of your Incidents. This file path can be changed, more information in the [Config Reference](../config/README.md#dir).
 - **`locales/`**: Directory that contains translations files. More information in the [Internationalization Guide](../guide/i18n.md).
 - **`public/`**: Static files directory. Each file inside this directory is mapped to `/`. For example: `/public/robots.txt` is mapped as `/robots.txt`.
-- **`theme/`**: Directory that contains the files that allows you to customize the Style of Statusfy. More information in the [Theme Customization Guide](../guide/theme-customization.md).
+- **`theme/`**: Directory that contains the files that allow you to customize the Style of Statusfy. More information in the [Theme Customization Guide](../guide/theme-customization.md).
 - **`config.js`**: Your Configuration File. More information in the [Configuration Guide](../guide/configuration.md#config-file).

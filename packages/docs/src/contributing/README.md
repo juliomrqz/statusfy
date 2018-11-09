@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-sidebarDepth: 2
+sidebarDepth: 3
 ---
 
 # Contributing
@@ -55,6 +55,10 @@ TODO
 ### Website
 
 TODO
+
+## Translations
+
+
 
 
 [code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy

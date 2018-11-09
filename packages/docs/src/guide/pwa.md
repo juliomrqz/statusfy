@@ -3,7 +3,7 @@
 Statusfy provides [PWA](https://developers.google.com/web/progressive-web-apps) support out of the box with some marvelous features:
 
 * [Service Worker](#service-worker): Registers a service worker for offline caching.
-* ​[Icons](#icon): Automatically generates app icons with different sizes.
+* ​[Icons](#icon): Automatically generates app icons in different sizes.
 * [Manifest](#manifest): Automatically generate **Web App Manifest** file.
 
 
@@ -30,7 +30,7 @@ It's generated icons in 7 diferent sizes (in px): `16`, `120`, `144`, `152`, `19
 
 ## Web App Manifest
 
-Statsufy creates a valid [Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/?hl=en) that meets the [add to home screen criteria](https://developers.google.com/web/fundamentals/app-install-banners/?hl=en#criteria). 
+Statusfy creates a valid [Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/?hl=en) that meets the [add to home screen criteria](https://developers.google.com/web/fundamentals/app-install-banners/?hl=en#criteria). 
 
 ```json
 {

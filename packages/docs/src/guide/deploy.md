@@ -8,7 +8,7 @@ You can deliver your Status Page System created with Statusfy in two different w
 
 ## Services
 
-We listed a few diferent services you can use for hosting your Status Page System. Take into consideration the supported site delivery for each service:
+We listed a few different services you can use for hosting your Status Page System. Take into consideration the supported site delivery for each service:
 
 |    Service   |  Static Generated  |            Server Rendered             |
 |:------------:|:------------------:|:--------------------------------------:|

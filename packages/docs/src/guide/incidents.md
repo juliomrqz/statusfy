@@ -4,7 +4,7 @@ sidebarDepth: 3
 
 # Incidents
 
-Incidents are the core of Statusfy: there is no Status Page System with a record of incidents.
+Incidents are the core of Statusfy: there is no Status Page System without a record of incidents.
 
 The Incidents information is stored in a Markdown file with attributes and a content that provides extra information to your users.
 
@@ -179,7 +179,7 @@ Statusfy only supports the [version 0.4.0](https://github.com/toml-lang/toml/blo
 
 ## Content
 
-The content of the Incidents are wirted in valid Markdown format but there are extra Extensions that Statsufy provides.
+The content of the Incidents are written in a valid Markdown format but there are extra Extensions that Statusfy provides.
 
 ### Updates Containers
 

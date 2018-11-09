@@ -14,7 +14,7 @@ When building your Status Page System, you can generate the HTML for every one o
 - Fast Response Time: static hostings usually use a CDN.
 - Reduce your hosting costs.
 
-### Disavantages
+### Disadvantages
 
 - You must **regenerate** the web application **at least once a day** in order to keep updated the Incidents Timeline on the Homepage.
 - For a Status Page System with a huge amount of Incidents, the pages generation could take a significant amount of time.
@@ -28,7 +28,7 @@ If you want to reduce your deployment time or just not want to use a Static Host
 - For a Status Page System with a huge amount of Incidents, the pages generation time is not an issue.
 - Redirection based on user's browser language
 
-### Disavantages
+### Disadvantages
 
 - You can't use a static hosting.
 - You are limited to use a hosting service that supports Node.js.
