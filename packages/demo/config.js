@@ -26,5 +26,19 @@ module.exports = {
     link: [
       { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3e4e88' }
     ]
+  },
+  theme: {
+    links: {
+      en: {
+        contact: "https://statusfy.co/support",
+        support: "https://statusfy.co/support",
+        home: "https://statusfy.co"
+      },
+      es: {
+        contact: "https://statusfy.co/es/support",
+        support: "https://statusfy.co/es/support",
+        home: "https://statusfy.co/es"
+      }
+    }
   }
 }

@@ -6,7 +6,9 @@
           v-for="link in links"
           :key="link.key"
           :href="link.url"
-          :title="link.title">{{ link.title }}</a>
+          :title="link.title"
+          target="_blank"
+          rel="noopener">{{ link.title }}</a>
       </div>
 
       <div>
@@ -39,20 +41,22 @@
 </template>
 
 <script>
+import get from 'lodash.get'
+
 export default {
   computed: {
     links () {
       const $t = this.$t.bind(this)
-      const $te = this.$te.bind(this)
       const allowedLinksKeys = ['home', 'contact', 'support']
+      const themeLinks = this.$statusfy.theme.links
       const links = {}
 
       allowedLinksKeys.forEach(key => {
-        if ($te(`links.${key}`)) {
+        if (get(themeLinks, [this.$i18n.locale, key])) {
           links[key] = {
             key,
             title: $t(`labels.${key}`),
-            url: $t(`links.${key}`)
+            url: get(themeLinks, [this.$i18n.locale, key])
           }
         }
       })

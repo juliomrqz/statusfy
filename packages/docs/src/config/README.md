@@ -17,7 +17,7 @@ The Title for the site. This will be the suffix for all page titles and displaye
 - Type: `string`
 - Default: `undefined`
 
-
+The Name of the Application. It is also used in the [Manifest File](../guide/pwa.md#manifest) and as a id for assets caching with [Service Worker](../guide/pwa.md#service-worker).
 
 ## description
 
@@ -36,6 +36,39 @@ The base URL the site will be deployed at. It can be just a slash or a valid URL
 ::: warning WARNING
 You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
+
+## theme
+
+- Type: `Object`
+- Default: `{}`
+
+Provide config options to the be used by the theme.
+
+### links
+
+- Type: `Object`
+- Default: `{}`
+
+The external links located at the Footer of each page. There only three links you can define: `home`, `contact`, and `support` and must be used the language code as the index of the object. For example:
+
+```json
+module.exports = {
+  theme: {
+    links: {
+      en: {
+        contact: "https://statusfy.co/contact",
+        support: "https://statusfy.co/support",
+        home: "https://statusfy.co"
+      },
+      es: {
+        contact: "https://statusfy.co/es/contact",
+        support: "https://statusfy.co/es/support",
+        home: "https://statusfy.co/es"
+      }
+    }
+  }
+}
+```
 
 ## serviceWorker
 
