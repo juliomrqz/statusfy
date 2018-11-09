@@ -76,8 +76,8 @@ module.exports = {
             link: '/contributing/',
           },
           {
-            text: 'Changelog',
-            link: 'https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md'
+            text: 'Support',
+            link: 'https://statusfy.co/support'
           },
           {
             text: 'Demo',
@@ -110,8 +110,8 @@ module.exports = {
             link: '/es/config/',
           },
           {
-            text: 'Changelog',
-            link: 'https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md'
+            text: 'Soporte',
+            link: 'https://statusfy.co/es/support'
           },
           {
             text: 'Demo',
