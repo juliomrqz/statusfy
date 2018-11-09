@@ -148,7 +148,7 @@ module.exports = async function database (siteConfig, finalDate) {
   const sortIncidents = (incidents) => sortBy(incidents, o => -Number(new Date(o.date)))
 
   return {
-    incidents (lang, page = 1, pageSize = 3) {
+    incidents (lang, page = 1, pageSize = 10) {
       const sortedIncidents = sortIncidents(incidents[lang])
       const paginatedIncidents = getPaginatedItems(sortedIncidents, page, pageSize)
 

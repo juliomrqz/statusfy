@@ -29,10 +29,24 @@ module.exports = async function buildContent (nuxt, buildDir, isStatic, options)
           compilation.assets[`${pathPrefix}/incidents/timeline.${locale.code}.json`] =
             asset(database.incidentsTimeline(locale.code))
 
+          // All Incients Pages
+          const incidentsPage1 = database.incidents(locale.code)
+          let currentPage = 1
+          let totalPages = incidentsPage1.total_pages
+
+          while (currentPage <= totalPages) {
+            const data = database.incidents(locale.code, currentPage)
+
+            compilation.assets[`${pathPrefix}/incidents.page-${currentPage}.${locale.code}.json`] =
+              asset(data)
+
+            currentPage = data.page + 1
+          }
+
           // History Pages
           const historyPage1 = database.incidentsHistory(locale.code)
-          let currentPage = 1
-          let totalPages = historyPage1.total_pages
+          currentPage = 1
+          totalPages = historyPage1.total_pages
 
           while (currentPage <= totalPages) {
             const data = database.incidentsHistory(locale.code, currentPage)
