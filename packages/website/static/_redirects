@@ -1,3 +1,3 @@
 # Redirect default Netlify subdomain to primary domain
-http://stoic-leavitt-b61d39.netlify.com/*   http://statusfy.co/:splat 301!
-http://www.statusfy.co/*   http://statusfy.co/:splat 301!
+https://stoic-leavitt-b61d39.netlify.com/* https://statusfy.co/:splat 301!
+https://www.statusfy.co/*   http://statusfy.co/:splat 301!
