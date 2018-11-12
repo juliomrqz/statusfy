@@ -22,7 +22,7 @@ export default {
   mixins: [Head],
   props: {
     error: {
-      type: Object,
+      type: Object || Error,
       required: true
     }
   },
