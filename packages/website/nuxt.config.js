@@ -110,6 +110,7 @@ module.exports = {
       'nuxt-i18n',
       {
         parsePages: false,
+        baseUrl: baseHost,
         locales: [
           { code: 'en', iso: 'en-US', name: 'English', file: 'en.js' },
           { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.js' }
