@@ -9,8 +9,13 @@ export default {
       }
     })
 
+    const canonical = `${this.$statusfy.baseUrl}${this.$route.path}`
+
     return {
-      link: favicons
+      link: [
+        ...favicons,
+        { rel: 'canonical', href: canonical, hid: 'canonical' }
+      ]
     }
   }
 }

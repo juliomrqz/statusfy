@@ -63,7 +63,8 @@ export default (ctx, inject) => {
       mainLogo: require('<%= options.assets.mainLogo %>')
     },
     iconSizes: [<%= options.iconSizes.join(', ') %>],
-    theme: <%= serialize(options.siteConfig.theme) %>
+    theme: <%= serialize(options.siteConfig.theme) %>,
+    baseUrl: <%= serialize(options.siteConfig.baseUrl) %>
   }
 
   // Inject Statusfy to the context as $statusfy
