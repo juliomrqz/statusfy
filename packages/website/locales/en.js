@@ -53,7 +53,7 @@ export default {
     markdown: {
       title: 'Markdown Support',
       description:
-        'Simply write Incidents with Markdown and Statusfy will generate a set of HTML content. All features of <strong>GitHub Flavored Markdown</strong> are supported.'
+        'Just write Incidents with Markdown and Statusfy will generate a set of HTML content. All features of <strong>GitHub Flavored Markdown</strong> are supported.'
     },
     pwa: {
       title: 'Progressive Web App',
