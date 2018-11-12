@@ -3,7 +3,7 @@
     <div class="container my-8">
       <div class="flex lg:items-center flex-col lg:flex-row lg:justify-between">
         <div class="mb-8 lg:mb-0 lg:pr-4">
-          <h2 class="text-2xl font-normal tracking-tight leading-none mb-3">
+          <h2 class="text-2xl font-normal leading-none mb-3">
             {{ $t('getStarted.title') }}
           </h2>
           <h3 class="text-xl text-grey-dark font-normal leading-tight">

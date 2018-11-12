@@ -12,7 +12,7 @@
         >
           <div class="w-full p-4">
             <h1
-              class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4"
+              class="text-3xl sm:text-4xl font-semibold leading-none mb-4"
             >
               {{ $t('support.title') }}
             </h1>

@@ -9,7 +9,7 @@
     <div class="container mt-4 mb-8">
       <div class="text-center text-white mb-8">
         <h2
-          class="text-3xl sm:text-3xl font-semibold leading-none tracking-tight mb-4"
+          class="text-3xl sm:text-3xl font-semibold leading-none mb-4"
         >
           {{ $t('features.title') }}
         </h2>

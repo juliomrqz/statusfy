@@ -11,7 +11,7 @@
       >
         <div class="w-full lg:w-1/3 pb-4 lg:pr-4">
           <h1
-            class="text-3xl sm:text-4xl font-semibold leading-none tracking-tight mb-4"
+            class="text-3xl sm:text-4xl font-semibold leading-none mb-4"
           >
             {{ $t('slogan') }}
           </h1>
