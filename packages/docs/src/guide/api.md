@@ -6,13 +6,13 @@ sidebarDepth: 3
 
 Statusfy is a SPA [(Single Page Application)](https://en.wikipedia.org/wiki/Single-page_application) that reads its data from an internal RESTful API. You can also retrieve this data from an existing application or library you may be using.
 
-::: tip IMPORTANT
-The URLs of the endpoints change depending on your deployment mode: **Static Generated** or **Server Rendered**.
+::: warning IMPORTANT
+The URLs of the endpoints are different in both deployment modes: **Static Generated** or **Server Rendered**.
 :::
 
 ## Common Parameters
 
-Each of the endpoints below has common parameters that can be used.
+Each of the endpoints below has common parameters that can be used:
 
 ### :page
 

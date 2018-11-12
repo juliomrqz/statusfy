@@ -13,7 +13,7 @@ statusfy init
 
 ### Arguments
 
-- `-d` or `--dir`: specify the installation directory (default: current/working directory)
+- `-d` or `--dir`: specify the installation directory (default: current/working directory).
 
 ## dev
 
@@ -25,8 +25,8 @@ statusfy dev
 
 ### Arguments
 
-- `-p <port>` or `--port <port>`: use specified **port** (default: 3000)
-- `-s` or `--ssr`: force SSR (Server-Side Rendering)
+- `-p <port>` or `--port <port>`: use specified **port** (default: 3000).
+- `-s` or `--ssr`: force SSR (Server-Side Rendering).
 
 ## build
 
@@ -42,7 +42,7 @@ After executing this command, you should launch the application using the [`stat
 
 ### Arguments
 
-- `-a` or `--analyze`: launch the final bundle analysis
+- `-a` or `--analyze`: launch the final bundle analysis. ***This should not be used for production***. 
 
 ## generate
 
@@ -55,7 +55,7 @@ statusfy generate
 ### Arguments
 
 - `-d` or `--dir`: specify generate output dir (default: ./dist)
-- `-a` or `--analyze`: launch the final bundle analysis
+- `-a` or `--analyze`: launch the final bundle analysis. ***This should not be used for production***. 
 
 ## start
 
@@ -71,8 +71,8 @@ The application should be compiled with [`statusfy build`](#build) first.
 
 ### Arguments
 
-- `-p <port>` or `--port <port>`: use specified **port** (default: 3000)
-- `-h <port>` or `--host <host>`: use specified **host** (default: 127.0.0.1)
+- `-p <port>` or `--port <port>`: use specified **port** (default: 3000).
+- `-h <port>` or `--host <host>`: use specified **host** (default: 127.0.0.1).
 
 ## new-incident
 

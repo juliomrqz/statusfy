@@ -6,7 +6,7 @@ sidebarDepth: 3
 # Contributing
 
 ::: tip IMPORTANT
-Please make sure to read ouw [Code of Conduct][code-of-conduct] before making a contribution.
+Please make sure to read our [Code of Conduct][code-of-conduct] before making a contribution.
 :::
 
 

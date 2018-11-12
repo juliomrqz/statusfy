@@ -26,7 +26,7 @@ With this command, after you answer a few questions, an initial Markdown file is
 
 ## Naming Convention
 
-You can name the file of your Incidents in the way you desired the most but we recommend this pattern `YYYY-MM-DD_slug.md`, where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***. For example:
+You can name the file of your Incidents the way you desire the most but we recommend this pattern: `YYYY-MM-DD_slug.md`, where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***. For example:
 
 ```
 /content/2018-11-21_networking-issues.md
