@@ -1,5 +1,6 @@
 export default {
   head() {
+    const currentAbsoluteUrl = `${process.env.baseHost}${this.$router.currentRoute.path}`
     const ogImage = [
       {
         hid: 'og:image',
@@ -48,12 +49,18 @@ export default {
           property: 'og:title',
           content: this.title
         },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: currentAbsoluteUrl
+        },
         ...ogImage
       ],
       link: [
         {
           rel: 'canonical',
-          href: this.canonical ? this.canonical : `${process.env.baseHost}${this.$router.currentRoute.path}`,
+          href: this.canonical ? this.canonical : currentAbsoluteUrl,
           hid: 'canonical'
         }
       ]
