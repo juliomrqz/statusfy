@@ -205,7 +205,8 @@ module.exports = {
     twitterSite: `@${twitterUserEn}`,
     twitterCreator: `@${twitterUserEn}`,
     ogDescription: false,
-    ogTitle: false
+    ogTitle: false,
+    ogImage: false
   },
   manifest: {
     name: title,
