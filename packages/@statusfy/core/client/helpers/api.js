@@ -3,7 +3,7 @@ export default class API {
     this.axios = axios
     this.lang = lang
     this.isStatic = process.static
-    this.basePath = '/api/v1'
+    this.basePath = '/api/v0'
   }
 
   buildUrl (path, queryStrings = {}) {

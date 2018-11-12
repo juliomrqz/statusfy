@@ -184,7 +184,7 @@ module.exports = {
     ],
     runtimeCaching: [
       {
-        urlPattern: '(/static/content)?/api/v1/.*',
+        urlPattern: '(/static/content)?/api/v0/.*',
         strategyOptions: {
           cacheName: 'api',
           cacheExpiration: {

@@ -15,7 +15,7 @@ const asset = object => {
 
 module.exports = async function buildContent (nuxt, buildDir, isStatic, options) {
   const database = await createDatabase(nuxt.options.statusfy.siteConfig)
-  const pathPrefix = '/content/api/v1'
+  const pathPrefix = '/content/api/v0'
 
   nuxt.options.build.plugins.push({
     apply (compiler) {

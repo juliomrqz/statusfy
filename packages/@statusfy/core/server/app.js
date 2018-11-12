@@ -37,7 +37,7 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port, a
     app.use(require('serve-static')(nuxtConfig.statusfy.publicFilesPath))
   }
 
-  app.use(`${apiPrefix}/api/v1`, buildApiRouter(siteConfig))
+  app.use(`${apiPrefix}/api/v0`, buildApiRouter(siteConfig))
 
   if (nuxtConfig) {
     // Init Nuxt.js

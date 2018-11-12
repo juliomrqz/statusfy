@@ -31,7 +31,7 @@ describe('build-generate', () => {
 
     expect(swContent).toContain("workbox.precaching.precacheAndRoute(['/offline'])")
     expect(swContent).toContain("workbox.routing.registerRoute(new RegExp('/static/(?!content).*$'), workbox.strategies.cacheFirst({}), 'GET')")
-    expect(swContent).toContain("workbox.routing.registerRoute(new RegExp('(/static/content)?/api/v1/.*'), workbox.strategies.networkFirst({\"cacheName\":\"demo_system_status_api\",\"cacheExpiration\":{\"maxEntries\":10,\"maxAgeSeconds\":300}}), 'GET')")
+    expect(swContent).toContain("workbox.routing.registerRoute(new RegExp('(/static/content)?/api/v0/.*'), workbox.strategies.networkFirst({\"cacheName\":\"demo_system_status_api\",\"cacheExpiration\":{\"maxEntries\":10,\"maxAgeSeconds\":300}}), 'GET')")
     expect(swContent).toContain("caches.match('/offline')")
     expect(swContent).toContain("\"cacheId\": \"demo_system_status\"")
   })
