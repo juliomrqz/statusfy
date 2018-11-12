@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Statusfy Demo',
+  title: 'Demo System Status',
   description: 'A marvelous open source Status Page system',
   baseUrl: 'https://demo.statusfy.co',
   analytics: {

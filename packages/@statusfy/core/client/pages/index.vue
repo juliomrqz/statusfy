@@ -14,6 +14,7 @@ import IncidentsTimeline from '~/components/IncidentsTimeline'
 import SystemStatus from '~/components/SystemStatus'
 
 export default {
+  layout: 'home',
   components: {
     IncidentsTimeline,
     SystemStatus
