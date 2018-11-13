@@ -79,6 +79,18 @@
         </div>
         <div class="hidden lg:block">
           <a
+            :href="$t('links.github.url')"
+            :title="$t('links.github.title')"
+            class="menu-item mt-4 lg:mt-0"
+            target="_blank"
+            rel="noopener"
+          >
+            <svgicon
+              name="fortawesome/github-brands"
+              class="svg-inline--fa fa-w-16"
+            />
+          </a>
+          <a
             :href="$t('links.getStarted.url')"
             class="btn-get-started btn btn-blue mt-4 lg:mt-0"
           >
@@ -92,6 +104,7 @@
 
 <script>
 import '~/components/icons/fortawesome/times-solid'
+import '~/components/icons/fortawesome/github-brands'
 
 export default {
   props: {
@@ -142,7 +155,8 @@ export default {
 .menu-item {
   @apply block my-4 text-grey-light text-lg mr-4;
 
-  &::hover {
+  &:hover,
+  &.active {
     @apply text-white;
   }
 }
@@ -153,10 +167,11 @@ export default {
   }
 
   .menu-item {
-    @apply my-0 text-blue inline-block mt-0;
+    @apply my-0 text-black inline-block mt-0;
 
-    &::hover {
-      @apply text-black;
+    &:hover,
+    &.active {
+      @apply text-blue;
     }
   }
 }
@@ -171,7 +186,8 @@ nav.dark {
     .menu-item {
       @apply text-grey-darkest;
 
-      &:hover {
+      &:hover,
+      &.active {
         @apply text-black;
       }
     }
@@ -193,7 +209,8 @@ nav.dark {
       .menu-item {
         @apply text-grey;
 
-        &:hover {
+        &:hover,
+        &.active {
           @apply text-grey-lighter;
         }
       }

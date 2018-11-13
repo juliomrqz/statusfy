@@ -1,6 +1,7 @@
 /* eslint-disable */
 import './database-solid'
 import './facebook-square-brands'
+import './github-brands'
 import './globe-solid'
 import './js-square-brands'
 import './language-solid'
