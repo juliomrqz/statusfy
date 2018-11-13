@@ -9,7 +9,7 @@ const secondColor = '#eff0f4'
 const baseHost = 'https://statusfy.co'
 const twitterUserEn = 'BazziteTech'
 const twitterUserEs = 'BazziteEs'
-const apiBaseURL = process.env.API_URL || 'http://127.0.0.1:8000/api/v0/'
+const apiBaseURL = process.env.API_URL || 'http://127.0.0.1:8000/api/v1/'
 const generateRouteBaseURL =
   process.env.GENRATE_ROUTES_URL || `${apiBaseURL}blog?tags=statusfy`
 
