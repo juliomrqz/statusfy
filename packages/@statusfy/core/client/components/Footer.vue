@@ -48,7 +48,7 @@ export default {
     links () {
       const $t = this.$t.bind(this)
       const allowedLinksKeys = ['home', 'contact', 'support']
-      const themeLinks = this.$statusfy.theme.links
+      const themeLinks = get(this.$statusfy, ['theme', 'links'])
       const links = {}
 
       allowedLinksKeys.forEach(key => {

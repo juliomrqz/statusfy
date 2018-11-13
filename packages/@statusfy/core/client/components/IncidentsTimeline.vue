@@ -41,7 +41,7 @@
 <script>
 import { statusesInfo } from '~/helpers/statuses'
 import Incident from './Incident'
-import NiceDate from '~/components/NiceDate'
+import NiceDate from './NiceDate'
 
 export default {
   components: {

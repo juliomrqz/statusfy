@@ -23,7 +23,7 @@
     <div class="system-status flex-1">
       <span class="hidden sm:inline">{{ status.title }}</span>
       <svgicon
-        :name="`fortawesome/${status.icon}-solid`"
+        :name="`fortawesome/${status.icon}`"
         class="svg-inline--fa fa-w-16"/>
     </div>
   </div>
@@ -32,12 +32,13 @@
 <script>
 import { getStatusInfo } from '~/helpers/statuses'
 
-import '~/components/icons/fortawesome/question-circle-regular'
-import '~/components/icons/fortawesome/clock-solid'
-import '~/components/icons/fortawesome/exclamation-circle-solid'
-import '~/components/icons/fortawesome/minus-circle-solid'
-import '~/components/icons/fortawesome/times-circle-solid'
-import '~/components/icons/fortawesome/check-circle-solid'
+import './icons/fortawesome/question-circle-regular'
+
+import './icons/fortawesome/clock-solid'
+import './icons/fortawesome/exclamation-circle-solid'
+import './icons/fortawesome/minus-circle-solid'
+import './icons/fortawesome/times-circle-solid'
+import './icons/fortawesome/check-circle-solid'
 
 export default {
   components: {

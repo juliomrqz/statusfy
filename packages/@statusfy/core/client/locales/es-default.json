@@ -1,4 +1,6 @@
 {
+  "title": "Estado del Sistema",
+  "description": "Mantente al día con las interrupciones históricas y en tiempo real de nuestro servicio que pueden estar afectándote.",
   "labels": {
     "contact": "Contacto",
     "support": "Soporte",
@@ -55,5 +57,22 @@
     "title": "Estás Fuera de Línea",
     "subtitle": "¡Lo sentimos!",
     "description": "No pudimos cargar la página solicitada. Verifica tu conexión de red y vuelve a intentarlo."
+  },
+  "systems": {
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "dns": {
+        "title": "DNS"
+      },
+      "site-delivery": {
+        "title": "Entrega del Sitio"
+      },
+      "api": {
+        "title": "API",
+        "description": "Los puntos finales del API a los que cualquier desarrollador puede acceder"
+      }
+    }
   }
 }

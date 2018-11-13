@@ -31,7 +31,7 @@
     <div class="incident-subtitle">
       <div class="status">
         <svgicon
-          :name="`fortawesome/${status.icon}-solid`"
+          :name="`fortawesome/${status.icon}`"
           class="svg-inline--fa fa-w-16"/>
         {{ status.title }}
       </div>
@@ -68,13 +68,13 @@
 <script>
 import { getStatusInfo } from '~/helpers/statuses'
 
-import '~/components/icons/fortawesome/clock-solid'
-import '~/components/icons/fortawesome/exclamation-circle-solid'
-import '~/components/icons/fortawesome/minus-circle-solid'
-import '~/components/icons/fortawesome/times-circle-solid'
-import '~/components/icons/fortawesome/check-circle-solid'
-import '~/components/icons/fortawesome/external-link-alt-solid'
-import NiceDate from '~/components/NiceDate'
+import './icons/fortawesome/clock-solid'
+import './icons/fortawesome/exclamation-circle-solid'
+import './icons/fortawesome/minus-circle-solid'
+import './icons/fortawesome/times-circle-solid'
+import './icons/fortawesome/check-circle-solid'
+import './icons/fortawesome/external-link-alt-solid'
+import NiceDate from './NiceDate'
 
 export default {
   components: {

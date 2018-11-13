@@ -78,7 +78,7 @@ const readFileIncidents = async (dirPath) => {
         const filePath = files[i]
         const isFile = (await statP(filePath)).isFile()
 
-        if (isFile && path.extname(filePath) === '.md') {
+        if (isFile && path.extname(filePath) === '.md' && path.basename(filePath).toLowerCase() !== 'readme.md') {
           const fileName = path.relative(dirPath, filePath)
           const fileContent = (await readFileP(filePath)).toString('utf8')
           const incident = new Incident(fileContent, fileName).getData()
@@ -156,7 +156,7 @@ module.exports = async function database (siteConfig, finalDate) {
         count: sortedIncidents.length,
         page: paginatedIncidents.page,
         page_size: paginatedIncidents.pageSize,
-        total_pages: paginatedIncidents.totalPages,
+        total_pages: paginatedIncidents.totalPages || 1,
         incidents: paginatedIncidents.data
       }
     },
@@ -191,7 +191,7 @@ module.exports = async function database (siteConfig, finalDate) {
         count: periods.length,
         page: paginatedPeriods.page,
         page_size: paginatedPeriods.pageSize,
-        total_pages: paginatedPeriods.totalPages,
+        total_pages: paginatedPeriods.totalPages || 1,
         periods: paginatedPeriods.data
       }
     },

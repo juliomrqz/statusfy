@@ -19,5 +19,6 @@ module.exports = {
     isStatic: false
   },
   serviceWorker: true,
-  manifest: true
+  manifest: true,
+  theme: {}
 }

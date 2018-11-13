@@ -26,7 +26,7 @@
 
 <script>
 import IncidentsCollapse from './IncidentsCollapse'
-import NiceDate from '~/components/NiceDate'
+import NiceDate from './NiceDate'
 
 export default {
   components: {

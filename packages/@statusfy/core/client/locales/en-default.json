@@ -1,4 +1,6 @@
 {
+  "title": "System Status",
+  "description": "Keep up to date with real-time and historical interruptions to our service which may be affecting you.",
   "labels": {
     "contact": "Contact",
     "support": "Support",
@@ -55,5 +57,22 @@
     "title": "You're Offline",
     "subtitle": "Sorry!",
     "description": "We were unable to load the page you requested. Please check your network connection and try again."
+  },
+  "systems": {
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "dns": {
+        "title": "DNS"
+      },
+      "site-delivery": {
+        "title": "Site delivery"
+      },
+      "api": {
+        "title": "API",
+        "description": "The API Endpoints any developers can access to"
+      }
+    }
   }
 }

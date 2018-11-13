@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import '~/components/icons/fortawesome/chevron-right-solid'
-import '~/components/icons/fortawesome/chevron-left-solid'
+import './icons/fortawesome/chevron-right-solid'
+import './icons/fortawesome/chevron-left-solid'
 
 export default {
   props: {

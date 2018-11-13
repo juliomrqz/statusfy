@@ -6,7 +6,7 @@
       <span>{{ status.title }}</span>
       <span class="global-status-icon">
         <svgicon
-          :name="`fortawesome/${status.icon}-solid`"
+          :name="`fortawesome/${status.icon}`"
           class="svg-inline--fa fa-w-16"/>
       </span>
     </div>
@@ -22,12 +22,12 @@
 <script>
 import { statusesInfo } from '~/helpers/statuses'
 
-import System from '~/components/System'
-import '~/components/icons/fortawesome/clock-solid'
-import '~/components/icons/fortawesome/exclamation-circle-solid'
-import '~/components/icons/fortawesome/minus-circle-solid'
-import '~/components/icons/fortawesome/times-circle-solid'
-import '~/components/icons/fortawesome/check-circle-solid'
+import System from './System'
+import './icons/fortawesome/clock-solid'
+import './icons/fortawesome/exclamation-circle-solid'
+import './icons/fortawesome/minus-circle-solid'
+import './icons/fortawesome/times-circle-solid'
+import './icons/fortawesome/check-circle-solid'
 
 export default {
   components: {
