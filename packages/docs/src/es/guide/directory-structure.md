@@ -1,32 +1,39 @@
 # Estructura de Directorios
 
+Statusfy está diseñado para ser fácil de usar y organizar, teniendo en cuenta la [Internacionalización](../guide/i18n.md), la estructura de documento recomendada es la siguiente:
 
-```
+```bash
 .
-├─ .statusfy/         # (internal)
-├─ assets/            # (optional)
-├─ content/           # (required)
+├─ .statusfy/         # (interno)
+├─ assets/            # (opcional)
+│   ├── icon.png
+│   ├── img
+│   │   └── logo.svg
+├─ content/           # (requerido)
 │   ├── 2018-01-16_incident_1.md
 │   ├── 2018-01-17_incident_2.md
-│   ├── es
+│   ├── es            # (opcional)
 │   │   ├── 2018-01-16_incident_1.md
 │   │   └── 2018-01-17_incident_2.md
-├─ locales/           # (recomended)
+├─ locales/           # (recomendado)
 │   ├── en.json
 │   └── es.json
-├─ public/            # (optional)
+├─ public/            # (opcional)
 │   └── robots.txt
-├─ config.js          # (optional)
+├─ theme/             # (opcional)
+│   └── style.css
+├─ config.js          # (opcional)
 └─ package.json
 ```
 
-::: warning Note
-Please note the capitalization of the directory name.
+::: warning Nota
+La capitalización de los nombres de los directorios es importante para evitar errores.
 :::
 
-- **`.statusfy/`**: It is used to store the built files needed for your application during development or the [production dynamic mode](../guide/deploy.md#dynamic).
-- **`assets/`**: The assets directory contains your un-compiled assets such as Images.
-- **`content/`**: The markdown source files of your incidents. This file path can be changed, more information [here](../config/README.md#dir).
-- **`locales/`**: Directory that contains translations files.
-- **`public/`**: Static files directory. Each file inside this directory is mapped to `/`. **For example:** `/public/robots.txt` is mapped as `/robots.txt`.
-- **`config.js`**: Your [Config File](../guide/configuration.md#config-file).
+- **`.statusfy/`**: Se utiliza para almacenar los archivos necesarios para tu aplicación durante el desarrollo o el Modo [Renderizado por Servidor](../guide/architecture.md#renderizado-por-servidor) en Producción.
+- **`assets/`**: El directorio de activos contiene tus archivos no compilados, como Imágenes.
+- **`content/`**: Esta ruta se puede cambiar, más información en la [Referencia de Configuración](../config/README.md#dir).
+- **`locales/`**: Directorio que contiene archivos de traducción. Más información en la [Guía de internacionalización](../guide/i18n.md).
+- **`public/`**: Cada archivo dentro de este directorio se asigna a `/`. Por ejemplo: `/public/robots.txt` se asigna como` /robots.txt`.
+- **`theme/`**: Directorio que contiene los archivos que te permiten personalizar el estilo de Statusfy. Más información en la [Guía de Personalización de Estilo](../guide/theme-customization.md).
+- **`config.js`**: Tu archivo de configuración. Más información en la [Guía de Configuración](../guide/configuration.md#archivo-de-configuracion).

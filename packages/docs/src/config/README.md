@@ -33,7 +33,7 @@ The Description for the site. This will be rendered as a `<meta>` tag in the pag
 
 The base URL the site will be deployed at. It can be just a slash or a valid URL that shouldn't end with a slash.
 
-::: warning WARNING
+::: warning ADVERTENCIA
 You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
 
@@ -80,7 +80,7 @@ If set to `true`, Statusfy will automatically generate and register a service wo
 ::: tip Important
 To make your site fully PWA-compliant, you will need to enable the [Web App Manifest](./#manifest).
 
-Also, only enable this if you are able to deploy your site with SSL since service worker can only be registered under HTTPs URLs.
+Also, only enable this if you are able to deploy your site with SSL since service worker can only be registered under HTTPS URLs.
 :::
 
 ## manifest

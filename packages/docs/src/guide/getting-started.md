@@ -21,7 +21,7 @@ statusfy init
 # and answer the required questions
 ```
 
-It will be generated a basic structure for your project. in the `package.json` file will be available these commands for the development and deployment of your Status Page System:
+It will be generated a basic structure for your project. In the `package.json` file will be available these commands for the development and deployment of your Status Page System:
 
 ``` json
 {

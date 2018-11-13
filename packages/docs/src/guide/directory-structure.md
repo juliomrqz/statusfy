@@ -15,7 +15,7 @@ Statusfy is designed to be easy to use and organize with [Internationalization](
 │   ├── es            # (optional)
 │   │   ├── 2018-01-16_incident_1.md
 │   │   └── 2018-01-17_incident_2.md
-├─ locales/           # (recomended)
+├─ locales/           # (recommended)
 │   ├── en.json
 │   └── es.json
 ├─ public/            # (optional)

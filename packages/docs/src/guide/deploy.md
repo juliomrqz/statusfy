@@ -25,7 +25,7 @@ We listed a few different services you can use for hosting your Status Page Syst
 
 The following guides are based on a few shared assumptions:
 
-- You are using the default build output location (./dist);
+- You are using the default build output location (./dist).
 - Statusfy is installed as a local dependency in your project, and you have set up the following npm scripts:
 
 ``` json
@@ -41,7 +41,7 @@ The following guides are based on a few shared assumptions:
 
 ## GitHub Pages
 
-1. If you don't have any custom domain, set the correct `baseUrl` in `config.js` For example, if you are deploying to `https://<username>.github.io/<repo>/`, (i.e. your repository is at `https://github.com/<username>/<username>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username>.github.io/<repo>/"` (recommended).
+1. If you don't have any custom domain, set the correct `baseUrl` in `config.js`. For example, if you are deploying to `https://<username>.github.io/<repo>/`, (i.e. your repository is at `https://github.com/<username>/<username>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username>.github.io/<repo>/"` (recommended).
 
 2. Add a deploy script to `package.json`:
 
@@ -79,7 +79,7 @@ Visit the [GitHub Pages](https://help.github.com/articles/using-a-custom-domain-
 
 ## GitLab Pages and GitLab CI
 
-1. If you don't have any custom domain, set the correct `baseUrl` in `config.js` For example, if you are deploying to `https://<username or group>.gitlab.io/<repo>/`, (i.e. your repository is at `https://gitlab.com/<username or group>/<username or group>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username or group>.gitlab.io/<repo>/"` (recommended).
+1. If you don't have any custom domain, set the correct `baseUrl` in `config.js`. For example, if you are deploying to `https://<username or group>.gitlab.io/<repo>/`, (i.e. your repository is at `https://gitlab.com/<username or group>/<username or group>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username or group>.gitlab.io/<repo>/"` (recommended).
 
 2. Create a file called `.gitlab-ci.yml` in the root of your project with the content below. This will build and deploy your site whenever you make changes to your content.
 
@@ -132,9 +132,7 @@ First, make sure you have [firebase-tools](https://firebase.google.com/docs/cli/
 
 ### Static Generated
 
-1. Make sure you have [firebase-tools](https://firebase.google.com/docs/cli/?hl=en) installed.
-
-2. Create `firebase.json` at the root of your project with the following content:
+1. Create `firebase.json` at the root of your project with the following content:
 
 ```json
 {
@@ -145,7 +143,7 @@ First, make sure you have [firebase-tools](https://firebase.google.com/docs/cli/
 }
 ```
 
-3. Create `.firebaserc` at the root of your project with the following content:
+2. Create `.firebaserc` at the root of your project with the following content:
 
 ```json
 {
@@ -155,7 +153,7 @@ First, make sure you have [firebase-tools](https://firebase.google.com/docs/cli/
 }
 ```
 
-4. And run:
+3. And run:
 
 ```bash
 #!/usr/bin/env sh

@@ -1,9 +1,8 @@
 # Configuración
 
+## Archivo de Configuración
 
-## Config File
-
-Without any configuration, Statusfy will use default values in order to make work your Status Page System. The configuration file must be places at root of your project:
+Sin ninguna configuración, Statusfy utilizará los valores predeterminados para que funcione correctamente tu Sistema de Página de Estado. El archivo de configuración se debe colocar en la raíz de tu proyecto:
 
 ```
 .
@@ -11,17 +10,67 @@ Without any configuration, Statusfy will use default values in order to make wor
 └─ package.json
 ```
 
-The essential file for configuring a Statusfy site is `./config.js`, which should export a JavaScript object:
+El archivo esencial para configurar un sitio Statusfy es `./config.js`, que debería exportar un objeto JavaScript:
 
 ``` js
 module.exports = {
-  title: 'Hello Statusfy',
-  description: 'Just playing around'
+  title: 'Hola Statusfy',
+  description: 'Probando 1, 2, 3'
 }
 ```
 
-Consult the [Config Reference](../config/README.md) for a full list of options.
+Consulta la [Referencia de Configuración](../config/README.md) para obtener una lista completa de opciones.
 
-## Alternative Config Formats
+## Formatos de Configuración Alternativos
 
-You can also use YAML (`./config.yml`) or TOML (`./config.toml`) formats for the configuration file.
+También puede usar los formatos YAML (`./config.yml`) o TOML (`./config.toml`) para el archivo de configuración:
+
+### YAML
+
+YAML es un lenguaje de serialización de datos diseñado para ser legible por humanos. Actualmente, Statusfy soporta la última especificación, [versión 1.2](http://yaml.org/spec/1.2/spec.html).
+
+``` yaml
+title: Hola Statusfy
+description: Probando 1, 2, 3
+```
+
+### TOML
+
+TOML es otro lenguaje alternativo de serialización de datos, diseñado para ser fácil de leer con una semántica "mínima". Statusfy soporta la versión [0.4.0 de la especificación](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md).
+
+``` ini
+title = "Hola Statusfy"
+description = "Probando 1, 2, 3"
+```
+
+## Archivo de Ejemplo
+
+```javascript
+module.exports = {
+  title: 'Título',
+  description: 'Descripción',
+  baseUrl: 'https://demo.statusfy.co',
+  analytics: {
+    ga: 'UA-XXXXXXXXX-Y',
+  },
+  defaultLocale: 'es',
+  locales: [
+    { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' },
+    { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' }
+  ],
+  content: {
+    frontMatterFormat: 'yaml',
+    systems: [
+      'cdn',
+      'conversions',
+      'site-delivery',
+      'api'
+    ]
+  },
+  head: {
+    link: [
+      { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3e4e88' }
+    ]
+  }
+}
+```

@@ -35,6 +35,6 @@ If you want to reduce your deployment time or just not want to use a Static Host
 - Node.js Hosting can be more expensive than a Static Hosting.
 
 ::: tip NOTE
-Node.js is the backend technology used to run the Status Page System in a Server.
+Node.js is the backend technology used to run Statufy in a Non-Static Server.
 :::
 

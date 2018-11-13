@@ -110,6 +110,10 @@ module.exports = {
             link: '/es/config/',
           },
           {
+            text: 'Contribución',
+            link: '/es/contributing/',
+          },
+          {
             text: 'Soporte',
             link: 'https://statusfy.co/es/support'
           },

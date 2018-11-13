@@ -33,4 +33,4 @@ Statusfy is still a work in progress. There are a few things that are not curren
 - Custom Themes support.
 - Different Data Sources: MySQL, PostgreSQL, SQLite, etc.
 
-[:nerd_face: Contributions are welcome!](https://github.com/bazzite/statusfy)
+[:nerd_face: Contributions are welcome!](../contributing/README.md)

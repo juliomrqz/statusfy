@@ -74,7 +74,7 @@ The Icon of the application must be placed at `theme/default/img/icon.png` and i
 ### Public
 
 
-You can define static files in the `public/` directory that will be mapped to the / URL path. For example:
+You can define static files in the `public/` directory that will be mapped to the `/` URL path. For example:
 
 - You can create a Robots.txt file in `/public/robots.txt` that will be mapped as `/robots.txt`.
 - Or paste a verification file in `/public/google4ddabfacdb4f6795.html` that will be available in your site at `/google4ddabfacdb4f6795.html`

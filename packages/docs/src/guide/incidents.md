@@ -191,7 +191,7 @@ We detected a networking problem that caused temporary issues for our API and or
 :::
 ```
 
-You must provide a Title, a Date in [ISO-8601 format][iso-format](`YYYY-MM-DDTHH:mm:ss.sssZ`) and a valid Markdown content.
+You must provide a Title, a Date in [ISO-8601 format][iso-format] (`YYYY-MM-DDTHH:mm:ss.sssZ`) and a valid Markdown content.
 
 ### Links
 

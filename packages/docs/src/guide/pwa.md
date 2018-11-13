@@ -1,6 +1,6 @@
 # Progressive Web App (PWA)
 
-Statusfy provides [PWA](https://developers.google.com/web/progressive-web-apps) support out of the box with some marvelous features:
+Statusfy provides [PWA](https://developers.google.com/web/progressive-web-apps/?hl=en) support out of the box with some marvelous features:
 
 * [Service Worker](#service-worker): Registers a service worker for offline caching.
 * ​[Icons](#icon): Automatically generates app icons in different sizes.
@@ -25,7 +25,7 @@ Service workers will be used in the future for sending **Web Push Notifications*
 
 Statusfy automatically generates app icons and favicon with different sizes based on the icon of your Application (more information in the [Theme Customization Guide](./theme-customization.md#assets)).
 
-It's generated icons in 7 diferent sizes (in px): `16`, `120`, `144`, `152`, `192`, `384` and `512`.
+It's generated icons in 7 different sizes (in px): `16`, `120`, `144`, `152`, `192`, `384` and `512`.
 
 
 ## Web App Manifest

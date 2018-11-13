@@ -1,80 +1,190 @@
 ---
-sidebarDepth: 4
+sidebar: auto
+sidebarDepth: 2
 ---
 
 # Referencia de Configuración
 
+## title
 
-## Basic Config
+- Tipo: `string`
+- Por defecto: `undefined`
 
-### title
+El Título del Sitio. Éste será el sufijo para todos los títulos de las páginas y se mostrará en la barra de navegación. También se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
 
-- Type: `string`
-- Default: `undefined`
+## name
 
-### description
+- Tipo: `string`
+- Por defecto: `undefined`
 
-- Type: `string`
-- Default: `undefined`
+El Nombre de la Aplicación. También se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web) y como id para el almacenamiento en caché de archivos con [Service Worker](../guide/pwa.md#service-worker).
 
-### baseUrl
+## description
 
-- Type: `string`
-- Default: `/`
+- Tipo: `string`
+- Por defecto: `undefined`
 
-### serviceWorker
+La Descripción para el sitio. Esto se representará como una etiqueta `<meta>` en la página HTML y se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
 
-- Type: `boolean`
-- Default: `true`
+## baseUrl
 
-### manifest
+- Tipo: `string`
+- Por defecto: `/`
 
-- Type: `boolean`
-- Default: `true`
+La URL base en la que se desplegará el sitio. Puede ser solo una barra o una URL válida que no debe terminar con una barra.
+
+::: warning ADVERTENCIA
+
+Debe establecer el campo `baseUrl` como su **dominio de producción** para que las [URL alternativas sean completamente válidas](../guide/i18n.md#seo).
+
+:::
+
+## theme
+
+- Tipo: `Object`
+- Por defecto: `{}`
+
+Proporcionar opciones de configuración para ser utilizado por el tema.
+
+### links
+
+- Tipo: `Object`
+- Por defecto: `{}`
+
+Los enlaces externos ubicados en el footer de cada página. Solo se pueden definir tres enlaces: `home`, `contact`  y  `support` y se debe utilizar el código de idioma como índice del objeto. Por ejemplo:
+
+```json
+module.exports = {
+  theme: {
+    links: {
+      es: {
+        contact: "https://statusfy.co/es/contact",
+        support: "https://statusfy.co/es/support",
+        home: "https://statusfy.co/es"
+      },
+      en: {
+        contact: "https://statusfy.co/contact",
+        support: "https://statusfy.co/support",
+        home: "https://statusfy.co"
+      }
+    }
+  }
+}
+```
+
+## serviceWorker
+
+- Tipo: `boolean`
+- Por defecto: `true`
+
+
+
+Si se establece en `true`, Statusfy generará y registrará automáticamente un ***service worker*** que almacena en caché el contenido para su uso fuera de línea (solo habilitado en producción). Para obtener más detalles, consulta la guía de [Aplicación Web Progresiva (PWA)](../guide/pwa.html#service-worker).
+
+
+
+::: tip Importante
+Para que tu sitio sea totalmente compatible con PWA, deberás habilitar el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
+
+Además, solo habilita esto si puedes implementar tu sitio con SSL ya que el ***service worker*** solo puede registrarse bajo las URL en HTTPS.
+
+:::
+
+## manifest
+
+- Tipo: `boolean`
+- Por defecto: `true`
+
+Generar un valido **Manifiesto de Applicación Web**. Para más detalles, consulta la guía del [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
+
+## analytics
+
+- Tipo: `object`
+- Por defecto: `undefined`
+
+Los servicios analíticos.
 
 ### ga
 
-- Type: `string`
-- Default: `undefined`
+- Tipo: `string`
+- Por defecto: `undefined`
 
-### defaultLocale
+Proporciona el ID de Google Analytics para habilitar la integración.
 
-- Type: `string`
-- Default: `en`
+### mixpanel
 
-### locales
+- Tipo: `string`
+- Por defecto: `undefined`
 
-- Type: `[{ code: string, iso: string, name: string }]`
-- Default: `[{ code: 'en', iso: 'en-US', name: 'English' }]`
+Proporciona el token de Mixpanel para habilitar la integración.
 
-Specify locales for i18n support. For more details, see the guide on [Internationalization](../guide/i18n.md).
+### facebook
 
-### content
+- Tipo: `string`
+- Por defecto: `undefined`
 
-- Type: `object`
-- Default: `{ dir: 'content', systems: [ 'api', 'cdn', 'dns', 'site-delivery' ] }`
+Proporciona el Facebook Pixel App ID para habilitar la integración.
 
-#### dir
+### segment
 
-- Type: `string`
-- Default: `content`
+- Tipo: `string`
+- Por defecto: `undefined`
 
-#### frontMatterFormat
+Proporciona el token de Segment para habilitar la integración.
 
-- Type: `string`
-- Default: `undefined`
+## defaultLocale
 
-#### systems
+- Tipo: `string`
+- Por defecto: `en`
 
-- Type: `Array`
-- Default: `['api', 'cdn', 'dns', 'site-delivery']`
+La configuración regional predeterminada de la aplicación, las URL de esta configuración regional no tendrán un prefijo. También se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
 
-### head
+## locales
 
-- Type: `object`
-- Default: `undefined`
+- Tipo: `[{ code: string, iso: string, name: string }]`
+- Por defecto: `[{ code: 'en', iso: 'en-US', name: 'English' }]`
 
-Extra tags to be injected to the page HTML `<head>`. Each tag can be specified in the form of `{tagCategory: [tagName, { attrName: attrValue }]}`. For example, to add a custom mask-icon:
+Especifique las configuraciones regionales para el soporte de Internacionalización. Para obtener más detalles, consulta la guía sobre [Internacionalización](../guide/i18n.md#configuracion).
+
+## content
+
+- Tipo: `object`
+- Por defecto: `{ dir: 'content', systems: [ 'api', 'cdn', 'dns', 'site-delivery' ] }`
+
+Parámetros que definen algunas consideraciones de contenido para sus incidentes.
+
+### dir
+
+- Tipo: `string`
+- Por defecto: `content`
+
+La ruta que define la ubicación de los archivos markdown fuente de los incidentes.
+
+### frontMatterFormat
+
+- Tipo: `string`
+- Por defecto: `undefined`
+
+Define el formato predeterminado para el Front Matter de Incidentes utilizado por el comando `new-incident` (Más información [aquí](../guide/commands.md#new-incident)). Puedes elegir uno de los siguientes: yaml, yml, toml, json. Para más detalles, consulta la guía de [los Front Matter de los Incidentes](../guide/incidents.md#front-matter).
+
+### systems
+
+- Tipo: `Array`
+- Por defecto: `['api', 'cdn', 'dns', 'site-delivery']`
+
+Define los IDs de los sistemas disponibles. Estos IDs se utilizarán cuando indiques los **Sistemas afectados** en tus [Incidentes](../guide/incidents.html#front-matter).
+
+::: tip Importante
+
+Debes definir, en tus [archivos de traducción](../guide/i18n.md), los títulos de forma amigable de los IDs de los Sistemas definidos.
+:::
+
+## head
+
+- Tipo: `object`
+- Por defecto: `undefined`
+
+Etiquetas adicionales que se inyectarán en la página HTML `<head>`. Cada etiqueta se puede especificar en la forma de `{tagCategory: [tagName, { attrName: attrValue }]}`. Por ejemplo, puedes agregar un icono de máscara personalizado:
 
 ``` js
 module.exports = {
@@ -86,4 +196,19 @@ module.exports = {
 }
 ```
 
-To know the list of options you can give to head, take a look at [vue-meta documentation](https://github.com/declandewet/vue-meta#recognized-metainfo-properties).
+o definir una metaetiqueta de verificación del sitio:
+
+``` js
+module.exports = {
+  head: {
+    meta: [
+      { 
+        name: 'google-site-verification', 
+        content: '+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=' 
+      }
+    ]
+  }
+}
+```
+
+Para conocer la lista de opciones que puedes usar, echa un vistazo a la [documentación de vue-meta](https://github.com/declandewet/vue-meta#recognized-metainfo-properties).
