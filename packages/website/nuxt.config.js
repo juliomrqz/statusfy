@@ -68,6 +68,7 @@ module.exports = {
    */
   css: [
     'github-markdown-css/github-markdown.css',
+    '~/assets/css/pygments.css',
     '~/assets/css/tailwind.css',
     'animate.css/source/_base.css',
     '@fortawesome/fontawesome-svg-core/styles.css',

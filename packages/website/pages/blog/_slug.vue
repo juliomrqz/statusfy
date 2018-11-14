@@ -174,7 +174,13 @@ export default {
           name: 'twitter:creator',
           property: 'twitter:creator',
           content: `@${this.twitterUser}`
-        }
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          property: 'description',
+          content: this.post.description
+        },
       ],
       link: [
         {
