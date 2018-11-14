@@ -2,7 +2,7 @@ export default {
   welcome: 'Welcome',
   slogan: 'A marvelous Open Source Status Page system',
   description:
-    'Statusfy is a simple open source Status Page system designed to be built and maintained with minimum effort. You can easily create a fast Website either <strong>Static Generated</strong> or <strong>Server Rendered</strong> and easily deploy it to a <strong>variety of hosting services</strong>.',
+    'Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either <strong>Static Generated</strong> or <strong>Server Rendered</strong> and easily deploy it to a <strong>variety of hosting services</strong>.',
   globalMessage: '',
   menu: 'Menu',
   links: {
@@ -40,7 +40,7 @@ export default {
   },
   home: {
     title: 'Statusfy - A marvelous Open Source Status Page system',
-    description: 'Statusfy is a simple open source Status Page system designed to be built and maintained with minimum effort with no expensive server costs.'
+    description: 'Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either Static Generated or Server Rendered and easily deploy it to a variety of hosting services.'
   },
   footer: {
     prefix: 'Made with ❤️ by',

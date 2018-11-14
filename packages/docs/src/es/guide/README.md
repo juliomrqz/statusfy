@@ -1,6 +1,6 @@
 # Introducción
 
-Statusfy es un sistema de página de estado de código abierto simple diseñado para ser construido y mantenido con el mínimo esfuerzo. Puede crear fácilmente un sitio web de página de estado rápido, ya sea [**Stático**](../guide/architecture.md#generacion-estatica) o [**Renderizado por Servidor**](../guide/architecture.md#srenderizado-por-servidor) e implementarlo fácilmente en una variedad de [servicios de alojamiento](../guide/deploy.md).
+Statusfy es un Sistema de Página de Estado, fácil de usar y completamente de código abierto. Puedes crear fácilmente un Sistema rápido, ya sea [**Stático**](../guide/architecture.md#generacion-estatica) o [**Renderizado por Servidor**](../guide/architecture.md#srenderizado-por-servidor) e implementarlo fácilmente en una variedad de [servicios de alojamiento](../guide/deploy.md).
 
 ![Statusfy Homepage](/assets/img/statusfy-home-es.png =1280x829)
 

@@ -16,9 +16,9 @@
 
 # Statusfy
 
-> A marvelous open source Status Page system
+> A marvelous Open Source Status Page system
 
-:warning: This project is in alpha state, under active development.
+Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated) or [**Server Rendered**](https://docs.statusfy.co/guide/architecture.html#server-rendered) and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
 
 ## Install
 
