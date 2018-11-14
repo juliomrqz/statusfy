@@ -1,6 +1,6 @@
 {
   "name": "statusfy",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0",
   "description": "A marvelous open source Status Page system",
   "author": {
     "name": "Bazzite",
@@ -28,9 +28,9 @@
     "statuspage"
   ],
   "dependencies": {
-    "@statusfy/cli": "^0.1.0-alpha.6",
-    "@statusfy/core": "^0.1.0-alpha.6",
-    "@statusfy/editor": "^0.1.0-alpha.6"
+    "@statusfy/cli": "^0.1.0",
+    "@statusfy/core": "^0.1.0",
+    "@statusfy/editor": "^0.1.0"
   },
   "engines": {
     "node": ">=8.10",
