@@ -10,8 +10,13 @@ const buildApiRouter = require('./api')
 module.exports = async function createApp (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
   const app = express()
 
-  app.set('port', port)
-  app.set('host', host)
+  if (port) {
+    app.set('port', port)
+  }
+
+  if (host) {
+    app.set('host', host)
+  }
 
   // Save Config
   app.use((req, res, next) => {
