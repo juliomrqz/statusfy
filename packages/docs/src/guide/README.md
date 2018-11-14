@@ -27,7 +27,7 @@ The final Web Application can be [generated or built](../guide/deploy.md) from a
 Statusfy is still a work in progress. There are a few things that are not currently supported but are planned:
 
 - Atom and RSS Feeds.
-- Notifications: OneSignal, Webhooks, etc.
+- Notifications: Web Push, Webhooks, etc.
 - A Statusfy GUI: create and manage your project in an easier way.
 - Metrics.
 - Custom Themes support.

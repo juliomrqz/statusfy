@@ -67,7 +67,7 @@ Las siguientes guías se basan en algunas suposiciones compartidas:
 #!/usr/bin/env sh
 
 # instala gh-pages
-npm install gh-pages --save-dev # o yarn install -D gh-pages
+npm install gh-pages --save-dev # o yarn add gh-pages --dev
 
 # genera
 npm run generate # o yarn run generate
@@ -103,7 +103,7 @@ cache:
 pages:
   script:
     - npm install # o yarn install
-    - npm run generate -d public # o yarn run generate -d public
+    - npm run generate -- -d public # o yarn run generate -d public
   artifacts:
     paths:
       - public
