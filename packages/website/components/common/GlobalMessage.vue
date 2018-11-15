@@ -5,7 +5,19 @@
     <div
       class="p-2 items-center leading-none flex inline-flex h-full leading-tight"
     >
-      <div class="font-semibold mr-2 flex-auto">{{ $t('globalMessage') }}</div>
+      <div 
+        class="font-semibold mr-2 flex-auto" 
+        v-html="$t('globalMessage')" />
     </div>
   </div>
 </template>
+
+<style scoped>
+div >>> a {
+  @apply text-grey-lightest underline;
+
+  &:hover {
+    @apply text-grey-lighter;
+  }
+}
+</style>

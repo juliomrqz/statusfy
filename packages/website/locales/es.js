@@ -3,7 +3,7 @@ export default {
   slogan: 'Un estupendo sistema de Página de Estado de código abierto',
   description:
     'Statusfy es un Sistema de Página de Estado, fácil de usar y completamente de Código Abierto. Puedes crear fácilmente un Sistema rápido, ya sea <strong>Estático</strong> o <strong>Renderizado por Servidor</strong>, e implementarlo fácilmente en una <strong>variedad de servicios de alojamiento</strong>.',
-  globalMessage: '',
+  globalMessage: '🎉 ¡Estamos en Product Hunt hoy! <a href="https://www.producthunt.com/posts/statusfy" target="_blank">Echa un vistazo</a>',
   menu: 'Menú',
   links: {
     documentation: {
