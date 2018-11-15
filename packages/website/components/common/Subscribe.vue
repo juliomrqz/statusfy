@@ -8,7 +8,7 @@
 
     <form
       id="mc-embedded-subscribe-form"
-      action="`https://bazzite.us11.list-manage.com/subscribe/post?u=34b09d915eae6d2857425420f&id=095eb8d814`"
+      action="https://bazzite.us11.list-manage.com/subscribe/post?u=34b09d915eae6d2857425420f&id=095eb8d814"
       method="post"
       name="mc-embedded-subscribe-form"
       class="validate"
