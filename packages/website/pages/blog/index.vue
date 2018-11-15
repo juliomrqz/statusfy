@@ -40,6 +40,8 @@
             v-html="$t('blog.noPosts')" />
         </div>
       </div>
+
+      <Subscribe class="max-w-md mx-auto"/>
     </section>
   </div>
 </template>
@@ -47,13 +49,15 @@
 <script>
 import format from 'date-fns/format'
 
-import AticleCard from '~/components/blog/ArticleCard'
 import SeoHead from '~/components/mixins/SeoHead'
+import AticleCard from '~/components/blog/ArticleCard'
+import Subscribe from '~/components/common/Subscribe.vue'
 
 export default {
   layout: 'dark',
   components: {
-    AticleCard
+    AticleCard,
+    Subscribe
   },
   mixins: [SeoHead],
   async asyncData({ app }) {
