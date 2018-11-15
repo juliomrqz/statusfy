@@ -1,6 +1,8 @@
 <template>
   <Layout>
     <div slot="page-bottom">
+      <Subscribe />
+
       <Footer class="page-footer"/>
     </div>
   </Layout>
