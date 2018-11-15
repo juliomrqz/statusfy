@@ -42,16 +42,20 @@
           {{ $t('blog.readMore') }}
         </nuxt-link>
       </div>
+
+      <Subscribe class="max-w-md mx-auto"/>
     </div>
   </section>
 </template>
 
 <script>
 import AticleCard from '~/components/blog/ArticleCard'
+import Subscribe from '~/components/common/Subscribe.vue'
 
 export default {
   components: {
-    AticleCard
+    AticleCard,
+    Subscribe
   },
   props: {
     posts: {

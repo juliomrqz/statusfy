@@ -2,7 +2,7 @@
 @import '@statusfy/common/lib/style/base';
 
 .btn {
-  @apply inline-block px-6 py-3 leading-none border rounded whitespace-no-wrap text-lg;
+  @apply inline-block px-6 py-3 leading-none border rounded whitespace-no-wrap text-lg cursor-pointer;
 }
 
 .btn-blue {

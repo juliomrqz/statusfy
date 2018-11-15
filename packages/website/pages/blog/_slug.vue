@@ -33,6 +33,8 @@
               {{ $t('blog.on') }} {{ formatDate(post.created) }}.
             </div>
 
+            <Subscribe class="max-w-md mx-auto"/>
+
             <div class="flex flex-wrap items-center justify-between mb-12">
               <AuthorCard
                 :post="post"
@@ -101,6 +103,7 @@
 <script>
 import AuthorCard from '~/components/blog/AuthorCard'
 import FormatDate from '~/components/mixins/FormatDate'
+import Subscribe from '~/components/common/Subscribe.vue'
 
 import '~/components/icons/fortawesome/twitter-square-brands'
 import '~/components/icons/fortawesome/facebook-square-brands'
@@ -108,7 +111,8 @@ import '~/components/icons/fortawesome/linkedin-brands'
 
 export default {
   components: {
-    AuthorCard
+    AuthorCard,
+    Subscribe
   },
   mixins: [FormatDate],
   async asyncData({ app, params, payload }) {

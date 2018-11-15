@@ -552,7 +552,7 @@ module.exports = {
   */
 
   modules: {
-    appearance: false,
+    appearance: [],
     backgroundAttachment: [],
     backgroundColors: ['responsive'],
     backgroundPosition: [],
