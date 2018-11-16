@@ -3,7 +3,7 @@ export default {
   slogan: 'A marvelous Open Source Status Page system',
   description:
     'Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either <strong>Static Generated</strong> or <strong>Server Rendered</strong> and easily deploy it to a <strong>variety of hosting services</strong>.',
-  globalMessage: '🎉 We\'re on Product Hunt today! <a href="https://www.producthunt.com/posts/statusfy" target="_blank">Check it out</a>',
+  globalMessage: '🎉 Yesterday we were on Product Hunt! <a href="https://www.producthunt.com/posts/statusfy" target="_blank">Check it out</a>',
   menu: 'Menu',
   links: {
     documentation: {
