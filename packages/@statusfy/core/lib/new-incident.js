@@ -19,7 +19,7 @@ module.exports = async function newIncident (sourceDir, cliOptions = {}) {
   process.env.NODE_ENV = 'development'
 
   // Generate configuration
-  const config = loadConfig(sourceDir)
+  const config = loadConfig(sourceDir).config
 
   const questions = [
     {
