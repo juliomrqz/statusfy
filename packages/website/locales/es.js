@@ -118,7 +118,8 @@ export default {
     publishedAt: 'Publicado originalmente en',
     minRead: 'min de lectura',
     comments: 'Comentarios',
-    noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.'
+    noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.',
+    share: 'Comparte este artículo'
   },
   support: {
     title: 'Soporte',

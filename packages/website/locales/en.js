@@ -118,7 +118,8 @@ export default {
     publishedAt: 'Originally published at',
     minRead: 'min read',
     comments: 'Comments',
-    noPosts: "We're currently creating new content.</br>Stay tuned."
+    noPosts: "We're currently creating new content.</br>Stay tuned.",
+    share: 'Share this post'
   },
   support: {
     title: 'Support',

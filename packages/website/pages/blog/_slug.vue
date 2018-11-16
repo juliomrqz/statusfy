@@ -39,7 +39,8 @@
               <AuthorCard
                 :post="post"
                 mode="advanced" />
-              <div class="py-4 text-center sm:text-right">
+              <div class="py-4 text-center sm:text-right w-full sm:w-auto">
+                <div class="mb-2 text-grey-darkest font-semibold">{{ $t('blog.share') }}</div>
                 <social-sharing
                   :url="parentBlogUrl"
                   :title="post.title"
@@ -70,6 +71,15 @@
                     <network network="linkedin">
                       <svgicon
                         name="fortawesome/linkedin-brands"
+                        class="svg-inline--fa fa-w-20 cursor-pointer"
+                        width="32"
+                        height="32"
+                      />
+                    </network>
+
+                    <network network="reddit">
+                      <svgicon
+                        name="fortawesome/reddit-square-brands"
                         class="svg-inline--fa fa-w-20 cursor-pointer"
                         width="32"
                         height="32"
@@ -108,6 +118,7 @@ import Subscribe from '~/components/common/Subscribe.vue'
 import '~/components/icons/fortawesome/twitter-square-brands'
 import '~/components/icons/fortawesome/facebook-square-brands'
 import '~/components/icons/fortawesome/linkedin-brands'
+import '~/components/icons/fortawesome/reddit-square-brands'
 
 export default {
   components: {

@@ -21,13 +21,13 @@
     </div>
     <div
       v-else-if="mode === 'advanced'"
-      class="flex flex-wrap items-center text-grey-darker"
+      class="flex flex-wrap items-center justify-center text-grey-darker"
     >
       <img
         :src="post.author.avatar"
         class="rounded-full w-12 h-12" >
-      <div class="flex flex-col ml-4">
-        <span class="font-semibold mb-1">
+      <div class="flex flex-col mx-4 mt-2">
+        <span class="font-semibold mb-1 text-center sm:text-left">
           <a
             :href="
               `https://www.bazzite.com/blog/author/${post.author.username}`
