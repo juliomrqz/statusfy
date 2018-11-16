@@ -2,11 +2,11 @@ const fs = require('fs')
 const inquirer = require('inquirer')
 const opener = require('opener')
 
-const { logger, fse, frontMatter, slugify, path } = require('@statusfy/common')
+const { logger, fse, grayMatter, slugify, path } = require('@statusfy/common')
 const loadConfig = require('./config/load')
 
 function generateIncident (data, content, format) {
-  let matterContent = frontMatter.stringify(content, data, format)
+  let matterContent = grayMatter.stringify(content, data, format)
 
   if (['json', 'toml'].includes(format)) {
     matterContent = matterContent.replace(/^---/, `---${format}`)
@@ -19,7 +19,7 @@ module.exports = async function newIncident (sourceDir, cliOptions = {}) {
   process.env.NODE_ENV = 'development'
 
   // Generate configuration
-  const config = loadConfig(sourceDir)
+  const config = loadConfig(sourceDir).config
 
   const questions = [
     {
