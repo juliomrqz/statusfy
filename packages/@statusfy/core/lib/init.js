@@ -67,6 +67,13 @@ module.exports = async function generate (sourceDir, cliOptions = {}) {
         'yaml',
         'toml'
       ]
+    },
+    {
+      type: 'list',
+      name: 'packageManager',
+      default: 'npm',
+      message: 'Choose a package manager',
+      choices: ['npm', 'yarn']
     }
   ]
 
@@ -173,6 +180,8 @@ module.exports = async function generate (sourceDir, cliOptions = {}) {
       path.join(outDir, '.gitignore')
     )
 
-    logger.success(`A new version of Statusfy was successfully created at ${chalk.cyan(outDir)}`)
+    logger.success(`A new project of Statusfy was successfully created at ${chalk.cyan(outDir)}`)
+
+    logger.warn(`Remember to run ${chalk.cyan(`${answers.packageManager} install`)}`)
   })
 }
