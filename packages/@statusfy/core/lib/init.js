@@ -169,7 +169,7 @@ module.exports = async function generate (sourceDir, cliOptions = {}) {
 
     // .gitignore
     fse.copySync(
-      path.join(__dirname, 'init', '.gitignore'),
+      path.join(__dirname, 'init', '_gitignore'),
       path.join(outDir, '.gitignore')
     )
 

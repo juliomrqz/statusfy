@@ -48,7 +48,7 @@ program
 
 program
   .command('init')
-  .description('Install a new version of Statusfy')
+  .description('Create a base project')
   .option('-d, --dir <outDir>', 'specify the installation directory')
   .action(({ dir }) => {
     const outDir = dir ? path.resolve(dir) : null

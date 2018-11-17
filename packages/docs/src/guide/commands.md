@@ -5,7 +5,7 @@ Statusfy comes with a set of useful commands, both for development and productio
 
 ## init
 
-Install a new version of Statusfy.
+Create a base project.
 
 ``` bash
 statusfy init
