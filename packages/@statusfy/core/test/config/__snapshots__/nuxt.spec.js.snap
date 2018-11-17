@@ -101,7 +101,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.1.0",
+    "version": "0.1.1",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -296,7 +296,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/advanced",
-    "version": "0.1.0",
+    "version": "0.1.1",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -409,7 +409,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.1.0",
+    "version": "0.1.1",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -536,7 +536,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/cli",
-    "version": "0.1.0",
+    "version": "0.1.1",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -753,7 +753,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/simple",
-    "version": "0.1.0",
+    "version": "0.1.1",
   },
 }
 `;
