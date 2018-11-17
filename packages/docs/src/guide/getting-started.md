@@ -8,17 +8,17 @@ Statusfy requires Node.js >= 8.
 
 ## Installation
 
+Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since [npm](https://www.npmjs.com/get-npm) `5.2.0`)
+
 ``` bash
 # change the working directory
 cd existing_folder
 
-# install globally
-npm install -g statusfy # OR yarn global add statusfy
-
 # run the initialization command
-statusfy init
+npx statusfy init
 
-# and answer the required questions
+# and install your local dependencies
+npm install  # OR yarn install
 ```
 
 It will be generated a basic structure for your project. In the `package.json` file will be available these commands for the development and deployment of your Status Page System:

@@ -12,32 +12,7 @@ features:
   details: Usa el poder de la Generación de Sitios Estáticos o la Representación del lado del Servidor, de modo que puede implementarse fácilmente en una variedad de servicios de hospedaje sin costos elevados de servidor.
 ---
 
-### Solo pasos sencillos
-
-``` bash
-# instala
-npm install -g statusfy # O yarn global add statusfy
-
-# crea un proyecto base
-statusfy init
-
-# crea un incidente
-statusfy new-incident
-
-# sirve la aplicación en modo de desarrollo
-statusfy dev
-
-# genera una aplicación web estática
-statusfy generate
-
-# construye para producción y lanza el servidor
-statusfy build
-statusfy start
-```
-
-::: warning NOTA DE COMPATIBILIDAD
-Statusfy requiere Node.js >= 8.
-:::
+<Subscribe />
 
 <!-- Footer Component -->
 <Footer />

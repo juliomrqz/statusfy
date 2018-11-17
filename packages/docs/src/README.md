@@ -12,32 +12,7 @@ features:
   details: Use the power of blazing-fast Static Site Generation or Server-Side Rendering, so you can easily deploy to a variety of hosting services with no expensive server costs.
 ---
 
-### Just Easy Steps
-
-``` bash
-# install
-npm install -g statusfy # OR yarn global add statusfy
-
-# create a base project
-statusfy init
-
-# create an incident
-statusfy new-incident
-
-# serve the application in development mode
-statusfy dev
-
-# generate a static web application
-statusfy generate
-
-# build for production and launch server
-statusfy build
-statusfy start
-```
-
-::: warning COMPATIBILITY NOTE
-Statusfy requires Node.js >= 8.
-:::
+<Subscribe />
 
 <!-- Footer Component -->
 <Footer />
