@@ -67,7 +67,7 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "node-sass": "^4.10.0",
-    "regenerator-runtime": "^0.13.0",
+    "regenerator-runtime": "~0.12.1",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",

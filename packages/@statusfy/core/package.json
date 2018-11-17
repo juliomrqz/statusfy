@@ -59,7 +59,7 @@
     "moment": "^2.22.2",
     "moment-range": "^4.0.1",
     "nodemon": "^1.18.4",
-    "nuxt": "^2.1.0",
+    "nuxt": "~2.1.0",
     "nuxt-i18n": "^5.4.0",
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
