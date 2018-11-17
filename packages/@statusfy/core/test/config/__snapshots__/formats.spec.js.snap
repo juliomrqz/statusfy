@@ -29,6 +29,7 @@ Object {
   "name": "es5_config_format",
   "serviceWorker": true,
   "sourceDir": "fragments/formats/js-es5",
+  "theme": Object {},
   "title": "ES5 Config Format",
 }
 `;
@@ -77,6 +78,7 @@ Object {
   "name": "statusfy_demo",
   "serviceWorker": true,
   "sourceDir": "fragments/formats/js-es6",
+  "theme": Object {},
   "title": "Statusfy Demo",
 }
 `;
@@ -110,6 +112,7 @@ Object {
   "name": "toml-config-format",
   "serviceWorker": true,
   "sourceDir": "fragments/formats/toml",
+  "theme": Object {},
   "title": "TOML Config Format",
 }
 `;
@@ -143,6 +146,7 @@ Object {
   "name": "yaml-config-format",
   "serviceWorker": true,
   "sourceDir": "fragments/formats/yaml",
+  "theme": Object {},
   "title": "YAML Config Format",
 }
 `;

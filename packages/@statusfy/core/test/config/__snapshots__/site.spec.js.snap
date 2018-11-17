@@ -78,6 +78,7 @@ Object {
   "name": "title",
   "serviceWorker": true,
   "sourceDir": "../.tmp/advanced",
+  "theme": Object {},
   "title": "Title",
 }
 `;
@@ -111,6 +112,7 @@ Object {
   "name": "title",
   "serviceWorker": true,
   "sourceDir": "../.tmp/cli",
+  "theme": Object {},
   "title": "Title",
 }
 `;
@@ -151,6 +153,7 @@ Object {
   "name": "title",
   "serviceWorker": false,
   "sourceDir": "../.tmp/simple",
+  "theme": Object {},
   "title": "Title",
 }
 `;
