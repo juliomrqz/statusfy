@@ -38,7 +38,8 @@
             <div class="flex flex-wrap items-center justify-between mb-12">
               <AuthorCard
                 :post="post"
-                mode="advanced" />
+                mode="advanced"
+                class="w-full sm:w-auto"/>
               <div class="py-4 text-center sm:text-right w-full sm:w-auto">
                 <div class="mb-2 text-grey-darkest font-semibold">{{ $t('blog.share') }}</div>
                 <social-sharing

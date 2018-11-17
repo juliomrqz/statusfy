@@ -21,7 +21,7 @@
     </div>
     <div
       v-else-if="mode === 'advanced'"
-      class="flex flex-wrap items-center justify-center text-grey-darker"
+      class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
     >
       <img
         :src="post.author.avatar"
