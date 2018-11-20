@@ -594,7 +594,7 @@ Object {
     "mobileApp": false,
     "mobileAppIOS": false,
     "ogDescription": false,
-    "ogHost": "/",
+    "ogHost": "/simple",
     "ogTitle": false,
     "theme_color": "#1b1f23",
   },
@@ -605,7 +605,7 @@ Object {
     Array [
       "nuxt-i18n",
       Object {
-        "baseUrl": null,
+        "baseUrl": "/simple",
         "defaultLocale": "en",
         "detectBrowserLanguage": Object {
           "cookieKey": "title.lang_redirected",
@@ -674,7 +674,7 @@ Object {
     ],
     "publicFilesPath": null,
     "siteConfig": Object {
-      "baseUrl": "/",
+      "baseUrl": "/simple",
       "build": Object {
         "isStatic": false,
       },
@@ -801,7 +801,7 @@ Object {
     "mobileApp": false,
     "mobileAppIOS": false,
     "ogDescription": false,
-    "ogHost": "https://demo.statusfy.co",
+    "ogHost": "https://demo.statusfy.co/es",
     "ogTitle": false,
     "theme_color": "#1b1f23",
   },
@@ -812,7 +812,7 @@ Object {
     Array [
       "nuxt-i18n",
       Object {
-        "baseUrl": "https://demo.statusfy.co",
+        "baseUrl": "https://demo.statusfy.co/es",
         "defaultLocale": "es",
         "detectBrowserLanguage": Object {
           "cookieKey": "titulo.lang_redirected",
@@ -895,7 +895,7 @@ Object {
     ],
     "publicFilesPath": "../.tmp/spanish/public",
     "siteConfig": Object {
-      "baseUrl": "https://demo.statusfy.co",
+      "baseUrl": "https://demo.statusfy.co/es",
       "build": Object {
         "isStatic": false,
       },

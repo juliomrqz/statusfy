@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Título',
   description: 'Descripción',
-  baseUrl: 'https://demo.statusfy.co',
+  baseUrl: 'https://demo.statusfy.co/es',
   defaultLocale: 'es',
   locales: [
     { code: 'es', iso: 'es-ES', name: 'Español' },

@@ -107,14 +107,15 @@ Object {
 exports[`config:site invalid 1`] = `
 Array [
   "The default Front Matter Format ([33mcontent.frontMatterFormat[39m) is invalid. These are the valid formats: [36myaml, yml, toml, json[39m.",
-  "The Base URL ([33mbaseUrl[39m) is invalid. Example: [36mhttps://status.yourbaseurl.com[39m.",
+  "The Base URL ([33mbaseUrl[39m) is invalid: //demo.statusfy.co.
+Valid Example: [36mhttps://status.yourbaseurl.com[39m.",
   "The Default Locale ([33mdefaultLocale[39m) value must be included in the locales list. Current value [36mit[39m, defined codes: [36men, es[39m.",
 ]
 `;
 
 exports[`config:site simple 1`] = `
 Object {
-  "baseUrl": "/",
+  "baseUrl": "/simple",
   "build": Object {
     "isStatic": false,
   },
@@ -147,7 +148,7 @@ Object {
 
 exports[`config:site spanish 1`] = `
 Object {
-  "baseUrl": "https://demo.statusfy.co",
+  "baseUrl": "https://demo.statusfy.co/es",
   "build": Object {
     "isStatic": false,
   },

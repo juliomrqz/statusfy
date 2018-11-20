@@ -16,7 +16,8 @@ module.exports = {
   ],
   moduleNameMapper: {
     '^@/markdown/(.*)$': '<rootDir>/packages/@statusfy/markdown/$1',
-    '^@/core/(.*)$': '<rootDir>/packages/@statusfy/core/$1'
+    '^@/core/(.*)$': '<rootDir>/packages/@statusfy/core/$1',
+    '^@/common/(.*)$': '<rootDir>/packages/@statusfy/common/$1'
   },
   transform: {
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',

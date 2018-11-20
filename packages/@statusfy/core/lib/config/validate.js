@@ -1,4 +1,3 @@
-const url = require('url')
 const { chalk, validator } = require('@statusfy/common')
 
 const validFrontMatterFormats = ['yaml', 'yml', 'toml', 'json']
@@ -16,22 +15,10 @@ module.exports = function validateConfig (config) {
 
   // Check base url
   if (config.baseUrl && config.baseUrl !== '/') {
-    const validBaseUrl = validator.isURL(config.baseUrl, {
-      protocols: ['http', 'https'],
-      require_tld: true,
-      require_protocol: true,
-      require_host: true,
-      require_valid_protocol: true
-    })
+    const isValidUrl = validator.isURL(config.baseUrl)
 
-    let isValid = validBaseUrl
-
-    if (isValid) {
-      isValid = url.parse(config.baseUrl).pathname === '/'
-    }
-
-    if (!isValid) {
-      errors.push(`The Base URL (${chalk.yellow('baseUrl')}) is invalid. Example: ${chalk.cyan('https://status.yourbaseurl.com')}.`)
+    if (!isValidUrl) {
+      errors.push(`The Base URL (${chalk.yellow('baseUrl')}) is invalid: ${config.baseUrl}.\nValid Example: ${chalk.cyan('https://status.yourbaseurl.com')}.`)
     }
 
     // Make sure a trailing slash (at the end of the URL) is not defined
