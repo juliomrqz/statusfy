@@ -35,11 +35,9 @@ module.exports = async function Statusfy () {
     }
 
     // User locale
-    if (locale.file) {
-      const userLocalePath = path.join(statusfyOptions.sourceDir, 'locales', locale.file)
-      if (fs.existsSync(userLocalePath)) {
-        userLocaleContent = require(userLocalePath)
-      }
+    const userLocalePath = path.join(statusfyOptions.sourceDir, 'locales', `${locale.code}.json`)
+    if (fs.existsSync(userLocalePath)) {
+      userLocaleContent = require(userLocalePath)
     }
 
     // Crate locale file content
