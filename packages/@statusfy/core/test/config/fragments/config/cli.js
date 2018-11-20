@@ -7,8 +7,7 @@ module.exports = {
     {
       code: 'en',
       iso: 'en-US',
-      name: 'English',
-      file: 'en.json'
+      name: 'English'
     }
   ]
 }

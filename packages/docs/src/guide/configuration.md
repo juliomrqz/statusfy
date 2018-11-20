@@ -57,8 +57,8 @@ module.exports = {
   },
   defaultLocale: 'en',
   locales: [
-    { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
-    { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' }
+    { code: 'en', iso: 'en-US', name: 'English' },
+    { code: 'es', iso: 'es-ES', name: 'Español' }
   ],
   content: {
     frontMatterFormat: 'yaml',

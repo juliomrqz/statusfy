@@ -44,6 +44,16 @@ module.exports = function loadConfig (sourceDir) {
     }
   }
 
+  // Replace user's systems
+  if (configContent.content && configContent.content.systems) {
+    defaultConfig.content.systems = configContent.content.systems
+  }
+
+  // Replace user's locales
+  if (configContent.locales) {
+    defaultConfig.locales = configContent.locales
+  }
+
   const config = defaultsDeep(configContent, defaultConfig)
   config.sourceDir = sourceDir
 

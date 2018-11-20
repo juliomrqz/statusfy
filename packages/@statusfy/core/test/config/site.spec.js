@@ -29,6 +29,10 @@ describe('config:site', () => {
     executeConfigTest('advanced')
   })
 
+  test('spanish', () => {
+    executeConfigTest('spanish')
+  })
+
   test('invalid', () => {
     const sourceDir = path.resolve(tempPath, 'invalid')
     const loadedConfig = loadConfig(sourceDir)

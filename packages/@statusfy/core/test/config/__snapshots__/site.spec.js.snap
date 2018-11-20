@@ -63,13 +63,11 @@ Object {
   "locales": Array [
     Object {
       "code": "en",
-      "file": "en.json",
       "iso": "en-US",
       "name": "English",
     },
     Object {
       "code": "es",
-      "file": "es.json",
       "iso": "es-ES",
       "name": "Español",
     },
@@ -103,7 +101,6 @@ Object {
   "locales": Array [
     Object {
       "code": "en",
-      "file": "en.json",
       "iso": "en-US",
       "name": "English",
     },
@@ -155,5 +152,43 @@ Object {
   "sourceDir": "../.tmp/simple",
   "theme": Object {},
   "title": "Title",
+}
+`;
+
+exports[`config:site spanish 1`] = `
+Object {
+  "baseUrl": "https://demo.statusfy.co",
+  "build": Object {
+    "isStatic": false,
+  },
+  "content": Object {
+    "dir": "content",
+    "frontMatterFormat": "yaml",
+    "systems": Array [
+      "notificaciones",
+      "monitoreo",
+      "entrega-sitio",
+    ],
+  },
+  "defaultLocale": "es",
+  "description": "Descripción",
+  "locales": Array [
+    Object {
+      "code": "es",
+      "iso": "es-ES",
+      "name": "Español",
+    },
+    Object {
+      "code": "fr",
+      "iso": "fr-FR",
+      "name": "Français",
+    },
+  ],
+  "manifest": true,
+  "name": "titulo",
+  "serviceWorker": true,
+  "sourceDir": "../.tmp/spanish",
+  "theme": Object {},
+  "title": "Título",
 }
 `;

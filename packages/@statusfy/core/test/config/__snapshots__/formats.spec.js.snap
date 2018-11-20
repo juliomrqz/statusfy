@@ -20,7 +20,6 @@ Object {
   "locales": Array [
     Object {
       "code": "en",
-      "file": "en.json",
       "iso": "en-US",
       "name": "English",
     },
@@ -55,7 +54,6 @@ Object {
     "locales": Array [
       Object {
         "code": "en",
-        "file": "en.json",
         "iso": "en-US",
         "name": "English",
       },
@@ -137,7 +135,6 @@ Object {
   "locales": Array [
     Object {
       "code": "en",
-      "file": "en.json",
       "iso": "en-US",
       "name": "English",
     },

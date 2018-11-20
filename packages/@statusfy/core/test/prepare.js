@@ -16,7 +16,7 @@ const prepare = async () => {
 
   generateDemoContent(path.resolve(tempBasePath, 'content'), new Date('2018-08-31T19:03:43.219Z'))
 
-  const testProjects = ['simple', 'cli', 'advanced', 'invalid']
+  const testProjects = ['simple', 'cli', 'advanced', 'spanish', 'invalid']
 
   for (const key of testProjects) {
     const dest = path.join(tempPath, key)

@@ -65,4 +65,8 @@ describe('config:nuxt', () => {
   test('advanced', () => {
     executeConfigTest('advanced')
   })
+
+  test('spanish', () => {
+    executeConfigTest('spanish')
+  })
 })

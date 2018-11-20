@@ -136,18 +136,6 @@ Object {
             "name": "English",
           },
           Object {
-            "code": "en",
-            "file": "en.js",
-            "iso": "en-US",
-            "name": "English",
-          },
-          Object {
-            "code": "en",
-            "file": "en.js",
-            "iso": "en-US",
-            "name": "English",
-          },
-          Object {
             "code": "es",
             "file": "es.js",
             "iso": "es-ES",
@@ -203,13 +191,11 @@ Object {
     "locales": Array [
       Object {
         "code": "en",
-        "file": "en.json",
         "iso": "en-US",
         "name": "English",
       },
       Object {
         "code": "es",
-        "file": "es.json",
         "iso": "es-ES",
         "name": "Español",
       },
@@ -277,13 +263,11 @@ Object {
       "locales": Array [
         Object {
           "code": "en",
-          "file": "en.json",
           "iso": "en-US",
           "name": "English",
         },
         Object {
           "code": "es",
-          "file": "es.json",
           "iso": "es-ES",
           "name": "Español",
         },
@@ -443,12 +427,6 @@ Object {
             "iso": "en-US",
             "name": "English",
           },
-          Object {
-            "code": "en",
-            "file": "en.js",
-            "iso": "en-US",
-            "name": "English",
-          },
         ],
         "vueI18n": Object {
           "fallbackLocale": "en",
@@ -498,7 +476,6 @@ Object {
     "locales": Array [
       Object {
         "code": "en",
-        "file": "en.json",
         "iso": "en-US",
         "name": "English",
       },
@@ -523,7 +500,6 @@ Object {
       "locales": Array [
         Object {
           "code": "en",
-          "file": "en.json",
           "iso": "en-US",
           "name": "English",
         },
@@ -754,6 +730,257 @@ Object {
     },
     "sourceDir": "../.tmp/simple",
     "version": "0.1.1",
+  },
+}
+`;
+
+exports[`config:nuxt spanish 1`] = `
+Object {
+  "axios": Object {
+    "browserBaseURL": "/",
+  },
+  "build": Object {
+    "analyze": true,
+    "extend": [Function],
+    "plugins": Array [
+      Object {
+        "apply": [Function],
+      },
+    ],
+    "publicPath": "/static/",
+    "router": Object {
+      "linkActiveClass": "active",
+      "linkExactActiveClass": "exact",
+      "scrollBehavior": [Function],
+    },
+  },
+  "buildDir": "../.tmp/spanish/.statusfy",
+  "css": Array [
+    "~assets/css/tailwind.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+    "../.tmp/advanced/theme/default/style.css",
+    "../.tmp/advanced/theme/default/style.less",
+    "../.tmp/advanced/theme/default/style.sass",
+    "../.tmp/advanced/theme/default/style.scss",
+    "../.tmp/advanced/theme/default/style.styl",
+    "../.tmp/advanced/theme/default/style.stylus",
+  ],
+  "dev": true,
+  "env": Object {
+    "isDev": true,
+  },
+  "generate": Object {
+    "dir": "../.tmp/spanish/dist",
+    "fallback": "404.html",
+    "subFolders": false,
+  },
+  "head": Object {
+    "meta": Array [
+      Object {
+        "charset": "utf-8",
+      },
+      Object {
+        "content": "width=device-width, initial-scale=1",
+        "name": "viewport",
+      },
+      Object {
+        "content": "Statusfy",
+        "name": "generator",
+      },
+      Object {
+        "content": "Descripción",
+        "hid": "description",
+        "name": "description",
+      },
+    ],
+    "title": "Título",
+    "titleTemplate": "%s | Título",
+  },
+  "icon": Object {
+    "iconSrc": "../.tmp/advanced/theme/default/img/icon.png",
+    "sizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
+  },
+  "loading": Object {
+    "color": "#1b1f23",
+  },
+  "manifest": Object {
+    "description": "Descripción",
+    "lang": "es",
+    "name": "Título",
+    "publicPath": "/static/",
+    "short_name": "Título",
+    "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
+    "version": "0.1.1",
+  },
+  "meta": Object {
+    "author": "Statusfy",
+    "charset": "utf-8",
+    "mobileApp": false,
+    "mobileAppIOS": false,
+    "ogDescription": false,
+    "ogHost": "https://demo.statusfy.co",
+    "ogTitle": false,
+    "theme_color": "#1b1f23",
+  },
+  "mode": "universal",
+  "modules": Array [
+    "~/modules/statusfy",
+    "@nuxtjs/axios",
+    Array [
+      "nuxt-i18n",
+      Object {
+        "baseUrl": "https://demo.statusfy.co",
+        "defaultLocale": "es",
+        "detectBrowserLanguage": Object {
+          "cookieKey": "titulo.lang_redirected",
+          "useCookie": true,
+        },
+        "langDir": "locales/",
+        "lazy": true,
+        "locales": Array [
+          Object {
+            "code": "es",
+            "file": "es.js",
+            "iso": "es-ES",
+            "name": "Español",
+          },
+          Object {
+            "code": "fr",
+            "file": "fr.js",
+            "iso": "fr-FR",
+            "name": "Français",
+          },
+        ],
+        "vueI18n": Object {
+          "fallbackLocale": "es",
+          "silentTranslationWarn": false,
+        },
+      },
+    ],
+    Array [
+      "@nuxtjs/pwa",
+      Object {
+        "manifest": false,
+        "workbox": false,
+      },
+    ],
+  ],
+  "modulesDir": Array [
+    "../../node_modules",
+    "../../../node_modules",
+    "../.tmp/simple/node_modules",
+    "../.tmp/cli/node_modules",
+    "../.tmp/advanced/node_modules",
+    "../.tmp/spanish/node_modules",
+  ],
+  "plugins": Array [
+    "~/plugins/axios",
+    "~/plugins/vue-svgicon",
+  ],
+  "rootDir": "../..",
+  "server": Object {
+    "host": "127.0.0.1",
+    "port": 3000,
+  },
+  "srcDir": "../../client",
+  "statusfy": Object {
+    "assets": Object {
+      "mainLogo": "../.tmp/advanced/theme/default/img/logo.svg",
+    },
+    "dev": true,
+    "iconSizes": Array [
+      16,
+      120,
+      144,
+      152,
+      192,
+      384,
+      512,
+    ],
+    "langDir": "locales/",
+    "locales": Array [
+      Object {
+        "code": "es",
+        "iso": "es-ES",
+        "name": "Español",
+      },
+      Object {
+        "code": "fr",
+        "iso": "fr-FR",
+        "name": "Français",
+      },
+    ],
+    "publicFilesPath": "../.tmp/spanish/public",
+    "siteConfig": Object {
+      "baseUrl": "https://demo.statusfy.co",
+      "build": Object {
+        "isStatic": false,
+      },
+      "content": Object {
+        "dir": "content",
+        "frontMatterFormat": "yaml",
+        "systems": Array [
+          "notificaciones",
+          "monitoreo",
+          "entrega-sitio",
+        ],
+      },
+      "defaultLocale": "es",
+      "description": "Descripción",
+      "locales": Array [
+        Object {
+          "code": "es",
+          "iso": "es-ES",
+          "name": "Español",
+        },
+        Object {
+          "code": "fr",
+          "iso": "fr-FR",
+          "name": "Français",
+        },
+      ],
+      "manifest": true,
+      "name": "titulo",
+      "serviceWorker": true,
+      "sourceDir": "../.tmp/spanish",
+      "theme": Object {},
+      "title": "Título",
+    },
+    "sourceDir": "../.tmp/spanish",
+    "version": "0.1.1",
+  },
+  "workbox": Object {
+    "_runtimeCaching": Array [
+      Object {
+        "handler": "cacheFirst",
+        "method": "GET",
+        "urlPattern": "/static/(?!content).*$",
+      },
+    ],
+    "cacheId": "titulo",
+    "globDirectory": "../.tmp/spanish/.statusfy/dist/client",
+    "offlinePage": "/offline",
+    "publicPath": "/static/",
+    "runtimeCaching": Array [
+      Object {
+        "strategyOptions": Object {
+          "cacheExpiration": Object {
+            "maxAgeSeconds": 300,
+            "maxEntries": 10,
+          },
+          "cacheName": "titulo_title_title_api",
+        },
+        "urlPattern": "(/static/content)?/api/v0/.*",
+      },
+    ],
   },
 }
 `;

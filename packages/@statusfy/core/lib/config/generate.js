@@ -73,6 +73,7 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   // nuxt-i18n module configuration
   const nuxti18nModuleConfig = nuxtConfig.modules.find(item => item[0] === 'nuxt-i18n')[1]
   // Update the locales list
+  nuxti18nModuleConfig.locales = []
   siteConfig.locales.forEach(locale => {
     nuxti18nModuleConfig.locales.push({
       ...locale,
