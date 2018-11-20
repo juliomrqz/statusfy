@@ -1,5 +1,5 @@
 [![Bazzite Project](https://img.shields.io/badge/Bazzite-project-blue.svg)](https://statusfy.co)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/afb1b57affaa4f5d8fcaac5c0beee5c0)](https://www.codacy.com/app/bazzite/statusfy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bazzite/statusfy&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/afb1b57affaa4f5d8fcaac5c0beee5c0)](https://www.codacy.com/app/bazzite/statusfy?utm_source=github.com&utm_medium=referral&utm_content=bazzite/statusfy&utm_campaign=Badge_Grade)
 [![Travis](https://img.shields.io/travis/bazzite/statusfy.svg)](https://travis-ci.org/bazzite/statusfy)
 [![David](https://img.shields.io/david/bazzite/statusfy.svg)](https://david-dm.org/bazzite/statusfy)
 [![David](https://img.shields.io/david/dev/bazzite/statusfy.svg)](https://david-dm.org/bazzite/statusfy?type=dev)
@@ -24,10 +24,50 @@ A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] a
 
 ## Install
 
+It’s pretty easy to get started with Statusfy. Install it globally with npm:
+
+***Make sure you have [npx][npx] installed (npx is shipped by default since [npm][npm] 5.2.0)***
+
 ``` bash
-# install dependencies
-$ yarn add vuepress -D
+# change the working directory
+cd existing_folder
+
+# run the initialization command
+npx statusfy init
+
+# and install your local dependencies
+npm install  # OR yarn install
 ```
+
+Create a new incident with this command:
+
+``` bash
+npm run new-incident # OR yarn new-incident
+```
+
+and launch the development server with:
+
+``` bash
+npm run dev # OR yarn dev
+```
+
+You can also generate a Static Generated Website with:
+
+``` bash
+npm run generate # OR yarn generate
+```
+
+or generate a Server Rendered Website with:
+
+``` bash
+# generate static assets
+npm run build # OR yarn build
+
+# launch the server
+npm run start # OR yarn start
+```
+
+More information in the [Documentation][documentation].
 
 ## Development
 
@@ -38,9 +78,11 @@ $ yarn add vuepress -D
 yarn
 # serves Statusfy's own demo
 yarn demo:dev 
-# make sure your code change pass the test
+# make sure your code change passes the test
 yarn test
 ```
+
+More information in the [Contributing Guide][contributing].
 
 ## Demo
 
@@ -56,7 +98,7 @@ For **Bug reports** or **Feature requests**, use the [Issues section][issues].
 
 For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
 
-You can find usefull **articles** in [our blog][statusfy-blog].
+You can find useful **articles** in [our blog][statusfy-blog].
 
 You may also want to [follow the company supporting this project on Twitter][twitter].
 
@@ -90,3 +132,5 @@ Code released under the [Apache License 2.0][license-page].
 [vue]: http://vuejs.org/
 [nuxt]: https://nuxtjs.org/
 [tailwindcss]: https://tailwindcss.com/
+[npx]: https://www.npmjs.com/package/npx
+[npm]: https://www.npmjs.com/get-npm
