@@ -1,5 +1,7 @@
 module.exports = {
-  title: 'Title',
+  title: 'Long Title',
+  short_title: 'Short Title',
+  name: 'app_name',
   description: 'Description',
   baseUrl: 'https://demo.statusfy.co',
   analytics: {

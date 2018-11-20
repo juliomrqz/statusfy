@@ -12,12 +12,31 @@ sidebarDepth: 2
 
 El Título del Sitio. Éste será el sufijo para todos los títulos de las páginas y se mostrará en la barra de navegación. También se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
 
+## short_title
+
+- Type: `string`
+- Por defecto: `undefined`
+
+El Título Corto del Sitio. Será usado en el atributo `short_name` del [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
+
+::: tip
+Si no se define este parámetro, se usará por defecto el valor del [`title`](#title).
+:::
+
 ## name
 
 - Tipo: `string`
 - Por defecto: `undefined`
 
 El Nombre de la Aplicación. También se utiliza en el [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web) y como id para el almacenamiento en caché de archivos con [Service Worker](../guide/pwa.md#service-worker).
+
+::: warning ADVERTENCIA
+Debe ser un valor alfanumérico con solo minúsculas.
+:::
+
+::: tip
+Si no se define este parámetro, se generará un valor basado en el [`title`](#title).
+:::
 
 ## description
 

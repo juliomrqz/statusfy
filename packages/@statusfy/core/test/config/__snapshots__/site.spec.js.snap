@@ -47,8 +47,8 @@ Object {
         "name": "description",
       },
     ],
-    "title": "Title",
-    "titleTemplate": "%s | Title",
+    "title": "Long Title",
+    "titleTemplate": "%s | Long Title",
   },
   "locales": Array [
     Object {
@@ -63,11 +63,12 @@ Object {
     },
   ],
   "manifest": true,
-  "name": "title",
+  "name": "app_name",
   "serviceWorker": true,
+  "short_title": "Short Title",
   "sourceDir": "../.tmp/advanced",
   "theme": Object {},
-  "title": "Title",
+  "title": "Long Title",
 }
 `;
 
@@ -98,6 +99,7 @@ Object {
   "manifest": true,
   "name": "title",
   "serviceWorker": true,
+  "short_title": "Title",
   "sourceDir": "../.tmp/cli",
   "theme": Object {},
   "title": "Title",
@@ -140,6 +142,7 @@ Object {
   "manifest": false,
   "name": "title",
   "serviceWorker": false,
+  "short_title": "Title",
   "sourceDir": "../.tmp/simple",
   "theme": Object {},
   "title": "Title",
@@ -176,8 +179,9 @@ Object {
     },
   ],
   "manifest": true,
-  "name": "titulo",
+  "name": "Nombre Aplicación",
   "serviceWorker": true,
+  "short_title": "Título",
   "sourceDir": "../.tmp/spanish",
   "theme": Object {},
   "title": "Título",

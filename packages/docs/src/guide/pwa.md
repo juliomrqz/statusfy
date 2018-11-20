@@ -81,7 +81,7 @@ Some of these values are populated from the config file as follows:
 | Web App Manifest |                     Config File                    |
 |:----------------:|:--------------------------------------------------:|
 |       name       |         [title](../config/README.md#title)         |
-|    short_name    |          [name](../config/README.md#name)          |
+|    short_name    |   [short_title](../config/README.md#short-title)   |
 |    description   |   [description](../config/README.md#description)   |
 |       lang       | [defaultLocale](../config/README.md#defaultlocale) |
 

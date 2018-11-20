@@ -61,6 +61,10 @@ module.exports = function loadConfig (sourceDir) {
     config.name = slugify(config.title)
   }
 
+  if (!config.short_title) {
+    config.short_title = config.title
+  }
+
   // Run Validation
   try {
     errors = validateConfig(config)

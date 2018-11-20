@@ -10,7 +10,18 @@ sidebarDepth: 2
 - Type: `string`
 - Default: `undefined`
 
-The Title for the site. This will be the suffix for all page titles and displayed in the navbar. It is also used in the [Manifest File](../guide/pwa.md#manifest). 
+The Title for of Site. This will be the suffix for all page titles and displayed in the navbar. It is also used in the [Manifest File](../guide/pwa.md#manifest). 
+
+## short_title
+
+- Type: `string`
+- Default: `undefined`
+
+The Short Title of the Site. This will be used in the `short_name` attribute of the [Manifest File](../guide/pwa.md#manifest). 
+
+::: tip
+If this parameter is not defined, the value of the [`title`](#title) will be used by default.
+:::
 
 ## name
 
@@ -18,6 +29,14 @@ The Title for the site. This will be the suffix for all page titles and displaye
 - Default: `undefined`
 
 The Name of the Application. It is also used in the [Manifest File](../guide/pwa.md#manifest) and as id for assets caching with [Service Worker](../guide/pwa.md#service-worker).
+
+::: warning
+It should be an alphanumeric and lowercase value.
+:::
+
+::: tip
+If this parameter is not defined, a value based on the [`title`](#title) will be generated.
+:::
 
 ## description
 
@@ -33,7 +52,7 @@ The Description for the site. This will be rendered as a `<meta>` tag in the pag
 
 The base URL the site will be deployed at. It can be just a slash or a valid URL that shouldn't end with a slash.
 
-::: warning ADVERTENCIA
+::: warning
 You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
 

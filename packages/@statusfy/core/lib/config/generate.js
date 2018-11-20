@@ -114,7 +114,7 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
 
   if (siteConfig.manifest === true) {
     nuxtConfig.manifest.name = siteConfig.title
-    nuxtConfig.manifest.short_name = siteConfig.title
+    nuxtConfig.manifest.short_name = siteConfig.short_title
     nuxtConfig.manifest.description = siteConfig.description
     nuxtConfig.manifest.lang = siteConfig.defaultLocale
   } else {
