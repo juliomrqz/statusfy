@@ -42,16 +42,6 @@ Object {
         "name": "generator",
       },
       Object {
-        "content": "",
-        "hid": "description",
-        "name": "description",
-      },
-      Object {
-        "content": "",
-        "hid": "description",
-        "name": "description",
-      },
-      Object {
         "content": "Description",
         "hid": "description",
         "name": "description",

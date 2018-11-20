@@ -63,7 +63,15 @@ module.exports = function generateConfig (sourceDir, cliOptions) {
   // Head Configuration
   nuxtConfig.head = { ...siteConfig.head, ...nuxtConfig.head }
   nuxtConfig.head.title = siteConfig.title
-  nuxtConfig.head.meta.push({ hid: 'description', name: 'description', content: siteConfig.description })
+  // Hack: fix duplicate descripton object
+  const descriptionIndex = nuxtConfig.head.meta.findIndex(o => o.hid === 'description')
+  const descriptionValue = { hid: 'description', name: 'description', content: siteConfig.description }
+  if (descriptionIndex === -1) {
+    nuxtConfig.head.meta.push(descriptionValue)
+  } else {
+    nuxtConfig.head.meta[descriptionIndex] = descriptionValue
+  }
+
   nuxtConfig.head.titleTemplate = `%s | ${siteConfig.title}`
   nuxtConfig.head = defaultsDeep(siteConfig.head, nuxtConfig.head)
 
