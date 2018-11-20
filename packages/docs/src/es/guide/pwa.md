@@ -77,7 +77,7 @@ Statusfy crea un [Manifiesto de Aplicación Web](https://developers.google.com/w
     "background_color": "#ffffff",
     "theme_color": "#1b1f23",
     "lang": "en",
-    "version": "0.1.2"
+    "version": "0.1.3"
 }
 ```
 

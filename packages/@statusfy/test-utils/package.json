@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/test-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Test Utils for Statusfy",
   "publishConfig": {
     "access": "public"

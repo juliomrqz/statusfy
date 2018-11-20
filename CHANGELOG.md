@@ -1,3 +1,13 @@
+## [0.1.3](https://github.com/statusfy/statusfy/compare/v0.1.2...v0.1.3) (2018-11-20)
+
+
+### Bug Fixes
+
+* **core:** fix reading the user's translations ([b039d17](https://github.com/statusfy/statusfy/commit/b039d17))
+* use exact versions for internal packages ([a491b19](https://github.com/statusfy/statusfy/commit/a491b19))
+
+
+
 ## [0.1.2](https://github.com/statusfy/statusfy/compare/v0.1.1...v0.1.2) (2018-11-20)
 
 
