@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
-    "@statusfy/common": "^0.1.2",
+    "@statusfy/common": "0.1.2",
     "markdown-it": "^8.4.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0"
   },
   "devDependencies": {
-    "@statusfy/test-utils": "^0.1.2"
+    "@statusfy/test-utils": "0.1.2"
   }
 }
