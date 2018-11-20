@@ -16,9 +16,11 @@
 
 # Statusfy
 
-> A marvelous open source Status Page system
+> A marvelous Open Source Status Page system
 
-:warning: This project is in alpha state, under active development.
+Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated) or [**Server Rendered**](https://docs.statusfy.co/guide/architecture.html#server-rendered) and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
+
+A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Vue** to dynamically define the interfaces that represent the data, **Nuxt.js** to make a quick and useful abstraction of the client and server logic, and **Tailwind CSS** to rapidly define the default theme.
 
 ## Install
 
@@ -48,6 +50,8 @@ A Demo application is at [https://demo.statusfy.co][demo].
 
 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://docs.statusfy.co][documentation].
 
+You may want to check the examples projects for different popular hosting services at [the Examples Repository][examples].
+
 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
 
 For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
@@ -72,6 +76,7 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [Apache License 2.0][license-page].
 
+[examples]: https://github.com/bazzite/statusfy-examples
 [demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [contributing]: https://github.com/bazzite/statusfy/blob/develop/CONTRIBUTING.md
@@ -82,3 +87,6 @@ Code released under the [Apache License 2.0][license-page].
 [support-page]: https://statusfy.co/support?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [statusfy-blog]: https://statusfy.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [license-page]: https://github.com/bazzite/statusfy/blob/develop/LICENSE
+[vue]: http://vuejs.org/
+[nuxt]: https://nuxtjs.org/
+[tailwindcss]: https://tailwindcss.com/
