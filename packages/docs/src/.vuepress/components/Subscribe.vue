@@ -37,7 +37,8 @@
             id="mc-embedded-subscribe"
             :value="text[language].button"
             type="submit"
-            name="subscribe">
+            name="subscribe"
+            class="btn">
         </div>
       </div>
     </form>
@@ -161,23 +162,6 @@ input
   margin-bottom 1rem
   flex none
 
-  input
-    color #fff
-    border-color #0366d6
-    background-color #0366d6
-    display inline-block
-    padding .75rem 1.5rem
-    line-height 1
-    border-width 1px
-    border-radius .25rem
-    white-space nowrap
-    font-size 1.125rem
-    cursor pointer
-
-    &:hover
-      color #f6f8fa
-      border-color #005cc5
-      background-color #005cc5
 
 @media (min-width: 576px)
   .button

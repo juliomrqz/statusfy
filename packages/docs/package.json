@@ -6,8 +6,9 @@
   "license": "Apache-2.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx vuepress dev src",
-    "build": "npx vuepress build src"
+    "dev": "npm run retrieve-partners && npx vuepress dev src",
+    "build": "npm run && retrieve-partners && npx vuepress build src",
+    "retrieve-partners": "node scripts/partners.js"
   },
   "engines": {
     "node": ">=8.10"
@@ -31,6 +32,9 @@
   "homepage": "https://docs.statusfy.co",
   "devDependencies": {
     "@statusfy/common": "0.1.3",
+    "axios": "^0.18.0",
+    "consola": "^2.3.0",
+    "fs-extra": "^7.0.1",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "^2.0.1",
     "vuepress": "^0.14.4"

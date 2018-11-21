@@ -1,4 +1,9 @@
+const axios = require('axios')
+const webpack = require('webpack')
+
 const { postcss } = require('@statusfy/common')
+
+const partners = require('./partners.json')
 
 module.exports = {
   title: 'Statusfy Documentation',
@@ -127,6 +132,17 @@ module.exports = {
           '/es/config/': genSidebarConfig('Configuración', 'config'),
         }
       }
+    }
+  },
+  configureWebpack: (config, isServer) => {
+    if (!isServer) {
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          'process.env': {
+            'PARTNERS': JSON.stringify(partners)
+          }
+        })
+      )
     }
   }
 }

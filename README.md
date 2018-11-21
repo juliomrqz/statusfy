@@ -9,6 +9,22 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_shield)
 
 <p align="center">
+  <a href="#partners" alt="Partner on Open Collective">
+    <img src="https://opencollective.com/statusfy/tiers/partners/badge.svg" />
+  </a>
+  <a href="#sponsors" alt="Sponsors on Open Collective">
+    <img src="https://opencollective.com/statusfy/tiers/sponsors/badge.svg" />
+  </a>
+  <a href="#backers" alt="Backers on Open Collective">
+    <img src="https://opencollective.com/statusfy/tiers/backers/badge.svg" />
+  </a>
+  <a href="https://bazzite.xyz/StatusfyOpenCollective">
+    <img src="https://img.shields.io/badge/Support%20us-Open%20Collective-0366d6.svg" alt="Support us">
+  </a>
+</p>
+
+
+<p align="center">
   <a href="https://statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy" target="_blank">
     <img src="https://raw.githubusercontent.com/bazzite/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
   </a>
@@ -22,7 +38,55 @@ Statusfy is a Status Page System, easy to use and completely Open Source. You ca
 
 A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Vue** to dynamically define the interfaces that represent the data, **Nuxt.js** to make a quick and useful abstraction of the client and server logic, and **Tailwind CSS** to rapidly define the default theme.
 
-## Install
+
+## Features
+
+- Systems Definition
+- Incidents Reports
+- Progressive Web App (PWA) Support
+- Google Analytics Integration
+- Multi-language support
+- A default theme with:
+  - Responsive layout
+  - Easy Customization
+  - Beautiful Design 
+- SEO Friendly
+- Hosting flexibility: Static Generated or Server Rendered
+
+## Sponsoring
+
+We love Open Source Projects, we use them every day and **Statusfy is our contribution to the community**. Statusfy is created and maintained by [Bazzite][bazzite-website], a Software Development Company, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, **please donate**, *we will appreciate it* ❤️.
+
+This is how we use the donations:
+
+- Allow the core team to work on Statusfy.
+- Support external projects in the ecosystem.
+- Cover any other expense.
+- Thank contributors if they invested a large amount of time in contributing.
+
+### Partners
+
+**Become a Partner** and get your logo with a link to your site on our README on Github, **every page** of https://docs.statusfy.co and, the **home page** and **each blog post** of https://statusfy.co. [[Become a Partner][opencollective-contribute]]
+
+<a href="https://opencollective.com/statusfy#contributors">
+  <img src="https://opencollective.com/statusfy/tiers/partners.svg?avatarHeight=96&width=890&button=false" />
+</a>
+
+### Sponsors
+
+**Become a Sponsor** and get your logo on our README on Github with a link to your site.. [[Become a Sponsor][opencollective-contribute]]
+
+<a href="https://opencollective.com/statusfy#contributors"><img src="https://opencollective.com/statusfy/tiers/sponsors.svg?avatarHeight=74&width=890&button=false" /></a>
+
+### Backers
+
+**Support us** with a monthly donation and help us continue our activities. It means a lot to us ❤️. [[Become a Backer][opencollective-contribute]]
+
+<a href="https://opencollective.com/statusfy#contributors">
+  <img src="https://opencollective.com/statusfy/tiers/backers.svg?width=890&button=false" />
+</a>
+
+## Getting started
 
 It’s pretty easy to get started with Statusfy. Install it globally with npm:
 
@@ -88,23 +152,18 @@ More information in the [Contributing Guide][contributing].
 
 A Demo application is at [https://demo.statusfy.co][demo].
 
-## Documentation & Support
+## Documentation & Community Support
 
-If you want extra details of how to configure and use this project, the **full documentation** is available at [https://docs.statusfy.co][documentation].
+- If you want extra details of how to configure and use this project, the **full documentation** is available at [https://docs.statusfy.co][documentation].
+- You may want to check the **examples projects** for different popular hosting services at [the Examples Repository][examples].
+- For **Bug reports** or **Feature requests**, use the [Issues section][issues].
+- For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
+- You can find useful **articles** in [our blog][statusfy-blog].
+- You may also want to **follow the company** supporting this project [on Twitter][twitter].
 
-You may want to check the examples projects for different popular hosting services at [the Examples Repository][examples].
+## Professional Support
 
-For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-
-For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
-
-You can find useful **articles** in [our blog][statusfy-blog].
-
-You may also want to [follow the company supporting this project on Twitter][twitter].
-
-### Commercial Support
-
-This project is sponsored by [Bazzite][bazzite-website]. If you require professional assistance on your project(s), please contact us at [https://statusfy.co/support][support-page].
+This project is sponsored by [Bazzite][bazzite-website]. If you require Professional Assistance on your project(s), please contact us at [https://statusfy.co/support][support-page].
 
 ## Contributing
 
@@ -124,7 +183,7 @@ Code released under the [Apache License 2.0][license-page].
 [contributing]: https://github.com/bazzite/statusfy/blob/develop/CONTRIBUTING.md
 [code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [issues]: https://github.com/bazzite/statusfy/issues
-[twitter]: https://twitter.com/BazziteTech
+[twitter]: https://bazzite.xyz/Twitter
 [bazzite-website]: https://www.bazzite.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [support-page]: https://statusfy.co/support?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [statusfy-blog]: https://statusfy.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy
@@ -134,3 +193,4 @@ Code released under the [Apache License 2.0][license-page].
 [tailwindcss]: https://tailwindcss.com/
 [npx]: https://www.npmjs.com/package/npx
 [npm]: https://www.npmjs.com/get-npm
+[opencollective-contribute]: https://bazzite.xyz/StatusfyOpenCollective#contribute

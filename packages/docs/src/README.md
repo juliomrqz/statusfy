@@ -12,6 +12,8 @@ features:
   details: Use the power of blazing-fast Static Site Generation or Server-Side Rendering, so you can easily deploy to a variety of hosting services with no expensive server costs.
 ---
 
+<Partners />
+
 <Subscribe />
 
 <!-- Footer Component -->

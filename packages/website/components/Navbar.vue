@@ -69,6 +69,11 @@
             class="menu-item">
             {{ $t('links.demo.title') }}
           </a>
+          <nuxt-link
+            :to="localePath('support')"
+            class="menu-item">
+            {{ $t('support.title') }}
+          </nuxt-link>
           <span class="lg:hidden">
             <a
               :href="$t('links.getStarted.url')"

@@ -12,6 +12,8 @@ features:
   details: Usa el poder de la Generación de Sitios Estáticos o la Representación del lado del Servidor, de modo que puede implementarse fácilmente en una variedad de servicios de hospedaje sin costos elevados de servidor.
 ---
 
+<Partners />
+
 <Subscribe />
 
 <!-- Footer Component -->

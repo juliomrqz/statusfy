@@ -98,6 +98,7 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    '~/modules/statusfy',
     // Doc: https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/axios-module#usage

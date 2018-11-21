@@ -25,7 +25,7 @@ Please make sure to include a reproduction repository. We can start fixing bugs 
 
 ## Pull Requests
 
-Any significant improvement (no matter if it's just to fix a typo) should be associated with a [feature request][feature-request] or [bug report][bug-report]. If you require professional assistance on your project(s) or want to ask general questions, just go to our [Support Page][support-page].
+Any significant improvement (no matter if it's just to fix a typo) should be associated with a [feature request][feature-request] or [bug report][bug-report]. If you require Professional Assistance on your project(s) or want to ask general questions, just go to our [Support Page][support-page].
 
 ### Getting started
 

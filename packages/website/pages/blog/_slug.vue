@@ -25,13 +25,15 @@
             <div class="text-xl mb-12 italic">
               {{ $t('blog.publishedAt') }}
               <a
-                :href="parentBlogUrl"
+                :href="`${parentBlogUrl}?ref=statusfy-blog`"
                 target="_blank"
-                rel="noopener">{{
-                  parentBlogUrl
-                }}</a>
+                rel="noopener">bazzite.com</a>
               {{ $t('blog.on') }} {{ formatDate(post.created) }}.
             </div>
+
+            <Partners 
+              mode="secondary" 
+              class="pb-0"/>
 
             <Subscribe class="max-w-md mx-auto"/>
 
@@ -114,7 +116,8 @@
 <script>
 import AuthorCard from '~/components/blog/AuthorCard'
 import FormatDate from '~/components/mixins/FormatDate'
-import Subscribe from '~/components/common/Subscribe.vue'
+import Subscribe from '~/components/common/Subscribe'
+import Partners from '~/components/common/Partners'
 
 import '~/components/icons/fortawesome/twitter-square-brands'
 import '~/components/icons/fortawesome/facebook-square-brands'
@@ -124,7 +127,8 @@ import '~/components/icons/fortawesome/reddit-square-brands'
 export default {
   components: {
     AuthorCard,
-    Subscribe
+    Subscribe,
+    Partners
   },
   mixins: [FormatDate],
   async asyncData({ app, params, payload }) {

@@ -35,7 +35,7 @@ export default {
     },
     bazzite: {
       title: 'Bazzite',
-      url: 'https://www.bazzite.com'
+      url: 'https://www.bazzite.com?ref=statusfy-website'
     }
   },
   home: {
@@ -123,7 +123,7 @@ export default {
   },
   support: {
     title: 'Support',
-    description: 'Learn where to get useful Articles, Community Support, and Email Support.',
+    description: 'Learn where to get useful Articles, Community Support, Email Support, and Sponsorship.',
     supportEmail: 'hello@statusfy.co',
     supportTwitter: 'BazziteTech',
     community: {
@@ -135,10 +135,10 @@ export default {
       }
     },
     email: {
-      title: 'Email Support',
+      title: 'Professional Support',
       items: {
-        description: 'We provide <strong>Commercial Support</strong> through Email. If you require professional assistance on your project(s) or want to ask general questions, <a href="mailto:{email}">email us directly</a>.',
-        cost: '<small>*Installations start from $99. Non-Profit And Student discounts available.</small>'
+        description: 'We provide <strong>Professional Support</strong> through Email. If you require Professional Assistance on your project(s) or want to ask general questions, <a href="mailto:{email}">email us directly</a>.',
+        cost: '<small>*Installations start from $59.95. Non-Profit And Student discounts available.</small>'
       }
     },
     updates: {
@@ -147,6 +147,42 @@ export default {
         blog: 'You can find useful articles in our <a href="{blog_url}" rel="noopener">Blog</a>. We post <strong>tutorials, tips, and updates</strong> related to Statusfy.',
         twitter: 'This project is sponsored by <a href="{bazzite_url}" target="_blank" rel="noopener">Bazzite</a>, so you can also follow us at <a href="https://www.twitter.com/{twitter_username}"  target="_blank" rel="noopener">@{twitter_username}</a>, where we post updates and news about Statusfy and other Topics.'
       }
+    },
+    sponsoring: {
+      title: 'Sponsoring',
+      description: 'We love Open Source Projects, we use them every day and <strong>Statusfy is our contribution to the Community</strong>. Statusfy is created and maintained by <a href="{bazzite_url}" target="_blank" rel="noopener">Bazzite</a>, a Software Development Company, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, <strong>please donate</strong>, <i>we will appreciate it</i> ❤️.',
+      howWeUseDonations: {
+        description: 'This is how we use the donations:',
+        items: {
+          team: 'Allow the core team to work on Statusfy.',
+          support: 'Support external projects in the ecosystem.',
+          expenses: 'Cover any other expense.',
+          contributors: 'Thank contributors if they invested a large amount of time in contributing.',
+        }
+      },
+      categories: {
+        backers: {
+          title: 'Backers',
+          description: 'Support us with a monthly donation and help us continue our activities. You can buy us from a coffee ☕️  to a very good hamburger 🍔.',
+          action: 'Become a Backer'
+        },
+        sponsors: {
+          title: 'Sponsors',
+          description: 'Become a sponsor and get your logo on our <strong>README on Github</strong> with a link to your site.',
+          action: 'Become a Sponsor'
+        },
+        partners: {
+          title: 'Partners',
+          description: 'Become a Partner and get your logo with a link to your site on our <strong>README on Github</strong>, <strong>every page</strong> of <u>docs.statusfy.co</u> and, the <strong>home page and each blog post</strong> of <u>statusfy.co</u>.',
+          action: 'Become a Partner'
+        }
+      }
     }
+  },
+  partners: {
+    title: 'Sponsors',
+    description: 'We would like to acknowledge these sponsors that help us to continue developing Statusfy.',
+    supportUs: 'Support us',
+    becomePartner: 'Become a Partner'
   }
 }

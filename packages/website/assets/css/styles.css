@@ -2,15 +2,38 @@
 @import '@statusfy/common/lib/style/base';
 
 .btn {
-  @apply inline-block px-6 py-3 leading-none border rounded whitespace-no-wrap text-lg cursor-pointer;
+  @apply inline-block px-6 py-3 leading-none border rounded whitespace-no-wrap text-white text-lg cursor-pointer;
 }
 
-.btn-blue {
-  @apply text-white border-blue bg-blue;
+.btn-sm {
+  @apply px-4 py-2 text-base;
+}
+
+.btn-blue,
+.btn-blue-outline {
+  @apply border-blue;
 
   &:hover,
   &.active {
-    @apply text-grey-lighter border-blue-dark bg-blue-dark;
+    @apply border-blue-dark;
+  }
+}
+
+.btn-blue {
+  @apply bg-blue;
+
+  &:hover,
+  &.active {
+    @apply text-grey-lighter bg-blue-dark;
+  }
+}
+
+.btn-blue-outline {
+  @apply text-blue-dark border-blue-dark border-2 bg-transparent opacity-75;
+
+  &:hover,
+  &.active {
+    @apply text-blue-dark opacity-100;
   }
 }
 
@@ -20,6 +43,24 @@
   &:hover,
   &.active {
     @apply border-grey bg-grey;
+  }
+}
+
+.btn-green {
+  @apply bg-green border-green;
+
+  &:hover,
+  &.active {
+    @apply text-grey-lighter bg-green-dark;
+  }
+}
+
+.btn-purple {
+  @apply text-white bg-purple border-purple;
+
+  &:hover,
+  &.active {
+    @apply text-grey-lighter bg-purple-dark;
   }
 }
 

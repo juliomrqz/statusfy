@@ -35,7 +35,7 @@ export default {
     },
     bazzite: {
       title: 'Bazzite',
-      url: 'https://www.bazzite.com/es'
+      url: 'https://www.bazzite.com/es?ref=statusfy-website'
     }
   },
   home: {
@@ -127,7 +127,7 @@ export default {
   },
   support: {
     title: 'Soporte',
-    description: 'Aprende dónde obtener Artículos útiles, Soporte de la Comunidad y Soporte por Correo Electrónico.',
+    description: 'Aprende dónde obtener Artículos útiles, Soporte de la Comunidad, Soporte por Correo Electrónico y Patrocinio.',
     supportEmail: 'hola@statusfy.co',
     supportTwitter: 'BazziteEs',
     community: {
@@ -139,10 +139,10 @@ export default {
       }
     },
     email: {
-      title: 'Soporte por Correo Electrónico',
+      title: 'Soporte Profesional',
       items: {
-        description: 'Proporcionamos <strong>Soporte Comercial</strong> a través de Correo Electrónico. Si necesitas asistencia profesional en tu(s) proyecto(s) o quieres hacer preguntas generales, <a href="mailto:{email}">enviándonos un correo electrónico</a>.',
-        cost: '<small>*Las instalaciones comienzan desde $99. Descuentos disponibles para organizaciones sin fines de lucro y estudiantes.</small>'
+        description: 'Proporcionamos <strong>Soporte Profesional</strong> a través de Correo Electrónico. Si necesitas asistencia profesional en tu(s) proyecto(s) o quieres hacer preguntas generales, <a href="mailto:{email}">enviándonos un correo electrónico</a>.',
+        cost: '<small>*Las instalaciones comienzan desde $59.95. Descuentos disponibles para organizaciones sin fines de lucro y estudiantes.</small>'
       }
     },
     updates: {
@@ -151,6 +151,42 @@ export default {
         blog: 'Puedes encontrar artículos útiles en nuestro <a href="{blog_url}" rel="noopener">Blog</a>. Publicamos <strong>tutoriales, consejos y actualizaciones</strong> relacionados con Statusfy.',
         twitter: 'Este proyecto está patrocinado por <a href="{bazzite_url}" target="_blank" rel="noopener">Bazzite</a>, por lo que también puedes seguirnos en <a href="https://www.twitter.com/{twitter_username} "target="_ blank" rel="noopener">@{twitter_username}</a>, donde publicamos actualizaciones y noticias sobre Statusfy y otros temas.'
       }
+    },
+    sponsoring: {
+      title: 'Patrocinio',
+      description: 'Nos encantan los Proyectos de Código Abierto, los usamos todos los días y <strong>Statusfy es nuestra contribución a la Comunidad</strong>. Statusfy es creado y mantenido por <a href="{bazzite_url}" target="_blank" rel="noopener">Bazzite</a>, una Compañía de Sesarrollo de Software, pero nuestros recursos son limitados. Si deseas apoyar nuestro trabajo y ayudarnos a continuar desarrollando este Proyecto Íncreíble, <strong>puedes hacer una donación</strong>, <i>lo apreciaremos</i> ❤️.',
+      howWeUseDonations: {
+        description: 'Así es como utilizamos las donaciones:',
+        items: {
+          team: 'Permitir que el equipo central trabaje en Statusfy.',
+          support: 'Apoyar proyectos externos en el ecosistema.',
+          expenses: 'Cubrir cualquier otro gasto.',
+          contributors: 'Agradecer a los colaboradores si invirtieron una gran cantidad de tiempo contribuyendo.',
+        }
+      },
+      categories: {
+        backers: {
+          title: 'Backers',
+          description: 'Apóyanos con una donación mensual y ayúdanos a continuar nuestras actividades. Puedes comprarnos desde un café ☕️  hasta una muy buena hamburguesa 🍔.',
+          action: 'Conviértete en un Backer'
+        },
+        sponsors: {
+          title: 'Patrocinadores',
+          description: 'Conviértete en Patrocinador y obtén tu logotipo en nuestro <strong>README en Github</strong> con un enlace a tu sitio.',
+          action: 'Conviértete en un Patrocinador'
+        },
+        partners: {
+          title: 'Socios',
+          description: 'Conviértete en Socio y obtén tu logotipo con un enlace a tu sitio en nuestro <strong>README en Github</strong>, <strong>cada página</strong> de <u>docs.statusfy.co</u> y en la <strong>página de inicio y cada publicación del blog</strong> de <u>statusfy.co</u>.',
+          action: 'Conviértete en un Socio'
+        }
+      }
     }
+  },
+  partners: {
+    title: 'Patrocinadores',
+    description: 'Nos gustaría reconocer a estos patrocinadores que nos ayudan a seguir desarollando Statusfy.',
+    supportUs: 'Apóyanos',
+    becomePartner: 'Conviértete en un Socio'
   }
 }

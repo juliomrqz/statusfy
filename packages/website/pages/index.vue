@@ -8,17 +8,20 @@
 
     <GetStarted />
 
+    <Partners />
+
     <LatestPosts :posts="posts" />
   </div>
 </template>
 
 <script>
+import SeoHead from '~/components/mixins/SeoHead'
 import HomeCover from '~/components/common/HomeCover'
 import Features from '~/components/common/Features'
 import HowToUse from '~/components/common/HowToUse'
 import LatestPosts from '~/components/common/LatestPosts'
 import GetStarted from '~/components/common/GetStarted'
-import SeoHead from '~/components/mixins/SeoHead'
+import Partners from '~/components/common/Partners'
 
 export default {
   components: {
@@ -26,7 +29,8 @@ export default {
     Features,
     HowToUse,
     LatestPosts,
-    GetStarted
+    GetStarted,
+    Partners
   },
   mixins: [SeoHead],
   async asyncData({ app }) {

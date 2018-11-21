@@ -1,5 +1,8 @@
 <template>
   <Layout>
+    <div slot="sidebar-top">
+      <Partners mode="sidebar" />
+    </div>
     <div slot="page-bottom">
       <Subscribe />
 

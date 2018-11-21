@@ -15,8 +15,12 @@ const colors = {
   'blue-dark': '#005cc5',
   'blue': '#0366d6',
 
+  'purple-dark': '#5a32a3',
   'purple': '#6f42c1',
+
+  'green-dark': '#22863a',
   'green': '#28a745',
+
   'orange': '#f66a0a',
   'red': '#d73a49',
   'yellow': '#ffd33d'

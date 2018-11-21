@@ -262,3 +262,6 @@ $RECYCLE.BIN/
 
 # Nuxt generate
 dist
+
+
+src/.vuepress/partners.json
