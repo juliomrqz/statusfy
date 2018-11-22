@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run retrieve-partners && npx vuepress dev src",
-    "build": "npm run && retrieve-partners && npx vuepress build src",
+    "build": "npm run retrieve-partners && npx vuepress build src",
     "retrieve-partners": "node scripts/partners.js"
   },
   "engines": {
