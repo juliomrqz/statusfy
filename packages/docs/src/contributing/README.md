@@ -5,17 +5,25 @@ sidebarDepth: 3
 
 # Contribution Guide
 
-Any contribution to Statusfy is more than welcome!
+Statusfy is one of the [Bazzite's][bazzite-home] Open Source Projects that is under very active development. We hope this document makes the process for contributing clear and answers some questions that you may have.
 
-::: tip IMPORTANT
-Please make sure to read our [Code of Conduct][code-of-conduct] before making a contribution.
-:::
-
-Statusfy relies on three Amazing Technologies:
+First, you must know that Statusfy relies on three Amazing Technologies:
 
 - **[Vue.js][vue]:** Dynamically defines the interfaces that represent the data.
 - **[Nuxt.js][nuxt]:** A quickly, flexible and useful abstraction of the client and server logic. It also generates/builds the application.
 - **[Tailwind CSS][tailwind]:** A utility CSS framework that defines the styles in a smart way.
+
+***Any contribution is more than welcome!***
+
+## Code of Conduct
+
+We have adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text][code-of-conduct] so that you can understand what actions will and will not be tolerated.
+
+## Semantic Versioning
+
+Bazzite follows [semantic versioning][semantic-versioning]. We release **patch versions** for bugfixes, **minor versions** for new features, and **major versions** for any breaking changes. 
+
+Every significant change is documented in the [changelog][changelog] file.
 
 ## Reporting Issues
 
@@ -23,11 +31,15 @@ A great way to contribute to the project is to send a detailed report when you e
 
 Please make sure to include a reproduction repository. We can start fixing bugs faster if you provide a project for reproduction.
 
-## Pull Requests
+## Proposing a Change
 
-Any significant improvement (no matter if it's just to fix a typo) should be associated with a [feature request][feature-request] or [bug report][bug-report]. If you require Professional Assistance on your project(s) or want to ask general questions, just go to our [Support Page][support-page].
+Any significant improvement (no matter if it's just to fix a typo) should be associated with a [feature request][feature-request] or [bug report][bug-report]. If you require Professional Support on your project(s) or want to ask general questions, just go to our [Support Page][support-page].
 
-### Getting started
+### Pull Requests
+
+If you intend to add a new feature, we recommend filing [an issue][github-issues]. This lets us reach an agreement on your proposal before you put significant effort into it.
+
+#### Getting started
 
 Install [Node.js][node] (8.1 or higher) and [Yarn][yarn]. It's also recommended to install [Lerna][lerna] globally.
 
@@ -40,7 +52,7 @@ To use **@statusfy/cli** in the repo as a global command. Enter the `./packages/
 
 The Statusfy repository is a [monorepo][monorepo] with multiple [sub-projects/packages](#packages). Before sending a pull request, you should know the task of each sub-project [bellow](#packages).
 
-### Tests
+### Testing
 
 A great **Pull Request** will often include tests. To write great tests, we explain you our testing structure:
 
@@ -81,11 +93,28 @@ You don't have to write documentation up immediately (but please do so as soon a
 
 We're open to any contribution that translates the Statusfy core to other languages. Just use as a base language [this file][english-language] and translate the strings. The new file you create must follow this pattern `lang-default.json` where `lang` is the identification of the language in a two-letter representation (in [ISO 639-1][iso-639-1] format) with an optional region (in [ISO 3166-1 Alpha 2][iso-3166-1-alpha-2] format).
 
+### Contributor License Agreement (CLA)
+
+In order to accept your pull request, we need you to submit a CLA. You only need to do this once. **By signing a contributor license agreement, we ensure that the community is free to use your contributions.**
+
+[**Complete your CLA here.**][cla]
+
 ### Final checklist
 
 When submitting your **Pull Request**, there is a simple template that you have to fill out. Please tick all suitable answers in the checklists.
 
-## Packages
+## License
+
+By contributing to Statusfy, you agree that your contributions will be licensed under its [Apache 2.0][license].
+
+
+## Financial Contribution
+
+We love Open Source Projects, we use them every day and **Statusfy is our contribution to the Community**, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, please donate, we will appreciate it ❤️.
+
+[**Become a Backer, Sponsor or Partner on OpenCollective.**][open-collective]
+
+## Project Structure
 
 Statusfy is a completely opensource project, its repository is a monorepo with multiple sub-projects/packages located at the `./packages` folder.
 
@@ -176,3 +205,10 @@ It's a simple [Nuxt.js][nuxt] application.
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [vue]: http://vuejs.org/
 [tailwind]: https://tailwindcss.com/
+[semantic-versioning]: https://semver.org/
+[bazzite-home]: https://www.bazzite.com?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
+[changelog]: https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md
+[examples]: https://github.com/bazzite/statusfy-examples
+[cla]: https://cla.bazzite.com/bazzite/statusfy
+[license]: https://github.com/bazzite/statusfy/blob/develop/LICENSE
+[open-collective]: https://bazzite.xyz/StatusfyOpenCollective#contribute

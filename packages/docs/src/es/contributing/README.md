@@ -5,17 +5,25 @@ sidebarDepth: 3
 
 # Guía de Contribución
 
-Cualquier contribución a Statusfy es más que bienvenida!
+Statusfy es uno de los proyectos de código abierto de [Bazzite][bazzite-home] que está en activo desarrollo. Esperamos que este documento haga que el proceso de contribución sea claro y que responda algunas preguntas que puedas tener.
 
-::: tip IMPORTANTE
-Asegúrate de leer nuestro [Código de Conducta][code-of-conduct] antes de hacer una contribución.
-:::
-
-Statusfy se basa en tres tecnologías asombrosas:
+Primero, es importante saber que Statusfy se basa en tres tecnologías asombrosas:
 
 - **[Vue.js][vue]:** Define dinámicamente las interfaces que representan los datos.
 - **[Nuxt.js][nuxt]:** Una abstracción rápida, flexible y útil de la lógica del cliente y del servidor. También genera/construye la aplicación.
 - **[Tailwind CSS][tailwind]:** Un Framework CSS de utilidad que define los estilos de una manera inteligente.
+
+***Cualquier contribución a Statusfy es más que bienvenida!***
+
+## Código de Conducta
+
+Hemos adoptado un Código de Conducta que esperamos que los participantes del proyecto cumplan. Lee [el texto completo][code-of-conduct] para que puedas comprender qué acciones serán o no toleradas.
+
+## Versionado Semántico
+
+Bazzite sigue [el Versionado Semántico][semantic-versioning]. Lanzamos **versiones patch** para correcciones de errores, **versiones minor** para nuevas funcionalidades y **versiones major** para cualquier cambio importante.
+
+Cada cambio significativo se documenta en el archivo de [registro de cambios][changelog].
 
 ## Reporte de Incidencia
 
@@ -23,11 +31,15 @@ Una excelente manera de contribuir al proyecto es enviar un reporte detallado cu
 
 Por favor, asegúrate de incluir un repositorio de reproducción. Podemos comenzar a corregir errores más rápido si proporcionas un proyecto para su reproducción.
 
-## Pull Requests
+## Proponer un Cambio
 
 Cualquier mejora significativa (no importa si es solo para corregir un error tipográfico) debe asociarse con una [solicitud de nueva funcionalidad][feature-request] o un [reporte de error][bug-report].
 
-### Primeros Pasos
+### Pull Requests
+
+Si deseas agregar una nueva funcionalidad, te recomendamos que abras un [issue][github-issues]. Esto nos permite llegar a un acuerdo sobre tu propuesta antes de ponerle un gran esfuerzo.
+
+#### Primeros Pasos
 
 Installa [Node.js][node] (8.1 o superior) y [Yarn][yarn]. También se recomienda instalar [Lerna][lerna] a nivel global.
 
@@ -83,11 +95,27 @@ No tienes que escribir la documentación inmediatamente (pero házlo tan pronto 
 
 Estamos abiertos a cualquier contribución que traduzca el núcleo de Statusfy a otros idiomas. Solo usa como idioma base [este archivo][english-language] y traduce las cadenas. El nuevo archivo que se cree debe seguir este patrón `lang-default.json` donde `lang` es la identificación del idioma en una representación de dos letras (en format [ISO 639-1][iso-639-1]) con una región opcional (en formato [ISO 3166-1 Alpha 2][iso-3166-1-alpha-2]).
 
-### Lista de verificación final
+### Acuerdo de Licencia de Colaborador (CLA)
+
+Para aceptar tu pull request, necesitamos que envíes un CLA. Sólo necesitas hacer esto una vez. **Al firmar un cuerdo de Licencia de Colaborador, nos aseguramos de que la comunidad sea libre de utilizar tus contribuciones.**
+
+[**Completa tu CLA aquí**][cla](sólo disponible in Inglés).
+
+### Verificación final
 
 Al enviar tu **Pull Request**, hay una plantilla simple que debes completar. Por favor, marcas todas las respuestas adecuadas en las listas de verificación.
 
-## Paquetes
+## License
+
+By contributing to Statusfy, you agree that your contributions will be licensed under its [Apache 2.0][license].
+
+## Contribución Financiera
+
+Nos encantan los Proyectos de Código Abierto, los usamos todos los días y **Statusfy es nuestra contribución a la Comunidad**, pero nuestros recursos son limitados. Si deseas apoyar nuestro trabajo y ayudarnos a continuar desarrollando este Proyecto Íncreíble, puedes hacer una donación, lo apreciaremos ❤️.
+
+[**Conviértete en un Backer, Patrocinador o Socio en OpenCollective.**][open-collective]
+
+## Estructura del Proyecto
 
 Statusfy es un proyecto completamente abierto, tu repositorio es un monorepo con múltiples subproyectos/paquetes ubicados en la carpeta `./packages`.
 
@@ -181,4 +209,10 @@ Es una aplicación [Nuxt.js][nuxt] simple.
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [vue]: http://vuejs.org/
 [tailwind]: https://tailwindcss.com/
-
+[semantic-versioning]: https://semver.org/lang/es/
+[bazzite-home]: https://www.bazzite.com/es?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
+[changelog]: https://github.com/bazzite/statusfy/blob/master/CHANGELOG.md
+[examples]: https://github.com/bazzite/statusfy-examples
+[cla]: https://cla.bazzite.com/bazzite/statusfy
+[license]: https://github.com/bazzite/statusfy/blob/develop/LICENSE
+[open-collective]: https://bazzite.xyz/StatusfyOpenCollective#contribute
