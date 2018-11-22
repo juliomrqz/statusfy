@@ -6,7 +6,7 @@ updateDocsWhiteList:
 updateDocsComment: >
   Thanks for opening this pull request! The maintainers of this repository would appreciate it if you would update some of our documentation based on your changes.
 requestInfoReplyComment: >
-  We would appreciate it if you could provide us with more info about this issue/pr!
+  We would appreciate it if you could provide us with more info about this issue/pr! Please, follow the issue/pr template.
 requestInfoLabelToAdd: request-more-info
 
 newPRWelcomeComment: >
