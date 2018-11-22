@@ -55,6 +55,10 @@ module.exports = {
     docsDir: 'packages/docs/src',
     docsBranch: 'develop',
     editLinks: true,
+    algolia: process.env.ALGOLIA_APIKEY ? {
+      apiKey: process.env.ALGOLIA_APIKEY,
+      indexName: process.env.ALGOLIA_INDEX_NAME
+    } : null,
     locales: {
       '/': {
         selectText: 'Languages',
