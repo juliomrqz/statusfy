@@ -18,9 +18,7 @@
               v-html="post.content_html"
             />
 
-            <hr
-              class="section-divider block my-12 overflow-visible text-center"
-            >
+            <hr class="section-divider block my-12 overflow-visible text-center">
 
             <div class="text-xl mb-12 italic">
               {{ $t('blog.publishedAt') }}
@@ -31,8 +29,8 @@
               {{ $t('blog.on') }} {{ formatDate(post.created) }}.
             </div>
 
-            <Partners 
-              mode="secondary" 
+            <Partners
+              mode="secondary"
               class="pb-0"/>
 
             <Subscribe class="max-w-md mx-auto"/>
@@ -50,8 +48,7 @@
                   :description="post.description"
                   :twitter-user="twitterUser"
                   class="text-grey-darkest"
-                  inline-template
-                >
+                  inline-template>
                   <div>
                     <network network="twitter">
                       <svgicon

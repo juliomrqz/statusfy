@@ -1,24 +1,18 @@
 <template>
   <div>
     <section
-      :style="
-        `background-image: url(${require('~/assets/img/dividers/inclined-line.svg')});`
-      "
-      class="bg-bottom bg-repeat-x bg-white h-full pb-16"
-    >
+      :style="`background-image: url(${require('~/assets/img/dividers/inclined-line.svg')});`"
+      class="bg-bottom bg-repeat-x bg-white h-full pb-16">
       <div class="container">
         <div
-          class="flex flex-wrap items-center justify-center text-center lg:text-left"
-        >
+          class="flex flex-wrap items-center justify-center text-center lg:text-left">
           <div class="w-full p-4">
             <h1
-              class="text-3xl sm:text-4xl font-semibold leading-none mb-4"
-            >
+              class="text-3xl sm:text-4xl font-semibold leading-none mb-4">
               {{ $t('support.title') }}
             </h1>
             <h2
-              class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2"
-            >
+              class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2">
               {{ $t('support.description') }}
             </h2>
           </div>
@@ -63,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div 
+        <div
           id="updates"
           class="w-full sm:w-full lg:w-1/3 mb-6">
           <div class="relative block lg:mx-4 p-6 bg-white rounded shadow h-full">
@@ -79,8 +73,8 @@
             </div>
           </div>
         </div>
-        <div 
-          id="sponsoring" 
+        <div
+          id="sponsoring"
           class="w-full mx-auto sm:w-full lg:w-2/3">
           <div class="flex flex-col flex-wrap items-stretch">
             <div class="w-full sm:w-full mb-6">

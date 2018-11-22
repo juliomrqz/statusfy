@@ -1,34 +1,27 @@
 <template>
   <section
     id="features"
-    :style="
-      `background-image: url(${require('~/assets/img/dividers/wave-curve.svg')});`
-    "
-    class="bg-bottom bg-repeat-x bg-black py-6 z-10"
-  >
+    :style="`background-image: url(${require('~/assets/img/dividers/wave-curve.svg')});`"
+    class="bg-bottom bg-repeat-x bg-black py-6 z-10">
     <div class="container mt-4 mb-8">
       <div class="text-center text-white mb-8">
         <h2
-          class="text-3xl sm:text-3xl font-semibold leading-none mb-4"
-        >
+          class="text-3xl sm:text-3xl font-semibold leading-none mb-4">
           {{ $t('features.title') }}
         </h2>
 
         <p
-          class="max-w-md mx-auto text-xl sm:text-2xl text-blue-darker font-normal leading-tight mb-8"
-        >
+          class="max-w-md mx-auto text-xl sm:text-2xl text-blue-darker font-normal leading-tight mb-8">
           {{ $t('features.description') }}
         </p>
       </div>
 
       <div
-        class="flex flex-wrap lg:text-center bg-white rounded my-6 shadow p-6 h-full"
-      >
+        class="flex flex-wrap lg:text-center bg-white rounded my-6 shadow p-6 h-full">
         <div
           v-for="(feature, key) in features"
           :key="key"
-          class="w-full sm:w-1/2 lg:w-1/3 px-6 py-2"
-        >
+          class="w-full sm:w-1/2 lg:w-1/3 px-6 py-2">
           <div
             :class="`text-${feature.color}`"
             class="mb-8">
