@@ -5,6 +5,7 @@ const helmet = require('helmet')
 const { Nuxt } = require('nuxt')
 
 const language = require('./middlewares/language')
+const sitemap = require('./extra/sitemap')
 const buildApiRouter = require('./api')
 
 module.exports = async function createApp (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
@@ -42,6 +43,7 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port, a
     app.use(require('serve-static')(nuxtConfig.statusfy.publicFilesPath))
   }
 
+  app.use('/sitemap.xml', sitemap)
   app.use(`${apiPrefix}/api/v0`, buildApiRouter(siteConfig))
 
   if (nuxtConfig) {

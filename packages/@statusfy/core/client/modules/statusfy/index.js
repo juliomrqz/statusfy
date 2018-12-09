@@ -2,6 +2,7 @@ const fs = require('fs')
 const defaultsDeep = require('lodash/defaultsDeep')
 
 const { logger, fse, path } = require('@statusfy/common')
+const createSitemap = require('../../../lib/content/sitemap')
 const createServer = require('../../../server')
 const buildContent = require('./build')
 
@@ -90,6 +91,18 @@ module.exports = async function Statusfy () {
 
   this.nuxt.hook('generate:done', async generator => {
     await copyPublicFiles(statusfyOptions.publicFilesPath, this.options.generate.dir)
+
+    /* Sitemap */
+    const sitemap = await createSitemap(statusfyOptions.siteConfig)
+    const xmlPath = path.join(this.options.generate.dir, 'sitemap.xml')
+
+    // Ensure no sitemap file exists
+    await fse.remove(xmlPath)
+    await fse.ensureFile(xmlPath)
+
+    await fse.writeFile(xmlPath, sitemap)
+
+    logger.success('Generated /sitemap.xml')
   })
 }
 
