@@ -3,6 +3,7 @@ const defaultsDeep = require('lodash/defaultsDeep')
 
 const { logger, fse, path } = require('@statusfy/common')
 const createSitemap = require('../../../lib/content/sitemap')
+const createFeeds = require('../../../lib/content/feeds')
 const createServer = require('../../../server')
 const buildContent = require('./build')
 
@@ -103,6 +104,34 @@ module.exports = async function Statusfy () {
     await fse.writeFile(xmlPath, sitemap)
 
     logger.success('Generated /sitemap.xml')
+
+    /* Feeds */
+    const generateFeeds = async index => {
+      const lang = index || statusfyOptions.siteConfig.defaultLocale
+      const feeds = await createFeeds(statusfyOptions.siteConfig, lang)
+      const postfix = index ? `.${lang}` : ''
+
+      const rssPath = path.join(this.options.generate.dir, 'feeds', `incidents${postfix}.xml`)
+      const atomPath = path.join(this.options.generate.dir, 'feeds', `incidents${postfix}.atom`)
+
+      // Ensure no feed file exists
+      await fse.remove(rssPath)
+      await fse.ensureFile(rssPath)
+      await fse.remove(atomPath)
+      await fse.ensureFile(atomPath)
+
+      await fse.writeFile(rssPath, feeds.rss())
+      await fse.writeFile(atomPath, feeds.atom())
+
+      logger.success(`Generated /feeds/incidents${postfix}.xml`)
+      logger.success(`Generated /feeds/incidents${postfix}.atom`)
+    }
+
+    await generateFeeds()
+
+    for (const locale of statusfyOptions.locales) {
+      await generateFeeds(locale.code)
+    }
   })
 }
 

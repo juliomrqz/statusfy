@@ -6,6 +6,7 @@ const { Nuxt } = require('nuxt')
 
 const language = require('./middlewares/language')
 const sitemap = require('./extra/sitemap')
+const feeds = require('./extra/feeds')
 const buildApiRouter = require('./api')
 
 module.exports = async function createApp (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
@@ -44,6 +45,7 @@ module.exports = async function createApp (siteConfig, nuxtConfig, host, port, a
   }
 
   app.use('/sitemap.xml', sitemap)
+  app.use(feeds)
   app.use(`${apiPrefix}/api/v0`, buildApiRouter(siteConfig))
 
   if (nuxtConfig) {

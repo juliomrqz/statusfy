@@ -47,6 +47,7 @@
     "cross-spawn": "^6.0.5",
     "dayjs": "^1.7.7",
     "express": "^4.15.3",
+    "feed": "^2.0.1",
     "helmet": "^3.14.0",
     "inquirer": "^6.2.0",
     "locale-code": "^2.0.1",
