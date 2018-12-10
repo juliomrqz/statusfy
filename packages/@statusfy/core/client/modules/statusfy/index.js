@@ -82,7 +82,7 @@ module.exports = async function Statusfy () {
       })
     }
 
-    // Build dynamic content pages
+    // Build dynamic content
     await buildContent(this, isStatic)
   })
 
