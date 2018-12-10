@@ -1,11 +1,13 @@
 <template>
   <div
-    :class="`${incident.severity} ${resolved.value ? 'resolved' : 'unresolved'}`"
+    :class="`${incident.severity}${resolved.value ? ' resolved' : ' unresolved'}${incident.scheduled ? ' scheduled' : ''}`"
     class="incident">
     <div
       :class="`level-${level}`"
       class="incident-header">
-      <div class="incident-title">
+      <div
+        v-if="!incident.scheduled"
+        class="incident-title">
         <span class="badge">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
@@ -16,6 +18,15 @@
             {{ incident.title }}
           </component>
         </nuxt-link>
+      </div>
+      <div
+        v-else
+        class="incident-title">
+        <template>
+          <component :is="`h${level}`">
+            {{ incident.title }}
+          </component>
+        </template>
       </div>
 
       <div class="incident-systems">
@@ -29,16 +40,23 @@
     </div>
 
     <div class="incident-subtitle">
-      <div class="status">
+      <div
+        v-if="!incident.scheduled"
+        class="status">
         <svgicon
           :name="`fortawesome/${status.icon}`"
           class="svg-inline--fa fa-w-16"/>
         {{ status.title }}
       </div>
 
-      <div>
+      <div v-if="!incident.scheduled">
         <nice-date
           :date="incident.date"
+          format="long" />
+      </div>
+      <div v-else>
+        <nice-date
+          :date="incident.scheduled"
           format="long" />
       </div>
     </div>
@@ -86,6 +104,10 @@ export default {
       required: true
     },
     summary: {
+      type: Boolean,
+      default: false
+    },
+    scheduled: {
       type: Boolean,
       default: false
     },

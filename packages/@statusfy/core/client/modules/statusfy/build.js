@@ -63,8 +63,12 @@ module.exports = async function buildContent (nuxt, isStatic) {
 
             incidents.forEach(incident => {
               compilation.assets[`${pathPrefix}/incidents/${incident.id}.${locale.code}.json`] =
-              asset(incident)
+                asset(incident)
             })
+
+            // Scheduled
+            compilation.assets[`${pathPrefix}/scheduled.${locale.code}.json`] =
+              asset(database.scheduled(locale.code))
           })
 
           cb()

@@ -46,4 +46,8 @@ export default class API {
   async getIncidentsTimeline () {
     return this.axios.$get(this.buildUrl('/incidents/timeline'))
   }
+
+  async getScheduled () {
+    return this.axios.$get(this.buildUrl('/scheduled'))
+  }
 }

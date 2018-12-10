@@ -33,15 +33,17 @@ class Incident {
     this.content = md.render(fileContent)
 
     // Save properties
-    const frontmatter = md.frontmatter
-    this.title = frontmatter.title
-    this.description = frontmatter.description
-    this.date = frontmatter.date
-    this.modified = frontmatter.modified
-    this.severity = frontmatter.severity
-    this.affectedsystems = frontmatter.affectedsystems
-    this.resolved = frontmatter.resolved
-    this.id = frontmatter.id
+    const matter = md.frontmatter
+    this.title = matter.title
+    this.description = matter.description
+    this.date = matter.date
+    this.modified = matter.modified
+    this.scheduled = matter.scheduled
+    this.duration = matter.duration ? Math.ceil(matter.duration) : undefined
+    this.severity = matter.severity
+    this.affectedsystems = matter.affectedsystems
+    this.resolved = matter.resolved
+    this.id = matter.id
 
     if (!this.id) {
       this.id = hash(fileName)
@@ -55,6 +57,8 @@ class Incident {
       description: this.description,
       date: this.date,
       modified: this.modified,
+      scheduled: this.scheduled,
+      duration: this.duration,
       severity: this.severity,
       affectedsystems: this.affectedsystems,
       resolved: this.resolved,
@@ -104,6 +108,7 @@ const readFileIncidents = async (dirPath) => {
 
 const getIncidents = async (siteConfig) => {
   const incidents = {}
+  const scheduled = {}
 
   // Retrieve incidents for each language
   for (let i = 0; i < siteConfig.locales.length; i++) {
@@ -121,11 +126,28 @@ const getIncidents = async (siteConfig) => {
       localeIncidents = await readFileIncidents(contentPath)
     }
 
-    incidents[locale.code] = localeIncidents
+    incidents[locale.code] = localeIncidents.filter(i => {
+      if (i.severity === 'under-maintenance' && i.scheduled && i.duration) {
+        return new Date(i.scheduled) < new Date()
+      } else {
+        return true
+      }
+    })
+    scheduled[locale.code] = localeIncidents.filter(i => {
+      if (i.severity === 'under-maintenance' && i.scheduled && i.duration) {
+        return new Date(i.scheduled) >= new Date()
+      } else {
+        return false
+      }
+    })
+
     cache.set(cacheKey, localeIncidents)
   }
 
-  return incidents
+  return {
+    incidents,
+    scheduled
+  }
 }
 
 const getPaginatedItems = (items, page = 1, pageSize = 10) => {
@@ -144,8 +166,9 @@ const getPaginatedItems = (items, page = 1, pageSize = 10) => {
 }
 
 module.exports = async function database (siteConfig, finalDate) {
-  const incidents = await getIncidents(siteConfig)
+  const { incidents, scheduled } = await getIncidents(siteConfig)
   const sortIncidents = (incidents) => sortBy(incidents, o => -Number(new Date(o.date)))
+  const sortScheduled = (scheduled) => sortBy(scheduled, o => -Number(new Date(o.scheduled)))
 
   return {
     incidents (lang, page = 1, pageSize = 10) {
@@ -276,6 +299,15 @@ module.exports = async function database (siteConfig, finalDate) {
       })
 
       return systems
+    },
+    scheduled (lang) {
+      const sortedScheduled = sortScheduled(scheduled[lang])
+      const paginatedScheduled = getPaginatedItems(sortedScheduled, 1, -1)
+
+      return {
+        count: sortedScheduled.length,
+        incidents: paginatedScheduled.data
+      }
     }
   }
 }

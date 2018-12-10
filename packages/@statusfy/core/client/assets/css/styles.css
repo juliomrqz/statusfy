@@ -31,8 +31,8 @@ main {
   background-color: var(--grey-darkest);
 }
 
-/* timeline */
-.timeline-container {
+.timeline-container,
+.scheduled-container {
   @apply mt-6;
 
   > h2 {
@@ -40,6 +40,7 @@ main {
   }
 }
 
+/* timeline */
 .timeline {
   @apply list-reset m-0 p-0;
 }
@@ -258,6 +259,13 @@ main {
       .badge {
         background-color: var(--green);
       }
+    }
+  }
+
+  &.scheduled {
+    .incident-title {
+      display: block;
+      text-align: center;
     }
   }
 }

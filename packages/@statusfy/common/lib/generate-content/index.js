@@ -27,7 +27,9 @@ id: <%= data.id %>
 title: <%= data.title[lang] %>
 description: <%= data.content[lang] %>
 date: <%= data.date %>
-modified: <%= data.modified %>
+modified: <%= data.modified %><% if (typeof(data.scheduled) !== 'undefined') { %>
+scheduled: <%= data.scheduled %>
+duration: 30<% } %>
 severity: <%= data.severity %>
 resolved: <%= data.resolved %>
 affectedsystems:
@@ -56,8 +58,8 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
       monthSubtraction += 1
     }
 
-    const titleIndex = getId(i, data.title.en.length)
-    const contentIndex = getId(i, data.content.en.length)
+    const titleIndex = i === 1 ? (data.title.en.length - 1) : getId(i, data.title.en.length - 1)
+    const contentIndex = i === 1 ? (data.content.en.length - 1) : getId(i, data.content.en.length - 1)
     const updatesContentIds = [
       getId(i, data.updates.content.en.length),
       getId(i + 1, data.updates.content.en.length),
@@ -71,8 +73,9 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
       id: hash(i),
       date: date.toISOString(),
       modified: date.add(2, 'h').toISOString(),
-      resolved: i > 1,
-      severity: severities[getId(i, 4)],
+      scheduled: i === 1 ? moment(finalDate).add(7, 'd').toISOString() : undefined,
+      resolved: i > 2,
+      severity: i === 1 ? severities[0] : severities[getId(i, 4)],
       affectedsystems: data.affectedsystems.slice(0, getId(i, 4) + 1),
       title: {
         en: data.title.en[titleIndex],
@@ -82,7 +85,7 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
         en: data.content.en[contentIndex],
         es: data.content.es[contentIndex]
       },
-      updates: [
+      updates: i === 1 ? [] : [
         {
           date: date.add(2, 'h').toISOString(),
           title: {
@@ -117,7 +120,6 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
           }
         }
       ]
-
     }
 
     // Write File

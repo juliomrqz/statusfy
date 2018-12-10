@@ -24,6 +24,7 @@
   "incidents": {
     "incidents": "Incidents",
     "incident": "Incident",
+    "scheduled": "Scheduled Maintenance",
     "incidents-history": "Incidents History",
     "incidents-history-description": "Current & Historical operational interruptions to our service.",
     "latest-incidents": "Latest Incidents",

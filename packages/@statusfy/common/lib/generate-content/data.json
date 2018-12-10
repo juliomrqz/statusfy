@@ -13,7 +13,8 @@
       "Systems are currently down.",
       "The API system is experimenting some issues",
       "We detected a networking problem that caused temporary issues for our API and origin servers.",
-      "We will be deploying the next version."
+      "We will be deploying the next version.",
+      "A network maintenance will be performed during 30 minutes. Short website access interruption is expected from this maintenance."
     ],
     "es": [
       "Nuestro proceso de conversión de archivos respondía lentamente.",
@@ -22,7 +23,8 @@
       "Los sistemas están actualmente desconectados",
       "El sistema API está experimentando algunos problemas",
       "Detectamos un problema de red que causaba problemas temporales para nuestra API y servidores de origen.",
-      "Implementaremos la próxima versión."
+      "Implementaremos la próxima versión.",
+      "Se realizará un mantenimiento de la red durante 30 minutos. Se espera una corta interrupción del acceso al sitio web."
     ]
   },
   "updates": {
@@ -77,7 +79,8 @@
       "Networking Issues",
       "Origin Server Errors",
       "Planned Maintenance",
-      "Systems are down"
+      "Systems are down",
+      "Network Maintenance"
     ],
     "es": [
       "Problemas de la API",
@@ -86,7 +89,8 @@
       "Problemas de Red",
       "Errores del Servidor de Origen",
       "Mantenimiento Planificado",
-      "Los sistemas están caídos"
+      "Los sistemas están caídos",
+      "Mantenimiento de Red"
     ]
   }
 }
