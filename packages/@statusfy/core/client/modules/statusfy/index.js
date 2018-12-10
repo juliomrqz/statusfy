@@ -107,13 +107,11 @@ module.exports = async function Statusfy () {
     logger.success('Generated /sitemap.xml')
 
     /* Feeds */
-    const generateFeeds = async index => {
-      const lang = index || statusfyOptions.siteConfig.defaultLocale
-      const feeds = await createFeeds(statusfyOptions.siteConfig, lang)
-      const postfix = index ? `.${lang}` : ''
+    for (const locale of statusfyOptions.locales) {
+      const feeds = await createFeeds(statusfyOptions.siteConfig, locale.code)
 
-      const rssPath = path.join(this.options.generate.dir, 'feeds', `incidents${postfix}.xml`)
-      const atomPath = path.join(this.options.generate.dir, 'feeds', `incidents${postfix}.atom`)
+      const rssPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.xml`)
+      const atomPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.atom`)
 
       // Ensure no feed file exists
       await fse.remove(rssPath)
@@ -124,14 +122,8 @@ module.exports = async function Statusfy () {
       await fse.writeFile(rssPath, feeds.rss())
       await fse.writeFile(atomPath, feeds.atom())
 
-      logger.success(`Generated /feeds/incidents${postfix}.xml`)
-      logger.success(`Generated /feeds/incidents${postfix}.atom`)
-    }
-
-    await generateFeeds()
-
-    for (const locale of statusfyOptions.locales) {
-      await generateFeeds(locale.code)
+      logger.success(`Generated /feeds/incidents.${locale.code}.xml`)
+      logger.success(`Generated /feeds/incidents.${locale.code}.atom`)
     }
 
     /* Calendars */

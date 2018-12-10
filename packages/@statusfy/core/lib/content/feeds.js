@@ -13,7 +13,7 @@ const buildFeed = (database, siteConfig, lang, isAtom = false) => {
     updated: new Date(),
     generator: 'Statusfy',
     feedLinks: {
-      atom: `${baseUrl}/feeds/incidents.${lang}.${isAtom ? 'atom' : 'xml'}`
+      atom: `${siteConfig.baseUrl}/feeds/incidents.${lang}.${isAtom ? 'atom' : 'xml'}`
     }
   })
 
