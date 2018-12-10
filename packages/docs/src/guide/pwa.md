@@ -72,7 +72,7 @@ Statusfy creates a valid [Web App Manifest](https://developers.google.com/web/fu
     "background_color": "#ffffff",
     "theme_color": "#1b1f23",
     "lang": "en",
-    "version": "0.2.0-alpha.2"
+    "version": "0.2.0-alpha.3"
 }
 ```
 
