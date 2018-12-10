@@ -20,5 +20,11 @@ module.exports = {
   },
   serviceWorker: true,
   manifest: true,
-  theme: {}
+  theme: {},
+  notifications: {
+    icalendar: true,
+    feeds: true,
+    twitter: false,
+    support: false
+  }
 }

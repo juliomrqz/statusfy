@@ -75,5 +75,27 @@
         "description": "Los puntos finales del API a los que cualquier desarrollador puede acceder"
       }
     }
+  },
+  "notifications": {
+    "subscribe": "Suscribirse",
+    "close": "Cerrar",
+    "items": {
+      "icalendar": {
+        "title": "Calendario",
+        "description": "Recibe <strong>Mantenimientos Programados</strong> a través de <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">iCalendar</a>."
+      },
+      "feeds": {
+        "title": "Feeds",
+        "description": "Obtén feeds <a href=\"{atom_url}\" target=\"_blank\" rel=\"noopener\">Atom</a> o <a href=\"{rss_url}\" target=\"_blank\" rel=\"noopener\">RSS</a>."
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "o <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">visita Nuestro Perfil</a>."
+      },
+      "support": {
+        "title": "Soporte",
+        "description": "Visita nuestro <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Sitio de Soporte</a>."
+      }
+    }
   }
 }

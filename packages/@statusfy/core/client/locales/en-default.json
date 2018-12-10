@@ -75,5 +75,27 @@
         "description": "The API Endpoints any developers can access to"
       }
     }
+  },
+  "notifications": {
+    "subscribe": "Subscribe",
+    "close": "Close",
+    "items": {
+      "icalendar": {
+        "title": "Calendar",
+        "description": "Receive <strong>Scheduled Maintenances</strong> via <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">iCalendar</a>."
+      },
+      "feeds": {
+        "title": "Feeds",
+        "description": "Get <a href=\"{atom_url}\" target=\"_blank\" rel=\"noopener\">the Atom Feed</a> or <a href=\"{rss_url}\" target=\"_blank\" rel=\"noopener\">the RSS Feed</a>."
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "or <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">view our Profile</a>."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Visit our <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Support Site</a>."
+      }
+    }
   }
 }

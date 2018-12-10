@@ -107,39 +107,43 @@ module.exports = async function Statusfy () {
     logger.success('Generated /sitemap.xml')
 
     /* Feeds */
-    for (const locale of statusfyOptions.locales) {
-      const feeds = await createFeeds(statusfyOptions.siteConfig, locale.code)
+    if (statusfyOptions.siteConfig.notifications && statusfyOptions.siteConfig.notifications.feeds) {
+      for (const locale of statusfyOptions.locales) {
+        const feeds = await createFeeds(statusfyOptions.siteConfig, locale.code)
 
-      const rssPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.xml`)
-      const atomPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.atom`)
+        const rssPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.xml`)
+        const atomPath = path.join(this.options.generate.dir, 'feeds', `incidents.${locale.code}.atom`)
 
-      // Ensure no feed file exists
-      await fse.remove(rssPath)
-      await fse.ensureFile(rssPath)
-      await fse.remove(atomPath)
-      await fse.ensureFile(atomPath)
+        // Ensure no feed file exists
+        await fse.remove(rssPath)
+        await fse.ensureFile(rssPath)
+        await fse.remove(atomPath)
+        await fse.ensureFile(atomPath)
 
-      await fse.writeFile(rssPath, feeds.rss())
-      await fse.writeFile(atomPath, feeds.atom())
+        await fse.writeFile(rssPath, feeds.rss())
+        await fse.writeFile(atomPath, feeds.atom())
 
-      logger.success(`Generated /feeds/incidents.${locale.code}.xml`)
-      logger.success(`Generated /feeds/incidents.${locale.code}.atom`)
+        logger.success(`Generated /feeds/incidents.${locale.code}.xml`)
+        logger.success(`Generated /feeds/incidents.${locale.code}.atom`)
+      }
     }
 
     /* Calendars */
-    for (const locale of statusfyOptions.locales) {
-      const lang = locale.code
-      const calPath = path.join(this.options.generate.dir, 'calendars', `scheduled.${locale.code}.ics`)
+    if (statusfyOptions.siteConfig.notifications && statusfyOptions.siteConfig.notifications.icalendar) {
+      for (const locale of statusfyOptions.locales) {
+        const lang = locale.code
+        const calPath = path.join(this.options.generate.dir, 'calendars', `scheduled.${locale.code}.ics`)
 
-      const content = await createCalendar(statusfyOptions.siteConfig, lang)
+        const content = await createCalendar(statusfyOptions.siteConfig, lang)
 
-      // Ensure no calendar file exists
-      await fse.remove(calPath)
-      await fse.ensureFile(calPath)
+        // Ensure no calendar file exists
+        await fse.remove(calPath)
+        await fse.ensureFile(calPath)
 
-      await fse.writeFile(calPath, content)
+        await fse.writeFile(calPath, content)
 
-      logger.success(`Generated /calendars/scheduled.${locale.code}.ics`)
+        logger.success(`Generated /calendars/scheduled.${locale.code}.ics`)
+      }
     }
   })
 }

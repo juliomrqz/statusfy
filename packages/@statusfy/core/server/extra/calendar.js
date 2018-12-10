@@ -5,6 +5,11 @@ const createCalendar = require('../../lib/content/calendar')
 
 router.get('/calendars/scheduled.:lang.ics', async (req, res, next) => {
   const siteConfig = req.app.get('siteConfig')
+
+  if (!siteConfig.notifications || !siteConfig.notifications.icalendar) {
+    next()
+  }
+
   const { lang } = req.params
 
   try {

@@ -1,21 +1,29 @@
 <template>
-  <div class="py-4 my-2 flex flex-col items-center md:flex-row">
-    <nuxt-link :to="localePath('index')">
+  <div class="header">
+    <nuxt-link
+      :to="localePath('index')"
+      class="logo-container">
       <img
         :alt="$t('title')"
         :src="$statusfy.assets.mainLogo"
-        class="h-10">
+        class="logo">
     </nuxt-link>
     <component
       :is="titleTag"
-      class="title font-normal mx-4 my-2 text-xl">
+      class="title">
       {{ $t('title') }}
     </component>
+    <Subscribe class="subscribe-container"/>
   </div>
 </template>
 
 <script>
+import Subscribe from './Subscribe'
+
 export default {
+  components: {
+    Subscribe
+  },
   props: {
     titleTag: {
       type: String,

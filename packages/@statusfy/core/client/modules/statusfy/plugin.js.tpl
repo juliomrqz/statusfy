@@ -64,7 +64,8 @@ export default (ctx, inject) => {
     },
     iconSizes: [<%= options.iconSizes.join(', ') %>],
     theme: <%= serialize(options.siteConfig.theme) %>,
-    baseUrl: <%= serialize(options.siteConfig.baseUrl) %>
+    baseUrl: <%= serialize(options.siteConfig.baseUrl) %>,
+    notifications: <%= serialize(options.siteConfig.notifications) %>
   }
 
   // Inject Statusfy to the context as $statusfy

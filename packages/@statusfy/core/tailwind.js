@@ -292,7 +292,7 @@ module.exports = {
   */
 
   height: {
-    // 'auto': 'auto',
+    'auto': 'auto',
     // 'px': '1px',
     // '1': '0.25rem',
     // '2': '0.5rem',
@@ -350,7 +350,7 @@ module.exports = {
   maxWidth: {
     'xs': '20rem',
     'sm': '30rem',
-    // 'md': '40rem',
+    'md': '40rem',
     // 'lg': '50rem',
     // 'xl': '60rem',
     // '2xl': '70rem',
@@ -463,9 +463,9 @@ module.exports = {
 
   shadows: {
     default: '0 .125rem .25rem rgba(0,0,0,.075)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)'
+    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     // 'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    // 'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)'
     // 'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     // 'none': 'none'
   },
@@ -481,11 +481,11 @@ module.exports = {
   zIndex: {
     'auto': 'auto',
     '0': 0,
-    '10': 10
+    '10': 10,
     // '20': 20,
     // '30': 30,
     // '40': 40,
-    // '50': 50
+    '50': 50
   },
 
   /*
@@ -576,7 +576,7 @@ module.exports = {
     negativeMargin: false,
     opacity: [],
     outline: ['focus'],
-    overflow: false,
+    overflow: [],
     padding: [],
     pointerEvents: false,
     position: [],
@@ -590,7 +590,7 @@ module.exports = {
     textStyle: false,
     tracking: false,
     userSelect: false,
-    verticalAlign: false,
+    verticalAlign: [],
     visibility: false,
     whitespace: false,
     width: ['responsive'],

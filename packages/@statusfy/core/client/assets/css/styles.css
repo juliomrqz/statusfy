@@ -457,3 +457,85 @@ main {
     }
   }
 }
+
+/* Header */
+.header {
+  @apply pt-4 my-2 flex flex-col items-center content-center flex-no-wrap;
+
+  @screen lg {
+    @apply flex-row items-stretch;
+  }
+
+  .logo-container {
+    @apply flex-none;
+  }
+
+  .logo {
+    @apply h-10;
+  }
+
+  .title {
+    @apply font-normal mx-4 my-2 text-xl flex-none;
+  }
+
+  .subscribe-container {
+    @apply flex-1 text-right my-2;
+
+    @screen lg {
+      @apply my-0;
+    }
+
+    .modal-container {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      @apply fixed z-50 pin overflow-auto flex;
+    }
+
+    .modal-body {
+      background-color: var(--white);
+
+      /* @apply fixed shadow-inner max-w-md pin-b pin-x align-top m-auto justify-end p-8 w-full flex flex-col; */
+      @apply fixed shadow-inner max-w-md pin-b pin-x align-top m-auto justify-end w-full flex flex-col rounded-t;
+
+      @screen md {
+        @apply justify-center rounded h-auto shadow relative rounded;
+      }
+
+      .tabs-header {
+        @apply flex flex-col flex-no-wrap items-stretch content-center justify-between pt-2;
+
+        @screen md {
+          @apply flex-row;
+        }
+
+        > span {
+          color: var(--grey-dark);
+
+          @apply flex-1 text-center font-medium py-3 cursor-pointer mx-4;
+
+          &:hover {
+            color: var(--grey-darkest);
+          }
+
+          &.active {
+            color: var(--black);
+            @apply flex-1 text-center font-semibold;
+
+            @screen md {
+              border-bottom-color: var(--black);
+              @apply border-b-2;
+            }
+          }
+        }
+      }
+
+      .tabs-container {
+        @apply flex flex-col items-center my-6;
+
+        > div {
+          @apply flex items-center py-6 text-center;
+        }
+      }
+    }
+  }
+}

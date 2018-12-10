@@ -41,5 +41,15 @@ module.exports = {
         home: "https://statusfy.co/es"
       }
     }
+  },
+  notifications: {
+    twitter: {
+      en: "BazziteTech",
+      es: "BazziteES"
+    },
+    support: {
+      en: "https://statusfy.co/support",
+      es: "https://statusfy.co/es/support"
+    }
   }
 }

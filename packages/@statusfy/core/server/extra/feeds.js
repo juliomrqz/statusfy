@@ -5,6 +5,11 @@ const createFeeds = require('../../lib/content/feeds')
 
 router.get('/feeds/incidents.:lang.:ext', async (req, res, next) => {
   const siteConfig = req.app.get('siteConfig')
+
+  if (!siteConfig.notifications || !siteConfig.notifications.feeds) {
+    next()
+  }
+
   const { lang, ext } = req.params
 
   try {
