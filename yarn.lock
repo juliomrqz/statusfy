@@ -7888,6 +7888,11 @@ hoek@4.x.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
   integrity sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
 
+hoek@6.x.x:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-6.1.2.tgz#99e6d070561839de74ee427b61aa476bd6bddfd6"
+  integrity sha512-6qhh/wahGYZHFSFw12tBbJw5fsAhhwrrG/y3Cs0YMTv2WzMnL0oLPnQJjv1QJvEfylRSOFuP+xCu+tdx0tD16Q==
+
 hogan.js@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/hogan.js/-/hogan.js-3.0.2.tgz#4cd9e1abd4294146e7679e41d7898732b02c7bfd"
@@ -8138,6 +8143,16 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+ics@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ics/-/ics-2.10.0.tgz#a1c74ca5e57f62be7571928272a1c8b860678757"
+  integrity sha512-TdHLtzcjxCfDoMhR/wZ4BV3Dbl+/RpwbMf1aoZRm3/8aJhY00pLBn6rPYWLDPqu0sA31J0XbXqoxcg2ilEfE6w==
+  dependencies:
+    joi "^14.0.1"
+    lodash "^4.17.4"
+    moment "^2.18.1"
+    uuid "^3.1.0"
 
 icss-replace-symbols@^1.1.0:
   version "1.1.0"
@@ -9292,6 +9307,15 @@ joi@^11.1.1:
     hoek "4.x.x"
     isemail "3.x.x"
     topo "2.x.x"
+
+joi@^14.0.1:
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-14.3.0.tgz#55f7c5caa8256de74ccb12eb22ab1c19eea02db3"
+  integrity sha512-0HKd1z8MWogez4GaU0LkY1FgW30vR2Kwy414GISfCU41OYgUC2GWpNe5amsvBZtDqPtt7DohykfOOMIw1Z5hvQ==
+  dependencies:
+    hoek "6.x.x"
+    isemail "3.x.x"
+    topo "3.x.x"
 
 jpeg-js@^0.3.4:
   version "0.3.4"
@@ -10606,7 +10630,7 @@ moment-range@^4.0.1:
   dependencies:
     es6-symbol "^3.1.0"
 
-moment@^2.22.2:
+moment@^2.18.1, moment@^2.22.2:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
   integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
@@ -15270,6 +15294,13 @@ topo@2.x.x:
   integrity sha1-zVYVdSU5BXwNwEkaYhw7xvvh0YI=
   dependencies:
     hoek "4.x.x"
+
+topo@3.x.x:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/topo/-/topo-3.0.3.tgz#d5a67fb2e69307ebeeb08402ec2a2a6f5f7ad95c"
+  integrity sha512-IgpPtvD4kjrJ7CRA3ov2FhWQADwv+Tdqbsf1ZnPUSAtCJ9e1Z44MmoSGDXGk4IppoZA7jd/QRkNddlLJWlUZsQ==
+  dependencies:
+    hoek "6.x.x"
 
 toposort@^1.0.0:
   version "1.0.7"

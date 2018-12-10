@@ -4,6 +4,7 @@ const defaultsDeep = require('lodash/defaultsDeep')
 const { logger, fse, path } = require('@statusfy/common')
 const createSitemap = require('../../../lib/content/sitemap')
 const createFeeds = require('../../../lib/content/feeds')
+const createCalendar = require('../../../lib/content/calendar')
 const createServer = require('../../../server')
 const buildContent = require('./build')
 
@@ -131,6 +132,22 @@ module.exports = async function Statusfy () {
 
     for (const locale of statusfyOptions.locales) {
       await generateFeeds(locale.code)
+    }
+
+    /* Calendars */
+    for (const locale of statusfyOptions.locales) {
+      const lang = locale.code
+      const calPath = path.join(this.options.generate.dir, 'calendars', `scheduled.${locale.code}.ics`)
+
+      const content = await createCalendar(statusfyOptions.siteConfig, lang)
+
+      // Ensure no calendar file exists
+      await fse.remove(calPath)
+      await fse.ensureFile(calPath)
+
+      await fse.writeFile(calPath, content)
+
+      logger.success(`Generated /calendars/scheduled.${locale.code}.ics`)
     }
   })
 }
