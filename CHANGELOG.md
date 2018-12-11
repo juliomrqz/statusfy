@@ -1,3 +1,28 @@
+# [0.2.0](https://github.com/statusfy/statusfy/compare/v0.1.3...v0.2.0) (2018-12-11)
+
+
+### Bug Fixes
+
+* downgrade prettier to 1.14.3 ([e0023c3](https://github.com/statusfy/statusfy/commit/e0023c3))
+* **core:** exclude the dynamic pages building from the SSR mode ([28ed4eb](https://github.com/statusfy/statusfy/commit/28ed4eb))
+* **package:** update [@nuxtjs/opencollective](https://github.com/nuxt/opencollective) to version 0.2.0 ([#76](https://github.com/statusfy/statusfy/issues/76)) ([15776b9](https://github.com/statusfy/statusfy/commit/15776b9))
+
+
+### Features
+
+* support contributions from Open Collective ([257261f](https://github.com/statusfy/statusfy/commit/257261f))
+* **core:** create the subscriptions sub-section ([b798439](https://github.com/statusfy/statusfy/commit/b798439))
+* **core:** support iCalendar generation from scheduled incidents ([c139aad](https://github.com/statusfy/statusfy/commit/c139aad))
+* **core:** support RSS and Atom feeds generation ([81371e2](https://github.com/statusfy/statusfy/commit/81371e2))
+* **core:** support Scheduled Maintenance definition ([2edbe9e](https://github.com/statusfy/statusfy/commit/2edbe9e))
+* **core:** support sitemap generation ([965f496](https://github.com/statusfy/statusfy/commit/965f496))
+* **docs:** create the incidents sub-section ([cbc5539](https://github.com/statusfy/statusfy/commit/cbc5539))
+* **docs:** create the Notifications sub-section ([7fa8959](https://github.com/statusfy/statusfy/commit/7fa8959))
+* **docs:** improve the Contribution Guide ([1d9bcdd](https://github.com/statusfy/statusfy/commit/1d9bcdd))
+* **docs:** support Algolia DocSearch ([9cd9bdb](https://github.com/statusfy/statusfy/commit/9cd9bdb))
+
+
+
 ## [0.1.3](https://github.com/statusfy/statusfy/compare/v0.1.2...v0.1.3) (2018-11-20)
 
 

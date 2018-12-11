@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/common",
-  "version": "0.2.0-alpha.5",
+  "version": "0.2.0",
   "description": "Shared Utils for Statusfy",
   "main": "index.js",
   "publishConfig": {
