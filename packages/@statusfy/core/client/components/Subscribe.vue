@@ -5,7 +5,7 @@
       @click="toggleModal">{{ $t('notifications.buttons.subscribe') }}</button>
 
     <div
-      v-show="isModalActive"
+      v-if="isModalActive"
       class="modal-container"
       @click.self="toggleModal">
       <div class="modal-body">
@@ -100,20 +100,11 @@ export default {
       return results
     },
     icalendarUrl () {
-      if (process.client) {
-        return `webcal://${window.location.hostname}/calendars/scheduled.${this.$i18n.locale}.ics`
-      } else {
-        return null
-      }
+      return `webcal://${window.location.hostname}/calendars/scheduled.${this.$i18n.locale}.ics`
     },
     feedsUrls () {
-      let atom
-      let rss
-
-      if (process.client) {
-        atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`
-        rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`
-      }
+      const atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`
+      const rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`
 
       return {
         atom,

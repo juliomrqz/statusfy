@@ -13,7 +13,10 @@
       class="title">
       {{ $t('title') }}
     </component>
-    <Subscribe class="subscribe-container"/>
+
+    <no-ssr>
+      <Subscribe class="subscribe-container"/>
+    </no-ssr>
   </div>
 </template>
 
