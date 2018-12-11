@@ -161,6 +161,7 @@ function genSidebarConfig(title, section = 'guide') {
       'configuration',
       'i18n',
       'incidents',
+      'notifications',
       'theme-customization',
       'pwa',
       'api',

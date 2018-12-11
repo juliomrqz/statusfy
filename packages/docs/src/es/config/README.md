@@ -151,6 +151,71 @@ Proporciona el Facebook Pixel App ID para habilitar la integración.
 
 Proporciona el token de Segment para habilitar la integración.
 
+## notifications <Badge text="0.2.0+"/>
+
+- Type: `object`
+- Default: `{}`
+
+Las opciones de notificaciones disponibles.
+
+### icalendar <Badge text="0.2.0+"/>
+
+- Type: `boolean`
+- Default: `true`
+
+Activa calendario que contiene todos tus Mantenimientos Programados futuros y pasados. Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#icalendar).
+
+### feeds <Badge text="0.2.0+"/>
+
+- Type: `boolean`
+- Default: `true`
+
+Activa feeds incluyen todos los incidentes Mantenimientos Programados que han pasado. Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#feeds-atom-y-rss).
+
+### twitter <Badge text="0.2.0+"/>
+
+- Type: `object`
+- Default: `undefined`
+
+Define las cuentas de Twitter a las que tus usuarios pueden acceder para recibir actualizaciones.
+
+Debes definir un valor para cada idioma que soporte tu sistema:
+```json
+...
+  notifications: {
+    twitter: {
+      en: "BazziteTech",
+      es: "BazziteES"
+    }
+  }
+...
+```
+
+Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#twitter).
+
+### support <Badge text="0.2.0+"/>
+
+- Type: `object`
+- Default: `undefined`
+
+Define los sitios de Soporte Externo al que puedan acceder tus usuarios para recibir actualizaciones de otras fuentes que desees proporcionar.
+
+Debes definir un valor para cada idioma que soporte tu sistema:
+
+```json
+...
+  notifications: {
+    support: {
+      en: "https://statusfy.co/support",
+      es: "https://statusfy.co/es/support"
+    }
+  }
+...
+```
+
+Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#sitio-de-soporte).
+
+
 ## defaultLocale
 
 - Tipo: `string`
