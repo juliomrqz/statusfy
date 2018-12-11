@@ -1,3 +1,14 @@
+## [0.2.1](https://github.com/statusfy/statusfy/compare/v0.2.0...v0.2.1) (2018-12-11)
+
+
+### Bug Fixes
+
+* **core:** add the Atom & RSS feeds alternate meta links ([fcffb67](https://github.com/statusfy/statusfy/commit/fcffb67))
+* **core:** display the Subscribe button if the notifications are enabled ([22e7950](https://github.com/statusfy/statusfy/commit/22e7950))
+* **core:** fix the rendering of the Subscribe modal ([34c03a2](https://github.com/statusfy/statusfy/commit/34c03a2))
+
+
+
 # [0.2.0](https://github.com/statusfy/statusfy/compare/v0.1.3...v0.2.0) (2018-12-11)
 
 

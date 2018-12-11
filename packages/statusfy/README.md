@@ -2,9 +2,6 @@
   <a href="https://www.bazzite.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
     <img src="https://img.shields.io/badge/Bazzite-project-blue.svg" alt="Bazzite Project">
   </a>
-  <a href="https://www.codacy.com/app/bazzite/statusfy?utm_source=npmjs.com&utm_medium=referral&utm_content=bazzite/statusfy&utm_campaign=Badge_Grade" rel="nofollow">
-    <img src="https://api.codacy.com/project/badge/Grade/afb1b57affaa4f5d8fcaac5c0beee5c0" alt="Codacy Badge">
-  </a>
   <a href="https://travis-ci.org/bazzite/statusfy" rel="nofollow">
     <img src="https://img.shields.io/travis/bazzite/statusfy.svg" alt="Travis">
   </a>
@@ -16,12 +13,6 @@
   </a>
   <a href="https://github.com/bazzite/statusfy/blob/develop/LICENSE" rel="nofollow">
     <img src="https://img.shields.io/github/license/bazzite/statusfy.svg" alt="License">
-  </a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy?ref=badge_shield" rel="nofollow">
-    <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbazzite%2Fstatusfy.svg?type=shield" alt="FOSSA Status">
-  </a>
-  <a href="https://cla.bazzite.com/bazzite/statusfy" rel="nofollow">
-    <img src="https://cla.bazzite.com/readme/badge/bazzite/statusfy" alt="CLA Assistant">
   </a>
 </p>
 
