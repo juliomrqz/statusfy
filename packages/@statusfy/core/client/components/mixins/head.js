@@ -1,5 +1,5 @@
 export default {
-  head() {
+  head () {
     const favicons = this.$statusfy.iconSizes.map(size => {
       return {
         hid: `favicon-${size}`,
@@ -19,19 +19,19 @@ export default {
         : `${this.$statusfy.baseUrl}/feeds`
 
       linksFeeds = [{
-          rel: 'alternate',
-          type: 'application/rss+xml',
-          hid: 'alternate-feed-rss',
-          title: '',
-          href: `${feedsBaseUrl}/incidents.${this.$i18n.locale}.xml`
-        },
-        {
-          rel: 'alternate',
-          type: 'application/atom+xml',
-          hid: 'alternate-feed-atom',
-          title: '',
-          href: `${feedsBaseUrl}/incidents.${this.$i18n.locale}.atom`,
-        },
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        hid: 'alternate-feed-rss',
+        title: '',
+        href: `${feedsBaseUrl}/incidents.${this.$i18n.locale}.xml`
+      },
+      {
+        rel: 'alternate',
+        type: 'application/atom+xml',
+        hid: 'alternate-feed-atom',
+        title: '',
+        href: `${feedsBaseUrl}/incidents.${this.$i18n.locale}.atom`
+      }
       ]
     }
 
@@ -43,8 +43,8 @@ export default {
           rel: 'canonical',
           href: canonical,
           hid: 'canonical'
-        },
-      ],
+        }
+      ]
 
     }
   }

@@ -15,7 +15,9 @@
     </component>
 
     <no-ssr>
-      <Subscribe class="subscribe-container"/>
+      <Subscribe
+        v-if="displaySubscribe"
+        class="subscribe-container"/>
     </no-ssr>
   </div>
 </template>
@@ -31,6 +33,15 @@ export default {
     titleTag: {
       type: String,
       default: 'div'
+    }
+  },
+  computed: {
+    displaySubscribe () {
+      if (this.$statusfy.notifications && (typeof this.$statusfy.notifications === 'object')) {
+        return !!Object.values(this.$statusfy.notifications).find(v => v)
+      } else {
+        return false
+      }
     }
   }
 }
