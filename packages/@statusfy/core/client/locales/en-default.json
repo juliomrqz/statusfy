@@ -77,8 +77,12 @@
     }
   },
   "notifications": {
-    "subscribe": "Subscribe",
-    "close": "Close",
+    "title": "Subscribe to Updates",
+    "description": "Choose from the options below to automatically receive status updates.",
+    "buttons": {
+      "subscribe": "Subscribe",
+      "close": "Close"
+    },
     "items": {
       "icalendar": {
         "title": "Calendar",

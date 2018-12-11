@@ -2,13 +2,30 @@
   <div>
     <button
       class="btn"
-      @click="toggleModal">{{ $t('notifications.subscribe') }}</button>
+      @click="toggleModal">{{ $t('notifications.buttons.subscribe') }}</button>
 
     <div
       v-show="isModalActive"
       class="modal-container"
       @click.self="toggleModal">
       <div class="modal-body">
+        <div class="modal-title">
+          <h1>{{ $t('notifications.title') }}</h1>
+
+          <p>{{ $t('notifications.description') }}</p>
+
+          <span
+            class="icon"
+            @click="toggleModal">
+            <svgicon
+              role="button"
+              name="fortawesome/times-solid"
+              class="svg-inline--fa fa-w-16">
+              <title>{{ $t('notifications.buttons.close') }}</title>
+            </svgicon>
+          </span>
+        </div>
+
         <div class="tabs-header">
           <span
             v-for="(tab, key) in tabs"
@@ -17,7 +34,6 @@
             @click="switchTab(key)">
             {{ $t(`notifications.items.${key}.title`) }}
           </span>
-          <span @click="toggleModal">{{ $t('notifications.close') }}</span>
         </div>
 
         <div class="tabs-container">
@@ -59,6 +75,8 @@
 </template>
 
 <script>
+import './icons/fortawesome/times-solid'
+
 export default {
   data () {
     return {

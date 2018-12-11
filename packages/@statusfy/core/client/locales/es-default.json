@@ -77,8 +77,12 @@
     }
   },
   "notifications": {
-    "subscribe": "Suscribirse",
-    "close": "Cerrar",
+    "title": "Suscribirse a Actualizaciones",
+    "description": "Elija entre las siguientes opciones para recibir automáticamente actualizaciones de estado.",
+    "buttons": {
+      "subscribe": "Suscribirse",
+      "close": "Cerrar"
+    },
     "items": {
       "icalendar": {
         "title": "Calendario",

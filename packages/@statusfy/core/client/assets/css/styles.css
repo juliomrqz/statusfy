@@ -511,7 +511,7 @@ main {
         > span {
           color: var(--grey-dark);
 
-          @apply flex-1 text-center font-medium py-3 cursor-pointer mx-4;
+          @apply flex-1 text-center font-medium py-3 cursor-pointer;
 
           &:hover {
             color: var(--grey-darkest);
@@ -519,21 +519,47 @@ main {
 
           &.active {
             color: var(--black);
-            @apply flex-1 text-center font-semibold;
+            @apply flex-1 text-center font-bold;
 
             @screen md {
               border-bottom-color: var(--black);
-              @apply border-b-2;
+              @apply border-b-2 font-semibold;
             }
           }
         }
       }
 
       .tabs-container {
-        @apply flex flex-col items-center my-6;
+        @apply flex flex-col items-center py-6;
 
         > div {
           @apply flex items-center py-6 text-center;
+        }
+      }
+    }
+
+    .modal-title {
+      @apply my-4 px-4;
+
+      h1 {
+        @apply text-left  font-medium text-2xl mb-4;
+
+        @screen md {
+          @apply text-center;
+        }
+      }
+
+      p {
+        color: var(--grey-darkest);
+        @apply text-center;
+      }
+
+      .icon {
+        @apply absolute pin-t pin-r pt-4 px-4;
+
+        .svg-icon {
+          color: var(--grey-dark);
+          @apply cursor-pointer;
         }
       }
     }
