@@ -131,6 +131,23 @@ The affected system(s) the incident is referring to. The values that can be used
 
 If this field is set to true, the incident is Marked as Resolved.
 
+#### scheduled <Badge text="0.2.0+"/>
+
+- Type: `string`
+- Requirement: `optional`
+- Default: `undefined`
+
+The scheduled start time. This defines the initial of the planned maintenance window.
+
+#### duration <Badge text="0.2.0+"/>
+
+- Type: `string`
+- Requirement: `optional`
+- Default: `undefined`
+
+The scheduled duration in **minutes**. This defines the duration of the planned maintenance window.
+
+
 ### Alternative Front Matter Formats
 
 In addition, you can define your front matter as a [JSON](https://en.wikipedia.org/wiki/JSON) or [TOML](https://github.com/toml-lang/toml).
@@ -176,6 +193,18 @@ resolved = true
 ::: warning IMPORTANT
 Statusfy only supports the [version 0.4.0](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md) of the TOML specification.
 :::
+
+## Scheduled Maintenance <Badge text="0.2.0+"/>
+
+Scheduled Maintenances definition is a way to let your users know ahead of time when your system(s) cannot handle requests due to a temporary maintenance update.
+
+Scheduled Maintenances share the same parameters as regular incidents but two parameters are always required: [`scheduled`](#scheduled) and [`duration`](#duration).
+
+You must keep in mind that these definitions are handled in a different way than regular Incidents:
+
+- These Special Incidents are displayed in the **Scheduled Maintenance** section (at the Home Page) while the [`scheduled`](#scheduled) date has not arrived.
+- After the [`scheduled`](#scheduled) date passes you must set the [`resolved`](#resolved) parameneter to `true` if the maintenance window has finished.
+- Scheduled Maintenances are not displayed in the **Incidents Timeline** and the **Incidents History** while the [`scheduled`](#scheduled) date has not arrived.
 
 ## Content
 

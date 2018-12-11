@@ -130,7 +130,6 @@ La severidad del incidente. Hay 4 valores disponibles:
 Los sistemas afectados a los que se refiere el incidente. Los valores que se pueden usar deben definirse en el archivo de configuración (Más información en [Referencia de configuración](../config/README.md#systems)).
 
 
-
 #### resolved
 
 - Tipo: `boolean`
@@ -138,6 +137,23 @@ Los sistemas afectados a los que se refiere el incidente. Los valores que se pue
 - Default: `false`
 
 Si este campo se establece como `true`, el incidente se marca como resuelto.
+
+
+#### scheduled <Badge text="0.2.0+"/>
+
+- Tipo: `string`
+- Requisito: `opcional`
+- Default: `undefined`
+
+La hora de inicio programada. Esto define la inicial de la ventana de mantenimiento planificada.
+
+#### duration <Badge text="0.2.0+"/>
+
+- Tipo: `string`
+- Requisito: `opcional`
+- Default: `undefined`
+
+La duración programada en **minutos**. Esto define la duración de la ventana de mantenimiento planificada.
 
 ### Formatos Alternativos de Front Matter
 
@@ -184,6 +200,19 @@ resolved = true
 ::: warning IMPORTANTE
 Statusfy solo es compatible con la [versión 0.4.0](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md) de la especificación TOML.
 :::
+
+
+## Mantenimiento Programado <Badge text="0.2.0+"/>
+
+La definición de Mantenimiento Programado es una forma de informar con anticipación a tus usuarios cuando su sistema no puede manejar solicitudes debido a una actualización de mantenimiento temporal.
+
+Los mantenimientos programados comparten los mismos parámetros que los incidentes regulares, pero siempre son requeridos dos parámetros: [`scheduled`](#scheduled) y [`duration`](#duration).
+
+Debe tener en cuenta que estas definiciones se manejan de manera diferente a los incidentes regulares:
+
+- Estos Incidentes Especiales se muestran en la sección **Mantenimiento Programado** (en la página de inicio) mientras la fecha programada ([`scheduled`](#scheduled)) no ha llegado.
+- Después que pase la fecha programada ([`scheduled`](#scheduled)), se debe establecer el campo [`resolved`](#resolved) en `true` si la ventana de mantenimiento ha finalizado.
+- Los Mantenimientos Programados no se muestran en la **Línea de Tiempo de Incidentes** ni en el **Historial de Incidentes** mientras no haya llegado la fecha programada ([`scheduled`](#scheduled)).
 
 ## Contenido
 
