@@ -48,7 +48,7 @@
             <span v-html="$t('notifications.items.icalendar.description', { url: icalendarUrl })"/>
           </div>
           <div
-            v-if="tabs.feeds"
+            v-if="tabs.feeds && feedsUrls.atom && feedsUrls.rss"
             v-show="selectedTab === 'feeds'">
             <span v-html="$t('notifications.items.feeds.description', { atom_url: feedsUrls.atom, rss_url: feedsUrls.rss })"/>
           </div>
@@ -89,8 +89,13 @@ export default {
       }
     },
     feedsUrls () {
-      const atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`
-      const rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`
+      let atom
+      let rss
+
+      if (process.client) {
+        atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`
+        rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`
+      }
 
       return {
         atom,

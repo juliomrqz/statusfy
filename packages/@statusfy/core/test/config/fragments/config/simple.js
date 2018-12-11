@@ -3,5 +3,6 @@ module.exports = {
   description: '',
   baseUrl: '/simple',
   serviceWorker: false,
-  manifest: false
+  manifest: false,
+  notifications: false
 }
