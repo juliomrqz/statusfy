@@ -94,7 +94,7 @@
       },
       "twitter": {
         "title": "Twitter",
-        "description": "Folge <a href=\"https://twitter.com/{username}?ref_src=twsrc%5Etfw\" target=\"_blank\" rel=\"noopener\">@{username}</a> oder <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">unser Profil ansehen</a>."
+        "description": "oder <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">unser Profil ansehen</a>."
       },
       "support": {
         "title": "Support",
