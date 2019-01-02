@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.3.3",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
-    "@nuxtjs/sitemap": "^0.1.1",
+    "@nuxtjs/sitemap": "^0.2.0",
     "@statusfy/common": "0.2.1",
     "animate.css": "^3.7.0",
     "consola": "^2.3.0",
