@@ -19,7 +19,7 @@ module.exports = async function dev (sourceDir, cliOptions = {}) {
     script: path.join(__dirname, 'utils', 'start-dev.js'),
     watch: watchPaths,
     ext: '*',
-    exec: `cross-env STATUSFY_SOURCE_DIR=${sourceDir} STATUSFY_CLI_OPTIONS='${JSON.stringify(cliOptions)}' node`
+    exec: `cross-env STATUSFY_SOURCE_DIR='${sourceDir}' STATUSFY_CLI_OPTIONS='${JSON.stringify(cliOptions)}' node`
   })
 
   nodemon.on('start', () => {
