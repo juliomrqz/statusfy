@@ -29,7 +29,7 @@
     "date-fns": "~1.30.0",
     "github-markdown-css": "^2.10.0",
     "intersection-observer": "^0.5.1",
-    "nuxt": "^2.1.0",
+    "nuxt": "^2.4.0",
     "nuxt-i18n": "^5.4.2",
     "vue-disqus": "^3.0.5",
     "vue-lazyload": "^1.2.6",
