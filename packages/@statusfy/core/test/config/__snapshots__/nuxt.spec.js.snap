@@ -132,6 +132,7 @@ Object {
             "name": "Español",
           },
         ],
+        "seo": false,
         "vueI18n": Object {
           "fallbackLocale": "en",
           "silentTranslationWarn": false,
@@ -410,6 +411,7 @@ Object {
             "name": "English",
           },
         ],
+        "seo": false,
         "vueI18n": Object {
           "fallbackLocale": "en",
           "silentTranslationWarn": false,
@@ -635,6 +637,7 @@ Object {
             "name": "English",
           },
         ],
+        "seo": false,
         "vueI18n": Object {
           "fallbackLocale": "en",
           "silentTranslationWarn": false,
@@ -850,6 +853,7 @@ Object {
             "name": "Français",
           },
         ],
+        "seo": false,
         "vueI18n": Object {
           "fallbackLocale": "es",
           "silentTranslationWarn": false,

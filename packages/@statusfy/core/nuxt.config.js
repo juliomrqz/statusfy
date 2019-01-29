@@ -66,6 +66,7 @@ module.exports = {
     '@nuxtjs/axios',
     // https://nuxt-community.github.io/nuxt-i18n/
     ['nuxt-i18n', {
+      seo: false,
       locales: [ ],
       defaultLocale: 'en',
       lazy: true,

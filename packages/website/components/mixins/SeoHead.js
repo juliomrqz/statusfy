@@ -1,5 +1,7 @@
 export default {
   head() {
+    const i18nSeo = this.$nuxtI18nSeo()
+
     const currentAbsoluteUrl = `${process.env.baseHost}${this.$router.currentRoute.path}`
     const ogImage = [
       {
@@ -31,6 +33,9 @@ export default {
     return {
       title: this.title,
       titleTemplate: this.titleTemplate ? this.titleTemplate : '%s | Statusfy',
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs
+      },
       meta: [
         {
           hid: 'description',
@@ -55,14 +60,16 @@ export default {
           property: 'og:url',
           content: currentAbsoluteUrl
         },
-        ...ogImage
+        ...ogImage,
+        ...i18nSeo.meta
       ],
       link: [
         {
           rel: 'canonical',
           href: this.canonical ? this.canonical : currentAbsoluteUrl,
           hid: 'canonical'
-        }
+        },
+        ...i18nSeo.link
       ]
     }
   }

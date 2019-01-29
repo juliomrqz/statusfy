@@ -3024,7 +3024,7 @@ acorn-jsx@^5.0.0:
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
   integrity sha512-HJ7CfNHrfJLlNTzIEUTj43LNWGkqpRLxm3YjAlcD0ACydk9XynzYsCBHxut+iqt+1aBXkx9UP/w/ZqMr13XIzg==
 
-acorn-walk@^6.0.1, acorn-walk@^6.1.0:
+acorn-walk@^6.0.1, acorn-walk@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-6.1.1.tgz#d363b66f5fac5f018ff9c3a1e7b6f8e310cc3913"
   integrity sha512-OtUw6JUTgxA2QoqqmrmQ7F2NYqiBPi/L2jqHyFtllhOUvXYQXf0Z1CYUinIfyT4bTCGmrA7gX9FvHA81uzCoVw==
@@ -3039,7 +3039,7 @@ acorn@^5.0.0, acorn@^5.5.0, acorn@^5.5.3, acorn@^5.6.2, acorn@^5.7.3:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
 
-acorn@^6.0.1, acorn@^6.0.2:
+acorn@^6.0.1, acorn@^6.0.2, acorn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.5.tgz#81730c0815f3f3b34d8efa95cb7430965f4d887a"
   integrity sha512-i33Zgp3XWtmZBMNvCr4azvOFeWVw1Rk6p3hfi3LUDvIFraOMywb1kAtrbi+med14m4Xfpqm3zRZMT+c0FNE7kg==
@@ -5556,11 +5556,6 @@ cssesc@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-0.1.0.tgz#c814903e45623371a0477b40109aaafbeeaddbb4"
   integrity sha1-yBSQPkViM3GgR3tAEJqq++6t27Q=
-
-cssesc@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-1.0.1.tgz#ef7bd8d0229ed6a3a7051ff7771265fe7330e0a8"
-  integrity sha512-S2hzrpWvE6G/rW7i7IxJfWBYn27QWfOIncUW++8Rbo1VB5zsJDSVPcnI+Q8z7rhxT6/yZeLOCja4cZnghJrNGA==
 
 cssesc@^2.0.0:
   version "2.0.0"
@@ -11256,16 +11251,16 @@ number-is-nan@^1.0.0:
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
 nuxt-i18n@^5.4.0, nuxt-i18n@^5.4.2:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-5.5.0.tgz#49fbb732212b88e34ae92f9e12934367723618f1"
-  integrity sha512-wt0nBYgFEZ4Uav+RVUeXU3R54LH13fSimVvdz51IgUX+XZ/jWoS7loGrc04wOwXG95TfaTZSVeZlEW5JL4ZZdQ==
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-5.8.0.tgz#68389146dda00b389700bd743394d32631d20595"
+  integrity sha512-Dj/BEESnhxqpM71VyEM1QaWgM66fppb4YZ+CeQHFx3vu6N++mMOm9a1YpH3SXgxiD70XNxsjMY/adVrxX70kNg==
   dependencies:
     "@kazupon/vue-i18n-loader" "^0.3.0"
-    acorn "^6.0.2"
-    acorn-walk "^6.1.0"
+    acorn "^6.0.5"
+    acorn-walk "^6.1.1"
     cookie "^0.3.1"
     js-cookie "^2.2.0"
-    vue-i18n "^8.2.1"
+    vue-i18n "^8.7.0"
     vue-i18n-extensions "^0.2.0"
 
 nuxt@^2.1.0:
@@ -12090,13 +12085,13 @@ postcss-colormin@^4.0.2:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-combine-duplicated-selectors@^6.0.4:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-6.1.0.tgz#cb7b4e971b9b2dbe6f195c2eeb274c288a113d07"
-  integrity sha512-ooQddDdMVd0UimcfezSh/1kRlKtGZ5llDVkzD6W/279yD4yZ/GWXGDX/MmaX/LYp+4ja3e5zcXbUJpEA7GkVtA==
+postcss-combine-duplicated-selectors@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-7.0.0.tgz#250ffe97341318ed1cb993ca3aadd1599665e0c5"
+  integrity sha512-q1jT7WRmnbI4aG4gHbNQYUHjfM981m71MNQ52AKPTt8w9Fy9K+4CRO4KA9rzkeoV9F7FXasjWbER7X2sxDPfWg==
   dependencies:
     postcss "^7.0.0"
-    postcss-selector-parser "^4.0.0"
+    postcss-selector-parser "^5.0.0"
 
 postcss-convert-values@^2.3.4:
   version "2.6.1"
@@ -12897,15 +12892,6 @@ postcss-selector-parser@^3.0.0, postcss-selector-parser@^3.1.0, postcss-selector
   integrity sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=
   dependencies:
     dot-prop "^4.1.1"
-    indexes-of "^1.0.1"
-    uniq "^1.0.1"
-
-postcss-selector-parser@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-4.0.0.tgz#50c6570f40579036d8e63f23e6c0626fe5743527"
-  integrity sha512-5h+MvEjnzu1qy6MabjuoPatsGAjjDV9B24e7Cktjl+ClNtjVjmvAXjOFQr1u7RlWULKNGYaYVE4s+DIIQ4bOGA==
-  dependencies:
-    cssesc "^1.0.1"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
@@ -16075,9 +16061,9 @@ vm-browserify@0.0.4:
     indexof "0.0.1"
 
 vm2@^3.5.0:
-  version "3.6.6"
-  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.6.6.tgz#169048f0139cf0d0e7c26597ba6ae78af72b28a8"
-  integrity sha512-SXC941SEoL0c8+qe+N/PVYsck6vN6fzdkObISlF+YlCHeMCHhHsFD4yuydr1azEYqE8qgxHHkGPOd+iiV9sUyA==
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.6.10.tgz#a9066c3849ad8a3ea35b9c0cf79a6589ce6e3cbe"
+  integrity sha512-p4LBl7theIhmKaWPdCn25kEIG0bfDDEDx1lexXH7gcCu9pHIT+PKFgofwLHVHUGhe39lKExeaYVEZtdbQhdl2g==
 
 vue-analytics@^5.4.0:
   version "5.16.1"
@@ -16113,10 +16099,10 @@ vue-i18n-extensions@^0.2.0:
   dependencies:
     vm2 "^3.5.0"
 
-vue-i18n@^8.2.1:
-  version "8.7.0"
-  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.7.0.tgz#846269ad9d9c40c77479a540398d4024356fa4e1"
-  integrity sha512-qey+OyZSUIje0xJW8HZrvpIss1jW8yBBRe+0QlUn7HENU31m/+Med/u4pcwjoeCaErHU9WMscBEhqK5aAvvEEQ==
+vue-i18n@^8.7.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.8.0.tgz#9454bd44cc5a75912478a641cb87c1feeed2e944"
+  integrity sha512-1sRCZuTQYfM3LyG3avRI97mIFYYeflgSRLliP29cPLZkZDif4XK8iMmIGxZM6jQwACaEhKKEmzz7fzA8aW7iCg==
 
 vue-jest@^3.0.0:
   version "3.0.2"
@@ -16160,10 +16146,10 @@ vue-meta@^1.5.6:
     lodash.uniqueid "^4.0.1"
     object-assign "^4.1.1"
 
-vue-multianalytics@1.9.9:
-  version "1.9.9"
-  resolved "https://registry.yarnpkg.com/vue-multianalytics/-/vue-multianalytics-1.9.9.tgz#657afcdd50e7f0e6e9e7467b073d60f192b53ae1"
-  integrity sha512-aOWq1R4J/XzJ8hsFaeVK+EEzs2MyIB0kLPDFBny5iFjh6rYJzv+AWGzZEMGonRCZ05EbNdxV2sILZYOBTq8PhA==
+vue-multianalytics@1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/vue-multianalytics/-/vue-multianalytics-1.11.0.tgz#a07c6a4dd9e72d6b2d12260205f7131e4f9433ce"
+  integrity sha512-mEJBC9KALzQ2e+74y4oDFIuX3O1r4YEIJnAfLwEcSOd8L8oHezHMBr1nLL6DBNIs89d47vZLiorvB21paPNCcw==
 
 vue-no-ssr@^1.1.0:
   version "1.1.1"

@@ -111,6 +111,7 @@ module.exports = {
     [
       'nuxt-i18n',
       {
+        seo: false,
         parsePages: false,
         baseUrl: baseHost,
         locales: [

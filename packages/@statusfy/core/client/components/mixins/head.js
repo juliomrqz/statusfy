@@ -1,5 +1,7 @@
 export default {
   head () {
+    const i18nSeo = this.$nuxtI18nSeo()
+
     const favicons = this.$statusfy.iconSizes.map(size => {
       return {
         hid: `favicon-${size}`,
@@ -36,6 +38,12 @@ export default {
     }
 
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs
+      },
+      meta: [
+        ...i18nSeo.meta
+      ],
       link: [
         ...favicons,
         ...linksFeeds,
@@ -43,7 +51,8 @@ export default {
           rel: 'canonical',
           href: canonical,
           hid: 'canonical'
-        }
+        },
+        ...i18nSeo.link
       ]
 
     }
