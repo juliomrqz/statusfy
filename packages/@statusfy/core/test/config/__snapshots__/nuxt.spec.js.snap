@@ -37,7 +37,6 @@ Object {
   },
   "generate": Object {
     "dir": "../.tmp/advanced/dist",
-    "fallback": "404.html",
     "subFolders": false,
   },
   "head": Object {
@@ -329,7 +328,6 @@ Object {
   },
   "generate": Object {
     "dir": "../.tmp/cli/dist",
-    "fallback": "404.html",
     "subFolders": false,
   },
   "head": Object {
@@ -564,7 +562,6 @@ Object {
   },
   "generate": Object {
     "dir": "../.tmp/simple/dist",
-    "fallback": "404.html",
     "subFolders": false,
   },
   "head": Object {
@@ -765,7 +762,6 @@ Object {
   },
   "generate": Object {
     "dir": "../.tmp/spanish/dist",
-    "fallback": "404.html",
     "subFolders": false,
   },
   "head": Object {

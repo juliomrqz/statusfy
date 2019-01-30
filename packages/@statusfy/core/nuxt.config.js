@@ -133,8 +133,7 @@ module.exports = {
    ** Generate Configuration
    */
   generate: {
-    subFolders: false,
-    fallback: '404.html'
+    subFolders: false
   },
   // Modules Configurations
   /*
