@@ -13,12 +13,12 @@ export default {
       en: {
         prefix: 'Made with ❤️ by',
         link: 'https://www.bazzite.com?ref=statusfy-docs',
-        copyright: 'Copyright © 2018 Bazzite, LLC. All Rights Reserved.'
+        copyright: 'Copyright © 2019 Bazzite, LLC. All Rights Reserved.'
       },
       es: {
         prefix: 'Hecho con ❤️ por',
         link: 'https://www.bazzite.com/es/?ref=statusfy-docs',
-        copyright: 'Copyright © 2018 Bazzite, LLC. Todos los derechos reservados.'
+        copyright: 'Copyright © 2019 Bazzite, LLC. Todos los derechos reservados.'
       }
     }
   }),

@@ -45,7 +45,7 @@ export default {
   footer: {
     prefix: 'Hecho con ❤️ por',
     link: 'https://www.bazzite.com/es/?ref=statusfy-website',
-    copyright: 'Copyright © 2018 Bazzite, LLC. Todos los derechos reservados.'
+    copyright: 'Copyright © 2019 Bazzite, LLC. Todos los derechos reservados.'
   },
   features: {
     title: 'Funcionalidades',
