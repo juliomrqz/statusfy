@@ -27,7 +27,7 @@
     "animate.css": "^3.7.0",
     "consola": "^2.3.0",
     "date-fns": "~1.30.0",
-    "github-markdown-css": "^2.10.0",
+    "github-markdown-css": "^3.0.0",
     "intersection-observer": "^0.5.1",
     "nuxt": "^2.4.0",
     "nuxt-i18n": "^5.4.2",
