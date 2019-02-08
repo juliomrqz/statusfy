@@ -1,0 +1,7 @@
+ports:
+- port: 3000
+- port: 3001
+  onOpen: ignore
+tasks:
+- init: yarn
+  command: yarn demo:dev
