@@ -1,27 +1,24 @@
 FROM node:8-alpine
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
-# Install app dependencies
-COPY package.json /usr/src/app/
-COPY yarn.lock /usr/src/app/
-RUN yarn install
+RUN mkdir -p $USER_DIR
+RUN chown node:node "$USER_DIR"
+WORKDIR $USER_DIR
 
 # Set environment variables
+ENV USER_DIR=/usr/src/app
+ENV NODE_ENV production
+ENV STATUSFY_VERSION=0.3.0-alpha.1
 ENV NODE_ENV production
 ENV NUXT_HOST 0.0.0.0
 ENV HOST 0.0.0.0
 ENV NUXT_PORT 3000
 ENV PORT 3000
 
-# Bundle app source
-COPY . /usr/src/app
-RUN yarn build
+RUN npm install -g "statusfy@$STATUSFY_VERSION"
 
-# Clear the cache
-RUN yarn cache clean
+COPY ./scripts/docker-start.sh /
 
-EXPOSE 3000
-CMD [ "yarn", "start" ]
+VOLUME $USER_DIR
+EXPOSE $NUXT_PORT
+
+CMD ["/start.sh"]
