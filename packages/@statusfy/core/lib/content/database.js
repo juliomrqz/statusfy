@@ -16,7 +16,7 @@ const statP = promisify(stat)
 const readFileP = promisify(readFile)
 
 const md = createMarkdown()
-const cache = LRU({
+const cache = new LRU({
   max: 1000,
   maxAge: process.env.NODE_ENV !== 'development' ? 1000 * 60 * 60 : 1
 })

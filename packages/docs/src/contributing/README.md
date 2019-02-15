@@ -44,7 +44,7 @@ If you intend to add a new feature, we recommend filing [an issue][github-issues
 Install [Node.js][node] (8.1 or higher) and [Yarn][yarn]. It's also recommended to install [Lerna][lerna] globally.
 
 1. Clone this repository: [https://github.com/bazzite/statusfy][repo].
-2. Run `yarn install-dependencies` to install the dependencies.
+2. Run `yarn install` to install the dependencies.
 
 ::: tip TIP
 To use **@statusfy/cli** in the repo as a global command. Enter the `./packages/@statusfy/cli` folder and run `npm link`.

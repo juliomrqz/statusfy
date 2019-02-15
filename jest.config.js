@@ -12,7 +12,8 @@ module.exports = {
   testURL: 'http://localhost/',
   moduleFileExtensions: [
     'js',
-    'vue'
+    'vue',
+    'json'
   ],
   moduleNameMapper: {
     '^@/markdown/(.*)$': '<rootDir>/packages/@statusfy/markdown/$1',
@@ -20,11 +21,11 @@ module.exports = {
     '^@/common/(.*)$': '<rootDir>/packages/@statusfy/common/$1'
   },
   transform: {
-    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
-    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
+    '^.+\\.js$': 'babel-jest',
+    '.*\\.(vue)$': 'vue-jest'
   },
   snapshotSerializers: [
-    '<rootDir>/node_modules/jest-serializer-vue'
+    'jest-serializer-vue'
   ],
   globals: {
     'vue-jest': {

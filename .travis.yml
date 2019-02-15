@@ -8,7 +8,7 @@ cache:
     - "node_modules"
 
 install:
-  - yarn run install-dependencies
+  - yarn install
 
 script:
   # Test Statusfy

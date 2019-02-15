@@ -44,7 +44,7 @@ Si deseas agregar una nueva funcionalidad, te recomendamos que abras un [issue][
 Installa [Node.js][node] (8.1 o superior) y [Yarn][yarn]. También se recomienda instalar [Lerna][lerna] a nivel global.
 
 1. Clona este repositorio: [https://github.com/bazzite/statusfy][repo].
-2. Ejecuta `yarn install-dependencies` para instalar las dependencias..
+2. Ejecuta `yarn install` para instalar las dependencias..
 
 ::: tip
 Para usar **@statusfy/cli** en el repositorio como un comando global. Ingresa a la carpeta `./packages/@statusfy/cli` y ejecuta `npm link`.
