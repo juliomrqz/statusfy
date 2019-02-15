@@ -14,7 +14,7 @@ RUN mkdir -p $USER_DIR
 RUN chown node:node "$USER_DIR"
 WORKDIR $USER_DIR
 
-RUN npm install -g "statusfy@$STATUSFY_VERSION"
+RUN npm install -g statusfy@$STATUSFY_VERSION
 
 COPY ./scripts/docker-start.sh /
 
