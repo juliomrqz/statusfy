@@ -32,9 +32,9 @@
   ],
   "dependencies": {
     "@nuxtjs/opencollective": "^0.2.0",
-    "@statusfy/cli": "0.3.0-alpha.1",
-    "@statusfy/core": "0.3.0-alpha.1",
-    "@statusfy/editor": "0.3.0-alpha.1"
+    "@statusfy/cli": "^0.3.0-alpha.1",
+    "@statusfy/core": "^0.3.0-alpha.1",
+    "@statusfy/editor": "^0.3.0-alpha.1"
   },
   "engines": {
     "node": ">=8.10",

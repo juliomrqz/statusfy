@@ -31,7 +31,7 @@
   },
   "homepage": "https://docs.statusfy.co",
   "devDependencies": {
-    "@statusfy/common": "0.3.0-alpha.1",
+    "@statusfy/common": "^0.3.0-alpha.1",
     "axios": "^0.18.0",
     "consola": "^2.3.0",
     "fs-extra": "^7.0.1",

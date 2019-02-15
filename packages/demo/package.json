@@ -18,7 +18,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "statusfy": "0.3.0-alpha.1"
+    "statusfy": "^0.3.0-alpha.1"
   },
   "engines": {
     "node": ">=8.10",
