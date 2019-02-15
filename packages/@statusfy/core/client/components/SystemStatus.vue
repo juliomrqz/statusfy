@@ -2,19 +2,22 @@
   <div>
     <div
       :class="status.key"
-      class="global-status flex justify-center">
+      class="global-status flex justify-center"
+    >
       <span>{{ status.title }}</span>
       <span class="global-status-icon">
         <svgicon
           :name="`fortawesome/${status.icon}`"
-          class="svg-inline--fa fa-w-16"/>
+          class="svg-inline--fa fa-w-16"
+        />
       </span>
     </div>
     <div class="systems-container flex flex-col">
       <system
         v-for="system in systems"
         :key="system.name"
-        :system="system" />
+        :system="system"
+      />
     </div>
   </div>
 </template>

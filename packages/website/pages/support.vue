@@ -1,18 +1,23 @@
 <template>
   <div>
+    <!-- eslint-disable vue/no-v-html -->
     <section
       :style="`background-image: url(${require('~/assets/img/dividers/inclined-line.svg')});`"
-      class="bg-bottom bg-repeat-x bg-white h-full pb-16">
+      class="bg-bottom bg-repeat-x bg-white h-full pb-16"
+    >
       <div class="container">
         <div
-          class="flex flex-wrap items-center justify-center text-center lg:text-left">
+          class="flex flex-wrap items-center justify-center text-center lg:text-left"
+        >
           <div class="w-full p-4">
             <h1
-              class="text-3xl sm:text-4xl font-semibold leading-none mb-4">
+              class="text-3xl sm:text-4xl font-semibold leading-none mb-4"
+            >
               {{ $t('support.title') }}
             </h1>
             <h2
-              class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2">
+              class="text-lg sm:text-xl text-blue-darker font-normal leading-normal mb-2"
+            >
               {{ $t('support.description') }}
             </h2>
           </div>
@@ -25,7 +30,8 @@
           <div class="flex flex-col flex-wrap items-stretch">
             <div
               id="community"
-              class="w-full sm:w-full mb-6">
+              class="w-full sm:w-full mb-6"
+            >
               <div class="relative block lg:mx-4 p-6 bg-white rounded shadow h-full">
                 <h2 class="text-2xl text-center font-semibold">
                   {{ $t('support.community.title') }}
@@ -35,14 +41,16 @@
                     <li
                       v-for="(item, key) in supportItems.community"
                       :key="key"
-                      v-html="item" />
+                      v-html="item"
+                    />
                   </ul>
                 </div>
               </div>
             </div>
             <div
               id="email"
-              class="w-full sm:w-full">
+              class="w-full sm:w-full"
+            >
               <div class="relative block lg:mx-4 p-6 bg-white rounded shadow h-full">
                 <h2 class="text-2xl text-center font-semibold">
                   {{ $t('support.email.title') }}
@@ -51,7 +59,8 @@
                   <p
                     v-for="(item, key) in supportItems.email"
                     :key="key"
-                    v-html="item" />
+                    v-html="item"
+                  />
                 </div>
               </div>
             </div>
@@ -59,7 +68,8 @@
         </div>
         <div
           id="updates"
-          class="w-full sm:w-full lg:w-1/3 mb-6">
+          class="w-full sm:w-full lg:w-1/3 mb-6"
+        >
           <div class="relative block lg:mx-4 p-6 bg-white rounded shadow h-full">
             <h2 class="text-2xl text-center font-semibold">
               {{ $t('support.updates.title') }}
@@ -69,13 +79,15 @@
                 v-for="(item, key) in supportItems.updates"
                 :key="key"
                 class="mb-2"
-                v-html="item" />
+                v-html="item"
+              />
             </div>
           </div>
         </div>
         <div
           id="sponsoring"
-          class="w-full mx-auto sm:w-full lg:w-2/3">
+          class="w-full mx-auto sm:w-full lg:w-2/3"
+        >
           <div class="flex flex-col flex-wrap items-stretch">
             <div class="w-full sm:w-full mb-6">
               <div class="relative block lg:mx-4 p-6 bg-white rounded shadow h-full">
@@ -86,13 +98,15 @@
                 <div class="leading-normal text-black mt-6">
                   <p
                     class="mb-2"
-                    v-html="$t('support.sponsoring.description', { bazzite_url: $t('links.bazzite.url') })" />
+                    v-html="$t('support.sponsoring.description', { bazzite_url: $t('links.bazzite.url') })"
+                  />
                 </div>
 
                 <div class="text-black mt-6">
                   <p
                     class="mb-2"
-                    v-html="$t('support.sponsoring.howWeUseDonations.description')" />
+                    v-html="$t('support.sponsoring.howWeUseDonations.description')"
+                  />
 
                   <ul class="pl-4">
                     <li>{{ $t('support.sponsoring.howWeUseDonations.items.team') }}</li>
@@ -106,24 +120,28 @@
                   <div
                     v-for="item in ['backers', 'sponsors', 'partners']"
                     :key="item"
-                    class="category sm:w-full lg:w-1/3">
+                    class="category sm:w-full lg:w-1/3"
+                  >
                     <div
                       :class="`border-${categoriesColors[item]}`"
-                      class="m-4 flex flex-col justify-between border rounded shadow h-full">
+                      class="m-4 flex flex-col justify-between border rounded shadow h-full"
+                    >
                       <div class="p-4 self-stretch">
                         <div class="font-bold text-xl text-center mb-2">
                           {{ $t(`support.sponsoring.categories.${item}.title`) }}
                         </div>
                         <p
                           class="text-grey-darkest"
-                          v-html="$t(`support.sponsoring.categories.${item}.description`)" />
+                          v-html="$t(`support.sponsoring.categories.${item}.description`)"
+                        />
                       </div>
                       <a
                         :class="`btn-${categoriesColors[item]}`"
                         href="https://bazzite.xyz/StatusfyOpenCollective#contribute"
                         class="btn"
                         target="_blank"
-                        rel="noopener">{{ $t(`support.sponsoring.categories.${item}.action`) }}</a>
+                        rel="noopener"
+                      >{{ $t(`support.sponsoring.categories.${item}.action`) }}</a>
                     </div>
                   </div>
                 </div>
@@ -140,13 +158,9 @@
 <script>
 import format from 'date-fns/format'
 
-import AticleCard from '~/components/blog/ArticleCard'
 import SeoHead from '~/components/mixins/SeoHead'
 
 export default {
-  components: {
-    AticleCard
-  },
   mixins: [SeoHead],
   data() {
     const $t = this.$t.bind(this)

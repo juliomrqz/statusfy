@@ -2,15 +2,18 @@
   <div>
     <div
       v-if="mode === 'simple'"
-      class="flex flex-wrap items-center text-grey-darker">
+      class="flex flex-wrap items-center text-grey-darker"
+    >
       <img
         :src="post.author.avatar"
-        class="rounded-full w-10 h-10" >
+        class="rounded-full w-10 h-10"
+      >
       <span class="ml-4 font-semibold relative z-10">
         <a
           :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
           target="_blank"
-          rel="noopener">
+          rel="noopener"
+        >
           {{ post.author.first_name }} {{ post.author.last_name }}
         </a>
       </span>
@@ -19,16 +22,19 @@
     </div>
     <div
       v-else-if="mode === 'advanced'"
-      class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row">
+      class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
+    >
       <img
         :src="post.author.avatar"
-        class="rounded-full w-12 h-12" >
+        class="rounded-full w-12 h-12"
+      >
       <div class="flex flex-col mx-4 mt-2">
         <span class="font-semibold mb-1 text-center sm:text-left">
           <a
             :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
             target="_blank"
-            rel="noopener">
+            rel="noopener"
+          >
             {{ post.author.first_name }} {{ post.author.last_name }}
           </a>
         </span>

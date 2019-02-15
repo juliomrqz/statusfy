@@ -1,7 +1,8 @@
 <template>
   <div
     :class="system.status"
-    class="system flex flex-row justify-between">
+    class="system flex flex-row justify-between"
+  >
     <div class="system-title flex-1">
       {{ $t(`systems.items.${system.name}.title`) }}
 
@@ -10,21 +11,26 @@
         trigger="hover focus"
         placement="top"
         popover-class="popover"
-        class="hidden sm:inline">
+        class="hidden sm:inline"
+      >
         <span class="system-title-info">
           <svgicon
             name="fortawesome/question-circle-regular"
-            class="svg-inline--fa fa-w-16"/>
+            class="svg-inline--fa fa-w-16"
+          />
         </span>
 
-        <template slot="popover">{{ description }}</template>
+        <template slot="popover">
+          {{ description }}
+        </template>
       </v-popover>
     </div>
     <div class="system-status flex-1">
       <span class="hidden sm:inline">{{ status.title }}</span>
       <svgicon
         :name="`fortawesome/${status.icon}`"
-        class="svg-inline--fa fa-w-16"/>
+        class="svg-inline--fa fa-w-16"
+      />
     </div>
   </div>
 </template>

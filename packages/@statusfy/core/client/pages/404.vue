@@ -1,5 +1,5 @@
 <template>
-  <ErrorPage :error="error"/>
+  <ErrorPage :error="error" />
 </template>
 
 <script>

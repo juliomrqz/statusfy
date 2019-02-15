@@ -2,13 +2,18 @@
   <section class="text-center py-6">
     <div class="pt-6 h-64">
       <div class="py-6">
-        <h1 class="text-5xl mb-2 font-medium">{{ title }}</h1>
-        <p class="text-xl my-4">{{ description }}</p>
+        <h1 class="text-5xl mb-2 font-medium">
+          {{ title }}
+        </h1>
+        <p class="text-xl my-4">
+          {{ description }}
+        </p>
       </div>
 
       <a
         :href="localePath('index')"
-        class="font-medium mt-6">
+        class="font-medium mt-6"
+      >
         {{ $t('error.go-back-link') }}
       </a>
     </div>

@@ -3,18 +3,20 @@
     <div
       v-for="period of periods"
       :key="period.date"
-      class="incidents-period">
-
+      class="incidents-period"
+    >
       <div>
         <h2 class="incidents-period-title">
           <nice-date
             :date="period.id"
-            format="month" />
+            format="month"
+          />
         </h2>
 
         <div
           v-if="period.incidents.length === 0"
-          class="incidents-message">
+          class="incidents-message"
+        >
           {{ $t('incidents.no-incidents') }}
         </div>
 

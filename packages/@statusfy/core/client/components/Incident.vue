@@ -1,19 +1,23 @@
 <template>
   <div
     :class="`${incident.severity}${resolved.value ? ' resolved' : ' unresolved'}${incident.scheduled ? ' scheduled' : ''}`"
-    class="incident">
+    class="incident"
+  >
     <div
       :class="`level-${level}`"
-      class="incident-header">
+      class="incident-header"
+    >
       <div
         v-if="!incident.scheduled"
-        class="incident-title">
+        class="incident-title"
+      >
         <span class="badge">
           {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
         </span>
         <nuxt-link
           v-if="level > 0"
-          :to="localePath({ name: 'incidents-id', params: { id: incident.id } })">
+          :to="localePath({ name: 'incidents-id', params: { id: incident.id } })"
+        >
           <component :is="`h${level}`">
             {{ incident.title }}
           </component>
@@ -21,7 +25,8 @@
       </div>
       <div
         v-else
-        class="incident-title">
+        class="incident-title"
+      >
         <template>
           <component :is="`h${level}`">
             {{ incident.title }}
@@ -33,7 +38,8 @@
         <span
           v-for="system of incident.affectedsystems"
           :key="system"
-          class="badge">
+          class="badge"
+        >
           {{ $t(`systems.items.${system}.title`) }}
         </span>
       </div>
@@ -42,35 +48,44 @@
     <div class="incident-subtitle">
       <div
         v-if="!incident.scheduled"
-        class="status">
+        class="status"
+      >
         <svgicon
           :name="`fortawesome/${status.icon}`"
-          class="svg-inline--fa fa-w-16"/>
+          class="svg-inline--fa fa-w-16"
+        />
         {{ status.title }}
       </div>
 
       <div v-if="!incident.scheduled">
         <nice-date
           :date="incident.date"
-          format="long" />
+          format="long"
+        />
       </div>
       <div v-else>
         <nice-date
           :date="incident.scheduled"
-          format="long" />
+          format="long"
+        />
       </div>
     </div>
 
     <div class="incident-body">
       <div v-if="summary">
-        <div v-if="incident.description">{{ incident.description }}</div>
+        <div v-if="incident.description">
+          {{ incident.description }}
+        </div>
       </div>
 
+      <!-- eslint-disable vue/no-v-html -->
       <div
         v-else
         ref="content"
         class="markdown"
-        v-html="incident.content"/>
+        v-html="incident.content"
+      />
+      <!-- eslint-enable -->
     </div>
 
     <div class="hidden">

@@ -7,16 +7,19 @@
             <AuthorCard
               :post="post"
               mode="advanced"
-              class="mb-4" />
+              class="mb-4"
+            />
 
             <h1 class="text-3xl sm:text-4xl font-semibold leading-none mb-8">
               {{ post.title }}
             </h1>
 
+            <!-- eslint-disable vue/no-v-html -->
             <div
               class="markdown-body text-lg sm:text-xl font-normal leading-normal"
               v-html="post.content_html"
             />
+            <!-- eslint-enable -->
 
             <hr class="section-divider block my-12 overflow-visible text-center">
 
@@ -25,30 +28,36 @@
               <a
                 :href="`${parentBlogUrl}?ref=statusfy-blog`"
                 target="_blank"
-                rel="noopener">bazzite.com</a>
+                rel="noopener"
+              >bazzite.com</a>
               {{ $t('blog.on') }} {{ formatDate(post.created) }}.
             </div>
 
             <Partners
               mode="secondary"
-              class="pb-0"/>
+              class="pb-0"
+            />
 
-            <Subscribe class="max-w-md mx-auto"/>
+            <Subscribe class="max-w-md mx-auto" />
 
             <div class="flex flex-wrap items-center justify-between mb-12">
               <AuthorCard
                 :post="post"
                 mode="advanced"
-                class="w-full sm:w-auto"/>
+                class="w-full sm:w-auto"
+              />
               <div class="py-4 text-center sm:text-right w-full sm:w-auto">
-                <div class="mb-2 text-grey-darkest font-semibold">{{ $t('blog.share') }}</div>
+                <div class="mb-2 text-grey-darkest font-semibold">
+                  {{ $t('blog.share') }}
+                </div>
                 <social-sharing
                   :url="parentBlogUrl"
                   :title="post.title"
                   :description="post.description"
                   :twitter-user="twitterUser"
                   class="text-grey-darkest"
-                  inline-template>
+                  inline-template
+                >
                   <div>
                     <network network="twitter">
                       <svgicon
@@ -128,6 +137,23 @@ export default {
     Partners
   },
   mixins: [FormatDate],
+  computed: {
+    parentBlogUrl() {
+      const prefix = this.$i18n.locale === 'es' ? '/es' : ''
+
+      return `https://www.bazzite.com${prefix}/blog/${this.post.slug}`
+    },
+    postAbsoluteUrl() {
+      const prefix = this.$i18n.locale === 'es' ? '/es' : ''
+
+      return `${process.env.baseHost}${prefix}/blog/${this.post.slug}`
+    },
+    twitterUser() {
+      return this.$i18n.locale === 'es'
+        ? process.env.twitterUserEs
+        : process.env.twitterUserEn
+    }
+  },
   async asyncData({ app, params, payload }) {
     const { slug } = params
     const response = payload || (await app.$axios.$get(`blog/${slug}`))
@@ -272,23 +298,6 @@ export default {
           type: 'application/ld+json'
         }
       ]
-    }
-  },
-  computed: {
-    parentBlogUrl() {
-      const prefix = this.$i18n.locale === 'es' ? '/es' : ''
-
-      return `https://www.bazzite.com${prefix}/blog/${this.post.slug}`
-    },
-    postAbsoluteUrl() {
-      const prefix = this.$i18n.locale === 'es' ? '/es' : ''
-
-      return `${process.env.baseHost}${prefix}/blog/${this.post.slug}`
-    },
-    twitterUser() {
-      return this.$i18n.locale === 'es'
-        ? process.env.twitterUserEs
-        : process.env.twitterUserEn
     }
   }
 }

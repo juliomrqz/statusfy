@@ -2,22 +2,26 @@
   <div class="header">
     <nuxt-link
       :to="localePath('index')"
-      class="logo-container">
+      class="logo-container"
+    >
       <img
         :alt="$t('title')"
         :src="$statusfy.assets.mainLogo"
-        class="logo">
+        class="logo"
+      >
     </nuxt-link>
     <component
       :is="titleTag"
-      class="title">
+      class="title"
+    >
       {{ $t('title') }}
     </component>
 
     <no-ssr>
       <Subscribe
         v-if="displaySubscribe"
-        class="subscribe-container"/>
+        class="subscribe-container"
+      />
     </no-ssr>
   </div>
 </template>

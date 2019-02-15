@@ -17,7 +17,9 @@ const extractDate = (value) => {
 
 module.exports = async function calendar (siteConfig, lang) {
   const database = await createDatabase(siteConfig)
+  /* eslint-disable node/no-deprecated-api */
   const { host } = url.parse(siteConfig.baseUrl)
+  /* eslint-enable */
   const events = []
   const productId = `-//Statusfy//${host || siteConfig.name}//calendar//scheduled//${lang.toUpperCase()}`
 

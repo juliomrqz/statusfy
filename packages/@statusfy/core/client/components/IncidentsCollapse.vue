@@ -2,22 +2,30 @@
   <div>
     <ul
       :class="{'collapse' : collapsed && incidents.length > 3 }"
-      class="list-reset">
+      class="list-reset"
+    >
       <li
         v-for="incident in incidents"
-        :key="incident.id">
+        :key="incident.id"
+      >
         <incident
           :incident="incident"
           :summary="true"
-          :level="3" />
+          :level="3"
+        />
       </li>
 
       <div
         v-if="incidents.length > 3"
         class="btn"
-        @click="collapsed = !collapsed">
-        <template v-if="collapsed">+ {{ $t('incidents.collapse.show', { count: incidents.length }) }}</template>
-        <template v-else>- {{ $t('incidents.collapse.hide') }}</template>
+        @click="collapsed = !collapsed"
+      >
+        <template v-if="collapsed">
+          + {{ $t('incidents.collapse.show', { count: incidents.length }) }}
+        </template>
+        <template v-else>
+          - {{ $t('incidents.collapse.hide') }}
+        </template>
       </div>
     </ul>
   </div>

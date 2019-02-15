@@ -1,6 +1,8 @@
 <template>
   <div class="offline-container">
-    <h1 class="offline-title">{{ $t('offline.subtitle') }}</h1>
+    <h1 class="offline-title">
+      {{ $t('offline.subtitle') }}
+    </h1>
 
     <p class="offline-description">
       {{ $t('offline.description') }}
@@ -11,7 +13,8 @@
         name="fortawesome/unlink-solid"
         width="15em"
         height="15em"
-        class="svg-inline--fa"/>
+        class="svg-inline--fa"
+      />
     </div>
   </div>
 </template>

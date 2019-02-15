@@ -8,7 +8,8 @@
 
     <div
       v-else
-      class="text-center">
+      class="text-center"
+    >
       <h2>{{ $t('incidents.no-incidents') }}</h2>
     </div>
   </div>

@@ -1,12 +1,12 @@
 <template>
   <div class="container mx-auto px-4 md:w-2/3">
-    <app-header/>
+    <app-header />
 
     <main>
-      <nuxt/>
+      <nuxt />
     </main>
 
-    <app-footer/>
+    <app-footer />
   </div>
 </template>
 
