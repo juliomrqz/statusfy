@@ -62,7 +62,7 @@
     "moment-range": "^4.0.1",
     "nodemon": "^1.18.4",
     "nuxt": "^2.4.0",
-    "nuxt-i18n": "^5.4.0",
+    "nuxt-i18n": "^5.8.3",
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
     "sitemap": "^2.1.0",
@@ -74,7 +74,7 @@
     "vue-svgicon": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.3.3",
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "@statusfy/test-utils": "^0.3.0-alpha.1",
     "babel-core": "^7.0.0-0",
