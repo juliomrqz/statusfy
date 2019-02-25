@@ -33,7 +33,7 @@
   "devDependencies": {
     "@statusfy/common": "^0.3.0-alpha.1",
     "axios": "^0.18.0",
-    "consola": "^2.3.0",
+    "consola": "^2.5.6",
     "fs-extra": "^7.0.1",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "^2.0.1",
