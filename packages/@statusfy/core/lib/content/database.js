@@ -287,7 +287,7 @@ module.exports = async function database(siteConfig, finalDate) {
       const daysSinceLatest =
         days.length === 0
           ? 0
-          : moment(sortedIncidents[0].date).diff(end, "days");
+          : end.diff(moment(sortedIncidents[0].date), "days");
 
       return {
         count: days.length,
