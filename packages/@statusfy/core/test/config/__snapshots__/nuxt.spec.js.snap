@@ -5,6 +5,11 @@ Object {
   "axios": Object {
     "browserBaseURL": "/",
   },
+  "babel": Object {
+    "plugins": Array [
+      "@babel/transform-runtime",
+    ],
+  },
   "build": Object {
     "analyze": true,
     "extend": [Function],
@@ -36,8 +41,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/advanced/dist",
-    "subFolders": false,
+    "dir": "../.tmp/advanced/dist"
   },
   "head": Object {
     "link": Array [
@@ -302,6 +306,11 @@ Object {
   "axios": Object {
     "browserBaseURL": "/",
   },
+  "babel": Object {
+    "plugins": Array [
+      "@babel/transform-runtime",
+    ],
+  },
   "build": Object {
     "analyze": true,
     "extend": [Function],
@@ -327,8 +336,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/cli/dist",
-    "subFolders": false,
+    "dir": "../.tmp/cli/dist"
   },
   "head": Object {
     "meta": Array [
@@ -536,6 +544,11 @@ Object {
   "axios": Object {
     "browserBaseURL": "/",
   },
+  "babel": Object {
+    "plugins": Array [
+      "@babel/transform-runtime",
+    ],
+  },
   "build": Object {
     "analyze": true,
     "extend": [Function],
@@ -561,8 +574,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/simple/dist",
-    "subFolders": false,
+    "dir": "../.tmp/simple/dist"
   },
   "head": Object {
     "meta": Array [
@@ -730,6 +742,11 @@ Object {
   "axios": Object {
     "browserBaseURL": "/",
   },
+  "babel": Object {
+    "plugins": Array [
+      "@babel/transform-runtime",
+    ],
+  },
   "build": Object {
     "analyze": true,
     "extend": [Function],
@@ -761,8 +778,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/spanish/dist",
-    "subFolders": false,
+    "dir": "../.tmp/spanish/dist"
   },
   "head": Object {
     "meta": Array [

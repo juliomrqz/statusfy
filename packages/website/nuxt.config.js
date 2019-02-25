@@ -125,6 +125,14 @@ module.exports = {
       }
     ]
   ],
+
+  /*
+  ** Babel configuration
+  */
+  babel: {
+    plugins: ['@babel/transform-runtime']
+  },
+
   /*
    ** Build configuration
    */

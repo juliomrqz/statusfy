@@ -53,6 +53,13 @@ module.exports = {
   ],
 
   /*
+  ** Babel configuration
+  */
+  babel: {
+    plugins: ["@babel/transform-runtime"]
+  },
+
+  /*
   ** Plugins to load before mounting the App
   */
   plugins: ["~/plugins/axios", "~/plugins/vue-svgicon"],
