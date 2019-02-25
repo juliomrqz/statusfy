@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/core",
-  "version": "0.3.0-alpha.2",
+  "version": "0.3.0-alpha.3",
   "description": "Core of Statusfy",
   "author": {
     "name": "Bazzite",
@@ -38,8 +38,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.5",
     "@nuxtjs/axios": "^5.3.3",
     "@nuxtjs/pwa": "^2.5.0",
-    "@statusfy/common": "^0.3.0-alpha.2",
-    "@statusfy/markdown": "^0.3.0-alpha.2",
+    "@statusfy/common": "0.3.0-alpha.3",
+    "@statusfy/markdown": "0.3.0-alpha.3",
     "body-parser": "^1.18.3",
     "browser-sync": "^2.26.0",
     "cors": "^2.8.4",
@@ -76,7 +76,7 @@
   "devDependencies": {
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "@nuxtjs/eslint-config": "^0.0.1",
-    "@statusfy/test-utils": "^0.3.0-alpha.2",
+    "@statusfy/test-utils": "0.3.0-alpha.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.14.1",
