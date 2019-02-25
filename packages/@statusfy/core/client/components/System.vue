@@ -3,7 +3,7 @@
     :class="system.status"
     class="system flex flex-row justify-between"
   >
-    <div class="system-title flex-1">
+    <div class="system-title">
       {{ $t(`systems.items.${system.name}.title`) }}
 
       <v-popover
@@ -16,7 +16,7 @@
         <span class="system-title-info">
           <svgicon
             name="fortawesome/question-circle-regular"
-            class="svg-inline--fa fa-w-16"
+            class="ml-1 svg-inline--fa fa-w-16"
           />
         </span>
 
@@ -25,7 +25,7 @@
         </template>
       </v-popover>
     </div>
-    <div class="system-status flex-1">
+    <div class="system-status">
       <span class="hidden sm:inline">{{ status.title }}</span>
       <svgicon
         :name="`fortawesome/${status.icon}`"
