@@ -3,19 +3,19 @@
 </template>
 
 <script>
-import ErrorPage from '~/layouts/error'
+import ErrorPage from "~/layouts/error";
 
 export default {
-  layout: '404',
+  layout: "404",
   components: {
     ErrorPage
   },
-  data () {
+  data() {
     return {
       error: {
         statusCode: 404
       }
-    }
+    };
   }
-}
+};
 </script>

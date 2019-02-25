@@ -1,156 +1,207 @@
-const fs = require('fs')
-const defaultsDeep = require('lodash/defaultsDeep')
-const { esm, logger, style, path } = require('@statusfy/common')
+const fs = require("fs");
+const defaultsDeep = require("lodash/defaultsDeep");
+const { esm, logger, style, path } = require("@statusfy/common");
 
-const loadConfig = require('./load')
-const { colors } = style
+const loadConfig = require("./load");
+const { colors } = style;
 
-module.exports = function generateConfig (sourceDir, cliOptions) {
-  const nuxtConfig = Object.assign({}, esm(path.join(__dirname, '../../nuxt.config.js')))
-  const loadedConfig = loadConfig(sourceDir)
+module.exports = function generateConfig(sourceDir, cliOptions) {
+  const nuxtConfig = Object.assign(
+    {},
+    esm(path.join(__dirname, "../../nuxt.config.js"))
+  );
+  const loadedConfig = loadConfig(sourceDir);
 
-  const siteConfig = loadedConfig.config
-  const siteConfigErrors = loadedConfig.errors
+  const siteConfig = loadedConfig.config;
+  const siteConfigErrors = loadedConfig.errors;
 
   try {
     if (siteConfigErrors && siteConfigErrors.length > 0) {
-      logger.fatal('Your site configuration is invalid', siteConfigErrors.join('\n'))
-      process.exit(1)
+      logger.fatal(
+        "Your site configuration is invalid",
+        siteConfigErrors.join("\n")
+      );
+      process.exit(1);
     }
   } catch (error) {
-    logger.error(error)
-    process.exit(1)
+    logger.error(error);
+    process.exit(1);
   }
 
   // General
-  nuxtConfig.dev = !(process.env.NODE_ENV === 'production')
-  nuxtConfig.rootDir = path.join(__dirname, '..', '..')
-  nuxtConfig.buildDir = path.join(sourceDir, '.statusfy')
-  nuxtConfig.modulesDir.push(path.join(sourceDir, 'node_modules'))
-  nuxtConfig.modulesDir = [...new Set(nuxtConfig.modulesDir)]
+  nuxtConfig.dev = !(process.env.NODE_ENV === "production");
+  nuxtConfig.rootDir = path.join(__dirname, "..", "..");
+  nuxtConfig.buildDir = path.join(sourceDir, ".statusfy");
+  nuxtConfig.modulesDir.push(path.join(sourceDir, "node_modules"));
+  nuxtConfig.modulesDir = [...new Set(nuxtConfig.modulesDir)];
 
   // Style
-  nuxtConfig.loading.color = colors.black
-  nuxtConfig.meta.theme_color = colors.black
+  nuxtConfig.loading.color = colors.black;
+  nuxtConfig.meta.theme_color = colors.black;
 
   // Statusfy module configuration
   nuxtConfig.server = {
-    host: cliOptions.host || process.env.HOST || '127.0.0.1',
+    host: cliOptions.host || process.env.HOST || "127.0.0.1",
     port: cliOptions.port || process.env.PORT || 3000
-  }
+  };
 
   // Statusfy module configuration
-  nuxtConfig.statusfy.version = nuxtConfig.manifest.version
-  nuxtConfig.statusfy.dev = nuxtConfig.dev
-  nuxtConfig.statusfy.locales = siteConfig.locales
-  nuxtConfig.statusfy.sourceDir = sourceDir
-  nuxtConfig.statusfy.siteConfig = siteConfig
-  nuxtConfig.statusfy.publicFilesPath = fs.existsSync(path.join(sourceDir, 'public'))
-    ? path.join(sourceDir, 'public')
-    : null
+  nuxtConfig.statusfy.version = nuxtConfig.manifest.version;
+  nuxtConfig.statusfy.dev = nuxtConfig.dev;
+  nuxtConfig.statusfy.locales = siteConfig.locales;
+  nuxtConfig.statusfy.sourceDir = sourceDir;
+  nuxtConfig.statusfy.siteConfig = siteConfig;
+  nuxtConfig.statusfy.publicFilesPath = fs.existsSync(
+    path.join(sourceDir, "public")
+  )
+    ? path.join(sourceDir, "public")
+    : null;
 
-  const validLogoExtension = ['png', 'jpg', 'jpeg', 'gif', 'svg']
+  const validLogoExtension = ["png", "jpg", "jpeg", "gif", "svg"];
 
-  for (let ext of validLogoExtension) {
-    const filePath = path.join(sourceDir, 'theme', 'default', 'img', `logo.${ext}`)
+  for (const ext of validLogoExtension) {
+    const filePath = path.join(
+      sourceDir,
+      "theme",
+      "default",
+      "img",
+      `logo.${ext}`
+    );
 
     if (fs.existsSync(filePath)) {
-      nuxtConfig.statusfy.assets.mainLogo = filePath
-      break
+      nuxtConfig.statusfy.assets.mainLogo = filePath;
+      break;
     }
   }
 
   // Head Configuration
-  nuxtConfig.head = { ...siteConfig.head, ...nuxtConfig.head }
-  nuxtConfig.head.title = siteConfig.title
+  nuxtConfig.head = { ...siteConfig.head, ...nuxtConfig.head };
+  nuxtConfig.head.title = siteConfig.title;
   // Hack: fix duplicate descripton object
-  const descriptionIndex = nuxtConfig.head.meta.findIndex(o => o.hid === 'description')
-  const descriptionValue = { hid: 'description', name: 'description', content: siteConfig.description }
+  const descriptionIndex = nuxtConfig.head.meta.findIndex(
+    o => o.hid === "description"
+  );
+  const descriptionValue = {
+    hid: "description",
+    name: "description",
+    content: siteConfig.description
+  };
   if (descriptionIndex === -1) {
-    nuxtConfig.head.meta.push(descriptionValue)
+    nuxtConfig.head.meta.push(descriptionValue);
   } else {
-    nuxtConfig.head.meta[descriptionIndex] = descriptionValue
+    nuxtConfig.head.meta[descriptionIndex] = descriptionValue;
   }
 
-  nuxtConfig.head.titleTemplate = `%s | ${siteConfig.title}`
-  nuxtConfig.head = defaultsDeep(siteConfig.head, nuxtConfig.head)
+  nuxtConfig.head.titleTemplate = `%s | ${siteConfig.title}`;
+  nuxtConfig.head = defaultsDeep(siteConfig.head, nuxtConfig.head);
 
   // Generate Configuration
-  nuxtConfig.generate.dir = path.join(sourceDir, cliOptions.outDir || 'dist')
+  nuxtConfig.generate.dir = path.join(sourceDir, cliOptions.outDir || "dist");
 
   // nuxt-i18n module configuration
-  const nuxti18nModuleConfig = nuxtConfig.modules.find(item => item[0] === 'nuxt-i18n')[1]
+  const nuxti18nModuleConfig = nuxtConfig.modules.find(
+    item => item[0] === "nuxt-i18n"
+  )[1];
   // Update the locales list
-  nuxti18nModuleConfig.locales = []
+  nuxti18nModuleConfig.locales = [];
   siteConfig.locales.forEach(locale => {
     nuxti18nModuleConfig.locales.push({
       ...locale,
       file: `${locale.code}.js`
-    })
-  })
-  nuxti18nModuleConfig.defaultLocale = siteConfig.defaultLocale
-  nuxti18nModuleConfig.detectBrowserLanguage.cookieKey = `${siteConfig.name}.lang_redirected`
-  nuxti18nModuleConfig.vueI18n.fallbackLocale = siteConfig.defaultLocale
+    });
+  });
+  nuxti18nModuleConfig.defaultLocale = siteConfig.defaultLocale;
+  nuxti18nModuleConfig.detectBrowserLanguage.cookieKey = `${
+    siteConfig.name
+  }.lang_redirected`;
+  nuxti18nModuleConfig.vueI18n.fallbackLocale = siteConfig.defaultLocale;
   if (siteConfig.baseUrl) {
-    nuxti18nModuleConfig.baseUrl = siteConfig.baseUrl === '/' ? null : siteConfig.baseUrl
+    nuxti18nModuleConfig.baseUrl =
+      siteConfig.baseUrl === "/" ? null : siteConfig.baseUrl;
   }
 
   // PWA Module
   if (siteConfig.serviceWorker === true) {
-    nuxtConfig.workbox.cacheId = siteConfig.name
-    nuxtConfig.workbox.globDirectory = path.resolve(nuxtConfig.buildDir, 'dist', 'client')
+    nuxtConfig.workbox.cacheId = siteConfig.name;
+    nuxtConfig.workbox.globDirectory = path.resolve(
+      nuxtConfig.buildDir,
+      "dist",
+      "client"
+    );
 
     nuxtConfig.workbox.runtimeCaching.forEach(runtime => {
       if (runtime.strategyOptions) {
-        runtime.strategyOptions.cacheName = `${siteConfig.name}_${runtime.strategyOptions.cacheName}`
+        runtime.strategyOptions.cacheName = `${siteConfig.name}_${
+          runtime.strategyOptions.cacheName
+        }`;
       }
-    })
+    });
   } else {
-    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(item => item[0] === '@nuxtjs/pwa')[1]
-    nuxtiPwaModuleConfig.workbox = false
+    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(
+      item => item[0] === "@nuxtjs/pwa"
+    )[1];
+    nuxtiPwaModuleConfig.workbox = false;
 
-    delete nuxtConfig.workbox
+    delete nuxtConfig.workbox;
   }
 
   if (siteConfig.manifest === true) {
-    nuxtConfig.manifest.name = siteConfig.title
-    nuxtConfig.manifest.short_name = siteConfig.short_title
-    nuxtConfig.manifest.description = siteConfig.description
-    nuxtConfig.manifest.lang = siteConfig.defaultLocale
+    nuxtConfig.manifest.name = siteConfig.title;
+    nuxtConfig.manifest.short_name = siteConfig.short_title;
+    nuxtConfig.manifest.description = siteConfig.description;
+    nuxtConfig.manifest.lang = siteConfig.defaultLocale;
   } else {
-    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(item => item[0] === '@nuxtjs/pwa')[1]
-    nuxtiPwaModuleConfig.manifest = false
+    const nuxtiPwaModuleConfig = nuxtConfig.modules.find(
+      item => item[0] === "@nuxtjs/pwa"
+    )[1];
+    nuxtiPwaModuleConfig.manifest = false;
 
-    delete nuxtConfig.manifest
+    delete nuxtConfig.manifest;
   }
 
-  nuxtConfig.meta.ogHost = siteConfig.baseUrl
+  nuxtConfig.meta.ogHost = siteConfig.baseUrl;
 
-  const customIconPath = path.join(sourceDir, 'theme', 'default', 'img', 'icon.png')
+  const customIconPath = path.join(
+    sourceDir,
+    "theme",
+    "default",
+    "img",
+    "icon.png"
+  );
   if (fs.existsSync(customIconPath)) {
-    nuxtConfig.icon.iconSrc = customIconPath
+    nuxtConfig.icon.iconSrc = customIconPath;
   }
 
   // Custom Styles
-  const validStylesExtension = ['css', 'less', 'sass', 'scss', 'styl', 'stylus']
-  const stylesPath = []
+  const validStylesExtension = [
+    "css",
+    "less",
+    "sass",
+    "scss",
+    "styl",
+    "stylus"
+  ];
+  const stylesPath = [];
 
-  for (let ext of validStylesExtension) {
-    const filePath = path.join(sourceDir, 'theme', 'default', `style.${ext}`)
+  for (const ext of validStylesExtension) {
+    const filePath = path.join(sourceDir, "theme", "default", `style.${ext}`);
 
     if (fs.existsSync(filePath)) {
-      stylesPath.push(filePath)
+      stylesPath.push(filePath);
     }
   }
 
   if (stylesPath.length > 0) {
-    logger.info('Loading Styles from: ', stylesPath.map(p => path.relative(sourceDir, p)).join('\n'))
+    logger.info(
+      "Loading Styles from: ",
+      stylesPath.map(p => path.relative(sourceDir, p)).join("\n")
+    );
 
-    nuxtConfig.css.push(...stylesPath)
+    nuxtConfig.css.push(...stylesPath);
   }
 
   return {
     nuxtConfig,
     siteConfig
-  }
-}
+  };
+};

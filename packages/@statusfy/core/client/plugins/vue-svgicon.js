@@ -1,4 +1,4 @@
-import Vue from 'vue'
-import SvgIcon from 'vue-svgicon'
+import Vue from "vue";
+import SvgIcon from "vue-svgicon";
 
-Vue.use(SvgIcon)
+Vue.use(SvgIcon);

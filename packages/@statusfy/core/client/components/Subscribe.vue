@@ -90,50 +90,56 @@
 </template>
 
 <script>
-import './icons/fortawesome/times-solid'
+import "./icons/fortawesome/times-solid";
 
 export default {
-  data () {
+  data() {
     return {
       isModalActive: false,
       selectedTab: null
-    }
+    };
   },
   computed: {
-    tabs () {
-      const results = {}
-      const keys = Object.keys(this.$statusfy.notifications)
+    tabs() {
+      const results = {};
+      const keys = Object.keys(this.$statusfy.notifications);
 
       keys.forEach(key => {
         if (this.$statusfy.notifications[key]) {
-          results[key] = this.$statusfy.notifications[key]
+          results[key] = this.$statusfy.notifications[key];
         }
-      })
+      });
 
-      this.switchTab(Object.keys(results)[0])
+      this.switchTab(Object.keys(results)[0]);
 
-      return results
+      return results;
     },
-    icalendarUrl () {
-      return `webcal://${window.location.hostname}/calendars/scheduled.${this.$i18n.locale}.ics`
+    icalendarUrl() {
+      return `webcal://${window.location.hostname}/calendars/scheduled.${
+        this.$i18n.locale
+      }.ics`;
     },
-    feedsUrls () {
-      const atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`
-      const rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`
+    feedsUrls() {
+      const atom = `//${window.location.hostname}/feeds/incidents.${
+        this.$i18n.locale
+      }.atom`;
+      const rss = `//${window.location.hostname}/feeds/incidents.${
+        this.$i18n.locale
+      }.xml`;
 
       return {
         atom,
         rss
-      }
+      };
     }
   },
   methods: {
-    toggleModal () {
-      this.isModalActive = !this.isModalActive
+    toggleModal() {
+      this.isModalActive = !this.isModalActive;
     },
-    switchTab (key) {
-      this.selectedTab = key
+    switchTab(key) {
+      this.selectedTab = key;
     }
   }
-}
+};
 </script>

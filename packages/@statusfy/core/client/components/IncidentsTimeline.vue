@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import { statusesInfo } from '~/helpers/statuses'
-import Incident from './Incident'
-import NiceDate from './NiceDate'
+import { statusesInfo } from "~/helpers/statuses";
+import Incident from "./Incident";
+import NiceDate from "./NiceDate";
 
 export default {
   components: {
@@ -58,28 +58,28 @@ export default {
     }
   },
   computed: {
-    days () {
-      const days = this.data.days.slice(0)
+    days() {
+      const days = this.data.days.slice(0);
 
-      for (let day of days) {
-        day.status = this.getDayStatus(day.incidents)
+      for (const day of days) {
+        day.status = this.getDayStatus(day.incidents);
       }
 
-      return days
+      return days;
     }
   },
   methods: {
-    getDayStatus (incidents) {
-      const $t = this.$t.bind(this)
-      const statuses = statusesInfo($t)
+    getDayStatus(incidents) {
+      const $t = this.$t.bind(this);
+      const statuses = statusesInfo($t);
 
-      let statusKey = 'operational'
+      let statusKey = "operational";
 
-      for (let status of statuses.keys) {
-        for (let incident of incidents) {
+      for (const status of statuses.keys) {
+        for (const incident of incidents) {
           if (incident.severity === status) {
-            statusKey = status
-            break
+            statusKey = status;
+            break;
           }
         }
       }
@@ -88,8 +88,8 @@ export default {
         key: statusKey,
         title: statuses.i18nKeys[statusKey],
         icon: statuses.icons[statusKey]
-      }
+      };
     }
   }
-}
+};
 </script>

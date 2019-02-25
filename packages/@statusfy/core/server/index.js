@@ -1,11 +1,17 @@
-const createApp = require('./app')
-const { logger } = require('@statusfy/common')
+const { logger } = require("@statusfy/common");
+const createApp = require("./app");
 
-module.exports = async function createServer (siteConfig, nuxtConfig, host, port, apiPrefix = '') {
-  const app = await createApp(siteConfig, nuxtConfig, host, port, apiPrefix)
+module.exports = async function createServer(
+  siteConfig,
+  nuxtConfig,
+  host,
+  port,
+  apiPrefix = ""
+) {
+  const app = await createApp(siteConfig, nuxtConfig, host, port, apiPrefix);
 
   return app.listen(port, host, () => {
     // Listen the server
-    logger.debug('Server listening on http://' + host + ':' + port)
-  })
-}
+    logger.debug("Server listening on http://" + host + ":" + port);
+  });
+};

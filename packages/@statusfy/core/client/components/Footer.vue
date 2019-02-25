@@ -47,15 +47,15 @@
 </template>
 
 <script>
-import get from 'lodash.get'
+import get from "lodash.get";
 
 export default {
   computed: {
-    links () {
-      const $t = this.$t.bind(this)
-      const allowedLinksKeys = ['home', 'contact', 'support']
-      const themeLinks = get(this.$statusfy, ['theme', 'links'])
-      const links = {}
+    links() {
+      const $t = this.$t.bind(this);
+      const allowedLinksKeys = ["home", "contact", "support"];
+      const themeLinks = get(this.$statusfy, ["theme", "links"]);
+      const links = {};
 
       allowedLinksKeys.forEach(key => {
         if (get(themeLinks, [this.$i18n.locale, key])) {
@@ -63,24 +63,24 @@ export default {
             key,
             title: $t(`labels.${key}`),
             url: get(themeLinks, [this.$i18n.locale, key])
-          }
+          };
         }
-      })
+      });
 
-      return links
+      return links;
     },
-    statusfyHomeLink () {
+    statusfyHomeLink() {
       const urls = {
-        'en': 'https://statusfy.co',
-        'es': 'https://statusfy.co/es'
-      }
+        en: "https://statusfy.co",
+        es: "https://statusfy.co/es"
+      };
 
       if (urls[this.$i18n.locale]) {
-        return urls[this.$i18n.locale]
+        return urls[this.$i18n.locale];
       } else {
-        return urls['en']
+        return urls.en;
       }
     }
   }
-}
+};
 </script>

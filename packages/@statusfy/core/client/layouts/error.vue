@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Head from '~/components/mixins/head'
+import Head from "~/components/mixins/head";
 
 export default {
   mixins: [Head],
@@ -31,7 +31,7 @@ export default {
       required: true
     }
   },
-  head () {
+  head() {
     return {
       htmlAttrs: {
         lang: this.$i18n.locale
@@ -39,28 +39,28 @@ export default {
       title: this.title,
       meta: [
         {
-          hid: 'description',
-          name: 'description',
+          hid: "description",
+          name: "description",
           content: this.description
         }
       ]
-    }
+    };
   },
   computed: {
-    title () {
-      const $t = this.$t.bind(this)
+    title() {
+      const $t = this.$t.bind(this);
 
       return this.error.statusCode === 404
-        ? $t('error.404.title')
-        : $t('error.other.title')
+        ? $t("error.404.title")
+        : $t("error.other.title");
     },
-    description () {
-      const $t = this.$t.bind(this)
+    description() {
+      const $t = this.$t.bind(this);
 
       return this.error.statusCode === 404
-        ? $t('error.404.description')
-        : $t('error.other.description')
+        ? $t("error.404.description")
+        : $t("error.other.description");
     }
   }
-}
+};
 </script>

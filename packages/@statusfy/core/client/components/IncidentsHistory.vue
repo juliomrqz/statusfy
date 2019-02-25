@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import IncidentsCollapse from './IncidentsCollapse'
-import NiceDate from './NiceDate'
+import IncidentsCollapse from "./IncidentsCollapse";
+import NiceDate from "./NiceDate";
 
 export default {
   components: {
@@ -41,7 +41,7 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style scoped>

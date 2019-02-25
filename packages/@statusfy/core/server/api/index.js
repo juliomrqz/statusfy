@@ -1,18 +1,18 @@
-const { Router } = require('express')
+const { Router } = require("express");
 
-const buildIncidentsRouter = require('./incidents')
-const buildSystemsRouter = require('./systems')
-const buildScheduledRouter = require('./scheduled')
+const buildIncidentsRouter = require("./incidents");
+const buildSystemsRouter = require("./systems");
+const buildScheduledRouter = require("./scheduled");
 
-const buildRouter = (siteConfig) => {
-  const router = Router()
+const buildRouter = siteConfig => {
+  const router = Router();
 
   // Add Routes
-  router.use(buildIncidentsRouter(siteConfig))
-  router.use(buildSystemsRouter(siteConfig))
-  router.use(buildScheduledRouter(siteConfig))
+  router.use(buildIncidentsRouter(siteConfig));
+  router.use(buildSystemsRouter(siteConfig));
+  router.use(buildScheduledRouter(siteConfig));
 
-  return router
-}
+  return router;
+};
 
-module.exports = buildRouter
+module.exports = buildRouter;

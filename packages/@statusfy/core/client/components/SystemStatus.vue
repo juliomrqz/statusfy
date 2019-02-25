@@ -23,14 +23,14 @@
 </template>
 
 <script>
-import { statusesInfo } from '~/helpers/statuses'
+import { statusesInfo } from "~/helpers/statuses";
 
-import System from './System'
-import './icons/fortawesome/clock-solid'
-import './icons/fortawesome/exclamation-circle-solid'
-import './icons/fortawesome/minus-circle-solid'
-import './icons/fortawesome/times-circle-solid'
-import './icons/fortawesome/check-circle-solid'
+import System from "./System";
+import "./icons/fortawesome/clock-solid";
+import "./icons/fortawesome/exclamation-circle-solid";
+import "./icons/fortawesome/minus-circle-solid";
+import "./icons/fortawesome/times-circle-solid";
+import "./icons/fortawesome/check-circle-solid";
 
 export default {
   components: {
@@ -44,16 +44,16 @@ export default {
     }
   },
   computed: {
-    status () {
-      const $t = this.$t.bind(this)
-      const statuses = statusesInfo($t)
+    status() {
+      const $t = this.$t.bind(this);
+      const statuses = statusesInfo($t);
 
-      let statusKey = 'operational'
+      let statusKey = "operational";
 
-      for (let status of statuses.keys) {
+      for (const status of statuses.keys) {
         if (this.systems.find(system => system.status === status)) {
-          statusKey = status
-          break
+          statusKey = status;
+          break;
         }
       }
 
@@ -61,8 +61,8 @@ export default {
         title: statuses.i18nKeys[statusKey],
         icon: statuses.icons[statusKey],
         key: statusKey
-      }
+      };
     }
   }
-}
+};
 </script>

@@ -1,29 +1,29 @@
-const { Router } = require('express')
+const { Router } = require("express");
 
-const createDatabase = require('../../lib/content/database')
-const response = require('../utils/response')
-const request = require('../utils/request')
+const createDatabase = require("../../lib/content/database");
+const response = require("../utils/response");
+const request = require("../utils/request");
 
-const buildRouter = (siteConfig) => {
-  const router = Router()
+const buildRouter = siteConfig => {
+  const router = Router();
   const scheduledPath = siteConfig.build.isStatic
-    ? '/scheduled.:lang.json'
-    : '/scheduled'
+    ? "/scheduled.:lang.json"
+    : "/scheduled";
 
   router.get(scheduledPath, async (req, res, next) => {
-    const { language, siteConfig } = request(req)
-    const send = response(res, language)
+    const { language, siteConfig } = request(req);
+    const send = response(res, language);
 
     try {
-      const database = await createDatabase(siteConfig)
+      const database = await createDatabase(siteConfig);
 
-      send.json(database.scheduled(language))
+      send.json(database.scheduled(language));
     } catch (error) {
-      next(error)
+      next(error);
     }
-  })
+  });
 
-  return router
-}
+  return router;
+};
 
-module.exports = buildRouter
+module.exports = buildRouter;

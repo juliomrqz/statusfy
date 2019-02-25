@@ -99,15 +99,15 @@
 </template>
 
 <script>
-import { getStatusInfo } from '~/helpers/statuses'
+import { getStatusInfo } from "~/helpers/statuses";
 
-import './icons/fortawesome/clock-solid'
-import './icons/fortawesome/exclamation-circle-solid'
-import './icons/fortawesome/minus-circle-solid'
-import './icons/fortawesome/times-circle-solid'
-import './icons/fortawesome/check-circle-solid'
-import './icons/fortawesome/external-link-alt-solid'
-import NiceDate from './NiceDate'
+import "./icons/fortawesome/clock-solid";
+import "./icons/fortawesome/exclamation-circle-solid";
+import "./icons/fortawesome/minus-circle-solid";
+import "./icons/fortawesome/times-circle-solid";
+import "./icons/fortawesome/check-circle-solid";
+import "./icons/fortawesome/external-link-alt-solid";
+import NiceDate from "./NiceDate";
 
 export default {
   components: {
@@ -129,51 +129,59 @@ export default {
     level: {
       type: Number,
       default: 4,
-      validator: (value) => {
+      validator: value => {
         // The value must match one of these numbers
-        return [0, 3, 4].indexOf(value) !== -1
+        return [0, 3, 4].indexOf(value) !== -1;
       }
     }
   },
-  data () {
+  data() {
     return {
-      content: ''
-    }
+      content: ""
+    };
   },
   computed: {
-    status () {
-      const $t = this.$t.bind(this)
-      return getStatusInfo($t, this.incident.severity)
+    status() {
+      const $t = this.$t.bind(this);
+      return getStatusInfo($t, this.incident.severity);
     },
-    resolved () {
-      const $t = this.$t.bind(this)
-      const statusKey = this.incident.resolved ? 'operational' : this.incident.severity
+    resolved() {
+      const $t = this.$t.bind(this);
+      const statusKey = this.incident.resolved
+        ? "operational"
+        : this.incident.severity;
 
       return {
         value: this.incident.resolved,
         ...getStatusInfo($t, statusKey)
-      }
+      };
     }
   },
-  mounted () {
-    const $t = this.$t.bind(this)
+  mounted() {
+    const $t = this.$t.bind(this);
 
     if (this.$refs.content) {
-      const blockElements = this.$refs.content.querySelectorAll('.update-block')
-      const externalLinksElements = this.$refs.content.querySelectorAll('a.external')
-      const iconElement = this.$refs['external-link-icon'].$el
+      const blockElements = this.$refs.content.querySelectorAll(
+        ".update-block"
+      );
+      const externalLinksElements = this.$refs.content.querySelectorAll(
+        "a.external"
+      );
+      const iconElement = this.$refs["external-link-icon"].$el;
 
       blockElements.forEach((el, i) => {
-        const dateEl = el.querySelectorAll('.update-block-date')[0]
-        const date = this.$statusfy.dayjs(dateEl.innerHTML)
+        const dateEl = el.querySelectorAll(".update-block-date")[0];
+        const date = this.$statusfy.dayjs(dateEl.innerHTML);
 
-        dateEl.innerHTML = date.locale(this.$i18n.locale).format($t(`dates.formats.long`))
-      })
+        dateEl.innerHTML = date
+          .locale(this.$i18n.locale)
+          .format($t(`dates.formats.long`));
+      });
 
       externalLinksElements.forEach((el, i) => {
-        el.appendChild(iconElement)
-      })
+        el.appendChild(iconElement);
+      });
     }
   }
-}
+};
 </script>

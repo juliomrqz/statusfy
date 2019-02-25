@@ -1,29 +1,28 @@
 module.exports = {
-  title: 'Long Title',
-  short_title: 'Short Title',
-  name: 'app_name',
-  description: 'Description',
-  baseUrl: 'https://demo.statusfy.co',
+  title: "Long Title",
+  short_title: "Short Title",
+  name: "app_name",
+  description: "Description",
+  baseUrl: "https://demo.statusfy.co",
   analytics: {
-    ga: 'UA-XXXXXXXXX-Y'
+    ga: "UA-XXXXXXXXX-Y"
   },
-  defaultLocale: 'en',
+  defaultLocale: "en",
   locales: [
-    { code: 'en', iso: 'en-US', name: 'English' },
-    { code: 'es', iso: 'es-ES', name: 'Español' }
+    { code: "en", iso: "en-US", name: "English" },
+    { code: "es", iso: "es-ES", name: "Español" }
   ],
   content: {
-    frontMatterFormat: 'yaml',
-    systems: [
-      'cdn',
-      'conversions',
-      'site-delivery',
-      'api'
-    ]
+    frontMatterFormat: "yaml",
+    systems: ["cdn", "conversions", "site-delivery", "api"]
   },
   head: {
     link: [
-      { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3e4e88' }
+      {
+        rel: "mask-icon",
+        href: "/icons/safari-pinned-tab.svg",
+        color: "#3e4e88"
+      }
     ]
   }
-}
+};

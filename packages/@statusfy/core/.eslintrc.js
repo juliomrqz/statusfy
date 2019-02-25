@@ -8,15 +8,13 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    'standard',
-    'plugin:vue/recommended',
-    'plugin:jest/recommended'
+    '@nuxtjs',
+    'plugin:prettier/recommended'
   ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'prettier'
   ],
-  // add your custom rules here
   rules: {
     indent: ['error', 2, { MemberExpression: 'off' }]
   }

@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import './icons/fortawesome/chevron-right-solid'
-import './icons/fortawesome/chevron-left-solid'
+import "./icons/fortawesome/chevron-right-solid";
+import "./icons/fortawesome/chevron-left-solid";
 
 export default {
   props: {
@@ -46,13 +46,16 @@ export default {
     }
   },
   computed: {
-    previousLink () {
+    previousLink() {
       if (this.info.page === 2) {
-        return this.localePath('history')
+        return this.localePath("history");
       } else {
-        return this.localePath({ name: 'history-page', params: { page: this.info.page - 1 } })
+        return this.localePath({
+          name: "history-page",
+          params: { page: this.info.page - 1 }
+        });
       }
     }
   }
-}
+};
 </script>

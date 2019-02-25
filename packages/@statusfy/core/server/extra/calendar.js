@@ -1,25 +1,25 @@
-const { Router } = require('express')
-const router = Router()
+const { Router } = require("express");
+const router = Router();
 
-const createCalendar = require('../../lib/content/calendar')
+const createCalendar = require("../../lib/content/calendar");
 
-router.get('/calendars/scheduled.:lang.ics', async (req, res, next) => {
-  const siteConfig = req.app.get('siteConfig')
+router.get("/calendars/scheduled.:lang.ics", async (req, res, next) => {
+  const siteConfig = req.app.get("siteConfig");
 
   if (!siteConfig.notifications || !siteConfig.notifications.icalendar) {
-    next()
+    next();
   }
 
-  const { lang } = req.params
+  const { lang } = req.params;
 
   try {
-    const ics = await createCalendar(siteConfig, lang)
+    const ics = await createCalendar(siteConfig, lang);
 
-    res.set('Content-Type', 'text/calendar')
-    return res.send(ics)
+    res.set("Content-Type", "text/calendar");
+    return res.send(ics);
   } catch (error) {
-    next(error)
+    next(error);
   }
-})
+});
 
-module.exports = router
+module.exports = router;

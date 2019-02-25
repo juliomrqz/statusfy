@@ -36,19 +36,19 @@
 </template>
 
 <script>
-import { getStatusInfo } from '~/helpers/statuses'
+import { getStatusInfo } from "~/helpers/statuses";
 
-import './icons/fortawesome/question-circle-regular'
+import "./icons/fortawesome/question-circle-regular";
 
-import './icons/fortawesome/clock-solid'
-import './icons/fortawesome/exclamation-circle-solid'
-import './icons/fortawesome/minus-circle-solid'
-import './icons/fortawesome/times-circle-solid'
-import './icons/fortawesome/check-circle-solid'
+import "./icons/fortawesome/clock-solid";
+import "./icons/fortawesome/exclamation-circle-solid";
+import "./icons/fortawesome/minus-circle-solid";
+import "./icons/fortawesome/times-circle-solid";
+import "./icons/fortawesome/check-circle-solid";
 
 export default {
   components: {
-    'v-popover': () => import('v-tooltip').then(({ VPopover }) => VPopover)
+    "v-popover": () => import("v-tooltip").then(({ VPopover }) => VPopover)
   },
   props: {
     system: {
@@ -57,22 +57,22 @@ export default {
     }
   },
   computed: {
-    description () {
-      const $t = this.$t.bind(this)
-      const $te = this.$te.bind(this)
-      const key = `systems.items.${this.system.name}.description`
+    description() {
+      const $t = this.$t.bind(this);
+      const $te = this.$te.bind(this);
+      const key = `systems.items.${this.system.name}.description`;
 
       if ($te(key)) {
-        return $t(key)
+        return $t(key);
       } else {
-        return null
+        return null;
       }
     },
-    status () {
-      const $t = this.$t.bind(this)
+    status() {
+      const $t = this.$t.bind(this);
 
-      return getStatusInfo($t, this.system.status)
+      return getStatusInfo($t, this.system.status);
     }
   }
-}
+};
 </script>

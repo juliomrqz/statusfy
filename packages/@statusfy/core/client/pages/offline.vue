@@ -20,21 +20,25 @@
 </template>
 
 <script>
-import '~/components/icons/fortawesome/unlink-solid'
+import "~/components/icons/fortawesome/unlink-solid";
 
 export default {
-  head () {
-    const $t = this.$t.bind(this)
+  head() {
+    const $t = this.$t.bind(this);
 
     return {
-      title: $t('offline.title'),
+      title: $t("offline.title"),
       meta: [
-        { hid: 'description', name: 'description', content: $t('offline.description') },
-        { hid: 'robots', name: 'robots', content: 'noindex, follow' }
+        {
+          hid: "description",
+          name: "description",
+          content: $t("offline.description")
+        },
+        { hid: "robots", name: "robots", content: "noindex, follow" }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style scopped>

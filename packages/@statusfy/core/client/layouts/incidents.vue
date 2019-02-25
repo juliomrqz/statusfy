@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import AppHeader from '~/components/Header'
-import AppFooter from '~/components/Footer'
-import Head from '~/components/mixins/head'
+import AppHeader from "~/components/Header";
+import AppFooter from "~/components/Footer";
+import Head from "~/components/mixins/head";
 
 export default {
   components: {
@@ -36,5 +36,5 @@ export default {
     AppFooter
   },
   mixins: [Head]
-}
+};
 </script>

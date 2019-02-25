@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Incident from './Incident'
+import Incident from "./Incident";
 
 export default {
   components: {
@@ -36,5 +36,5 @@ export default {
       required: true
     }
   }
-}
+};
 </script>

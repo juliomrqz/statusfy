@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Subscribe from './Subscribe'
+import Subscribe from "./Subscribe";
 
 export default {
   components: {
@@ -36,19 +36,22 @@ export default {
   props: {
     titleTag: {
       type: String,
-      default: 'div'
+      default: "div"
     }
   },
   computed: {
-    displaySubscribe () {
-      if (this.$statusfy.notifications && (typeof this.$statusfy.notifications === 'object')) {
-        return !!Object.values(this.$statusfy.notifications).find(v => v)
+    displaySubscribe() {
+      if (
+        this.$statusfy.notifications &&
+        typeof this.$statusfy.notifications === "object"
+      ) {
+        return !!Object.values(this.$statusfy.notifications).find(v => v);
       } else {
-        return false
+        return false;
       }
     }
   }
-}
+};
 </script>
 
 <style scoped>

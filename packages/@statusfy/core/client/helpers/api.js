@@ -1,53 +1,69 @@
 export default class API {
-  constructor (axios, lang) {
-    this.axios = axios
-    this.lang = lang
-    this.isStatic = process.static
-    this.basePath = '/api/v0'
+  constructor(axios, lang) {
+    this.axios = axios;
+    this.lang = lang;
+    this.isStatic = process.static;
+    this.basePath = "/api/v0";
   }
 
-  buildUrl (path, queryStrings = {}) {
-    const queryStringsKeys = Object.keys(queryStrings)
+  buildUrl(path, queryStrings = {}) {
+    const queryStringsKeys = Object.keys(queryStrings);
 
-    let builtQueryStrings
-    let finalPath = `${this.basePath}${path}`
+    let builtQueryStrings;
+    let finalPath = `${this.basePath}${path}`;
 
     if (this.isStatic) {
-      builtQueryStrings = queryStringsKeys.map(key => `${key}-${queryStrings[key]}`).join('.')
+      builtQueryStrings = queryStringsKeys
+        .map(key => `${key}-${queryStrings[key]}`)
+        .join(".");
 
-      finalPath = '/static/content' + finalPath
-      finalPath += builtQueryStrings ? `.${builtQueryStrings}` : ''
-      finalPath += `.${this.lang}.json`
+      finalPath = "/static/content" + finalPath;
+      finalPath += builtQueryStrings ? `.${builtQueryStrings}` : "";
+      finalPath += `.${this.lang}.json`;
     } else {
-      let builtQueryStrings = queryStringsKeys.map(key => `${key}=${queryStrings[key]}`).join('&')
+      const builtQueryStrings = queryStringsKeys
+        .map(key => `${key}=${queryStrings[key]}`)
+        .join("&");
 
-      finalPath += builtQueryStrings ? `?${builtQueryStrings}` : ''
+      finalPath += builtQueryStrings ? `?${builtQueryStrings}` : "";
     }
 
-    return finalPath
+    return finalPath;
   }
 
-  async getSystems () {
-    return this.axios.$get(this.buildUrl('/systems'))
+  async getSystems() {
+    const systems = await this.axios.$get(this.buildUrl("/systems"));
+    return systems;
   }
 
-  async getIncidents (page = 1) {
-    return this.axios.$get(this.buildUrl('/incidents', { page }))
+  async getIncidents(page = 1) {
+    const incidents = await this.axios.$get(
+      this.buildUrl("/incidents", { page })
+    );
+    return incidents;
   }
 
-  async getIncident (id) {
-    return this.axios.$get(this.buildUrl(`/incidents/${id}`))
+  async getIncident(id) {
+    const incident = await this.axios.$get(this.buildUrl(`/incidents/${id}`));
+    return incident;
   }
 
-  async getIncidentsHistory (page = 1) {
-    return this.axios.$get(this.buildUrl('/incidents/history', { page }))
+  async getIncidentsHistory(page = 1) {
+    const incidentsHistory = await this.axios.$get(
+      this.buildUrl("/incidents/history", { page })
+    );
+    return incidentsHistory;
   }
 
-  async getIncidentsTimeline () {
-    return this.axios.$get(this.buildUrl('/incidents/timeline'))
+  async getIncidentsTimeline() {
+    const incidentsTimeline = await this.axios.$get(
+      this.buildUrl("/incidents/timeline")
+    );
+    return incidentsTimeline;
   }
 
-  async getScheduled () {
-    return this.axios.$get(this.buildUrl('/scheduled'))
+  async getScheduled() {
+    const scheduled = await this.axios.$get(this.buildUrl("/scheduled"));
+    return scheduled;
   }
 }

@@ -1,13 +1,13 @@
 module.exports = {
-  title: 'Title',
-  name: 'title',
-  description: '',
-  defaultLocale: 'en',
+  title: "Title",
+  name: "title",
+  description: "",
+  defaultLocale: "en",
   locales: [
     {
-      code: 'en',
-      iso: 'en-US',
-      name: 'English'
+      code: "en",
+      iso: "en-US",
+      name: "English"
     }
   ]
-}
+};

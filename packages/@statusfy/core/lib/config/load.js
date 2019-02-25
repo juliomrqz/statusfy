@@ -1,80 +1,86 @@
-const defaultsDeep = require('lodash/defaultsDeep')
+const defaultsDeep = require("lodash/defaultsDeep");
 
-const defaultConfig = require('./default')
-const validateConfig = require('./validate')
-const { logger, fse, chalk, toml, yaml, slugify, path } = require('@statusfy/common')
+const {
+  logger,
+  fse,
+  chalk,
+  toml,
+  yaml,
+  slugify,
+  path
+} = require("@statusfy/common");
+const defaultConfig = require("./default");
+const validateConfig = require("./validate");
 
-function parseConfig (filePath) {
-  const extension = path.extname(filePath)
-  let data
+function parseConfig(filePath) {
+  const extension = path.extname(filePath);
+  let data;
 
-  logger.info(`Reading configuration from ${chalk.yellow(`config${extension}`)}`)
+  logger.info(
+    `Reading configuration from ${chalk.yellow(`config${extension}`)}`
+  );
 
-  if (extension !== '.js') {
-    const content = fse.readFileSync(filePath, 'utf-8')
+  if (extension !== ".js") {
+    const content = fse.readFileSync(filePath, "utf-8");
 
-    switch (extension) {
-    case '.yml':
-      data = yaml.parse(content)
-      break
-
-    case '.toml':
-      data = toml.parse(content)
-      break
+    if (extension === ".yml") {
+      data = yaml.parse(content);
+    } else if (extension === ".toml") {
+      data = toml.parse(content);
     }
   } else {
-    data = require(filePath)
+    data = require(filePath);
   }
 
-  return data || {}
+  return data || {};
 }
 
-module.exports = function loadConfig (sourceDir) {
-  const configFiles = ['config.yml', 'config.toml', 'config.js']
-  let configContent = {}
-  let errors = []
+module.exports = function loadConfig(sourceDir) {
+  const configFiles = ["config.yml", "config.toml", "config.js"];
+  let configContent = {};
+  let errors = [];
 
   // resolve configContent
-  for (let configFile of configFiles) {
-    const configPath = path.join(sourceDir, configFile)
+  for (const configFile of configFiles) {
+    const configPath = path.join(sourceDir, configFile);
 
     if (fse.existsSync(configPath)) {
-      configContent = parseConfig(configPath)
-      break
+      configContent = parseConfig(configPath);
+      break;
     }
   }
 
   // Replace user's systems
   if (configContent.content && configContent.content.systems) {
-    defaultConfig.content.systems = configContent.content.systems
+    defaultConfig.content.systems = configContent.content.systems;
   }
 
   // Replace user's locales
   if (configContent.locales) {
-    defaultConfig.locales = configContent.locales
+    defaultConfig.locales = configContent.locales;
   }
 
-  const config = defaultsDeep(configContent, defaultConfig)
-  config.sourceDir = sourceDir
+  const config = defaultsDeep(configContent, defaultConfig);
+  config.sourceDir = sourceDir;
 
   if (!config.name) {
-    config.name = slugify(config.title)
+    config.name = slugify(config.title);
   }
 
   if (!config.short_title) {
-    config.short_title = config.title
+    config.short_title = config.title;
   }
 
   // Run Validation
   try {
-    errors = validateConfig(config)
+    errors = validateConfig(config);
   } catch (error) {
-    logger.error(error)
-    process.exit(1)
+    logger.error(error);
+    process.exit(1);
   }
 
   return {
     config,
     errors
-  }
-}
+  };
+};
