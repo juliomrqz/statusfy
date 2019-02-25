@@ -27,6 +27,7 @@
     "scheduled": "Manutenção programada",
     "incidents-history": "Histórico de incidentes",
     "incidents-history-description": "Mantenha-se atualizado com os incidentes antigos e atuais dos nossos serviços que podem estar afetando você",
+    "incidents-history-days-since-latest": "1 dia desde o último incidente | {days} dias desde o último incidente",
     "latest-incidents": "Ultimos incidentes",
     "current-status": "Status atual",
     "current-status-description": "Mantenha-se atualizado com os incidentes antigos e atuais dos nossos serviços que podem estar afetando você",

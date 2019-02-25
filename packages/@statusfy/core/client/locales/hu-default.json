@@ -30,6 +30,7 @@
     "latest-incidents": "Legfrissebb incidensek",
     "current-status": "Jelenlegi állapot",
     "current-status-description": "Tartsa naprakészen a szolgáltatásunk valós idejű és korábbi megszakításait, amelyek esetleg befolyásolhatják Önt.",
+    "incidents-history-days-since-latest": "1 nap az utolsó incidens óta | {days} nappal az utolsó incidens óta",
     "no-incidents": "Nincs bejelentett incidens.",
     "resolved": "Megoldott",
     "unresolved": "Megoldatlan",

@@ -3,6 +3,12 @@
     <h2>{{ $t('incidents.latest-incidents') }}</h2>
 
     <ul class="timeline">
+      <li v-if="data.daysSinceLatest > 0" class="timeline-incident">
+        <h3 class="timeline-incident-title">
+          {{ $tc('incidents.incidents-history-days-since-latest', data.daysSinceLatest, { days: data.daysSinceLatest }) }}
+        </h3>
+      </li>
+
       <li
         v-for="day of days"
         :key="day.date"

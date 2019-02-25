@@ -284,9 +284,15 @@ module.exports = async function database(siteConfig, finalDate) {
         order++;
       }
 
+      const daysSinceLatest =
+        days.length === 0
+          ? 0
+          : moment(sortedIncidents[0].date).diff(end, "days");
+
       return {
         count: days.length,
-        days
+        days,
+        daysSinceLatest
       };
     },
     incident(id, lang) {

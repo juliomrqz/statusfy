@@ -66,6 +66,8 @@ main {
   }
 
   &::before {
+    border-color: var(--grey-darker);
+
     .under-maintenance& {
       border-color: var(--grey-darker);
     }

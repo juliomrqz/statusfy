@@ -27,6 +27,7 @@
     "scheduled": "Scheduled Maintenance",
     "incidents-history": "Incidents History",
     "incidents-history-description": "Current & Historical operational interruptions to our service.",
+    "incidents-history-days-since-latest": "1 day since last incident | {days} days since last incident",
     "latest-incidents": "Latest Incidents",
     "current-status": "Current Status",
     "current-status-description": "Keep up to date with real-time and historical interruptions to our service which may be affecting you.",

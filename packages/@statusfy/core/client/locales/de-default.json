@@ -27,6 +27,7 @@
     "scheduled": "Geplante Wartung",
     "incidents-history": "Alle Vorfälle",
     "incidents-history-description": "Aktuelle und vor­he­rige Ausfälle unserer Dienste.",
+    "incidents-history-days-since-latest": "1 Tag seit dem letzten Vorfall | {days} Tage seit dem letzten Vorfall",
     "latest-incidents": "Letzte Vorfälle",
     "current-status": "Aktueller Status",
     "current-status-description": "Informationen zu Störungen, Ausfällen oder anderen Vorfällen. Wir halten dich auf dem Laufenden.",
