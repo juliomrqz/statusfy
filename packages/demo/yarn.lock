@@ -1247,17 +1247,17 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
-"@statusfy/cli@0.3.0-alpha.3":
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@statusfy/cli/-/cli-0.3.0-alpha.3.tgz#41a26a4c27352d3b646db26412d94cc89ca59c4d"
+"@statusfy/cli@0.3.0-alpha.4":
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@statusfy/cli/-/cli-0.3.0-alpha.4.tgz#41a26a4c27352d3b646db26412d94cc89ca59c4d"
   integrity sha512-S+hMuIIQoS6rt3lSuJMRyAOtea+kVu0ZUQA50ruapo4zxdg+rGKxtmK7lVVekZ206dyjZdSCXY87BYyUhVuMEA==
   dependencies:
     commander "^2.15.1"
     semver "^5.5.0"
 
-"@statusfy/common@0.3.0-alpha.3":
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@statusfy/common/-/common-0.3.0-alpha.3.tgz#c9f03807053dedc858032c2f4bfb01151224e936"
+"@statusfy/common@0.3.0-alpha.4":
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@statusfy/common/-/common-0.3.0-alpha.4.tgz#c9f03807053dedc858032c2f4bfb01151224e936"
   integrity sha512-6Ky33VmChiDYk51qZ9yKSA/r4q244Rw4BQyN0JU4NigHrXBl7uTSDpVvu1IM5abkmHw9Kbw9LEsRM+p3oANrXw==
   dependencies:
     autoprefixer "^9.1.5"
@@ -1283,16 +1283,16 @@
     validator "^10.8.0"
     yaml "^1.0.0"
 
-"@statusfy/core@0.3.0-alpha.3":
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@statusfy/core/-/core-0.3.0-alpha.3.tgz#aa12d994774cfff65f70a6527c0a9f3076dc9839"
+"@statusfy/core@0.3.0-alpha.4":
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@statusfy/core/-/core-0.3.0-alpha.4.tgz#aa12d994774cfff65f70a6527c0a9f3076dc9839"
   integrity sha512-rLAtXrQkgvvFhXS10llDXETHC5pcoOo+kmSvmjWhdKacvgES9x3Agqa2X1EscQStwwJQGZWdg6P1L8elB6hD2w==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.5"
     "@nuxtjs/axios" "^5.3.3"
     "@nuxtjs/pwa" "^2.5.0"
-    "@statusfy/common" "0.3.0-alpha.3"
-    "@statusfy/markdown" "0.3.0-alpha.3"
+    "@statusfy/common" "0.3.0-alpha.4"
+    "@statusfy/markdown" "0.3.0-alpha.4"
     body-parser "^1.18.3"
     browser-sync "^2.26.0"
     cors "^2.8.4"
@@ -1326,17 +1326,17 @@
     vue-multianalytics "1.11.2"
     vue-svgicon "^3.2.0"
 
-"@statusfy/editor@0.3.0-alpha.3":
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@statusfy/editor/-/editor-0.3.0-alpha.3.tgz#8a8e84f4e781ed6509d185f0141cefc0b6186951"
+"@statusfy/editor@0.3.0-alpha.4":
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@statusfy/editor/-/editor-0.3.0-alpha.4.tgz#8a8e84f4e781ed6509d185f0141cefc0b6186951"
   integrity sha512-98QHb2fqLrBbC5iZp/cLZ5wsTO+TkiqD+ZVScSJHqLDEpxNWSnIlpwjyd7IafiIs/8ZAhrQmae9bOaVZ+VTO8A==
 
-"@statusfy/markdown@0.3.0-alpha.3":
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@statusfy/markdown/-/markdown-0.3.0-alpha.3.tgz#0eac11bc92148579fa1bd27e534c821fc9942c2f"
+"@statusfy/markdown@0.3.0-alpha.4":
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@statusfy/markdown/-/markdown-0.3.0-alpha.4.tgz#0eac11bc92148579fa1bd27e534c821fc9942c2f"
   integrity sha512-wH1eJYNdcmCjyxzOrzXRW0/OPDYrDM1+PQRdumg4SPc9RMTcVToQ4M59eEh9ULzW+dUOiatoVbtuE5VIXs/Svw==
   dependencies:
-    "@statusfy/common" "0.3.0-alpha.3"
+    "@statusfy/common" "0.3.0-alpha.4"
     markdown-it "^8.4.1"
     markdown-it-container "^2.0.0"
     markdown-it-emoji "^1.4.0"
@@ -9541,15 +9541,15 @@ statuses@~1.4.0:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
   integrity sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==
 
-statusfy@0.3.0-alpha.3:
-  version "0.3.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/statusfy/-/statusfy-0.3.0-alpha.3.tgz#f9d63c45838f2f617d754891fc98e925c1124e2a"
+statusfy@0.3.0-alpha.4:
+  version "0.3.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/statusfy/-/statusfy-0.3.0-alpha.4.tgz#f9d63c45838f2f617d754891fc98e925c1124e2a"
   integrity sha512-MZbjSjdUCY6VDMD0p7nVdb48oc8jwW5JWrO6Q5qtCXy/hxlRmN8eb0Ko9Elr8OXGgKOYhEk6HF73x4U/ZYj4DQ==
   dependencies:
     "@nuxtjs/opencollective" "^0.2.0"
-    "@statusfy/cli" "0.3.0-alpha.3"
-    "@statusfy/core" "0.3.0-alpha.3"
-    "@statusfy/editor" "0.3.0-alpha.3"
+    "@statusfy/cli" "0.3.0-alpha.4"
+    "@statusfy/core" "0.3.0-alpha.4"
+    "@statusfy/editor" "0.3.0-alpha.4"
 
 std-env@^1.1.0:
   version "1.3.1"

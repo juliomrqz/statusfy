@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/editor",
-  "version": "0.3.0-alpha.3",
+  "version": "0.3.0-alpha.4",
   "description": "Editor for Statusfy",
   "main": "index.js",
   "publishConfig": {
