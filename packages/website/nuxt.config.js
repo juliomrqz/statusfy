@@ -84,14 +84,8 @@ module.exports = {
     '~/plugins/vue-lazyload.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/vue-svgicon.js',
-    {
-      src: '~/plugins/vue-scrollto.js',
-      ssr: false
-    },
-    {
-      src: '~/plugins/web-font-loader.js',
-      ssr: false
-    }
+    '~/plugins/vue-scrollto.client.js',
+    '~/plugins/web-font-loader.client.js'
   ],
 
   /*
