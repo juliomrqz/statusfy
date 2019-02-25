@@ -142,12 +142,6 @@ module.exports = {
       }
     }
   },
-  /*
-   ** Generate Configuration
-   */
-  generate: {
-    subFolders: false
-  },
   // Modules Configurations
   /*
    ** Axios module configuration

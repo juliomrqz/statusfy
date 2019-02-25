@@ -41,7 +41,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/advanced/dist"
+    "dir": "../.tmp/advanced/dist",
   },
   "head": Object {
     "link": Array [
@@ -336,7 +336,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/cli/dist"
+    "dir": "../.tmp/cli/dist",
   },
   "head": Object {
     "meta": Array [
@@ -574,7 +574,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/simple/dist"
+    "dir": "../.tmp/simple/dist",
   },
   "head": Object {
     "meta": Array [
@@ -778,7 +778,7 @@ Object {
     "isDev": true,
   },
   "generate": Object {
-    "dir": "../.tmp/spanish/dist"
+    "dir": "../.tmp/spanish/dist",
   },
   "head": Object {
     "meta": Array [

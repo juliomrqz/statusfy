@@ -167,7 +167,6 @@ module.exports = {
    ** Generate Configuration
    */
   generate: {
-    subFolders: false,
     fallback: '404.html',
     routes: async () => {
       const generateRoutes = async lang => {

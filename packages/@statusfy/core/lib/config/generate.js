@@ -96,6 +96,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
   nuxtConfig.head = defaultsDeep(siteConfig.head, nuxtConfig.head);
 
   // Generate Configuration
+  nuxtConfig.generate = nuxtConfig.generate || {};
   nuxtConfig.generate.dir = path.join(sourceDir, cliOptions.outDir || "dist");
 
   // nuxt-i18n module configuration
