@@ -155,6 +155,9 @@ yarn test
 ```
 
 More information in the [Contributing Guide][contributing].
+You can also build and run Statusfy in a free online workspace using Gitpod:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/bazzite/statusfy)
 
 ## Demo
 

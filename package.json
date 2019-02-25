@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0-alpha.1",
+  "version": "0.3.0-alpha.2",
   "private": true,
   "workspaces": [
     "packages/@statusfy/*",
@@ -35,7 +35,7 @@
     "jest": "cross-env STATUSFY_LERNA=true jest",
     "update-readme": "cp -f README.md ./packages/statusfy/",
     "publish-stable": "yarn update-readme && lerna publish --force-publish '*'",
-    "publish-next": "yarn update-readme && lerna publish --dist-tag next --force-publish '*'",
+    "publish-next": "lerna publish --dist-tag next --force-publish '*'",
     "postinstall": "lerna bootstrap",
     "docs:dev": "yarn workspace statusfy-docs dev",
     "docs:build": "yarn workspace statusfy-docs build",
