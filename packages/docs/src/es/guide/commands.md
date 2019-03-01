@@ -72,7 +72,7 @@ La aplicación se debe compilar con [`statusfy build`](#build) primero.
 ### Argumentos
 
 - `-p <port>` o `--port <port>`: usa el **puerto** especificado (predeterminado: 3000).
-- `-h <port>` o `--host <host>`: usa el **host** especificado (predeterminado: 127.0.0.1).
+- `-H <port>` o `--host <host>`: usa el **host** especificado (predeterminado: 127.0.0.1).
 
 ## new-incident
 
