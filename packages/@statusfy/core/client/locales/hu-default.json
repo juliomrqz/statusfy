@@ -1,10 +1,10 @@
 {
   "title": "Rendszer állapot",
-  "description": "Tartsa naprakészen a szolgáltatásunk valós idejű és korábbi megszakításait, amelyek esetleg befolyásolhatják Önt.",
+  "description": "Tartsa naprakészen a szolgáltatásai valós idejű és korábbi meghibásodásait, amelyek esetleg befolyásolhatják Önt.",
   "labels": {
     "contact": "Kapcsolat",
     "support": "Támogatás",
-    "home": "Home",
+    "home": "Főoldal",
     "powered-by": "Üzemelteti"
   },
   "statuses": {
@@ -26,11 +26,11 @@
     "incident": "Incidens",
     "scheduled": "Tervezett karbantartás",
     "incidents-history": "Incidensek története",
-    "incidents-history-description": "Jelenlegi és korábbi működési megszakítások szolgáltatásunkhoz.",
+    "incidents-history-description": "Jelenlegi és korábbi működési meghibásodások szolgáltatásunkhoz.",
+    "incidents-history-days-since-latest": "1 nap az utolsó incidens óta | {days} nap az utolsó incidens óta",
     "latest-incidents": "Legfrissebb incidensek",
     "current-status": "Jelenlegi állapot",
-    "current-status-description": "Tartsa naprakészen a szolgáltatásunk valós idejű és korábbi megszakításait, amelyek esetleg befolyásolhatják Önt.",
-    "incidents-history-days-since-latest": "1 nap az utolsó incidens óta | {days} nappal az utolsó incidens óta",
+    "current-status-description": "Tartsa naprakészen a szolgáltatásai valós idejű és korábbi meghibásodásait, amelyek esetleg befolyásolhatják Önt.",
     "no-incidents": "Nincs bejelentett incidens.",
     "resolved": "Megoldott",
     "unresolved": "Megoldatlan",
