@@ -1542,6 +1542,15 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@bazzite/nuxt-netlify@^0.1.0-beta.1":
+  version "0.1.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@bazzite/nuxt-netlify/-/nuxt-netlify-0.1.0-beta.1.tgz#fd95e1b8e46a43e4cdb42bf6ec27dc444a746fb0"
+  integrity sha512-JLfRE4U2CMxdJO8ATZ/Rc7hNYaqZVZ+sG5kGKWny0TjubDHRtK45ZtBKzgrMxvzX1OFHWlu2H2Q8maYl5lgznQ==
+  dependencies:
+    consola "^2.5.6"
+    fs-extra "^7.0.1"
+    lodash.template "^4.4.0"
+
 "@commitlint/cli@^7.2.0":
   version "7.5.2"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.5.2.tgz#2475cd8f7ed3b2f9c2ab96c06bc24d61d23f8716"

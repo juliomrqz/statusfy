@@ -2,6 +2,9 @@ import axios from 'axios'
 import { path } from '@statusfy/common'
 const pkg = require('./package')
 
+const buildCode = `${pkg.version}-${(
+  process.env.COMMIT_REF || String(new Date().getTime())
+).substring(0, 7)}`
 const title = 'Statusfy'
 const description = 'A marvelous open source Status Page system'
 const mainColor = '#3e4e88'
@@ -101,7 +104,9 @@ module.exports = {
     '@nuxtjs/google-analytics',
     // Doc: https://github.com/nuxt-community/sitemap-module
     '@nuxtjs/sitemap',
-    // https://nuxt-community.github.io/nuxt-i18n/
+    // Doc: https://www.bazzite.com/docs/nuxt-netlify/
+    '@bazzite/nuxt-netlify',
+    // Doc: https://nuxt-community.github.io/nuxt-i18n/
     [
       'nuxt-i18n',
       {
@@ -294,6 +299,29 @@ module.exports = {
       })
 
       return [...routesEn, ...routesEs]
+    }
+  },
+  netlify: {
+    redirects: [
+      {
+        from: 'https://stoic-leavitt-b61d39.netlify.com/*',
+        to: 'https://statusfy.co/:splat',
+        force: true
+      },
+      {
+        from: 'https://www.statusfy.co/*',
+        to: 'http://statusfy.co/:splat',
+        force: true
+      }
+    ],
+    headers: {
+      '/*': [
+        'X-UA-Compatible: ie=edge',
+        'Access-Control-Allow-Origin: *',
+        `X-Build: ${buildCode}`
+      ],
+      '/robots.txt': ['Cache-Control: public, max-age=86400'],
+      '/sitemap.xml': ['Cache-Control: public, max-age=3600, s-maxage=14400']
     }
   }
 }
