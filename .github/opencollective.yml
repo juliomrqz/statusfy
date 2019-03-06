@@ -1,14 +1,10 @@
-opencollective: https://opencollective.com/statusfy
-message: |
-  Hey :wave:, we saw you use our Project **Statusfy**. 
-  ⠀
-  If you want to **support our work** and help us to **continue developing** this Amazing Project, help us by donating to our collective, **we will appreciate it** :heart:. 
-  ⠀
+collective: statusfy
+invitation: |
+  Hey <author> :wave:, Thank you for opening an issue.
+
+  Check out our OpenCollective and consider backing us. Help us to **continue developing** this Amazing Project, **we will appreciate it** :heart:.
   You can contribute from $2 :nerd_face:, less than a cup of coffee :coffee: :smiley:
-labels:
-  - question
-  - enhancement
-  - help wanted
-  - proposal
-  - bug
-  
+
+  <link>
+
+  PS.: We offer `priority` support for all backers. Don't forget to add `priority` label when you start backing us :smile:
