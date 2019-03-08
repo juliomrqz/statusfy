@@ -70,7 +70,7 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
-    "vue-multianalytics": "1.11.2",
+    "vue-multianalytics": "1.11.3",
     "vue-svgicon": "^3.2.0"
   },
   "devDependencies": {
