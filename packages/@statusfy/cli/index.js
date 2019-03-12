@@ -39,7 +39,7 @@ if (!semver.satisfies(process.version, requiredVersion)) {
   process.exit(1)
 }
 
-const { init, dev, build, generate, start, newIncident } = require('@statusfy/core/lib')
+const { init, dev, build, generate, start, newIncident, deleteIncident } = require('@statusfy/core/lib')
 const sourceDir = path.resolve('.')
 
 program
@@ -96,6 +96,13 @@ program
   .description(`Creates a new incident after answering a few questions.`)
   .action(() => {
     wrapCommand(newIncident)(sourceDir, { })
+  })
+
+program
+  .command('delete-incident')
+  .description(`Creates a new incident after answering a few questions.`)
+  .action(() => {
+    wrapCommand(deleteIncident)(sourceDir, { })
   })
 
 // output help information on unknown commands

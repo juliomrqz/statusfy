@@ -9,7 +9,8 @@
     "build": "statusfy build",
     "start": "statusfy start",
     "generate": "statusfy generate",
-    "new-incident": "statusfy new-incident"
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident"
   },
   "dependencies": {
     "statusfy": "^<%= options.statusfyVersion %>"

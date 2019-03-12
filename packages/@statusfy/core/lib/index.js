@@ -4,4 +4,5 @@ exports.build = require("./build");
 exports.generate = require("./generate");
 exports.start = require("./start");
 exports.newIncident = require("./new-incident");
+exports.deleteIncident = require("./delete-incident");
 exports.Statusfy = require("./statusfy");
