@@ -72,7 +72,7 @@ const readFileIncidents = async dirPath => {
   const exists = await fse.pathExists(dirPath);
 
   if (!exists) {
-    logger.warn("Content Directory not found:", dirPath);
+    logger.warn(`Content Directory not found: ${dirPath}`);
   } else {
     try {
       const files = (await readdirP(dirPath)).map(f => path.join(dirPath, f));

@@ -94,7 +94,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
 
   checkFiles.forEach(file => {
     if (fs.existsSync(path.join(outDir, file))) {
-      logger.error("Make sure your destination directory is empty.", outDir);
+      logger.error(`Make sure your destination directory is empty.\n${outDir}`);
       process.exit(0);
     }
   });
@@ -189,7 +189,6 @@ module.exports = async (sourceDir, cliOptions = {}) => {
         outDir
       )}`
     );
-
     logger.warn(
       `Remember to run ${chalk.cyan(`${answers.packageManager} install`)}`
     );

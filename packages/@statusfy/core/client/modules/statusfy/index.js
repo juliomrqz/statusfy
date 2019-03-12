@@ -10,12 +10,12 @@ const buildContent = require("./build");
 
 const copyPublicFiles = async (src, dest) => {
   if (src) {
-    logger.debug("Copying public files", dest);
+    logger.debug(`Copying public files ${dest}`);
 
     try {
       await fse.copy(src, dest);
     } catch (error) {
-      logger.error("Couldn't copy public files", dest);
+      logger.error(`Couldn't copy public files ${dest}`);
       logger.error(error);
     }
   }

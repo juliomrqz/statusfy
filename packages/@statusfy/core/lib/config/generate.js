@@ -18,8 +18,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
   try {
     if (siteConfigErrors && siteConfigErrors.length > 0) {
       logger.fatal(
-        "Your site configuration is invalid",
-        siteConfigErrors.join("\n")
+        `Your site configuration is invalid\n${siteConfigErrors.join("\n")}`
       );
       process.exit(1);
     }
@@ -194,8 +193,9 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
 
   if (stylesPath.length > 0) {
     logger.info(
-      "Loading Styles from: ",
-      stylesPath.map(p => path.relative(sourceDir, p)).join("\n")
+      `Loading Styles from:\n${stylesPath
+        .map(p => path.relative(sourceDir, p))
+        .join("\n")}`
     );
 
     nuxtConfig.css.push(...stylesPath);

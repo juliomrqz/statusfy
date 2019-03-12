@@ -108,8 +108,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
 
         if (fs.existsSync(filePath)) {
           logger.error(
-            "An incident with a similar title already exists.",
-            filePath
+            `An incident with a similar title already exists.\n${filePath}`
           );
           error = true;
         } else {
@@ -128,8 +127,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
 
       if (!error) {
         logger.success(
-          "The Incident was successfully created.",
-          createdFiles.join("\n")
+          `The Incident was successfully created.\n${createdFiles.join("\n")}`
         );
       } else {
         logger.warn("There was an issue in creating the Incident.");

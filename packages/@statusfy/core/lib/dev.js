@@ -34,7 +34,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
       process.exit();
     })
     .on("restart", files => {
-      logger.info("Restarting Server due to changes in: \n", files.join("\n"));
+      logger.info(`Restarting Server due to changes in:\n${files.join("\n")}`);
     })
     .on("crash", () => {
       logger.debug("nodemon crashed for some reason");
