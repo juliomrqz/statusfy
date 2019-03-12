@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "statusfy-docs",
-  "version": "0.3.0-alpha.4",
+  "version": "0.3.0-alpha.5",
   "description": "Statusfy Documentation",
   "license": "Apache-2.0",
   "main": "index.js",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://docs.statusfy.co",
   "devDependencies": {
-    "@statusfy/common": "0.3.0-alpha.4",
+    "@statusfy/common": "0.3.0-alpha.5",
     "axios": "^0.18.0",
     "consola": "^2.5.6",
     "fs-extra": "^7.0.1",
