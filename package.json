@@ -44,6 +44,7 @@
     "demo:generate": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo generate",
     "demo:start": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo start",
     "demo:delete-incident": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo delete-incident",
+    "demo:update-incident": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo update-incident",
     "website:dev": "yarn workspace statusfy-website dev",
     "website:generate": "yarn workspace statusfy-website generate",
     "update-changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"

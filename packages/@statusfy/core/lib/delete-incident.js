@@ -1,7 +1,8 @@
 const inquirer = require("inquirer");
 
-const { logger, fse, grayMatter, chalk, path } = require("@statusfy/common");
+const { logger, fse, path } = require("@statusfy/common");
 const loadConfig = require("./config/load");
+const { getIncidentsFromProject } = require("./utils/functions");
 
 /* eslint-disable require-await */
 module.exports = async function deleteIncident(sourceDir, cliOptions = {}) {
@@ -9,25 +10,7 @@ module.exports = async function deleteIncident(sourceDir, cliOptions = {}) {
 
   const config = loadConfig(sourceDir).config;
   const contentDir = path.join(sourceDir, config.content.dir);
-  const files = await fse.readdir(contentDir);
-  const incidentsList = [];
-
-  for (let i = 0; i < files.length; i++) {
-    const f = path.resolve(contentDir, files[i]);
-    const ext = path.extname(f);
-    const fileName = path.basename(f);
-
-    if (ext === ".md") {
-      const fileContent = await fse.readFile(f);
-      const { data } = grayMatter.parse(fileContent);
-
-      incidentsList.push(
-        `${fileName} > ${chalk.yellow(data.title)} (${chalk.green(
-          data.date.toUTCString()
-        )})`
-      );
-    }
-  }
+  const incidentsList = await getIncidentsFromProject(contentDir);
 
   const questions = [
     {
@@ -54,12 +37,11 @@ module.exports = async function deleteIncident(sourceDir, cliOptions = {}) {
         const deletedFiles = [];
 
         for (let j = 0; j < locales.length; j++) {
-          const incidentFileName = incident.split(">")[0].trim();
           const locale = locales[j];
           const localeIncidentPath = path.join(
             contentDir,
             config.defaultLocale !== locale ? locale : "",
-            incidentFileName
+            incident.name
           );
           const exists = await fse.pathExists(localeIncidentPath);
 
