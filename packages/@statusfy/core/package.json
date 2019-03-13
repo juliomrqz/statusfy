@@ -69,7 +69,7 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
-    "vue-multianalytics": "1.11.3",
+    "vue-multianalytics": "1.11.4",
     "vue-svgicon": "^3.2.4"
   },
   "devDependencies": {
@@ -77,12 +77,12 @@
     "@nuxtjs/eslint-config": "^0.0.1",
     "@statusfy/test-utils": "0.3.0-alpha.5",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-standard": ">=12.0.0",
     "eslint-plugin-import": ">=2.14.0",
-    "eslint-plugin-jest": "^22.3.1",
+    "eslint-plugin-jest": "^22.3.2",
     "eslint-plugin-node": ">=7.0.1",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-promise": ">=4.0.1",
