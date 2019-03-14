@@ -13,7 +13,6 @@
         >
           <incident
             :incident="incident"
-            :summary="true"
             :scheduled="true"
             :level="3"
           />
