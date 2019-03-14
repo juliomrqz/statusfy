@@ -59,9 +59,17 @@ You should set the `baseUrl` field to your **production domain** in order to mak
 ## theme
 
 - Type: `Object`
-- Default: `{}`
 
 Provide config options to the be used by the theme.
+
+### scheduled
+
+**TODO**
+
+- Type: `Object`
+- Default: `{ position: 'belowSystems' }`
+
+Available values: belowSystems, aboveSystems and aboveGlobalStatus
 
 ### links
 

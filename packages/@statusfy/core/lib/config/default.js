@@ -14,7 +14,11 @@ module.exports = {
   },
   serviceWorker: true,
   manifest: true,
-  theme: {},
+  theme: {
+    scheduled: {
+      position: "belowSystems" // or aboveSystems, aboveGlobalStatus
+    }
+  },
   notifications: {
     icalendar: true,
     feeds: true,

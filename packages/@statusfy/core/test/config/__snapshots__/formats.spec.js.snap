@@ -36,7 +36,11 @@ Object {
   "serviceWorker": true,
   "short_title": "ES5 Config Format",
   "sourceDir": "fragments/formats/js-es5",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "ES5 Config Format",
 }
 `;
@@ -92,7 +96,11 @@ Object {
   "serviceWorker": true,
   "short_title": "Statusfy Demo",
   "sourceDir": "fragments/formats/js-es6",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "Statusfy Demo",
 }
 `;
@@ -134,7 +142,11 @@ Object {
   "serviceWorker": true,
   "short_title": "TOML Config Format",
   "sourceDir": "fragments/formats/toml",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "TOML Config Format",
 }
 `;
@@ -175,7 +187,11 @@ Object {
   "serviceWorker": true,
   "short_title": "YAML Config Format",
   "sourceDir": "fragments/formats/yaml",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "YAML Config Format",
 }
 `;

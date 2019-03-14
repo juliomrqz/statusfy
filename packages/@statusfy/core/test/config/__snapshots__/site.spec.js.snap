@@ -73,7 +73,11 @@ Object {
   "serviceWorker": true,
   "short_title": "Short Title",
   "sourceDir": "../.tmp/advanced",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "Long Title",
 }
 `;
@@ -114,7 +118,11 @@ Object {
   "serviceWorker": true,
   "short_title": "Title",
   "sourceDir": "../.tmp/cli",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "Title",
 }
 `;
@@ -159,7 +167,11 @@ Object {
   "serviceWorker": false,
   "short_title": "Title",
   "sourceDir": "../.tmp/simple",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "Title",
 }
 `;
@@ -204,7 +216,11 @@ Object {
   "serviceWorker": true,
   "short_title": "Título",
   "sourceDir": "../.tmp/spanish",
-  "theme": Object {},
+  "theme": Object {
+    "scheduled": Object {
+      "position": "belowSystems",
+    },
+  },
   "title": "Título",
 }
 `;

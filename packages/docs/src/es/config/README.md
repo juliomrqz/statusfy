@@ -61,9 +61,17 @@ Debe establecer el campo `baseUrl` como su **dominio de producción** para que l
 ## theme
 
 - Tipo: `Object`
-- Por defecto: `{}`
 
 Proporcionar opciones de configuración para ser utilizado por el tema.
+
+### scheduled
+
+**TODO**
+
+- Tipo: `Object`
+- Por defecto: `{ position: 'belowSystems' }`
+
+Valores disponibles: belowSystems, aboveSystems y aboveGlobalStatus
 
 ### links
 
