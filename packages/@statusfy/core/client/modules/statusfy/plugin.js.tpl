@@ -7,7 +7,7 @@ import VueMultianalytics from 'vue-multianalytics'
 <% } %>
 
 // Dates
-import Dates from '@statusfy/common/lib/dates'
+const Dates = require('@statusfy/common/lib/dates').default
 
 const extraLangs = [
 <%= options.locales.map(locale => locale.code !== 'en' ? "require('dayjs/locale/" + locale.code + "')," : '').join('\n') %>
