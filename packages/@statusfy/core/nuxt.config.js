@@ -130,7 +130,7 @@ module.exports = {
     /*
     ** Webpack bundle analyzer
     */
-    analyze: process.env.NODE_ENV !== "production",
+    analyze: true,
     /*
     ** Router
     */
