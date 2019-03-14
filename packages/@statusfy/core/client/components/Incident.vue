@@ -66,8 +66,15 @@
       <div v-else>
         <nice-date
           :date="incident.scheduled"
+          :include-u-t-c="false"
           format="long"
         />
+        &nbsp;-&nbsp;
+        <nice-date
+          :date="getScheduledEndDate()"
+          :include-u-t-c="false"
+          format="long"
+        /> (UTC)
       </div>
     </div>
 
@@ -183,6 +190,14 @@ export default {
       externalLinksElements.forEach((el, i) => {
         el.appendChild(iconElement);
       });
+    }
+  },
+  methods: {
+    getScheduledEndDate() {
+      return this.$statusfy.dates
+        .parse(this.incident.scheduled)
+        .add(this.incident.duration, "m")
+        .toISOString();
     }
   }
 };
