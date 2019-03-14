@@ -19,11 +19,13 @@ export default {
   computed: {
     label() {
       const $t = this.$t.bind(this);
-      const parsedDate = this.$statusfy.dayjs(this.date);
+      const parsedDate = this.$statusfy.dates.parse(this.date);
 
-      return parsedDate
-        .locale(this.$i18n.locale)
-        .format($t(`dates.formats.${this.format}`));
+      return this.$statusfy.dates.format(
+        parsedDate,
+        $t(`dates.formats.${this.format}`),
+        this.$i18n.locale
+      );
     }
   }
 };

@@ -3,13 +3,11 @@ const { promisify } = require("util");
 const spawn = require("cross-spawn");
 const drop = require("lodash.drop");
 const sortBy = require("lodash.sortby");
-const Moment = require("moment");
-const MomentRange = require("moment-range");
 
 const createMarkdown = require("@statusfy/markdown");
-const { logger, hash, path, fse, LRU } = require("@statusfy/common");
+const { logger, hash, path, fse, LRU, Dates } = require("@statusfy/common");
 
-const moment = MomentRange.extendMoment(Moment);
+const dates = Dates();
 const readdirP = promisify(readdir);
 const statP = promisify(stat);
 const readFileP = promisify(readFile);
@@ -35,9 +33,11 @@ class Incident {
     const matter = md.frontmatter;
     this.title = matter.title;
     this.description = matter.description;
-    this.date = matter.date;
-    this.modified = matter.modified;
-    this.scheduled = matter.scheduled;
+    this.date = dates.parse(matter.date).toISOString();
+    this.modified = dates.parse(matter.modified).toISOString();
+    this.scheduled = matter.scheduled
+      ? dates.parse(matter.scheduled).toISOString()
+      : null;
     this.duration = matter.duration ? Math.ceil(matter.duration) : undefined;
     this.severity = matter.severity;
     this.affectedsystems = matter.affectedsystems;
@@ -199,15 +199,12 @@ module.exports = async function database(siteConfig, finalDate) {
       let periods = [];
 
       if (sortedIncidents.length > 0) {
-        const start = moment(
+        const start = dates.parse(
           sortedIncidents[sortedIncidents.length - 1].date
-        ).startOf("month");
-        const end = moment(sortedIncidents[0].date).startOf("month");
-        const range = moment.range(start, end);
-        const rangeMonths = Array.from(
-          range.by("month", { excludeStart: true })
-        ).reverse();
-        periods = rangeMonths.map((period, i) => {
+        );
+        const end = dates.parse(sortedIncidents[0].date);
+        const range = dates.range(start, end, "month");
+        periods = range.dates.reverse().map((period, i) => {
           return {
             id: `${period.year()}-${period.month() + 1}`,
             incidents: [],
@@ -217,7 +214,7 @@ module.exports = async function database(siteConfig, finalDate) {
         });
 
         for (const incident of sortedIncidents) {
-          const incidentDate = moment(incident.date);
+          const incidentDate = dates.parse(incident.date);
           const month = incidentDate.month() + 1;
           const year = incidentDate.year();
           const monthObject = periods.find(d => d.id === `${year}-${month}`);
@@ -243,22 +240,19 @@ module.exports = async function database(siteConfig, finalDate) {
     incidentsTimeline(lang, daysNumber = 7) {
       const sortedIncidents = sortIncidents(incidents[lang]);
       // Beginning of today
-      const end = (finalDate ? moment(finalDate) : moment()).startOf("day");
+      const end = dates.parse(finalDate);
       // {daysNumber} days ago from today
-      const start = moment(end).subtract(daysNumber, "days");
-      const range = moment.range(start, end);
-      const rangeDays = Array.from(
-        range.by("day", { excludeStart: true })
-      ).reverse();
+      const start = end.subtract(daysNumber, "days");
+      const range = dates.range(start, end);
       const days = [];
 
       // Get incidents for each day in the range
       let order = 1;
-      for (const day of rangeDays) {
+      for (const day of range.dates.reverse()) {
         const incidents = [];
 
         for (const incident of sortedIncidents) {
-          const incidentDate = moment(incident.date);
+          const incidentDate = dates.parse(incident.date);
           const difference = incidentDate.diff(day, "hours");
 
           // If difference is less that 24 hours, include incident
@@ -287,7 +281,7 @@ module.exports = async function database(siteConfig, finalDate) {
         sortedIncidents && sortedIncidents.length < 1
           ? 0
           : sortedIncidents[0] && sortedIncidents[0].date
-            ? Math.abs(end.diff(moment(sortedIncidents[0].date), "days"))
+            ? Math.abs(end.diff(dates.parse(sortedIncidents[0].date), "days"))
             : 0;
 
       return {

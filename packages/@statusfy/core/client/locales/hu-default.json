@@ -17,7 +17,7 @@
   "dates": {
     "formats": {
       "short": "YYYY. MMM D.",
-      "long": "MMM D, HH:mm Z",
+      "long": "MMM D, HH:mm UTC",
       "month": "YYYY. MMMM"
     }
   },

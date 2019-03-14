@@ -171,11 +171,13 @@ export default {
 
       blockElements.forEach((el, i) => {
         const dateEl = el.querySelectorAll(".update-block-date")[0];
-        const date = this.$statusfy.dayjs(dateEl.innerHTML);
+        const date = this.$statusfy.dates.parse(dateEl.innerHTML);
 
-        dateEl.innerHTML = date
-          .locale(this.$i18n.locale)
-          .format($t(`dates.formats.long`));
+        dateEl.innerHTML = this.$statusfy.dates.format(
+          date,
+          $t(`dates.formats.long`),
+          this.$i18n.locale
+        );
       });
 
       externalLinksElements.forEach((el, i) => {

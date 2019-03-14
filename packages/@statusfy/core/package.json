@@ -57,8 +57,6 @@
     "lodash.get": "^4.4.2",
     "lodash.isstring": "^4.0.1",
     "lodash.sortby": "^4.7.0",
-    "moment": "^2.22.2",
-    "moment-range": "^4.0.2",
     "nodemon": "^1.18.4",
     "nuxt": "^2.4.5",
     "nuxt-i18n": "^5.8.5",

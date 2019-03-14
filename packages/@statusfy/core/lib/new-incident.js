@@ -2,9 +2,11 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const opener = require("opener");
 
-const { logger, fse, slugify, path } = require("@statusfy/common");
+const { logger, fse, slugify, path, Dates } = require("@statusfy/common");
 const loadConfig = require("./config/load");
 const { generateIncident } = require("./utils/functions");
+
+const dates = Dates();
 
 /* eslint-disable require-await */
 module.exports = async function newIncident(sourceDir, cliOptions = {}) {
@@ -76,7 +78,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
   logger.start("Create New Incident");
 
   inquirer.prompt(questions).then(answers => {
-    const date = new Date().toISOString();
+    const date = dates.parse().toISOString();
     const frontMatter = {
       title: answers.title,
       date,

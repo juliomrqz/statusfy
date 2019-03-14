@@ -1,12 +1,21 @@
 const inquirer = require("inquirer");
 
-const { logger, fse, grayMatter, LRU, path } = require("@statusfy/common");
+const {
+  logger,
+  fse,
+  grayMatter,
+  LRU,
+  path,
+  Dates
+} = require("@statusfy/common");
 const loadConfig = require("./config/load");
 const {
   getIncidentsFromProject,
   generateIncident
 } = require("./utils/functions");
+
 const cache = new LRU();
+const dates = Dates();
 
 const getIncidentData = async filePath => {
   const key = `data:${filePath}`;
@@ -98,7 +107,7 @@ module.exports = async function updateIncident(sourceDir, cliOptions = {}) {
 
     try {
       if (confirm) {
-        const modified = new Date().toISOString();
+        const modified = dates.parse().toISOString();
         const locales = config.locales.map(l => l.code);
         const updatedFiles = [];
 
