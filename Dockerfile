@@ -5,7 +5,7 @@ RUN apk add --no-cache git
 # Set environment variables
 ENV USER_DIR=/usr/src/app
 ENV NODE_ENV production
-ENV STATUSFY_VERSION=0.3.0-alpha.6
+ENV STATUSFY_VERSION=0.3.0-alpha.7
 ENV NODE_ENV production
 ENV HOST 0.0.0.0
 ENV PORT 3000
