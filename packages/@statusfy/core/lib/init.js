@@ -71,7 +71,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
       name: "incidentFormat",
       default: "yaml",
       message: "Default Front Matter format for your Incidents",
-      choices: ["(none)", "yaml", "toml", "json"]
+      choices: ["yaml", "toml", "json"]
     },
     {
       type: "list",
@@ -119,8 +119,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
             iso: languageInfo.code,
             name: languageInfo.nativeName
           },
-          frontMatterFormat:
-            answers.incidentFormat === "(none)" ? null : answers.incidentFormat
+          frontMatterFormat: answers.incidentFormat
         }
       })
     );

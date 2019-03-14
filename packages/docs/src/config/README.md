@@ -241,7 +241,7 @@ The path that defines the location of your incidents' markdown source files.
 ### frontMatterFormat
 
 - Type: `string`
-- Default: `undefined`
+- Default: `yaml`
 
 Define the default format of the Incidents' Front Matter used by the `new-incident` command (More info [here](../guide/commands.md#new-incident)). You can choose one of the following: yaml, yml, toml, json. For more details, see the guide on [Incidents' Front Matter](../guide/incidents.md#front-matter).
 

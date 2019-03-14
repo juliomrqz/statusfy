@@ -65,16 +65,6 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
     }
   ];
 
-  if (!config.content.frontMatterFormat) {
-    questions.unshift({
-      type: "list",
-      name: "format",
-      default: "yaml",
-      message: "What is the format of the Front Matter of the Incident?",
-      choices: ["yaml", "toml", "json"]
-    });
-  }
-
   logger.start("Create New Incident");
 
   inquirer.prompt(questions).then(answers => {
@@ -90,7 +80,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
     const content = generateIncident(
       frontMatter,
       answers.description,
-      config.content.frontMatterFormat || answers.format
+      config.content.frontMatterFormat
     );
 
     try {

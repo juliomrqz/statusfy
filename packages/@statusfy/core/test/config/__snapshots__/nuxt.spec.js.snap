@@ -478,6 +478,7 @@ Object {
       },
       "content": Object {
         "dir": "content",
+        "frontMatterFormat": "yaml",
         "systems": Array [
           "api",
           "cdn",
@@ -706,6 +707,7 @@ Object {
       },
       "content": Object {
         "dir": "content",
+        "frontMatterFormat": "yaml",
         "systems": Array [
           "api",
           "cdn",

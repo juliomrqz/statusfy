@@ -134,7 +134,7 @@ module.exports = async function updateIncident(sourceDir, cliOptions = {}) {
               const content = generateIncident(
                 newMatter,
                 data.content,
-                config.content.frontMatterFormat || "yaml"
+                config.content.frontMatterFormat
               );
 
               await fse.writeFile(localeIncidentPath, content);

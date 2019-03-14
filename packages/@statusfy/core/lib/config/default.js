@@ -6,7 +6,8 @@ module.exports = {
   locales: [{ code: "en", iso: "en-US", name: "English" }],
   content: {
     dir: "content",
-    systems: ["api", "cdn", "dns", "site-delivery"]
+    systems: ["api", "cdn", "dns", "site-delivery"],
+    frontMatterFormat: "yaml"
   },
   build: {
     isStatic: false

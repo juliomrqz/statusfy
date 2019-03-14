@@ -89,7 +89,3 @@ YYYY-MM-DD_slug.md
 ```
 
 where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***.
-
-::: tip TIP
-You can skip the Front Matter Format Question by defining the `frontMatterFormat` field in your configuration file. More information in the [Config Reference Guide](../config/README.md#frontmatterformat).
-:::

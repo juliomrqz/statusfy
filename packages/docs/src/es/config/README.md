@@ -247,7 +247,7 @@ La ruta que define la ubicación de los archivos markdown fuente de los incident
 ### frontMatterFormat
 
 - Tipo: `string`
-- Por defecto: `undefined`
+- Por defecto: `yaml`
 
 Define el formato predeterminado para el Front Matter de Incidentes utilizado por el comando `new-incident` (Más información [aquí](../guide/commands.md#new-incident)). Puedes elegir uno de los siguientes: yaml, yml, toml, json. Para más detalles, consulta la guía de [los Front Matter de los Incidentes](../guide/incidents.md#front-matter).
 
