@@ -70,6 +70,9 @@
     "lerna": "^3.13.1",
     "vue-jest": "^3.0.4"
   },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
   "engines": {
     "node": ">=8.10",
     "npm": ">=5"
