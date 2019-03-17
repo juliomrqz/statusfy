@@ -64,14 +64,12 @@ Debe establecer el campo `baseUrl` como su **dominio de producción** para que l
 
 Proporcionar opciones de configuración para ser utilizado por el tema.
 
-### scheduled
-
-**TODO**
+### scheduled <Badge text="0.3.0+"/>
 
 - Tipo: `Object`
 - Por defecto: `{ position: 'belowSystems' }`
 
-Valores disponibles: belowSystems, aboveSystems y aboveGlobalStatus
+Define la posición de la Sección **Mantenimiento Programado** in la página de inicio. Los valores permitidos son: `belowSystems`, `aboveSystems` y `aboveGlobalStatus`.
 
 ### links
 

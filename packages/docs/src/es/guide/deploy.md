@@ -461,4 +461,4 @@ node_modules
 
 ### Renderizado por Servidor
 
-**TODO**
+En este momento, No se puede implementar una aplicación Statusfy Renderizado por Servidor con Now v2. Por favor, utiliza Now v1.

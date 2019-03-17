@@ -62,14 +62,12 @@ You should set the `baseUrl` field to your **production domain** in order to mak
 
 Provide config options to the be used by the theme.
 
-### scheduled
-
-**TODO**
+### scheduled <Badge text="0.3.0+"/>
 
 - Type: `Object`
 - Default: `{ position: 'belowSystems' }`
 
-Available values: belowSystems, aboveSystems and aboveGlobalStatus
+Define the position of the Section **Scheduled Maintenance** in the home page. The allowed values are: `belowSystems`, `aboveSystems` and `aboveGlobalStatus`.
 
 ### links
 

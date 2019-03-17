@@ -448,4 +448,4 @@ node_modules
 
 ### Server Rendered
 
-**TODO**
+At this time, you cannot deploy a Server Rendered Statusfy app with Now v2. Please use Now v1.

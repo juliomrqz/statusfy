@@ -89,3 +89,20 @@ YYYY-MM-DD_slug.md
 ```
 
 Donde `YYYY-MM-DD` es la ***fecha de creación*** y `slug` un ***nombre corto***.
+
+
+## delete-incident <Badge text="0.3.0+"/>
+
+Eliminar un incidente incluyendo sus traducciones.
+
+``` bash
+statusfy delete-incident
+```
+
+## update-incident <Badge text="0.3.0+"/>
+
+Actualizar los valores comunes de un incidente y sus traducciones.
+
+``` bash
+statusfy update-incident
+```
