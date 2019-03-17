@@ -1,3 +1,43 @@
+# [0.3.0](https://github.com/statusfy/statusfy/compare/v0.2.1...v0.3.0) (2019-03-18)
+
+
+### Bug Fixes
+
+* **cli:** notify the user when the production server is initialized ([9973555](https://github.com/statusfy/statusfy/commit/9973555))
+* **cli, core:** fix detection of the 'analyze' argument ([1981e43](https://github.com/statusfy/statusfy/commit/1981e43))
+* **core:** display the content for 'Scheduled Maintenance Incidents' ([05b0bd1](https://github.com/statusfy/statusfy/commit/05b0bd1))
+* **core:** fix referencing the dates lib ([0a2fe50](https://github.com/statusfy/statusfy/commit/0a2fe50))
+* **core:** fix the font style of the time indicator of each incident ([88cb2ae](https://github.com/statusfy/statusfy/commit/88cb2ae))
+* **core:** improve dates parsing and formatting ([aa32346](https://github.com/statusfy/statusfy/commit/aa32346))
+* **docs:** fix incorrect flag for start command ([#148](https://github.com/statusfy/statusfy/issues/148)) ([d4b376d](https://github.com/statusfy/statusfy/commit/d4b376d))
+* **core:** fix text wrapping of the system names ([637f7bb](https://github.com/statusfy/statusfy/commit/637f7bb))
+* **core,website:** enable subfolder generation on static mode ([a94270c](https://github.com/statusfy/statusfy/commit/a94270c))
+* **core,website:** fix regeneratorRuntime dependencies requirement ([2fb0b2e](https://github.com/statusfy/statusfy/commit/2fb0b2e))
+
+### Features
+
+* **cli:** create the 'delete-incident' command ([8aef1f9](https://github.com/statusfy/statusfy/commit/8aef1f9))
+* **cli:** create the 'update-incident' command ([a22d72a](https://github.com/statusfy/statusfy/commit/a22d72a))
+* **core:** display the end date of the scheduled incidents ([858c3ea](https://github.com/statusfy/statusfy/commit/858c3ea))
+* **core:** support defining the position of the scheduled section in the home page ([22c85d2](https://github.com/statusfy/statusfy/commit/22c85d2))
+* **core, docs:** explicitly make YAML as the default front matter format ([a3a5675](https://github.com/statusfy/statusfy/commit/a3a5675))
+* **website:** configure @bazzite/nuxt-netlify ([7e46bd1](https://github.com/statusfy/statusfy/commit/7e46bd1))
+* officially support Docker 🤓 ([289b296](https://github.com/statusfy/statusfy/commit/289b296))
+* **core:** create the "days since latest incident" sub-section in the home page ([cbaf025](https://github.com/statusfy/statusfy/commit/cbaf025))
+* **core:** new interface translations:
+  * German (thanks to [dennis47528](https://github.com/bazzite/statusfy/commits?author=dennis47528))
+  * Hungarian (thanks to [asrob](https://github.com/bazzite/statusfy/commits?author=asrob))
+  * Portuguese (Brazil) (thanks to [felipeklasen](https://github.com/bazzite/statusfy/commits?author=felipeklasen))
+
+
+
+### BREAKING CHANGES
+
+* **core, docs:** the `new-incident` command no longer asks for the *front matter* format
+
+
+
+
 ## [0.2.1](https://github.com/statusfy/statusfy/compare/v0.2.0...v0.2.1) (2018-12-11)
 
 
