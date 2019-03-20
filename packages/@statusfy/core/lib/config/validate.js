@@ -33,20 +33,20 @@ module.exports = function validateConfig(config) {
 
     // Make sure a trailing slash (at the end of the URL) is not defined
     config.baseUrl = config.baseUrl.replace(/\/$/, "");
-
-    // Check defaultLocale
-    const localesCode = config.locales.map(locale => locale.code);
-    if (!localesCode.includes(config.defaultLocale)) {
-      errors.push(
-        `The Default Locale (${chalk.yellow(
-          "defaultLocale"
-        )}) value must be included in the locales list. Current value ${chalk.cyan(
-          config.defaultLocale
-        )}, defined codes: ${chalk.cyan(localesCode.join(", "))}.`
-      );
-    }
-
-    // Send errors
-    return errors;
   }
+
+  // Check defaultLocale
+  const localesCode = config.locales.map(locale => locale.code);
+  if (!localesCode.includes(config.defaultLocale)) {
+    errors.push(
+      `The Default Locale (${chalk.yellow(
+        "defaultLocale"
+      )}) value must be included in the locales list. Current value ${chalk.cyan(
+        config.defaultLocale
+      )}, defined codes: ${chalk.cyan(localesCode.join(", "))}.`
+    );
+  }
+
+  // Send errors
+  return errors;
 };
