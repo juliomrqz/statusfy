@@ -21,7 +21,14 @@ const prepare = async () => {
     new Date("2018-08-31T19:03:43.219Z")
   );
 
-  const testProjects = ["simple", "cli", "advanced", "spanish", "invalid"];
+  const testProjects = [
+    "simple",
+    "cli",
+    "advanced",
+    "spanish",
+    "invalid",
+    "invalid-subpath"
+  ];
 
   for (const key of testProjects) {
     const dest = path.join(tempPath, key);

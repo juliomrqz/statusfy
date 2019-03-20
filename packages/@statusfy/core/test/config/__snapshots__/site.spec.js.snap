@@ -136,9 +136,15 @@ Valid Example: [36mhttps://status.yourbaseurl.com[39m.",
 ]
 `;
 
+exports[`config:site invalid-subpath 1`] = `
+Array [
+  "Statusfy doesn't support deployments under a subpath ([36m/path[39m).",
+]
+`;
+
 exports[`config:site simple 1`] = `
 Object {
-  "baseUrl": "/simple",
+  "baseUrl": "https://simple.example.com",
   "build": Object {
     "isStatic": false,
   },
@@ -178,7 +184,7 @@ Object {
 
 exports[`config:site spanish 1`] = `
 Object {
-  "baseUrl": "https://demo.statusfy.co/es",
+  "baseUrl": "https://demo-es.statusfy.co",
   "build": Object {
     "isStatic": false,
   },

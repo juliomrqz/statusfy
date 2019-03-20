@@ -36,7 +36,14 @@ describe("config:site", () => {
   test("invalid", () => {
     const sourceDir = path.resolve(tempPath, "invalid");
     const loadedConfig = loadConfig(sourceDir);
+    const siteConfigErrors = loadedConfig.errors;
 
+    expect(siteConfigErrors).toMatchSnapshot();
+  });
+
+  test("invalid-subpath", () => {
+    const sourceDir = path.resolve(tempPath, "invalid-subpath");
+    const loadedConfig = loadConfig(sourceDir);
     const siteConfigErrors = loadedConfig.errors;
 
     expect(siteConfigErrors).toMatchSnapshot();
