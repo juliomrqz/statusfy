@@ -1,36 +1,36 @@
 <template>
   <article class="bg-white">
-    <div v-if="post">
+    <div v-if="attributes">
       <div class="max-w-lg mx-auto">
         <div class="flex flex-wrap items-center justify-center">
           <div class="w-full p-4">
             <AuthorCard
-              :post="post"
+              :post="attributes"
               mode="advanced"
               class="mb-4"
             />
 
             <h1 class="text-3xl sm:text-4xl font-semibold leading-none mb-8">
-              {{ post.title }}
+              {{ attributes.title }}
             </h1>
 
-            <!-- eslint-disable vue/no-v-html -->
-            <div
-              class="markdown-body text-lg sm:text-xl font-normal leading-normal"
-              v-html="post.content_html"
-            />
-            <!-- eslint-enable -->
+            <div class="markdown-body text-lg sm:text-xl font-normal leading-normal">
+              <DynamicMarkdown
+                :render-func="renderFunc"
+                :static-render-funcs="staticRenderFuncs"
+              />
+            </div>
 
             <hr class="section-divider block my-12 overflow-visible text-center">
 
             <div class="text-xl mb-12 italic">
               {{ $t('blog.publishedAt') }}
               <a
-                :href="`${parentBlogUrl}?ref=statusfy-blog`"
+                :href="`${attributes.canonical}?ref=statusfy-blog`"
                 target="_blank"
                 rel="noopener"
               >bazzite.com</a>
-              {{ $t('blog.on') }} {{ formatDate(post.created) }}.
+              {{ $t('blog.on') }} {{ formatDate(attributes.created) }}.
             </div>
 
             <Partners
@@ -42,7 +42,7 @@
 
             <div class="flex flex-wrap items-center justify-between mb-12">
               <AuthorCard
-                :post="post"
+                :post="attributes"
                 mode="advanced"
                 class="w-full sm:w-auto"
               />
@@ -51,9 +51,9 @@
                   {{ $t('blog.share') }}
                 </div>
                 <social-sharing
-                  :url="parentBlogUrl"
-                  :title="post.title"
-                  :description="post.description"
+                  :url="attributes.canonical"
+                  :title="attributes.title"
+                  :description="attributes.description"
                   :twitter-user="twitterUser"
                   class="text-grey-darkest"
                   inline-template
@@ -106,9 +106,9 @@
 
               <vue-disqus
                 :language="$i18n.locale"
-                :identifier="`bazzite-blog-${post.slug}`"
-                :title="post.title"
-                :url="parentBlogUrl"
+                :identifier="`bazzite-blog-${attributes.slug}`"
+                :title="attributes.title"
+                :url="attributes.canonical"
                 shortname="bazzite"
               />
             </div>
@@ -121,6 +121,7 @@
 
 <script>
 import AuthorCard from '~/components/blog/AuthorCard'
+import DynamicMarkdown from '~/components/blog/DynamicMarkdown'
 import FormatDate from '~/components/mixins/FormatDate'
 import Subscribe from '~/components/common/Subscribe'
 import Partners from '~/components/common/Partners'
@@ -134,19 +135,15 @@ export default {
   components: {
     AuthorCard,
     Subscribe,
-    Partners
+    Partners,
+    DynamicMarkdown
   },
   mixins: [FormatDate],
   computed: {
-    parentBlogUrl() {
-      const prefix = this.$i18n.locale === 'es' ? '/es' : ''
-
-      return `https://www.bazzite.com${prefix}/blog/${this.post.slug}`
-    },
     postAbsoluteUrl() {
       const prefix = this.$i18n.locale === 'es' ? '/es' : ''
 
-      return `${process.env.baseHost}${prefix}/blog/${this.post.slug}`
+      return `${process.env.baseHost}${prefix}/blog/${this.attributes.slug}`
     },
     twitterUser() {
       return this.$i18n.locale === 'es'
@@ -154,21 +151,24 @@ export default {
         : process.env.twitterUserEn
     }
   },
-  async asyncData({ app, params, payload }) {
+  async asyncData({ app, params }) {
     const { slug } = params
-    const response = payload || (await app.$axios.$get(`blog/${slug}`))
+    const { vue, attributes, html } = await app.$blog.getArticle(slug, app.i18n.locale)
 
     return {
-      post: response,
-      title: `${response.title} - ${app.i18n.t('blog.title')}`,
-      description: response.description
+      html,
+      attributes,
+      title: `${attributes.title} - ${app.i18n.t('blog.title')}`,
+      description: attributes.description,
+      renderFunc: vue.render,
+      staticRenderFuncs: vue.staticRenderFns
     }
   },
   head() {
     const $t = this.$t.bind(this)
 
     return {
-      title: this.post.title,
+      title: this.attributes.title,
       meta: [
         {
           hid: 'og:type',
@@ -186,31 +186,13 @@ export default {
           hid: 'og:title',
           name: 'og:title',
           property: 'og:title',
-          content: this.post.title
+          content: this.attributes.title
         },
         {
           hid: 'og:description',
           name: 'og:description',
           property: 'og:description',
-          content: this.post.description
-        },
-        {
-          hid: 'og:image',
-          name: 'og:image',
-          property: 'og:image',
-          content: this.post.cover.source
-        },
-        {
-          hid: 'og:image:width',
-          name: 'og:image:width',
-          property: 'og:image:width',
-          content: this.post.cover.width
-        },
-        {
-          hid: 'og:image:height',
-          name: 'og:image:height',
-          property: 'og:image:height',
-          content: this.post.cover.height
+          content: this.attributes.description
         },
         {
           hid: 'twitter:creator',
@@ -222,13 +204,13 @@ export default {
           hid: 'description',
           name: 'description',
           property: 'description',
-          content: this.post.description
+          content: this.attributes.description
         },
       ],
       link: [
         {
           rel: 'canonical',
-          href: this.parentBlogUrl,
+          href: this.attributes.canonical,
           hid: 'canonical'
         }
       ],
@@ -237,18 +219,16 @@ export default {
           innerHTML: JSON.stringify({
             '@context': 'http://schema.org',
             '@type': 'Article',
-            headline: this.post.title,
-            articleBody: this.post.content_html,
-            image: this.post.cover.source,
-            dateCreated: this.post.created,
-            dateModified: this.post.modified,
-            datePublished: this.post.published,
+            headline: this.attributes.title,
+            articleBody: this.html,
+            image: `${process.env.baseHost}${this.$icon(512)}`,
+            dateCreated: this.attributes.created,
+            dateModified: this.attributes.modified,
+            datePublished: this.attributes.published,
             inLanguage: this.$i18n.locale,
-            author: `${this.post.author.first_name} ${
-              this.post.author.last_name
-            }`,
+            author: this.attributes.author.name,
             mainEntityOfPage: this.postAbsoluteUrl,
-            wordCount: this.post.word_count,
+            wordCount: this.attributes.wordCount,
             publisher: {
               '@type': 'Organization',
               name: 'Bazzite',
@@ -260,7 +240,7 @@ export default {
                 height: '1650 px'
               }
             },
-            sameAs: [this.parentBlogUrl]
+            sameAs: [this.attributes.canonical]
           }),
           type: 'application/ld+json'
         },
@@ -290,7 +270,7 @@ export default {
                 position: 3,
                 item: {
                   '@id': this.postAbsoluteUrl,
-                  name: this.post.title
+                  name: this.attributes.title
                 }
               }
             ]
@@ -299,6 +279,9 @@ export default {
         }
       ]
     }
+  },
+  validate({ params, app }) {
+    return app.$blog.validate('articleSlug', params.slug)
   }
 }
 </script>

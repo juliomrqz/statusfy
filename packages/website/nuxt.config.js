@@ -1,5 +1,7 @@
-import axios from 'axios'
-import { path } from '@statusfy/common'
+const path = require('path')
+
+import BlogIndex from './content/blog'
+import markdown from './webpack/markdown'
 const pkg = require('./package')
 
 const buildCode = `${pkg.version}-${(
@@ -12,19 +14,6 @@ const secondColor = '#eff0f4'
 const baseHost = 'https://statusfy.co'
 const twitterUserEn = 'BazziteTech'
 const twitterUserEs = 'BazziteEs'
-const apiBaseURL = process.env.API_URL || 'http://127.0.0.1:8000/api/v1/'
-const generateRouteBaseURL =
-  process.env.GENRATE_ROUTES_URL || `${apiBaseURL}blog?tags=statusfy`
-
-const getPosts = async (lang = 'en') => {
-  const posts = await axios.get(generateRouteBaseURL, {
-    headers: {
-      'Accept-Language': lang
-    }
-  })
-
-  return posts
-}
 
 module.exports = {
   mode: 'universal',
@@ -70,18 +59,18 @@ module.exports = {
    ** Global CSS
    */
   css: [
+    '~/assets/css/dracula-prism.css',
     'github-markdown-css/github-markdown.css',
-    '~/assets/css/pygments.css',
     '~/assets/css/tailwind.css',
     'animate.css/source/_base.css',
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    'prismjs/themes/prism-tomorrow.css'
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '~/plugins/statusfy-blog.js',
     '~/plugins/axios.js',
     '~/plugins/vue-disqus',
     '~/plugins/vue-lazyload.js',
@@ -128,7 +117,7 @@ module.exports = {
           fallbackLocale: 'en'
         }
       }
-    ]
+    ],
   ],
 
   /*
@@ -142,7 +131,6 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    publicPath: '/static/',
     /*
      ** You can extend webpack config here
      */
@@ -156,6 +144,16 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+
+      // Markdown
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: path.resolve(__dirname, './webpack/markdown-loader.js'),
+        include: path.resolve(__dirname, './content'),
+        options: {
+          markdown
+        }
+      })
     },
   },
   /*
@@ -164,7 +162,7 @@ module.exports = {
   router: {
     linkActiveClass: 'active',
     linkExactActiveClass: 'exact',
-    scrollBehavior: function (to, from, savedPosition) {
+    scrollBehavior: function () {
       return { x: 0, y: 0 }
     }
   },
@@ -176,15 +174,7 @@ module.exports = {
     routes: async () => {
       const generateRoutes = async lang => {
         const prefix = lang === 'es' ? '/es' : ''
-
-        const postsEn = await getPosts(lang)
-
-        return postsEn.data.results.map(post => {
-          return {
-            route: `${prefix}/blog/${post.slug}`,
-            payload: post
-          }
-        })
+        return BlogIndex.articles.map(slug => `${prefix}/blog/${slug}`)
       }
 
       const routesEn = await generateRoutes('en')
@@ -194,12 +184,6 @@ module.exports = {
     }
   },
   // Modules Configurations
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    baseURL: apiBaseURL
-  },
   /*
    ** PWA module configuration
    */
@@ -215,8 +199,7 @@ module.exports = {
     twitterSite: `@${twitterUserEn}`,
     twitterCreator: `@${twitterUserEn}`,
     ogDescription: false,
-    ogTitle: false,
-    ogImage: false
+    ogTitle: false
   },
   manifest: {
     name: title,
@@ -229,20 +212,7 @@ module.exports = {
     version: pkg.version
   },
   workbox: {
-    publicPath: '/static/',
-    offlinePage: '/offline',
-    runtimeCaching: [
-      {
-        urlPattern: `${apiBaseURL}blog.*`,
-        strategyOptions: {
-          cacheName: 'api',
-          cacheExpiration: {
-            maxEntries: 10,
-            maxAgeSeconds: 300
-          }
-        }
-      }
-    ]
+    offlinePage: '/offline'
   },
   /*
    ** Google Analytics configuration
@@ -276,14 +246,12 @@ module.exports = {
 
       // Generate from Blog Posts
       try {
-        const posts = await getPosts()
-
-        posts.data.results.forEach(post => {
+        BlogIndex.articles.map(slug => {
           routesEn.push({
-            url: `/blog/${post.slug}`,
-            changefreq: 'daily',
+            url: `/blog/${slug}`,
+            changefreq: 'weekly',
             priority: 0.7,
-            lastmodISO: post.created
+            lastmodISO: new Date().toISOString()
           })
         })
       } catch (error) {
@@ -304,7 +272,7 @@ module.exports = {
   netlify: {
     redirects: [
       {
-        from: 'https://stoic-leavitt-b61d39.netlify.com/*',
+        from: 'https://statusfy-website-b61d39.netlify.com/*',
         to: 'https://statusfy.co/:splat',
         force: true
       },

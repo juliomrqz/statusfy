@@ -1,6 +1,15 @@
 /* Custom Styles */
 @import '@statusfy/common/lib/style/base';
 
+html {
+  @apply leading-normal;
+}
+
+code[class*=language-],
+pre[class*=language-] {
+  font-family: inherit;
+}
+
 .btn {
   @apply inline-block px-6 py-3 leading-none border rounded whitespace-no-wrap text-white text-lg cursor-pointer;
 }

@@ -27,8 +27,8 @@
       <div class="max-w-md mx-auto px-4">
         <AticleCard
           v-for="post in posts"
-          :key="post.slug"
-          :post="post"
+          :key="post.attributes.slug"
+          :attributes="post.attributes"
         />
 
         <div
@@ -64,16 +64,16 @@ export default {
   },
   mixins: [SeoHead],
   async asyncData({ app }) {
-    let response = { results: [] }
+    let posts = []
 
     try {
-      response = await app.$axios.$get('blog?tags=statusfy')
+      posts = await app.$blog.getArticles(app.i18n.locale)
     } catch (error) {
       console.log(error)
     }
 
     return {
-      posts: response.results,
+      posts,
       title: app.i18n.t('blog.title'),
       description: app.i18n.t('blog.description')
     }

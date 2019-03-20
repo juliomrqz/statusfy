@@ -40,10 +40,20 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@wordpress/wordcount": "^2.1.0",
     "babel-eslint": "^10.0.1",
+    "cross-spawn": "^6.0.5",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "front-matter": "^3.0.1",
+    "loader-utils": "^1.2.3",
     "lodash.pick": "^4.4.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-attrs": "^2.3.2",
+    "markdown-it-github-headings": "^1.1.1",
+    "markdown-it-inline-comments": "^1.0.1",
+    "markdown-it-link-attributes": "^2.1.0",
+    "markdown-it-prism": "^2.0.1",
     "prettier": "1.14.3"
   },
   "engines": {

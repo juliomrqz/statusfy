@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div v-if="post.author">
     <div
       v-if="mode === 'simple'"
       class="flex flex-wrap items-center text-grey-darker"
     >
       <img
-        :src="post.author.avatar"
+        :src="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
         class="rounded-full w-10 h-10"
       >
       <span class="ml-4 font-semibold relative z-10">
@@ -14,7 +14,7 @@
           target="_blank"
           rel="noopener"
         >
-          {{ post.author.first_name }} {{ post.author.last_name }}
+          {{ post.author.name }}
         </a>
       </span>
       <span>&nbsp;{{ $t('blog.on') }}&nbsp;</span>
@@ -25,7 +25,7 @@
       class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
     >
       <img
-        :src="post.author.avatar"
+        :src="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
         class="rounded-full w-12 h-12"
       >
       <div class="flex flex-col mx-4 mt-2">
@@ -35,13 +35,13 @@
             target="_blank"
             rel="noopener"
           >
-            {{ post.author.first_name }} {{ post.author.last_name }}
+            {{ post.author.name }}
           </a>
         </span>
         <div>
           <time :datetime="post.created">{{ formatDate(post.created) }}</time>
           <span class="dot-divider" />
-          <span>{{ post.reading_time }} {{ $t('blog.minRead') }}</span>
+          <span>{{ post.readingTime }} {{ $t('blog.minRead') }}</span>
         </div>
       </div>
     </div>
@@ -56,7 +56,8 @@ export default {
   props: {
     post: {
       type: Object,
-      required: true
+      required: true,
+      default: () => {}
     },
     mode: {
       type: String,
