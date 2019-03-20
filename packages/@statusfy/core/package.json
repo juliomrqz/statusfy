@@ -35,7 +35,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.16",
     "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/pwa": "^2.5.0",
     "@statusfy/common": "0.3.0-beta.1",
@@ -67,7 +67,7 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
-    "vue-multianalytics": "1.11.4",
+    "vue-multianalytics": "1.11.5",
     "vue-svgicon": "^3.2.4"
   },
   "devDependencies": {
@@ -76,7 +76,7 @@
     "@statusfy/test-utils": "0.3.0-beta.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.2",
+    "eslint": "^5.15.3",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-standard": ">=12.0.0",
     "eslint-plugin-import": ">=2.14.0",
