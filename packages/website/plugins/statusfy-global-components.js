@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import ImageResponsive from "~/components/Image.vue";
+import ImageResponsive from "~/components/ImageResponsive.vue";
 
 Vue.component('ImageResponsive', ImageResponsive)

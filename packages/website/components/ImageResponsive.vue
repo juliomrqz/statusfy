@@ -53,7 +53,8 @@ export default {
       return require(`~/assets/img/${this.source}`)
     },
     imagePlaceholder() {
-      return require(`~/assets/img/${this.source}?lqip`)
+      const { placeholder } = require(`~/assets/img/${this.source}?resize&placeholder=true`)
+      return placeholder
     },
     finalClass() {
       let theClass = this.classes
@@ -68,33 +69,29 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .image-placeholder {
-  overflow: hidden;
-  line-height: 0;
-  display: inline-block;
+  @apply overflow-hidden leading-none inline-block;
 
   &.fluid {
     img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
+      @apply max-w-full h-auto;
     }
   }
 }
 
 img {
+  @apply opacity-75;
   transition: all ease 0.3s;
-  opacity: 0.95;
   filter: blur(15px);
 
   &[lazy='loading'] {
-    opacity: 1;
+    @apply opacity-100;
     filter: blur(15px);
   }
 
   &[lazy='loaded'] {
-    opacity: 1;
+    @apply opacity-100;
     filter: none;
   }
 }

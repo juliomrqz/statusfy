@@ -580,7 +580,7 @@ module.exports = {
     negativeMargin: false,
     opacity: ['responsive'],
     outline: ['focus'],
-    overflow: false,
+    overflow: [],
     padding: ['responsive'],
     pointerEvents: false,
     position: ['responsive'],

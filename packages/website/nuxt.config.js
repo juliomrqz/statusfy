@@ -96,6 +96,8 @@ module.exports = {
     '@nuxtjs/sitemap',
     // Doc: https://www.bazzite.com/docs/nuxt-netlify/
     '@bazzite/nuxt-netlify',
+    // Doc: https://www.bazzite.com/docs/nuxt-optimized-images/
+    '@bazzite/nuxt-optimized-images',
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
     [
       'nuxt-i18n',

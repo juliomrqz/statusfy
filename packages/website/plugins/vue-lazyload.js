@@ -10,5 +10,5 @@ Vue.use(VueLazyload, {
   lazyComponent: true,
   silent: !process.env.isDev,
   observer: true,
-  loading: require('~/assets/img/loading.svg')
+  loading: require('~/assets/img/loading.jpg')
 })
