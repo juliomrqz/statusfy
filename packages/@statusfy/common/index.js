@@ -11,6 +11,7 @@ exports.postcss = require('./lib/postcss')
 exports.esm = esm
 exports.Dates = esm(path.join(__dirname, './lib/dates.js')).default
 
+exports.url = require('url')
 exports.toml = require('toml')
 exports.tomlify = require('tomlify-j0.4')
 exports.yaml = require('yaml')

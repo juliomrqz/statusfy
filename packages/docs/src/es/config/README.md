@@ -53,8 +53,11 @@ La Descripción para el sitio. Esto se representará como una etiqueta `<meta>` 
 La URL base en la que se desplegará el sitio. Puede ser solo una barra o una URL válida que no debe terminar con una barra.
 
 ::: warning ADVERTENCIA
+Desde la versión `v0.3.0`, los despliegues bajo una sub-ruta (p.e. `https://ejemplo.com/status/`) ya no son soportados.
+:::
 
-Debe establecer el campo `baseUrl` como su **dominio de producción** para que las [URL alternativas sean completamente válidas](../guide/i18n.md#seo).
+::: tip
+Debes establecer el campo `baseUrl` como su **dominio de producción** para que las [URL alternativas sean completamente válidas](../guide/i18n.md#seo).
 
 :::
 

@@ -18,7 +18,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
   try {
     if (siteConfigErrors && siteConfigErrors.length > 0) {
       logger.fatal(
-        `Your site configuration is invalid\n${siteConfigErrors.join("\n")}`
+        `Your site configuration is invalid:\n${siteConfigErrors.join("\n")}`
       );
       process.exit(1);
     }

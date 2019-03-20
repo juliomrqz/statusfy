@@ -53,8 +53,13 @@ The Description for the site. This will be rendered as a `<meta>` tag in the pag
 The base URL the site will be deployed at. It can be just a slash or a valid URL that shouldn't end with a slash.
 
 ::: warning
+Since version `v0.3.0`, deployments under a subpath (e.g. `https://example.com/status/`) are no longer supported.
+:::
+
+::: tip
 You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
+
 
 ## theme
 

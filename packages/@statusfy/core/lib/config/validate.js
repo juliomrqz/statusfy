@@ -1,4 +1,4 @@
-const { chalk, validator } = require("@statusfy/common");
+const { chalk, validator, url } = require("@statusfy/common");
 
 const validFrontMatterFormats = ["yaml", "yml", "toml", "json"];
 
@@ -29,6 +29,16 @@ module.exports = function validateConfig(config) {
           config.baseUrl
         }.\nValid Example: ${chalk.cyan("https://status.yourbaseurl.com")}.`
       );
+    } else {
+      const { pathname } = url.parse(config.baseUrl);
+
+      if (pathname && pathname !== "/") {
+        errors.push(
+          `Statusfy doesn't support deployments under a subpath (${chalk.cyan(
+            pathname
+          )}).`
+        );
+      }
     }
 
     // Make sure a trailing slash (at the end of the URL) is not defined
