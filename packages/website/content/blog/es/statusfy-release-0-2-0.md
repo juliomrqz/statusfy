@@ -12,9 +12,13 @@ Acabamos de lanzar una [nueva versión][github-release] de Statusfy con nuevas f
 
 ## Mantenimiento Programado
 
-<p class="text-center">
-  <img src="https://media.bazzite.com/blog/2018/12/statusfy-release-v-0-2-0-scheduled-maintenance-es.jpg" width="879" height="278" class="img-fluid" alt="Statusfy - Mantenimiento Programado" />
-</p>
+<ImageResponsive
+  source="blog/statusfy-release-v-0-2-0/scheduled-maintenance-es.jpg"
+  alt="Statusfy - Mantenimiento Programado"
+  :fluid="true"
+  :width="879"
+  :height="278"
+/>
 
 La definición de [Mantenimiento Programados][docs-scheduled-maintenance] es una forma de informar con anticipación a tus usuarios cuando su sistema no puede manejar solicitudes debido a una actualización de mantenimiento temporal.
 
@@ -40,13 +44,12 @@ Ahora puedes indicarle a los bots de los motores de búsqueda las páginas dispo
 
 Statusfy es un proyecto completamente abierto, creado y actualizado por [Bazzite][bazzite-home]. Todavía es un trabajo en progreso, por lo que cualquier contribución es bienvenida. Nos apasiona construir una solución versátil y de menor costo.
 
-También puedes ayudarnos dando una [estrella en GitHub ★][statusy-github], corriendo la voz o [dando una donación][statusfy-sponsoring] 🤓.
+También puedes ayudarnos dando una [estrella en GitHub ★][statusy-github], corriendo la voz o <NuxtLink :to="`${localePath('support')}#sponsoring`">dando una donación</NuxtLink> 🤓.
 
 
 
 [bazzite-home]: https://www.bazzite.com/es
 [statusy-github]: https://github.com/bazzite/statusfy
-[statusfy-sponsoring]: https://statusfy.co/es/support#sponsoring
 [docs-scheduled-maintenance]: https://docs.statusfy.co/es/guide/incidents.html#mantenimiento-programado
 [docs-notifications]: https://docs.statusfy.co/es/guide/notifications.html
 [docs-docs-notifications]: https://docs.statusfy.co/es/config/#notifications

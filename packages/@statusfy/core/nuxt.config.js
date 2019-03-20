@@ -97,7 +97,8 @@ module.exports = {
         workbox: true,
         manifest: true
       }
-    ]
+    ],
+    "@bazzite/nuxt-optimized-images"
   ],
   /*
   ** Build configuration

@@ -13,9 +13,13 @@ We just released a [new version][github-release] of Statusfy with new big featur
 
 ## Scheduled Maintenance
 
-<p class="text-center">
-  <img src="https://media.bazzite.com/blog/2018/12/statusfy-release-v-0-2-0-scheduled-maintenance-en.jpg" width="879" height="278" class="img-fluid" alt="Statusfy - Scheduled Maintenance" />
-</p>
+<ImageResponsive
+  source="blog/statusfy-release-v-0-2-0/scheduled-maintenance-en.jpg"
+  alt="Statusfy - Scheduled Maintenance"
+  :fluid="true"
+  :width="879"
+  :height="278"
+/>
 
 [Scheduled Maintenances][docs-scheduled-maintenance] definition is a way to let your users know ahead of time when your system(s) cannot handle requests due to a temporary maintenance update.
 
@@ -42,13 +46,12 @@ Now you can notify to  the search engine bots the available pages in your Status
 
 Statusfy is a completely open source project, created and maintained by [Bazzite][bazzite-home]. It's still a work in progress, so any contribution is very welcome. We're passionate about building a versatile and a lower cost solution.
 
-You can also support us by giving a [GitHub star ★][statusy-github] , spreading the word or [donating][statusfy-sponsoring]  🤓.
+You can also support us by giving a [GitHub star ★][statusy-github], spreading the word or <NuxtLink :to="`${localePath('support')}#sponsoring`">donating</NuxtLink> 🤓.
 
 
 
 [bazzite-home]: https://www.bazzite.com
 [statusy-github]: https://github.com/bazzite/statusfy
-[statusfy-sponsoring]: https://statusfy.co/support#sponsoring
 [docs-scheduled-maintenance]: https://docs.statusfy.co/guide/incidents.html#scheduled-maintenance
 [docs-notifications]: https://docs.statusfy.co/guide/notifications.html
 [docs-docs-notifications]: https://docs.statusfy.co/config/#notifications

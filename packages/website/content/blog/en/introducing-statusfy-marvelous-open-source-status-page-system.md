@@ -8,7 +8,8 @@ created: "2018-11-14T14:58:34.140255Z"
 canonical: https://www.bazzite.com/blog/introducing-statusfy-marvelous-open-source-status-page-system
 ---
 
-[Statusfy][statusfy-home] is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either **Static Generated** or **Server Rendered** and easily deploy it to a variety of hosting services. The goal behind is to lower costs and complexity providing a simpler and versatile Open Source alternative.
+
+<NuxtLink :to="`${localePath('index')}`">Statusfy</NuxtLink> is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either **Static Generated** or **Server Rendered** and easily deploy it to a variety of hosting services. The goal behind is to lower costs and complexity providing a simpler and versatile Open Source alternative.
 
 But, you may be thinking: Why do I need a Status Page System?. These systems are pretty simple and have one main task: communicate the status of an application or service. Nowadays, every single SaaS product should have a Status Page System, they allow us to increase customer confidence and reduce customer frustration about any service disruptions by giving retrospectives (also called Root Cause Analysis). With these systems, you can notify about service disruptions, planned maintenance or possible outages through multiple channels: email, SMS, Push, Webhooks, etc.
 
@@ -41,7 +42,6 @@ For these two ways of delivering your Statusfy Application, you can use great Ho
 | [Surge](https://docs.statusfy.co/guide/deploy.html#surge)    | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/surge/static-generated) |                              No                              |
 | [Heroku](https://docs.statusfy.co/guide/deploy.html#heroku)  | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/static-generated) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
 | [Now](https://docs.statusfy.co/guide/deploy.html#now)        | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/now/static-generated) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
-{.table .table-striped .table-bordered}
 
 ## Creating a Status Page System
 
@@ -91,7 +91,7 @@ npm run start # OR yarn start
 
 ## What's next
 
-In the next couple of months, we're going to continue to improve the [documentation][statusy-docs], [create tutorials][statusy-blog], [fix bugs][statusy-github], create a Project Editor, and add [extra features][statusy-docs-todo].
+In the next couple of months, we're going to continue to improve the [documentation][statusy-docs], <NuxtLink :to="`${localePath('blog')}`">create tutorials</NuxtLink>, [fix bugs][statusy-github], create a Project Editor, and add [extra features][statusy-docs-todo].
 
 
 ## Contribute to Statusfy

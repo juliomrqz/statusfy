@@ -71,6 +71,7 @@ module.exports = {
    */
   plugins: [
     '~/plugins/statusfy-blog.js',
+    '~/plugins/statusfy-global-components.js',
     '~/plugins/axios.js',
     '~/plugins/vue-disqus',
     '~/plugins/vue-lazyload.js',

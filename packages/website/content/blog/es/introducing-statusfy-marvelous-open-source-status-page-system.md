@@ -8,7 +8,8 @@ created: "2018-11-14T14:58:34.140255Z"
 canonical: https://www.bazzite.com/es/blog/introducing-statusfy-marvelous-open-source-status-page-system
 ---
 
-[Statusfy][statusfy-home] es un Sistema de Página de Estado, fácil de usar y completamente de código abierto. Puedes crear fácilmente un Sistema rápido, ya sea **Estático** o **Renderizado por Servidor**, e implementarlo fácilmente en una **variedad de servicios de alojamiento**. El objetivo detrás es reducir los costos y la complejidad, proporcionando una alternativa de código abierto más simple y versátil.
+
+<NuxtLink :to="`${localePath('index')}`">Statusfy</NuxtLink> es un Sistema de Página de Estado, fácil de usar y completamente de código abierto. Puedes crear fácilmente un Sistema rápido, ya sea **Estático** o **Renderizado por Servidor**, e implementarlo fácilmente en una **variedad de servicios de alojamiento**. El objetivo detrás es reducir los costos y la complejidad, proporcionando una alternativa de código abierto más simple y versátil.
 
 Sin embargo, puedes estar preguntándote: ¿Por qué necesito un sistema de página de estado?. Estos sistemas son bastante simples y tienen una tarea principal: comunicar el estado de una aplicación o servicio. Hoy en día, cada producto SaaS debe tener un sistema de página de estado, ellos nos permiten aumentar la confianza del cliente y reducir su frustración por cualquier interrupción del servicio mediante retrospectivas (también llamadas Análisis de Causa Raíz). Con estos sistemas, puedes notificar las interrupciones del servicio, mantenimientos planificados o posibles interrupciones a través de múltiples canales: correo electrónico, SMS, Push, Webhooks, etc.
 
@@ -39,7 +40,6 @@ Para estas dos formas de entrega de tu aplicación Statusfy, puedes usar excelen
 | [Surge](https://docs.statusfy.co/es/guide/deploy.html#surge) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/surge/static-generated) |                              No                              |
 | [Heroku](https://docs.statusfy.co/es/guide/deploy.html#heroku) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/static-generated) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
 | [Now](https://docs.statusfy.co/es/guide/deploy.html#now)     | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/now/static-generated) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
-{.table .table-striped .table-bordered}
 
 ## Creación de un Sistema de Página de Estado
 
@@ -88,7 +88,7 @@ npm run start # O yarn start
 
 ## Que sigue
 
-En los próximos meses, continuaremos mejorando la [documentación][statusy-docs], [crearemos nuevos tutoriales][statusy-blog], [corregiremos errores][statusy-github], crearemos un Editor de Proyecto y agregaremos [funcionalidades adicionales][statusy-docs-todo].
+En los próximos meses, continuaremos mejorando la [documentación][statusy-docs], <NuxtLink :to="`${localePath('blog')}`">crearemos nuevos tutoriales</NuxtLink>, [corregiremos errores][statusy-github], crearemos un Editor de Proyecto y agregaremos [funcionalidades adicionales][statusy-docs-todo].
 
 ## Contribuye a Statusfy
 
@@ -98,7 +98,6 @@ También puedes ayudarnos dando una [estrella en GitHub ★][statusy-github] y c
 
 <!-- enlaces -->
 
-[statusfy-home]: https://statusfy.co/es/
 [statusy-docs]: https://docs.statusfy.co/es/
 [statusy-docs-todo]: https://docs.statusfy.co/es/guide/#por-hacer
 [statusy-blog]: https://statusfy.co/es/blog

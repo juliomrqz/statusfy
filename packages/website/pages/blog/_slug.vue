@@ -295,4 +295,10 @@ export default {
     top: -30px;
   }
 }
+
+.markdown-body {
+  >>> .anchor {
+    @apply hidden;
+  }
+}
 </style>

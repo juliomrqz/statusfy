@@ -20,7 +20,6 @@ module.exports = function (source) {
 
   const {
     html,
-    body,
     attributes
   } = options.markdown(entry, source)
 
@@ -36,7 +35,6 @@ module.exports = function (source) {
   }
 
   const output = `
-      body: ${stringify(body)},
       html: ${stringify(html)},
       attributes: ${stringify(attributes)},
       vue: {

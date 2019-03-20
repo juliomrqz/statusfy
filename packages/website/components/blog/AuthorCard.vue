@@ -4,10 +4,15 @@
       v-if="mode === 'simple'"
       class="flex flex-wrap items-center text-grey-darker"
     >
-      <img
-        :src="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
-        class="rounded-full w-10 h-10"
-      >
+      <ImageResponsive
+        :source="`avatars/${post.author.username}.jpg`"
+        :alt="post.author.name"
+        :rounded="true"
+        classes="w-10 h-10"
+        :width="40"
+        :height="40"
+      />
+
       <span class="ml-4 font-semibold relative z-10">
         <a
           :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
@@ -24,10 +29,15 @@
       v-else-if="mode === 'advanced'"
       class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
     >
-      <img
-        :src="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
-        class="rounded-full w-12 h-12"
-      >
+      <ImageResponsive
+        :source="`avatars/${post.author.username}.jpg`"
+        :alt="post.author.name"
+        :rounded="true"
+        classes="w-12 h-12"
+        :width="40"
+        :height="40"
+      />
+
       <div class="flex flex-col mx-4 mt-2">
         <span class="font-semibold mb-1 text-center sm:text-left">
           <a

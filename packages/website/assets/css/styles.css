@@ -81,4 +81,8 @@ pre[class*=language-] {
       @apply mt-2;
     }
   }
+
+  table {
+    display: table;
+  }
 }
