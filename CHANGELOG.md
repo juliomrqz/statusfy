@@ -13,6 +13,7 @@
 * **core:** fix text wrapping of the system names ([637f7bb](https://github.com/statusfy/statusfy/commit/637f7bb))
 * **core,website:** enable subfolder generation on static mode ([a94270c](https://github.com/statusfy/statusfy/commit/a94270c))
 * **core,website:** fix regeneratorRuntime dependencies requirement ([2fb0b2e](https://github.com/statusfy/statusfy/commit/2fb0b2e))
+* **core:** the base url cannot contain a sub-path ([e7ce6bc](https://github.com/statusfy/statusfy/commit/e7ce6bc))
 
 ### Features
 
@@ -28,13 +29,13 @@
   * German (thanks to [dennis47528](https://github.com/bazzite/statusfy/commits?author=dennis47528))
   * Hungarian (thanks to [asrob](https://github.com/bazzite/statusfy/commits?author=asrob))
   * Portuguese (Brazil) (thanks to [felipeklasen](https://github.com/bazzite/statusfy/commits?author=felipeklasen))
-
+* **website:** migrate the blog section to local markdown files ([dfa141c](https://github.com/statusfy/statusfy/commit/dfa141c))
 
 
 ### BREAKING CHANGES
 
-* **core, docs:** the `new-incident` command no longer asks for the *front matter* format
-
+* **core:** deployments under a subpath (e.g. `https://example.com/status/`) are no longer supported
+* **core, docs:** the `new-incident` command no longer asks for the *front matter* format ([a3a5675](https://github.com/statusfy/statusfy/commit/a3a5675))
 
 
 
