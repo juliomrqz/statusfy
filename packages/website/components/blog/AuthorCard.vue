@@ -38,7 +38,7 @@
         :height="40"
       />
 
-      <div class="flex flex-col mx-4 mt-2">
+      <div class="flex flex-col mx-4 mt-2 sm:mt-0">
         <span class="font-semibold mb-1 text-center sm:text-left">
           <a
             :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
