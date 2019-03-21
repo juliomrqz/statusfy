@@ -1,5 +1,5 @@
 ---
-title: "Statusfy: Actualización v0.3.0"
+title: "Actualización v0.3.0"
 slug: "statusfy-release-0-3-0"
 author: juliomrqz
 description: "Acabamos de lanzar una nueva versión de Statusfy con nuevas características y mejoras de rendimiento: soporte para Docker, nuevos comandos, tres nuevos idiomas que traducen la interfaz y mucho más."

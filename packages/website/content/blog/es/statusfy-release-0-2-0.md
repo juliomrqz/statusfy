@@ -1,5 +1,5 @@
 ---
-title: "Statusfy: Actualización v0.2.0"
+title: "Actualización v0.2.0"
 slug: "statusfy-release-0-2-0"
 author: patriciajumper
 description: "Acabamos de lanzar una nueva versión de Statusfy con nuevas funciones que pueden mejorar la experiencia de los usuarios/clientes de tu Sistema de Páginas de estado: Mantenimiento Programado, Notificaciones y Mapa de Sitio."

@@ -1,5 +1,5 @@
 ---
-title: "Statusfy: Release v0.2.0"
+title: "Release v0.2.0"
 slug: "statusfy-release-0-2-0"
 author: patriciajumper
 description: "We just released a new version of Statusfy with new big features that can improve the users/customer experience of your Status Page System: Scheduled Maintenance, Notifications and Sitemap."
