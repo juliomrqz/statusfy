@@ -77,7 +77,7 @@ module.exports = async function Statusfy() {
   });
 
   this.nuxt.hook("build:before", async builder => {
-    const { isStatic } = builder.bundleBuilder.context;
+    const { isStatic } = builder.bundleBuilder.buildContext;
 
     if (isStatic) {
       this.nuxt.hook("build:done", async generator => {
