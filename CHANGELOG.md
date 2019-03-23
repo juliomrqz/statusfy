@@ -1,3 +1,19 @@
+## [0.3.1](https://github.com/statusfy/statusfy/compare/v0.3.0...v0.3.1) (2019-03-23)
+
+
+### Bug Fixes
+
+* **bug:** incorrect context referenct in nuxt ([647cab0](https://github.com/statusfy/statusfy/commit/647cab0))
+* **website:** fix avatar position ([821deea](https://github.com/statusfy/statusfy/commit/821deea))
+* **website:** fix starting the website when no internet connection is available ([2e08200](https://github.com/statusfy/statusfy/commit/2e08200))
+
+
+### Performance Improvements
+
+* **website:** support lazy loading the images from the blog section ([136c01a](https://github.com/statusfy/statusfy/commit/136c01a))
+
+
+
 # [0.3.0](https://github.com/statusfy/statusfy/compare/v0.2.1...v0.3.0) (2019-03-18)
 
 
