@@ -35,7 +35,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.16",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/pwa": "^2.5.0",
     "@statusfy/common": "0.3.0",
@@ -58,7 +58,7 @@
     "lodash.isstring": "^4.0.1",
     "lodash.sortby": "^4.7.0",
     "nodemon": "^1.18.4",
-    "nuxt": "^2.4.5",
+    "nuxt": "^2.5.1",
     "nuxt-i18n": "^5.8.5",
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
