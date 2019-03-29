@@ -35,13 +35,12 @@ For these two ways of delivering your Statusfy Application, you can use great Ho
 |                                                              |                       Example Project                        |                       Example Project                        |
 | ------------------------------------------------------------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | **Service**                                                  |                     **Static Generated**                     |                     **Server Rendered**                      |
-| [GitHub Pages](https://docs.statusfy.co/guide/deploy.html#github-pages) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/github-pages/static-generated) |                              No                              |
-| [GitLab Pages](https://docs.statusfy.co/guide/deploy.html#gitlab-pages-and-gitlab-ci) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/gitlab-pages/static-generated) |                              No                              |
-| [Netlify](https://docs.statusfy.co/guide/deploy.html#netlify) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/netlify/static-generated) |                              No                              |
-| [Firebase](https://docs.statusfy.co/guide/deploy.html#firebase) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/firebase/static-generated) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/firebase/server-rendered) |
-| [Surge](https://docs.statusfy.co/guide/deploy.html#surge)    | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/surge/static-generated) |                              No                              |
-| [Heroku](https://docs.statusfy.co/guide/deploy.html#heroku)  | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/static-generated) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
-| [Now](https://docs.statusfy.co/guide/deploy.html#now)        | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/now/static-generated) | [Yes](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
+| [GitHub Pages](https://docs.statusfy.co/guide/deploy.html#github-pages) | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/github-pages-static) |                              No                              |
+| [GitLab Pages](https://docs.statusfy.co/guide/deploy.html#gitlab-pages-and-gitlab-ci) | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/gitlab-pages-static) |                              No                              |
+| [Netlify](https://docs.statusfy.co/guide/deploy.html#netlify) | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/netlify-static) |                              No                              |
+| [Surge](https://docs.statusfy.co/guide/deploy.html#surge)    | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/surge-static) |                              No                              |
+| [Heroku](https://docs.statusfy.co/guide/deploy.html#heroku)  | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/heroku-static) | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/heroku-ssr) |
+| [Now](https://docs.statusfy.co/guide/deploy.html#now)        | [Yes](https://github.com/bazzite/statusfy/tree/develop/examples/now-v2-static) |                              No                              |
 
 ## Creating a Status Page System
 

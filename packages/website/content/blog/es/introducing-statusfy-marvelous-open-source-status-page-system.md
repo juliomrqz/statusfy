@@ -30,16 +30,15 @@ Por otro lado, puedes servir tu Sistema de Página de Estado creado con Statusfy
 
 Para estas dos formas de entrega de tu aplicación Statusfy, puedes usar excelentes servicios de hosting. Creamos proyectos de ejemplos para que puedas comenzar a jugar de inmediato con diferentes servicios de hospedaje populares que podrías considerar usar:
 
-|                                                              |                     Proyecto de Ejemplo                      |                     Proyecto de Ejemplo                      |
+|                                                              |                       Example Project                        |                       Example Project                        |
 | ------------------------------------------------------------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| **Servicio**                                                 |                   **Generación Estática**                    |                 **Renderizado por Servidor**                 |
-| [GitHub Pages](https://docs.statusfy.co/es/guide/deploy.html#github-pages) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/github-pages/static-generated) |                              No                              |
-| [GitLab Pages](https://docs.statusfy.co/es/guide/deploy.html#gitlab-pages-y-gitlab-ci) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/gitlab-pages/static-generated) |                              No                              |
-| [Netlify](https://docs.statusfy.co/es/guide/deploy.html#netlify) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/netlify/static-generated) |                              No                              |
-| [Firebase](https://docs.statusfy.co/es/guide/deploy.html#firebase) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/firebase/static-generated) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/firebase/server-rendered) |
-| [Surge](https://docs.statusfy.co/es/guide/deploy.html#surge) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/surge/static-generated) |                              No                              |
-| [Heroku](https://docs.statusfy.co/es/guide/deploy.html#heroku) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/static-generated) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
-| [Now](https://docs.statusfy.co/es/guide/deploy.html#now)     | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/now/static-generated) | [Sí](https://github.com/bazzite/statusfy-examples/blob/master/heroku/server-rendered) |
+| **Service**                                                  |                     **Static Generated**                     |                     **Server Rendered**                      |
+| [GitHub Pages](https://docs.statusfy.co/guide/deploy.html#github-pages) | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/github-pages-static) |                              No                              |
+| [GitLab Pages](https://docs.statusfy.co/guide/deploy.html#gitlab-pages-and-gitlab-ci) | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/gitlab-pages-static) |                              No                              |
+| [Netlify](https://docs.statusfy.co/guide/deploy.html#netlify) | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/netlify-static) |                              No                              |
+| [Surge](https://docs.statusfy.co/guide/deploy.html#surge)    | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/surge-static) |                              No                              |
+| [Heroku](https://docs.statusfy.co/guide/deploy.html#heroku)  | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/heroku-static) | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/heroku-ssr) |
+| [Now](https://docs.statusfy.co/guide/deploy.html#now)        | [Sí](https://github.com/bazzite/statusfy/tree/develop/examples/now-v2-static) |                              No                              |
 
 ## Creación de un Sistema de Página de Estado
 
