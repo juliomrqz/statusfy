@@ -1,0 +1,8 @@
+/sw.js
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+
+/static/*.js
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/static/*.json
+  Cache-Control: public, max-age=300, must-revalidate

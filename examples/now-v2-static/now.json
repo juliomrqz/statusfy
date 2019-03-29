@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "statusfy-now-sg-example",
+  "alias": "statusfy-now-sg-example",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
+}
