@@ -22,7 +22,7 @@
     }
   ],
   "dependencies": {
-    "statusfy": "^0.2.0"
+    "statusfy": "^0.3.1"
   },
   "engines": {
     "node": ">=8.10",
