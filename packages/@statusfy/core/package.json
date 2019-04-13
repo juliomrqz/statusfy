@@ -63,7 +63,7 @@
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
     "sitemap": "^2.1.0",
-    "stylelint": "^9.6.0",
+    "stylelint": "^10.0.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
