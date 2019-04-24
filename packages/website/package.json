@@ -29,7 +29,7 @@
     "consola": "^2.5.7",
     "date-fns": "~1.30.0",
     "github-markdown-css": "^3.0.0",
-    "intersection-observer": "^0.5.1",
+    "intersection-observer": "^0.6.0",
     "nuxt": "^2.5.1",
     "nuxt-i18n": "^5.8.5",
     "vue-disqus": "^3.0.5",
