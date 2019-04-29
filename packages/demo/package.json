@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "less": "^3.8.1",
-    "less-loader": "^4.1.0",
+    "less-loader": "^5.0.0",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
