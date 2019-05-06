@@ -1,10 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+set -e
 
-cd $USER_DIR
-
-yarn cache clean
-NODE_ENV=development yarn install
-yarn add "statusfy@$STATUSFY_VERSION"
-
-npx statusfy build
+echo "Starting server..."
 npx statusfy start
