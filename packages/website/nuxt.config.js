@@ -1,4 +1,4 @@
-const path = require('path')
+const { postcss, path } = require('@statusfy/common')
 
 import BlogIndex from './content/blog'
 import markdown from './webpack/markdown'
@@ -14,6 +14,7 @@ const secondColor = '#eff0f4'
 const baseHost = 'https://statusfy.co'
 const twitterUserEn = 'BazziteTech'
 const twitterUserEs = 'BazziteEs'
+const tailwindJS = path.join(__dirname, 'tailwind.js')
 
 module.exports = {
   mode: 'universal',
@@ -158,6 +159,12 @@ module.exports = {
         }
       })
     },
+    /*
+    ** PostCSS
+    */
+    postcss: {
+      plugins: postcss.plugins(tailwindJS)
+    }
   },
   /*
     ** Router

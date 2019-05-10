@@ -1,13 +1,12 @@
 const plugins = (tailwindJS) => {
-  return [
-    require('postcss-import'),
-    tailwindJS ? require('tailwindcss')(tailwindJS) : null,
-    require('postcss-nested'),
-    require('postcss-preset-env'),
-    require('autoprefixer'),
-    require('postcss-combine-duplicated-selectors'),
-    require('cssnano')
-  ]
+  return {
+    'postcss-import': {},
+    ...tailwindJS ? { 'tailwindcss': tailwindJS } : {},
+    'postcss-nested': {},
+    'postcss-preset-env': {},
+    'postcss-combine-duplicated-selectors': {},
+    'autoprefixer': {},
+  }
 }
 
 module.exports = {

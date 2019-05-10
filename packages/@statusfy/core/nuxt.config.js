@@ -1,4 +1,4 @@
-const { path } = require("@statusfy/common");
+const { path, postcss } = require("@statusfy/common");
 
 const pkg = require("./package");
 
@@ -6,6 +6,7 @@ const langDir = "locales/";
 const mainColor = "#000000";
 const iconSizes = [16, 120, 144, 152, 192, 384, 512];
 const modulesDir = [path.join(__dirname, "node_modules")];
+const tailwindJS = path.resolve(__dirname, "tailwind.js");
 
 // Hack: allow to execute using lerna/yarn workspaces on testing
 if (process.env.STATUSFY_LERNA) {
@@ -140,6 +141,12 @@ module.exports = {
       scrollBehavior: (to, from, savedPosition) => {
         return { x: 0, y: 0 };
       }
+    },
+    /*
+    ** PostCSS
+    */
+    postcss: {
+      plugins: postcss.plugins(tailwindJS)
     }
   },
   // Modules Configurations
