@@ -234,10 +234,7 @@ module.exports = {
    ** Sitemap configuration
    */
   sitemap: {
-    path: '/sitemap.xml',
     hostname: baseHost,
-    cacheTime: 604800, // 7 days
-    gzip: true,
     routes: async () => {
       const websitePages = ['', 'support', 'blog']
       const routesEn = []
