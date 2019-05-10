@@ -238,7 +238,6 @@ module.exports = {
     hostname: baseHost,
     cacheTime: 604800, // 7 days
     gzip: true,
-    generate: true,
     routes: async () => {
       const websitePages = ['', 'support', 'blog']
       const routesEn = []
