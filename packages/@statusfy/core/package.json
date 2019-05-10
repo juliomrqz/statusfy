@@ -13,9 +13,7 @@
     "access": "public"
   },
   "scripts": {
-    "lint:scripts": "eslint --fix --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
-    "lint:css": "stylelint 'client/**/*.{css,vue}'",
-    "lint": "npm run lint:scripts && npm run lint:css",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
     "prepare-test": "cross-env NODE_ENV=test node test/prepare.js",
     "svg": "vsvg -s ./client/assets/icons -t ./client/components/icons --es6"
   },
@@ -63,15 +61,12 @@
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
     "sitemap": "^2.2.0",
-    "stylelint": "^10.0.1",
-    "stylelint-webpack-plugin": "^0.10.5",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
     "vue-multianalytics": "1.11.7",
     "vue-svgicon": "^3.2.4"
   },
   "devDependencies": {
-    "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "@nuxtjs/eslint-config": "^0.0.1",
     "@statusfy/test-utils": "0.3.1",
     "babel-core": "7.0.0-bridge.0",
@@ -84,10 +79,7 @@
     "eslint-plugin-node": ">=9.0.1",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-promise": ">=4.0.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "stylelint-config-prettier": "^5.0.0",
-    "stylelint-config-recess-order": "^2.0.0",
-    "stylelint-config-standard": "^18.2.0"
+    "eslint-plugin-standard": ">=4.0.0"
   },
   "engines": {
     "node": ">=8.10",

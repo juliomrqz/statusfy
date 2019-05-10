@@ -120,15 +120,6 @@ module.exports = {
       }
     },
     /*
-    ** Webpack plugins
-    */
-    plugins: [
-      /* eslint-disable no-new-require, new-cap */
-      new require("stylelint-webpack-plugin")({
-        files: ["client/**/*.vue"]
-      })
-    ],
-    /*
     ** Webpack bundle analyzer
     */
     analyze: true,
