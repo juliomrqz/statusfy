@@ -19,7 +19,7 @@ const getIncidentsFromProject = async contentDir => {
           path: f
         },
         name: `${fileName} > ${chalk.yellow(data.title)} (${chalk.green(
-          data.date.toUTCString()
+          new Date(data.date).toUTCString()
         )})`
       });
     }
