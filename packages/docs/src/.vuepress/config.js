@@ -1,7 +1,7 @@
 const axios = require('axios')
 const webpack = require('webpack')
 
-const { postcss } = require('@statusfy/common')
+const { path, postcss } = require('@statusfy/common')
 
 const partners = require('./partners.json')
 
@@ -9,19 +9,15 @@ module.exports = {
   title: 'Statusfy Documentation',
   description: 'A marvelous open source Status Page system',
   evergreen: true,
-  serviceWorker: true,
-  ga: process.env.GA_TRACKING_ID,
   postcss: {
     puglins: postcss.plugins()
   },
-  markdown: {
-    config: md => {
-      md.use(require('markdown-it-imsize'));
-      md.use(require("markdown-it-block-image"), {
-        outputContainer: 'p',
-        containerClassName: 'img-container'
-      });
-    }
+  extendMarkdown(md) {
+    md.use(require('markdown-it-imsize'));
+    md.use(require("markdown-it-block-image"), {
+      outputContainer: 'p',
+      containerClassName: 'img-container'
+    });
   },
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -65,12 +61,6 @@ module.exports = {
         label: 'English',
         editLinkText: 'Help us improve this page!',
         lastUpdated: 'Last Updated',
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
         nav: [
           {
             text: 'Guide',
@@ -103,12 +93,6 @@ module.exports = {
         label: 'Español',
         editLinkText: '¡Ayúdanos a mejorar esta página!',
         lastUpdated: 'Última Actualización',
-        serviceWorker: {
-          updatePopup: {
-            message: "Nuevo contenido está disponible.",
-            buttonText: "Actualizar"
-          }
-        },
         nav: [
           {
             text: 'Guía',
@@ -148,7 +132,39 @@ module.exports = {
         })
       )
     }
-  }
+  },
+  chainWebpack (config) {
+    const themePath = path.resolve(__dirname, "../../../../", "node_modules/@vuepress/theme-default")
+
+    config.resolve.alias.set('@theme', themePath)
+    config.resolve.alias.set('@', path.resolve(themePath, "components"))
+  },
+  plugins: [
+    ['@vuepress/back-to-top', true],
+    ['@vuepress/google-analytics', {
+      ga: process.env.GA_TRACKING_ID
+    }],
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        '/': {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        },
+        '/es/': {
+          updatePopup: {
+            message: "Nuevo contenido está disponible.",
+            buttonText: "Actualizar"
+          }
+        }
+      }
+    }],
+    ['container', {
+      type: 'statusfy',
+      before: '<pre class="statusfy-container"><code>',
+      after: '</code></pre>',
+    }],
+  ]
 }
 
 function genSidebarConfig(title, section = 'guide') {

@@ -30,16 +30,18 @@
     "url": "https://github.com/bazzite/statusfy-docs/issues"
   },
   "homepage": "https://docs.statusfy.co",
+  "dependencies": {
+    "vuepress": "^1.0.0-alpha.47"
+  },
   "devDependencies": {
     "@statusfy/common": "0.3.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
     "axios": "^0.18.0",
     "consola": "^2.6.1",
     "fs-extra": "^7.0.1",
     "markdown-it-block-image": "0.0.3",
-    "markdown-it-imsize": "^2.0.1",
-    "vuepress": "^0.14.10"
-  },
-  "resolutions": {
-    "vuepress/vue-template-compiler": "^2.6.10"
+    "markdown-it-imsize": "^2.0.1"
   }
 }

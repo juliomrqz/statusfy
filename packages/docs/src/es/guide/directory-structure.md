@@ -2,29 +2,29 @@
 
 Statusfy está diseñado para ser fácil de usar y organizar, teniendo en cuenta la [Internacionalización](../guide/i18n.md), la estructura de documento recomendada es la siguiente:
 
-```bash
+::: statusfy
 .
-├─ .statusfy/         # (interno)
-├─ assets/            # (opcional)
+├─ .statusfy/ _(**interno**)_
+├─ `assets/` _(**opcional**)_
 │   ├── icon.png
 │   ├── img
 │   │   └── logo.svg
-├─ content/           # (requerido)
+├─ `content/` _(**requerido**)_
 │   ├── 2018-01-16_incident_1.md
 │   ├── 2018-01-17_incident_2.md
-│   ├── es            # (opcional)
+│   ├── es _(**opcional**)_
 │   │   ├── 2018-01-16_incident_1.md
 │   │   └── 2018-01-17_incident_2.md
-├─ locales/           # (recomendado)
+├─ `locales/` _(**recomendado**)_
 │   ├── en.json
 │   └── es.json
-├─ public/            # (opcional)
+├─ `public/` _(**opcional**)_
 │   └── robots.txt
-├─ theme/             # (opcional)
+├─ `theme/` _(**opcional**)_
 │   └── style.css
-├─ config.js          # (opcional)
+├─ config.js _(**opcional**)_
 └─ package.json
-```
+:::
 
 ::: warning Nota
 La capitalización de los nombres de los directorios es importante para evitar errores.

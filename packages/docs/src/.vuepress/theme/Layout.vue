@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <ParentLayout>
     <div slot="sidebar-top">
       <Partners mode="sidebar" />
     </div>
@@ -8,16 +8,16 @@
 
       <Footer class="page-footer"/>
     </div>
-  </Layout>
+  </ParentLayout>
 </template>
 
 
 <script>
-import Layout from '@default-theme/Layout.vue'
+import ParentLayout from '@parent-theme/layouts/Layout.vue'
 
 export default {
   components: {
-    Layout
+    ParentLayout
   }
 }
 </script>
