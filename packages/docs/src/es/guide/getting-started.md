@@ -1,3 +1,10 @@
+---
+title: Primeros Pasos
+description: Comenzar con Statusfy es realmente sencillo, solo tiene que centrarse en escribir su contenido y utilizar el CLI para crear y desplegar tu sitio web.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/getting-started
+---
+
 # Primeros Pasos
 
 Comenzar con Statusfy es realmente sencillo, solo tiene que centrarse en escribir su contenido y utilizar el [CLI](../guide/commands.md) para crear y desplegar tu sitio web.

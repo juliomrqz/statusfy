@@ -1,4 +1,7 @@
 ---
+title: Config Reference
+description: Config Reference of Statusfy.
+date: 2018-10-12T17:28:04Z
 sidebar: auto
 sidebarDepth: 2
 ---

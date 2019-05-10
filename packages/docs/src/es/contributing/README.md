@@ -1,4 +1,7 @@
 ---
+title: Guía de Contribución
+description: Statusfy es uno de los proyectos de código abierto de Bazzite que está en activo desarrollo. Esperamos que este documento haga que el proceso de contribución sea claro y que responda algunas preguntas que puedas tener.
+date: 2018-10-12T17:28:04Z
 sidebar: auto
 sidebarDepth: 3
 ---

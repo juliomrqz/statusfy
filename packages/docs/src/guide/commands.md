@@ -1,7 +1,13 @@
+---
+title: Commands
+description: Statusfy comes with a set of useful commands, both for development and production purposes. You can use `--help` with any command to get detailed usage.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/commands
+---
+
 # Commands
 
 Statusfy comes with a set of useful commands, both for development and production purposes. You can use `--help` with any command to get detailed usage.
-
 
 ## init
 

@@ -1,3 +1,10 @@
+---
+title: Directory Structure
+description: Statusfy is designed to be easy to use and organize with Internationalization in mind, the recommended document structure is as follows.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/directory-structure
+---
+
 # Directory Structure
 
 Statusfy is designed to be easy to use and organize with [Internationalization](../guide/i18n.md) in mind, the recommended document structure is as follows:

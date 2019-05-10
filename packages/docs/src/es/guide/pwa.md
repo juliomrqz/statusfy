@@ -1,3 +1,10 @@
+---
+title: Aplicación Web Progresiva (PWA)
+description: "Statusfy proporciona soporte para PWA por defecto con algunas características maravillosas: Service Worker, Icons, and Manifest."
+date: 2018-10-12T17:28:04Z
+permalink: /guide/pwa
+---
+
 # Aplicación Web Progresiva (PWA)
 
 Statusfy proporciona soporte para [PWA](https://developers.google.com/web/progressive-web-apps/?hl=es) por defecto con algunas características maravillosas:

@@ -1,3 +1,9 @@
+---
+title: Introducción
+description: Statusfy es un Sistema de Página de Estado, fácil de usar y completamente de código abierto. Puedes crear fácilmente un Sistema rápido, ya sea Stático o Renderizado por Servidor e implementarlo fácilmente en una variedad de servicios de alojamiento.
+date: 2018-10-12T17:28:04Z
+---
+
 # Introducción
 
 Statusfy es un Sistema de Página de Estado, fácil de usar y completamente de código abierto. Puedes crear fácilmente un Sistema rápido, ya sea [**Stático**](../guide/architecture.md#generacion-estatica) o [**Renderizado por Servidor**](../guide/architecture.md#srenderizado-por-servidor) e implementarlo fácilmente en una variedad de [servicios de alojamiento](../guide/deploy.md).

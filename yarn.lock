@@ -14044,6 +14044,11 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
+reading-time@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/reading-time/-/reading-time-1.1.3.tgz#47de143074245be6f65e2b3c9b63b78d9ab8ec7a"
+  integrity sha512-SYy+cuoGy1MTLjIbgwTZ+DkDiDq/dE1OnqBQFYytXgNWRZROuqtBdu7HoJ+HbGMnoAinOHnHnqbEUYnpSho5aA==
+
 realpath-native@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/realpath-native/-/realpath-native-1.1.0.tgz#2003294fea23fb0672f2476ebe22fcf498a2d65c"
@@ -14929,7 +14934,7 @@ sisteransi@^1.0.0:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.0.tgz#77d9622ff909080f1c19e5f4a1df0c1b0a27b88c"
   integrity sha512-N+z4pHB4AmUv0SjveWRd6q1Nj5w62m5jodv+GD8lvmbY/83T/rpbJGZOnK5T149OldDj4Db07BSv9xY4K6NTPQ==
 
-sitemap@^2.1.0, sitemap@^2.2.0:
+sitemap@^2.0.1, sitemap@^2.1.0, sitemap@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-2.2.0.tgz#98b8502762c5d7e8c77c9be5061dce85b326f1b0"
   integrity sha512-9Zoi3UBhSIt5jWENDRUbzsqLMJ+Fha3P2aQ2PRghmh0FOivtHsC4FAJdkAEKHvATajd74BWp/57Yh7kz/UA53Q==
@@ -17019,6 +17024,25 @@ vuepress-plugin-container@^2.0.0:
   integrity sha512-SMlWJl0uZYkqAxD2RUZmIrANZWKgiZdM64K7WmdyHyQPYI+NUj3ugi5D+zDn62BoO9NfQTiskEIa2u619SRweA==
   dependencies:
     markdown-it-container "^2.0.0"
+
+vuepress-plugin-reading-time@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-time/-/vuepress-plugin-reading-time-0.1.1.tgz#3ea3dcded424a00c1d5175a50af8d5694899f1ea"
+  integrity sha512-j94utmn4nojYWyOVqfUF3eLWOMTAmZpR0G1gUlmast6KFu/VLevJvxFgJfa6DVaSlTpUH1DMLYspcjLv5pHhDw==
+  dependencies:
+    reading-time "1.1.3"
+
+vuepress-plugin-seo@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-seo/-/vuepress-plugin-seo-0.1.2.tgz#132e656274bfaffce72e816fb8450951f3f6cc13"
+  integrity sha512-Tv3ihNl3pDX5krqq9r2X9rFKUVR8ssLvcKcu1P4ABP8/b3vC06St/UTe5QucgKzuphlIJkbRSOQ7n7yf6jMCRw==
+
+vuepress-plugin-sitemap@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.1.2.tgz#18c61b6349055be2051dedd0eddfb4c7dc69cd7f"
+  integrity sha512-x+jQVyhexQIn2XqjZbspdi0fmwGHBEaXASn6Oyrxkls+Z1qjTn/zr3DjVBbNd4VP6L5AtkDN8nvBEVfKTpJxjQ==
+  dependencies:
+    sitemap "^2.0.1"
 
 vuepress@^1.0.0-alpha.47:
   version "1.0.0-alpha.47"

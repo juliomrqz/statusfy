@@ -1,9 +1,14 @@
 ---
+title: Personalización de Estilo
+description: El aspecto de Statusfy se puede actualizar fácilmente con un StyleSheet, también puedes cambiar fácilmente el logotipo y el icono de tu sistema, entre otras cosas.
+date: 2018-10-12T17:28:04Z
 sidebarDepth: 3
+permalink: /guide/theme-customization
 ---
 
 # Personalización de Estilo
 
+El aspecto de Statusfy se puede actualizar fácilmente con un StyleSheet, también puedes cambiar fácilmente el logotipo y el icono de tu sistema, entre otras cosas.
 
 ## Estilos
 

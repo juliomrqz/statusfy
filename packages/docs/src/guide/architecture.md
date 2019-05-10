@@ -1,3 +1,10 @@
+---
+title: Architecture
+description: Statusfy was designed to generate a Status Page System that acts as a Web Application with the JAMstack architecture in mind. The goal behind is to lower costs and complexity providing a simpler and versatile Serverless alternative.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/architecture
+---
+
 # Architecture
 
 Statusfy was designed to generate a Status Page System that acts as a Web Application with the [JAMstack](https://jamstack.org/) architecture in mind. The goal behind is to lower costs and complexity providing a simpler and versatile [**Serverless**](https://serverless.com/learn/overview/) alternative. 

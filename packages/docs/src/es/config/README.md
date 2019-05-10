@@ -1,4 +1,7 @@
 ---
+title: Referencia de Configuración
+description: Referencia de Configuración de Statusfy.
+date: 2018-10-12T17:28:04Z
 sidebar: auto
 sidebarDepth: 2
 ---

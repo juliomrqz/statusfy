@@ -1,10 +1,14 @@
 ---
+title: Despliegue
+description: "Puedes entregar su Sistema de Páginas de Estado creado con Statusfy de dos maneras diferentes: Generación Estática o Renderizado por Servidor."
+date: 2018-10-12T17:28:04Z
+permalink: /guide/deploy
 sidebarDepth: 3
 ---
 
 # Despliegue
 
-Puedes entregar su Sistema de Páginas de Estado creado con Statusfy de dos maneras diferentes:: **Generación Estática** o **Renderizado por Servidor**.
+Puedes entregar su Sistema de Páginas de Estado creado con Statusfy de dos maneras diferentes: **Generación Estática** o **Renderizado por Servidor**.
 
 
 

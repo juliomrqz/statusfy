@@ -1,4 +1,13 @@
+---
+title: Configuration
+description: Statusfy es fácil de configurar y soporta diferentes formatos de archivo. Defines un archivo de configuración principal y el sistema hace su trabajo.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/configuration
+---
+
 # Configuración
+
+Statusfy es fácil de configurar y soporta diferentes formatos de archivo. Defines un archivo de configuración principal y el sistema hace su trabajo.
 
 ## Archivo de Configuración
 

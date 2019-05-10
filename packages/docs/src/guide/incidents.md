@@ -1,5 +1,9 @@
 ---
+title: Incidents
+description: "Incidents are the core of Statusfy: there is no Status Page System without a record of incidents. The Incidents information is stored in a Markdown file with attributes and a content that provides extra information to your users."
+date: 2018-10-12T17:28:04Z
 sidebarDepth: 3
+permalink: /guide/incidents
 ---
 
 # Incidents

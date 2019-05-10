@@ -1,3 +1,9 @@
+---
+title: Introduction
+description: Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either Static Generated or Server Rendered and easily deploy it to a variety of hosting services.
+date: 2018-10-12T17:28:04Z
+---
+
 # Introduction
 
 Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](../guide/architecture.md#static-generated) or [**Server Rendered**](../guide/architecture.md#server-rendered) and easily deploy it to a variety of [hosting services](../guide/deploy.md#services).

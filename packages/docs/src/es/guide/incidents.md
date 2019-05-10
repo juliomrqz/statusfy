@@ -1,5 +1,9 @@
 ---
+title: Incidentes
+description: "Los incidentes son el núcleo de Statusfy: no hay un sistema de página de estado sin un registro de incidentes. La información de incidentes se almacena en un archivo de Markdown con atributos y un contenido que proporciona información adicional a sus usuarios."
+date: 2018-10-12T17:28:04Z
 sidebarDepth: 3
+permalink: /guide/incidents
 ---
 
 # Incidentes

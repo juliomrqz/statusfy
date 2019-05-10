@@ -1,3 +1,10 @@
+---
+title: Arquitectura
+description: Statusfy fue diseñado para generar un Sistema de Página de Estado que actúa como Una Aplicación Web con la arquitectura JAMstack en mente. El objetivo detrás es reducir los costos y la complejidad, proporcionando una alternativa "Serverless" más simple y versátil.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/architecture
+---
+
 # Arquitectura
 
 Statusfy fue diseñado para generar un Sistema de Página de Estado que actúa como Una Aplicación Web con la arquitectura [JAMstack](https://jamstack.org/) en mente. El objetivo detrás es reducir los costos y la complejidad, proporcionando una alternativa [**"Serverless"**](https://serverless.com/learn/overview/) más simple y versátil.

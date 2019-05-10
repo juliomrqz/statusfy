@@ -1,5 +1,13 @@
+---
+title: Configuration
+description: Statusfy is easy to configure, supporting different files formats. You define one main config file and the System does its job.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/configuration
+---
+
 # Configuration
 
+Statusfy is easy to configure, supporting different files formats. You define one main config file and the System does its job.
 
 ## Config File
 

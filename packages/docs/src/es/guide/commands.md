@@ -1,3 +1,10 @@
+---
+title: Comandos
+description: Statusfy viene con un conjunto de comandos útiles, tanto para fines de desarrollo como de producción. Puedes usar --help con cualquier comando para obtener un uso detallado.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/commands
+---
+
 # Comandos
 
 Statusfy viene con un conjunto de comandos útiles, tanto para fines de desarrollo como de producción. Puedes usar `--help` con cualquier comando para obtener un uso detallado.

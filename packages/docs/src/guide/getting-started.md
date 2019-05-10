@@ -1,3 +1,10 @@
+---
+title: Getting Started
+description: Starting with Statusfy is really easy, you just focus on writing your content and making use of the CLI for building and deploying your Website.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/getting-started
+---
+
 # Getting Started
 
 Starting with Statusfy is really easy, you just focus on writing your content and making use of the [CLI](../guide/commands.md) for building and deploying your Website.

@@ -1,9 +1,30 @@
 const axios = require('axios')
 const webpack = require('webpack')
 
-const { path, postcss } = require('@statusfy/common')
-
+const { postcss, path } = require('@statusfy/common')
 const partners = require('./partners.json')
+const pkg = require('../../package.json')
+
+const baseUrl = 'https://docs.statusfy.co'
+const author = {
+  en: {
+    name: 'Bazzite',
+    twitter: 'BazziteTech'
+  },
+  es: {
+    name: 'Bazzite',
+    twitter: 'BazziteEs'
+  }
+}
+
+const getLang = $page => $page._computed.$lang.split('-')[0]
+const getGitLastUpdatedTimeStamp = (filePath) => {
+  try {
+    return parseInt(spawn.sync('git', ['log', '-1', '--format=%ct', filePath]).stdout.toString('utf-8')) * 1000
+  } catch (e) {
+    return new Date()
+  }
+}
 
 module.exports = {
   title: 'Statusfy Documentation',
@@ -46,6 +67,8 @@ module.exports = {
     }
   },
   themeConfig: {
+    version: pkg.version,
+    domain: baseUrl,
     repo: 'bazzite/statusfy',
     docsRepo: 'bazzite/statusfy',
     docsDir: 'packages/docs/src',
@@ -57,6 +80,7 @@ module.exports = {
     } : null,
     locales: {
       '/': {
+        lang: 'en-US',
         selectText: 'Languages',
         label: 'English',
         editLinkText: 'Help us improve this page!',
@@ -89,6 +113,7 @@ module.exports = {
         }
       },
       '/es/': {
+        lang: 'es-US',
         selectText: 'Idiomas',
         label: 'Español',
         editLinkText: '¡Ayúdanos a mejorar esta página!',
@@ -134,10 +159,12 @@ module.exports = {
     }
   },
   chainWebpack (config) {
-    const themePath = path.resolve(__dirname, "../../../../", "node_modules/@vuepress/theme-default")
-
-    config.resolve.alias.set('@theme', themePath)
-    config.resolve.alias.set('@', path.resolve(themePath, "components"))
+    config.resolve.alias.set('@assets', path.resolve(__dirname, 'public/assets'))
+    config.resolve.alias.set('@public', path.resolve(__dirname, 'public'))
+  },
+  extendPageData($page) {
+    const timestamp = getGitLastUpdatedTimeStamp($page._filePath)
+    $page.lastUpdated = timestamp
   },
   plugins: [
     ['@vuepress/back-to-top', true],
@@ -164,6 +191,30 @@ module.exports = {
       before: '<pre class="statusfy-container"><code>',
       after: '</code></pre>',
     }],
+    ['seo', {
+      type: () => 'article',
+      author: $page => author[getLang($page)],
+      modifiedAt: $page => $page.frontmatter.lastUpdated,
+      customMeta: (add, context) => {
+        const { $page, modifiedAt } = context
+        const lang = getLang($page)
+
+        add('twitter:site', author[lang].twitter)
+        add('article:author', author[lang].name)
+        add('article:publisher', 'https://www.facebook.com/bazzite/')
+        add('article:modified_time', modifiedAt)
+
+        add('og:updated_time', modifiedAt)
+
+        add('fb:profile_id', '168475873515802')
+      },
+    }],
+    ['sitemap', {
+      hostname: baseUrl,
+      changefreq: 'weekly'
+    }],
+    'vuepress-plugin-reading-time',
+    [require('./plugins/extra-seo')]
   ]
 }
 

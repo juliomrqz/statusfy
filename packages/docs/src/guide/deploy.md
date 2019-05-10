@@ -1,5 +1,9 @@
 ---
+title: Deploying
+description: "You can deliver your Status Page System created with Statusfy in two different ways: Static Generated or Server Rendered."
+date: 2018-10-12T17:28:04Z
 sidebarDepth: 3
+permalink: /guide/deploy
 ---
 
 # Deploying

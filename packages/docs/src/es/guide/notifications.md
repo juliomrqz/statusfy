@@ -1,3 +1,10 @@
+---
+title: Notificaciones
+description: Las notificaciones son una forma de mantener a sus usuarios/clientes notificados con cualquier actualización de Incidentes que pueda tener tu Sistema. Los espectadores de su página de estado pueden acceder a las siguientes opciones haciendo clic en el botón Suscribirse.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/notifications
+---
+
 # Notificaciones <Badge text="0.2.0+"/>
 
 Las notificaciones son una forma de mantener a sus usuarios/clientes notificados con cualquier actualización de Incidentes que pueda tener tu Sistema. Los espectadores de su página de estado pueden acceder a las siguientes opciones haciendo clic en el botón Suscribirse.

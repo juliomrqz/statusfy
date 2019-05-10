@@ -1,4 +1,8 @@
 ---
+title: API
+description: Statusfy is a SPA that reads its data from an internal RESTful API. You can also retrieve this data from an existing application or library you may be using.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/api
 sidebarDepth: 3
 ---
 

@@ -1,3 +1,10 @@
+---
+title: Notifications
+description: Notifications are a way to keep your users/customers notified with any Incidents update your System may have. Viewers of your Status Page can access the Choices bellow by clicking the Subscribe button.
+date: 2018-10-12T17:28:04Z
+permalink: /guide/notifications
+---
+
 # Notifications <Badge text="0.2.0+"/>
 
 Notifications are a way to keep your users/customers notified with any Incidents update your System may have. Viewers of your Status Page can access the Choices bellow by clicking the Subscribe button.
