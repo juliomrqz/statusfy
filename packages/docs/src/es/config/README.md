@@ -53,17 +53,26 @@ La Descripción para el sitio. Esto se representará como una etiqueta `<meta>` 
 La URL base en la que se desplegará el sitio. Puede ser solo una barra o una URL válida que no debe terminar con una barra.
 
 ::: warning ADVERTENCIA
+Desde la versión `v0.3.0`, los despliegues bajo una sub-ruta (p.e. `https://ejemplo.com/status/`) ya no son soportados.
+:::
 
-Debe establecer el campo `baseUrl` como su **dominio de producción** para que las [URL alternativas sean completamente válidas](../guide/i18n.md#seo).
+::: tip
+Debes establecer el campo `baseUrl` como su **dominio de producción** para que las [URL alternativas sean completamente válidas](../guide/i18n.md#seo).
 
 :::
 
 ## theme
 
 - Tipo: `Object`
-- Por defecto: `{}`
 
 Proporcionar opciones de configuración para ser utilizado por el tema.
+
+### scheduled <Badge text="0.3.0+"/>
+
+- Tipo: `Object`
+- Por defecto: `{ position: 'belowSystems' }`
+
+Define la posición de la Sección **Mantenimiento Programado** in la página de inicio. Los valores permitidos son: `belowSystems`, `aboveSystems` y `aboveGlobalStatus`.
 
 ### links
 
@@ -247,7 +256,7 @@ La ruta que define la ubicación de los archivos markdown fuente de los incident
 ### frontMatterFormat
 
 - Tipo: `string`
-- Por defecto: `undefined`
+- Por defecto: `yaml`
 
 Define el formato predeterminado para el Front Matter de Incidentes utilizado por el comando `new-incident` (Más información [aquí](../guide/commands.md#new-incident)). Puedes elegir uno de los siguientes: yaml, yml, toml, json. Para más detalles, consulta la guía de [los Front Matter de los Incidentes](../guide/incidents.md#front-matter).
 

@@ -14,6 +14,7 @@ const start = async () => {
   // Generate configuration
   const { nuxtConfig, siteConfig } = generateConfig(sourceDir, cliOptions);
   nuxtConfig.mode = cliOptions.ssr ? "universal" : "spa";
+  delete nuxtConfig.build.analyze;
 
   portfinder
     .getPortPromise()

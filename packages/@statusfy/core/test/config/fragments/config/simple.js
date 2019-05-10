@@ -1,7 +1,7 @@
 module.exports = {
   title: "Title",
   description: "",
-  baseUrl: "/simple",
+  baseUrl: "https://simple.example.com",
   serviceWorker: false,
   manifest: false,
   notifications: false

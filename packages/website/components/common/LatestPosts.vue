@@ -20,8 +20,8 @@
       <div class="max-w-md mx-auto">
         <AticleCard
           v-for="post in posts"
-          :key="post.slug"
-          :post="post"
+          :key="post.attributes.slug"
+          :attributes="post.attributes"
         />
 
         <div

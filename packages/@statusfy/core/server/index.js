@@ -12,6 +12,6 @@ module.exports = async function createServer(
 
   return app.listen(port, host, () => {
     // Listen the server
-    logger.info("Server listening on http://" + host + ":" + port);
+    logger.info(`Server listening on http://${host}:${port}`);
   });
 };

@@ -1,0 +1,36 @@
+{
+  "name": "statusfy-now-sg-example",
+  "description": "Now - Static Generated Example",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "now": "now",
+    "dev": "statusfy dev",
+    "build": "statusfy build",
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "now-build": "yarn run generate"
+  },
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "contributors": [
+    {
+      "name": "Julio Marquez (@juliomrqz)"
+    }
+  ],
+  "dependencies": {
+    "statusfy": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  },
+  "devDependencies": {
+    "now": "^15.0.0"
+  }
+}

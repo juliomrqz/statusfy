@@ -6,14 +6,19 @@ module.exports = {
   locales: [{ code: "en", iso: "en-US", name: "English" }],
   content: {
     dir: "content",
-    systems: ["api", "cdn", "dns", "site-delivery"]
+    systems: ["api", "cdn", "dns", "site-delivery"],
+    frontMatterFormat: "yaml"
   },
   build: {
     isStatic: false
   },
   serviceWorker: true,
   manifest: true,
-  theme: {},
+  theme: {
+    scheduled: {
+      position: "belowSystems" // or aboveSystems, aboveGlobalStatus
+    }
+  },
   notifications: {
     icalendar: true,
     feeds: true,

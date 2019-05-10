@@ -161,7 +161,7 @@ main {
     }
 
     time {
-      @apply text-sm;
+      @apply font-medium;
     }
 
     .status {

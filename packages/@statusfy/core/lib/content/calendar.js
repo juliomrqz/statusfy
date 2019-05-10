@@ -1,17 +1,19 @@
 const url = require("url");
 const ics = require("ics");
-const moment = require("moment");
+const { Dates } = require("@statusfy/common");
 
 const createDatabase = require("./database");
 
+const dates = Dates();
+
 const extractDate = value => {
   return [
-    value.getFullYear(),
-    value.getMonth() + 1,
-    value.getDate(),
-    value.getHours(),
-    value.getMinutes(),
-    value.getSeconds()
+    value.year(),
+    value.month() + 1,
+    value.date(),
+    value.hour(),
+    value.minute(),
+    value.second()
   ];
 };
 
@@ -40,12 +42,8 @@ module.exports = async function calendar(siteConfig, lang) {
     events.push({
       title: i.title,
       description: i.description,
-      start: extractDate(i.scheduled),
-      end: extractDate(
-        moment(i.scheduled)
-          .add(i.duration, "m")
-          .toDate()
-      ),
+      start: extractDate(dates.parse(i.scheduled)),
+      end: extractDate(dates.parse(i.scheduled).add(i.duration, "minute")),
       productId,
       ...id
     });

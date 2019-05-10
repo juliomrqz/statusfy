@@ -34,16 +34,16 @@ export default {
   },
   mixins: [SeoHead],
   async asyncData({ app }) {
-    let response = { results: [] }
+    let posts = []
 
     try {
-      response = await app.$axios.$get('blog?tags=statusfy')
+      posts = await app.$blog.getArticles(app.i18n.locale)
     } catch (error) {
       console.log(error)
     }
 
     return {
-      posts: response.results.slice(0, 3),
+      posts,
       title: app.i18n.t('home.title'),
       description: app.i18n.t('home.description'),
       titleTemplate: '%s'

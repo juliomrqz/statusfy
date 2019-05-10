@@ -53,15 +53,26 @@ The Description for the site. This will be rendered as a `<meta>` tag in the pag
 The base URL the site will be deployed at. It can be just a slash or a valid URL that shouldn't end with a slash.
 
 ::: warning
+Since version `v0.3.0`, deployments under a subpath (e.g. `https://example.com/status/`) are no longer supported.
+:::
+
+::: tip
 You should set the `baseUrl` field to your **production domain** in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
 :::
+
 
 ## theme
 
 - Type: `Object`
-- Default: `{}`
 
 Provide config options to the be used by the theme.
+
+### scheduled <Badge text="0.3.0+"/>
+
+- Type: `Object`
+- Default: `{ position: 'belowSystems' }`
+
+Define the position of the Section **Scheduled Maintenance** in the home page. The allowed values are: `belowSystems`, `aboveSystems` and `aboveGlobalStatus`.
 
 ### links
 
@@ -241,7 +252,7 @@ The path that defines the location of your incidents' markdown source files.
 ### frontMatterFormat
 
 - Type: `string`
-- Default: `undefined`
+- Default: `yaml`
 
 Define the default format of the Incidents' Front Matter used by the `new-incident` command (More info [here](../guide/commands.md#new-incident)). You can choose one of the following: yaml, yml, toml, json. For more details, see the guide on [Incidents' Front Matter](../guide/incidents.md#front-matter).
 

@@ -1,20 +1,25 @@
 <template>
-  <div>
+  <div v-if="post.author">
     <div
       v-if="mode === 'simple'"
       class="flex flex-wrap items-center text-grey-darker"
     >
-      <img
-        :src="post.author.avatar"
-        class="rounded-full w-10 h-10"
-      >
+      <ImageResponsive
+        :source="`avatars/${post.author.username}.jpg`"
+        :alt="post.author.name"
+        :rounded="true"
+        classes="w-10 h-10"
+        :width="40"
+        :height="40"
+      />
+
       <span class="ml-4 font-semibold relative z-10">
         <a
           :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
           target="_blank"
           rel="noopener"
         >
-          {{ post.author.first_name }} {{ post.author.last_name }}
+          {{ post.author.name }}
         </a>
       </span>
       <span>&nbsp;{{ $t('blog.on') }}&nbsp;</span>
@@ -24,24 +29,29 @@
       v-else-if="mode === 'advanced'"
       class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
     >
-      <img
-        :src="post.author.avatar"
-        class="rounded-full w-12 h-12"
-      >
-      <div class="flex flex-col mx-4 mt-2">
+      <ImageResponsive
+        :source="`avatars/${post.author.username}.jpg`"
+        :alt="post.author.name"
+        :rounded="true"
+        classes="w-12 h-12"
+        :width="40"
+        :height="40"
+      />
+
+      <div class="flex flex-col mx-4 mt-2 sm:mt-0">
         <span class="font-semibold mb-1 text-center sm:text-left">
           <a
             :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
             target="_blank"
             rel="noopener"
           >
-            {{ post.author.first_name }} {{ post.author.last_name }}
+            {{ post.author.name }}
           </a>
         </span>
         <div>
           <time :datetime="post.created">{{ formatDate(post.created) }}</time>
           <span class="dot-divider" />
-          <span>{{ post.reading_time }} {{ $t('blog.minRead') }}</span>
+          <span>{{ post.readingTime }} {{ $t('blog.minRead') }}</span>
         </div>
       </div>
     </div>
@@ -56,7 +66,8 @@ export default {
   props: {
     post: {
       type: Object,
-      required: true
+      required: true,
+      default: () => {}
     },
     mode: {
       type: String,

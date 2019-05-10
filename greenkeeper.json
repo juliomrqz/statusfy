@@ -18,6 +18,18 @@
         "packages/@statusfy/common/package.json",
         "packages/@statusfy/test-utils/package.json"
       ]
+    },
+    "examples": {
+      "packages": [
+        "examples/firebase-static/package.json",
+        "examples/github-pages-static/package.json",
+        "examples/gitlab-pages-static/package.json",
+        "examples/heroku-ssr/package.json",
+        "examples/heroku-static/package.json",
+        "examples/netlify-static/package.json",
+        "examples/now-v2-static/package.json",
+        "examples/surge-static/package.json"
+      ]
     }
   }
 }

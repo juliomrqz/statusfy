@@ -1,16 +1,20 @@
 const hash = require('hash-sum')
 const _ = require('lodash')
-const moment = require('moment')
 const fse = require('fs-extra')
 const path = require('upath')
 
+const esm = require('../esm')
+const Dates = esm(path.join(__dirname, '../dates.js')).default;
 const data = require('./data.json')
+
 const severities = [
   'under-maintenance',
   'degraded-performance',
   'partial-outage',
   'major-outage'
 ]
+
+const dates = Dates()
 
 const getDaySubtraction = (index) => {
   // Two incidents per day
@@ -65,15 +69,15 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
       getId(i + 1, data.updates.content.en.length),
       getId(i + 2, data.updates.content.en.length)
     ]
-    const date = moment(finalDate)
-      .subtract(getDaySubtraction(i), 'd')
-      .subtract(monthSubtraction, 'M')
+    const date = dates.parse(finalDate)
+      .subtract(getDaySubtraction(i), 'day')
+      .subtract(monthSubtraction, 'month')
 
     const incident = {
       id: hash(i),
       date: date.toISOString(),
-      modified: date.add(2, 'h').toISOString(),
-      scheduled: i === 1 ? moment(finalDate).add(7, 'd').toISOString() : undefined,
+      modified: date.add(2, 'hour').toISOString(),
+      scheduled: i === 1 ? dates.parse(finalDate).add(7, 'day').toISOString() : undefined,
       resolved: i > 2,
       severity: i === 1 ? severities[0] : severities[getId(i, 4)],
       affectedsystems: data.affectedsystems.slice(0, getId(i, 4) + 1),
@@ -87,7 +91,7 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
       },
       updates: i === 1 ? [] : [
         {
-          date: date.add(2, 'h').toISOString(),
+          date: date.add(2, 'hour').toISOString(),
           title: {
             en: data.updates.title.resolved.en,
             es: data.updates.title.resolved.es
@@ -98,7 +102,7 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
           }
         },
         {
-          date: date.add(1, 'h').toISOString(),
+          date: date.add(1, 'hour').toISOString(),
           title: {
             en: data.updates.title.monitoring.en,
             es: data.updates.title.monitoring.es
@@ -109,7 +113,7 @@ module.exports = function generateDemoContent (dest, finalDate, amount = 20) {
           }
         },
         {
-          date: date.add(30, 'm').toISOString(),
+          date: date.add(30, 'minute').toISOString(),
           title: {
             en: data.updates.title.resolved.en,
             es: data.updates.title.resolved.es

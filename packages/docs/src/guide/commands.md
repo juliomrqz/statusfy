@@ -72,7 +72,7 @@ The application should be compiled with [`statusfy build`](#build) first.
 ### Arguments
 
 - `-p <port>` or `--port <port>`: use specified **port** (default: 3000).
-- `-h <port>` or `--host <host>`: use specified **host** (default: 127.0.0.1).
+- `-H <port>` or `--host <host>`: use specified **host** (default: 127.0.0.1).
 
 ## new-incident
 
@@ -90,6 +90,18 @@ YYYY-MM-DD_slug.md
 
 where `YYYY-MM-DD` is the ***creation date*** and `slug` a ***short name***.
 
-::: tip TIP
-You can skip the Front Matter Format Question by defining the `frontMatterFormat` field in your configuration file. More information in the [Config Reference Guide](../config/README.md#frontmatterformat).
-:::
+## delete-incident  <Badge text="0.3.0+"/>
+
+Delete an incident including its translations.
+
+``` bash
+statusfy delete-incident
+```
+
+## update-incident  <Badge text="0.3.0+"/>
+
+Update the common values of an incident and its translations.
+
+``` bash
+statusfy update-incident
+```

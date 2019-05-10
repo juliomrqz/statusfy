@@ -66,8 +66,15 @@
       <div v-else>
         <nice-date
           :date="incident.scheduled"
+          :include-u-t-c="false"
           format="long"
         />
+        &nbsp;-&nbsp;
+        <nice-date
+          :date="getScheduledEndDate()"
+          :include-u-t-c="false"
+          format="long"
+        /> (UTC)
       </div>
     </div>
 
@@ -171,16 +178,26 @@ export default {
 
       blockElements.forEach((el, i) => {
         const dateEl = el.querySelectorAll(".update-block-date")[0];
-        const date = this.$statusfy.dayjs(dateEl.innerHTML);
+        const date = this.$statusfy.dates.parse(dateEl.innerHTML);
 
-        dateEl.innerHTML = date
-          .locale(this.$i18n.locale)
-          .format($t(`dates.formats.long`));
+        dateEl.innerHTML = this.$statusfy.dates.format(
+          date,
+          $t(`dates.formats.long`),
+          this.$i18n.locale
+        );
       });
 
       externalLinksElements.forEach((el, i) => {
         el.appendChild(iconElement);
       });
+    }
+  },
+  methods: {
+    getScheduledEndDate() {
+      return this.$statusfy.dates
+        .parse(this.incident.scheduled)
+        .add(this.incident.duration, "m")
+        .toISOString();
     }
   }
 };

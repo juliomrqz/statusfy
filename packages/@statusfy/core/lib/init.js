@@ -71,7 +71,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
       name: "incidentFormat",
       default: "yaml",
       message: "Default Front Matter format for your Incidents",
-      choices: ["(none)", "yaml", "toml", "json"]
+      choices: ["yaml", "toml", "json"]
     },
     {
       type: "list",
@@ -94,7 +94,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
 
   checkFiles.forEach(file => {
     if (fs.existsSync(path.join(outDir, file))) {
-      logger.error("Make sure your destination directory is empty.", outDir);
+      logger.error(`Make sure your destination directory is empty.\n${outDir}`);
       process.exit(0);
     }
   });
@@ -119,8 +119,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
             iso: languageInfo.code,
             name: languageInfo.nativeName
           },
-          frontMatterFormat:
-            answers.incidentFormat === "(none)" ? null : answers.incidentFormat
+          frontMatterFormat: answers.incidentFormat
         }
       })
     );
@@ -189,7 +188,6 @@ module.exports = async (sourceDir, cliOptions = {}) => {
         outDir
       )}`
     );
-
     logger.warn(
       `Remember to run ${chalk.cyan(`${answers.packageManager} install`)}`
     );

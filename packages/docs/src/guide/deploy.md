@@ -41,7 +41,11 @@ The following guides are based on a few shared assumptions:
 
 ## GitHub Pages
 
-1. If you don't have any custom domain, set the correct `baseUrl` in `config.js`. For example, if you are deploying to `https://<username>.github.io/<repo>/`, (i.e. your repository is at `https://github.com/<username>/<username>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username>.github.io/<repo>/"` (recommended).
+1. Set the custom domain in `baseUrl` from your `config.js` 
+
+::: warning
+Since version `v0.3.0`, deployments under a subpath (e.g. `https://<username>.github.io/<repo>/`) are no longer supported. You need to set up a [custom domain](https://help.github.com/en/articles/quick-start-setting-up-a-custom-domain).
+:::
 
 2. Add a deploy script to `package.json`:
 
@@ -68,7 +72,7 @@ npm run generate # or yarn run generate
 npm run deploy # or yarn run deploy
 ```
 
-Visit the [GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to learn how to setup custom domains and find out about advanced configurations.
+Visit the [GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to find out about advanced configurations.
 
 ### References
 
@@ -79,7 +83,12 @@ Visit the [GitHub Pages](https://help.github.com/articles/using-a-custom-domain-
 
 ## GitLab Pages and GitLab CI
 
-1. If you don't have any custom domain, set the correct `baseUrl` in `config.js`. For example, if you are deploying to `https://<username or group>.gitlab.io/<repo>/`, (i.e. your repository is at `https://gitlab.com/<username or group>/<username or group>`), you can set `baseUrl` to `"/<repo>/"` or `"https://<username or group>.gitlab.io/<repo>/"` (recommended).
+1. Set the custom domain in `baseUrl` from your `config.js` 
+
+::: warning
+Since version `v0.3.0`, deployments under a subpath (e.g. `https://<username or group>.gitlab.io/<repo>/`) are no longer supported. You need to set up a [custom domain](https://gitlab.com/help/user/project/pages/getting_started_part_three.md).
+:::
+
 
 2. Create a file called `.gitlab-ci.yml` in the root of your project with the content below. This will build and deploy your site whenever you make changes to your content.
 
@@ -103,7 +112,7 @@ pages:
     - master
 ```
 
-Visit the [GitLab Pages](https://gitlab.com/help/user/project/pages/getting_started_part_one.md) to learn how to setup custom domains and find out about advanced configurations.
+Visit the [GitLab Pages](https://gitlab.com/help/user/project/pages/getting_started_part_one.md) to find out about advanced configurations.
 
 ### References
 
@@ -169,9 +178,9 @@ firebase deploy
 
 - [VuePress: Deploying to Firebase](https://vuepress.vuejs.org/guide/deploy.html#google-firebase)
 
-### Server Rendered
+<!-- ### Server Rendered
 
-**TODO**
+**TODO** -->
 
 ## Surge
 
@@ -448,4 +457,4 @@ node_modules
 
 ### Server Rendered
 
-**TODO**
+At this time, you cannot deploy a Server Rendered Statusfy app with Now v2. Please use Now v1.

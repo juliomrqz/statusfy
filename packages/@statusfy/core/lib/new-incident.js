@@ -2,18 +2,11 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const opener = require("opener");
 
-const { logger, fse, grayMatter, slugify, path } = require("@statusfy/common");
+const { logger, fse, slugify, path, Dates } = require("@statusfy/common");
 const loadConfig = require("./config/load");
+const { generateIncident } = require("./utils/functions");
 
-function generateIncident(data, content, format) {
-  let matterContent = grayMatter.stringify(content, data, format);
-
-  if (["json", "toml"].includes(format)) {
-    matterContent = matterContent.replace(/^---/, `---${format}`);
-  }
-
-  return matterContent;
-}
+const dates = Dates();
 
 /* eslint-disable require-await */
 module.exports = async function newIncident(sourceDir, cliOptions = {}) {
@@ -72,20 +65,10 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
     }
   ];
 
-  if (!config.content.frontMatterFormat) {
-    questions.unshift({
-      type: "list",
-      name: "format",
-      default: "yaml",
-      message: "What is the format of the Front Matter of the Incident?",
-      choices: ["yaml", "toml", "json"]
-    });
-  }
-
   logger.start("Create New Incident");
 
   inquirer.prompt(questions).then(answers => {
-    const date = new Date().toISOString();
+    const date = dates.parse().toISOString();
     const frontMatter = {
       title: answers.title,
       date,
@@ -97,7 +80,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
     const content = generateIncident(
       frontMatter,
       answers.description,
-      config.content.frontMatterFormat || answers.format
+      config.content.frontMatterFormat
     );
 
     try {
@@ -117,8 +100,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
 
         if (fs.existsSync(filePath)) {
           logger.error(
-            "An incident with a similar title already exists.",
-            filePath
+            `An incident with a similar title already exists.\n${filePath}`
           );
           error = true;
         } else {
@@ -137,8 +119,7 @@ module.exports = async function newIncident(sourceDir, cliOptions = {}) {
 
       if (!error) {
         logger.success(
-          "The Incident was successfully created.",
-          createdFiles.join("\n")
+          `The Incident was successfully created.\n${createdFiles.join("\n")}`
         );
       } else {
         logger.warn("There was an issue in creating the Incident.");

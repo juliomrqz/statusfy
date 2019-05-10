@@ -49,7 +49,12 @@ Las siguientes guías se basan en algunas suposiciones compartidas:
 
 ## GitHub Pages
 
-1. Si no tiene ningún dominio personalizado, configura el `baseUrl` correcto en `config.js`. Por ejemplo, si estás desplegando a `https://<username>.github.io/<repo>/`, (por ejemplo, tu repositorio está en `https://github.com/<username>/<username>`), puedes establecer `baseUrl` como `"/<repo>/"` o `"https://<username>.github.io/<repo>/"` (recomendado).
+1. Establece el dominio personalizado en `baseUrl` de tu `config.js` 
+
+::: warning ADVERTENCIA
+Desde la versión `v0.3.0`, los despliegues bajo una sub-ruta (p.e. `https://<username>.github.io/<repo>/`) ya no son soportados. Necesitas establecer un [dominio personalizado](https://help.github.com/en/articles/quick-start-setting-up-a-custom-domain).
+:::
+
 
 2. Agrega un script de implementación a `package.json`:
 
@@ -87,9 +92,13 @@ Visita las [Páginas de GitHub](https://help.github.com/articles/using-a-custom-
 
 ## GitLab Pages y GitLab CI
 
-1. Si no tiene ningún dominio personalizado, configura el `baseUrl` correcto en `config.js`. Por ejemplo, si estás desplegando a `https://<username or group>.gitlab.io/<repo>/`, (por ejemplo, tu repositorio está en `https://gitlab.com/<username or group>/<username or group>`), puedes establecer `baseUrl` como `"/<repo>/"` o `"https://<username or group>.gitlab.io/<repo>/"` (recomendado).
+1. Establece el dominio personalizado en `baseUrl` de tu `config.js` 
 
-2. Cree un archivo llamado `.gitlab-ci.yml` en la raíz de tu proyecto con el contenido a continuación. Esto construirá e implementará tu sitio cada vez que realices cambios en su contenido.
+::: warning ADVERTENCIA
+Desde la versión `v0.3.0`, los despliegues bajo una sub-ruta (p.e. `https://<username o group>.gitlab.io/<repo>/`) ya no son soportados. Necesitas establecer un [dominio personalizado](https://gitlab.com/help/user/project/pages/getting_started_part_three.md).
+:::
+
+2. Crea un archivo llamado `.gitlab-ci.yml` en la raíz de tu proyecto con el contenido a continuación. Esto construirá e implementará tu sitio cada vez que realices cambios en su contenido.
 
 ```yaml
 image: node:latest
@@ -461,4 +470,4 @@ node_modules
 
 ### Renderizado por Servidor
 
-**TODO**
+En este momento, No se puede implementar una aplicación Statusfy Renderizado por Servidor con Now v2. Por favor, utiliza Now v1.

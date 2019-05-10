@@ -94,7 +94,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Short Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -267,11 +267,15 @@ Object {
       "serviceWorker": true,
       "short_title": "Short Title",
       "sourceDir": "../.tmp/advanced",
-      "theme": Object {},
+      "theme": Object {
+        "scheduled": Object {
+          "position": "belowSystems",
+        },
+      },
       "title": "Long Title",
     },
     "sourceDir": "../.tmp/advanced",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -382,7 +386,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -478,6 +482,7 @@ Object {
       },
       "content": Object {
         "dir": "content",
+        "frontMatterFormat": "yaml",
         "systems": Array [
           "api",
           "cdn",
@@ -505,11 +510,15 @@ Object {
       "serviceWorker": true,
       "short_title": "Title",
       "sourceDir": "../.tmp/cli",
-      "theme": Object {},
+      "theme": Object {
+        "scheduled": Object {
+          "position": "belowSystems",
+        },
+      },
       "title": "Title",
     },
     "sourceDir": "../.tmp/cli",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "workbox": Object {
     "_runtimeCaching": Array [
@@ -619,7 +628,7 @@ Object {
     "mobileApp": false,
     "mobileAppIOS": false,
     "ogDescription": false,
-    "ogHost": "/simple",
+    "ogHost": "https://simple.example.com",
     "ogTitle": false,
     "theme_color": "#1b1f23",
   },
@@ -630,7 +639,7 @@ Object {
     Array [
       "nuxt-i18n",
       Object {
-        "baseUrl": "/simple",
+        "baseUrl": "https://simple.example.com",
         "defaultLocale": "en",
         "detectBrowserLanguage": Object {
           "cookieKey": "title.lang_redirected",
@@ -700,12 +709,13 @@ Object {
     ],
     "publicFilesPath": null,
     "siteConfig": Object {
-      "baseUrl": "/simple",
+      "baseUrl": "https://simple.example.com",
       "build": Object {
         "isStatic": false,
       },
       "content": Object {
         "dir": "content",
+        "frontMatterFormat": "yaml",
         "systems": Array [
           "api",
           "cdn",
@@ -728,11 +738,15 @@ Object {
       "serviceWorker": false,
       "short_title": "Title",
       "sourceDir": "../.tmp/simple",
-      "theme": Object {},
+      "theme": Object {
+        "scheduled": Object {
+          "position": "belowSystems",
+        },
+      },
       "title": "Title",
     },
     "sourceDir": "../.tmp/simple",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
 }
 `;
@@ -824,7 +838,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Título",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -832,7 +846,7 @@ Object {
     "mobileApp": false,
     "mobileAppIOS": false,
     "ogDescription": false,
-    "ogHost": "https://demo.statusfy.co/es",
+    "ogHost": "https://demo-es.statusfy.co",
     "ogTitle": false,
     "theme_color": "#1b1f23",
   },
@@ -843,7 +857,7 @@ Object {
     Array [
       "nuxt-i18n",
       Object {
-        "baseUrl": "https://demo.statusfy.co/es",
+        "baseUrl": "https://demo-es.statusfy.co",
         "defaultLocale": "es",
         "detectBrowserLanguage": Object {
           "cookieKey": "Nombre Aplicación.lang_redirected",
@@ -927,7 +941,7 @@ Object {
     ],
     "publicFilesPath": "../.tmp/spanish/public",
     "siteConfig": Object {
-      "baseUrl": "https://demo.statusfy.co/es",
+      "baseUrl": "https://demo-es.statusfy.co",
       "build": Object {
         "isStatic": false,
       },
@@ -965,11 +979,15 @@ Object {
       "serviceWorker": true,
       "short_title": "Título",
       "sourceDir": "../.tmp/spanish",
-      "theme": Object {},
+      "theme": Object {
+        "scheduled": Object {
+          "position": "belowSystems",
+        },
+      },
       "title": "Título",
     },
     "sourceDir": "../.tmp/spanish",
-    "version": "0.3.0-alpha.4",
+    "version": "0.3.1",
   },
   "workbox": Object {
     "_runtimeCaching": Array [

@@ -10,12 +10,12 @@ const buildContent = require("./build");
 
 const copyPublicFiles = async (src, dest) => {
   if (src) {
-    logger.debug("Copying public files", dest);
+    logger.debug(`Copying public files ${dest}`);
 
     try {
       await fse.copy(src, dest);
     } catch (error) {
-      logger.error("Couldn't copy public files", dest);
+      logger.error(`Couldn't copy public files ${dest}`);
       logger.error(error);
     }
   }
@@ -77,7 +77,7 @@ module.exports = async function Statusfy() {
   });
 
   this.nuxt.hook("build:before", async builder => {
-    const { isStatic } = builder.bundleBuilder.context;
+    const { isStatic } = builder.bundleBuilder.buildContext;
 
     if (isStatic) {
       this.nuxt.hook("build:done", async generator => {

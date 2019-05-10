@@ -1,5 +1,9 @@
 const sm = require("sitemap");
+const { Dates } = require("@statusfy/common");
+
 const createDatabase = require("./database");
+
+const dates = Dates();
 
 module.exports = async function sitemap(siteConfig) {
   const database = await createDatabase(siteConfig);
@@ -17,7 +21,7 @@ module.exports = async function sitemap(siteConfig) {
     const base = {
       changefreq: "daily",
       priority: 0.8,
-      lastmodISO: new Date().toISOString()
+      lastmodISO: dates.parse().toISOString()
     };
 
     // Fixed Pages
@@ -48,7 +52,7 @@ module.exports = async function sitemap(siteConfig) {
         url: `${siteConfig.baseUrl}${prefix}/incidents/${incident.id}`,
         changefreq: "weekly",
         priority: 0.7,
-        lastmodISO: new Date(incident.modified).toISOString()
+        lastmodISO: dates.parse(incident.modified).toISOString()
       });
     });
   });

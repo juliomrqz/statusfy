@@ -1,13 +1,20 @@
-// Day.js
-import dayjs from 'dayjs'
-<%= options.locales.map(locale => locale.code !== 'en' ? "import 'dayjs/locale/" + locale.code + "'" : '').join('\n') %>
-
+// vue
 <% if (typeof(options.siteConfig.analytics) !== 'undefined') { %>
 <% if (options.dev === true) { %>/*<% } %>
 import Vue from 'vue'
 import VueMultianalytics from 'vue-multianalytics'
 <% if (options.dev === true) { %>*/<% } %>
 <% } %>
+
+// Dates
+const Dates = require('@statusfy/common/lib/dates').default
+
+const extraLangs = [
+<%= options.locales.map(locale => locale.code !== 'en' ? "require('dayjs/locale/" + locale.code + "')," : '').join('\n') %>
+]
+
+const dates = Dates()
+dates.addLocales(extraLangs)
 
 export default (ctx, inject) => {
   // Analytics
@@ -58,7 +65,7 @@ export default (ctx, inject) => {
 
   //
   const statusfy = {
-    dayjs,
+    dates,
     assets: {
       mainLogo: require('<%= options.assets.mainLogo %>')
     },

@@ -17,7 +17,6 @@ export default async function Statusfy () {
     options.partners = partners
   } catch (error) {
     consola.error(error)
-    process.exit(1)
   }
 
   // Register plugin

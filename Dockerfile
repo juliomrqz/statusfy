@@ -1,26 +1,30 @@
+FROM node:8-alpine AS builder
+
+ENV STATUSFY_VERSION 0.3.1
+ENV NODE_ENV production
+
+WORKDIR /usr/src/app
+
+RUN \
+   set -x \
+&& yarn install \
+&& yarn add "statusfy@$STATUSFY_VERSION" \
+&& npx statusfy build
+
+
 FROM node:8-alpine
 
-RUN apk add --no-cache git
-
-# Set environment variables
-ENV USER_DIR=/usr/src/app
-ENV NODE_ENV production
-ENV STATUSFY_VERSION=0.3.0-alpha.4
 ENV NODE_ENV production
 ENV HOST 0.0.0.0
 ENV PORT 3000
+ENV WORKDIR /usr/src/app
 
-RUN mkdir -p $USER_DIR
-RUN chown node:node "$USER_DIR"
-WORKDIR $USER_DIR
-
-# RUN yarn cache clean
-# RUN yarn global add "statusfy@$STATUSFY_VERSION"
+COPY --from=builder --chown=node:node /usr/src/app/ $WORKDIR
 
 COPY ./scripts/docker-start.sh /start.sh
-RUN chmod +x /start.sh
 
-VOLUME $USER_DIR
+WORKDIR $WORKDIR
+VOLUME $WORKDIR
 EXPOSE $PORT
 
-CMD ["sh", "/start.sh"]
+CMD ["/start.sh"]
