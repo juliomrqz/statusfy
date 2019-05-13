@@ -23,14 +23,14 @@ module.exports = {
   modulesDir,
   mode: "universal",
   /*
-  ** Environment variables
-  */
+   ** Environment variables
+   */
   env: {
     isDev: process.env.NODE_ENV !== "production"
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: pkg.name,
     meta: [
@@ -41,33 +41,33 @@ module.exports = {
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: mainColor },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     "~assets/css/tailwind.css",
     "@fortawesome/fontawesome-svg-core/styles.css"
   ],
 
   /*
-  ** Babel configuration
-  */
+   ** Babel configuration
+   */
   babel: {
     plugins: ["@babel/transform-runtime"]
   },
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: ["~/plugins/axios", "~/plugins/vue-svgicon"],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     "~/modules/statusfy",
     // Doc: https://github.com/nuxt-community/axios-module#usage
@@ -101,13 +101,13 @@ module.exports = {
     ]
   ],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     publicPath: "/static/",
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && process.client) {
@@ -120,12 +120,12 @@ module.exports = {
       }
     },
     /*
-    ** Webpack bundle analyzer
-    */
+     ** Webpack bundle analyzer
+     */
     analyze: true,
     /*
-    ** Router
-    */
+     ** Router
+     */
     router: {
       linkActiveClass: "active",
       linkExactActiveClass: "exact",
@@ -134,8 +134,8 @@ module.exports = {
       }
     },
     /*
-    ** PostCSS
-    */
+     ** PostCSS
+     */
     postcss: {
       plugins: postcss.plugins(tailwindJS)
     }

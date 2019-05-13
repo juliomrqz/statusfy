@@ -2282,18 +2282,18 @@
     "@nuxtjs/meta" "^2.6.0"
     "@nuxtjs/workbox" "^2.6.0"
 
-"@nuxtjs/sitemap@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-1.1.0.tgz#7c7fffdaf7345ae0ab58455eed65c072d99a116c"
-  integrity sha512-g5N91aD8VNP124Igydex6utjhANfFF8ckbyuQOBO1XGiCLw/a+0RvIaq97ONmaKfCTUSOv1ZauygDslu69wA6w==
+"@nuxtjs/sitemap@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-1.2.0.tgz#6278c7a93314f1511ebb5491eb96e0f77f7d6dea"
+  integrity sha512-H51sCfe1A56qE1U3FNlWHJ3tm/ZTUPVr9Db6c8A81HzKT/rWnaJDycMlKss1xUzRkL98oubSkMazGhs4wyY/FA==
   dependencies:
     async-cache "^1.1.0"
-    consola "^2.6.0"
+    consola "^2.6.1"
     fs-extra "^7.0.1"
     is-https "^1.0.0"
     lodash.unionby "^4.8.0"
     minimatch "^3.0.4"
-    sitemap "^2.1.0"
+    sitemap "^2.2.0"
 
 "@nuxtjs/workbox@^2.6.0":
   version "2.6.0"
@@ -6564,10 +6564,10 @@ eslint-plugin-node@>=9.0.1:
     resolve "^1.10.1"
     semver "^6.0.0"
 
-eslint-plugin-prettier@3.0.1, eslint-plugin-prettier@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.0.1.tgz#19d521e3981f69dd6d14f64aec8c6a6ac6eb0b0d"
-  integrity sha512-/PMttrarPAY78PLvV3xfWibMOdMDl57hmlQ2XqFeA37wd+CJ7WSxV7txqjVPHi/AAFKd2lX0ZqfsOc/i5yFCSQ==
+eslint-plugin-prettier@3.1.0, eslint-plugin-prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.0.tgz#8695188f95daa93b0dc54b249347ca3b79c4686d"
+  integrity sha512-XWX2yVuwVNLOUhQijAkXz+rMPPoCr7WFiAl8ig6I7Xn+pPVhDhzg4DxHpmbeb0iqjO9UronEA3Tb09ChnFVHHA==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -7424,6 +7424,15 @@ fs-extra@^7.0.0, fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
   integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
+fs-extra@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.0.tgz#3660bea66719e3a3c46bf7a4b1249fb658db3f0c"
+  integrity sha512-3hU7dzpfqG+A7gloPULls7j9mKDzpCyMOTBvQS0lZfqVfjA6/m0AkLXq0O1vnfP5roXjjL1DuUGKapr8vJWmQw==
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -8664,10 +8673,10 @@ internal-ip@^4.2.0:
     default-gateway "^4.2.0"
     ipaddr.js "^1.9.0"
 
-intersection-observer@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.6.0.tgz#d64aae04211b4cec051537168f5fa670a4acc770"
-  integrity sha512-WUVAqGJr08yh73XKe1JhylQ9BiBIytrkt8SH5Knu7Uy44ij5cICi6PbVLIbV/D2eIx9LJVkGBo9WF80R4VXJ+w==
+intersection-observer@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
+  integrity sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
 
 into-stream@^3.1.0:
   version "3.1.0"
@@ -14524,7 +14533,7 @@ sisteransi@^1.0.0:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.0.tgz#77d9622ff909080f1c19e5f4a1df0c1b0a27b88c"
   integrity sha512-N+z4pHB4AmUv0SjveWRd6q1Nj5w62m5jodv+GD8lvmbY/83T/rpbJGZOnK5T149OldDj4Db07BSv9xY4K6NTPQ==
 
-sitemap@^2.0.1, sitemap@^2.1.0, sitemap@^2.2.0:
+sitemap@^2.0.1, sitemap@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-2.2.0.tgz#98b8502762c5d7e8c77c9be5061dce85b326f1b0"
   integrity sha512-9Zoi3UBhSIt5jWENDRUbzsqLMJ+Fha3P2aQ2PRghmh0FOivtHsC4FAJdkAEKHvATajd74BWp/57Yh7kz/UA53Q==
