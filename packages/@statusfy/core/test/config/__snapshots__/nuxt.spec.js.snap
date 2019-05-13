@@ -13,11 +13,16 @@ Object {
   "build": Object {
     "analyze": true,
     "extend": [Function],
-    "plugins": Array [
-      Object {
-        "apply": [Function],
+    "postcss": Object {
+      "plugins": Object {
+        "autoprefixer": Object {},
+        "postcss-combine-duplicated-selectors": Object {},
+        "postcss-import": Object {},
+        "postcss-nested": Object {},
+        "postcss-preset-env": Object {},
+        "tailwindcss": "../../tailwind.js",
       },
-    ],
+    },
     "publicPath": "/static/",
     "router": Object {
       "linkActiveClass": "active",
@@ -318,11 +323,16 @@ Object {
   "build": Object {
     "analyze": true,
     "extend": [Function],
-    "plugins": Array [
-      Object {
-        "apply": [Function],
+    "postcss": Object {
+      "plugins": Object {
+        "autoprefixer": Object {},
+        "postcss-combine-duplicated-selectors": Object {},
+        "postcss-import": Object {},
+        "postcss-nested": Object {},
+        "postcss-preset-env": Object {},
+        "tailwindcss": "../../tailwind.js",
       },
-    ],
+    },
     "publicPath": "/static/",
     "router": Object {
       "linkActiveClass": "active",
@@ -561,11 +571,16 @@ Object {
   "build": Object {
     "analyze": true,
     "extend": [Function],
-    "plugins": Array [
-      Object {
-        "apply": [Function],
+    "postcss": Object {
+      "plugins": Object {
+        "autoprefixer": Object {},
+        "postcss-combine-duplicated-selectors": Object {},
+        "postcss-import": Object {},
+        "postcss-nested": Object {},
+        "postcss-preset-env": Object {},
+        "tailwindcss": "../../tailwind.js",
       },
-    ],
+    },
     "publicPath": "/static/",
     "router": Object {
       "linkActiveClass": "active",
@@ -764,11 +779,16 @@ Object {
   "build": Object {
     "analyze": true,
     "extend": [Function],
-    "plugins": Array [
-      Object {
-        "apply": [Function],
+    "postcss": Object {
+      "plugins": Object {
+        "autoprefixer": Object {},
+        "postcss-combine-duplicated-selectors": Object {},
+        "postcss-import": Object {},
+        "postcss-nested": Object {},
+        "postcss-preset-env": Object {},
+        "tailwindcss": "../../tailwind.js",
       },
-    ],
+    },
     "publicPath": "/static/",
     "router": Object {
       "linkActiveClass": "active",
