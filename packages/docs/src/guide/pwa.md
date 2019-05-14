@@ -1,5 +1,5 @@
 ---
-title: Theme Customization
+title: Progressive Web App (PWA)
 description: "Statusfy provides PWA support out of the box with some marvelous features: Service Worker, ​Icons and Manifest."
 date: 2018-10-12T17:28:04Z
 permalink: /guide/pwa
