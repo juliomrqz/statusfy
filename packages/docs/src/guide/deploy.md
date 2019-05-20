@@ -21,7 +21,7 @@ We listed a few different services you can use for hosting your Status Page Syst
 |            [GitHub Pages](#github-pages)           | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |     [GitLab Pages](#gitlab-pages-and-gitlab-ci)    | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                 [Netlify](#netlify)                | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
-|                [Firebase](#firebase)               | <FeatureSupport /> |           <FeatureSupport />           |
+|                [Firebase](#firebase)               | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                   [Surge](#surge)                  | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                  [Heroku](#heroku)                 | <FeatureSupport /> |           <FeatureSupport />           |
 | [Now <Badge text="v1" type="warn" />](#now-legacy) | <FeatureSupport /> |           <FeatureSupport />           |
