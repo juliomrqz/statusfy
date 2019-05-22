@@ -1,27 +1,15 @@
 <template>
   <div class="header">
-    <nuxt-link
-      :to="localePath('index')"
-      class="logo-container"
-    >
-      <img
-        :alt="$t('title')"
-        :src="$statusfy.assets.mainLogo"
-        class="logo"
-      >
+    <nuxt-link :to="localePath('index')" class="logo-container">
+      <!-- eslint-disable-next-line prettier/prettier -->
+      <img :alt="$t('title')" :src="$statusfy.assets.mainLogo" class="logo">
     </nuxt-link>
-    <component
-      :is="titleTag"
-      class="title"
-    >
-      {{ $t('title') }}
+    <component :is="titleTag" class="title">
+      {{ $t("title") }}
     </component>
 
     <no-ssr>
-      <Subscribe
-        v-if="displaySubscribe"
-        class="subscribe-container"
-      />
+      <Subscribe v-if="displaySubscribe" class="subscribe-container" />
     </no-ssr>
   </div>
 </template>

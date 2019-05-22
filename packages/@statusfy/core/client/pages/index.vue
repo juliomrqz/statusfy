@@ -1,13 +1,13 @@
 <template>
   <section class="container">
     <!-- Scheduled: Below the Global Status -->
-    <scheduled v-if="$statusfy.theme.scheduled.position === 'aboveGlobalStatus'" :data="scheduled" />
+    <scheduled
+      v-if="$statusfy.theme.scheduled.position === 'aboveGlobalStatus'"
+      :data="scheduled"
+    />
 
     <!-- Global Status -->
-    <div
-      :class="status.key"
-      class="global-status flex justify-center"
-    >
+    <div :class="status.key" class="global-status flex justify-center">
       <span>{{ status.title }}</span>
       <span class="global-status-icon">
         <svgicon
@@ -18,13 +18,19 @@
     </div>
 
     <!-- Scheduled: Above the Systems -->
-    <scheduled v-if="$statusfy.theme.scheduled.position === 'aboveSystems'" :data="scheduled" />
+    <scheduled
+      v-if="$statusfy.theme.scheduled.position === 'aboveSystems'"
+      :data="scheduled"
+    />
 
     <!-- System Status -->
     <system-status :systems="systems" />
 
     <!-- Scheduled: Below the Systems -->
-    <scheduled v-if="$statusfy.theme.scheduled.position === 'belowSystems'" :data="scheduled" />
+    <scheduled
+      v-if="$statusfy.theme.scheduled.position === 'belowSystems'"
+      :data="scheduled"
+    />
 
     <!-- Timeline -->
     <incidents-timeline :data="timelineData" />

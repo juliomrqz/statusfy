@@ -1,11 +1,17 @@
 <template>
   <div class="timeline-container">
-    <h2>{{ $t('incidents.latest-incidents') }}</h2>
+    <h2>{{ $t("incidents.latest-incidents") }}</h2>
 
     <ul class="timeline">
       <li v-if="data.daysSinceLatest > 0" class="timeline-incident">
         <h3 class="timeline-incident-title">
-          {{ $tc('incidents.incidents-history-days-since-latest', data.daysSinceLatest, { days: data.daysSinceLatest }) }}
+          {{
+            $tc(
+              "incidents.incidents-history-days-since-latest",
+              data.daysSinceLatest,
+              { days: data.daysSinceLatest }
+            )
+          }}
         </h3>
       </li>
 
@@ -20,11 +26,8 @@
         </h3>
 
         <div class="timeline-incident-body">
-          <div
-            v-if="day.incidents.length === 0"
-            class="message"
-          >
-            {{ $t('incidents.no-incidents') }}
+          <div v-if="day.incidents.length === 0" class="message">
+            {{ $t("incidents.no-incidents") }}
           </div>
 
           <incident
@@ -37,11 +40,8 @@
     </ul>
 
     <div class="text-center">
-      <nuxt-link
-        :to="localePath('history')"
-        class="btn mb-4"
-      >
-        {{ $t('incidents.incidents-history') }}
+      <nuxt-link :to="localePath('history')" class="btn mb-4">
+        {{ $t("incidents.incidents-history") }}
       </nuxt-link>
     </div>
   </div>

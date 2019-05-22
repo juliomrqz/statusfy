@@ -10,11 +10,8 @@
         </p>
       </div>
 
-      <a
-        :href="localePath('index')"
-        class="font-medium mt-6"
-      >
-        {{ $t('error.go-back-link') }}
+      <a :href="localePath('index')" class="font-medium mt-6">
+        {{ $t("error.go-back-link") }}
       </a>
     </div>
   </section>

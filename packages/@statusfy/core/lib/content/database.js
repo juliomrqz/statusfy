@@ -277,12 +277,14 @@ module.exports = async function database(siteConfig, finalDate) {
         order++;
       }
 
+      /* eslint-disable prettier/prettier */
       const daysSinceLatest =
         sortedIncidents && sortedIncidents.length < 1
           ? 0
           : sortedIncidents[0] && sortedIncidents[0].date
             ? Math.abs(end.diff(dates.parse(sortedIncidents[0].date), "days"))
             : 0;
+      /* eslint-enable */
 
       return {
         count: days.length,

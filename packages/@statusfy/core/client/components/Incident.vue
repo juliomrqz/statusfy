@@ -1,32 +1,33 @@
 <template>
   <div
-    :class="`${incident.severity}${resolved.value ? ' resolved' : ' unresolved'}${incident.scheduled ? ' scheduled' : ''}`"
+    :class="
+      `${incident.severity}${resolved.value ? ' resolved' : ' unresolved'}${
+        incident.scheduled ? ' scheduled' : ''
+      }`
+    "
     class="incident"
   >
-    <div
-      :class="`level-${level}`"
-      class="incident-header"
-    >
-      <div
-        v-if="!incident.scheduled"
-        class="incident-title"
-      >
+    <div :class="`level-${level}`" class="incident-header">
+      <div v-if="!incident.scheduled" class="incident-title">
         <span class="badge">
-          {{ resolved.value ? $t('incidents.resolved') : $t('incidents.unresolved') }}
+          {{
+            resolved.value
+              ? $t("incidents.resolved")
+              : $t("incidents.unresolved")
+          }}
         </span>
         <nuxt-link
           v-if="level > 0"
-          :to="localePath({ name: 'incidents-id', params: { id: incident.id } })"
+          :to="
+            localePath({ name: 'incidents-id', params: { id: incident.id } })
+          "
         >
           <component :is="`h${level}`">
             {{ incident.title }}
           </component>
         </nuxt-link>
       </div>
-      <div
-        v-else
-        class="incident-title"
-      >
+      <div v-else class="incident-title">
         <template>
           <component :is="`h${level}`">
             {{ incident.title }}
@@ -46,10 +47,7 @@
     </div>
 
     <div class="incident-subtitle">
-      <div
-        v-if="!incident.scheduled"
-        class="status"
-      >
+      <div v-if="!incident.scheduled" class="status">
         <svgicon
           :name="`fortawesome/${status.icon}`"
           class="svg-inline--fa fa-w-16"
@@ -58,10 +56,7 @@
       </div>
 
       <div v-if="!incident.scheduled">
-        <nice-date
-          :date="incident.date"
-          format="long"
-        />
+        <nice-date :date="incident.date" format="long" />
       </div>
       <div v-else>
         <nice-date
@@ -74,7 +69,8 @@
           :date="getScheduledEndDate()"
           :include-u-t-c="false"
           format="long"
-        /> (UTC)
+        />
+        (UTC)
       </div>
     </div>
 
@@ -86,12 +82,7 @@
       </div>
 
       <!-- eslint-disable vue/no-v-html -->
-      <div
-        v-else
-        ref="content"
-        class="markdown"
-        v-html="incident.content"
-      />
+      <div v-else ref="content" class="markdown" v-html="incident.content" />
       <!-- eslint-enable -->
     </div>
 

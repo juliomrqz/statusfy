@@ -1,11 +1,11 @@
 <template>
   <div class="offline-container">
     <h1 class="offline-title">
-      {{ $t('offline.subtitle') }}
+      {{ $t("offline.subtitle") }}
     </h1>
 
     <p class="offline-description">
-      {{ $t('offline.description') }}
+      {{ $t("offline.description") }}
     </p>
 
     <div class="offline-message">

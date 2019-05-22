@@ -1,8 +1,5 @@
 <template>
-  <div
-    :class="system.status"
-    class="system flex flex-row justify-between"
-  >
+  <div :class="system.status" class="system flex flex-row justify-between">
     <div class="system-title">
       {{ $t(`systems.items.${system.name}.title`) }}
 

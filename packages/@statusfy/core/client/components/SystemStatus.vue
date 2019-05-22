@@ -1,11 +1,7 @@
 <template>
   <div>
     <div class="systems-container flex flex-col">
-      <system
-        v-for="system in systems"
-        :key="system.name"
-        :system="system"
-      />
+      <system v-for="system in systems" :key="system.name" :system="system" />
     </div>
   </div>
 </template>

@@ -1,23 +1,13 @@
 <template>
   <div class="incidents-container">
-    <div
-      v-for="period of periods"
-      :key="period.date"
-      class="incidents-period"
-    >
+    <div v-for="period of periods" :key="period.date" class="incidents-period">
       <div>
         <h2 class="incidents-period-title">
-          <nice-date
-            :date="period.id"
-            format="month"
-          />
+          <nice-date :date="period.id" format="month" />
         </h2>
 
-        <div
-          v-if="period.incidents.length === 0"
-          class="incidents-message"
-        >
-          {{ $t('incidents.no-incidents') }}
+        <div v-if="period.incidents.length === 0" class="incidents-message">
+          {{ $t("incidents.no-incidents") }}
         </div>
 
         <incidents-collapse :incidents="period.incidents" />

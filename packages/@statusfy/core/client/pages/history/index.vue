@@ -6,11 +6,8 @@
       <incidents-paginator :info="pageInfo" />
     </div>
 
-    <div
-      v-else
-      class="text-center"
-    >
-      <h2>{{ $t('incidents.no-incidents') }}</h2>
+    <div v-else class="text-center">
+      <h2>{{ $t("incidents.no-incidents") }}</h2>
     </div>
   </div>
 </template>

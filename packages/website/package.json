@@ -44,7 +44,7 @@
     "@wordpress/wordcount": "^2.3.0",
     "babel-eslint": "^10.0.1",
     "cross-spawn": "^6.0.5",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "front-matter": "^3.0.1",
     "imagemin-mozjpeg": "^8.0.0",
@@ -58,7 +58,7 @@
     "markdown-it-inline-comments": "^1.0.1",
     "markdown-it-link-attributes": "^2.1.0",
     "markdown-it-prism": "^2.0.1",
-    "prettier": "1.14.3",
+    "prettier": "1.17.1",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.22.0"
   },

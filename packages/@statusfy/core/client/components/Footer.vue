@@ -9,28 +9,23 @@
           :title="link.title"
           target="_blank"
           rel="noopener"
-        >{{ link.title }}</a>
+        >
+          {{ link.title }}
+        </a>
       </div>
 
       <div>
-        {{ $t('labels.powered-by') }}
-        <a
-          :href="statusfyHomeLink"
-          target="_blank"
-          rel="noopener"
-        >Statusfy</a>
+        {{ $t("labels.powered-by") }}
+        <a :href="statusfyHomeLink" target="_blank" rel="noopener">Statusfy</a>
       </div>
     </div>
-    <div
-      v-if="$i18n.locales.length > 1"
-      class="footer-language-swticher"
-    >
+    <div v-if="$i18n.locales.length > 1" class="footer-language-swticher">
       <template v-for="locale in $i18n.locales">
         <nuxt-link
           v-if="locale.code !== $i18n.locale"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          :class="{ 'active': locale.code === $i18n.locale }"
+          :class="{ active: locale.code === $i18n.locale }"
         >
           {{ locale.name }}
         </nuxt-link>
@@ -38,9 +33,10 @@
           v-else
           :key="locale.code"
           :href="switchLocalePath(locale.code)"
-          :class="{ 'active': locale.code === $i18n.locale }"
+          :class="{ active: locale.code === $i18n.locale }"
         >
-          {{ locale.name }}</a>
+          {{ locale.name }}
+        </a>
       </template>
     </div>
   </div>

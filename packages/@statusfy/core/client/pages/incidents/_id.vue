@@ -6,27 +6,19 @@
       </h1>
     </div>
 
-    <incident
-      :key="incident.id"
-      :incident="incident"
-      :level="0"
-    />
+    <incident :key="incident.id" :incident="incident" :level="0" />
 
-    <div class="flex flex-col sm:flex-row items-center justify-between sm:pt-2 pt-4">
+    <div
+      class="flex flex-col sm:flex-row items-center justify-between sm:pt-2 pt-4"
+    >
       <div class="text-center">
-        <nuxt-link
-          :to="localePath('history')"
-          class="btn mb-4"
-        >
-          {{ $t('incidents.incidents-history') }}
+        <nuxt-link :to="localePath('history')" class="btn mb-4">
+          {{ $t("incidents.incidents-history") }}
         </nuxt-link>
       </div>
       <div class="text-center">
-        <nuxt-link
-          :to="localePath('index')"
-          class="btn mb-4"
-        >
-          {{ $t('incidents.current-status') }}
+        <nuxt-link :to="localePath('index')" class="btn mb-4">
+          {{ $t("incidents.current-status") }}
         </nuxt-link>
       </div>
     </div>
