@@ -32,7 +32,7 @@ If you want extra details of how to configure and use Statusfy, the **full docum
 
 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
 
-For **questions**, go to [https://stackoverflow.com/questions/ask?tags=statusfy](https://stackoverflow.com/questions/ask?tags=statusfy).
+For **questions**, go to [https://spectrumchat.com/questions/ask?tags=statusfy](https://spectrumchat.com/questions/ask?tags=statusfy).
 
 You can find usefull **articles** in [our blog][statusfy-blog].
 

@@ -15,7 +15,7 @@ about: Create a report to help us improve
 - [ ] I confirm that this is a issue rather than a question.
 
 <!-- Please ask questions via following several ways. -->
-<!-- Free Support: https://stackoverflow.com/questions/ask?tags=statusfy -->
+<!-- Free Support: https://spectrum.chat/bazzite/statusfy -->
 <!-- Professional Support: This project is sponsored by https://www.bazzite.com. If you require Professional Assistance on your project(s), please contact us at https://statusfy.co/support. -->
 
 ## Bug report

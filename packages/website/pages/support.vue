@@ -183,7 +183,7 @@ export default {
         docs_url: $t('links.documentation.url'),
         issues_url: $t('links.issues.url'),
         github_url: $t('links.github.url'),
-        stackoverflow_url: $t('links.stackoverflow.url'),
+        spectrumchat_url: $t('links.spectrumchat.url'),
         bazzite_url: $t('links.bazzite.url'),
         blog_url: this.localePath('blog'),
         email: $t('support.supportEmail'),

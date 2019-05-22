@@ -29,9 +29,9 @@ export default {
       title: 'Issues',
       url: 'https://github.com/bazzite/statusfy/issues'
     },
-    stackoverflow: {
-      title: 'Stack Overflow',
-      url: 'https://es.stackoverflow.com/questions/ask/advice?tags=statusfy'
+    spectrumchat: {
+      title: 'Spectrum.chat',
+      url: 'https://es.spectrumchat.com/questions/ask/advice?tags=statusfy'
     },
     bazzite: {
       title: 'Bazzite',
@@ -135,7 +135,7 @@ export default {
       items: {
         docs: 'Si desea detalles adicionales sobre cómo configurar y usar este proyecto, la <strong>documentación completa</strong> está disponible en <a href="{docs_url}" target="_blank" rel="noopener">{docs_url}</a>.',
         issues: 'Para <strong>informes de errores</strong> o <strong>solicitudes de funcionalidades</strong>, usa la <a href="{issues_url}" target="_blank" rel="noopener">Sección de Issues</a> en <a href="{github_url}" target="_blank" rel="noopener">Github</a>.',
-        questions: 'Si tienes alguna pregunta, ve a <a href="{stackoverflow_url}" target="_blank" rel="noopener">Stack Overflow</a>.'
+        questions: 'Si tienes alguna pregunta, ve a <a href="{spectrumchat_url}" target="_blank" rel="noopener">Spectrum.chat</a>.'
       }
     },
     email: {
