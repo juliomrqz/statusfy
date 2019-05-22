@@ -31,7 +31,7 @@ export default {
     },
     spectrumchat: {
       title: 'Spectrum.chat',
-      url: 'https://es.spectrumchat.com/questions/ask/advice?tags=statusfy'
+      url: 'https://spectrum.chat/bazzite/statusfy'
     },
     bazzite: {
       title: 'Bazzite',
