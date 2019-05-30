@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "front-matter": "^3.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^7.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.0.0",
     "loader-utils": "^1.2.3",
     "lodash.pick": "^4.4.0",
