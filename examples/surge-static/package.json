@@ -31,6 +31,6 @@
     "npm": ">=5"
   },
   "devDependencies": {
-    "surge": "^0.20.1"
+    "surge": "^0.21.0"
   }
 }
