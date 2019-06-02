@@ -5094,7 +5094,7 @@ cookie@0.3.1, cookie@^0.3.1:
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
 
-cookie@0.4.0:
+cookie@0.4.0, cookie@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
@@ -11216,15 +11216,16 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-i18n@^5.12.3:
-  version "5.12.3"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-5.12.3.tgz#203241843393cf2d759f2af1760e50a6c9f84f0e"
-  integrity sha512-r0ijH2iNRa33flnKhnH1ZJoGBAbb/2gu3Kwo48WW4QfYwckk0/V1GCMREfzQnbqKZf9iI+Ff5FmkFCovQKe8iQ==
+nuxt-i18n@^5.12.4:
+  version "5.12.4"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-5.12.4.tgz#5f59b4cc4720236dbe42818c17975bdadf5a7396"
+  integrity sha512-8KyjN55IRrVZ6me/mIAoMOQUNxUTXN+T7jDEJQakHVozx3mt7ASa6ACmWzqPgclBOZUSgK5BzuBkbS37d64S2A==
   dependencies:
     "@kazupon/vue-i18n-loader" "^0.3.0"
     acorn "^6.1.1"
+    acorn-dynamic-import "^4.0.0"
     acorn-walk "^6.1.1"
-    cookie "^0.3.1"
+    cookie "^0.4.0"
     js-cookie "^2.2.0"
     vue-i18n "^8.11.2"
     vue-i18n-extensions "^0.2.1"
