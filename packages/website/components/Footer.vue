@@ -16,18 +16,7 @@
         <p>{{ $t('footer.copyright') }}</p>
       </small>
       <div class="mb-4 lg:mb-0">
-        <div
-          class="flex flex-col lg:flex-row lg:items-center text-center lg:text-right"
-        >
-          <nuxt-link
-            v-for="locale in $i18n.locales"
-            :key="locale.code"
-            :to="switchLocalePath(locale.code)"
-            class="link"
-          >
-            {{ locale.name }}
-          </nuxt-link>
-
+        <div class="flex flex-col lg:flex-row lg:items-center text-center lg:text-right">
           <nuxt-link
             :to="localePath('support')"
             class="link"
@@ -47,6 +36,16 @@
           </a>
         </div>
       </div>
+    </div>
+    <div class="text-center mt-4">
+      <nuxt-link
+        v-for="locale in $i18n.locales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"
+        class="link"
+      >
+        {{ locale.name }}
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -69,6 +68,10 @@ export default {
         {
           title: $t('links.github.title'),
           url: $t('links.github.url')
+        },
+        {
+          title: $t('links.community.title'),
+          url: $t('links.spectrumchat.url')
         }
       ]
     }

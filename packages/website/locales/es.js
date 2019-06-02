@@ -30,8 +30,11 @@ export default {
       url: 'https://github.com/bazzite/statusfy/issues'
     },
     spectrumchat: {
-      title: 'Spectrum.chat',
-      url: 'https://spectrum.chat/bazzite/statusfy'
+      title: 'Chat de la Comunidad',
+      url: 'https://spectrum.chat/bazzite/login?r=https://spectrum.chat/bazzite/statusfy'
+    },
+    community: {
+      title: 'Comunidad',
     },
     bazzite: {
       title: 'Bazzite',
@@ -135,7 +138,7 @@ export default {
       items: {
         docs: 'Si desea detalles adicionales sobre cómo configurar y usar este proyecto, la <strong>documentación completa</strong> está disponible en <a href="{docs_url}" target="_blank" rel="noopener">{docs_url}</a>.',
         issues: 'Para <strong>informes de errores</strong> o <strong>solicitudes de funcionalidades</strong>, usa la <a href="{issues_url}" target="_blank" rel="noopener">Sección de Issues</a> en <a href="{github_url}" target="_blank" rel="noopener">Github</a>.',
-        questions: 'Si tienes alguna pregunta, ve a <a href="{spectrumchat_url}" target="_blank" rel="noopener">Spectrum.chat</a>.'
+        questions: 'Si tienes alguna pregunta, ve al <a href="{spectrumchat_url}" target="_blank" rel="noopener">Chat de la Comunidad</a>.'
       }
     },
     email: {
