@@ -2,15 +2,15 @@
   <span
     v-lazy-container="{ selector: 'img' }"
     class="image-placeholder"
-    :class="{ fluid: fluid, 'rounded-full': rounded }"
+    :class="{ fluid: fluid }"
   >
     <img
-      :src="imagePlaceholder"
-      :data-src="imageSource"
-      :data-loading="imagePlaceholder"
+      :src="placeholder"
+      :data-src="source"
+      :data-loading="placeholder"
       :width="`${width}`"
       :height="`${height}`"
-      :class="finalClass"
+      :class="classes"
       :alt="alt"
     >
   </span>
@@ -20,6 +20,10 @@
 export default {
   props: {
     source: {
+      type: String,
+      required: true
+    },
+    placeholder: {
       type: String,
       required: true
     },
@@ -42,28 +46,6 @@ export default {
     fluid: {
       type: Boolean,
       default: false
-    },
-    rounded: {
-      type: Boolean,
-      default: false
-    }
-  },
-  computed: {
-    imageSource() {
-      return require(`~/assets/img/${this.source}`)
-    },
-    imagePlaceholder() {
-      const { placeholder } = require(`~/assets/img/${this.source}?resize&placeholder=true`)
-      return placeholder
-    },
-    finalClass() {
-      let theClass = this.classes
-
-      if (this.rounded) {
-        theClass += ' rounded-full'
-      }
-
-      return theClass
     }
   }
 }

@@ -5,12 +5,13 @@
       class="flex flex-wrap items-center text-grey-darker"
     >
       <ImageResponsive
-        :source="`avatars/${post.author.username}.jpg`"
+        :source="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
+        :placeholder="require(`~/assets/img/avatars/${post.author.username}.jpg?lqip`)"
         :alt="post.author.name"
-        :rounded="true"
         classes="w-10 h-10"
         :width="40"
         :height="40"
+        class="rounded-full"
       />
 
       <span class="ml-4 font-semibold relative z-10">
@@ -30,12 +31,13 @@
       class="flex flex-wrap flex-col items-center justify-center text-grey-darker sm:justify-start sm:flex-row"
     >
       <ImageResponsive
-        :source="`avatars/${post.author.username}.jpg`"
+        :source="require(`~/assets/img/avatars/${post.author.username}.jpg`)"
+        :placeholder="require(`~/assets/img/avatars/${post.author.username}.jpg?lqip`)"
         :alt="post.author.name"
-        :rounded="true"
         classes="w-12 h-12"
         :width="40"
         :height="40"
+        class="rounded-full"
       />
 
       <div class="flex flex-col mx-4 mt-2 sm:mt-0">
