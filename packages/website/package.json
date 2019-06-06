@@ -59,7 +59,7 @@
     "markdown-it-inline-comments": "^1.0.1",
     "markdown-it-link-attributes": "^2.1.0",
     "markdown-it-prism": "^2.0.2",
-    "prettier": "1.17.1"
+    "prettier": "1.18.0"
   },
   "engines": {
     "node": ">=8.10"
