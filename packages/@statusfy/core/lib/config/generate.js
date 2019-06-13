@@ -111,9 +111,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
     });
   });
   nuxti18nModuleConfig.defaultLocale = siteConfig.defaultLocale;
-  nuxti18nModuleConfig.detectBrowserLanguage.cookieKey = `${
-    siteConfig.name
-  }.lang_redirected`;
+  nuxti18nModuleConfig.detectBrowserLanguage.cookieKey = `${siteConfig.name}.lang_redirected`;
   nuxti18nModuleConfig.vueI18n.fallbackLocale = siteConfig.defaultLocale;
   if (siteConfig.baseUrl) {
     nuxti18nModuleConfig.baseUrl =
@@ -131,9 +129,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
 
     nuxtConfig.workbox.runtimeCaching.forEach(runtime => {
       if (runtime.strategyOptions) {
-        runtime.strategyOptions.cacheName = `${siteConfig.name}_${
-          runtime.strategyOptions.cacheName
-        }`;
+        runtime.strategyOptions.cacheName = `${siteConfig.name}_${runtime.strategyOptions.cacheName}`;
       }
     });
   } else {

@@ -39,9 +39,7 @@ module.exports = async function buildContent(nuxt, isStatic) {
 
             while (currentPage <= totalPages) {
               const data = database.incidents(locale.code, currentPage);
-              key = `${pathPrefix}/incidents.page-${currentPage}.${
-                locale.code
-              }.json`;
+              key = `${pathPrefix}/incidents.page-${currentPage}.${locale.code}.json`;
 
               compilation.assets[key] = asset(data);
 
@@ -56,9 +54,7 @@ module.exports = async function buildContent(nuxt, isStatic) {
             while (currentPage <= totalPages) {
               const data = database.incidentsHistory(locale.code, currentPage);
 
-              key = `${pathPrefix}/incidents/history.page-${currentPage}.${
-                locale.code
-              }.json`;
+              key = `${pathPrefix}/incidents/history.page-${currentPage}.${locale.code}.json`;
               compilation.assets[key] = asset(data);
 
               currentPage = data.page + 1;
@@ -68,9 +64,7 @@ module.exports = async function buildContent(nuxt, isStatic) {
             const incidents = database.incidents(locale.code, 1, -1).incidents;
 
             incidents.forEach(incident => {
-              key = `${pathPrefix}/incidents/${incident.id}.${
-                locale.code
-              }.json`;
+              key = `${pathPrefix}/incidents/${incident.id}.${locale.code}.json`;
               compilation.assets[key] = asset(incident);
             });
 
