@@ -1,3 +1,44 @@
+## [0.4.0](https://github.com/statusfy/statusfy/compare/v0.3.1...v0.4.0) (2019-06-13)
+
+
+### Bug Fixes
+
+* **core:** fix displaying the date of incidents when using the cli [#184](https://github.com/statusfy/statusfy/issues/184) ([#208](https://github.com/statusfy/statusfy/issues/208)) ([6e7d26e](https://github.com/statusfy/statusfy/commit/6e7d26e))
+* **core, website:** return postcss plugins as an object ([5c33b84](https://github.com/statusfy/statusfy/commit/5c33b84))
+* **docs:** fix heading of the page "Guide/PWA" ([#219](https://github.com/statusfy/statusfy/issues/219)) ([eb436af](https://github.com/statusfy/statusfy/commit/eb436af))
+* **docs:** fix the Firebase SSR reference in the deploy section ([2cedb4f](https://github.com/statusfy/statusfy/commit/2cedb4f))
+* **package:** update @nuxtjs/sitemap to version 1.0.0 ([#183](https://github.com/statusfy/statusfy/issues/183)) ([75db9c3](https://github.com/statusfy/statusfy/commit/75db9c3))
+* **package:** update intersection-observer to version 0.6.0 ([#186](https://github.com/statusfy/statusfy/issues/186)) ([6e9b3f0](https://github.com/statusfy/statusfy/commit/6e9b3f0))
+* **package:** update semver to version 6.0.0 ([38fdf8a](https://github.com/statusfy/statusfy/commit/38fdf8a))
+* **website:** fix the reponsive images placeholder values ([d38eb7f](https://github.com/statusfy/statusfy/commit/d38eb7f))
+
+
+### Features
+
+* **core:** add Italian translation ([#179](https://github.com/statusfy/statusfy/issues/179)) ([e5a80c4](https://github.com/statusfy/statusfy/commit/e5a80c4))
+* use docker multi-stage build ([#193](https://github.com/statusfy/statusfy/issues/193)) ([2b12153](https://github.com/statusfy/statusfy/commit/2b12153))
+* **core:** support web-push notifications with OneSignal ([2adff5e](https://github.com/statusfy/statusfy/commit/2adff5e))
+* **core, website:** upgrade workbox to v4.x ([6952de3](https://github.com/statusfy/statusfy/commit/6952de3))
+* **docs:** support sitemap generation and improve SEO ([c31c107](https://github.com/statusfy/statusfy/commit/c31c107))
+
+
+
+## [0.3.1](https://github.com/statusfy/statusfy/compare/v0.3.0...v0.3.1) (2019-03-23)
+
+
+### Bug Fixes
+
+* **bug:** incorrect context referenct in nuxt ([647cab0](https://github.com/statusfy/statusfy/commit/647cab0))
+* **website:** fix avatar position ([821deea](https://github.com/statusfy/statusfy/commit/821deea))
+* **website:** fix starting the website when no internet connection is available ([2e08200](https://github.com/statusfy/statusfy/commit/2e08200))
+
+
+### Features
+
+* **website:** support lazy loading the images from the blog section ([136c01a](https://github.com/statusfy/statusfy/commit/136c01a))
+
+
+
 ## [0.3.1](https://github.com/statusfy/statusfy/compare/v0.3.0...v0.3.1) (2019-03-23)
 
 
