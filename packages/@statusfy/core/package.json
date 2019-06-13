@@ -36,7 +36,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@nuxtjs/axios": "^5.5.4",
-    "@nuxtjs/pwa": "^2.5.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@statusfy/common": "0.3.2-beta.3",
     "@statusfy/markdown": "0.3.2-beta.3",
     "body-parser": "^1.18.3",

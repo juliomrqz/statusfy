@@ -44,7 +44,6 @@ Object {
   ],
   "lang": "en",
   "name": "Demo System Status",
-  "publicPath": "/static/",
   "short_name": "System Status",
   "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
   "theme_color": "#1b1f23",

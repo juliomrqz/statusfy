@@ -132,6 +132,10 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
         runtime.strategyOptions.cacheName = `${siteConfig.name}_${runtime.strategyOptions.cacheName}`;
       }
     });
+
+    if (siteConfig.analytics && siteConfig.analytics.ga) {
+      nuxtConfig.workbox.offlineAnalytics = true;
+    }
   } else {
     const nuxtiPwaModuleConfig = nuxtConfig.modules.find(
       item => item[0] === "@nuxtjs/pwa"

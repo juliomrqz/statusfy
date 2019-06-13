@@ -55,11 +55,6 @@
       "description": "Wir konnten deine Anfrage nicht bearbeiten. Wir bedauern eventuelle Unannehmlichkeiten."
     }
   },
-  "offline": {
-    "title": "Keine Internetverbindung",
-    "subtitle": "Hoppla!",
-    "description": "Wir konnten die von dir angeforderte Seite nicht laden. Bitte überprüfe deine Netzwerkverbindung und versuche es erneut."
-  },
   "systems": {
     "items": {
       "cdn": {

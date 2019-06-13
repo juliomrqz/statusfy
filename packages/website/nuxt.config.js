@@ -221,9 +221,6 @@ module.exports = {
     theme_color: mainColor,
     version: pkg.version
   },
-  workbox: {
-    offlinePage: '/offline'
-  },
   /*
    ** Google Analytics configuration
    */

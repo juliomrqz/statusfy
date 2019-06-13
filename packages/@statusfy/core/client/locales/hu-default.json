@@ -55,11 +55,6 @@
       "description": "Sajnáljuk, de a kérést nem lehet teljesíteni"
     }
   },
-  "offline": {
-    "title": "Ön offline",
-    "subtitle": "Sajnáljuk!",
-    "description": "Nem sikerült betölteni a kért oldalt. Kérjük, ellenőrizze a hálózati kapcsolatot és próbálja újra."
-  },
   "systems": {
     "items": {
       "cdn": {

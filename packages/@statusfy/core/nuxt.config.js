@@ -179,14 +179,8 @@ module.exports = {
   },
   workbox: {
     publicPath: "/static/",
-    offlinePage: "/offline",
-    _runtimeCaching: [
-      {
-        urlPattern: "/static/(?!content).*$",
-        handler: "cacheFirst",
-        method: "GET"
-      }
-    ],
+    cleanupOutdatedCaches: true,
+    assetsURLPattern: "/static/(?!content).*$",
     runtimeCaching: [
       {
         urlPattern: "(/static/content)?/api/v0/.*",

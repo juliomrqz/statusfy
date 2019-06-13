@@ -283,16 +283,11 @@ Object {
     "version": "0.3.2-beta.3",
   },
   "workbox": Object {
-    "_runtimeCaching": Array [
-      Object {
-        "handler": "cacheFirst",
-        "method": "GET",
-        "urlPattern": "/static/(?!content).*$",
-      },
-    ],
+    "assetsURLPattern": "/static/(?!content).*$",
     "cacheId": "app_name",
+    "cleanupOutdatedCaches": true,
     "globDirectory": "../.tmp/advanced/.statusfy/dist/client",
-    "offlinePage": "/offline",
+    "offlineAnalytics": true,
     "publicPath": "/static/",
     "runtimeCaching": Array [
       Object {
@@ -531,16 +526,10 @@ Object {
     "version": "0.3.2-beta.3",
   },
   "workbox": Object {
-    "_runtimeCaching": Array [
-      Object {
-        "handler": "cacheFirst",
-        "method": "GET",
-        "urlPattern": "/static/(?!content).*$",
-      },
-    ],
+    "assetsURLPattern": "/static/(?!content).*$",
     "cacheId": "title",
+    "cleanupOutdatedCaches": true,
     "globDirectory": "../.tmp/cli/.statusfy/dist/client",
-    "offlinePage": "/offline",
     "publicPath": "/static/",
     "runtimeCaching": Array [
       Object {
@@ -1010,16 +999,11 @@ Object {
     "version": "0.3.2-beta.3",
   },
   "workbox": Object {
-    "_runtimeCaching": Array [
-      Object {
-        "handler": "cacheFirst",
-        "method": "GET",
-        "urlPattern": "/static/(?!content).*$",
-      },
-    ],
+    "assetsURLPattern": "/static/(?!content).*$",
     "cacheId": "Nombre Aplicación",
+    "cleanupOutdatedCaches": true,
     "globDirectory": "../.tmp/spanish/.statusfy/dist/client",
-    "offlinePage": "/offline",
+    "offlineAnalytics": true,
     "publicPath": "/static/",
     "runtimeCaching": Array [
       Object {

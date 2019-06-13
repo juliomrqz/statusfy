@@ -55,11 +55,6 @@
       "description": "Desculpe, não podemos concluir sua requisição"
     }
   },
-  "offline": {
-    "title": "Estamos Offline!",
-    "subtitle": "Desculpe!",
-    "description": "Não foi possível carregar a página requisitada. Por gentileza verifique sua conexão e tente novamente."
-  },
   "systems": {
     "items": {
       "cdn": {

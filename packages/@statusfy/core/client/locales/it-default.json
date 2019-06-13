@@ -55,11 +55,6 @@
       "description": "Spiacenti, la richiesta non può essere elaborata"
     }
   },
-  "offline": {
-    "title": "Sei Offline",
-    "subtitle": "Spiacenti!",
-    "description": "Non è stato possibile caricare la pagina richiesta. Controlla la tua connessione di rete e riprova."
-  },
   "systems": {
     "items": {
       "cdn": {
