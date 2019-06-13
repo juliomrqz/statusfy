@@ -535,7 +535,11 @@ main {
         @apply flex flex-col items-center py-6;
 
         > div {
-          @apply flex items-center py-6 text-center;
+          @apply flex flex-col items-center py-6 text-center;
+
+          p {
+            @apply my-4;
+          }
         }
       }
     }

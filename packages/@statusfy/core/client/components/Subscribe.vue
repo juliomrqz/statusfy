@@ -97,6 +97,17 @@
               "
             />
           </div>
+          <div v-if="tabs.webpush" v-show="selectedTab === 'webpush'">
+            <div v-if="isEnabledPushNotifications">
+              <strong>{{ $t("notifications.items.webpush.enabled") }}</strong>
+            </div>
+            <div v-else>
+              <p>{{ $t("notifications.items.webpush.description") }}</p>
+              <button class="btn" @click="enablePushNotifications">
+                {{ $t("notifications.items.webpush.enable") }}
+              </button>
+            </div>
+          </div>
         </div>
         <!-- eslint-enable -->
       </div>
@@ -111,7 +122,8 @@ export default {
   data() {
     return {
       isModalActive: false,
-      selectedTab: null
+      selectedTab: null,
+      isEnabledPushNotifications: false
     };
   },
   computed: {
@@ -142,12 +154,28 @@ export default {
       };
     }
   },
+  mounted() {
+    if (this.$statusfy.notifications.webpush) {
+      this.$OneSignal.push(() => {
+        this.$OneSignal.isPushNotificationsEnabled(isEnabled => {
+          this.isEnabledPushNotifications = isEnabled;
+        });
+      });
+    }
+  },
   methods: {
     toggleModal() {
       this.isModalActive = !this.isModalActive;
     },
     switchTab(key) {
       this.selectedTab = key;
+    },
+    enablePushNotifications() {
+      this.$OneSignal.push(() => {
+        this.$OneSignal.registerForPushNotifications().then(e => {
+          this.toggleModal();
+        });
+      });
     }
   }
 };

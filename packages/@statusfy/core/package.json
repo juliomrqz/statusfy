@@ -36,6 +36,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/onesignal": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@statusfy/common": "0.3.2-beta.3",
     "@statusfy/markdown": "0.3.2-beta.3",
@@ -45,6 +46,7 @@
     "cross-env": "^5.2.0",
     "cross-spawn": "^6.0.5",
     "dayjs": "^1.8.14",
+    "dot-prop": "^5.1.0",
     "express": "^4.17.1",
     "feed": "^3.0.0",
     "helmet": "^3.18.0",

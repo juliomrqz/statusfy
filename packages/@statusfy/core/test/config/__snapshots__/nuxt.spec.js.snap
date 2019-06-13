@@ -113,6 +113,7 @@ Object {
   },
   "mode": "universal",
   "modules": Array [
+    "@nuxtjs/onesignal",
     "~/modules/statusfy",
     "@nuxtjs/axios",
     Array [
@@ -162,6 +163,15 @@ Object {
     "../.tmp/cli/node_modules",
     "../.tmp/advanced/node_modules",
   ],
+  "oneSignal": Object {
+    "init": Object {
+      "allowLocalhostAsSecureOrigin": true,
+      "appId": "onesignal-app-id",
+      "welcomeNotification": Object {
+        "disable": true,
+      },
+    },
+  },
   "plugins": Array [
     "~/plugins/axios",
     "~/plugins/vue-svgicon",
@@ -268,6 +278,11 @@ Object {
         "icalendar": true,
         "support": false,
         "twitter": false,
+        "webpush": Object {
+          "onesignal": Object {
+            "appId": "onesignal-app-id",
+          },
+        },
       },
       "serviceWorker": true,
       "short_title": "Short Title",
@@ -861,6 +876,7 @@ Object {
   },
   "mode": "universal",
   "modules": Array [
+    "@nuxtjs/onesignal",
     "~/modules/statusfy",
     "@nuxtjs/axios",
     Array [

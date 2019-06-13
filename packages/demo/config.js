@@ -1,3 +1,5 @@
+const oneSignalAppID = process.env.ONESIGNAL_APP_ID || '0c13819d-dd92-4c3e-a554-e7ab14c561af'
+
 module.exports = {
   title: 'Demo System Status',
   short_title: 'System Status',
@@ -50,6 +52,11 @@ module.exports = {
     support: {
       en: "https://statusfy.co/support",
       es: "https://statusfy.co/es/support"
+    },
+    webpush: {
+      onesignal: {
+        appId: oneSignalAppID
+      }
     }
   }
 }

@@ -95,6 +95,12 @@
       "support": {
         "title": "Támogatás",
         "description": "Látogassa meg a <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Támogatás weboldalunkat</a>."
+      },
+      "webpush": {
+        "title": "Push",
+        "description": "A böngészőbe küldött értesítések.",
+        "enable": "Értesítések engedélyezése",
+        "enabled": "Az értesítések engedélyezve vannak a böngészőben."
       }
     }
   }

@@ -24,5 +24,12 @@ module.exports = {
         color: "#3e4e88"
       }
     ]
+  },
+  notifications: {
+    webpush: {
+      onesignal: {
+        appId: "onesignal-app-id"
+      }
+    }
   }
 };

@@ -95,6 +95,12 @@
       "support": {
         "title": "Soporte",
         "description": "Visita nuestro <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Sitio de Soporte</a>."
+      },
+      "webpush": {
+        "title": "Push",
+        "description": "Notificaciones entregadas a tu navegador.",
+        "enable": "Activar Notificaciones",
+        "enabled": "Las notificaciones están habilitadas para este navegador."
       }
     }
   }

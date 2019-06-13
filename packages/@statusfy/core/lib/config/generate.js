@@ -1,4 +1,5 @@
 const fs = require("fs");
+const dotProp = require("dot-prop");
 const defaultsDeep = require("lodash/defaultsDeep");
 const { esm, logger, style, path } = require("@statusfy/common");
 
@@ -135,6 +136,25 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
 
     if (siteConfig.analytics && siteConfig.analytics.ga) {
       nuxtConfig.workbox.offlineAnalytics = true;
+    }
+
+    // onesignal notifications
+    const onesignalAppId = dotProp.get(
+      siteConfig.notifications,
+      "webpush.onesignal.appId"
+    );
+    if (onesignalAppId) {
+      nuxtConfig.modules.unshift("@nuxtjs/onesignal");
+
+      nuxtConfig.oneSignal = {
+        init: {
+          appId: onesignalAppId,
+          allowLocalhostAsSecureOrigin: true,
+          welcomeNotification: {
+            disable: true
+          }
+        }
+      };
     }
   } else {
     const nuxtiPwaModuleConfig = nuxtConfig.modules.find(

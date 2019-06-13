@@ -85,3 +85,4 @@ client/.tmp
 client/locales/*.js
 sw.*
 test/.tmp
+OneSignalSDK*

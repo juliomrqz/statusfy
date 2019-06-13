@@ -5,6 +5,7 @@ Object {
   "background_color": "#ffffff",
   "description": "A marvelous open source Status Page system",
   "display": "standalone",
+  "gcm_sender_id": "482941778795",
   "icons": Array [
     Object {
       "sizes": "16x16",

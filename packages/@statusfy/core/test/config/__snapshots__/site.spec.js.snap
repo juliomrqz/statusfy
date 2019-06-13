@@ -69,6 +69,11 @@ Object {
     "icalendar": true,
     "support": false,
     "twitter": false,
+    "webpush": Object {
+      "onesignal": Object {
+        "appId": "onesignal-app-id",
+      },
+    },
   },
   "serviceWorker": true,
   "short_title": "Short Title",
