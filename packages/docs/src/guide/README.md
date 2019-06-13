@@ -27,12 +27,13 @@ The final Web Application can be [generated or built](../guide/deploy.md) from a
   - Beautiful Design 
 - SEO Friendly
 - [Hosting flexibility: Static Generated or Server Rendered](../guide/deploy.md)
+- [Web Push Notifications](/guide/notifications/#web-push)
 
 ## Todo
 
 Statusfy is still a work in progress. There are a few things that are not currently supported but are planned:
 
-- Notifications: Web Push, Webhooks, etc.
+- Notifications: Webhooks, etc.
 - A Statusfy GUI: create and manage your project in an easier way.
 - Metrics.
 - Custom Themes support.

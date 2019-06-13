@@ -17,7 +17,7 @@ El Título del Sitio. Éste será el sufijo para todos los títulos de las pági
 
 ## short_title
 
-- Type: `string`
+- Tipo: `string`
 - Por defecto: `undefined`
 
 El Título Corto del Sitio. Será usado en el atributo `short_name` del [Manifiesto de Applicación Web](../guide/pwa.md#manifiesto-de-applicacion-web).
@@ -165,29 +165,49 @@ Proporciona el token de Segment para habilitar la integración.
 
 ## notifications <Badge text="0.2.0+"/>
 
-- Type: `object`
-- Default: `{}`
+- Tipo: `object`
+- Por defecto: `{}`
 
 Las opciones de notificaciones disponibles.
 
+### webpush <Badge text="0.4.0+"/>
+
+- Tipo: `object`
+- Por defecto: `undefined`
+
+Permite que sus usuarios/clientes se suscriban a las notificaciones Web Push desde sus navegadores. Para más detalles, consulta la guía de [Notificationes](/es/guide/notifications/#web-push).
+
+Para activar OneSignal, debes definir tu AppID:
+
+```json
+...
+  webpush: {
+    onesignal: {
+      appId: "tu-one-signal-app-id"
+    }
+  }
+...
+```
+
+
 ### icalendar <Badge text="0.2.0+"/>
 
-- Type: `boolean`
-- Default: `true`
+- Tipo: `boolean`
+- Por defecto: `true`
 
 Activa calendario que contiene todos tus Mantenimientos Programados futuros y pasados. Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#icalendar).
 
 ### feeds <Badge text="0.2.0+"/>
 
-- Type: `boolean`
-- Default: `true`
+- Tipo: `boolean`
+- Por defecto: `true`
 
 Activa feeds incluyen todos los incidentes Mantenimientos Programados que han pasado. Para más detalles, consulta la guía de [Notificationes](../guide/notifications.md#feeds-atom-y-rss).
 
 ### twitter <Badge text="0.2.0+"/>
 
-- Type: `object`
-- Default: `undefined`
+- Tipo: `object`
+- Por defecto: `undefined`
 
 Define las cuentas de Twitter a las que tus usuarios pueden acceder para recibir actualizaciones.
 
@@ -207,8 +227,8 @@ Para más detalles, consulta la guía de [Notificationes](../guide/notifications
 
 ### support <Badge text="0.2.0+"/>
 
-- Type: `object`
-- Default: `undefined`
+- Tipo: `object`
+- Por defecto: `undefined`
 
 Define los sitios de Soporte Externo al que puedan acceder tus usuarios para recibir actualizaciones de otras fuentes que desees proporcionar.
 

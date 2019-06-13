@@ -29,14 +29,14 @@ La aplicación web final se puede [generar o construir](../guide/deploy.md) a pa
   - Hermoso Diseño
 - Amigable con el SEO
 - [Flexibilidad de alojamiento: Generación Estática o Renderizado por Servidor](../guide/deploy.md)
-
+- [Notificaciones Web Push](/es/guide/notifications/#web-push)
 
 
 ## Por hacer
 
 Statusfy es todavía un trabajo en progreso. Hay algunas cosas que actualmente no están soportadas pero están planeadas:
 
-- Notificaciones: Web Push, Webhooks, etc.
+- Notificaciones: Webhooks, etc.
 - Una GUI de Statusfy: crea y administra tu proyecto de una manera más fácil.
 - Métrica.
 - Soporte de Temas Personalizados.

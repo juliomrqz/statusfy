@@ -165,6 +165,26 @@ Provide the Segment Token to enable integration.
 
 The available notifications options.
 
+### webpush <Badge text="0.4.0+"/>
+
+- Type: `object`
+- Default: `undefined`
+
+Allow your users/customers to subscribe to Web Push notifications from their browsers. For more details, see the guide on [Notifications](/guide/notifications/#web-push).
+
+In order to activate OneSignal, you must define your AppID:
+
+```json
+...
+  webpush: {
+    onesignal: {
+      appId: "yout-one-signal-app-id"
+    }
+  }
+...
+```
+
+
 ### icalendar <Badge text="0.2.0+"/>
 
 - Type: `boolean`
