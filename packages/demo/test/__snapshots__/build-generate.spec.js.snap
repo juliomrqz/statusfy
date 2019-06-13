@@ -48,6 +48,6 @@ Object {
   "short_name": "System Status",
   "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
   "theme_color": "#1b1f23",
-  "version": "0.4.0-beta.1",
+  "version": "0.4.0",
 }
 `;

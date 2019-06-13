@@ -6,6 +6,7 @@
 * **core:** fix displaying the date of incidents when using the cli [#184](https://github.com/statusfy/statusfy/issues/184) ([#208](https://github.com/statusfy/statusfy/issues/208)) ([6e7d26e](https://github.com/statusfy/statusfy/commit/6e7d26e))
 * **core, website:** return postcss plugins as an object ([5c33b84](https://github.com/statusfy/statusfy/commit/5c33b84))
 * **docs:** fix heading of the page "Guide/PWA" ([#219](https://github.com/statusfy/statusfy/issues/219)) ([eb436af](https://github.com/statusfy/statusfy/commit/eb436af))
+* **docs:** fix the dimension of the images ([83b6705](https://github.com/statusfy/statusfy/commit/83b6705))
 * **docs:** fix the Firebase SSR reference in the deploy section ([2cedb4f](https://github.com/statusfy/statusfy/commit/2cedb4f))
 * **package:** update @nuxtjs/sitemap to version 1.0.0 ([#183](https://github.com/statusfy/statusfy/issues/183)) ([75db9c3](https://github.com/statusfy/statusfy/commit/75db9c3))
 * **package:** update intersection-observer to version 0.6.0 ([#186](https://github.com/statusfy/statusfy/issues/186)) ([6e9b3f0](https://github.com/statusfy/statusfy/commit/6e9b3f0))
@@ -19,6 +20,7 @@
 * use docker multi-stage build ([#193](https://github.com/statusfy/statusfy/issues/193)) ([2b12153](https://github.com/statusfy/statusfy/commit/2b12153))
 * **core:** support web-push notifications with OneSignal ([2adff5e](https://github.com/statusfy/statusfy/commit/2adff5e))
 * **core, website:** upgrade workbox to v4.x ([6952de3](https://github.com/statusfy/statusfy/commit/6952de3))
+* **docs:** create the onsignal section ([cc648a0](https://github.com/statusfy/statusfy/commit/cc648a0))
 * **docs:** support sitemap generation and improve SEO ([c31c107](https://github.com/statusfy/statusfy/commit/c31c107))
 
 

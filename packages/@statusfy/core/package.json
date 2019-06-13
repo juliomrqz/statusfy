@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/core",
-  "version": "0.4.0-beta.1",
+  "version": "0.4.0",
   "description": "Core of Statusfy",
   "author": {
     "name": "Bazzite",
@@ -38,8 +38,8 @@
     "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/onesignal": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "@statusfy/common": "0.4.0-beta.1",
-    "@statusfy/markdown": "0.4.0-beta.1",
+    "@statusfy/common": "0.4.0",
+    "@statusfy/markdown": "0.4.0",
     "body-parser": "^1.18.3",
     "browser-sync": "^2.26.7",
     "cors": "^2.8.4",
@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
-    "@statusfy/test-utils": "0.4.0-beta.1",
+    "@statusfy/test-utils": "0.4.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",

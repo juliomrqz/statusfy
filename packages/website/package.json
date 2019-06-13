@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "statusfy-website",
-  "version": "0.4.0-beta.1",
+  "version": "0.4.0",
   "description": "Website for Statusfy",
   "author": {
     "name": "Bazzite",
@@ -23,7 +23,7 @@
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@nuxtjs/sitemap": "^1.2.0",
-    "@statusfy/common": "0.4.0-beta.1",
+    "@statusfy/common": "0.4.0",
     "animate.css": "^3.7.2",
     "consola": "^2.7.1",
     "date-fns": "~1.30.0",
