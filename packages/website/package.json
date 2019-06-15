@@ -44,7 +44,7 @@
     "@wordpress/wordcount": "^2.4.0",
     "babel-eslint": "^10.0.1",
     "cross-spawn": "^6.0.5",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "front-matter": "^3.0.1",
     "imagemin-mozjpeg": "^8.0.0",
