@@ -31,7 +31,6 @@
     "intersection-observer": "^0.7.0",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4",
-    "vue-disqus": "^3.0.5",
     "vue-lazyload": "^1.2.6",
     "vue-scrollto": "^2.15.0",
     "vue-social-sharing": "^2.4.5",

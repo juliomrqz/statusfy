@@ -103,20 +103,6 @@
                 </social-sharing>
               </div>
             </div>
-
-            <div>
-              <h2 class="font-normal text-lg mb-6 text-center">
-                {{ $t('blog.comments') }}
-              </h2>
-
-              <vue-disqus
-                :language="$i18n.locale"
-                :identifier="`bazzite-blog-${attributes.slug}`"
-                :title="attributes.title"
-                :url="attributes.canonical"
-                shortname="bazzite"
-              />
-            </div>
           </div>
         </div>
       </div>

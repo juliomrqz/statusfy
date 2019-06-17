@@ -74,7 +74,6 @@ module.exports = {
     '~/plugins/statusfy-blog.js',
     '~/plugins/statusfy-global-components.js',
     '~/plugins/axios.js',
-    '~/plugins/vue-disqus',
     '~/plugins/vue-lazyload.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/vue-svgicon.js',

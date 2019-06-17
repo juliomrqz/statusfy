@@ -120,7 +120,6 @@ export default {
     readMore: 'Leer Más',
     publishedAt: 'Publicado originalmente en',
     minRead: 'min de lectura',
-    comments: 'Comentarios',
     noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.',
     share: 'Comparte este artículo',
     feedback: {
