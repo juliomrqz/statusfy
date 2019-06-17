@@ -122,7 +122,11 @@ export default {
     minRead: 'min de lectura',
     comments: 'Comentarios',
     noPosts: 'Actualmente estamos creando nuevo contenido.</br>Visítanos luego.',
-    share: 'Comparte este artículo'
+    share: 'Comparte este artículo',
+    feedback: {
+      title: 'Comparte tus comentarios e ideas',
+      introduction: 'Si tienes <strong>Informes de Errores</strong> o <strong>Solicitudes de Funcionalidades</strong>, utiliza la <a href="https://github.com/bazzite/statusfy/issues" target="_blank" rel="noopener">sección de Issues</a> o <strong>únete a la conversación</strong> en el <a href="{spectrum_chat}" target="_blank" rel="noopener">Chat de la Comunidad</a>.'
+    }
   },
   support: {
     title: 'Soporte',

@@ -19,6 +19,11 @@
                 :render-func="renderFunc"
                 :static-render-funcs="staticRenderFuncs"
               />
+
+              <h2>{{ $t('blog.feedback.title') }}</h2>
+
+              <!-- eslint-disable vue/no-v-html -->
+              <p v-html="$t('blog.feedback.introduction', {spectrum_chat: communityChat})" />
             </div>
 
             <hr class="section-divider block my-12 overflow-visible text-center">
@@ -149,6 +154,16 @@ export default {
       return this.$i18n.locale === 'es'
         ? process.env.twitterUserEs
         : process.env.twitterUserEn
+    },
+    communityChat() {
+      if (this.attributes.spectrum) {
+        const channel = this.attributes.spectrum[0].channel || this.attributes.spectrum[1].channel
+        const id = this.attributes.spectrum[0].id || this.attributes.spectrum[1].id
+
+        return `https://spectrum.chat/bazzite/${channel}/${id}`
+      } else {
+        return 'https://spectrum.chat/bazzite/statusfy'
+      }
     }
   },
   async asyncData({ app, params }) {
