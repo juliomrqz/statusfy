@@ -16,7 +16,7 @@
 
       <span class="ml-4 font-semibold relative z-10">
         <a
-          :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
+          :href="`https://github.com/${post.author.username}`"
           target="_blank"
           rel="noopener"
         >
@@ -43,7 +43,7 @@
       <div class="flex flex-col mx-4 mt-2 sm:mt-0">
         <span class="font-semibold mb-1 text-center sm:text-left">
           <a
-            :href="`https://www.bazzite.com/blog/author/${post.author.username}`"
+            :href="`https://github.com/${post.author.username}`"
             target="_blank"
             rel="noopener"
           >
