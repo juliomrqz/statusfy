@@ -11,6 +11,7 @@ export default {
     }
   },
   articles: [
+    'statusfy-release-0-4-0',
     'statusfy-release-0-3-0',
     'statusfy-release-0-2-0',
     'introducing-statusfy-marvelous-open-source-status-page-system'
