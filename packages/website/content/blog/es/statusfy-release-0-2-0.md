@@ -12,13 +12,13 @@ Acabamos de lanzar una [nueva versión][github-release] de Statusfy con nuevas f
 
 ## Mantenimiento Programado
 
-<ImageResponsive
+<!-- <ImageResponsive
   source="blog/statusfy-release-v-0-2-0/scheduled-maintenance-es.jpg"
   alt="Statusfy - Mantenimiento Programado"
   :fluid="true"
   :width="879"
   :height="278"
-/>
+/> -->
 
 La definición de [Mantenimiento Programados][docs-scheduled-maintenance] es una forma de informar con anticipación a tus usuarios cuando su sistema no puede manejar solicitudes debido a una actualización de mantenimiento temporal.
 

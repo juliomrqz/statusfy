@@ -13,13 +13,13 @@ We just released a [new version][github-release] of Statusfy with new big featur
 
 ## Scheduled Maintenance
 
-<ImageResponsive
+<!-- <ImageResponsive
   source="blog/statusfy-release-v-0-2-0/scheduled-maintenance-en.jpg"
   alt="Statusfy - Scheduled Maintenance"
   :fluid="true"
   :width="879"
   :height="278"
-/>
+/> -->
 
 [Scheduled Maintenances][docs-scheduled-maintenance] definition is a way to let your users know ahead of time when your system(s) cannot handle requests due to a temporary maintenance update.
 
