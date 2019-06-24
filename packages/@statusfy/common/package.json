@@ -23,7 +23,7 @@
   "dependencies": {
     "autoprefixer": "^9.6.0",
     "chalk": "^2.3.2",
-    "consola": "^2.7.1",
+    "consola": "^2.9.0",
     "cssnano": "^4.1.4",
     "dayjs": "^1.8.14",
     "esm": "^3.2.25",
@@ -32,7 +32,7 @@
     "hash-sum": "^1.0.2",
     "lodash.isstring": "^4.0.1",
     "lru-cache": "5.1.1",
-    "postcss-combine-duplicated-selectors": "^7.0.0",
+    "postcss-combine-duplicated-selectors": "^8.0.1",
     "postcss-import": "^12.0.0",
     "postcss-nested": "^4.1.2",
     "postcss-preset-env": "^6.6.0",

@@ -31,15 +31,15 @@
   },
   "homepage": "https://docs.statusfy.co",
   "dependencies": {
-    "vuepress": "^1.0.1"
+    "vuepress": "^1.0.2"
   },
   "devDependencies": {
     "@statusfy/common": "0.4.0",
-    "@vuepress/plugin-back-to-top": "^1.0.1",
-    "@vuepress/plugin-google-analytics": "^1.0.1",
-    "@vuepress/plugin-pwa": "^1.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.2",
+    "@vuepress/plugin-google-analytics": "^1.0.2",
+    "@vuepress/plugin-pwa": "^1.0.2",
     "axios": "^0.19.0",
-    "consola": "^2.7.1",
+    "consola": "^2.9.0",
     "fs-extra": "^8.0.1",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "^2.0.1",
