@@ -97,6 +97,7 @@
 </template>
 
 <script>
+import NiceDate from "./NiceDate";
 import { getStatusInfo } from "~/helpers/statuses";
 
 import "./icons/fortawesome/clock-solid";
@@ -105,7 +106,6 @@ import "./icons/fortawesome/minus-circle-solid";
 import "./icons/fortawesome/times-circle-solid";
 import "./icons/fortawesome/check-circle-solid";
 import "./icons/fortawesome/external-link-alt-solid";
-import NiceDate from "./NiceDate";
 
 export default {
   components: {

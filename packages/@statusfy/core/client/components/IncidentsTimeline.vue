@@ -48,9 +48,9 @@
 </template>
 
 <script>
-import { statusesInfo } from "~/helpers/statuses";
 import Incident from "./Incident";
 import NiceDate from "./NiceDate";
+import { statusesInfo } from "~/helpers/statuses";
 
 export default {
   components: {
