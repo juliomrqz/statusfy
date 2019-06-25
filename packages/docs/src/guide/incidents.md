@@ -210,6 +210,10 @@ You must keep in mind that these definitions are handled in a different way than
 - After the [`scheduled`](#scheduled) date passes you must set the [`resolved`](#resolved) parameneter to `true` if the maintenance window has finished.
 - Scheduled Maintenances are not displayed in the **Incidents Timeline** and the **Incidents History** while the [`scheduled`](#scheduled) date has not arrived.
 
+::: warning IMPORTANT
+Remember to set the `severity` field to `under-maintenance` (more info [here](#severity)) in order to consider your Scheduled Maintenance definition.
+:::
+
 ## Content
 
 The content of the Incidents are written in a valid Markdown format but there are extra Extensions that Statusfy provides.

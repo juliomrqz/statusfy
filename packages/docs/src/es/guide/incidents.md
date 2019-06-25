@@ -218,6 +218,10 @@ Debe tener en cuenta que estas definiciones se manejan de manera diferente a los
 - Después que pase la fecha programada ([`scheduled`](#scheduled)), se debe establecer el campo [`resolved`](#resolved) en `true` si la ventana de mantenimiento ha finalizado.
 - Los Mantenimientos Programados no se muestran en la **Línea de Tiempo de Incidentes** ni en el **Historial de Incidentes** mientras no haya llegado la fecha programada ([`scheduled`](#scheduled)).
 
+::: warning IMPORTANTE
+Recuerda establecer el campo `severity` a `under-maintenance` (más información [aquí](#severity)) para considerar la definición de tu Mantenimiento Programado.
+:::
+
 ## Contenido
 
 El contenido de los Incidentes se escribe en un formato de Markdown válido, pero hay Extensiones adicionales que proporciona Statusfy.
