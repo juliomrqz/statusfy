@@ -188,6 +188,8 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [Apache License 2.0][license-page].
 
+![](https://ga-beacon.appspot.com/UA-65885578-17/bazzite/statusfy?pixel)
+
 [examples]: https://github.com/bazzite/statusfy/tree/develop/examples
 [demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
