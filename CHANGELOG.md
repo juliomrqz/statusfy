@@ -1,3 +1,21 @@
+## [0.4.1](https://github.com/statusfy/statusfy/compare/v0.4.0...v0.4.1) (2019-06-27)
+
+
+### Bug Fixes
+
+* **docs:** make explicit the under-maintenance definition ([b2a41c9](https://github.com/statusfy/statusfy/commit/b2a41c9))
+* **website:** remove responsive image from the article "statusfy-release-0-2-0" ([fa58780](https://github.com/statusfy/statusfy/commit/fa58780))
+* **website:** remove unused definitions in the Spanish translation ([ae73c45](https://github.com/statusfy/statusfy/commit/ae73c45))
+
+
+### Features
+
+* **website:** create blog article "statusfy-release-0-4-0" ([b136e7d](https://github.com/statusfy/statusfy/commit/b136e7d))
+* **website:** include the community post in the blog section ([5e42ed4](https://github.com/statusfy/statusfy/commit/5e42ed4))
+* **website:** remove disqus comments ([e4e3bd0](https://github.com/statusfy/statusfy/commit/e4e3bd0))
+
+
+
 ## [0.4.0](https://github.com/statusfy/statusfy/compare/v0.3.1...v0.4.0) (2019-06-13)
 
 

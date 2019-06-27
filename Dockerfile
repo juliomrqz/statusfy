@@ -1,6 +1,6 @@
 FROM node:8-alpine AS builder
 
-ENV STATUSFY_VERSION 0.4.0
+ENV STATUSFY_VERSION 0.4.1
 ENV NODE_ENV production
 
 WORKDIR /usr/src/app
