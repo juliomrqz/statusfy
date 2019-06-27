@@ -129,10 +129,6 @@ export default {
   },
   support: {
     title: 'Soporte',
-    description: 'Aprenda dónde obtener artículos útiles, soporte de la comunidad y soporte por correo electrónico.'
-  },
-  support: {
-    title: 'Soporte',
     description: 'Aprende dónde obtener Artículos útiles, Soporte de la Comunidad, Soporte por Correo Electrónico y Patrocinio.',
     supportEmail: 'hola@statusfy.co',
     supportTwitter: 'BazziteEs',
