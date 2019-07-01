@@ -63,7 +63,7 @@
     "nuxt-i18n": "^5.12.7",
     "opener": "^1.5.0",
     "portfinder": "^1.0.17",
-    "sitemap": "^2.2.0",
+    "sitemap": "^3.0.0",
     "url": "^0.11.0",
     "v-tooltip": "^2.0.0-rc.33",
     "vue-multianalytics": "1.11.7",
