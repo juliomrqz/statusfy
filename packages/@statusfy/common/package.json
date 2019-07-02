@@ -29,7 +29,7 @@
     "esm": "^3.2.25",
     "fs-extra": "^8.0.1",
     "gray-matter": "^4.0.1",
-    "hash-sum": "^1.0.2",
+    "hash-sum": "^2.0.0",
     "lodash.isstring": "^4.0.1",
     "lru-cache": "5.1.1",
     "postcss-combine-duplicated-selectors": "^8.0.1",
