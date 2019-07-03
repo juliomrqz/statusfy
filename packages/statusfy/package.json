@@ -13,7 +13,9 @@
     "statusfy": "statusfy.js"
   },
   "scripts": {
-    "postinstall": "opencollective || exit 0"
+    "postinstall": "opencollective || exit 0",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,8 @@
     "@nuxtjs/opencollective": "^0.2.0",
     "@statusfy/cli": "0.4.1",
     "@statusfy/core": "0.4.1",
-    "@statusfy/editor": "0.4.1"
+    "@statusfy/editor": "0.4.1",
+    "snyk": "^1.189.0"
   },
   "engines": {
     "node": ">=8.10",
@@ -43,5 +46,6 @@
   "collective": {
     "url": "https://opencollective.com/statusfy",
     "logoUrl": "https://opencollective.com/statusfy/logo.txt?reverse=true&variant=variant2"
-  }
+  },
+  "snyk": true
 }
