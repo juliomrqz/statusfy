@@ -44,4 +44,4 @@ Statusfy es todavía un trabajo en progreso. Hay algunas cosas que actualmente n
 
 
 
-[:nerd_face: ¡Cualquier contribución en bienvenida!](../contributing/README.md)
+[:nerd_face: ¡Cualquier contribución es bienvenida!](../contributing/README.md)
