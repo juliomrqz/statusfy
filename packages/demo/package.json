@@ -11,7 +11,9 @@
     "generate": "npm run prepare && statusfy generate",
     "new-incident": "statusfy new-incident",
     "delete-incident": "statusfy delete-incident",
-    "update-incident": "statusfy update-incident"
+    "update-incident": "statusfy update-incident",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Bazzite",
@@ -20,7 +22,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "statusfy": "0.4.1"
+    "statusfy": "0.4.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "less": "^3.8.1",
@@ -33,5 +36,6 @@
   "engines": {
     "node": ">=8.10",
     "npm": ">=5"
-  }
+  },
+  "snyk": true
 }
