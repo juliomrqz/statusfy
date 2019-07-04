@@ -1,0 +1,48 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @babel/core > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > sitemap > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > inquirer > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > @statusfy/common > tailwindcss > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > browser-sync > easy-extender > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/builder > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > @nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > webpack-bundle-analyzer > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > html-webpack-plugin > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > hard-source-webpack-plugin > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > ics > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > @statusfy/markdown > @statusfy/common > tailwindcss > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @babel/core > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @babel/core > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-member-expression-to-functions > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/plugin-proposal-decorators > @babel/helper-create-class-features-plugin > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/plugin-proposal-decorators > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T02:38:44.195Z'

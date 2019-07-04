@@ -9,7 +9,9 @@
     "build": "statusfy build",
     "start": "statusfy start",
     "generate": "statusfy generate",
-    "new-incident": "statusfy new-incident"
+    "new-incident": "statusfy new-incident",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Bazzite",
@@ -22,10 +24,12 @@
     }
   ],
   "dependencies": {
-    "statusfy": "^0.4.0"
+    "statusfy": "^0.4.0",
+    "snyk": "^1.189.0"
   },
   "engines": {
     "node": ">=8.10",
     "npm": ">=5"
-  }
+  },
+  "snyk": true
 }
