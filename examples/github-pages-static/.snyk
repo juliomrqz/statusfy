@@ -1,0 +1,50 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - statusfy > @statusfy/core > @nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - gh-pages > async > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > inquirer > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > ics > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > browser-sync > easy-extender > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > @statusfy/common > tailwindcss > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/builder > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > webpack-bundle-analyzer > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > html-webpack-plugin > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > hard-source-webpack-plugin > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > @statusfy/markdown > @statusfy/common > tailwindcss > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > sitemap > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @babel/core > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @babel/core > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/generator > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @vue/babel-preset-jsx > @vue/babel-plugin-transform-vue-jsx > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
+    - statusfy > @statusfy/core > nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T08:37:58.710Z'
