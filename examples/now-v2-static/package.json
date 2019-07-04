@@ -11,7 +11,9 @@
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident",
-    "now-build": "yarn run generate"
+    "now-build": "yarn run generate",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Bazzite",
@@ -24,7 +26,8 @@
     }
   ],
   "dependencies": {
-    "statusfy": "^0.4.0"
+    "statusfy": "^0.4.0",
+    "snyk": "^1.190.0"
   },
   "engines": {
     "node": ">=8.10",
@@ -32,5 +35,6 @@
   },
   "devDependencies": {
     "now": "^15.0.0"
-  }
+  },
+  "snyk": true
 }
