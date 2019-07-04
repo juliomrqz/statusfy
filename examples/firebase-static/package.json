@@ -11,7 +11,9 @@
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Bazzite",
@@ -27,10 +29,12 @@
     "firebase-tools": "^7.0.0"
   },
   "dependencies": {
-    "statusfy": "^0.4.0"
+    "statusfy": "^0.4.0",
+    "snyk": "^1.189.0"
   },
   "engines": {
     "node": ">=8.10",
     "npm": ">=5"
-  }
+  },
+  "snyk": true
 }
