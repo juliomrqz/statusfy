@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "npm run retrieve-partners && npx vuepress dev src",
     "build": "npm run retrieve-partners && npx vuepress build src",
-    "retrieve-partners": "node scripts/partners.js"
+    "retrieve-partners": "node scripts/partners.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8.10"
@@ -31,7 +33,8 @@
   },
   "homepage": "https://docs.statusfy.co",
   "dependencies": {
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.0.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@statusfy/common": "0.4.1",
@@ -46,5 +49,6 @@
     "vuepress-plugin-reading-time": "^0.1.1",
     "vuepress-plugin-seo": "^0.1.2",
     "vuepress-plugin-sitemap": "^2.1.2"
-  }
+  },
+  "snyk": true
 }
