@@ -15,7 +15,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "svg": "vsvg -s ./assets/icons -t ./components/icons --es6"
+    "svg": "vsvg -s ./assets/icons -t ./components/icons --es6",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
@@ -35,7 +37,8 @@
     "vue-scrollto": "^2.15.0",
     "vue-social-sharing": "^2.4.5",
     "vue-svgicon": "^3.2.4",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
@@ -62,5 +65,6 @@
   },
   "engines": {
     "node": ">=8.10"
-  }
+  },
+  "snyk": true
 }
