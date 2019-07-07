@@ -70,7 +70,7 @@
     "vue-svgicon": "^3.2.4"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-config": "^1.0.0",
     "@statusfy/test-utils": "0.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
