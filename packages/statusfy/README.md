@@ -5,9 +5,6 @@
   <a href="https://travis-ci.org/bazzite/statusfy" rel="nofollow">
     <img src="https://img.shields.io/travis/bazzite/statusfy.svg" alt="Travis">
   </a>
-  <a href="https://greenkeeper.io/" rel="nofollow">
-    <img src="https://badges.greenkeeper.io/bazzite/statusfy.svg" alt="Greenkeeper badge">
-  </a>
   <a href="https://www.npmjs.com/package/statusfy" rel="nofollow">
     <img src="https://img.shields.io/npm/v/statusfy.svg" alt="version">
   </a>
