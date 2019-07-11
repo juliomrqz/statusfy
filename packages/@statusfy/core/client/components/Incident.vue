@@ -129,7 +129,7 @@ export default {
       default: 4,
       validator: value => {
         // The value must match one of these numbers
-        return [0, 3, 4].indexOf(value) !== -1;
+        return [0, 3, 4].includes(value);
       }
     }
   },

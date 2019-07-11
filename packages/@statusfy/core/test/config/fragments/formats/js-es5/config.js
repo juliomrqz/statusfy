@@ -3,7 +3,7 @@ const { slugify } = require("@statusfy/common");
 const title = "ES5 Config Format";
 
 module.exports = {
-  title: title,
+  title,
   name: slugify(title),
   description: "The ES5 Config Format Example",
   defaultLocale: "en",
