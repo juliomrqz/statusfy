@@ -51,8 +51,8 @@
     "update-changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "devDependencies": {
-    "@babel/core": "7.5.4",
-    "@babel/plugin-transform-runtime": "7.5.0",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-transform-runtime": "7.5.5",
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "babel-core": "7.0.0-bridge.0",
