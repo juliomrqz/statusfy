@@ -68,7 +68,7 @@
     "husky": "3.0.1",
     "jest": "24.8.0",
     "jest-serializer-vue": "2.0.2",
-    "lerna": "3.15.0",
+    "lerna": "3.16.0",
     "vue-jest": "3.0.4"
   },
   "engines": {
