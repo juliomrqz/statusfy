@@ -7135,10 +7135,10 @@ eslint-plugin-import@^2.18.0:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-jest@22.13.1:
-  version "22.13.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.13.1.tgz#f68a037882a02ebd08c3619cb3801ad4b9fd4ec1"
-  integrity sha512-f5rROlt+N1fbl/KHaTGMwYg3f0cd+At5n+UxIa0/3v+qGn7Y9eLEquIbEOyncihNtpvXIjnAsRJn28oeqnHEnw==
+eslint-plugin-jest@22.13.6:
+  version "22.13.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.13.6.tgz#85630e7709fe1ecbe0099956590af32d5e157448"
+  integrity sha512-wn3n9Djj+Dyi8AS1kvGOXpzUJfs9SJYhoZxIb49y4cwHRPaSgDHzSJPZX3sliZ3k8l6bYVeEGW76QvvqoOjSEw==
   dependencies:
     "@typescript-eslint/experimental-utils" "^1.13.0"
 
