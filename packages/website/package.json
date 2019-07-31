@@ -18,7 +18,7 @@
     "svg": "vsvg -s ./assets/icons -t ./components/icons --es6"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.19",
+    "@fortawesome/fontawesome-svg-core": "1.2.20",
     "@nuxtjs/axios": "5.5.4",
     "@nuxtjs/google-analytics": "2.2.0",
     "@nuxtjs/pwa": "3.0.0-beta.16",
