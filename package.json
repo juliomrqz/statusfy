@@ -58,7 +58,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
-    "conventional-changelog-cli": "2.0.21",
+    "conventional-changelog-cli": "2.0.23",
     "cross-env": "5.2.0",
     "eslint": "5.16.0",
     "eslint-loader": "2.2.1",
