@@ -3510,13 +3510,13 @@
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
 
-"@wordpress/wordcount@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/wordcount/-/wordcount-2.4.0.tgz#e5c13dea1d316701cbbc8298791e6d93e7d633b7"
-  integrity sha512-JLTryZSlYlFWRGHQV+z42kHc1aO/nr003ERNii8T1JWl2pnyCkgmqjZeU5VtEuifaSdeychImBT+gpYZNNQTiQ==
+"@wordpress/wordcount@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/wordcount/-/wordcount-2.5.0.tgz#bac72cbc2860e3187be6d5ed952a8b3cc8f29757"
+  integrity sha512-Du/O50ZBpl5Pq/MevUZHQg0FBpT6v/SRhSV8lF5ByjZfXelUcQGN+gQ6RmNdasQ33KVPmspdCQHnQ+sThm4/iA==
   dependencies:
     "@babel/runtime" "^7.4.4"
-    lodash "^4.17.11"
+    lodash "^4.17.14"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"

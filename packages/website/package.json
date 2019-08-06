@@ -40,7 +40,7 @@
   "devDependencies": {
     "@bazzite/nuxt-netlify": "0.1.1",
     "@bazzite/nuxt-optimized-images": "0.2.1",
-    "@wordpress/wordcount": "2.4.0",
+    "@wordpress/wordcount": "2.5.0",
     "babel-eslint": "10.0.2",
     "cross-spawn": "6.0.5",
     "eslint-config-prettier": "6.0.0",
