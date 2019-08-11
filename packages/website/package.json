@@ -52,7 +52,7 @@
     "loader-utils": "1.2.3",
     "lodash.pick": "4.4.0",
     "lqip-loader": "2.2.0",
-    "markdown-it": "9.0.1",
+    "markdown-it": "9.1.0",
     "markdown-it-attrs": "3.0.0",
     "markdown-it-github-headings": "1.1.1",
     "markdown-it-inline-comments": "1.0.1",
