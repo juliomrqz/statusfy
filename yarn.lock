@@ -17127,10 +17127,10 @@ vue-jest@3.0.4:
     tsconfig "^7.0.0"
     vue-template-es2015-compiler "^1.6.0"
 
-vue-lazyload@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/vue-lazyload/-/vue-lazyload-1.3.1.tgz#75715bc091d8453e1f3d6daca74b8e7254c297d1"
-  integrity sha512-sQ4O3TRq95SL3MyK9VaLI/KGFoEK5054/gtDvSwem+UvSGQYy94DX6VzOeCHc/oTQg3r5M8HSlMSBBQu873Mww==
+vue-lazyload@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/vue-lazyload/-/vue-lazyload-1.3.2.tgz#3d6123b6a6c177aef06aa6d3ad7b6c36ce3c25ab"
+  integrity sha512-dBrtZZSsKJktRIYkq55O44X7bCeNsSbjhmDRdjR5C1wSV/TcJnmVyV/9weRLF3ll+dGv0CLTfouSpIOFfSO1MQ==
 
 vue-loader@^15.2.4, vue-loader@^15.7.0:
   version "15.7.0"
