@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
-    "commander": "^2.15.1",
+    "commander": "^3.0.0",
     "semver": "^6.1.2"
   },
   "peerDependencies": {
