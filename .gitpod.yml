@@ -1,6 +1,9 @@
 ports:
 - port: 3000
+  onOpen: open-preview
 - port: 3001
+  onOpen: ignore
+- port: 8000
   onOpen: ignore
 tasks:
 - init: yarn
