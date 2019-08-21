@@ -12298,10 +12298,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-i18n@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.0.1.tgz#5dd075d84ff52c156fb7f191bc118555420cea6e"
-  integrity sha512-otyJW+lbDIYasPByPLK+xrZlwYcSJmMglPPiBOsg6J8+ZznsiTMakNQCNRCGej0dDynMVi9bGWv1jGo54Ma0uA==
+nuxt-i18n@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.0.2.tgz#aa771ca46957c42dbb2d31308ff46cff31b34c11"
+  integrity sha512-3jlsDwGBWz9TEoRxzVAurX5UwgUSJjkZ3DFh4yw7EhpJ0AOKu2nckGMvTN1sTGV39eOXn+I6nKOfPDmsJYM6dg==
   dependencies:
     "@kazupon/vue-i18n-loader" "^0.4.0"
     acorn "^7.0.0"
