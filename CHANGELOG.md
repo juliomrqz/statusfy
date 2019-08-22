@@ -1,3 +1,12 @@
+## [0.4.3](https://github.com/statusfy/statusfy/compare/v0.4.1...v0.4.3) (2019-08-22)
+
+
+### Bug Fixes
+
+* **core:** add missing English translation ([3c3c0ec](https://github.com/statusfy/statusfy/commit/3c3c0ec))
+
+
+
 # [0.4.2](https://github.com/statusfy/statusfy/compare/v0.4.1...v0.4.2) (2019-08-22)
 
 
