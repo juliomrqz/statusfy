@@ -1,3 +1,4 @@
+/** @type {import("@nuxt/types").Plugin} */
 export default function({ $axios, error, app }) {
   $axios.onError(errorValue => {
     const code = parseInt(errorValue.response && errorValue.response.status);

@@ -21,8 +21,9 @@ const copyPublicFiles = async (src, dest) => {
   }
 };
 
+/** @type {import("@nuxt/types").Module} */
 /* eslint-disable require-await */
-module.exports = async function Statusfy() {
+const statusfyModule = async function Statusfy() {
   // Merge all option sources
   const statusfyOptions = this.options.statusfy;
 
@@ -196,4 +197,5 @@ module.exports = async function Statusfy() {
   });
 };
 
+module.exports = statusfyModule;
 module.exports.meta = require("../../../package.json");
