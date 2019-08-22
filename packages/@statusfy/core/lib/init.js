@@ -133,7 +133,7 @@ module.exports = async (sourceDir, cliOptions = {}) => {
       configContent = `module.exports = ${JSON.stringify(config, null, "  ")}`;
       configPath = path.join(outDir, "config.js");
     } else if (answers.configFormat === "yaml") {
-      configContent = yaml.safeDump(config);
+      configContent = yaml.stringify(config);
       configPath = path.join(outDir, "config.yml");
     } else if (answers.configFormat === "toml") {
       configContent = tomlify.toToml(config, { space: 2 });
