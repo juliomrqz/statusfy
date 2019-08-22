@@ -1,3 +1,23 @@
+# [0.4.2](https://github.com/statusfy/statusfy/compare/v0.4.1...v0.4.2) (2019-08-22)
+
+
+### Performance
+
+* **chore:** improve performance and reliability
+
+
+### Bug Fixes
+
+* **core:** fix initializing a new project with YAML as a config format ([#68](https://github.com/statusfy/statusfy/issues/68)) ([2a616d7](https://github.com/statusfy/statusfy/commit/2a616d7))
+* **docs:** fix minor typo ([#255](https://github.com/statusfy/statusfy/issues/255)) ([d568a9f](https://github.com/statusfy/statusfy/commit/d568a9f))
+* improve Gitpod port configuration ([35fa7f6](https://github.com/statusfy/statusfy/commit/35fa7f6))
+
+### Minor Features
+
+- **core:**  create Dutch translation ([ea626b4](https://github.com/bazzite/statusfy/commit/ea626b4)) [thanks to [@cafferata](https://github.com/cafferata)]
+
+
+
 ## [0.4.1](https://github.com/statusfy/statusfy/compare/v0.4.0...v0.4.1) (2019-06-27)
 
 
