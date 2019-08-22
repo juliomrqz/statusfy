@@ -30,6 +30,7 @@ const prepare = async () => {
     "invalid-subpath"
   ];
 
+  // eslint-disable-next-line no-unused-vars
   for (const key of testProjects) {
     const dest = path.join(tempPath, key);
     const configFile = path.resolve(

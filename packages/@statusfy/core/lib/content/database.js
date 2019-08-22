@@ -213,6 +213,7 @@ module.exports = async function database(siteConfig, finalDate) {
           };
         });
 
+        // eslint-disable-next-line no-unused-vars
         for (const incident of sortedIncidents) {
           const incidentDate = dates.parse(incident.date);
           const month = incidentDate.month() + 1;
@@ -248,9 +249,11 @@ module.exports = async function database(siteConfig, finalDate) {
 
       // Get incidents for each day in the range
       let order = 1;
+      // eslint-disable-next-line no-unused-vars
       for (const day of range.dates.reverse()) {
         const incidents = [];
 
+        // eslint-disable-next-line no-unused-vars
         for (const incident of sortedIncidents) {
           const incidentDate = dates.parse(incident.date);
           const difference = incidentDate.diff(day, "hours");
@@ -309,6 +312,7 @@ module.exports = async function database(siteConfig, finalDate) {
       siteConfig.content.systems.forEach(system => {
         const currentSystem = { name: system, status: "operational", order };
 
+        // eslint-disable-next-line no-unused-vars
         for (const severity of systemSeverities) {
           const unresolved = incidents[lang].filter(
             incident =>

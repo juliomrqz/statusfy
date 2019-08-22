@@ -67,6 +67,7 @@ export default {
     days() {
       const days = this.data.days.slice(0);
 
+      // eslint-disable-next-line no-unused-vars
       for (const day of days) {
         day.status = this.getDayStatus(day.incidents);
       }
@@ -81,7 +82,9 @@ export default {
 
       let statusKey = "operational";
 
+      // eslint-disable-next-line no-unused-vars
       for (const status of statuses.keys) {
+        // eslint-disable-next-line no-unused-vars
         for (const incident of incidents) {
           if (incident.severity === status) {
             statusKey = status;

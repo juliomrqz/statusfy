@@ -22,9 +22,9 @@
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
     "@statusfy/common": "0.4.1",
-    "markdown-it": "^9.0.0",
-    "markdown-it-container": "^2.0.0",
-    "markdown-it-emoji": "^1.4.0"
+    "markdown-it": "9.1.0",
+    "markdown-it-container": "2.0.0",
+    "markdown-it-emoji": "1.4.0"
   },
   "devDependencies": {
     "@statusfy/test-utils": "0.4.1"

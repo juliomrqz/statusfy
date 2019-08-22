@@ -35,6 +35,7 @@ describe("config:nuxt", () => {
       expect(path.isAbsolute(nuxtConfig.workbox.globDirectory)).toBeTruthy();
     }
 
+    // eslint-disable-next-line no-unused-vars
     for (const dir of nuxtConfig.modulesDir) {
       expect(isString(dir)).toBeTruthy();
     }

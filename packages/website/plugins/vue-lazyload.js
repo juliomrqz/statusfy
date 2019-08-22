@@ -1,4 +1,3 @@
-/* eslint-disable import/first */
 if (process.browser) {
   require('intersection-observer')
 }

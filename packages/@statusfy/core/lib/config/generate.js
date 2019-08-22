@@ -59,6 +59,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
 
   const validLogoExtension = ["png", "jpg", "jpeg", "gif", "svg"];
 
+  // eslint-disable-next-line no-unused-vars
   for (const ext of validLogoExtension) {
     const filePath = path.join(
       sourceDir,
@@ -203,6 +204,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
   ];
   const stylesPath = [];
 
+  // eslint-disable-next-line no-unused-vars
   for (const ext of validStylesExtension) {
     const filePath = path.join(sourceDir, "theme", "default", `style.${ext}`);
 

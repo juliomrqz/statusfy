@@ -41,6 +41,7 @@ module.exports = function loadConfig(sourceDir) {
   let errors = [];
 
   // resolve configContent
+  // eslint-disable-next-line no-unused-vars
   for (const configFile of configFiles) {
     const configPath = path.join(sourceDir, configFile);
 

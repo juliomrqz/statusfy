@@ -31,7 +31,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@nuxtjs/opencollective": "^0.2.0",
+    "@nuxtjs/opencollective": "0.2.2",
     "@statusfy/cli": "0.4.1",
     "@statusfy/core": "0.4.1",
     "@statusfy/editor": "0.4.1"

@@ -136,6 +136,7 @@ module.exports = async function Statusfy() {
       statusfyOptions.siteConfig.notifications &&
       statusfyOptions.siteConfig.notifications.feeds
     ) {
+      // eslint-disable-next-line no-unused-vars
       for (const locale of statusfyOptions.locales) {
         const feeds = await createFeeds(
           statusfyOptions.siteConfig,
@@ -172,6 +173,7 @@ module.exports = async function Statusfy() {
       statusfyOptions.siteConfig.notifications &&
       statusfyOptions.siteConfig.notifications.icalendar
     ) {
+      // eslint-disable-next-line no-unused-vars
       for (const locale of statusfyOptions.locales) {
         const lang = locale.code;
         const calPath = path.join(

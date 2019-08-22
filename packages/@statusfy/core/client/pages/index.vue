@@ -65,6 +65,7 @@ export default {
 
       let statusKey = "operational";
 
+      // eslint-disable-next-line no-unused-vars
       for (const status of statuses.keys) {
         if (this.systems.find(system => system.status === status)) {
           statusKey = status;
