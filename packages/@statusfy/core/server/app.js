@@ -10,6 +10,15 @@ const feeds = require("./extra/feeds");
 const calendar = require("./extra/calendar");
 const buildApiRouter = require("./api");
 
+/**
+ * Create the base Server App
+ *
+ * @param {Object} siteConfig - User Site Configuration.
+ * @param {import("@nuxt/types").Configuration} nuxtConfig - Nuxt Configuration.
+ * @param {string} host - Server Host.
+ * @param {string} port - Server Port.
+ * @param {string} [apiPrefix=""] - API prefix.
+ */
 module.exports = async function createApp(
   siteConfig,
   nuxtConfig,

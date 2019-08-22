@@ -18,7 +18,10 @@ if (process.env.STATUSFY_LERNA) {
   );
 }
 
-module.exports = {
+/**
+ * @type { import("@nuxt/types").Configuration }
+ */
+const config = {
   srcDir: path.join(__dirname, "./client/"),
   modulesDir,
   mode: "universal",
@@ -199,3 +202,5 @@ module.exports = {
     sizes: iconSizes
   }
 };
+
+module.exports = config

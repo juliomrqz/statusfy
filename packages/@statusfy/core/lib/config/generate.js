@@ -7,6 +7,9 @@ const loadConfig = require("./load");
 const { colors } = style;
 
 module.exports = function generateConfig(sourceDir, cliOptions) {
+  /**
+   * @type { import("@nuxt/types").Configuration }
+   */
   const nuxtConfig = Object.assign(
     {},
     esm(path.join(__dirname, "../../nuxt.config.js"))

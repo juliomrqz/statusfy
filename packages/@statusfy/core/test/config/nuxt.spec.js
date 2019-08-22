@@ -14,6 +14,9 @@ describe("config:nuxt", () => {
     const sourceDir = path.resolve(tempPath, label);
 
     const generatedConfig = generateConfig(sourceDir, {});
+    /**
+     * @type { import("@nuxt/types").Configuration }
+     */
     let nuxtConfig = generatedConfig.nuxtConfig;
 
     // Check absolute dirs
