@@ -34,7 +34,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.21",
+    "@fortawesome/fontawesome-svg-core": "1.2.22",
     "@nuxtjs/axios": "5.6.0",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
     "@nuxtjs/pwa": "3.0.0-beta.16",
