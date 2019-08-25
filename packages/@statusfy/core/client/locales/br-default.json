@@ -5,7 +5,9 @@
     "contact": "Contato",
     "support": "Suporte",
     "home": "Home",
-    "powered-by": "Powered by"
+    "powered-by": "Powered by",
+    "legal": "Aviso legal",
+    "privacy": "Protección de datos"
   },
   "statuses": {
     "under-maintenance": "Em Manutenção",

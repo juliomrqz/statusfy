@@ -86,4 +86,4 @@ You can define static files in the `public/` directory that will be mapped to th
 
 ## Links
 
-The external links located at the footer of each page can be customize. There only three links you can define: `home`, `contact`, and `support`. More information in the [Config Reference Guide](../config/README.md#links).
+The external links located at the footer of each page can be customize. There only three links you can define: `home`, `contact`, `support`, `legal` and `privacy`. More information in the [Config Reference Guide](../config/README.md#links).

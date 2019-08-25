@@ -5,7 +5,9 @@
     "contact": "Kapcsolat",
     "support": "Támogatás",
     "home": "Főoldal",
-    "powered-by": "Üzemelteti"
+    "powered-by": "Üzemelteti",
+    "legal": "Impresszum",
+    "privacy": "Adatvédelem"
   },
   "statuses": {
     "under-maintenance": "Karbantartás alatt",

@@ -49,7 +49,13 @@ export default {
   computed: {
     links() {
       const $t = this.$t.bind(this);
-      const allowedLinksKeys = ["home", "contact", "support"];
+      const allowedLinksKeys = [
+        "home",
+        "contact",
+        "support",
+        "privacy",
+        "legal"
+      ];
       const themeLinks = get(this.$statusfy, ["theme", "links"]);
       const links = {};
 
