@@ -52,7 +52,7 @@
     "feed": "4.0.0",
     "helmet": "3.20.0",
     "ics": "2.16.0",
-    "inquirer": "6.5.1",
+    "inquirer": "7.0.0",
     "locale-code": "2.0.2",
     "lodash.clonedeepwith": "4.5.0",
     "lodash.drop": "4.1.1",
