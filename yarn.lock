@@ -2554,7 +2554,7 @@
     serve-static "^1.14.1"
     server-destroy "^1.0.1"
 
-"@nuxt/types@^0.2.5":
+"@nuxt/types@0.2.5":
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.2.5.tgz#d75bab75a55021bb16e9921ed2b625a88326d65b"
   integrity sha512-PWIScKe/2E/HqcVAxrNH1FSoRJSifH63dtR9BEfxOHR2p2sOBE/iHPBLPWC5wyHUN44Cx0Evou0LWhjoAio8CQ==
