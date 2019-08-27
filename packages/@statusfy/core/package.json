@@ -78,7 +78,7 @@
     "babel-eslint": "10.0.2",
     "eslint": "6.2.1",
     "eslint-config-prettier": "6.1.0",
-    "eslint-config-standard": "14.0.0",
+    "eslint-config-standard": "14.1.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "22.15.2",
     "eslint-plugin-node": "9.1.0",
