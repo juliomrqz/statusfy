@@ -25,7 +25,7 @@
     "chalk": "2.4.2",
     "consola": "2.10.1",
     "cssnano": "4.1.10",
-    "dayjs": "1.8.15",
+    "dayjs": "1.8.16",
     "esm": "3.2.25",
     "fs-extra": "8.1.0",
     "gray-matter": "4.0.2",
