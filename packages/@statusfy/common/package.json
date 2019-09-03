@@ -40,7 +40,7 @@
     "tailwindcss": ">=0.7 <1",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
-    "upath": "1.1.2",
+    "upath": "1.2.0",
     "validator": "11.1.0",
     "yaml": "1.6.0"
   }
