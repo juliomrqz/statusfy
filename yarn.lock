@@ -3623,11 +3623,6 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-acorn-dynamic-import@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-4.0.0.tgz#482210140582a36b83c3e342e1cfebcaa9240948"
-  integrity sha512-d3OEjQV4ROpoflsnUA8HozoIR504TFxNivYEUi6uwz0IYhBkTDXGuWlNdMtybRt3nqVx/L6XqMt0FxkXuWKZhw==
-
 acorn-globals@^4.1.0:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-4.3.3.tgz#a86f75b69680b8780d30edd21eee4e0ea170c05e"
@@ -3645,11 +3640,6 @@ acorn-walk@^6.0.1, acorn-walk@^6.1.1:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-6.2.0.tgz#123cb8f3b84c2171f1f7fb252615b1c78a6b1a8c"
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
-
-acorn-walk@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-7.0.0.tgz#c8ba6f0f1aac4b0a9e32d1f0af12be769528f36b"
-  integrity sha512-7Bv1We7ZGuU79zZbb6rRqcpxo3OY+zrdtloZWoyD8fmGX+FeXRjE+iuGkZjSXLVovLzrsvMGMy0EkwA0E0umxg==
 
 acorn@^5.5.3:
   version "5.7.3"
@@ -12149,15 +12139,14 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-i18n@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.1.1.tgz#f496b1281e63ab5eb92fb22fc384b764122dc3b4"
-  integrity sha512-FzOFWCacbknPvu0r5/5fLOhhdxv4i3HLJEufeHxGb1VzHuMhSw85VZgQUdGiRacDFBYUAeE7iQTGo1GBaNUX2w==
+nuxt-i18n@6.1.3:
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.1.3.tgz#1441583edeb0b8ba4a05d6fb14afd607982aaa9b"
+  integrity sha512-6+J0xstBUXmyDyYEo2xOob9FfwjUXY1h5kEMajEi41un6i39HedfLMRPhY02s+jSv1iqflfq3kdYxAkR53E9Hw==
   dependencies:
+    "@babel/parser" "^7.5.5"
+    "@babel/traverse" "^7.5.5"
     "@kazupon/vue-i18n-loader" "^0.4.0"
-    acorn "^7.0.0"
-    acorn-dynamic-import "^4.0.0"
-    acorn-walk "^7.0.0"
     cookie "^0.4.0"
     is-https "^1.0.0"
     js-cookie "^2.2.0"
