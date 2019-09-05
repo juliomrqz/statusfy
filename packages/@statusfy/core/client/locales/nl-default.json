@@ -5,7 +5,9 @@
     "contact": "Contact",
     "support": "Support",
     "home": "Startpagina",
-    "powered-by": "Powered by"
+    "powered-by": "Powered by",
+    "legal": "Impressum",
+    "privacy": "Gegevensbescherming"
   },
   "statuses": {
     "under-maintenance": "In onderhoud",

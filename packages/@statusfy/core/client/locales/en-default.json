@@ -5,7 +5,9 @@
     "contact": "Contact",
     "support": "Support",
     "home": "Home",
-    "powered-by": "Powered by"
+    "powered-by": "Powered by",
+    "legal": "Legal Notice",
+    "privacy": "Data Privacy"
   },
   "statuses": {
     "under-maintenance": "Under Maintenance",

@@ -82,7 +82,7 @@ Define the position of the Section **Scheduled Maintenance** in the home page. T
 - Type: `Object`
 - Default: `{}`
 
-The external links located at the Footer of each page. There only three links you can define: `home`, `contact`, and `support` and must be used the language code as the index of the object. For example:
+The external links located at the Footer of each page. There only three links you can define: `home`, `contact`, `support`, `legal` and `privacy` and must be used the language code as the index of the object. For example:
 
 ```json
 module.exports = {
@@ -91,12 +91,16 @@ module.exports = {
       en: {
         contact: "https://statusfy.co/contact",
         support: "https://statusfy.co/support",
-        home: "https://statusfy.co"
+        home: "https://statusfy.co",
+        privacy: "https://statusfy.co/data-privacy",
+        legal: "https://statusfy.co/legal"
       },
       es: {
         contact: "https://statusfy.co/es/contact",
         support: "https://statusfy.co/es/support",
-        home: "https://statusfy.co/es"
+        home: "https://statusfy.co/es",
+        privacy: "https://statusfy.co/es/data-privacy",
+        legal: "https://statusfy.co/es/legal"
       }
     }
   }
