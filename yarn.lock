@@ -2556,10 +2556,10 @@
     serve-static "^1.14.1"
     server-destroy "^1.0.1"
 
-"@nuxt/types@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.2.7.tgz#d2b28542db36900d7a71613f2a5d4557f641ea60"
-  integrity sha512-lwCZRvulBSIkapLi6KiLO+M2XM3fUIZXYwMLzZhxXLLUOl4JMPgyyHIQqOZz3zHVpkvrU5Cw8G6s7H+6fyPHYg==
+"@nuxt/types@0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.2.11.tgz#a7bd4b51de50e86a2d1e2581a82a784872053aa9"
+  integrity sha512-amPwYCAK5SMqjy8+5rrExX8iDPxqvF0yFOZAJFJybBFdjZ9S0H7vqDtKFaVjEv1bN+tJe8bE2fZYR3wG8ZyBkg==
   dependencies:
     "@types/babel__core" "^7.1.3"
     "@types/compression" "^1.0.1"
