@@ -65,7 +65,7 @@
     "eslint-plugin-jest": "22.15.2",
     "eslint-plugin-vue": "5.2.3",
     "glob-promise": "3.4.0",
-    "husky": "3.0.4",
+    "husky": "3.0.5",
     "jest": "24.9.0",
     "jest-serializer-vue": "2.0.2",
     "lerna": "3.16.4",
