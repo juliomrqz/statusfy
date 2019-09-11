@@ -58,7 +58,7 @@
     "markdown-it-github-headings": "1.1.1",
     "markdown-it-inline-comments": "1.0.1",
     "markdown-it-link-attributes": "2.1.0",
-    "markdown-it-prism": "2.0.2",
+    "markdown-it-prism": "2.0.3",
     "prettier": "1.18.2"
   },
   "engines": {
