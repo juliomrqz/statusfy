@@ -6398,10 +6398,10 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@1.30.1:
-  version "1.30.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
-  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+date-fns@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.2.1.tgz#b3f79cf56760af106050c686f4c72586a3383ee9"
+  integrity sha512-4V1i5CnTinjBvJpXTq7sDHD4NY6JPcl15112IeSNNLUWQOQ+kIuCvRGOFZMQZNvkadw8F9QTyZxz59rIRU6K+w==
 
 date-now@^0.1.4:
   version "0.1.4"

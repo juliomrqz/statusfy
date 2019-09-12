@@ -26,7 +26,7 @@
     "@statusfy/common": "0.4.3",
     "animate.css": "3.7.2",
     "consola": "2.10.1",
-    "date-fns": "1.30.1",
+    "date-fns": "2.2.1",
     "github-markdown-css": "3.0.1",
     "intersection-observer": "0.7.0",
     "nuxt": "2.9.2",
