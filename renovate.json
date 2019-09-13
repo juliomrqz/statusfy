@@ -1,11 +1,8 @@
 {
   "extends": [
-    "config:base"
+    "@nuxtjs"
   ],
-  "timezone": "America/New_York",
-  "schedule": [
-    "after 10pm every weekday",
-    "before 6am every weekday",
-    "every weekend"
-  ]
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
