@@ -61,7 +61,7 @@
     "conventional-changelog-cli": "2.0.23",
     "cross-env": "6.0.0",
     "eslint": "6.2.1",
-    "eslint-loader": "2.2.1",
+    "eslint-loader": "3.0.2",
     "eslint-plugin-jest": "22.15.2",
     "eslint-plugin-vue": "5.2.3",
     "glob-promise": "3.4.0",
