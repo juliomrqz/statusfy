@@ -57,7 +57,7 @@
     "markdown-it-attrs": "3.0.1",
     "markdown-it-github-headings": "1.1.1",
     "markdown-it-inline-comments": "1.0.1",
-    "markdown-it-link-attributes": "2.1.0",
+    "markdown-it-link-attributes": "3.0.0",
     "markdown-it-prism": "2.0.2",
     "prettier": "1.18.2"
   },

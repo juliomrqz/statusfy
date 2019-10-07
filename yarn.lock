@@ -11364,10 +11364,10 @@ markdown-it-inline-comments@1.0.1:
   resolved "https://registry.yarnpkg.com/markdown-it-inline-comments/-/markdown-it-inline-comments-1.0.1.tgz#176eabe631a3e08125bd739500f43c51f525896d"
   integrity sha1-F26r5jGj4IElvXOVAPQ8UfUliW0=
 
-markdown-it-link-attributes@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-2.1.0.tgz#32a74c94f7c5cdfd08868d2bee29c6fa70a08324"
-  integrity sha1-MqdMlPfFzf0Iho0r7inG+nCggyQ=
+markdown-it-link-attributes@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-3.0.0.tgz#12d6f403102ac22695ee2617bec109ee79426e45"
+  integrity sha512-B34ySxVeo6MuEGSPCWyIYryuXINOvngNZL87Mp7YYfKIf6DcD837+lXA8mo6EBbauKsnGz22ZH0zsbOiQRWTNg==
 
 markdown-it-prism@2.0.2:
   version "2.0.2"
