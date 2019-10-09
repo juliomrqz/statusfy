@@ -42,7 +42,7 @@
     "@bazzite/nuxt-optimized-images": "0.2.1",
     "@wordpress/wordcount": "2.6.0",
     "babel-eslint": "10.0.3",
-    "cross-spawn": "6.0.5",
+    "cross-spawn": "7.0.1",
     "css-loader": "3.2.0",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-prettier": "3.1.0",
