@@ -29,7 +29,7 @@
     "date-fns": "1.30.1",
     "github-markdown-css": "3.0.1",
     "intersection-observer": "0.7.0",
-    "nuxt": "2.10.0",
+    "nuxt": "2.10.1",
     "nuxt-i18n": "6.3.0",
     "vue-lazyload": "1.3.3",
     "vue-scrollto": "2.17.1",
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@bazzite/nuxt-netlify": "0.1.1",
     "@bazzite/nuxt-optimized-images": "0.2.1",
-    "@wordpress/wordcount": "2.6.1",
+    "@wordpress/wordcount": "2.6.2",
     "babel-eslint": "10.0.3",
     "cross-spawn": "7.0.1",
     "css-loader": "3.2.0",
