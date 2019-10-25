@@ -45,6 +45,6 @@
     "markdown-it-imsize": "2.0.1",
     "vuepress-plugin-reading-time": "0.1.1",
     "vuepress-plugin-seo": "0.1.2",
-    "vuepress-plugin-sitemap": "2.1.2"
+    "vuepress-plugin-sitemap": "2.3.0"
   }
 }
