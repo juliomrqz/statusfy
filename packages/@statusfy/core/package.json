@@ -46,8 +46,8 @@
     "cross-env": "6.0.3",
     "cross-spawn": "7.0.1",
     "css-loader": "3.2.0",
-    "dayjs": "1.8.16",
-    "dot-prop": "5.1.1",
+    "dayjs": "1.8.17",
+    "dot-prop": "5.2.0",
     "express": "4.17.1",
     "feed": "4.0.0",
     "helmet": "3.21.2",
@@ -61,7 +61,7 @@
     "lodash.sortby": "4.7.0",
     "nodemon": "1.19.4",
     "nuxt": "2.10.2",
-    "nuxt-i18n": "6.3.0",
+    "nuxt-i18n": "6.3.1",
     "opener": "1.5.1",
     "portfinder": "1.0.25",
     "sitemap": "3.2.2",
@@ -71,16 +71,16 @@
     "vue-svgicon": "3.2.6"
   },
   "devDependencies": {
-    "@nuxt/types": "0.3.2",
+    "@nuxt/types": "0.3.4",
     "@nuxtjs/eslint-config": "1.1.2",
     "@statusfy/test-utils": "0.4.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.3",
-    "eslint": "6.5.1",
-    "eslint-config-prettier": "6.4.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.5.0",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jest": "22.20.0",
+    "eslint-plugin-jest": "22.21.0",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-prettier": "3.1.1",
     "eslint-plugin-promise": "4.2.1",
@@ -88,6 +88,6 @@
   },
   "engines": {
     "node": ">=8.10",
-    "npm": ">=6.12.0"
+    "npm": ">=6.13.0"
   }
 }
