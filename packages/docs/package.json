@@ -39,12 +39,12 @@
     "@vuepress/plugin-google-analytics": "1.2.0",
     "@vuepress/plugin-pwa": "1.2.0",
     "axios": "0.19.0",
-    "consola": "2.10.1",
+    "consola": "2.11.0",
     "fs-extra": "8.1.0",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "2.0.1",
     "vuepress-plugin-reading-time": "0.1.1",
     "vuepress-plugin-seo": "0.1.2",
-    "vuepress-plugin-sitemap": "2.3.0"
+    "vuepress-plugin-sitemap": "2.3.1"
   }
 }
