@@ -63,7 +63,7 @@
     "eslint": "6.5.1",
     "eslint-loader": "3.0.2",
     "eslint-plugin-jest": "22.20.0",
-    "eslint-plugin-vue": "5.2.3",
+    "eslint-plugin-vue": "6.0.1",
     "glob-promise": "3.4.0",
     "husky": "3.0.9",
     "jest": "24.9.0",
