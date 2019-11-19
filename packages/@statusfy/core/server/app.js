@@ -51,7 +51,7 @@ module.exports = async function createApp(
     );
   }
 
-  app.use(cors());
+  app.use(!siteConfig.corsOptions ? cors() : cors(siteConfig.corsOptions));
   // parse application/json
   app.use(bodyParser.json());
   app.use(language);

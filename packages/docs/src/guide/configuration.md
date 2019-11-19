@@ -60,6 +60,9 @@ module.exports = {
   title: 'Title',
   description: 'Description',
   baseUrl: 'https://demo.statusfy.co',
+  corsOptions: {
+    origin: '*'
+  },
   analytics: {
     ga: 'UA-XXXXXXXXX-Y',
   },
@@ -89,3 +92,5 @@ module.exports = {
   }
 }
 ```
+
+The `corsOptions` setting is optional and allows you to set CORS headers for custom routes if you ever need to use the Statusfy API. The above example just adds a wildcard, so all IPs can be used to access the API. For more information on setting up the correct CORS options, check out Express' official documentation [here](https://expressjs.com/en/resources/middleware/cors.html).
