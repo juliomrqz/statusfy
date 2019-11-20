@@ -59,7 +59,7 @@
     "lodash.get": "4.4.2",
     "lodash.isstring": "4.0.1",
     "lodash.sortby": "4.7.0",
-    "nodemon": "1.19.4",
+    "nodemon": "2.0.0",
     "nuxt": "2.10.2",
     "nuxt-i18n": "6.3.1",
     "opener": "1.5.1",
