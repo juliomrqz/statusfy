@@ -130,6 +130,19 @@ export default {
     DynamicMarkdown
   },
   mixins: [FormatDate],
+  async asyncData({ app, params }) {
+    const { slug } = params
+    const { vue, attributes, html } = await app.$blog.getArticle(slug, app.i18n.locale)
+
+    return {
+      html,
+      attributes,
+      title: `${attributes.title} - ${app.i18n.t('blog.title')}`,
+      description: attributes.description,
+      renderFunc: vue.render,
+      staticRenderFuncs: vue.staticRenderFns
+    }
+  },
   computed: {
     postAbsoluteUrl() {
       const prefix = this.$i18n.locale === 'es' ? '/es' : ''
@@ -150,19 +163,6 @@ export default {
       } else {
         return 'https://spectrum.chat/bazzite/statusfy'
       }
-    }
-  },
-  async asyncData({ app, params }) {
-    const { slug } = params
-    const { vue, attributes, html } = await app.$blog.getArticle(slug, app.i18n.locale)
-
-    return {
-      html,
-      attributes,
-      title: `${attributes.title} - ${app.i18n.t('blog.title')}`,
-      description: attributes.description,
-      renderFunc: vue.render,
-      staticRenderFuncs: vue.staticRenderFns
     }
   },
   head() {

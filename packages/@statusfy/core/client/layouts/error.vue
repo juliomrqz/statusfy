@@ -28,21 +28,6 @@ export default {
       required: true
     }
   },
-  head() {
-    return {
-      htmlAttrs: {
-        lang: this.$i18n.locale
-      },
-      title: this.title,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.description
-        }
-      ]
-    };
-  },
   computed: {
     title() {
       const $t = this.$t.bind(this);
@@ -58,6 +43,21 @@ export default {
         ? $t("error.404.description")
         : $t("error.other.description");
     }
+  },
+  head() {
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.locale
+      },
+      title: this.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.description
+        }
+      ]
+    };
   }
 };
 </script>

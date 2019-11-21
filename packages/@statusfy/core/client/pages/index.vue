@@ -58,6 +58,15 @@ export default {
     SystemStatus,
     Scheduled
   },
+  async asyncData({ app }) {
+    const api = new API(app.$axios, app.i18n.locale);
+
+    const systems = await api.getSystems();
+    const timelineData = await api.getIncidentsTimeline();
+    const scheduled = await api.getScheduled();
+
+    return { systems, timelineData, scheduled };
+  },
   computed: {
     status() {
       const $t = this.$t.bind(this);
@@ -79,15 +88,6 @@ export default {
         key: statusKey
       };
     }
-  },
-  async asyncData({ app }) {
-    const api = new API(app.$axios, app.i18n.locale);
-
-    const systems = await api.getSystems();
-    const timelineData = await api.getIncidentsTimeline();
-    const scheduled = await api.getScheduled();
-
-    return { systems, timelineData, scheduled };
   },
   head() {
     const $t = this.$t.bind(this);
