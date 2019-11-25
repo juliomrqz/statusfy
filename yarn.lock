@@ -7052,9 +7052,9 @@ ejs@^2.6.1:
   integrity sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
 
 electron-to-chromium@^1.3.306:
-  version "1.3.313"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.313.tgz#6c63d8698ec4193b7e51e28531c47c88f1104579"
-  integrity sha512-rWbB6P3kPpWez/BZqrVatQ+lxJaDTv9pWgUUGYAA0/O5+YZLm6RiGy2Roml6rQj4EJ4r/eTdO0ppOZUUP2oFpQ==
+  version "1.3.314"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.314.tgz#c186a499ed2c9057bce9eb8dca294d6d5450facc"
+  integrity sha512-IKDR/xCxKFhPts7h+VaSXS02Z1mznP3fli1BbXWXeN89i2gCzKraU8qLpEid8YzKcmZdZD3Mly3cn5/lY9xsBQ==
 
 elliptic@^6.0.0:
   version "6.5.2"
@@ -7250,22 +7250,22 @@ error-stack-parser@^2.0.0:
     stackframe "^1.1.0"
 
 es-abstract@^1.12.0, es-abstract@^1.5.1, es-abstract@^1.7.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.16.0.tgz#d3a26dc9c3283ac9750dca569586e976d9dcc06d"
-  integrity sha512-xdQnfykZ9JMEiasTAJZJdMWCQ1Vm00NBw79/AWi7ELfZuuPCSOMDZbT9mkOfSctVtfhb+sAAzrm+j//GjjLHLg==
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.16.1.tgz#9edab53bec49b7d9cd513983520ed99703216a8a"
+  integrity sha512-38Pa/Asg/9i3Gkgj1oAK0WfWDv03ngRV39qgHdMSJZ23AAAWRKFJuwT5QPtCDg7paIWG1OEpt4QnzDFVXfJIAQ==
   dependencies:
-    es-to-primitive "^1.2.0"
+    es-to-primitive "^1.2.1"
     function-bind "^1.1.1"
     has "^1.0.3"
-    has-symbols "^1.0.0"
+    has-symbols "^1.0.1"
     is-callable "^1.1.4"
     is-regex "^1.0.4"
-    object-inspect "^1.6.0"
+    object-inspect "^1.7.0"
     object-keys "^1.1.1"
     string.prototype.trimleft "^2.1.0"
     string.prototype.trimright "^2.1.0"
 
-es-to-primitive@^1.2.0:
+es-to-primitive@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.2.1.tgz#e55cd4c9cdc188bcefb03b366c736323fc5c898a"
   integrity sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==
@@ -7889,9 +7889,9 @@ extglob@^2.0.4:
     to-regex "^3.0.1"
 
 extract-css-chunks-webpack-plugin@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/extract-css-chunks-webpack-plugin/-/extract-css-chunks-webpack-plugin-4.6.0.tgz#961d02dc5cb7b265c8aa19fdbcc4031a4006ca95"
-  integrity sha512-HbTh4Yd0JYXbqOgtd/o/BNuLs/fL7h7bM9mCg/WZqKNE65B586Vzs+erzTGuU2xnp5B4gOQbHgC6MrmRVah1Nw==
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/extract-css-chunks-webpack-plugin/-/extract-css-chunks-webpack-plugin-4.7.0.tgz#c6d3bb7d13fbce464f8ff6a4256828248f37c0eb"
+  integrity sha512-6ITFBpKN4SkZ+R/JYBF/I+EmdU0nc8VfpkHQgd/aHojVKR5RfK3/ElaZvOUKMZ7ijIa+bpaBxbuCSoIwcXfduA==
   dependencies:
     loader-utils "^1.1.0"
     normalize-url "1.9.1"
@@ -12590,7 +12590,7 @@ object-hash@^1.3.1:
   resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-1.3.1.tgz#fde452098a951cb145f039bb7d455449ddc126df"
   integrity sha512-OSuu/pU4ENM9kmREg0BdNrUDIl1heYa4mBZacJc+vVWz4GtAwu7jO8s4AIt2aGRUTqxykpWzI3Oqnsm13tTMDA==
 
-object-inspect@^1.6.0:
+object-inspect@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.7.0.tgz#f4f6bd181ad77f006b5ece60bd0b6f398ff74a67"
   integrity sha512-a7pEHdh1xKIAgTySUGgLMx/xwDZskN1Ud6egYYN3EdRW4ZMPNEDUTF+hwy2LUC+Bl+SyLXANnwz/jyh/qutKUw==
