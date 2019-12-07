@@ -20,7 +20,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.25",
     "@nuxtjs/axios": "5.8.0",
-    "@nuxtjs/google-analytics": "2.2.1",
+    "@nuxtjs/google-analytics": "2.2.2",
     "@nuxtjs/pwa": "3.0.0-beta.19",
     "@nuxtjs/sitemap": "2.0.1",
     "@statusfy/common": "0.4.4-alpha.0",
@@ -30,20 +30,20 @@
     "github-markdown-css": "3.0.1",
     "intersection-observer": "0.7.0",
     "nuxt": "2.10.2",
-    "nuxt-i18n": "6.4.0",
+    "nuxt-i18n": "6.4.1",
     "vue-lazyload": "1.3.3",
     "vue-scrollto": "2.17.1",
-    "vue-social-sharing": "2.4.6",
+    "vue-social-sharing": "2.4.7",
     "vue-svgicon": "3.2.6",
     "webfontloader": "1.6.28"
   },
   "devDependencies": {
     "@bazzite/nuxt-netlify": "0.1.1",
-    "@bazzite/nuxt-optimized-images": "0.2.1",
+    "@bazzite/nuxt-optimized-images": "0.2.2",
     "@wordpress/wordcount": "2.6.2",
     "babel-eslint": "10.0.3",
     "cross-spawn": "7.0.1",
-    "css-loader": "3.2.0",
+    "css-loader": "3.2.1",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-prettier": "3.1.1",
     "front-matter": "3.0.2",
@@ -59,7 +59,7 @@
     "markdown-it-inline-comments": "1.0.1",
     "markdown-it-link-attributes": "3.0.0",
     "markdown-it-prism": "2.0.3",
-    "prettier": "1.16.4"
+    "prettier": "1.19.1"
   },
   "engines": {
     "node": ">=8.10"

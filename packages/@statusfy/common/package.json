@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
-    "autoprefixer": "9.7.2",
+    "autoprefixer": "9.7.3",
     "chalk": "3.0.0",
     "consola": "2.11.0",
     "cssnano": "4.1.10",
