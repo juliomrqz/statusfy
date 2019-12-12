@@ -18,7 +18,7 @@
     "svg": "vsvg -s ./assets/icons -t ./components/icons --es6"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.25",
+    "@fortawesome/fontawesome-svg-core": "1.2.26",
     "@nuxtjs/axios": "5.8.0",
     "@nuxtjs/google-analytics": "2.2.2",
     "@nuxtjs/pwa": "3.0.0-beta.19",
@@ -43,7 +43,7 @@
     "@wordpress/wordcount": "2.6.2",
     "babel-eslint": "10.0.3",
     "cross-spawn": "7.0.1",
-    "css-loader": "3.2.1",
+    "css-loader": "3.3.2",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-prettier": "3.1.1",
     "front-matter": "3.0.2",

@@ -34,7 +34,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.25",
+    "@fortawesome/fontawesome-svg-core": "1.2.26",
     "@nuxtjs/axios": "5.8.0",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
     "@nuxtjs/pwa": "3.0.0-beta.19",
@@ -45,7 +45,7 @@
     "cors": "2.8.5",
     "cross-env": "6.0.3",
     "cross-spawn": "7.0.1",
-    "css-loader": "3.2.1",
+    "css-loader": "3.3.2",
     "dayjs": "1.8.17",
     "dot-prop": "5.2.0",
     "express": "4.17.1",
@@ -59,7 +59,7 @@
     "lodash.get": "4.4.2",
     "lodash.isstring": "4.0.1",
     "lodash.sortby": "4.7.0",
-    "nodemon": "2.0.1",
+    "nodemon": "2.0.2",
     "nuxt": "2.10.2",
     "nuxt-i18n": "6.4.1",
     "opener": "1.5.1",
@@ -71,7 +71,7 @@
     "vue-svgicon": "3.2.6"
   },
   "devDependencies": {
-    "@nuxt/types": "0.5.3",
+    "@nuxt/types": "0.5.6",
     "@nuxtjs/eslint-config": "2.0.0",
     "@statusfy/test-utils": "0.4.3",
     "babel-core": "7.0.0-bridge.0",
@@ -79,7 +79,7 @@
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.7.0",
     "eslint-config-standard": "14.1.0",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-import": "2.19.1",
     "eslint-plugin-jest": "23.1.1",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-prettier": "3.1.1",
@@ -88,6 +88,6 @@
   },
   "engines": {
     "node": ">=8.10",
-    "npm": ">=6.13.2"
+    "npm": ">=6.13.4"
   }
 }
