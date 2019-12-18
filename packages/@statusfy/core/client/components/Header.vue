@@ -8,9 +8,9 @@
       {{ $t("title") }}
     </component>
 
-    <no-ssr>
+    <client-only>
       <Subscribe v-if="displaySubscribe" class="subscribe-container" />
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
