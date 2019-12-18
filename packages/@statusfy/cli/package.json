@@ -1,6 +1,6 @@
 {
   "name": "@statusfy/cli",
-  "version": "0.5.0-alpha.1",
+  "version": "0.5.0",
   "description": "CLI for Statusfy",
   "main": "index.js",
   "publishConfig": {
@@ -25,8 +25,8 @@
     "semver": "7.1.1"
   },
   "peerDependencies": {
-    "@statusfy/common": "0.5.0-alpha.1",
-    "@statusfy/core": "0.5.0-alpha.1",
-    "@statusfy/editor": "0.5.0-alpha.1"
+    "@statusfy/common": "0.5.0",
+    "@statusfy/core": "0.5.0",
+    "@statusfy/editor": "0.5.0"
   }
 }
