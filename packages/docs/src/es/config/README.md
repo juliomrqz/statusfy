@@ -1,7 +1,7 @@
 ---
 title: Referencia de Configuración
 description: Referencia de Configuración de Statusfy.
-date: 2018-10-12T17:28:04Z
+date: 2019-12-18T22:44:31Z
 sidebar: auto
 sidebarDepth: 2
 ---
@@ -91,12 +91,16 @@ module.exports = {
       es: {
         contact: "https://statusfy.co/es/contact",
         support: "https://statusfy.co/es/support",
-        home: "https://statusfy.co/es"
+        home: "https://statusfy.co/es",
+        privacy: "https://statusfy.co/es/data-privacy",
+        legal: "https://statusfy.co/es/legal"
       },
       en: {
         contact: "https://statusfy.co/contact",
         support: "https://statusfy.co/support",
-        home: "https://statusfy.co"
+        home: "https://statusfy.co",
+        privacy: "https://statusfy.co/data-privacy",
+        legal: "https://statusfy.co/legal"
       }
     }
   }
