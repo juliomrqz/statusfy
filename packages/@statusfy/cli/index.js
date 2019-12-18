@@ -1,6 +1,6 @@
 // Inspired on https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/cli/index.js
 const program = require('commander')
-const semver = require('semver')
+const satisfies = require('semver/functions/satisfies')
 const { chalk, path } = require('@statusfy/common')
 
 const packageError = (name) => {
@@ -28,7 +28,7 @@ try {
 const pkg = require('@statusfy/core/package.json')
 const requiredVersion = pkg.engines.node
 
-if (!semver.satisfies(process.version, requiredVersion)) {
+if (!satisfies(process.version, requiredVersion)) {
   console.log(chalk.red(
     `Minimum Node version not met:\n` +
     `You are using Node ${process.version}, ` +

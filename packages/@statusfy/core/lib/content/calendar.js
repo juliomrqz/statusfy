@@ -62,9 +62,7 @@ module.exports = async function calendar(siteConfig, lang) {
 
     value = value.replace(
       `PRODID:${productId}`,
-      `PRODID:${productId}\nNAME:${siteConfig.title}\nX-WR-CALNAME:${
-        siteConfig.title
-      }\nTIMEZONE-ID:UTC\nX-WR-TIMEZONE:UTC`
+      `PRODID:${productId}\nNAME:${siteConfig.title}\nX-WR-CALNAME:${siteConfig.title}\nTIMEZONE-ID:UTC\nX-WR-TIMEZONE:UTC`
     );
 
     return value;

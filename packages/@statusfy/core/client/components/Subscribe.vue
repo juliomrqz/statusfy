@@ -142,17 +142,11 @@ export default {
       return results;
     },
     icalendarUrl() {
-      return `webcal://${window.location.hostname}/calendars/scheduled.${
-        this.$i18n.locale
-      }.ics`;
+      return `webcal://${window.location.hostname}/calendars/scheduled.${this.$i18n.locale}.ics`;
     },
     feedsUrls() {
-      const atom = `//${window.location.hostname}/feeds/incidents.${
-        this.$i18n.locale
-      }.atom`;
-      const rss = `//${window.location.hostname}/feeds/incidents.${
-        this.$i18n.locale
-      }.xml`;
+      const atom = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.atom`;
+      const rss = `//${window.location.hostname}/feeds/incidents.${this.$i18n.locale}.xml`;
 
       return {
         atom,

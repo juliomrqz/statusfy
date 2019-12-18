@@ -16,6 +16,7 @@
         <template v-if="collapsed">
           + {{ $t("incidents.collapse.show", { count: incidents.length }) }}
         </template>
+        <!-- eslint-disable-next-line prettier/prettier -->
         <template v-else>
           - {{ $t("incidents.collapse.hide") }}
         </template>

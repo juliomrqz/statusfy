@@ -52,9 +52,9 @@ module.exports = async function updateIncident(sourceDir, cliOptions = {}) {
       name: "resolved",
       message: "The incident has been resolved?",
       async default(answers) {
-        const { resolved } = (await getIncidentData(
-          answers.incident.path
-        )).data;
+        const { resolved } = (
+          await getIncidentData(answers.incident.path)
+        ).data;
         return Boolean(resolved);
       }
     },
@@ -69,9 +69,9 @@ module.exports = async function updateIncident(sourceDir, cliOptions = {}) {
         "major-outage"
       ],
       async default(answers) {
-        const { severity } = (await getIncidentData(
-          answers.incident.path
-        )).data;
+        const { severity } = (
+          await getIncidentData(answers.incident.path)
+        ).data;
         return severity;
       }
     },
@@ -88,9 +88,9 @@ module.exports = async function updateIncident(sourceDir, cliOptions = {}) {
         return "You must have an affected system!";
       },
       async default(answers) {
-        const { affectedsystems } = (await getIncidentData(
-          answers.incident.path
-        )).data;
+        const { affectedsystems } = (
+          await getIncidentData(answers.incident.path)
+        ).data;
         return affectedsystems;
       }
     },
