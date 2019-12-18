@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "statusfy-docs",
-  "version": "0.4.4-alpha.0",
+  "version": "0.5.0-alpha.0",
   "description": "Statusfy Documentation",
   "license": "Apache-2.0",
   "main": "index.js",
@@ -34,7 +34,7 @@
     "vuepress": "1.2.0"
   },
   "devDependencies": {
-    "@statusfy/common": "0.4.4-alpha.0",
+    "@statusfy/common": "0.5.0-alpha.0",
     "@vuepress/plugin-back-to-top": "1.2.0",
     "@vuepress/plugin-google-analytics": "1.2.0",
     "@vuepress/plugin-pwa": "1.2.0",
