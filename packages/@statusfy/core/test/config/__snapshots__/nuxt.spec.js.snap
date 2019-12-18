@@ -12,6 +12,9 @@ Object {
   },
   "build": Object {
     "analyze": true,
+    "babel": Object {
+      "presets": [Function],
+    },
     "extend": [Function],
     "postcss": Object {
       "plugins": Object {
@@ -332,6 +335,9 @@ Object {
   },
   "build": Object {
     "analyze": true,
+    "babel": Object {
+      "presets": [Function],
+    },
     "extend": [Function],
     "postcss": Object {
       "plugins": Object {
@@ -574,6 +580,9 @@ Object {
   },
   "build": Object {
     "analyze": true,
+    "babel": Object {
+      "presets": [Function],
+    },
     "extend": [Function],
     "postcss": Object {
       "plugins": Object {
@@ -782,6 +791,9 @@ Object {
   },
   "build": Object {
     "analyze": true,
+    "babel": Object {
+      "presets": [Function],
+    },
     "extend": [Function],
     "postcss": Object {
       "plugins": Object {

@@ -163,6 +163,20 @@ module.exports = {
     */
     postcss: {
       plugins: postcss.plugins(tailwindJS)
+    },
+
+    babel: {
+      presets({ isServer }) {
+        return [
+          [
+            require.resolve('@nuxt/babel-preset-app'),
+            {
+              buildTarget: isServer ? 'server' : 'client',
+              corejs: { version: 3 }
+            }
+          ]
+        ]
+      }
     }
   },
   /*
