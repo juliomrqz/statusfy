@@ -1,3 +1,33 @@
+# [0.5.0](https://github.com/bazzite/statusfy/compare/v0.4.3...v0.5.0) (2019-12-18)
+
+
+### Performance
+
+* **core:** improve performance and reliability
+
+### Bug Fixes
+
+* **core:** fix compilation error because of invalid core-js version ([5a16424](https://github.com/bazzite/statusfy/commit/5a1642484f80eae5bffae01e8545f7c513bec157))
+* **core:** replace `<no-ssr>` with `<client-only>` ([fcc90e3](https://github.com/bazzite/statusfy/commit/fcc90e3520333146ea281fedbc6c90ebb956e5f3))
+* **docs:** add missing information ([823ce73](https://github.com/bazzite/statusfy/commit/823ce735f90fbefd0bfa71926d2adf551ea2b43e))
+* **core:** fix i18n with right camel case for footer links ([766a914](https://github.com/bazzite/statusfy/commit/766a91441f9f07436fdbc679845431663cf7e2d7))
+
+### Code Refactoring
+
+* drop support for Node.js v8 ([b79f140](https://github.com/bazzite/statusfy/commit/b79f1406beb12042104532c78fbb46b59aca7e70))
+
+
+### Minor Features
+
+* footer links for EU GDPR legal notice and data pricacy statement ([22ce441](https://github.com/bazzite/statusfy/commit/22ce4419f27b1f467b0b61df4b88d525ad33de55))
+
+
+### BREAKING CHANGES
+
+* minimum required Node.js version is 10.x
+
+
+
 ## [0.4.3](https://github.com/statusfy/statusfy/compare/v0.4.1...v0.4.3) (2019-08-22)
 
 
@@ -12,7 +42,7 @@
 
 ### Performance
 
-* **chore:** improve performance and reliability
+* **core:** improve performance and reliability
 
 
 ### Bug Fixes
