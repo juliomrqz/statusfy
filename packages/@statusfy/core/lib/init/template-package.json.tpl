@@ -17,7 +17,7 @@
     "statusfy": "^<%= options.statusfyVersion %>"
   },
   "engines": {
-    "node": ">=8.10",
+    "node": ">=10",
     "npm": ">=5"
   }
 }

@@ -11,7 +11,7 @@
     "retrieve-partners": "node scripts/partners.js"
   },
   "engines": {
-    "node": ">=8.10"
+    "node": ">=10"
   },
   "repository": {
     "type": "git",
