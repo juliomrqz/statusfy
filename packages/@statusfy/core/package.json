@@ -34,7 +34,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.7.6",
+    "@babel/runtime-corejs3": "^7.7.7",
     "@fortawesome/fontawesome-svg-core": "1.2.26",
     "@nuxtjs/axios": "5.9.0",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
@@ -43,7 +43,7 @@
     "@statusfy/markdown": "0.5.0",
     "body-parser": "1.19.0",
     "browser-sync": "2.26.7",
-    "core-js": "3.5.0",
+    "core-js": "3.6.0",
     "cors": "2.8.5",
     "cross-env": "6.0.3",
     "cross-spawn": "7.0.1",
