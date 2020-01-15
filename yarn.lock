@@ -11087,10 +11087,10 @@ markdown-it-emoji@1.4.0, markdown-it-emoji@^1.4.0:
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
 
-markdown-it-github-headings@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/markdown-it-github-headings/-/markdown-it-github-headings-1.1.2.tgz#e2bbdf864fa284eb5ceb80be5da4712df2e328f2"
-  integrity sha512-8haIwpAx87DQHcEtzkfsWv2hxg4jOvow6/nJKAMQ2wYRMZQTIfJm9VzrDkqw72Bb4YXBmI0u3GA/3MdXVL/x5g==
+markdown-it-github-headings@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-github-headings/-/markdown-it-github-headings-2.0.0.tgz#f8d21ed438c4921d594e32c285ecb58b638615ce"
+  integrity sha512-7ET0QiS2UWCM4hZraWVT9Df0PzuTQwK//3XM1q8vtXImUCRNGwG4bapa6ToDL8M4jkPeYSMrTiTvdJqwJifC4Q==
   dependencies:
     github-slugger "^1.1.1"
     innertext "^1.0.1"
