@@ -45,7 +45,7 @@
     "browser-sync": "2.26.7",
     "core-js": "3.6.4",
     "cors": "2.8.5",
-    "cross-env": "6.0.3",
+    "cross-env": "7.0.0",
     "cross-spawn": "7.0.1",
     "css-loader": "3.4.2",
     "dayjs": "1.8.19",
