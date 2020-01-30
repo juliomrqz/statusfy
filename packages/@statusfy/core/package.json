@@ -34,7 +34,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.8.3",
+    "@babel/runtime-corejs3": "^7.8.4",
     "@fortawesome/fontawesome-svg-core": "1.2.26",
     "@nuxtjs/axios": "5.9.3",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
