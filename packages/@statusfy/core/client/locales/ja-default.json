@@ -1,0 +1,109 @@
+{
+  "title": "システム状況",
+  "description": "お客様に影響を及ぼす可能性のあるサービスの休止履歴を、リアルタイムで最新状況を維持します。",
+  "labels": {
+    "contact": "お問い合わせ",
+    "support": "サポート",
+    "home": "ホーム",
+    "powered-by": "提供元",
+    "legal": "法定通知",
+    "privacy": "データプライバシー"
+  },
+  "statuses": {
+    "under-maintenance": "メンテナンス中",
+    "degraded-performance": "パフォーマンス低下",
+    "partial-outage": "一部休止",
+    "major-outage": "大規模休止",
+    "operational": "稼働中"
+  },
+  "dates": {
+    "formats": {
+      "short": "YYYY年MM月DD日",
+      "long": "YYYY年MM月DD日HH時mm分ss秒 UTC",
+      "month": "MM月"
+    }
+  },
+  "incidents": {
+    "incidents": "インシデント",
+    "incident": "インシデント",
+    "scheduled": "定期メンテナンス",
+    "incidents-history": "インシデントの履歴",
+    "incidents-history-description": "現在と過去のサービス運用休止。",
+    "incidents-history-days-since-latest": "最近のインシデントから1日 | 最近のインシデントから{days}日",
+    "latest-incidents": "最近のインシデント",
+    "current-status": "現在の状況",
+    "current-status-description": "お客様に影響を及ぼす可能性のあるサービスの休止履歴を、リアルタイムで最新の状況を保ちます。",
+    "no-incidents": "インシデントの報告はありません。",
+    "resolved": "解消",
+    "unresolved": "未解消",
+    "paginator": {
+      "previous": "前のページ",
+      "next": "次のページ",
+      "page": "ページ"
+    },
+    "collapse": {
+      "show": "Show all {count} Incidents",
+      "hide": "インシデントの表示数を減らす"
+    }
+  },
+  "error": {
+    "go-back-link": "ホームページへ戻る",
+    "404": {
+      "title": "ページが見つかりません",
+      "description": "お探しのページが見つかりませんでした"
+    },
+    "other": {
+      "title": "エラーが発生しました",
+      "description": "お客様のご要望に応じることができず、申し訳ございません。"
+    }
+  },
+  "systems": {
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "dns": {
+        "title": "DNS"
+      },
+      "site-delivery": {
+        "title": "サイト配信"
+      },
+      "api": {
+        "title": "API",
+        "description": "開発者がアクセスできるAPIエンドポイント"
+      }
+    }
+  },
+  "notifications": {
+    "title": "アップデート登録",
+    "description": "次のオプションから選択すると、ステータスの更新を自動受信します。",
+    "buttons": {
+      "subscribe": "登録",
+      "close": "閉じる"
+    },
+    "items": {
+      "icalendar": {
+        "title": "カレンダー",
+        "description": "<a href=\"{url}\" target=\"_blank\" rel=\"noopener\">iCalendar</a>を通じて<strong>定期メンテナンス</strong>を受信します。"
+      },
+      "feeds": {
+        "title": "フィード",
+        "description": "<a href=\"{atom_url}\" target=\"_blank\" rel=\"noopener\">Atomフィード</a>か<a href=\"{rss_url}\" target=\"_blank\" rel=\"noopener\">RSSフィード</a>を取得します。"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "もしくは当社のor <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">プロフィールをご覧ください。</a>."
+      },
+      "support": {
+        "title": "サポート",
+        "description": "<a href=\"{url}\" target=\"_blank\" rel=\"noopener\">当社のサポートサイト</a>を開きます。"
+      },
+      "webpush": {
+        "title": "プッシュ通知",
+        "description": "ブラウザに送られる通知。",
+        "enable": "通知を有効にする",
+        "enabled": "このブラウザへの通知が有効になります。"
+      }
+    }
+  }
+}
