@@ -21,7 +21,7 @@ module.exports = {
     '^@/common/(.*)$': '<rootDir>/packages/@statusfy/common/$1'
   },
   transform: {
-    '^.+\\.js$': 'babel-jest',
+    '^.+\\.js$': ['babel-jest', { cwd: __dirname }],
     '.*\\.(vue)$': 'vue-jest'
   },
   snapshotSerializers: [
