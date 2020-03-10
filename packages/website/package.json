@@ -18,7 +18,7 @@
     "svg": "vsvg -s ./assets/icons -t ./components/icons --es6"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.8.4",
+    "@babel/runtime-corejs3": "^7.8.7",
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@nuxtjs/axios": "5.9.5",
     "@nuxtjs/google-analytics": "2.2.3",
