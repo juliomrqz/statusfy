@@ -1,6 +1,6 @@
 ---
 title: Theme Customization
-description: The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon if your System, among other things.
+description: The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon of your System, among other things.
 date: 2018-10-12T17:28:04Z
 sidebarDepth: 3
 permalink: /guide/theme-customization
@@ -8,7 +8,7 @@ permalink: /guide/theme-customization
 
 # Theme Customization
 
-The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon if your System, among other things.
+The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon of your System, among other things.
 
 ## Styles
 
@@ -86,4 +86,4 @@ You can define static files in the `public/` directory that will be mapped to th
 
 ## Links
 
-The external links located at the footer of each page can be customize. There only three links you can define: `home`, `contact`, `support`, `legal` and `privacy`. More information in the [Config Reference Guide](../config/README.md#links).
+The external links located at the footer of each page can be customized. There are only five links you can define: `home`, `contact`, `support`, `legal` and `privacy`. More information in the [Config Reference Guide](../config/README.md#links).
