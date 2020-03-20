@@ -27,7 +27,7 @@
     "cssnano": "4.1.10",
     "dayjs": "1.8.22",
     "esm": "3.2.25",
-    "fs-extra": "8.1.0",
+    "fs-extra": "9.0.0",
     "gray-matter": "4.0.2",
     "hash-sum": "2.0.0",
     "lodash.isstring": "4.0.1",
