@@ -28,7 +28,7 @@ npx statusfy init
 npm install  # OR yarn install
 ```
 
-It will be generated a basic structure for your project. In the `package.json` file will be available these commands for the development and deployment of your Status Page System:
+It will generate a basic structure for your project. Located in the `package.json` file are commands for the development and deployment of your Status Page System:
 
 ``` json
 {
