@@ -10,6 +10,17 @@ sidebarDepth: 2
 
 ## title
 
+<details>
+<summary>JavaScript</summary>
+<!--All you need is a blank line-->
+
+``` js
+module.exports = {
+  title: 'Title'
+}
+```
+</details>
+
 - Type: `string`
 - Default: `undefined`
 
