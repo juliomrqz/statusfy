@@ -1,7 +1,7 @@
 ---
 title: Theme Customization
 description: The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon of your System, among other things.
-date: 2018-10-12T17:28:04Z
+date: 2020-03-26T20:52:22Z
 sidebarDepth: 3
 permalink: /guide/theme-customization
 ---

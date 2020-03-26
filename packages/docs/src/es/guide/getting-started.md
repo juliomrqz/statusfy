@@ -1,7 +1,7 @@
 ---
 title: Primeros Pasos
 description: Comenzar con Statusfy es realmente sencillo, solo tiene que centrarse en escribir su contenido y utilizar el CLI para crear y desplegar tu sitio web.
-date: 2018-10-12T17:28:04Z
+date: 2020-03-26T20:52:22Z
 permalink: /guide/getting-started
 ---
 
@@ -32,7 +32,7 @@ npx statusfy init
 npm install  # O yarn install
 ```
 
-Se generará una estructura básica para tu proyecto. En el archivo `package.json` estarán disponibles estos comandos para el desarrollo y despliegue de tu Sistema de Página de Estado:
+Se generará una estructura básica para tu proyecto. En el archivo `package.json` se encuentran los comandos para el desarrollo y despliegue de tu Sistema de Página de Estado:
 
 ``` json
 {

@@ -1,7 +1,7 @@
 ---
 title: Personalización de Estilo
 description: El aspecto de Statusfy se puede actualizar fácilmente con un StyleSheet, también puedes cambiar fácilmente el logotipo y el icono de tu sistema, entre otras cosas.
-date: 2018-10-12T17:28:04Z
+date: 2020-03-26T20:52:22Z
 sidebarDepth: 3
 permalink: /guide/theme-customization
 ---
@@ -87,4 +87,4 @@ Puedes definir archivos estáticos en el directorio `public/` que se asignarán 
 
 ## Vínculos
 
-Los enlaces externos ubicados en el footer de cada página se pueden personalizar. Solo hay tres enlaces que puedes definir: `home`, `contact` y `support`. Más información en la [Guía de Referencia de Configuración](../config/README.md#links).
+Los enlaces externos ubicados en el footer de cada página se pueden personalizar. Solo hay cinco enlaces que puedes definir: `home`, `contact`, `support`, `legal` y `privacy`. Más información en la [Guía de Referencia de Configuración](../config/README.md#links).
