@@ -1,20 +1,20 @@
 ---
 title: Introduction
-description: Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either Static Generated or Server Rendered and easily deploy it to a variety of hosting services.
+description: Statusfy is a Status Page System that is easy to use and completely Open Source. You can create a Static Generated or Server Rendered System and easily deploy it to a variety of hosting services.
 date: 2018-10-12T17:28:04Z
 ---
 
 # Introduction
 
-Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](../guide/architecture.md#static-generated) or [**Server Rendered**](../guide/architecture.md#server-rendered) and easily deploy it to a variety of [hosting services](../guide/deploy.md#services).
+Statusfy is a Status Page System that is easy to use and completely Open Source. You can create a [**Static Generated**](../guide/architecture.md#static-generated) or [**Server Rendered**](../guide/architecture.md#server-rendered) System and easily deploy it to a variety of [hosting services](../guide/deploy.md#services).
 
 ![Statusfy Homepage](/assets/img/statusfy-home-en.png =1280x829)
 
 ## How It Works
 
-A Statusfy site is a Status Page System Generator that acts as a Web Application, created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind CSS](https://tailwindcss.com/). But, don't worry, you don't need to know how to use these amazing Technologies, you just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the needed logic of your Status Page System.
+A Statusfy site is a Status Page System Generator that acts as a web application, created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind CSS](https://tailwindcss.com/). But don't worry, you don't need to know how to use these amazing technologies. Just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the necesary pieces for your Status Page System.
 
-The final Web Application can be [generated or built](../guide/deploy.md) from a single CLI, can be [easily configured](../guide/pwa.md) or [customized](../guide/theme-customization.md) with your Style requirements. 
+The final web application can be [generated or built](../guide/deploy.md) from a single CLI and can be [easily configured](../guide/pwa.md) or [customized](../guide/theme-customization.md) to your style requirements. 
 
 ## Features
 
