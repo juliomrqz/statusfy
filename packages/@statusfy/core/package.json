@@ -36,7 +36,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.9.2",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
-    "@nuxtjs/axios": "5.9.5",
+    "@nuxtjs/axios": "5.9.6",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@statusfy/common": "0.5.0",
@@ -83,7 +83,7 @@
     "eslint-config-standard": "14.1.1",
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-jest": "23.8.2",
-    "eslint-plugin-node": "11.0.0",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1"
