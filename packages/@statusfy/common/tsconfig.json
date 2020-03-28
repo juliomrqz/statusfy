@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "target": "es2015",
+    "esModuleInterop": true,
+    "lib": ["es2015"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "lib",
+    "typeRoots": ["./@types", "./node_modules/@types"]
+  },
+  "include": ["src/**/*"]
+}

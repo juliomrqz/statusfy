@@ -14,4 +14,7 @@ script:
   # Test Statusfy
   - yarn run lint
 
+  - yarn run dev:compile
   - yarn run test:demo && yarn run test
+
+  - yarn run prod:compile

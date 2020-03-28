@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "@statusfy/config",
+  "version": "0.5.0",
+  "description": "CLI for Statusfy",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev:compile": "tsc"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "devDependencies": {
+    "@statusfy/common": "0.5.0",
+    "@types/node": "12.12.31",
+    "typescript": "3.8.3"
+  }
+}

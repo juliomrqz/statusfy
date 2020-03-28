@@ -86,3 +86,5 @@ client/locales/*.js
 sw.*
 test/.tmp
 OneSignalSDK*
+
+lib

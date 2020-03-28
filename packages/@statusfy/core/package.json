@@ -13,6 +13,7 @@
     "access": "public"
   },
   "scripts": {
+    "dev:compile": "tsc",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
     "lint:fix": "yarn lint --fix",
     "prepare-test": "cross-env NODE_ENV=test node test/prepare.js",
@@ -36,9 +37,10 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.9.2",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
-    "@nuxtjs/axios": "5.9.5",
+    "@nuxtjs/axios": "5.9.6",
     "@nuxtjs/onesignal": "3.0.0-beta.16",
     "@nuxtjs/pwa": "3.0.0-beta.20",
+    "@statusfy/config": "0.5.0",
     "@statusfy/common": "0.5.0",
     "@statusfy/markdown": "0.5.0",
     "body-parser": "1.19.0",
@@ -73,6 +75,10 @@
     "vue-svgicon": "3.2.6"
   },
   "devDependencies": {
+    "@types/node": "12.12.31",
+    "@types/lodash.drop": "4.1.6",
+    "@types/lodash.sortby": "4.7.6",
+    "typescript": "3.8.3",
     "@nuxt/types": "0.7.0",
     "@nuxtjs/eslint-config": "2.0.2",
     "@statusfy/test-utils": "0.5.0",

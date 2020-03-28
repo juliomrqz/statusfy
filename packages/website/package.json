@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.9.2",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
-    "@nuxtjs/axios": "5.9.5",
+    "@nuxtjs/axios": "5.9.6",
     "@nuxtjs/google-analytics": "2.2.3",
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.0.1",

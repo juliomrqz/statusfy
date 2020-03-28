@@ -2,7 +2,7 @@
   "name": "@statusfy/common",
   "version": "0.5.0",
   "description": "Shared Utils for Statusfy",
-  "main": "index.js",
+  "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -19,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/bazzite/statusfy/issues"
   },
+  "scripts": {
+    "dev:compile": "tsc"
+  },
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
     "autoprefixer": "9.7.5",
@@ -30,7 +33,9 @@
     "fs-extra": "9.0.0",
     "gray-matter": "4.0.2",
     "hash-sum": "2.0.0",
+    "lodash.foreach": "4.5.0",
     "lodash.isstring": "4.0.1",
+    "lodash.template": "4.5.0",
     "lru-cache": "5.1.1",
     "postcss-combine-duplicated-selectors": "8.1.0",
     "postcss-import": "12.0.1",
@@ -43,5 +48,15 @@
     "upath": "1.2.0",
     "validator": "13.0.0",
     "yaml": "1.8.3"
+  },
+  "devDependencies": {
+    "@types/esm": "3.2.0",
+    "@types/hash-sum": "1.0.0",
+    "@types/lodash.foreach": "4.5.6",
+    "@types/lodash.isstring": "4.0.6",
+    "@types/lodash.template": "4.4.6",
+    "@types/validator": "12.0.1",
+    "@types/node": "12.12.31",
+    "typescript": "3.8.3"
   }
 }

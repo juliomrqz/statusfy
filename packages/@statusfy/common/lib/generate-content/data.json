@@ -1,96 +1,96 @@
 {
-  "affectedsystems": [
-    "api",
-    "cdn",
-    "conversions",
-    "site-delivery"
-  ],
-  "content": {
-    "en": [
-      "Our Files Conversion Process were responding slowly.",
-      "Our Files Conversion System were not responding properly.",
-      "Our origin servers were responding slowly.",
-      "Systems are currently down.",
-      "The API system is experimenting some issues",
-      "We detected a networking problem that caused temporary issues for our API and origin servers.",
-      "We will be deploying the next version.",
-      "A network maintenance will be performed during 30 minutes. Short website access interruption is expected from this maintenance."
+    "affectedsystems": [
+        "api",
+        "cdn",
+        "conversions",
+        "site-delivery"
     ],
-    "es": [
-      "Nuestro proceso de conversión de archivos respondía lentamente.",
-      "Nuestro sistema de conversión de archivos no respondía correctamente.",
-      "Nuestros servidores de origen respondieron lentamente.",
-      "Los sistemas están actualmente desconectados",
-      "El sistema API está experimentando algunos problemas",
-      "Detectamos un problema de red que causaba problemas temporales para nuestra API y servidores de origen.",
-      "Implementaremos la próxima versión.",
-      "Se realizará un mantenimiento de la red durante 30 minutos. Se espera una corta interrupción del acceso al sitio web."
-    ]
-  },
-  "updates": {
     "content": {
-      "en": [
-        "Our **API system** is responding slowly and we've investigating what is causing this issue.",
-        "Our Files Conversion Process is responding slowly and we've investigating what is causing this issue.",
-        "Our Files Conversion System is not responding properly and we've investigating what is causing this issue. If you're affected by this issue, you can contact us at our [Support Page](https://demo.statusfy.co).",
-        "Our Files Conversion System is not responding properly and we've investigating what is causing this issue.",
-        "Our origin servers are responding slowly and we've added more capacity and are continuing to investigate.",
-        "Performance is back to normal and we'll continue to monitor.",
-        "The Conversion Process is back to normal and we'll continue to monitor.",
-        "The Files Conversion System is back to normal and we'll continue to monitor.",
-        "We detected a networking problem that caused temporary issues for our API and origin servers. All systems are back to normal now, but we're monitoring closely.",
-        "We've added capacity to our origin and are seeing improved system behavior. We continue to monitor the situation.",
-        "We've deployed a fix. We continue to monitor the situation."
-      ],
-      "es": [
-        "Nuestro **Sistema API** está respondiendo lentamente y estamos investigando qué está causando este problema.",
-        "Nuestro proceso de conversión de archivos está respondiendo lentamente y estamos investigando qué está causando este problema.",
-        "Nuestro sistema de conversión de archivos no responde adecuadamente y estamos investigando qué está causando este problema. Si se ve afectado por este problema, puede contactarnos en nuestra [Página de soporte](https://demo.statusfy.co).",
-        "Nuestro sistema de conversión de archivos no responde adecuadamente y estamos investigando qué está causando este problema.",
-        "Our origin servers are responding slowly and we've added more capacity and are continuing to investigate.",
-        "El rendimiento vuelve a la normalidad y continuaremos supervisando.",
-        "El proceso de conversión ha vuelto a la normalidad y continuaremos supervisando.",
-        "El sistema de conversión de archivos ha vuelto a la normalidad y seguiremos supervisando.",
-        "Detectamos un problema de red que causaba problemas temporales para nuestra API y servidores de origen. Todos los sistemas han vuelto a la normalidad ahora, pero estamos monitoreando de cerca.",
-        "Hemos agregado capacidad a nuestro origen y estamos viendo un comportamiento mejorado del sistema. Continuamos monitoreando la situación.",
-        "Implementamos una solución. Continuamos monitoreando la situación."
-      ]
+        "en": [
+            "Our Files Conversion Process were responding slowly.",
+            "Our Files Conversion System were not responding properly.",
+            "Our origin servers were responding slowly.",
+            "Systems are currently down.",
+            "The API system is experimenting some issues",
+            "We detected a networking problem that caused temporary issues for our API and origin servers.",
+            "We will be deploying the next version.",
+            "A network maintenance will be performed during 30 minutes. Short website access interruption is expected from this maintenance."
+        ],
+        "es": [
+            "Nuestro proceso de conversión de archivos respondía lentamente.",
+            "Nuestro sistema de conversión de archivos no respondía correctamente.",
+            "Nuestros servidores de origen respondieron lentamente.",
+            "Los sistemas están actualmente desconectados",
+            "El sistema API está experimentando algunos problemas",
+            "Detectamos un problema de red que causaba problemas temporales para nuestra API y servidores de origen.",
+            "Implementaremos la próxima versión.",
+            "Se realizará un mantenimiento de la red durante 30 minutos. Se espera una corta interrupción del acceso al sitio web."
+        ]
+    },
+    "updates": {
+        "content": {
+            "en": [
+                "Our **API system** is responding slowly and we've investigating what is causing this issue.",
+                "Our Files Conversion Process is responding slowly and we've investigating what is causing this issue.",
+                "Our Files Conversion System is not responding properly and we've investigating what is causing this issue. If you're affected by this issue, you can contact us at our [Support Page](https://demo.statusfy.co).",
+                "Our Files Conversion System is not responding properly and we've investigating what is causing this issue.",
+                "Our origin servers are responding slowly and we've added more capacity and are continuing to investigate.",
+                "Performance is back to normal and we'll continue to monitor.",
+                "The Conversion Process is back to normal and we'll continue to monitor.",
+                "The Files Conversion System is back to normal and we'll continue to monitor.",
+                "We detected a networking problem that caused temporary issues for our API and origin servers. All systems are back to normal now, but we're monitoring closely.",
+                "We've added capacity to our origin and are seeing improved system behavior. We continue to monitor the situation.",
+                "We've deployed a fix. We continue to monitor the situation."
+            ],
+            "es": [
+                "Nuestro **Sistema API** está respondiendo lentamente y estamos investigando qué está causando este problema.",
+                "Nuestro proceso de conversión de archivos está respondiendo lentamente y estamos investigando qué está causando este problema.",
+                "Nuestro sistema de conversión de archivos no responde adecuadamente y estamos investigando qué está causando este problema. Si se ve afectado por este problema, puede contactarnos en nuestra [Página de soporte](https://demo.statusfy.co).",
+                "Nuestro sistema de conversión de archivos no responde adecuadamente y estamos investigando qué está causando este problema.",
+                "Our origin servers are responding slowly and we've added more capacity and are continuing to investigate.",
+                "El rendimiento vuelve a la normalidad y continuaremos supervisando.",
+                "El proceso de conversión ha vuelto a la normalidad y continuaremos supervisando.",
+                "El sistema de conversión de archivos ha vuelto a la normalidad y seguiremos supervisando.",
+                "Detectamos un problema de red que causaba problemas temporales para nuestra API y servidores de origen. Todos los sistemas han vuelto a la normalidad ahora, pero estamos monitoreando de cerca.",
+                "Hemos agregado capacidad a nuestro origen y estamos viendo un comportamiento mejorado del sistema. Continuamos monitoreando la situación.",
+                "Implementamos una solución. Continuamos monitoreando la situación."
+            ]
+        },
+        "title": {
+            "investigating": {
+                "en": "Investigating",
+                "es": "Investigando"
+            },
+            "monitoring": {
+                "en": "Monitoring",
+                "es": "Supervisando"
+            },
+            "resolved": {
+                "en": "Resolved",
+                "es": "Resuelto"
+            }
+        }
     },
     "title": {
-      "investigating": {
-        "en": "Investigating",
-        "es": "Investigando"
-      },
-      "monitoring": {
-        "en": "Monitoring",
-        "es": "Supervisando"
-      },
-      "resolved": {
-        "en": "Resolved",
-        "es": "Resuelto"
-      }
+        "en": [
+            "API Issues",
+            "Conversions Issues",
+            "Files Conversion Issues",
+            "Networking Issues",
+            "Origin Server Errors",
+            "Planned Maintenance",
+            "Systems are down",
+            "Network Maintenance"
+        ],
+        "es": [
+            "Problemas de la API",
+            "Problemas de Conversiones",
+            "Problemas de Conversión de archivos",
+            "Problemas de Red",
+            "Errores del Servidor de Origen",
+            "Mantenimiento Planificado",
+            "Los sistemas están caídos",
+            "Mantenimiento de Red"
+        ]
     }
-  },
-  "title": {
-    "en": [
-      "API Issues",
-      "Conversions Issues",
-      "Files Conversion Issues",
-      "Networking Issues",
-      "Origin Server Errors",
-      "Planned Maintenance",
-      "Systems are down",
-      "Network Maintenance"
-    ],
-    "es": [
-      "Problemas de la API",
-      "Problemas de Conversiones",
-      "Problemas de Conversión de archivos",
-      "Problemas de Red",
-      "Errores del Servidor de Origen",
-      "Mantenimiento Planificado",
-      "Los sistemas están caídos",
-      "Mantenimiento de Red"
-    ]
-  }
 }
