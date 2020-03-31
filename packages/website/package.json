@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.9.2",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
-    "@nuxtjs/axios": "5.9.6",
+    "@nuxtjs/axios": "5.9.7",
     "@nuxtjs/google-analytics": "2.2.3",
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/sitemap": "2.1.0",
@@ -31,8 +31,8 @@
     "date-fns": "1.30.1",
     "github-markdown-css": "4.0.0",
     "intersection-observer": "0.7.0",
-    "nuxt": "2.12.1",
-    "nuxt-i18n": "6.7.0",
+    "nuxt": "2.12.2",
+    "nuxt-i18n": "6.7.2",
     "vue-lazyload": "1.3.3",
     "vue-scrollto": "2.17.1",
     "vue-social-sharing": "2.4.7",
@@ -40,8 +40,8 @@
     "webfontloader": "1.6.28"
   },
   "devDependencies": {
-    "@bazzite/nuxt-netlify": "0.1.1",
-    "@bazzite/nuxt-optimized-images": "0.3.0",
+    "@bazzite/nuxt-netlify": "0.2.0",
+    "@bazzite/nuxt-optimized-images": "0.4.0",
     "@wordpress/wordcount": "2.7.0",
     "babel-eslint": "10.1.0",
     "cross-spawn": "7.0.1",
