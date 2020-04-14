@@ -22,7 +22,7 @@
   "homepage": "https://github.com/bazzite/statusfy#readme",
   "dependencies": {
     "commander": "5.0.0",
-    "semver": "7.2.3"
+    "semver": "7.3.2"
   },
   "peerDependencies": {
     "@statusfy/common": "0.5.0",
