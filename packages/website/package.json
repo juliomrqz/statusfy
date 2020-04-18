@@ -30,11 +30,11 @@
     "core-js": "3.6.5",
     "date-fns": "1.30.1",
     "github-markdown-css": "4.0.0",
-    "intersection-observer": "0.8.0",
+    "intersection-observer": "0.9.0",
     "nuxt": "2.12.2",
     "nuxt-i18n": "6.9.1",
     "vue-lazyload": "1.3.3",
-    "vue-scrollto": "2.18.0",
+    "vue-scrollto": "2.18.1",
     "vue-social-sharing": "2.4.7",
     "vue-svgicon": "3.2.6",
     "webfontloader": "1.6.28"
@@ -42,7 +42,7 @@
   "devDependencies": {
     "@bazzite/nuxt-netlify": "0.2.0",
     "@bazzite/nuxt-optimized-images": "0.4.0",
-    "@wordpress/wordcount": "2.7.0",
+    "@wordpress/wordcount": "2.8.0",
     "babel-eslint": "10.1.0",
     "cross-spawn": "7.0.2",
     "css-loader": "3.5.2",
