@@ -61,7 +61,7 @@
     "markdown-it-inline-comments": "1.0.1",
     "markdown-it-link-attributes": "3.0.0",
     "markdown-it-prism": "2.0.5",
-    "prettier": "1.19.1"
+    "prettier": "2.0.5"
   },
   "engines": {
     "node": ">=10"
