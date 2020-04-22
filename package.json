@@ -57,7 +57,7 @@
     "@commitlint/config-conventional": "8.3.4",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
-    "babel-jest": "25.3.0",
+    "babel-jest": "25.4.0",
     "conventional-changelog-cli": "2.0.31",
     "cross-env": "7.0.2",
     "eslint": "6.8.0",
@@ -66,7 +66,7 @@
     "eslint-plugin-vue": "6.2.2",
     "glob-promise": "3.4.0",
     "husky": "4.2.5",
-    "jest": "25.3.0",
+    "jest": "25.4.0",
     "jest-serializer-vue": "2.0.2",
     "lerna": "3.20.2",
     "vue-jest": "3.0.5"
