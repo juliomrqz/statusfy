@@ -47,7 +47,7 @@
     "cors": "2.8.5",
     "cross-env": "7.0.2",
     "cross-spawn": "7.0.2",
-    "css-loader": "3.5.2",
+    "css-loader": "3.5.3",
     "dayjs": "1.8.25",
     "dot-prop": "5.2.0",
     "express": "4.17.1",
@@ -63,7 +63,7 @@
     "lodash.sortby": "4.7.0",
     "nodemon": "2.0.3",
     "nuxt": "2.12.2",
-    "nuxt-i18n": "6.10.0",
+    "nuxt-i18n": "6.10.1",
     "opener": "1.5.1",
     "portfinder": "1.0.25",
     "sitemap": "3.2.2",
@@ -73,7 +73,7 @@
     "vue-svgicon": "3.2.6"
   },
   "devDependencies": {
-    "@nuxt/types": "0.7.4",
+    "@nuxt/types": "0.7.5",
     "@nuxtjs/eslint-config": "2.0.2",
     "@statusfy/test-utils": "0.5.0",
     "babel-core": "7.0.0-bridge.0",
