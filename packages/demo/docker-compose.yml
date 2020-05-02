@@ -1,9 +1,0 @@
-version: '3.1'
-services:
-  statusfy:
-    image: 'bazzite/statusy:unstable'
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./:/usr/src/app
-    restart: always

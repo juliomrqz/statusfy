@@ -1,5 +1,5 @@
-[![Bazzite Project](https://img.shields.io/badge/Bazzite-project-blue.svg)](https://statusfy.co) 
-[![License](https://img.shields.io/github/license/bazzite/statusfy-examples.svg)][license-page]
+[![Aceforth Project](https://img.shields.io/badge/Aceforth-project-blue.svg)](https://aceforth.com/products/statusfy) 
+[![License](https://img.shields.io/github/license/aceforth/statusfy-examples.svg)][license-page]
 
 # Statusfy Examples
 
@@ -40,7 +40,7 @@ You may also want to [follow the company supporting this project on Twitter][twi
 
 ### Commercial Support
 
-This project is sponsored by [Bazzite][bazzite-website]. If you require professional assistance on your project(s), please contact us at [https://statusfy.co/support][support-page].
+This project is sponsored by [Aceforth][aceforth-website]. If you require professional assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
 
 ## Contributing
 
@@ -54,14 +54,14 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [MIT][license-page].
 
-[home]: https://statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[home]: https://aceforth.com/products/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[contributing]: https://github.com/bazzite/statusfy-examples/blob/master/CONTRIBUTING.md
-[code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[issues]: https://github.com/bazzite/statusfy-examples/issues
-[twitter]: https://twitter.com/BazziteTech
-[bazzite-website]: https://www.bazzite.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[support-page]: https://statusfy.co/support?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[statusfy-blog]: https://statusfy.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[license-page]: https://github.com/bazzite/statusfy-examples/blob/master/LICENSE
+[contributing]: https://github.com/aceforth/statusfy-examples/blob/master/CONTRIBUTING.md
+[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[issues]: https://github.com/aceforth/statusfy-examples/issues
+[twitter]: https://twitter.com/AceforthHQ
+[aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[support-page]: https://aceforth.com/products/statusfy#support?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[license-page]: https://github.com/aceforth/statusfy-examples/blob/master/LICENSE

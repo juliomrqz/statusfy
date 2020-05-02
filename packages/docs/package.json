@@ -15,19 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bazzite/statusfy-docs.git"
+    "url": "git+https://github.com/aceforth/statusfy-docs.git"
   },
   "keywords": [
     "statusfy",
     "documentation"
   ],
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "bugs": {
-    "url": "https://github.com/bazzite/statusfy-docs/issues"
+    "url": "https://github.com/aceforth/statusfy-docs/issues"
   },
   "homepage": "https://docs.statusfy.co",
   "dependencies": {

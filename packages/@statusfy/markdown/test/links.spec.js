@@ -10,7 +10,7 @@ const internalLinkAsserts = {
 }
 
 const externalLinks = [
-  '[Statusfy](https://statusfy.co)',
+  '[Statusfy](https://aceforth.com/products/statusfy)',
   '[Statusfy](http://statusfy.co)',
   '[Statusfy Docs](http://docs.statusfy.co)'
 ]

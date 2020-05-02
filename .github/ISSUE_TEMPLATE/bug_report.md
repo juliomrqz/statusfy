@@ -16,7 +16,7 @@ about: Create a report to help us improve
 
 <!-- Please ask questions via following several ways. -->
 <!-- Free Support (Spectrum Chat): https://spectrum.chat/bazzite/statusfy -->
-<!-- Professional Support: This project is sponsored by https://www.bazzite.com. If you require Professional Assistance on your project(s), please contact us at https://statusfy.co/support. -->
+<!-- Professional Support: This project is sponsored by https://aceforth.com. If you require Professional Assistance on your project(s), please contact us at https://aceforth.com/products/statusfy#support. -->
 
 ## Bug report
 

@@ -9,13 +9,13 @@
 
 ## Professional Support
 
-This project is maintained by [Bazzite][bazzite-website] (a software development company). If you require **Professional Assistance** on your project(s), please contact us at [https://statusfy.co/support][support-page].
+This project is maintained by [Aceforth][aceforth-website] (a software development company). If you require **Professional Assistance** on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
 
 
-[examples]: https://github.com/bazzite/statusfy/tree/develop/examples
+[examples]: https://github.com/aceforth/statusfy/tree/develop/examples
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
-[issues]: https://github.com/bazzite/statusfy/issues
-[statusfy-blog]: https://statusfy.co/blog?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
-[twitter]: https://bazzite.xyz/Twitter
-[bazzite-website]: https://www.bazzite.com?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
-[support-page]: https://statusfy.co/support?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
+[issues]: https://github.com/aceforth/statusfy/issues
+[statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
+[twitter]: https://twitter.com/AceforthHQ
+[aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
+[support-page]: https://aceforth.com/products/statusfy#support?utm_source=github&utm_medium=support.md&utm_campaign=statusfy

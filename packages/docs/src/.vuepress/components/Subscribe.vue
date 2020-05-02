@@ -65,7 +65,7 @@ export default {
           placeholder: 'your@email.com',
           button: 'Subscribe',
           privacyText: 'Privacy Policy',
-          privacyLink: 'https://www.bazzite.com/legal/privacy'
+          privacyLink: 'https://aceforth.com/legal/privacy'
         },
         es: {
           title: '¿Deseas mantenerte al día con las últimas noticias, consejos y trucos de Statusfy?',
@@ -73,7 +73,7 @@ export default {
           placeholder: 'tu@email.com',
           button: 'Suscribirse',
           privacyText: 'Política de Privacidad',
-          privacyLink: 'https://www.bazzite.com/es/legal/privacy'
+          privacyLink: 'https://aceforth.com/es/legal/privacy'
         }
       }
     }

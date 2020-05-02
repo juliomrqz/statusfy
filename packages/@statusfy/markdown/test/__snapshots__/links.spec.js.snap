@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`links should render external links correctly 1`] = `<p><a href="https://statusfy.co" target="_blank" rel="noopener noreferrer" class="external">Statusfy</a></p>`;
+exports[`links should render external links correctly 1`] = `<p><a href="https://aceforth.com/products/statusfy" target="_blank" rel="noopener noreferrer" class="external">Statusfy</a></p>`;
 
 exports[`links should render external links correctly 2`] = `<p><a href="http://statusfy.co" target="_blank" rel="noopener noreferrer" class="external">Statusfy</a></p>`;
 

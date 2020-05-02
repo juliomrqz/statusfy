@@ -14,9 +14,9 @@
     "update-incident": "statusfy update-incident"
   },
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
   "dependencies": {

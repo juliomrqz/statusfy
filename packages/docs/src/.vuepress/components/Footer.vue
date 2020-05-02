@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    {{ text[language].prefix }} <a :href="text[language].link" target="_blank" rel="noopener">Bazzite</a>.
+    {{ text[language].prefix }} <a :href="text[language].link" target="_blank" rel="noopener">Aceforth</a>.
     <br>
     {{ text[language].copyright }}
   </div>
@@ -12,13 +12,13 @@ export default {
     text: {
       en: {
         prefix: 'Made with ❤️ by',
-        link: 'https://www.bazzite.com?ref=statusfy-docs',
-        copyright: 'Copyright © 2019 Bazzite, LLC. All Rights Reserved.'
+        link: 'https://aceforth.com?ref=statusfy-docs',
+        copyright: 'Copyright © 2019 Aceforth, LLC. All Rights Reserved.'
       },
       es: {
         prefix: 'Hecho con ❤️ por',
-        link: 'https://www.bazzite.com/es/?ref=statusfy-docs',
-        copyright: 'Copyright © 2019 Bazzite, LLC. Todos los derechos reservados.'
+        link: 'https://aceforth.com/es/?ref=statusfy-docs',
+        copyright: 'Copyright © 2019 Aceforth, LLC. Todos los derechos reservados.'
       }
     }
   }),

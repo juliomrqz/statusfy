@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bazzite/statusfy.git"
+    "url": "git+https://github.com/aceforth/statusfy.git"
   },
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bazzite/statusfy/issues"
+    "url": "https://github.com/aceforth/statusfy/issues"
   },
-  "homepage": "https://github.com/bazzite/statusfy#readme",
+  "homepage": "https://github.com/aceforth/statusfy#readme",
   "dependencies": {
     "commander": "5.1.0",
     "semver": "7.3.2"

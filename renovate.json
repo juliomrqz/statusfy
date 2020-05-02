@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@bazzite"
+    "@aceforth"
   ],
   "schedule": [
     "after 10pm every weekday",
