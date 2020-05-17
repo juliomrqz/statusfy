@@ -16202,10 +16202,10 @@ vuepress-plugin-reading-time@0.1.1:
   dependencies:
     reading-time "1.1.3"
 
-vuepress-plugin-seo@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-seo/-/vuepress-plugin-seo-0.1.2.tgz#132e656274bfaffce72e816fb8450951f3f6cc13"
-  integrity sha512-Tv3ihNl3pDX5krqq9r2X9rFKUVR8ssLvcKcu1P4ABP8/b3vC06St/UTe5QucgKzuphlIJkbRSOQ7n7yf6jMCRw==
+vuepress-plugin-seo@0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-seo/-/vuepress-plugin-seo-0.1.3.tgz#776cb73e9d364de2e3fcddfe15f21c00b708b2ec"
+  integrity sha512-bPP1j9l4q9emoiFz7US2Zg1vsO62UoqhdLcGFcHbB7fvsgn+CmVXZuG2wR6Ap1PXT4ACYaz2lkUlfr5qU3M4vg==
 
 vuepress-plugin-sitemap@2.3.1:
   version "2.3.1"
