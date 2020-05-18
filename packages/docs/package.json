@@ -44,7 +44,7 @@
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "2.0.1",
     "vuepress-plugin-reading-time": "0.1.1",
-    "vuepress-plugin-seo": "0.1.2",
+    "vuepress-plugin-seo": "0.1.3",
     "vuepress-plugin-sitemap": "2.3.1"
   }
 }
