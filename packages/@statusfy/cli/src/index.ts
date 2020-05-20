@@ -7,7 +7,7 @@ import newIncident from './commands/new-incident'
 import deleteIncident from './commands/delete-incident'
 import updateIncident from './commands/update-incident'
 
-const packageError = (name: string, err: Error) => {
+function packageError(name: string, err: Error) {
   console.log(chalk.red(
     `\n[statusfy] @statusfy/cli ` +
     `requires ${name} to be installed.\n` +
@@ -15,11 +15,13 @@ const packageError = (name: string, err: Error) => {
   ))
 }
 
-try {
-  require.resolve('@statusfy/core')
-} catch (err) {
-  packageError('@statusfy/core', err)
-  process.exit(1)
+function checkCoreInstallation() {
+  try {
+    require.resolve('@statusfy/core')
+  } catch (err) {
+    packageError('@statusfy/core', err)
+    process.exit(1)
+  }
 }
 
 try {
@@ -43,7 +45,7 @@ if (!satisfies(process.version, requiredVersion)) {
   process.exit(1)
 }
 
-const { dev, build, generate, start } = require('@statusfy/core/lib')
+const { start, generate } = require('@statusfy/core/lib')
 const sourceDir = path.resolve('.')
 
 program
@@ -60,20 +62,14 @@ program
   })
 
 program
-  .command('dev')
+  .command('start')
   .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
   .option('-p, --port <port>', 'use specified port (default: 3000)')
   .option('-s, --ssr', 'force SSR')
   .action(({ port, ssr }) => {
-    wrapCommand(dev)(sourceDir, { port, ssr })
-  })
+    checkCoreInstallation()
 
-program
-  .command('build')
-  .description('Compiles the application for production deployment')
-  .option('-a, --analyze', 'launch the final bundle analysis')
-  .action(({ analyze }) => {
-    wrapCommand(build)(sourceDir, { analyze })
+    wrapCommand(start)(sourceDir, { port, ssr })
   })
 
 program
@@ -82,17 +78,10 @@ program
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
   .option('-a, --analyze', 'launch the final bundle analysis')
   .action(({ dest, analyze }) => {
+    checkCoreInstallation()
+
     const outDir = dest ? path.resolve(dest) : null
     wrapCommand(generate)(sourceDir, { outDir, analyze })
-  })
-
-program
-  .command('start')
-  .description(`Starts the application in production mode. The application should be compiled with ${chalk.cyan(`statusfy build`)} first.`)
-  .option('-p, --port <port>', 'use specified port (default: 3000)')
-  .option('-H, --host <host>', 'use specified host (default: 127.0.0.1)')
-  .action(({ host, port }) => {
-    wrapCommand(start)(sourceDir, { host, port })
   })
 
 program
