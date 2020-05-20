@@ -42,12 +42,12 @@
     "postcss-nested": "4.2.1",
     "postcss-preset-env": "6.7.0",
     "slugify": "1.4.0",
-    "tailwindcss": ">=0.7 <1",
+    "tailwindcss": "^1.4.6",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
     "upath": "1.2.0",
     "validator": "13.0.0",
-    "yaml": "1.8.3"
+    "yaml": "1.10.0"
   },
   "devDependencies": {
     "@types/esm": "3.2.0",
@@ -55,8 +55,8 @@
     "@types/lodash.foreach": "4.5.6",
     "@types/lodash.isstring": "4.0.6",
     "@types/lodash.template": "4.4.6",
-    "@types/validator": "12.0.1",
-    "@types/node": "12.12.31",
-    "typescript": "3.8.3"
+    "@types/node": "12.12.41",
+    "@types/validator": "13.0.0",
+    "typescript": "3.9.3"
   }
 }

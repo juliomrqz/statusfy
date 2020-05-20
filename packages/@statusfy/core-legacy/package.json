@@ -75,7 +75,7 @@
     "vue-svgicon": "3.2.6"
   },
   "//devDependencies": {
-    "@types/node": "12.12.31",
+    "@types/node": "12.12.41",
     "@types/lodash.drop": "4.1.6",
     "@types/lodash.sortby": "4.7.6",
     "typescript": "3.8.3",
