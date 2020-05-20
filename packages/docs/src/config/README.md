@@ -89,18 +89,18 @@ module.exports = {
   theme: {
     links: {
       en: {
-        contact: "https://statusfy.co/contact",
-        support: "https://statusfy.co/support",
-        home: "https://statusfy.co",
-        privacy: "https://statusfy.co/data-privacy",
-        legal: "https://statusfy.co/legal"
+        contact: "https://aceforth.com/products/statusfy/contact",
+        support: "https://aceforth.com/products/statusfy#support",
+        home: "https://aceforth.com/products/statusfy",
+        privacy: "https://aceforth.com/products/statusfy/data-privacy",
+        legal: "https://aceforth.com/products/statusfy/legal"
       },
       es: {
-        contact: "https://statusfy.co/es/contact",
-        support: "https://statusfy.co/es/support",
-        home: "https://statusfy.co/es",
-        privacy: "https://statusfy.co/es/data-privacy",
-        legal: "https://statusfy.co/es/legal"
+        contact: "https://aceforth.com/products/statusfy/es/contact",
+        support: "https://aceforth.com/es/products/statusfy#support",
+        home: "https://aceforth.com/products/statusfy/es",
+        privacy: "https://aceforth.com/products/statusfy/es/data-privacy",
+        legal: "https://aceforth.com/products/statusfy/es/legal"
       }
     }
   }
@@ -216,8 +216,8 @@ You must define a value for each language your system supports:
 ...
   notifications: {
     twitter: {
-      en: "BazziteTech",
-      es: "BazziteES"
+      en: "AceforthHQ",
+      es: "AceforthES"
     }
   }
 ...
@@ -238,8 +238,8 @@ You must define a value for each language your system supports:
 ...
   notifications: {
     support: {
-      en: "https://statusfy.co/support",
-      es: "https://statusfy.co/es/support"
+      en: "https://aceforth.com/products/statusfy#support",
+      es: "https://aceforth.com/es/products/statusfy#support"
     }
   }
 ...

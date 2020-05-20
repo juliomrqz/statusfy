@@ -14,9 +14,9 @@
     "update-incident": "statusfy update-incident"
   },
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -25,7 +25,7 @@
   "devDependencies": {
     "less": "3.11.1",
     "less-loader": "5.0.0",
-    "node-sass": "4.13.1",
+    "node-sass": "4.14.1",
     "sass-loader": "8.0.2",
     "stylus": "0.54.7",
     "stylus-loader": "3.0.2"

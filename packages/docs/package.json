@@ -15,36 +15,36 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bazzite/statusfy-docs.git"
+    "url": "git+https://github.com/aceforth/statusfy-docs.git"
   },
   "keywords": [
     "statusfy",
     "documentation"
   ],
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "bugs": {
-    "url": "https://github.com/bazzite/statusfy-docs/issues"
+    "url": "https://github.com/aceforth/statusfy-docs/issues"
   },
   "homepage": "https://docs.statusfy.co",
   "dependencies": {
-    "vuepress": "1.4.0"
+    "vuepress": "1.5.0"
   },
   "devDependencies": {
     "@statusfy/common": "0.5.0",
-    "@vuepress/plugin-back-to-top": "1.4.0",
-    "@vuepress/plugin-google-analytics": "1.4.0",
-    "@vuepress/plugin-pwa": "1.4.0",
+    "@vuepress/plugin-back-to-top": "1.5.0",
+    "@vuepress/plugin-google-analytics": "1.5.0",
+    "@vuepress/plugin-pwa": "1.5.0",
     "axios": "0.19.2",
-    "consola": "2.11.3",
+    "consola": "2.12.1",
     "fs-extra": "9.0.0",
     "markdown-it-block-image": "0.0.3",
     "markdown-it-imsize": "2.0.1",
     "vuepress-plugin-reading-time": "0.1.1",
-    "vuepress-plugin-seo": "0.1.2",
+    "vuepress-plugin-seo": "0.1.3",
     "vuepress-plugin-sitemap": "2.3.1"
   }
 }

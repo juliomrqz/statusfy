@@ -28,7 +28,7 @@
 
       <div class="text-center">
         <a
-          href="https://bazzite.xyz/StatusfyOpenCollective#contribute"
+          href="https://opencollective.com/statusfy#contribute"
           rel="noopener"
           target="_blank"
           class="btn btn-sm btn-outline">{{ text[language].becomePartner }}</a>
@@ -56,7 +56,7 @@
 
       <div class="text-center">
         <a
-          href="https://bazzite.xyz/StatusfyOpenCollective#contribute"
+          href="https://opencollective.com/statusfy#section-contribute"
           rel="noopener"
           target="_blank">{{ text[language].becomePartner }}</a>
       </div>

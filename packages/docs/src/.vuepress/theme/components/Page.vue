@@ -10,16 +10,16 @@
     <meta itemprop="image" :content="require(`@assets/img/social-${language}.png`)">
     <meta itemprop="wordCount" :content="$page.readingTime.words">
     <meta itemprop="timeRequired" :content="`PT${Math.ceil($page.readingTime.minutes)}M`">
-    <meta itemprop="license" content="https://github.com/bazzite/statusfy/blob/develop/LICENSE">
+    <meta itemprop="license" content="https://github.com/aceforth/statusfy/blob/develop/LICENSE">
     <meta itemprop="version" :content="$site.themeConfig.version">
     <div itemscope itemprop="author" itemtype="http://schema.org/Organization">
-      <meta itemprop="legalName" content="Bazzite, LLC">
-      <meta itemprop="name" content="Bazzite">
-      <meta itemprop="url" content="https://www.bazzite.com">
+      <meta itemprop="legalName" content="Aceforth, LLC">
+      <meta itemprop="name" content="Aceforth">
+      <meta itemprop="url" content="https://aceforth.com">
     </div>
     <div itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Statusfy">
-      <meta itemprop="url" content="https://statusfy.co">
+      <meta itemprop="url" content="https://aceforth.com/products/statusfy">
       <div itemscope itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
         <meta itemprop="url" :content="require('@public/logo.png')">
         <meta itemprop="width" content="512px">

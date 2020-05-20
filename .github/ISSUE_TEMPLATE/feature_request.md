@@ -14,7 +14,7 @@ about: Suggest an idea for this project
 
 <!-- Please ask questions via following several ways. -->
 <!-- Free Support (Spectrum Chat): https://spectrum.chat/bazzite/statusfy -->
-<!-- Professional Support: This project is sponsored by https://www.bazzite.com. If you require Professional Assistance on your project(s), please contact us at https://statusfy.co/support. -->
+<!-- Professional Support: This project is sponsored by https://aceforth.com. If you require Professional Assistance on your project(s), please contact us at https://aceforth.com/products/statusfy#support. -->
 
 <!-- Issues which contain questions or support requests will be closed. -->
 

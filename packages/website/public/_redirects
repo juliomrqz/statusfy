@@ -1,0 +1,14 @@
+/es/support    http://aceforth.com/es/products/statusfy#support      301
+/suppor        http://aceforth.com/products/statusfy#support         301
+
+/es/blog/      http://aceforth.com/es/blog                   301
+/blog/         http://aceforth.com/blog                      301
+
+/es/blog/*     http://aceforth.com/es/blog/:splat      301
+/blog/*        http://aceforth.com/blog/:splat         301
+
+/es            http://aceforth.com/es/products/statusfy      301
+/              http://aceforth.com/products/statusfy         301
+
+/es/*          http://aceforth.com/es/products/statusfy      301
+/*             http://aceforth.com/products/statusfy         301

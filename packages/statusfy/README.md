@@ -1,15 +1,15 @@
 <p align="center">
-  <a href="https://www.bazzite.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
-    <img src="https://img.shields.io/badge/Bazzite-project-blue.svg" alt="Bazzite Project">
+  <a href="https://aceforth.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
+    <img src="https://img.shields.io/badge/Aceforth-project-blue.svg" alt="Aceforth Project">
   </a>
-  <a href="https://travis-ci.org/bazzite/statusfy" rel="nofollow">
-    <img src="https://img.shields.io/travis/bazzite/statusfy.svg" alt="Travis">
+  <a href="https://travis-ci.org/aceforth/statusfy" rel="nofollow">
+    <img src="https://img.shields.io/travis/aceforth/statusfy.svg" alt="Travis">
   </a>
   <a href="https://www.npmjs.com/package/statusfy" rel="nofollow">
     <img src="https://img.shields.io/npm/v/statusfy.svg" alt="version">
   </a>
-  <a href="https://github.com/bazzite/statusfy/blob/develop/LICENSE" rel="nofollow">
-    <img src="https://img.shields.io/github/license/bazzite/statusfy.svg" alt="License">
+  <a href="https://github.com/aceforth/statusfy/blob/develop/LICENSE" rel="nofollow">
+    <img src="https://img.shields.io/github/license/aceforth/statusfy.svg" alt="License">
   </a>
 </p>
 
@@ -23,15 +23,15 @@
   <a href="#backers" alt="Backers on Open Collective">
     <img src="https://opencollective.com/statusfy/tiers/backers/badge.svg" />
   </a>
-  <a href="https://bazzite.xyz/StatusfyOpenCollective">
+  <a href="https://opencollective.com/statusfy">
     <img src="https://img.shields.io/badge/Support%20us-Open%20Collective-0366d6.svg" alt="Support us">
   </a>
 </p>
 
 
 <p align="center">
-  <a href="https://statusfy.co?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" target="_blank">
-    <img src="https://raw.githubusercontent.com/bazzite/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
+  <a href="https://aceforth.com/products/statusfy?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" target="_blank">
+    <img src="https://raw.githubusercontent.com/aceforth/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
   </a>
 </p>
 
@@ -60,7 +60,7 @@ A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] a
 
 ## Sponsoring
 
-We love Open Source Projects, we use them every day and **Statusfy is our contribution to the community**. Statusfy is created and maintained by [Bazzite][bazzite-website], a Software Development Company, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, **please donate**, *we will appreciate it* ❤️.
+We love Open Source Projects, we use them every day and **Statusfy is our contribution to the community**. Statusfy is created and maintained by [Aceforth][aceforth-website], a Software Development Company, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, **please donate**, *we will appreciate it* ❤️.
 
 This is how we use the donations:
 
@@ -71,7 +71,7 @@ This is how we use the donations:
 
 ### Partners
 
-**Become a Partner** and get your logo with a link to your site on our README on Github, **every page** of https://docs.statusfy.co and, the **home page** and **each blog post** of https://statusfy.co. [[Become a Partner][opencollective-contribute]]
+**Become a Partner** and get your logo with a link to your site on our README on Github, **every page** of https://docs.statusfy.co and, the **home page** and **each blog post** of https://aceforth.com/products/statusfy. [[Become a Partner][opencollective-contribute]]
 
 <a href="https://opencollective.com/statusfy#contributors">
   <img src="https://opencollective.com/statusfy/tiers/partners.svg?avatarHeight=96&width=890&button=false" />
@@ -154,7 +154,7 @@ yarn test
 More information in the [Contributing Guide][contributing].
 You can also build and run Statusfy in a free online workspace using Gitpod:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/bazzite/statusfy)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/aceforth/statusfy)
 
 ## Demo
 
@@ -171,7 +171,7 @@ A Demo application is at [https://demo.statusfy.co][demo].
 
 ## Professional Support
 
-This project is sponsored by [Bazzite][bazzite-website]. If you require Professional Assistance on your project(s), please contact us at [https://statusfy.co/support][support-page].
+This project is sponsored by [Aceforth][aceforth-website]. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
 
 ## Contributing
 
@@ -185,22 +185,22 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [Apache License 2.0][license-page].
 
-![](https://ga-beacon.appspot.com/UA-65885578-17/bazzite/statusfy/npm?pixel)
+![](https://ga-beacon.appspot.com/UA-65885578-17/aceforth/statusfy/npm?pixel)
 
-[examples]: https://github.com/bazzite/statusfy/tree/develop/examples
+[examples]: https://github.com/aceforth/statusfy/tree/develop/examples
 [demo]: https://demo.statusfy.co?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
 [documentation]: https://docs.statusfy.co?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[contributing]: https://github.com/bazzite/statusfy/blob/develop/CONTRIBUTING.md
-[code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[issues]: https://github.com/bazzite/statusfy/issues
-[twitter]: https://bazzite.xyz/Twitter
-[bazzite-website]: https://www.bazzite.com?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[support-page]: https://statusfy.co/support?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[statusfy-blog]: https://statusfy.co/blog?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[license-page]: https://github.com/bazzite/statusfy/blob/develop/LICENSE
+[contributing]: https://github.com/aceforth/statusfy/blob/develop/CONTRIBUTING.md
+[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
+[issues]: https://github.com/aceforth/statusfy/issues
+[twitter]: https://twitter.com/AceforthHQ
+[aceforth-website]: https://aceforth.com?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
+[support-page]: https://aceforth.com/products/statusfy#support?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
+[statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
+[license-page]: https://github.com/aceforth/statusfy/blob/develop/LICENSE
 [vue]: http://vuejs.org/
 [nuxt]: https://nuxtjs.org/
 [tailwindcss]: https://tailwindcss.com/
 [npx]: https://www.npmjs.com/package/npx
 [npm]: https://www.npmjs.com/get-npm
-[opencollective-contribute]: https://bazzite.xyz/StatusfyOpenCollective#contribute
+[opencollective-contribute]: https://opencollective.com/statusfy#section-contribute

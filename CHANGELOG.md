@@ -1,4 +1,4 @@
-# [0.5.0](https://github.com/bazzite/statusfy/compare/v0.4.3...v0.5.0) (2019-12-18)
+# [0.5.0](https://github.com/aceforth/statusfy/compare/v0.4.3...v0.5.0) (2019-12-18)
 
 
 ### Performance
@@ -7,19 +7,19 @@
 
 ### Bug Fixes
 
-* **core:** fix compilation error because of invalid core-js version ([5a16424](https://github.com/bazzite/statusfy/commit/5a1642484f80eae5bffae01e8545f7c513bec157))
-* **core:** replace `<no-ssr>` with `<client-only>` ([fcc90e3](https://github.com/bazzite/statusfy/commit/fcc90e3520333146ea281fedbc6c90ebb956e5f3))
-* **docs:** add missing information ([823ce73](https://github.com/bazzite/statusfy/commit/823ce735f90fbefd0bfa71926d2adf551ea2b43e))
-* **core:** fix i18n with right camel case for footer links ([766a914](https://github.com/bazzite/statusfy/commit/766a91441f9f07436fdbc679845431663cf7e2d7))
+* **core:** fix compilation error because of invalid core-js version ([5a16424](https://github.com/aceforth/statusfy/commit/5a1642484f80eae5bffae01e8545f7c513bec157))
+* **core:** replace `<no-ssr>` with `<client-only>` ([fcc90e3](https://github.com/aceforth/statusfy/commit/fcc90e3520333146ea281fedbc6c90ebb956e5f3))
+* **docs:** add missing information ([823ce73](https://github.com/aceforth/statusfy/commit/823ce735f90fbefd0bfa71926d2adf551ea2b43e))
+* **core:** fix i18n with right camel case for footer links ([766a914](https://github.com/aceforth/statusfy/commit/766a91441f9f07436fdbc679845431663cf7e2d7))
 
 ### Code Refactoring
 
-* drop support for Node.js v8 ([b79f140](https://github.com/bazzite/statusfy/commit/b79f1406beb12042104532c78fbb46b59aca7e70))
+* drop support for Node.js v8 ([b79f140](https://github.com/aceforth/statusfy/commit/b79f1406beb12042104532c78fbb46b59aca7e70))
 
 
 ### Minor Features
 
-* footer links for EU GDPR legal notice and data pricacy statement ([22ce441](https://github.com/bazzite/statusfy/commit/22ce4419f27b1f467b0b61df4b88d525ad33de55))
+* footer links for EU GDPR legal notice and data pricacy statement ([22ce441](https://github.com/aceforth/statusfy/commit/22ce4419f27b1f467b0b61df4b88d525ad33de55))
 
 
 ### BREAKING CHANGES
@@ -53,7 +53,7 @@
 
 ### Minor Features
 
-- **core:**  create Dutch translation ([ea626b4](https://github.com/bazzite/statusfy/commit/ea626b4)) [thanks to [@cafferata](https://github.com/cafferata)]
+- **core:**  create Dutch translation ([ea626b4](https://github.com/aceforth/statusfy/commit/ea626b4)) [thanks to [@cafferata](https://github.com/cafferata)]
 
 
 
@@ -162,9 +162,9 @@
 * officially support Docker 🤓 ([289b296](https://github.com/statusfy/statusfy/commit/289b296))
 * **core:** create the "days since latest incident" sub-section in the home page ([cbaf025](https://github.com/statusfy/statusfy/commit/cbaf025))
 * **core:** new interface translations:
-  * German (thanks to [dennis47528](https://github.com/bazzite/statusfy/commits?author=dennis47528))
-  * Hungarian (thanks to [asrob](https://github.com/bazzite/statusfy/commits?author=asrob))
-  * Portuguese (Brazil) (thanks to [felipeklasen](https://github.com/bazzite/statusfy/commits?author=felipeklasen))
+  * German (thanks to [dennis47528](https://github.com/aceforth/statusfy/commits?author=dennis47528))
+  * Hungarian (thanks to [asrob](https://github.com/aceforth/statusfy/commits?author=asrob))
+  * Portuguese (Brazil) (thanks to [felipeklasen](https://github.com/aceforth/statusfy/commits?author=felipeklasen))
 * **website:** migrate the blog section to local markdown files ([dfa141c](https://github.com/statusfy/statusfy/commit/dfa141c))
 
 
@@ -240,7 +240,7 @@
 
 * **cli:** add the missing "dependencies installation" message when initializing a new project ([1841390](https://github.com/statusfy/statusfy/commit/1841390))
 * **cli:** fix the new project creation ([1cbdf5e](https://github.com/statusfy/statusfy/commit/1cbdf5e))
-* **cli:** fix the new incident creation ([#64](https://github.com/bazzite/statusfy/pull/64))
+* **cli:** fix the new incident creation ([#64](https://github.com/aceforth/statusfy/pull/64))
 
 
 ### Features

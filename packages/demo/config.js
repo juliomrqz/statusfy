@@ -33,29 +33,29 @@ module.exports = {
   theme: {
     links: {
       en: {
-        contact: "https://statusfy.co/support",
-        support: "https://statusfy.co/support",
-        home: "https://statusfy.co",
-        privacy: "https://statusfy.co/data-privacy",
-        legal: "https://statusfy.co/legal"
+        contact: "https://aceforth.com/products/statusfy#support",
+        support: "https://aceforth.com/products/statusfy#support",
+        home: "https://aceforth.com/products/statusfy",
+        privacy: "https://aceforth.com/products/statusfy/data-privacy",
+        legal: "https://aceforth.com/products/statusfy/legal"
       },
       es: {
-        contact: "https://statusfy.co/es/support",
-        support: "https://statusfy.co/es/support",
-        home: "https://statusfy.co/es",
-        privacy: "https://statusfy.co/es/data-privacy",
-        legal: "https://statusfy.co/es/legal"
+        contact: "https://aceforth.com/es/products/statusfy#support",
+        support: "https://aceforth.com/es/products/statusfy#support",
+        home: "https://aceforth.com/products/statusfy/es",
+        privacy: "https://aceforth.com/products/statusfy/es/data-privacy",
+        legal: "https://aceforth.com/products/statusfy/es/legal"
       }
     }
   },
   notifications: {
     twitter: {
-      en: "BazziteTech",
-      es: "BazziteES"
+      en: "AceforthHQ",
+      es: "AceforthHQ"
     },
     support: {
-      en: "https://statusfy.co/support",
-      es: "https://statusfy.co/es/support"
+      en: "https://aceforth.com/products/statusfy#support",
+      es: "https://aceforth.com/es/products/statusfy#support"
     },
     webpush: {
       onesignal: {

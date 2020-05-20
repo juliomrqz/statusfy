@@ -3,9 +3,9 @@
   "version": "0.5.0",
   "description": "A marvelous open source Status Page system",
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
   "main": "statusfy.js",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bazzite/statusfy.git"
+    "url": "git+https://github.com/aceforth/statusfy.git"
   },
   "bugs": {
-    "url": "https://github.com/bazzite/statusfy/issues"
+    "url": "https://github.com/aceforth/statusfy/issues"
   },
-  "homepage": "https://statusfy.co",
+  "homepage": "https://aceforth.com/products/statusfy",
   "keywords": [
-    "bazzite",
+    "aceforth",
     "statusfy",
     "generator",
     "web-application",

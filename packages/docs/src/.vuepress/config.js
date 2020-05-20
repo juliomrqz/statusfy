@@ -8,12 +8,12 @@ const pkg = require('../../package.json')
 const baseUrl = 'https://docs.statusfy.co'
 const author = {
   en: {
-    name: 'Bazzite',
-    twitter: 'BazziteTech'
+    name: 'Aceforth',
+    twitter: 'AceforthHQ'
   },
   es: {
-    name: 'Bazzite',
-    twitter: 'BazziteEs'
+    name: 'Aceforth',
+    twitter: 'BazzAceforthHQiteEs'
   }
 }
 
@@ -69,8 +69,8 @@ module.exports = {
   themeConfig: {
     version: pkg.version,
     domain: baseUrl,
-    repo: 'bazzite/statusfy',
-    docsRepo: 'bazzite/statusfy',
+    repo: 'aceforth/statusfy',
+    docsRepo: 'aceforth/statusfy',
     docsDir: 'packages/docs/src',
     docsBranch: 'develop',
     editLinks: true,
@@ -100,7 +100,7 @@ module.exports = {
           },
           {
             text: 'Support',
-            link: 'https://statusfy.co/support'
+            link: 'https://aceforth.com/products/statusfy#support'
           },
           {
             text: 'Demo',
@@ -133,7 +133,7 @@ module.exports = {
           },
           {
             text: 'Soporte',
-            link: 'https://statusfy.co/es/support'
+            link: 'https://aceforth.com/es/products/statusfy#support'
           },
           {
             text: 'Demo',
@@ -201,7 +201,7 @@ module.exports = {
 
         add('twitter:site', author[lang].twitter)
         add('article:author', author[lang].name)
-        add('article:publisher', 'https://www.facebook.com/bazzite/')
+        add('article:publisher', 'https://www.facebook.com/aceforth/')
         add('article:modified_time', modifiedAt)
 
         add('og:updated_time', modifiedAt)
