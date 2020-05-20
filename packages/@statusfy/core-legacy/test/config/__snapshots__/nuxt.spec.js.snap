@@ -102,7 +102,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Short Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -298,7 +298,7 @@ Object {
       "title": "Long Title",
     },
     "sourceDir": "../.tmp/advanced",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "workbox": Object {
     "assetsURLPattern": "/static/(?!content).*$",
@@ -412,7 +412,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Title",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -544,7 +544,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/cli",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "workbox": Object {
     "assetsURLPattern": "/static/(?!content).*$",
@@ -774,7 +774,7 @@ Object {
       "title": "Title",
     },
     "sourceDir": "../.tmp/simple",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
 }
 `;
@@ -874,7 +874,7 @@ Object {
     "publicPath": "/static/",
     "short_name": "Título",
     "start_url": "/?standalone=true&utm_source=web_app&utm_medium=pwa",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "meta": Object {
     "author": "Statusfy",
@@ -1024,7 +1024,7 @@ Object {
       "title": "Título",
     },
     "sourceDir": "../.tmp/spanish",
-    "version": "0.5.0",
+    "version": "1.0.0-alpha.0",
   },
   "workbox": Object {
     "assetsURLPattern": "/static/(?!content).*$",

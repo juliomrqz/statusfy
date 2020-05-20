@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@statusfy/config",
-  "version": "0.5.0",
+  "version": "1.0.0-alpha.0",
   "description": "CLI for Statusfy",
   "author": {
     "name": "Aceforth",
@@ -16,7 +16,7 @@
     "node": ">= 10"
   },
   "devDependencies": {
-    "@statusfy/common": "0.5.0",
+    "@statusfy/common": "1.0.0-alpha.0",
     "@types/node": "12.12.41",
     "typescript": "3.9.3"
   }
