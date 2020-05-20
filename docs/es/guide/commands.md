@@ -22,12 +22,12 @@ statusfy init
 
 - `-d` o `--dir`: especifica el directorio de instalación (por defecto: directorio actual/de trabajo).
 
-## dev
+## start
 
 Inicia la aplicación en modo de desarrollo (recarga de código en caliente, informe de errores, etc.).
 
 ``` bash
-statusfy dev
+statusfy start
 ```
 
 ### Argumentos
@@ -35,25 +35,9 @@ statusfy dev
 - `-p <port>` o `--port <port>`: usa el **puerto** especificado (predeterminado: 3000).
 - `-s` o `--ssr`: forza SSR (Server-Side Rendering).
 
-## build
-
-Compila la aplicación para el despliegue de producción.
-
-``` bash
-statusfy build
-```
-
-::: warning ADVERTENCIA
-Después de ejecutar este comando, debes iniciar la aplicación utilizando el comando [`statusfy start`](#start).
-:::
-
-### Argumentos
-
-- `-a` o `--analyze`: lanzar el análisis final del paquete. ***Esto no debe ser utilizado para producción***.
-
 ## generate
 
-Generar una aplicación web estática (renderizado por servidor).
+Generar una aplicación web estática.
 
 ``` bash
 statusfy generate
@@ -63,23 +47,6 @@ statusfy generate
 
 - `-d` o `--dir`: especificar el directorio de destino (predeterminado: ./dist)
 - `-a` o `--analyze`: lanzar el análisis final del paquete. ***Esto no debe ser utilizado para producción***.
-
-## start
-
-Inicia la aplicación en modo producción.
-
-``` bash
-statusfy start
-```
-
-::: warning ADVERTENCIA
-La aplicación se debe compilar con [`statusfy build`](#build) primero.
-:::
-
-### Argumentos
-
-- `-p <port>` o `--port <port>`: usa el **puerto** especificado (predeterminado: 3000).
-- `-H <port>` o `--host <host>`: usa el **host** especificado (predeterminado: 127.0.0.1).
 
 ## new-incident
 
