@@ -4,9 +4,9 @@
   "version": "0.5.0",
   "description": "CLI for Statusfy",
   "author": {
-    "name": "Bazzite",
-    "email": "support@bazzite.com",
-    "url": "https://www.bazzite.com"
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
   "scripts": {
