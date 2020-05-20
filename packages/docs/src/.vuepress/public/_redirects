@@ -1,2 +1,0 @@
-# redirect html pages
-/*.html  /:splat/   301

@@ -4,7 +4,6 @@
   "workspaces": [
     "packages/@statusfy/*",
     "packages/demo",
-    "packages/docs",
     "packages/statusfy"
   ],
   "description": "A marvelous open source Status Page system",
