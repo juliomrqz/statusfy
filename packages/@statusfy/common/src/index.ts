@@ -1,3 +1,7 @@
+import _LRU from 'lru-cache'
+import _hash from 'hash-sum'
+import _chalk from 'chalk'
+
 export * as path from 'upath'
 
 export { esm } from './esm'
@@ -18,7 +22,9 @@ export * as toml from 'toml'
 export * as tomlify from 'tomlify-j0.4'
 export * as yaml from 'yaml'
 
-export * as chalk from 'chalk'
 export * as fse from 'fs-extra'
-export * as hash from 'hash-sum'
-export * as LRU from 'lru-cache'
+
+export const chalk = _chalk
+export const hash = _hash
+export const LRU = _LRU
+

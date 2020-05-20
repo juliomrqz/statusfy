@@ -1,52 +1,56 @@
 import { program } from 'commander'
 import satisfies from 'semver/functions/satisfies'
 import { path, chalk } from "@statusfy/common/src";
+import resolve from 'resolve-from';
 
+import start from './commands/start'
+import generate from './commands/generate'
 import init from './commands/init'
 import newIncident from './commands/new-incident'
 import deleteIncident from './commands/delete-incident'
 import updateIncident from './commands/update-incident'
 
-function packageError(name: string, err: Error) {
-  console.log(chalk.red(
-    `\n[statusfy] @statusfy/cli ` +
-    `requires ${name} to be installed.\n` +
-    `${err}`
-  ))
+import pkg from '../package.json'
+
+const sourceDir = path.resolve('.')
+
+function packageError(name: string) {
+  let message = chalk.red(`\n[statusfy] @statusfy/cli requires ${name} to be installed in the Working Directory.\n\n`)
+  message += chalk.cyan(`Working Directory: ${sourceDir}\n`)
+
+  console.log(message)
 }
 
 function checkCoreInstallation() {
   try {
-    require.resolve('@statusfy/core')
+    const corePkgPath = resolve(sourceDir, '@statusfy/core/package.json')
+    const corePkg: { [key: string]: string } = require(corePkgPath)
+
+    if (!satisfies(pkg.version, corePkg.version)) {
+      console.log(chalk.yellow(`The version of ${chalk.bold('@statusfy/cli')} and ${chalk.bold('statusfy')} don't match. This can lead to an unexpected behavior.\n`))
+
+      console.log(chalk.yellow(`@statusfy/cli:  `) + chalk.cyan(pkg.version))
+      console.log(chalk.yellow(`statusfy:       `) + chalk.cyan(corePkg.version) + "\n\n")
+    }
   } catch (err) {
-    packageError('@statusfy/core', err)
+    const error: Error = err
+
+    if (err.code === 'MODULE_NOT_FOUND') {
+      packageError('statusfy')
+    } else {
+      console.error(error)
+    }
+
     process.exit(1)
   }
 }
 
-try {
-  require.resolve('@statusfy/editor')
-} catch (err) {
-  packageError('@statusfy/editor', err)
-  process.exit(1)
-}
-
-import pkg from '@statusfy/core/package.json'
-const requiredVersion = pkg.engines.node
-
-if (!satisfies(process.version, requiredVersion)) {
-  console.log(chalk.red(
-    `Minimum Node version not met:\n` +
-    `You are using Node ${process.version}, ` +
-    `but Statusfy requires Node ${requiredVersion}.`
-  ))
-  console.log(chalk.red(`Please upgrade your Node version.`))
-
-  process.exit(1)
-}
-
-const { start, generate } = require('@statusfy/core/lib')
-const sourceDir = path.resolve('.')
+// try {
+//   require.resolve('@statusfy/editor')
+// } catch (err) {
+//   packageError('@statusfy/editor', err)
+//   process.exit(1)
+// }
 
 program
   .version(pkg.version)
@@ -65,7 +69,6 @@ program
   .command('start')
   .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
   .option('-p, --port <port>', 'use specified port (default: 3000)')
-  .option('-s, --ssr', 'force SSR')
   .action(({ port, ssr }) => {
     checkCoreInstallation()
 
@@ -74,9 +77,8 @@ program
 
 program
   .command('generate')
-  .description('Generate a static web application (server-rendered)')
+  .description('Generate a static web application')
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
-  .option('-a, --analyze', 'launch the final bundle analysis')
   .action(({ dest, analyze }) => {
     checkCoreInstallation()
 
@@ -97,7 +99,6 @@ program
   .action(() => {
     wrapCommand(deleteIncident)(sourceDir, {})
   })
-
 
 program
   .command('update-incident')

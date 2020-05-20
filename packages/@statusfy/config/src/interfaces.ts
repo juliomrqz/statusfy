@@ -1,5 +1,3 @@
-import { Configuration } from "@nuxt/types"
-
 interface OneSignalOptions {
   appId: string;
   allowLocalhostAsSecureOrigin: boolean;
@@ -51,58 +49,4 @@ export interface ConfigFile {
     isStatic: boolean;
   },
   sourceDir?: string;
-}
-
-export interface NuxtConfiguration extends Configuration {
-  workbox: {
-    workboxVersion?: string;
-    workboxURL?: string;
-    importScripts?: string[];
-    autoRegister: boolean;
-    dev?: boolean;
-    cacheNames?: { [key: string]: string };
-    config?: { [key: string]: string };
-    clientsClaim: boolean;
-    skipWaiting: boolean;
-    offlineAnalytics?: boolean;
-    workboxExtensions?: string | string[];
-    preCaching: string[];
-    cacheOptions: {
-      cacheId?: string;
-      directoryIndex?: string;
-      revision?: string;
-    };
-    cachingExtensions?: string | string[];
-    cleanupOutdatedCaches?: boolean;
-    offline: boolean;
-    offlineStrategy: 'NetworkFirst';
-    offlinePage?: string;
-    offlineAssets?: string[];
-    runtimeCaching: { strategyOptions: { [key: string]: string; } }[];
-    cacheAssets: boolean;
-    routingExtensions?: string | string[];
-    assetsURLPattern: string | RegExp;
-    pagesURLPattern: string | RegExp;
-    swTemplate?: string;
-    swURL?: string;
-    swScope: string;
-    routerBase: string;
-    publicPath: string;
-
-    // REMOVE?
-    globDirectory?: string;
-  },
-
-  oneSignal: {
-    init: OneSignalOptions;
-  };
-
-  icon: {
-    iconSrc: string;
-    iconFileName: string;
-    sizes: string[];
-    targetDir: string;
-    accessibleIcons: boolean;
-    iconProperty: string;
-  }
 }

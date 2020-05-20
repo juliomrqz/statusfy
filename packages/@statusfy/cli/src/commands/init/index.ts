@@ -6,6 +6,11 @@ import template from "lodash/template"
 import { chalk, logger, fse, tomlify, yaml, slugify, path } from "@statusfy/common/src";
 import pkg from "../../../package.json"
 
+import templateConfig from './template-config.json.tpl'
+import templatePackage from './template-package.json.tpl'
+import readmeLocales from './README-locales.md.tpl'
+import readmeContent from './README-content.md.tpl'
+
 interface Prompt {
   title: string;
   description: string;
@@ -15,8 +20,8 @@ interface Prompt {
   packageManager: "npm" | "yarn";
 }
 
-const configTemplate = template(require("./template-config.json.tpl.js"));
-const packageTemplate = template(require("./template-package.json.tpl.js"));
+const configTemplate = template(templateConfig);
+const packageTemplate = template(templatePackage);
 
 export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) => {
   process.env.NODE_ENV = "production";
@@ -132,7 +137,7 @@ export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) =
   await fse.outputFile(configPath, configContent);
 
   // Default locale
-  await fse.outputFile(path.join(outDir, "locales", "README.md"), require("./README-locales.md.tpl.js"))
+  await fse.outputFile(path.join(outDir, "locales", "README.md"), readmeLocales)
 
   await fse.outputJson(
     path.join(outDir, "locales", `${config.defaultLocale}.json`),
@@ -144,7 +149,7 @@ export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) =
   );
 
   // Content directory
-  await fse.outputFile(path.join(outDir, "content", "README.md"), require("./README-content.md.tpl.js"))
+  await fse.outputFile(path.join(outDir, "content", "README.md"), readmeContent)
 
   // package.json
   await fse.outputJson(

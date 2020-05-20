@@ -2,6 +2,9 @@
   "name": "@statusfy/cli",
   "version": "1.0.0-alpha.0",
   "description": "CLI for Statusfy",
+  "bin": {
+    "statusfy": "./bin/statusfy"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -28,6 +31,7 @@
   },
   "dependencies": {
     "commander": "5.1.0",
+    "resolve-from": "5.0.0",
     "semver": "7.3.2"
   },
   "devDependencies": {
@@ -52,8 +56,8 @@
     "lodash": "4.17.15",
     "lru-cache": "5.1.1",
     "opener": "1.5.1",
-    "semver": "7.1.3",
     "tomlify-j0.4": "3.0.0",
+    "ts-node": "8.10.1",
     "typescript": "3.9.3",
     "upath": "1.2.0",
     "yaml": "1.10.0"

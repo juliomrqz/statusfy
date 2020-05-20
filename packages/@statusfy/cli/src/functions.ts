@@ -27,7 +27,7 @@ export const getIncidentsFromProject = async (contentDir: string): Promise<Incid
   return incidentsList;
 };
 
-export const generateIncident = (data: Object, content: string, format: string): string => {
+export const generateIncident = (data: { [key: string]: string | string[] | boolean }, content: string, format: string): string => {
   let matterContent = grayMatter.stringify(content, data, format);
 
   if (["json", "toml"].includes(format)) {

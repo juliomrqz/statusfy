@@ -1,6 +1,6 @@
 import inquirer, { QuestionCollection } from "inquirer";
 
-import { loadConfig } from "../utils";
+import { loadConfig } from "@statusfy/config/src/load"
 import { logger, fse, grayMatter, LRU, path, Dates } from "@statusfy/common/src";
 import { getIncidentsFromProject, generateIncident } from '../functions'
 

@@ -12,7 +12,7 @@ const parse = (input: string | Buffer): matter.GrayMatterFile<string | Buffer> =
   })
 }
 
-const stringify = (content: string, data: { [key: string]: string }, format: string): string => {
+const stringify = (content: string, data: { [key: string]: string | string[] | boolean }, format: string): string => {
   return matter.stringify(
     content,
     data, {

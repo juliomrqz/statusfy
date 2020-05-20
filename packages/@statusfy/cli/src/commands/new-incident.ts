@@ -3,7 +3,7 @@ import inquirer, { QuestionCollection } from "inquirer";
 import opener from "opener";
 
 import { generateIncident } from '../functions'
-import { loadConfig } from "../utils";
+import { loadConfig } from "@statusfy/config/src/load"
 import { logger, fse, slugify, path, Dates } from "@statusfy/common/src";
 
 interface Prompt {

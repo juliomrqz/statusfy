@@ -8,10 +8,7 @@
     "url": "https://aceforth.com"
   },
   "license": "Apache-2.0",
-  "main": "statusfy.js",
-  "bin": {
-    "statusfy": "statusfy.js"
-  },
+  "main": "index.js",
   "scripts": {
     "postinstall": "opencollective || exit 0"
   },
