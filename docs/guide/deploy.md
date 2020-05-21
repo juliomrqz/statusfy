@@ -35,10 +35,8 @@ The following guides are based on a few shared assumptions:
 ``` json
 {
   "scripts": {
-    "dev": "statusfy dev",
-    "generate": "statusfy generate",
-    "build": "statusfy build",
-    "start": "statusfy start"
+    "start": "statusfy start",
+    "generate": "statusfy generate"
   }
 }
 ```

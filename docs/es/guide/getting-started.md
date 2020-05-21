@@ -37,8 +37,6 @@ Se generará una estructura básica para tu proyecto. En el archivo `package.jso
 ``` json
 {
   "scripts": {
-    "dev": "statusfy dev",
-    "build": "statusfy build",
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident"

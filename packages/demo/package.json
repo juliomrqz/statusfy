@@ -6,7 +6,6 @@
   "scripts": {
     "prepare": "node scripts/prepare.js",
     "statusfy": "statusfy",
-    "build": "npm run prepare && statusfy build",
     "start": "npm run prepare && statusfy start",
     "generate": "npm run prepare && statusfy generate",
     "new-incident": "statusfy new-incident",

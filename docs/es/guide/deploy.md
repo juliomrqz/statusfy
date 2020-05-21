@@ -43,10 +43,8 @@ Las siguientes guías se basan en algunas suposiciones compartidas:
 ``` json
 {
   "scripts": {
-    "dev": "statusfy dev",
-    "generate": "statusfy generate",
-    "build": "statusfy build",
-    "start": "statusfy start"
+    "start": "statusfy start",
+    "generate": "statusfy generate"
   }
 }
 ```

@@ -5,8 +5,6 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "statusfy dev",
-    "build": "statusfy build",
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident",

@@ -33,8 +33,6 @@ It will generate a basic structure for your project. Located in the `package.jso
 ``` json
 {
   "scripts": {
-    "dev": "statusfy dev",
-    "build": "statusfy build",
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident"
