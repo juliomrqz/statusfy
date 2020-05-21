@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://aceforth.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=github&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
+  <a href="https://aceforth.com/blog/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
     <img src="https://img.shields.io/badge/Aceforth-project-blue.svg" alt="Aceforth Project">
   </a>
   <a href="https://travis-ci.org/aceforth/statusfy" rel="nofollow">
@@ -39,9 +39,9 @@
 
 > A marvelous Open Source Status Page system
 
-Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated) or [**Server Rendered**](https://docs.statusfy.co/guide/architecture.html#server-rendered) and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
+Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System, [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated), and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
 
-A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Vue** to dynamically define the interfaces that represent the data, **Nuxt.js** to make a quick and useful abstraction of the client and server logic, and **Tailwind CSS** to rapidly define the default theme.
+A Statusfy site is a Web Application, created on top of [Eleventy][eleventy]  [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Eleventy** to make a quick and useful abstraction of the system generation, **Vue** and **Nuxt.js** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
 
 
 ## Features
@@ -56,7 +56,7 @@ A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] a
   - Easy Customization
   - Beautiful Design 
 - SEO Friendly
-- Hosting flexibility: Static Generated or Server Rendered
+- Hosting flexibility
 
 ## Sponsoring
 
@@ -102,7 +102,7 @@ It’s pretty easy to get started with Statusfy. Install it globally with npm:
 cd existing_folder
 
 # run the initialization command
-npx statusfy init
+npx @statusfy/cli init
 
 # and install your local dependencies
 npm install  # OR yarn install
@@ -117,30 +117,20 @@ npm run new-incident # OR yarn new-incident
 and launch the development server with:
 
 ``` bash
-npm run dev # OR yarn dev
+npm run start # OR yarn start
 ```
 
-You can also generate a Static Generated Website with:
+You can later also generate the final Website with:
 
 ``` bash
 npm run generate # OR yarn generate
-```
-
-or generate a Server Rendered Website with:
-
-``` bash
-# generate static assets
-npm run build # OR yarn build
-
-# launch the server
-npm run start # OR yarn start
 ```
 
 More information in the [Documentation][documentation].
 
 ## Development
 
-:warning: You must at least use `node >= 8.10`.
+:warning: You must at least use `node >= 10`.
 
 ``` bash
 # install dependencies
@@ -171,7 +161,7 @@ A Demo application is at [https://demo.statusfy.co][demo].
 
 ## Professional Support
 
-This project is sponsored by [Aceforth][aceforth-website]. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
+This project is sponsored by [Aceforth][aceforth-website], a software development company. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
 
 ## Contributing
 
@@ -198,9 +188,10 @@ Code released under the [Apache License 2.0][license-page].
 [support-page]: https://aceforth.com/products/statusfy#support?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [license-page]: https://github.com/aceforth/statusfy/blob/develop/LICENSE
-[vue]: http://vuejs.org/
-[nuxt]: https://nuxtjs.org/
-[tailwindcss]: https://tailwindcss.com/
+[vue]: http://vuejs.org/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[nuxt]: https://nuxtjs.org/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[tailwindcss]: https://tailwindcss.com/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[eleventy]: https://www.11ty.dev/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [npx]: https://www.npmjs.com/package/npx
 [npm]: https://www.npmjs.com/get-npm
 [opencollective-contribute]: https://opencollective.com/statusfy#section-contribute
