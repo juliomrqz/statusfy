@@ -4,6 +4,7 @@ import localeCode from "locale-code"
 import template from "lodash/template"
 
 import { chalk, logger, fse, tomlify, yaml, slugify, path } from "@statusfy/common/src";
+import { ConfigFile } from "@statusfy/config/src/interfaces"
 import pkg from "../../../package.json"
 
 import templateConfig from './template-config.json.tpl'
@@ -102,12 +103,15 @@ export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) =
 
   const answers = await inquirer.prompt<Prompt>(questions)
   const languageInfo = localeCode.getLanguages([answers.lang])[0];
-  const config = JSON.parse(
+  const title = answers.title.replace(/"/g, "'")
+  const description = answers.description.replace(/"/g, "'")
+
+  const config: ConfigFile = JSON.parse(
     configTemplate({
       options: {
-        title: answers.title,
-        name: slugify(answers.title),
-        description: answers.description,
+        title: title,
+        name: slugify(title),
+        description: description,
         language: {
           code: languageInfo.code.split("-")[0],
           iso: languageInfo.code,
@@ -124,7 +128,7 @@ export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) =
   let configPath = './';
 
   if (answers.configFormat === "javascript") {
-    configContent = `module.exports = ${JSON.stringify(config, null, "  ")}`;
+    configContent = `export default ${JSON.stringify(config, null, "  ")}`;
     configPath = path.join(outDir, "config.js");
   } else if (answers.configFormat === "yaml") {
     configContent = yaml.stringify(config);
@@ -152,19 +156,15 @@ export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) =
   await fse.outputFile(path.join(outDir, "content", "README.md"), readmeContent)
 
   // package.json
-  await fse.outputJson(
-    path.join(outDir, "package.json"),
-    JSON.parse(
-      packageTemplate({
-        options: {
-          name: config.name,
-          description: config.description,
-          statusfyVersion: pkg.version
-        }
-      })
-    ),
-    { spaces: "  " }
-  );
+  const packageContent = packageTemplate({
+    options: {
+      name: config.name,
+      description: config.description,
+      statusfyVersion: pkg.version
+    }
+  })
+
+  await fse.outputJson(path.join(outDir, "package.json"), JSON.parse(packageContent), { spaces: "  " });
 
   // .gitignore
   await fse.copy(path.join(__dirname, "_gitignore"), path.join(outDir, ".gitignore"));

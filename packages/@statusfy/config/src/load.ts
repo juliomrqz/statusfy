@@ -1,5 +1,5 @@
 import defaultsDeep from "lodash/defaultsDeep"
-import { logger, fse, chalk, toml, yaml, slugify, path } from "@statusfy/common/src";
+import { logger, fse, chalk, toml, yaml, slugify, path, esm } from "@statusfy/common/src";
 
 import { defaultConfig } from "./default";
 import { validateConfig } from "./validate";
@@ -20,7 +20,11 @@ function parseConfig(filePath: string): ConfigFile {
       data = toml.parse(content);
     }
   } else {
-    data = require(filePath);
+    data = esm(filePath);
+
+    if ('default' in data) {
+      data = data.default
+    }
   }
 
   return data || {};

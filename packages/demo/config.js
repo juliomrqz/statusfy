@@ -1,7 +1,7 @@
 const oneSignalAppID =
   process.env.ONESIGNAL_APP_ID || "0c13819d-dd92-4c3e-a554-e7ab14c561af";
 
-module.exports = {
+export default {
   title: "Demo System Status",
   short_title: "System Status",
   description: "A marvelous open source Status Page system",

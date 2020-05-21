@@ -7,8 +7,7 @@ export default `{
     {
       "code": "<%= options.language.code %>",
       "iso": "<%= options.language.iso %>",
-      "name": "<%= options.language.name %>",
-      "file": "<%= options.language.code %>.json"
+      "name": "<%= options.language.name %>"
     }
   ]<% if (options.frontMatterFormat) { %>,
     "content": {

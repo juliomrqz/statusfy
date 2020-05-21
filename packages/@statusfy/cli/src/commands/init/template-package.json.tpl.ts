@@ -1,10 +1,9 @@
 export default `{
   "name": "<%= options.name %>",
   "description": "<%= options.description %>",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'Error: no test specified' && exit 1",
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident",
@@ -15,7 +14,6 @@ export default `{
     "statusfy": "^<%= options.statusfyVersion %>"
   },
   "engines": {
-    "node": ">=10",
-    "npm": ">=5"
+    "node": ">=10"
   }
 }`
