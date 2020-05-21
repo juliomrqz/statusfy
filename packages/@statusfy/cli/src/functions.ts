@@ -15,11 +15,11 @@ export const getIncidentsFromProject = async (contentDir: string): Promise<Incid
       const { data } = grayMatter.parse(fileContent);
 
       incidentsList.push({
+        name: `${fileName} > ${chalk.yellow(data.title)} (${chalk.green(new Date(data.date).toUTCString())})`,
         value: {
-          name: fileName,
+          file_name: fileName,
           path: f
         },
-        name: `${fileName} > ${chalk.yellow(data.title)} (${chalk.green(new Date(data.date).toUTCString())})`
       });
     }
   }

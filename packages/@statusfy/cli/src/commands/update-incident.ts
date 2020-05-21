@@ -7,7 +7,7 @@ import { getIncidentsFromProject, generateIncident } from '../functions'
 import { ParsedIncident, Incident } from '../interfaces'
 
 interface Prompt {
-  incident: Incident;
+  incident: Incident['value'];
   resolved: boolean;
   severity: "under-maintenance" | "degraded-performance" | "partial-outage" | "major-outage";
   affectedsystems: string[];
@@ -34,6 +34,8 @@ const getIncidentData = async (filePath: string): Promise<ParsedIncident> => {
 export default async function updateIncident(sourceDir: string) {
   process.env.NODE_ENV = "development";
 
+  logger.start("Incident update");
+
   const config = loadConfig(sourceDir).config;
   const contentDir = path.join(sourceDir, config.content.dir);
   const incidentsList = await getIncidentsFromProject(contentDir);
@@ -51,7 +53,7 @@ export default async function updateIncident(sourceDir: string) {
       name: "resolved",
       message: "The incident has been resolved?",
       async default(answers: Prompt) {
-        const { resolved } = (await getIncidentData(answers.incident.value.path)).data;
+        const { resolved } = (await getIncidentData(answers.incident.path)).data;
         return Boolean(resolved);
       }
     },
@@ -66,7 +68,7 @@ export default async function updateIncident(sourceDir: string) {
         "major-outage"
       ],
       async default(answers: Prompt) {
-        const { severity } = (await getIncidentData(answers.incident.value.path)).data;
+        const { severity } = (await getIncidentData(answers.incident.path)).data;
         return severity;
       }
     },
@@ -83,7 +85,7 @@ export default async function updateIncident(sourceDir: string) {
         return "You must have an affected system!";
       },
       async default(answers: Prompt) {
-        const { affectedsystems } = (await getIncidentData(answers.incident.value.path)).data;
+        const { affectedsystems } = (await getIncidentData(answers.incident.path)).data;
         return affectedsystems;
       }
     },
@@ -109,7 +111,7 @@ export default async function updateIncident(sourceDir: string) {
           const localeIncidentPath = path.join(
             contentDir,
             config.defaultLocale !== locale ? locale : "",
-            incident.name
+            incident.file_name
           );
           const exists = await fse.pathExists(localeIncidentPath);
 
@@ -144,8 +146,8 @@ export default async function updateIncident(sourceDir: string) {
         if (updatedFiles.length > 0) {
           const prefix =
             updatedFiles.length === 1
-              ? "This file was successfully updated"
-              : "These files were successfully updated";
+              ? "This incident was successfully updated"
+              : "These incidents were successfully updated";
 
           logger.success(`${prefix}: \n${updatedFiles.join("\n")}`);
         }

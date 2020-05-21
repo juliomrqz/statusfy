@@ -1,7 +1,7 @@
 export interface Incident {
   name: string;
   value: {
-    name: string;
+    file_name: string;
     path: string;
   },
 }
