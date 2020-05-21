@@ -10,7 +10,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "dev:compile": "tsc"
+    "tsc": "tsc"
   },
   "engines": {
     "node": ">= 10"

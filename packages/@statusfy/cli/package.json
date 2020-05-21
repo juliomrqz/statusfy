@@ -23,16 +23,14 @@
   },
   "homepage": "https://github.com/aceforth/statusfy#readme",
   "scripts": {
-    "dev:compile": "tsc",
-    "prod:compile": "ncc build src/index.ts -m --v8-cache -o lib -e @statusfy/core -e @statusfy/editor -e statusfy -e prettier -e jsdom -e webpack -e nuxt"
+    "tsc": "tsc",
+    "dev:compile": "ncc build src/index.ts -o ./bin/lib --no-cache -e @statusfy/core -e @statusfy/editor -e statusfy",
+    "dev:compile:status": "yarn dev:compile -s --stats-out ./webpack-stats.json",
+    "prod:compile": "yarn dev:compile -m --v8-cache",
+    "prod:compile:status": "yarn prod:compile --stats-out ./webpack-stats.json"
   },
   "engines": {
     "node": ">= 10"
-  },
-  "dependencies": {
-    "commander": "5.1.0",
-    "resolve-from": "5.0.0",
-    "semver": "7.3.2"
   },
   "devDependencies": {
     "@statusfy/common": "1.0.0-alpha.0",
@@ -48,7 +46,7 @@
     "@types/yaml": "1.9.7",
     "@zeit/ncc": "0.22.2",
     "chalk": "4.0.0",
-    "commander": "5.0.0",
+    "commander": "5.1.0",
     "consola": "2.12.1",
     "fs-extra": "9.0.0",
     "inquirer": "7.1.0",
@@ -56,6 +54,8 @@
     "lodash": "4.17.15",
     "lru-cache": "5.1.1",
     "opener": "1.5.1",
+    "resolve-from": "5.0.0",
+    "semver": "7.3.2",
     "tomlify-j0.4": "3.0.0",
     "ts-node": "8.10.1",
     "typescript": "3.9.3",

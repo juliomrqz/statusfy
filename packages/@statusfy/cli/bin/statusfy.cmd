@@ -1,3 +1,3 @@
 @echo off
 
-node "%~dp0\statusfy-cli" %*
+node "%~dp0\lib\index" %*

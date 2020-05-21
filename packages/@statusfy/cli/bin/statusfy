@@ -34,4 +34,4 @@ try {
 }
 
 // Pre-packaged
-require('./statusfy-cli')
+require('./lib/index')

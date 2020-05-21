@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "strict": true,
-    "noEmitOnError": true,
+    "noEmitOnError": false,
+    "noEmit": false,
     "moduleResolution": "node",
     "module": "CommonJS",
     "target": "ES2018",
@@ -10,8 +11,11 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "outDir": "lib",
+    "outDir": "bin/lib",
     "typeRoots": ["./@types", "./node_modules/@types"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -34,7 +34,7 @@ export function loadConfig(sourceDir: string): { config: ConfigFile, errors: str
   const configFiles = ["config.yml", "config.toml", "config.js"];
   // @ts-ignore
   let configContent: ConfigFile = {};
-  let errors = [];
+  let errors: string[] = [];
 
   // resolve configContent
   // eslint-disable-next-line no-unused-vars

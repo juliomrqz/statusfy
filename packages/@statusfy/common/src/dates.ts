@@ -1,16 +1,17 @@
 import dayjs from 'dayjs'
-import ILocale from 'dayjs/locale/types.d.ts'
 import utc from 'dayjs/plugin/utc'
 
 import { logger } from './logger'
+
+type Locale = typeof dayjs.Ls[0]
 
 dayjs.extend(utc)
 
 export const Dates = () => {
   return {
-    addLocales(extraLangs: string[] | ILocale[]) {
+    addLocales(extraLangs: string[] | Locale[]) {
       if (extraLangs && extraLangs.length > 0) {
-        extraLangs.forEach((l: string | ILocale) => dayjs.locale(l))
+        extraLangs.forEach((l: string | Locale) => dayjs.locale(l))
       }
     },
     format(date?: string | number | Date | dayjs.Dayjs, template?: string, locale = 'en') {

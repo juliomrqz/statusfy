@@ -27,7 +27,7 @@ const packageTemplate = template(templatePackage);
 export default async (sourceDir: string, cliOptions: { outDir?: string } = {}) => {
   process.env.NODE_ENV = "production";
 
-  logger.start("Starting installation");
+  logger.start("Base project creation");
 
   const outDir = cliOptions.outDir || sourceDir;
   const questions: QuestionCollection<Prompt> = [

@@ -37,7 +37,7 @@
     "update-readme": "cp -f README.md ./packages/statusfy/",
     "publish-stable": "yarn update-readme && lerna publish --no-git-tag-version --force-publish '*'",
     "publish-next": "lerna publish --no-git-tag-version --dist-tag next --force-publish '*'",
-    "postinstall": "lerna bootstrap && yarn dev:compile",
+    "postinstall": "lerna bootstrap",
     "demo:build": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo build",
     "demo:dev": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo dev",
     "demo:generate": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo generate",
