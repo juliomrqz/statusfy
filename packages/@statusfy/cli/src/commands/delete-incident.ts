@@ -7,12 +7,14 @@ import { getIncidentsFromProject } from '../functions'
 import { Incident } from '../interfaces'
 
 interface Prompt {
-  incident: Incident;
+  incident: Incident['value'];
   confirm: Boolean;
 }
 
 export default async function deleteIncident(sourceDir: string) {
   process.env.NODE_ENV = "development";
+
+  logger.start("Incident removal");
 
   const config = loadConfig(sourceDir).config;
   const contentDir = path.join(sourceDir, config.content.dir);
@@ -47,7 +49,7 @@ export default async function deleteIncident(sourceDir: string) {
           const localeIncidentPath = path.join(
             contentDir,
             config.defaultLocale !== locale ? locale : "",
-            incident.name
+            incident.file_name
           );
           const exists = await fse.pathExists(localeIncidentPath);
 
@@ -66,8 +68,8 @@ export default async function deleteIncident(sourceDir: string) {
         if (deletedFiles.length > 0) {
           const prefix =
             deletedFiles.length === 1
-              ? "This file was successfully deleted"
-              : "These files were successfully deleted";
+              ? "This incident was successfully deleted"
+              : "These incidents were successfully deleted";
 
           logger.success(`${prefix}: \n${deletedFiles.join("\n")}`);
         }
