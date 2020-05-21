@@ -45,8 +45,5 @@ export interface ConfigFile {
   head?: { [key: string]: any };
 
   // internal
-  build: {
-    isStatic: boolean;
-  },
   sourceDir?: string;
 }

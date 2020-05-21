@@ -59,13 +59,10 @@
     "eslint": "7.0.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-jest": "23.13.1",
-    "eslint-plugin-vue": "6.2.2",
     "glob-promise": "3.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
-    "jest-serializer-vue": "2.0.2",
-    "lerna": "3.21.0",
-    "vue-jest": "3.0.5"
+    "lerna": "3.21.0"
   },
   "resolutions": {
     "@types/node": "12.12.41"

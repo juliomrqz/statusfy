@@ -69,10 +69,10 @@ program
   .command('start')
   .description('Starts the application in development mode (hot-code reloading, error reporting, etc.).')
   .option('-p, --port <port>', 'use specified port (default: 3000)')
-  .action(({ port, ssr }) => {
+  .action(({ port }) => {
     checkCoreInstallation()
 
-    wrapCommand(start)(sourceDir, { port, ssr })
+    wrapCommand(start)(sourceDir, { port })
   })
 
 program

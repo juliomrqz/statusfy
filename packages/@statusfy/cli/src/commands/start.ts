@@ -1,11 +1,13 @@
-export default function start() {
-  try {
-    require('@statusfy/core/src/start')
-  } catch (error) {
-    console.debug(error)
+export default function start(sourceDir: string, options?: { port?: string }): Promise<Function> {
+  let start: Function;
 
-    require('@statusfy/core/lib/start')
+  try {
+    start = require('@statusfy/core/src/start').start
+  } catch (error) {
+    // console.error('[start]', error)
+
+    start = require('@statusfy/core/lib/start').start
   }
 
-  return Promise.resolve(true)
+  return start(sourceDir, options || {})
 }

@@ -11,9 +11,6 @@ export const defaultConfig: ConfigFile = {
     systems: ["api", "cdn", "dns", "site-delivery"],
     frontMatterFormat: "yaml"
   },
-  build: {
-    isStatic: false
-  },
   serviceWorker: true,
   manifest: true,
   theme: {

@@ -21,15 +21,9 @@ module.exports = {
     '^@/common/(.*)$': '<rootDir>/packages/@statusfy/common/$1'
   },
   transform: {
-    '^.+\\.js$': ['babel-jest', { cwd: __dirname }],
-    '.*\\.(vue)$': 'vue-jest'
+    '^.+\\.js$': ['babel-jest', { cwd: __dirname }]
   },
   snapshotSerializers: [
     'jest-serializer-vue'
-  ],
-  globals: {
-    'vue-jest': {
-      babelConfig: './babel.config.js'
-    }
-  }
+  ]
 }

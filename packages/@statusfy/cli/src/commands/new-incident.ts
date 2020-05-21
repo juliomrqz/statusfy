@@ -19,6 +19,8 @@ const dates = Dates();
 export default async function newIncident(sourceDir: string) {
   process.env.NODE_ENV = "development";
 
+  logger.start("Create New Incident");
+
   // Generate configuration
   const config = loadConfig(sourceDir).config;
 
@@ -71,8 +73,6 @@ export default async function newIncident(sourceDir: string) {
       default: false
     }
   ];
-
-  logger.start("Create New Incident");
 
   inquirer.prompt<Prompt>(questions).then(answers => {
     const date: string = dates.parse().toISOString();
