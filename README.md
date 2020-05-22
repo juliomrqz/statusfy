@@ -1,3 +1,5 @@
+> ⚠️ WARNING: This the branch for the next planned version (v1): it's unstable and under active development. For the latest stable version, go to the [`master` branch](https://github.com/aceforth/statusfy/tree/master) 
+
 <p align="center">
   <a href="https://aceforth.com/blog/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
     <img src="https://img.shields.io/badge/Aceforth-project-blue.svg" alt="Aceforth Project">
@@ -35,13 +37,14 @@
   </a>
 </p>
 
+
 # Statusfy
 
 > A marvelous Open Source Status Page system
 
 Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System, [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated), and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
 
-A Statusfy site is a Web Application, created on top of [Eleventy][eleventy]  [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Eleventy** to make a quick and useful abstraction of the system generation, **Vue** and **Nuxt.js** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
+A Statusfy site is a Web Application, created on top of [Eleventy][eleventy], [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Eleventy** to make a quick and useful abstraction of the system generation, **Vue** and **Nuxt.js** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
 
 
 ## Features
