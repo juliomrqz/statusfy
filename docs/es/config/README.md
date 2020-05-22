@@ -89,18 +89,18 @@ module.exports = {
   theme: {
     links: {
       es: {
-        contact: "https://aceforth.com/products/statusfy/es/contact",
+        contact: "https://aceforth.com/es/products/statusfy/contact",
         support: "https://aceforth.com/es/products/statusfy#support",
-        home: "https://aceforth.com/products/statusfy/es",
-        privacy: "https://aceforth.com/products/statusfy/es/data-privacy",
-        legal: "https://aceforth.com/products/statusfy/es/legal"
+        home: "https://aceforth.com/es/products/statusfy",
+        privacy: "https://aceforth.com/es/legal/privacy",
+        legal: "https://aceforth.com/es/legal/terms"
       },
       en: {
         contact: "https://aceforth.com/products/statusfy/contact",
         support: "https://aceforth.com/products/statusfy#support",
         home: "https://aceforth.com/products/statusfy",
-        privacy: "https://aceforth.com/products/statusfy/data-privacy",
-        legal: "https://aceforth.com/products/statusfy/legal"
+        privacy: "https://aceforth.com/legal/privacy",
+        legal: "https://aceforth.com/legal/terms"
       }
     }
   }

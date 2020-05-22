@@ -1,4 +1,4 @@
-const { grayMatter } = require('@statusfy/common')
+const { grayMatterParse } = require('./utils')
 
 module.exports = md => {
   md.frontmatter = md.frontmatter || {}
@@ -7,7 +7,7 @@ module.exports = md => {
   })
 }
 
-function frontmatter (md, state, start, end, silent) {
+function frontmatter(md, state, start, end, silent) {
   const lines = state.src.split('\n')
 
   if (start !== 0 || state.blkIndent !== 0 || state.tShift[start] < 0) {
@@ -34,7 +34,7 @@ function frontmatter (md, state, start, end, silent) {
   }
 
   // Parse front-matter
-  const matterData = grayMatter.parse(state.src)
+  const matterData = grayMatterParse(state.src)
 
   md.frontmatter = matterData.data || {}
   state.line = line + 1

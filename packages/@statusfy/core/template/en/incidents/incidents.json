@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/incident",
+  "permalink": "/incidents/{{ page.fileSlug }}/index.html",
+  "tags": [
+    "incidents_en"
+  ]
+}

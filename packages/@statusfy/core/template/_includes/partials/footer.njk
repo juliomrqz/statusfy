@@ -1,0 +1,34 @@
+<div class="footer">
+  <div class="footer-links">
+    <div>
+      {%- for index, link in site.config.theme.links[locale] -%}
+        <a href="{{ link }}" title="Home" target="_blank" rel="noopener noreferrer">
+          {{ site[locale].labels[index] }}
+        </a>
+      {%- endfor -%}
+    </div>
+    <div>
+      {{ site[locale].labels['powered-by'] }}
+      <a href="https://aceforth.com/products/statusfy" target="_blank" rel="noopener noreferrer">Statusfy</a>
+    </div>
+  </div>
+  <div class="footer-language-swticher">
+    {%- for lang in site.config.locales -%}
+      {% set activeClass = "active" if locale == lang.code else "" %}
+
+      {% if lang.code === locale %}
+        {% set translatedUrl = page.url %}
+      {% else %}
+        {% if lang.code == site.config.defaultLocale %}
+          {% set translatedUrl = page.url.replace(r/^\/(\w+)/i, '') %}
+        {% else %}
+          {% set translatedUrl = "/" + lang.code + page.url %}
+        {% endif %}
+      {% endif %}
+
+      <a href="{{ translatedUrl }}" class="{{activeClass}}">
+        {{ lang.name }}
+      </a>
+    {%- endfor -%}
+  </div>
+</div>

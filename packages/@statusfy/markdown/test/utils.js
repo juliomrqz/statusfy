@@ -1,4 +1,4 @@
-import { fse, path } from '@statusfy/common'
+const { fse, path } = require('../utils')
 
 export function md () {
   return require('markdown-it')()

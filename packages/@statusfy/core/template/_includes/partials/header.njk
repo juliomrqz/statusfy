@@ -1,0 +1,14 @@
+<div class="header">
+  <a href="{{ '/' | localePath(locale) }}" class="logo-container">
+    <img alt="{{ site[locale].title }}" src="/images/logo.svg" class="logo">
+  </a>
+  <h1 class="title">
+    {{ site[locale].title }}
+  </h1>
+  <div class="subscribe-container">
+    <button class="btn">
+      {{ site[locale].notifications.buttons.subscribe }}
+    </button>
+    <!---->
+  </div>
+</div>

@@ -1,0 +1,99 @@
+
+<div class="timeline-container">
+  <h2>{{ site[locale].incidents['latest-incidents'] }}</h2>
+
+  <ul class="timeline">
+    <li class="timeline-incident operational">
+      <h3 class="timeline-incident-title"><time datetime="2019-12-19T00:00:00.000Z">
+        Dec 19, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        <div class="message">
+          {{ site[locale].incidents['no-incidents'] }}
+        </div>
+      </div>
+    </li>
+    <li class="timeline-incident partial-outage">
+      <h3 class="timeline-incident-title"><time datetime="2019-12-18T00:00:00.000Z">
+        Dec 18, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        {% include 'partials/incident.njk' %}
+      </div>
+    </li>
+    <li class="timeline-incident major-outage">
+      <h3 class="timeline-incident-title"><time datetime="2019-12-17T00:00:00.000Z">
+        Dec 17, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        {% include 'partials/incident.njk' %}
+
+        {% include 'partials/incident.njk' %}
+      </div>
+    </li>
+    <li class="timeline-incident degraded-performance">
+      <h3 class="timeline-incident-title">
+        <time datetime="2019-12-16T00:00:00.000Z">
+          Dec 16, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        {% include 'partials/incident.njk' %}
+      </div>
+    </li>
+    <li class="timeline-incident operational">
+      <h3 class="timeline-incident-title">
+        <time datetime="2019-12-15T00:00:00.000Z">
+          Dec 15, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        <div class="message">
+          {{ site[locale].incidents['no-incidents'] }}
+        </div>
+      </div>
+    </li>
+    <li class="timeline-incident operational">
+      <h3 class="timeline-incident-title">
+        <time datetime="2019-12-14T00:00:00.000Z">
+        Dec 14, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        <div class="message">
+          {{ site[locale].incidents['no-incidents'] }}
+        </div>
+      </div>
+    </li>
+    <li class="timeline-incident operational">
+      <h3 class="timeline-incident-title"><time datetime="2019-12-13T00:00:00.000Z">
+        Dec 13, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        <div class="message">
+          {{ site[locale].incidents['no-incidents'] }}
+        </div>
+      </div>
+    </li>
+    <li class="timeline-incident operational">
+      <h3 class="timeline-incident-title"><time datetime="2019-12-12T00:00:00.000Z">
+        Dec 12, 2019
+        </time>
+      </h3>
+      <div class="timeline-incident-body">
+        <div class="message">
+          {{ site[locale].incidents['no-incidents'] }}
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="text-center">
+    <a href="{{ '/history' | localePath(locale) }}" class="btn mb-4">
+      {{ site[locale].incidents['incidents-history'] }}
+    </a>
+  </div>
+</div>

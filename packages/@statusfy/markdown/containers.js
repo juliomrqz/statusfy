@@ -1,11 +1,11 @@
 const container = require('markdown-it-container')
-const { validator } = require('@statusfy/common')
+const { isRFC3339 } = require('./utils')
 
 module.exports = md => {
   md.use(...createUpdateContainer('update'))
 }
 
-function createUpdateContainer (klass) {
+function createUpdateContainer(klass) {
   const parseInfo = (info) => info.match(/^update\s+(.*)\s+\|\s+(.*)$/)
 
   return [container, klass, {
@@ -14,12 +14,12 @@ function createUpdateContainer (klass) {
 
       if (match !== null) {
         // Make sure the date is in RFC3339 format
-        return validator.isRFC3339(match[2])
+        return isRFC3339(match[2])
       } else {
         return false
       }
     },
-    render (tokens, idx) {
+    render(tokens, idx) {
       const token = tokens[idx]
 
       if (token.nesting === 1) {

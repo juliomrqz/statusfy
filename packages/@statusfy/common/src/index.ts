@@ -8,7 +8,7 @@ export * as path from 'upath'
 export { esm } from './esm'
 
 export { logger } from './logger'
-export { isURL, isRFC3339 } from './validator'
+export { isURL } from './validator'
 export { grayMatter } from './gray-matter'
 export { slugify } from './slugify'
 export { generateDemoContent } from './generate-content'

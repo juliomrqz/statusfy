@@ -1,0 +1,150 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="container">
+    <div class="global-status flex justify-center partial-outage">
+      <span>Partial Outage</span>
+      <span class="global-status-icon">
+        <svg version="1.1" viewBox="0 0 512 512" class="svg-inline--fa fa-w-16 svg-icon svg-fill">
+          <path pid="0" _fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>
+        </svg>
+      </span>
+    </div>
+    <div>
+      <div class="systems-container flex flex-col">
+        <div class="system flex flex-row justify-between partial-outage">
+          <div class="system-title">
+            CDN
+          </div>
+          <div class="system-status">
+            <span class="hidden sm:inline">Partial Outage</span>
+            <svg version="1.1" viewBox="0 0 512 512" class="svg-inline--fa fa-w-16 svg-icon svg-fill">
+              <path pid="0" _fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="system flex flex-row justify-between partial-outage">
+          <div class="system-title">
+            Conversions
+            <div class="v-popover hidden sm:inline">
+              <div aria-describedby="popover_eoerwmsnlr" tabindex="0" class="trigger" style="display:inline-block">
+                <span class="system-title-info">
+                  <svg version="1.1" viewBox="0 0 512 512" class="ml-1 svg-inline--fa fa-w-16 svg-icon svg-fill">
+                    <path pid="0" _fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"/>
+                  </svg>
+                </span>
+              </div>
+              <div id="popover_eoerwmsnlr" aria-hidden="true" tabindex="0" class="tooltip popover popover" style="visibility:hidden">
+                <div class="wrapper">
+                  <div class="tooltip-inner popover-inner" style="position:relative">
+                    <div>
+                      Conversion from one file to another
+                    </div>
+                    <div tabindex="-1" class="resize-observer"></div>
+                  </div>
+                  <div class="tooltip-arrow popover-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="system-status">
+            <span class="hidden sm:inline">Partial Outage</span>
+            <svg version="1.1" viewBox="0 0 512 512" class="svg-inline--fa fa-w-16 svg-icon svg-fill">
+              <path pid="0" _fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="system flex flex-row justify-between operational">
+          <div class="system-title">
+            Site delivery
+          </div>
+          <div class="system-status">
+            <span class="hidden sm:inline">Operational</span>
+            <svg version="1.1" viewBox="0 0 512 512" class="svg-inline--fa fa-w-16 svg-icon svg-fill">
+              <path pid="0" _fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="system flex flex-row justify-between partial-outage">
+          <div class="system-title">
+            API
+            <div class="v-popover hidden sm:inline">
+              <div aria-describedby="popover_z1e3mzh4ti" tabindex="0" class="trigger" style="display:inline-block">
+                <span class="system-title-info">
+                  <svg version="1.1" viewBox="0 0 512 512" class="ml-1 svg-inline--fa fa-w-16 svg-icon svg-fill">
+                    <path pid="0" _fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"/>
+                  </svg>
+                </span>
+              </div>
+              <div id="popover_z1e3mzh4ti" aria-hidden="true" tabindex="0" class="tooltip popover popover" style="visibility:hidden">
+                <div class="wrapper">
+                  <div class="tooltip-inner popover-inner" style="position:relative">
+                    <div>
+                      The API Endpoints any developers can access to
+                    </div>
+                    <div tabindex="-1" class="resize-observer"></div>
+                  </div>
+                  <div class="tooltip-arrow popover-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="system-status">
+            <span class="hidden sm:inline">Partial Outage</span>
+            <svg version="1.1" viewBox="0 0 512 512" class="svg-inline--fa fa-w-16 svg-icon svg-fill">
+              <path pid="0" _fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scheduled-container">
+      <h2>{{ site[locale].notifications.buttons.subscribe }}</h2>
+      <div class="incidents-container">
+        <ul class="list-reset">
+          <li>
+            <div class="incident under-maintenance unresolved scheduled">
+              <div class="incident-header level-3">
+                <div class="incident-title">
+                  <h3>
+                    Network Maintenance
+                  </h3>
+                </div>
+                <div class="incident-systems"><span class="badge">
+                  API
+                  </span><span class="badge">
+                  CDN
+                  </span>
+                </div>
+              </div>
+              <div class="incident-subtitle">
+                <div><time datetime="2019-12-26T00:30:54.929Z">
+                  Dec 26, 00:30
+                  </time>
+                  -
+                  <time datetime="2019-12-26T01:00:54.929Z">
+                  Dec 26, 01:00
+                  </time>
+                  (UTC)
+                </div>
+              </div>
+              <div class="incident-body">
+                <div class="markdown">
+                  <p>A network maintenance will be performed during 30 minutes. Short website access interruption is expected from this maintenance.</p>
+                </div>
+              </div>
+              <div class="hidden">
+                <svg version="1.1" viewBox="0 0 576 512" class="svg-inline--fa fa-w-12 ml-1 svg-icon svg-fill">
+                  <path pid="0" _fill="currentColor" d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"/>
+                </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% include 'partials/incidents-timeline.njk' %}
+  </section>
+{% endblock %}

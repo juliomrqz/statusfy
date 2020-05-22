@@ -36,15 +36,15 @@ export default {
         contact: "https://aceforth.com/products/statusfy#support",
         support: "https://aceforth.com/products/statusfy#support",
         home: "https://aceforth.com/products/statusfy",
-        privacy: "https://aceforth.com/products/statusfy/data-privacy",
-        legal: "https://aceforth.com/products/statusfy/legal"
+        privacy: "https://aceforth.com/legal/privacy",
+        legal: "https://aceforth.com/legal/terms"
       },
       es: {
         contact: "https://aceforth.com/es/products/statusfy#support",
         support: "https://aceforth.com/es/products/statusfy#support",
-        home: "https://aceforth.com/products/statusfy/es",
-        privacy: "https://aceforth.com/products/statusfy/es/data-privacy",
-        legal: "https://aceforth.com/products/statusfy/es/legal"
+        home: "https://aceforth.com/es/products/statusfy",
+        privacy: "https://aceforth.com/es/legal/privacy",
+        legal: "https://aceforth.com/es/legal/terms"
       }
     }
   },

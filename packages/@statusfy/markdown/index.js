@@ -4,7 +4,7 @@ const containers = require('./containers')
 const frontmatter = require('./frontmatter')
 const links = require('./links')
 
-module.exports = ({ markdown = {} } = {}) => {
+const markdown = ({ markdown = {} } = {}) => {
   const md = require('markdown-it')({
     html: true
   })
@@ -22,4 +22,8 @@ module.exports = ({ markdown = {} } = {}) => {
   }
 
   return md
+}
+
+module.exports = {
+  markdown
 }

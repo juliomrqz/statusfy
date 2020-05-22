@@ -74,7 +74,7 @@ export default {
     statusfyHomeLink() {
       const urls = {
         en: "https://aceforth.com/products/statusfy",
-        es: "https://aceforth.com/products/statusfy/es"
+        es: "https://aceforth.com/es/products/statusfy"
       };
 
       if (urls[this.$i18n.locale]) {
