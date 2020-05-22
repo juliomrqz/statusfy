@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "statusfy-vercel",
+  "alias": "statusfy-vercel",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ]
+}

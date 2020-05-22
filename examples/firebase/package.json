@@ -1,0 +1,35 @@
+{
+  "name": "statusfy-firebase",
+  "description": "Firebase",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "firebase": "firebase",
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident",
+    "deploy": "firebase deploy"
+  },
+  "author": {
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
+  },
+  "contributors": [
+    {
+      "name": "Julio Marquez (@juliomrqz)"
+    }
+  ],
+  "devDependencies": {
+    "firebase-tools": "^7.0.0"
+  },
+  "dependencies": {
+    "statusfy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

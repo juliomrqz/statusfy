@@ -1,0 +1,35 @@
+{
+  "name": "statusfy-surge",
+  "description": "Surge",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "surge": "surge",
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident",
+    "deploy": "surge dist"
+  },
+  "author": {
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
+  },
+  "contributors": [
+    {
+      "name": "Julio Marquez (@juliomrqz)"
+    }
+  ],
+  "dependencies": {
+    "statusfy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "surge": "^0.21.0"
+  }
+}

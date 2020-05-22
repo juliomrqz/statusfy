@@ -1,0 +1,30 @@
+{
+  "name": "statusfy-gitlab-pages",
+  "description": "GitLab Pages",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident"
+  },
+  "author": {
+    "name": "Aceforth",
+    "email": "support@aceforth.com",
+    "url": "https://aceforth.com"
+  },
+  "contributors": [
+    {
+      "name": "Julio Marquez (@juliomrqz)"
+    }
+  ],
+  "dependencies": {
+    "statusfy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

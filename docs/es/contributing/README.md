@@ -215,7 +215,7 @@ Es una aplicación [Nuxt.js][nuxt] simple.
 [semantic-versioning]: https://semver.org/lang/es/
 [aceforth-home]: https://aceforth.com/es?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
 [changelog]: https://github.com/aceforth/statusfy/blob/master/CHANGELOG.md
-[examples]: https://github.com/aceforth/statusfy-examples
+[examples]: https://github.com/aceforth/statusfy/tree/develop/examples
 [cla]: https://cla.aceforth.com/aceforth/statusfy
 [license]: https://github.com/aceforth/statusfy/blob/develop/LICENSE
 [open-collective]: https://opencollective.com/statusfy#section-contribute

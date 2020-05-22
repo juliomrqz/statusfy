@@ -1,5 +1,5 @@
 [![Aceforth Project](https://img.shields.io/badge/Aceforth-project-blue.svg)](https://aceforth.com/products/statusfy) 
-[![License](https://img.shields.io/github/license/aceforth/statusfy-examples.svg)][license-page]
+[![License](https://img.shields.io/github/license/aceforth/statusfy.svg)][license-page]
 
 # Statusfy Examples
 
@@ -7,20 +7,14 @@
 
 ## Static Generated
 
-|                     Example                    |                       Description                      |
-|:-------------------------------------:|:------------------------------------------------------:|
-| [GitHub Pages](./github-pages-static) |               Deployment to GitHub Pages               |
-| [GitLab Pages](./gitlab-pages-static) |       Deployment to GitLab Pages using GitLab CI       |
-|      [Netlify](./netlify-static)      |                  Deployment to Netlify                 |
-|        [Surge](./surge-static)        |                   Deployment to Surge                  |
-|       [Heroku](./heroku-static)       | Deployment to Heroku using the Heroku Buildpack Static |
-|          [Now](./now-v2-static)       |        Deployment to Now using @now/static-build       |
-
-## Server Rendered
-
-|                    Example                    |                      Description                     |
-|:---------------------------------------------:|:----------------------------------------------------:|
-|           [Heroku](./heroku-ssr)              | Deployment to Heroku using the Buildpack for Node.js |
+| Example                        | Description                                            |
+|--------------------------------|--------------------------------------------------------|
+| [GitHub Pages](./github-pages) | Deployment to GitHub Pages                             |
+| [GitLab Pages](./gitlab-pages) | Deployment to GitLab Pages using GitLab CI             |
+| [Netlify](./netlify)           | Deployment to Netlify                                  |
+| [Surge](./surge)               | Deployment to Surge                                    |
+| [Heroku](./heroku)             | Deployment to Heroku using the Heroku Buildpack Static |
+| [Vercel](./vercel)             | Deployment to Verce using @verce/static-build          |
 
 ## Main Demo
 
@@ -57,11 +51,11 @@ Code released under the [MIT][license-page].
 [home]: https://aceforth.com/products/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[contributing]: https://github.com/aceforth/statusfy-examples/blob/master/CONTRIBUTING.md
+[contributing]: https://github.com/aceforth/statusfy/blob/develop/CONTRIBUTING.md
 [code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[issues]: https://github.com/aceforth/statusfy-examples/issues
+[issues]: https://github.com/aceforth/statusfy/issues
 [twitter]: https://twitter.com/AceforthHQ
 [aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [support-page]: https://aceforth.com/products/statusfy#support?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
 [statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[license-page]: https://github.com/aceforth/statusfy-examples/blob/master/LICENSE
+[license-page]: https://github.com/aceforth/statusfy/blob/master/LICENSE
