@@ -10,6 +10,7 @@ interface Arguments {
   input: string;
   output: string;
   quiet: boolean | null;
+  config: string;
 }
 
 interface EleventyInstance {
@@ -19,7 +20,7 @@ interface EleventyInstance {
   write: () => Promise<{}>;
 }
 
-const Eleventy: _Eleventy = esm('@11ty/eleventy')
+const Eleventy: typeof _Eleventy = esm('@11ty/eleventy')
 
 const debugLogger = {
   log(message: string) {
@@ -33,10 +34,15 @@ console.log = logger.debug;
 export function getEleventy(config: ConfigFile, internalDirPath: string): EleventyInstance {
   const outputPath = path.join(internalDirPath, './dist')
 
+  function relative(dest: string): string {
+    return path.relative(`${config.sourceDir}`, dest)
+  }
+
   const argv: Arguments = {
-    input: internalDirPath,
-    output: outputPath,
+    input: relative(internalDirPath),
+    output: relative(outputPath),
     quiet: true,
+    config: relative(path.join(internalDirPath, '.eleventy.js'))
   }
 
   if (process.env.DEBUG) {
@@ -48,10 +54,12 @@ export function getEleventy(config: ConfigFile, internalDirPath: string): Eleven
 
   const elev = new Eleventy(argv.input, argv.output);
 
-  elev.setIsVerbose(!argv.quiet);
+  elev.setConfigPathOverride(argv.config)
   elev.setLogger(debugLogger)
   // TODO: re-support base url
   elev.setPathPrefix('');
+
+  elev.setIsVerbose(!argv.quiet);
 
   return elev
 }
