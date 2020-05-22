@@ -1,11 +1,15 @@
-export default function generate() {
-  try {
-    require('@statusfy/core/src/generate')
-  } catch (error) {
-    console.debug(error)
+import { logger } from "@statusfy/common/src";
 
-    require('@statusfy/core/lib/generate')
+export default function generate(sourceDir: string, options?: { outDir?: string }): Promise<Function> {
+  let generate: Function;
+
+  try {
+    generate = require('@statusfy/core/src/generate').generate
+  } catch (error) {
+    logger.error(error)
+
+    generate = require('@statusfy/core/lib/generate').generate
   }
 
-  return Promise.resolve(true)
+  return generate(sourceDir, options || {})
 }

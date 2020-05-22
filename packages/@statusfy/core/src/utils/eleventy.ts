@@ -1,5 +1,5 @@
 // @ts-ignore
-import _Eleventy from '@11ty/eleventy';
+import _Eleventy from '@11ty/eleventy/src/Eleventy';
 // @ts-ignore
 import EleventyCommandCheck from '@11ty/eleventy/src/EleventyCommandCheck';
 
@@ -10,6 +10,13 @@ interface Arguments {
   input: string;
   output: string;
   quiet: boolean | null;
+}
+
+interface EleventyInstance {
+  init: () => Promise<void>;
+  watch: () => Promise<void>;
+  serve: (port: number) => void;
+  write: () => Promise<{}>;
 }
 
 const Eleventy: _Eleventy = esm('@11ty/eleventy')
@@ -23,7 +30,7 @@ const debugLogger = {
 // mute eleventy logs
 console.log = logger.debug;
 
-export function getEleventy(config: ConfigFile, internalDirPath: string): _Eleventy {
+export function getEleventy(config: ConfigFile, internalDirPath: string): EleventyInstance {
   const outputPath = path.join(internalDirPath, './dist')
 
   const argv: Arguments = {

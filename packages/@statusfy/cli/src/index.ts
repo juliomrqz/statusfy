@@ -79,11 +79,11 @@ program
   .command('generate')
   .description('Generate a static web application')
   .option('-d, --dest <outDir>', 'specify generate output dir (default: ./dist)')
-  .action(({ dest, analyze }) => {
+  .action(({ dest }) => {
     checkCoreInstallation()
 
     const outDir = dest ? path.resolve(dest) : null
-    wrapCommand(generate)(sourceDir, { outDir, analyze })
+    wrapCommand(generate)(sourceDir, { outDir })
   })
 
 program
