@@ -47,8 +47,8 @@
     "update-changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "devDependencies": {
-    "@babel/core": "7.9.6",
-    "@babel/plugin-transform-runtime": "7.9.6",
+    "@babel/core": "7.10.0",
+    "@babel/plugin-transform-runtime": "7.10.0",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "babel-core": "7.0.0-bridge.0",
@@ -58,11 +58,11 @@
     "cross-env": "7.0.2",
     "eslint": "7.1.0",
     "eslint-loader": "4.0.2",
-    "eslint-plugin-jest": "23.13.1",
+    "eslint-plugin-jest": "23.13.2",
     "glob-promise": "3.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
-    "lerna": "3.21.0"
+    "lerna": "3.22.0"
   },
   "resolutions": {
     "@types/node": "12.12.42"
