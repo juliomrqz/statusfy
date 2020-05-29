@@ -57,7 +57,7 @@
     "@types/lodash.isstring": "4.0.6",
     "@types/lodash.template": "4.4.6",
     "@types/node": "12.12.42",
-    "ts-node": "8.10.1",
+    "ts-node": "8.10.2",
     "typescript": "3.9.3"
   }
 }
