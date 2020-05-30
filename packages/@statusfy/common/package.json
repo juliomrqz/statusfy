@@ -55,7 +55,7 @@
     "@types/hash-sum": "1.0.0",
     "@types/lodash.foreach": "4.5.6",
     "@types/lodash.isstring": "4.0.6",
-    "@types/lodash.template": "4.4.6",
+    "@types/lodash.template": "4.5.0",
     "@types/node": "12.12.42",
     "ts-node": "8.10.2",
     "typescript": "3.9.3"
