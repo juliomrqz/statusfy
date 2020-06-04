@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/aceforth/statusfy#readme",
   "dependencies": {
-    "fs-extra": "9.0.0",
+    "fs-extra": "9.0.1",
     "gray-matter": "4.0.2",
     "markdown-it": "11.0.0",
     "markdown-it-container": "3.0.0",
