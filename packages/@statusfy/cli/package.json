@@ -40,7 +40,7 @@
     "@types/inquirer": "6.5.0",
     "@types/lodash": "4.14.155",
     "@types/lru-cache": "5.1.0",
-    "@types/node": "12.12.43",
+    "@types/node": "12.12.44",
     "@types/opener": "1.4.0",
     "@types/semver": "7.2.0",
     "@types/yaml": "1.9.7",
@@ -58,7 +58,7 @@
     "semver": "7.3.2",
     "tomlify-j0.4": "3.0.0",
     "ts-node": "8.10.2",
-    "typescript": "3.9.3",
+    "typescript": "3.9.5",
     "yaml": "1.10.0"
   }
 }
