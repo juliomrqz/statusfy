@@ -62,10 +62,10 @@
     "glob-promise": "3.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
-    "lerna": "3.22.0"
+    "lerna": "3.22.1"
   },
   "resolutions": {
-    "@types/node": "12.12.44"
+    "@types/node": "12.12.45"
   },
   "engines": {
     "node": ">=10",
