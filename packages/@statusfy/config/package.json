@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@statusfy/common": "1.0.0-alpha.0",
-    "@types/node": "12.12.45",
+    "@types/node": "12.12.47",
     "typescript": "3.9.5"
   }
 }
