@@ -47,7 +47,7 @@
     "@zeit/ncc": "0.22.3",
     "chalk": "4.1.0",
     "commander": "5.1.0",
-    "consola": "2.12.2",
+    "consola": "2.13.0",
     "fs-extra": "9.0.1",
     "inquirer": "7.1.0",
     "locale-code": "2.0.2",
