@@ -26,7 +26,7 @@
   "dependencies": {
     "autoprefixer": "9.8.0",
     "chalk": "4.1.0",
-    "consola": "2.12.2",
+    "consola": "2.13.0",
     "cssnano": "4.1.10",
     "dayjs": "1.8.28",
     "esm": "3.2.25",
