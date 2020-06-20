@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/aceforth/statusfy#readme",
   "dependencies": {
-    "autoprefixer": "9.8.0",
+    "autoprefixer": "9.8.1",
     "chalk": "4.1.0",
     "consola": "2.13.0",
     "cssnano": "4.1.10",
