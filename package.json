@@ -58,7 +58,7 @@
     "cross-env": "7.0.2",
     "eslint": "7.3.0",
     "eslint-loader": "4.0.2",
-    "eslint-plugin-jest": "23.14.0",
+    "eslint-plugin-jest": "23.16.0",
     "glob-promise": "3.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
