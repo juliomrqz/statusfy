@@ -58,7 +58,7 @@ description = "Probando 1, 2, 3"
 module.exports = {
   title: 'Título',
   description: 'Descripción',
-  baseUrl: 'https://demo.statusfy.co',
+  baseUrl: 'https://statusfy.marquez.co',
   analytics: {
     ga: 'UA-XXXXXXXXX-Y',
   },

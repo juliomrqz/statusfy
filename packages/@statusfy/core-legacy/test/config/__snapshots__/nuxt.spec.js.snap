@@ -110,7 +110,7 @@ Object {
     "mobileApp": false,
     "mobileAppIOS": false,
     "ogDescription": false,
-    "ogHost": "https://demo.statusfy.co",
+    "ogHost": "https://statusfy.marquez.co",
     "ogTitle": false,
     "theme_color": "#1b1f23",
   },
@@ -122,7 +122,7 @@ Object {
     Array [
       "nuxt-i18n",
       Object {
-        "baseUrl": "https://demo.statusfy.co",
+        "baseUrl": "https://statusfy.marquez.co",
         "defaultLocale": "en",
         "detectBrowserLanguage": Object {
           "cookieKey": "app_name.lang_redirected",
@@ -217,7 +217,7 @@ Object {
       "analytics": Object {
         "ga": "UA-XXXXXXXXX-Y",
       },
-      "baseUrl": "https://demo.statusfy.co",
+      "baseUrl": "https://statusfy.marquez.co",
       "build": Object {
         "isStatic": false,
       },

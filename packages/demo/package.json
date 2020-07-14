@@ -13,9 +13,9 @@
     "update-incident": "statusfy update-incident"
   },
   "author": {
-    "name": "Aceforth",
-    "email": "support@aceforth.com",
-    "url": "https://aceforth.com"
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
   },
   "license": "Apache-2.0",
   "dependencies": {

@@ -1,5 +1,4 @@
-[![Aceforth Project](https://img.shields.io/badge/Aceforth-project-blue.svg)](https://aceforth.com/products/statusfy) 
-[![License](https://img.shields.io/github/license/aceforth/statusfy.svg)][license-page]
+[![License](https://img.shields.io/github/license/juliomrqz/statusfy.svg)][license-page]
 
 # Statusfy Examples
 
@@ -18,11 +17,11 @@
 
 ## Main Demo
 
-A Demo application is at [https://demo.statusfy.co][demo].
+A Demo application is at [https://statusfy.marquez.co][demo].
 
 ## Documentation & Support
 
-If you want extra details of how to configure and use Statusfy, the **full documentation** is available at [https://docs.statusfy.co][documentation].
+If you want extra details of how to configure and use Statusfy, the **full documentation** is available at [https://marquez.co/docs/statusfy][documentation].
 
 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
 
@@ -32,9 +31,10 @@ You can find usefull **articles** in [our blog][statusfy-blog].
 
 You may also want to [follow the company supporting this project on Twitter][twitter].
 
-### Commercial Support
+## Professional Support
 
-This project is sponsored by [Aceforth][aceforth-website]. If you require professional assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
+This project is sponsored by me, a Full Stack Developers. If you require Professional Assistance on your project(s), please contact me at [https://marquez.co][support-page].
+
 
 ## Contributing
 
@@ -48,14 +48,14 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [MIT][license-page].
 
-[home]: https://aceforth.com/products/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[demo]: https://demo.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[documentation]: https://docs.statusfy.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[contributing]: https://github.com/aceforth/statusfy/blob/develop/CONTRIBUTING.md
-[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[issues]: https://github.com/aceforth/statusfy/issues
-[twitter]: https://twitter.com/AceforthHQ
-[aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[support-page]: https://aceforth.com/products/statusfy#support?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
-[license-page]: https://github.com/aceforth/statusfy/blob/master/LICENSE
+[home]: https://marquez.co/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[demo]: https://statusfy.marquez.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[documentation]: https://marquez.co/docs/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[contributing]: https://github.com/juliomrqz/statusfy/blob/develop/CONTRIBUTING.md
+[code-of-conduct]: https://marquez.co/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[issues]: https://github.com/juliomrqz/statusfy/issues
+[twitter]: https://twitter.com/juliomrqz
+[marquez-website]: https://marquez.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[support-page]: https://marquez.co/statusfy#support?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[statusfy-blog]: https://marquez.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy-examples
+[license-page]: https://github.com/juliomrqz/statusfy/blob/master/LICENSE

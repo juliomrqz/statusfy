@@ -5,7 +5,7 @@ Object {
   "analytics": Object {
     "ga": "UA-XXXXXXXXX-Y",
   },
-  "baseUrl": "https://demo.statusfy.co",
+  "baseUrl": "https://statusfy.marquez.co",
   "build": Object {
     "isStatic": false,
   },

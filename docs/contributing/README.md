@@ -1,6 +1,6 @@
 ---
 title: Contribution Guide
-description: Statusfy is one of the Aceforth's Open Source Projects that is under very active development. We hope this document makes the process for contributing clear and answers some questions that you may have.
+description: Statusfy is one of the Open Source Projects created by Julio Marquez that is under very active development. We hope this document makes the process for contributing clear and answers some questions that you may have.
 date: 2018-10-12T17:28:04Z
 sidebar: auto
 sidebarDepth: 3
@@ -8,7 +8,7 @@ sidebarDepth: 3
 
 # Contribution Guide
 
-Statusfy is one of the [Aceforth's][aceforth-home] Open Source Projects that is under very active development. We hope this document makes the process for contributing clear and answers some questions that you may have.
+Statusfy is one of the Open Source Projects created by [Julio Marquez][marquez-home] that is under very active development. We hope this document makes the process for contributing clear and answers some questions that you may have.
 
 First, you must know that Statusfy relies on three Amazing Technologies:
 
@@ -24,7 +24,7 @@ We have adopted a Code of Conduct that we expect project participants to adhere 
 
 ## Semantic Versioning
 
-Aceforth follows [semantic versioning][semantic-versioning]. We release **patch versions** for bugfixes, **minor versions** for new features, and **major versions** for any breaking changes. 
+Julio follows [semantic versioning][semantic-versioning]. We release **patch versions** for bugfixes, **minor versions** for new features, and **major versions** for any breaking changes. 
 
 Every significant change is documented in the [changelog][changelog] file.
 
@@ -46,7 +46,7 @@ If you intend to add a new feature, we recommend filing [an issue][github-issues
 
 Install [Node.js][node] (8.1 or higher) and [Yarn][yarn]. It's also recommended to install [Lerna][lerna] globally.
 
-1. Clone this repository: [https://github.com/aceforth/statusfy][repo].
+1. Clone this repository: [https://github.com/juliomrqz/statusfy][repo].
 2. Run `yarn install` to install the dependencies.
 
 ::: tip TIP
@@ -183,17 +183,17 @@ It's a simple [Nuxt.js][nuxt] application.
 
 <!-- links -->
 
-[repo]: https://github.com/aceforth/statusfy
-[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
-[github-issues]: https://github.com/aceforth/statusfy/issues
-[feature-request]: https://github.com/aceforth/statusfy/issues/new?template=feature_request.md
-[bug-report]: https://github.com/aceforth/statusfy/issues/new?template=bug_report.md
-[support-page]: https://aceforth.com/products/statusfy#support
+[repo]: https://github.com/juliomrqz/statusfy
+[code-of-conduct]: https://marquez.co/open-source/code-of-conduct?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
+[github-issues]: https://github.com/juliomrqz/statusfy/issues
+[feature-request]: https://github.com/juliomrqz/statusfy/issues/new?template=feature_request.md
+[bug-report]: https://github.com/juliomrqz/statusfy/issues/new?template=bug_report.md
+[support-page]: https://marquez.co/statusfy#support
 [node]: https://nodejs.org/en/download/
 [yarn]: https://yarnpkg.com/lang/en/docs/install/
 [lerna]: https://www.npmjs.com/package/lerna
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
-[english-language]: https://github.com/aceforth/statusfy/blob/develop/packages/@statusfy/core/client/locales/en-default.json
+[english-language]: https://github.com/juliomrqz/statusfy/blob/develop/packages/@statusfy/core/client/locales/en-default.json
 [iso-639-1]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 [iso-3166-1-alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 [nuxt]: https://nuxtjs.org/
@@ -209,9 +209,9 @@ It's a simple [Nuxt.js][nuxt] application.
 [vue]: http://vuejs.org/
 [tailwind]: https://tailwindcss.com/
 [semantic-versioning]: https://semver.org/
-[aceforth-home]: https://aceforth.com?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
-[changelog]: https://github.com/aceforth/statusfy/blob/master/CHANGELOG.md
-[examples]: https://github.com/aceforth/statusfy/tree/develop/examples
-[cla]: https://cla.aceforth.com/aceforth/statusfy
-[license]: https://github.com/aceforth/statusfy/blob/develop/LICENSE
+[marquez-home]: https://marquez.co?utm_source=docs&utm_medium=contributing&utm_campaign=statusfy
+[changelog]: https://github.com/juliomrqz/statusfy/blob/master/CHANGELOG.md
+[examples]: https://github.com/juliomrqz/statusfy/tree/develop/examples
+[cla]: https://cla-assistant.io/juliomrqz/statusfy
+[license]: https://github.com/juliomrqz/statusfy/blob/develop/LICENSE
 [open-collective]: https://opencollective.com/statusfy#section-contribute

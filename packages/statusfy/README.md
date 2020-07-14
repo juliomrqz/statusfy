@@ -1,15 +1,14 @@
+> ⚠️ WARNING: This the branch for the next planned version (v1): it's unstable and under active development. For the latest stable version, go to the [`master` branch](https://github.com/juliomrqz/statusfy/tree/master) 
+
 <p align="center">
-  <a href="https://aceforth.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
-    <img src="https://img.shields.io/badge/Aceforth-project-blue.svg" alt="Aceforth Project">
-  </a>
-  <a href="https://travis-ci.org/aceforth/statusfy" rel="nofollow">
-    <img src="https://img.shields.io/travis/aceforth/statusfy.svg" alt="Travis">
+  <a href="https://travis-ci.org/juliomrqz/statusfy" rel="nofollow">
+    <img src="https://img.shields.io/travis/juliomrqz/statusfy.svg" alt="Travis">
   </a>
   <a href="https://www.npmjs.com/package/statusfy" rel="nofollow">
     <img src="https://img.shields.io/npm/v/statusfy.svg" alt="version">
   </a>
-  <a href="https://github.com/aceforth/statusfy/blob/develop/LICENSE" rel="nofollow">
-    <img src="https://img.shields.io/github/license/aceforth/statusfy.svg" alt="License">
+  <a href="https://github.com/juliomrqz/statusfy/blob/develop/LICENSE" rel="nofollow">
+    <img src="https://img.shields.io/github/license/juliomrqz/statusfy.svg" alt="License">
   </a>
 </p>
 
@@ -30,18 +29,19 @@
 
 
 <p align="center">
-  <a href="https://aceforth.com/products/statusfy?utm_source=npm&utm_medium=readme&utm_campaign=statusfy" target="_blank">
-    <img src="https://raw.githubusercontent.com/aceforth/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
+  <a href="https://marquez.co/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy" target="_blank">
+    <img src="https://raw.githubusercontent.com/juliomrqz/statusfy/develop/packages/docs/src/.vuepress/public/assets/img/statusfy-home-en.png" alt="Statusfy" />
   </a>
 </p>
+
 
 # Statusfy
 
 > A marvelous Open Source Status Page system
 
-Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System either [**Static Generated**](https://docs.statusfy.co/guide/architecture.html#static-generated) or [**Server Rendered**](https://docs.statusfy.co/guide/architecture.html#server-rendered) and easily deploy it to a variety of [hosting services](https://docs.statusfy.co/guide/deploy.html).
+Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System, [**Static Generated**](https://marquez.co/docs/statusfy/guide/architecture.html#static-generated), and easily deploy it to a variety of [hosting services](https://marquez.co/docs/statusfy/guide/deploy.html).
 
-A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] and [Tailwind CSS][tailwindcss]. We use **Vue** to dynamically define the interfaces that represent the data, **Nuxt.js** to make a quick and useful abstraction of the client and server logic, and **Tailwind CSS** to rapidly define the default theme.
+A Statusfy site is a Web Application, created on top of [Eleventy][eleventy], [Netlify CMS][netlifycms] and [Tailwind CSS][tailwindcss]. It is used **Eleventy** to make a quick and useful abstraction of the system generation, **Vue** and **Nuxt.js** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
 
 
 ## Features
@@ -56,11 +56,11 @@ A Statusfy site is a Web Application, created with [Vue][vue], [Nuxt.js][nuxt] a
   - Easy Customization
   - Beautiful Design 
 - SEO Friendly
-- Hosting flexibility: Static Generated or Server Rendered
+- Hosting flexibility
 
 ## Sponsoring
 
-We love Open Source Projects, we use them every day and **Statusfy is our contribution to the community**. Statusfy is created and maintained by [Aceforth][aceforth-website], a Software Development Company, but our resources are limited. If you want to support our work and help us to continue developing this Amazing Project, **please donate**, *we will appreciate it* ❤️.
+I love Open Source Projects, I use them every day and **Statusfy is one of my contribution to the community**. Statusfy is created and maintained by me, a Full Stack Developer, but my resources are limited. If you want to support my work and help me to continue developing this Amazing Project, **please donate**, *I will appreciate it* ❤️.
 
 This is how we use the donations:
 
@@ -71,7 +71,7 @@ This is how we use the donations:
 
 ### Partners
 
-**Become a Partner** and get your logo with a link to your site on our README on Github, **every page** of https://docs.statusfy.co and, the **home page** and **each blog post** of https://aceforth.com/products/statusfy. [[Become a Partner][opencollective-contribute]]
+**Become a Partner** and get your logo with a link to your site on the README on Github, **every page** of https://marquez.co/docs/statusfy and, the project **home page** (https://marquez.co/statusfy) and **each blog post** related to Statusfy. [[Become a Partner][opencollective-contribute]]
 
 <a href="https://opencollective.com/statusfy#contributors">
   <img src="https://opencollective.com/statusfy/tiers/partners.svg?avatarHeight=96&width=890&button=false" />
@@ -79,13 +79,13 @@ This is how we use the donations:
 
 ### Sponsors
 
-**Become a Sponsor** and get your logo on our README on Github with a link to your site.. [[Become a Sponsor][opencollective-contribute]]
+**Become a Sponsor** and get your logo on the README on Github with a link to your site. [[Become a Sponsor][opencollective-contribute]]
 
 <a href="https://opencollective.com/statusfy#contributors"><img src="https://opencollective.com/statusfy/tiers/sponsors.svg?avatarHeight=74&width=890&button=false" /></a>
 
 ### Backers
 
-**Support us** with a monthly donation and help us continue our activities. It means a lot to us ❤️. [[Become a Backer][opencollective-contribute]]
+**Support me** with a monthly donation and help me continue my activities. It means a lot to me ❤️. [[Become a Backer][opencollective-contribute]]
 
 <a href="https://opencollective.com/statusfy#contributors">
   <img src="https://opencollective.com/statusfy/tiers/backers.svg?width=890&button=false" />
@@ -102,7 +102,7 @@ It’s pretty easy to get started with Statusfy. Install it globally with npm:
 cd existing_folder
 
 # run the initialization command
-npx statusfy init
+npx @statusfy/cli init
 
 # and install your local dependencies
 npm install  # OR yarn install
@@ -117,30 +117,20 @@ npm run new-incident # OR yarn new-incident
 and launch the development server with:
 
 ``` bash
-npm run dev # OR yarn dev
+npm run start # OR yarn start
 ```
 
-You can also generate a Static Generated Website with:
+You can later also generate the final Website with:
 
 ``` bash
 npm run generate # OR yarn generate
-```
-
-or generate a Server Rendered Website with:
-
-``` bash
-# generate static assets
-npm run build # OR yarn build
-
-# launch the server
-npm run start # OR yarn start
 ```
 
 More information in the [Documentation][documentation].
 
 ## Development
 
-:warning: You must at least use `node >= 8.10`.
+:warning: You must at least use `node >= 10`.
 
 ``` bash
 # install dependencies
@@ -154,24 +144,24 @@ yarn test
 More information in the [Contributing Guide][contributing].
 You can also build and run Statusfy in a free online workspace using Gitpod:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/aceforth/statusfy)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/juliomrqz/statusfy)
 
 ## Demo
 
-A Demo application is at [https://demo.statusfy.co][demo].
+A Demo application is at [https://statusfy.marquez.co][demo].
 
 ## Documentation & Community Support
 
-- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://docs.statusfy.co][documentation].
+- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://marquez.co/docs/statusfy][documentation].
 - 💻 You may want to check the **examples projects** for different popular hosting services at [the Examples Repository][examples].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For **questions**, go to [https://spectrum.chat/bazzite/statusfy](https://spectrum.chat/bazzite/statusfy).
-- 🤓 You can find useful **articles** in [our blog][statusfy-blog].
-- 🚀 You may also want to **follow the company** supporting this project [on Twitter][twitter].
+- 💬 For **questions**, you can also use the [Issues section][issues].
+- 🤓 You can find useful **articles** in [my blog][marquez-blog].
+- 🚀 You may also want to **follow me** [on Twitter][twitter].
 
 ## Professional Support
 
-This project is sponsored by [Aceforth][aceforth-website]. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/products/statusfy#support][support-page].
+This project is sponsored by me, a Full Stack Developers. If you require Professional Assistance on your project(s), please contact me at [https://marquez.co][support-page].
 
 ## Contributing
 
@@ -185,22 +175,21 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 
 Code released under the [Apache License 2.0][license-page].
 
-![](https://ga-beacon.appspot.com/UA-65885578-17/aceforth/statusfy/npm?pixel)
+![](https://ga-beacon.appspot.com/UA-65885578-17/juliomrqz/statusfy?pixel)
 
-[examples]: https://github.com/aceforth/statusfy/tree/develop/examples
-[demo]: https://demo.statusfy.co?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[documentation]: https://docs.statusfy.co?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[contributing]: https://github.com/aceforth/statusfy/blob/develop/CONTRIBUTING.md
-[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[issues]: https://github.com/aceforth/statusfy/issues
-[twitter]: https://twitter.com/AceforthHQ
-[aceforth-website]: https://aceforth.com?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[support-page]: https://aceforth.com/products/statusfy#support?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[statusfy-blog]: https://aceforth.com/products/statusfy/blog?utm_source=npm&utm_medium=readme&utm_campaign=statusfy
-[license-page]: https://github.com/aceforth/statusfy/blob/develop/LICENSE
-[vue]: http://vuejs.org/
-[nuxt]: https://nuxtjs.org/
-[tailwindcss]: https://tailwindcss.com/
+[examples]: https://github.com/juliomrqz/statusfy/tree/develop/examples
+[demo]: https://statusfy.marquez.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[documentation]: https://marquez.co/docs/statusfy?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[contributing]: https://github.com/juliomrqz/statusfy/blob/develop/CONTRIBUTING.md
+[code-of-conduct]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
+[issues]: https://github.com/juliomrqz/statusfy/issues
+[twitter]: https://twitter.com/juliomrqz
+[support-page]: https://marquez.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[marquez-blog]: https://marquez.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[license-page]: https://github.com/juliomrqz/statusfy/blob/develop/LICENSE
+[netlifycms]: https://www.netlifycms.org/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[tailwindcss]: https://tailwindcss.com/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
+[eleventy]: https://www.11ty.dev/?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [npx]: https://www.npmjs.com/package/npx
 [npm]: https://www.npmjs.com/get-npm
 [opencollective-contribute]: https://opencollective.com/statusfy#section-contribute

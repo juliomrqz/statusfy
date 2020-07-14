@@ -59,7 +59,7 @@ description = "Just playing around"
 module.exports = {
   title: 'Title',
   description: 'Description',
-  baseUrl: 'https://demo.statusfy.co',
+  baseUrl: 'https://statusfy.marquez.co',
   analytics: {
     ga: 'UA-XXXXXXXXX-Y',
   },

@@ -3,9 +3,9 @@
   "version": "1.0.0-alpha.0",
   "description": "Core of Statusfy",
   "author": {
-    "name": "Aceforth",
-    "email": "support@aceforth.com",
-    "url": "https://aceforth.com"
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
   },
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aceforth/statusfy.git"
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
   },
   "bugs": {
-    "url": "https://github.com/aceforth/statusfy/issues"
+    "url": "https://github.com/juliomrqz/statusfy/issues"
   },
-  "homepage": "https://aceforth.com/products/statusfy",
+  "homepage": "https://marquez.co/statusfy",
   "keywords": [
-    "aceforth",
+    "marquez",
     "statusfy",
     "generator",
     "web-application",

@@ -5,7 +5,7 @@ export default {
   title: "Demo System Status",
   short_title: "System Status",
   description: "A marvelous open source Status Page system",
-  baseUrl: "https://demo.statusfy.co",
+  baseUrl: "https://statusfy.marquez.co",
   analytics: {
     ga: process.env.GA_TRACKING_ID || "UA-XXXXXXXXX-Y",
     mixpanel: process.env.MIXPANEL_TOKEN || "mixpanel-token",
@@ -33,29 +33,29 @@ export default {
   theme: {
     links: {
       en: {
-        contact: "https://aceforth.com/products/statusfy#support",
-        support: "https://aceforth.com/products/statusfy#support",
-        home: "https://aceforth.com/products/statusfy",
-        privacy: "https://aceforth.com/legal/privacy",
-        legal: "https://aceforth.com/legal/terms"
+        contact: "https://marquez.co/statusfy#support",
+        support: "https://marquez.co/statusfy#support",
+        home: "https://marquez.co/statusfy",
+        privacy: "https://marquez.co/legal/privacy",
+        legal: "https://marquez.co/legal/terms"
       },
       es: {
-        contact: "https://aceforth.com/es/products/statusfy#support",
-        support: "https://aceforth.com/es/products/statusfy#support",
-        home: "https://aceforth.com/es/products/statusfy",
-        privacy: "https://aceforth.com/es/legal/privacy",
-        legal: "https://aceforth.com/es/legal/terms"
+        contact: "https://marquez.co/es/products/statusfy#support",
+        support: "https://marquez.co/es/products/statusfy#support",
+        home: "https://marquez.co/es/products/statusfy",
+        privacy: "https://marquez.co/es/legal/privacy",
+        legal: "https://marquez.co/es/legal/terms"
       }
     }
   },
   notifications: {
     twitter: {
-      en: "AceforthHQ",
-      es: "AceforthHQ"
+      en: "juliomrqz",
+      es: "juliomrqz"
     },
     support: {
-      en: "https://aceforth.com/products/statusfy#support",
-      es: "https://aceforth.com/es/products/statusfy#support"
+      en: "https://marquez.co/statusfy#support",
+      es: "https://marquez.co/es/products/statusfy#support"
     },
     webpush: {
       onesignal: {

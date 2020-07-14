@@ -12,15 +12,10 @@
     "update-incident": "statusfy update-incident"
   },
   "author": {
-    "name": "Aceforth",
-    "email": "support@aceforth.com",
-    "url": "https://aceforth.com"
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
   },
-  "contributors": [
-    {
-      "name": "Julio Marquez (@juliomrqz)"
-    }
-  ],
   "dependencies": {
     "statusfy": "^1.0.0"
   },

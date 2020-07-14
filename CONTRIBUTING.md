@@ -4,4 +4,4 @@
 
 Please make sure to read the [Contributing Guide][link] before making a contribution.
 
-[link]: https://docs.statusfy.co/contributing/
+[link]: https://marquez.co/docs/statusfy/contributing/

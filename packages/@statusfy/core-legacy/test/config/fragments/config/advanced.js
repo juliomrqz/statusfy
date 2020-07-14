@@ -3,7 +3,7 @@ module.exports = {
   short_title: "Short Title",
   name: "app_name",
   description: "Description",
-  baseUrl: "https://demo.statusfy.co",
+  baseUrl: "https://statusfy.marquez.co",
   analytics: {
     ga: "UA-XXXXXXXXX-Y"
   },

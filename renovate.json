@@ -1,11 +1,10 @@
 {
   "extends": [
-    "@aceforth"
+    "@nuxtjs"
   ],
   "schedule": [
     "after 10pm every weekday",
-    "before 6am every weekday",
-    "every weekend"
+    "before 6am every weekday"
   ],
   "lockFileMaintenance": {
     "enabled": true
