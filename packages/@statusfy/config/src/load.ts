@@ -72,8 +72,8 @@ export function loadConfig(sourceDir: string): { config: ConfigFile, errors: str
   try {
     errors = validateConfig(config);
   } catch (error) {
-    logger.error(error);
-    process.exit(1);
+    logger.fatal(error);
+    // process.exit(1);
   }
 
   return {
