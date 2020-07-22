@@ -41,7 +41,7 @@
 
 Statusfy is a Status Page System, easy to use and completely Open Source. You can easily create a fast System, [**Static Generated**](https://marquez.co/docs/statusfy/guide/architecture.html#static-generated), and easily deploy it to a variety of [hosting services](https://marquez.co/docs/statusfy/guide/deploy.html).
 
-A Statusfy site is a Web Application, created on top of [Eleventy][eleventy], [Netlify CMS][netlifycms] and [Tailwind CSS][tailwindcss]. It is used **Eleventy** to make a quick and useful abstraction of the system generation, **Vue** and **Nuxt.js** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
+A Statusfy site is a Web Application, created on top of [Eleventy][eleventy], [Netlify CMS][netlifycms] and [Tailwind CSS][tailwindcss]. It is used **Eleventy** to make a quick and useful abstraction of the system generation, **Netlify CMS** to dynamically define the System Editor, and **Tailwind CSS** to rapidly define the default themes.
 
 
 ## Features
