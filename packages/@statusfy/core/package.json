@@ -12,9 +12,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juliomrqz/statusfy.git"
@@ -33,8 +31,8 @@
   "dependencies": {
     "@11ty/eleventy": "0.11.0",
     "@statusfy/markdown": "1.0.0-alpha.0",
-    "chokidar": "3.4.0",
-    "nunjucks": "3.2.1"
+    "chokidar": "3.4.2",
+    "nunjucks": "3.2.2"
   },
   "engines": {
     "node": ">=10",
