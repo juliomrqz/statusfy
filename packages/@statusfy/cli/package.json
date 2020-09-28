@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/aceforth/statusfy#readme",
   "dependencies": {
-    "commander": "5.1.0",
+    "commander": "6.1.0",
     "semver": "7.3.2"
   },
   "peerDependencies": {

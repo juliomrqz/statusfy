@@ -23,11 +23,11 @@
     "statusfy": "0.5.0"
   },
   "devDependencies": {
-    "less": "3.11.1",
-    "less-loader": "5.0.0",
+    "less": "3.12.2",
+    "less-loader": "7.0.1",
     "node-sass": "4.14.1",
-    "sass-loader": "8.0.2",
-    "stylus": "0.54.7",
+    "sass-loader": "10.0.2",
+    "stylus": "0.54.8",
     "stylus-loader": "3.0.2"
   },
   "engines": {

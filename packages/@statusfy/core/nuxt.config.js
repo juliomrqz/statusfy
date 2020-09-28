@@ -23,8 +23,13 @@ if (process.env.STATUSFY_LERNA) {
  */
 const config = {
   srcDir: path.join(__dirname, "./client/"),
+
   modulesDir,
-  mode: "universal",
+
+  ssr: true,
+
+  telemetry: false,
+
   /*
    ** Environment variables
    */
