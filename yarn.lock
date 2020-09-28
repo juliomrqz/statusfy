@@ -8281,12 +8281,11 @@ postcss-colormin@^4.0.3:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-combine-duplicated-selectors@9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-9.1.0.tgz#e0129581f4caef01da50b4c05dbe0df730dc62f3"
-  integrity sha512-RAz5CEIB28EIIkJ0KfU3/PdORinmcyhq6mq/F+0YQHiAAcH18aomSped9BDGIbkb4h31G0PjskufabL3gi6eLA==
+postcss-combine-duplicated-selectors@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.1.tgz#b3d97d7063a70108d64aa00c82d02cb527e57009"
+  integrity sha512-fKvw7bYgDbpjywf+Y66CJXsOeKzyv4dSjwp7MsG3DRbRsg437eNZ09vvRKXgW0WqN5yg7gDc9FgCCFGgGDLM/w==
   dependencies:
-    postcss "^7.0.0"
     postcss-selector-parser "^6.0.0"
 
 postcss-convert-values@^4.0.1:
