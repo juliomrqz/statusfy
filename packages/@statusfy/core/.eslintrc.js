@@ -5,17 +5,12 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: "babel-eslint"
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:prettier/recommended'
-  ],
+  extends: ["@nuxtjs", "plugin:prettier/recommended"],
   // required to lint *.vue files
-  plugins: [
-    'prettier'
-  ],
+  plugins: ["prettier"],
   rules: {
-    indent: ['error', 2, { MemberExpression: 'off' }]
+    indent: ["error", 2, { MemberExpression: "off" }]
   }
-}
+};

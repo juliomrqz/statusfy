@@ -1,7 +1,7 @@
 const fs = require("fs");
 const dotProp = require("dot-prop");
 const defaultsDeep = require("lodash/defaultsDeep");
-const { esm, logger, style, path } = require("@statusfy/common");
+const { esm, logger, style, path, chalk } = require("@statusfy/common");
 
 const loadConfig = require("./load");
 const { colors } = style;
@@ -197,6 +197,7 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
   }
 
   // Custom Styles
+  let makeUseOfPreprocessors = false;
   const validStylesExtension = [
     "css",
     "less",
@@ -212,6 +213,10 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
     const filePath = path.join(sourceDir, "theme", "default", `style.${ext}`);
 
     if (fs.existsSync(filePath)) {
+      if (ext !== "css") {
+        makeUseOfPreprocessors = true;
+      }
+
       stylesPath.push(filePath);
     }
   }
@@ -222,6 +227,16 @@ module.exports = function generateConfig(sourceDir, cliOptions) {
         .map(p => path.relative(sourceDir, p))
         .join("\n")}`
     );
+
+    if (makeUseOfPreprocessors) {
+      logger.warn(
+        `Using ${chalk.cyan("CSS preprocessors")} ${chalk.red(
+          "is deprecated"
+        )} and will be removed in Statusfy v1. Use CSS instead. More info at ${chalk.cyan(
+          "https://git.io/JUPRI"
+        )}.`
+      );
+    }
 
     nuxtConfig.css.push(...stylesPath);
   }
