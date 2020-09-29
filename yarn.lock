@@ -3740,10 +3740,10 @@ dateformat@^3.0.0:
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
-dayjs@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.9.0.tgz#ec6197d974143f5563913d08af71b3f21e008d5d"
-  integrity sha512-Ym40L4ZN+LUMCbsYXWDh/RxEntfaWChc/M+iD5/tat8jylbwE1sa+7eoHxsZ+NB8al6D8VYBmP6eV6GsZ8i01A==
+dayjs@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.9.1.tgz#201a755f7db5103ed6de63ba93a984141c754541"
+  integrity sha512-01NCTBg8cuMJG1OQc6PR7T66+AFYiPwgDvdJmvJBn29NGzIG+DIFxPLNjHzwz3cpFIvG+NcwIjP9hSaPVoOaDg==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -8286,10 +8286,10 @@ postcss-colormin@^4.0.3:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-combine-duplicated-selectors@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.1.tgz#b3d97d7063a70108d64aa00c82d02cb527e57009"
-  integrity sha512-fKvw7bYgDbpjywf+Y66CJXsOeKzyv4dSjwp7MsG3DRbRsg437eNZ09vvRKXgW0WqN5yg7gDc9FgCCFGgGDLM/w==
+postcss-combine-duplicated-selectors@10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.2.tgz#98e8b279d97732f723620616c0c0d3abbe2dcfde"
+  integrity sha512-KJsyWD3Hn4DAsZmX8IZP97oBMWuh7+ikvlaknFNAW4PYWQ6znGhO763Up4fA2UYVmo6+XVnJr9XqDn7EwWpoxw==
   dependencies:
     postcss-selector-parser "^6.0.0"
 
