@@ -47,7 +47,7 @@
     "tailwindcss": "^1.8.10",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
-    "upath": "1.2.0",
+    "upath": "2.0.0",
     "yaml": "1.10.0"
   },
   "devDependencies": {
