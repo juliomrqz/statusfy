@@ -44,7 +44,7 @@
     "postcss-nested": "5.0.1",
     "postcss-preset-env": "6.7.0",
     "slugify": "1.4.5",
-    "tailwindcss": "^1.8.10",
+    "tailwindcss": "^1.8.11",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
     "upath": "1.2.0",
