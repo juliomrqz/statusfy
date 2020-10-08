@@ -65,7 +65,7 @@
     "lerna": "3.22.1"
   },
   "resolutions": {
-    "@types/node": "12.12.64"
+    "@types/node": "12.12.66"
   },
   "engines": {
     "node": ">=10",
