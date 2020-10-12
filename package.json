@@ -61,7 +61,7 @@
     "eslint-plugin-jest": "24.1.0",
     "glob-promise": "3.4.0",
     "husky": "4.3.0",
-    "jest": "26.5.2",
+    "jest": "26.5.3",
     "lerna": "3.22.1"
   },
   "resolutions": {
