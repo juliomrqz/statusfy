@@ -29,7 +29,7 @@
     "statuspage"
   ],
   "dependencies": {
-    "@11ty/eleventy": "0.11.0",
+    "@11ty/eleventy": "0.11.1",
     "@statusfy/markdown": "1.0.0-alpha.0",
     "chokidar": "3.4.3",
     "nunjucks": "3.2.2"
