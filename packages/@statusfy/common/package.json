@@ -43,7 +43,7 @@
     "postcss-import": "13.0.0",
     "postcss-nested": "5.0.1",
     "postcss-preset-env": "6.7.0",
-    "slugify": "1.4.5",
+    "slugify": "1.4.6",
     "tailwindcss": "^1.9.6",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
