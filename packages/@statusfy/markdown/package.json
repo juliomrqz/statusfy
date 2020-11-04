@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@statusfy/test-utils": "1.0.0-alpha.0",
-    "@types/fs-extra": "9.0.2",
+    "@types/fs-extra": "9.0.3",
     "@types/validator": "13.1.0"
   }
 }
