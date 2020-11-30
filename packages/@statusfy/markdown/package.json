@@ -28,7 +28,7 @@
     "markdown-it-emoji": "2.0.0",
     "toml": "3.0.0",
     "upath": "2.0.1",
-    "validator": "13.1.17"
+    "validator": "13.5.1"
   },
   "devDependencies": {
     "@statusfy/test-utils": "1.0.0-alpha.0",
