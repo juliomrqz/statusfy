@@ -15,7 +15,7 @@ about: Create a report to help us improve
 - [ ] I confirm that this is a issue rather than a question.
 
 <!-- Please ask questions via following several ways. -->
-<!-- Free Support (Spectrum Chat): https://spectrum.chat/bazzite/statusfy -->
+<!-- Free Support (Community Discussions): https://github.com/juliomrqz/statusfy/discussions -->
 <!-- Professional Support: This project is sponsored by Julio Marquez. If you require Professional Assistance on your project(s), please contact me at https://marquez.co/statusfy#support. -->
 
 ## Bug report

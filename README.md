@@ -155,7 +155,7 @@ A Demo application is at [https://statusfy.marquez.co][demo].
 - 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://marquez.co/docs/statusfy][documentation].
 - 💻 You may want to check the **examples projects** for different popular hosting services at [the Examples Repository][examples].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For **questions**, you can also use the [Issues section][issues].
+- 💬 For **questions**, you can also use the [Discussions section][discussions].
 - 🤓 You can find useful **articles** in [my blog][marquez-blog].
 - 🚀 You may also want to **follow me** [on Twitter][twitter].
 
@@ -183,6 +183,7 @@ Code released under the [Apache License 2.0][license-page].
 [contributing]: https://github.com/juliomrqz/statusfy/blob/develop/CONTRIBUTING.md
 [code-of-conduct]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
 [issues]: https://github.com/juliomrqz/statusfy/issues
+[discussions]: https://github.com/juliomrqz/statusfy/discussions
 [twitter]: https://twitter.com/juliomrqz
 [support-page]: https://marquez.co?utm_source=github&utm_medium=readme&utm_campaign=statusfy
 [marquez-blog]: https://marquez.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy

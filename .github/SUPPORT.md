@@ -3,7 +3,7 @@
 - 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://marquez.co/docs/statusfy][documentation].
 - 💻 You may want to check the **examples projects** for different popular hosting services at [the Examples Repository][examples].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For **questions**, you can also use the [Issues section][issues].
+- 💬 For **questions**, you can also use the [Discussions section][discussions].
 - 🤓 You can find useful **articles** in [my blog][marquez-blog].
 - 🚀 You may also want to **follow me** [on Twitter][twitter].
 
@@ -15,6 +15,7 @@ This project is sponsored by me, a Full Stack Developers. If you require Profess
 [examples]: https://github.com/juliomrqz/statusfy/tree/develop/examples
 [documentation]: https://marquez.co/docs/statusfy?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
 [issues]: https://github.com/juliomrqz/statusfy/issues
+[issues]: https://github.com/juliomrqz/statusfy/discussions
 [marquez-blog]: https://marquez.co/blog?utm_source=github&utm_medium=support.md&utm_campaign=statusfy
 [twitter]: https://twitter.com/juliomrqz
 [marquez-blog]: https://marquez.co/blog?utm_source=github&utm_medium=readme&utm_campaign=statusfy

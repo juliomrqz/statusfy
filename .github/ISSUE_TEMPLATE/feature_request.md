@@ -13,7 +13,7 @@ about: Suggest an idea for this project
 - [ ] I confirm that this is a feature request rather than a question.
 
 <!-- Please ask questions via following several ways. -->
-<!-- Free Support (Spectrum Chat): https://spectrum.chat/bazzite/statusfy -->
+<!-- Free Support (Community Discussions): https://github.com/juliomrqz/statusfy/discussions -->
 <!-- Professional Support: This project is sponsored by Julio Marquez. If you require Professional Assistance on your project(s), please contact me at https://marquez.co/statusfy#support. -->
 
 <!-- Issues which contain questions or support requests will be closed. -->
