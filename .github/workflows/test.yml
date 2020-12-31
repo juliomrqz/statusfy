@@ -1,0 +1,46 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test-format-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["10", "12", "14"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache node modules
+        id: yarn-cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            node_modules
+            */*/node_modules
+          key: oracle-node-modules-${{ runner.os }}-node-${{ matrix.node }}-build-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install node modules
+        run: yarn install
+
+      - name: Format check
+        run: yarn run lint
+
+      - name: Compile Demo
+        run: yarn run dev:compile
+
+      - name: Test check
+        run: yarn run test:demo && yarn run test
