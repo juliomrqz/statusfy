@@ -13,7 +13,7 @@ sidebarDepth: 2
 - Type: `string`
 - Default: `undefined`
 
-The Title for of Site. This will be the suffix for all page titles and displayed in the navbar. It is also used in the [Manifest File](../guide/pwa.md#manifest). 
+The Title of Site. This will be the suffix for all page titles and displayed in the navbar. It is also used in the [Manifest File](../guide/pwa.md#manifest). 
 
 ## short_title
 
@@ -68,14 +68,14 @@ You should set the `baseUrl` field to your **production domain** in order to mak
 
 - Type: `Object`
 
-Provide config options to the be used by the theme.
+Provide config options to be used by the theme.
 
 ### scheduled <Badge text="0.3.0+"/>
 
 - Type: `Object`
 - Default: `{ position: 'belowSystems' }`
 
-Define the position of the Section **Scheduled Maintenance** in the home page. The allowed values are: `belowSystems`, `aboveSystems` and `aboveGlobalStatus`.
+Define the position of Section **Scheduled Maintenance** on the home page. The allowed values are: `belowSystems`, `aboveSystems` and `aboveGlobalStatus`.
 
 ### links
 
@@ -117,7 +117,7 @@ If set to `true`, Statusfy will automatically generate and register a service wo
 ::: tip Important
 To make your site fully PWA-compliant, you will need to enable the [Web App Manifest](./#manifest).
 
-Also, only enable this if you are able to deploy your site with SSL since service worker can only be registered under HTTPS URLs.
+Also, only enable this to deploy your site with SSL since service worker can only be registered under HTTPS URLs.
 :::
 
 ## manifest
@@ -176,7 +176,7 @@ The available notifications options.
 
 Allow your users/customers to subscribe to Web Push notifications from their browsers. For more details, see the guide on [Notifications](/guide/notifications/#web-push).
 
-In order to activate OneSignal, you must define your AppID:
+To activate OneSignal, you must define your AppID:
 
 ```json
 ...
@@ -208,7 +208,7 @@ Activate the feeds that include all past Incidents and Scheduled Maintenances. F
 - Type: `object`
 - Default: `undefined`
 
-Define Twitter accounts that your users can access in order to receive updates.
+Define Twitter accounts that your users can access to receive updates.
 
 You must define a value for each language your system supports:
 
@@ -230,7 +230,7 @@ For more details, see the guide on [Notifications](../guide/notifications.md#twi
 - Type: `object`
 - Default: `undefined`
 
-Define the external Support Sites your users can access in order to receive updates from other sources you may want to provide.
+Define the external Support Sites your users can access to receive updates from other sources you may want to provide.
 
 You must define a value for each language your system supports:
 
@@ -326,4 +326,4 @@ module.exports = {
 }
 ```
 
-To know the list of options you can give to head, take a look at [vue-meta documentation](https://github.com/declandewet/vue-meta#recognized-metainfo-properties).
+To know the list of options you can give to the head, take a look at [vue-meta documentation](https://github.com/declandewet/vue-meta#recognized-metainfo-properties).

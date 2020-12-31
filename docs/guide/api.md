@@ -16,7 +16,7 @@ The URLs of the endpoints are different in both deployment modes: **Static Gener
 
 ## Common Parameters
 
-Each of the endpoints below has common parameters that can be used:
+For each of the endpoints below, you can use common parameters:
 
 ### :page
 
@@ -62,7 +62,7 @@ Get all incidents.
     {
       "id": "1a96284b",
       "title": "Conversions Issues",
-      "description": "Our Files Conversion System were not responding properly.",
+      "description": "Our Files Conversion System was not responding properly.",
       "date": "2018-11-09T16:23:42.505Z",
       "modified": "2018-11-09T18:23:42.505Z",
       "severity": "degraded-performance",
@@ -148,7 +148,7 @@ Get all incidents grouped by months.
         {
           "id": "1a96284b",
           "title": "Conversions Issues",
-          "description": "Our Files Conversion System were not responding properly.",
+          "description": "Our Files Conversion System was not responding properly.",
           "date": "2018-11-09T15:48:45.061Z",
           "modified": "2018-11-09T17:48:45.061Z",
           "severity": "degraded-performance",
@@ -220,7 +220,7 @@ Get all Incidents of the past 7 days.
         {
           "id": "1a96284b",
           "title": "Conversions Issues",
-          "description": "Our Files Conversion System were not responding properly.",
+          "description": "Our Files Conversion System was not responding properly.",
           "date": "2018-11-09T15:48:45.061Z",
           "modified": "2018-11-09T17:48:45.061Z",
           "severity": "degraded-performance",

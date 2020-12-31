@@ -1,6 +1,6 @@
 ---
 title: Theme Customization
-description: The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon of your System, among other things.
+description: The look of Statusfy can be easily updated with a StyleSheet. Also, you can easily change the logo and icon of your System, among other things.
 date: 2020-03-26T20:52:22Z
 sidebarDepth: 3
 permalink: /guide/theme-customization
@@ -8,7 +8,7 @@ permalink: /guide/theme-customization
 
 # Theme Customization
 
-The look of Statusfy can be easily updated with a StyleSheet, also you easily can change the logo and icon of your System, among other things.
+The look of Statusfy can be easily updated with a StyleSheet. Also, you can easily change the logo and icon of your System, among other things.
 
 ## Styles
 
@@ -74,7 +74,7 @@ You can replace the default logo placing an image at the location `theme/default
 
 ### Icon
 
-The Icon of the application must be placed at `theme/default/img/icon.png` and it's used to generate favicons and the [App Icons](./pwa.md#icons). It should be a square image in PNG format with a minimum size of 512px.
+The Icon of the application must be placed at `theme/default/img/icon.png`, and it's used to generate favicons and the [App Icons](./pwa.md#icons). It should be a square image in PNG format with a minimum size of 512px.
 
 ### Public
 
@@ -82,7 +82,7 @@ The Icon of the application must be placed at `theme/default/img/icon.png` and i
 You can define static files in the `public/` directory that will be mapped to the `/` URL path. For example:
 
 - You can create a Robots.txt file in `/public/robots.txt` that will be mapped as `/robots.txt`.
-- Or paste a verification file in `/public/google4ddabfacdb4f6795.html` that will be available in your site at `/google4ddabfacdb4f6795.html`
+- Or paste a verification file in `/public/google4ddabfacdb4f6795.html` that will be available on your site at `/google4ddabfacdb4f6795.html`
 
 ## Links
 

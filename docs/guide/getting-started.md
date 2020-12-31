@@ -1,13 +1,13 @@
 ---
 title: Getting Started
-description: Starting with Statusfy is really easy, you just focus on writing your content and making use of the CLI for building and deploying your Website.
+description: Starting with Statusfy is easy; you just focus on writing your content and making use of the CLI for building and deploying your Website.
 date: 2020-03-26T20:52:22Z
 permalink: /guide/getting-started
 ---
 
 # Getting Started
 
-Starting with Statusfy is really easy, you just focus on writing your content and making use of the [CLI](../guide/commands.md) for building and deploying your Website.
+Starting with Statusfy is easy; you just focus on writing your content and using the [CLI](../guide/commands.md) for building and deploying your Website.
 
 ::: warning COMPATIBILITY NOTE
 Statusfy requires Node.js >= 8.
@@ -59,7 +59,7 @@ npm run generate # OR yarn generate
 ```
 
 ::: tip
-The built files will be in `./dist`, which can be configured via the `--dest` argument. More info in the [Commands Guide](../guide/commands.md#generate).
+The built files will be in `./dist`, configured via the `--dest` argument. More info in the [Commands Guide](../guide/commands.md#generate).
 :::
 
 or generate a [Server Rendered](../guide/architecture.md#server-rendered) Website with:

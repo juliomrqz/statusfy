@@ -8,7 +8,7 @@ permalink: /guide/deploy
 
 # Deploying
 
-You can deliver your Status Page System created with Statusfy in two different ways: **Static Generated** or **Server Rendered**.
+You can deliver your Status Page System created with Statusfy in two ways: **Static Generated** or **Server Rendered**.
 
 ::: warning REMEMBER
 You must set a valid [`baseUrl`](../config/README.md#baseurl) value in `config.js` in order to make [Alternate URLs fully-qualified](../guide/i18n.md#seo).
@@ -200,7 +200,7 @@ npm run generate # or yarn run generate
 surge dist
 ```
 
-Visit the [Surge Help](https://surge.sh/help/adding-a-custom-domain) to learn how to setup a custom domain and find out about advanced configurations.
+Visit the [Surge Help](https://surge.sh/help/adding-a-custom-domain) to learn how to set up a custom domain and find out about advanced configurations.
 
 ### References
 
@@ -214,7 +214,7 @@ First, install and configure the [Heroku CLI](https://devcenter.heroku.com/artic
 
 ### Static Generated
 
-You can use the [Heroku Buildpack Static](https://github.com/heroku/heroku-buildpack-static) to handle the static files of your site.
+You can use the [Heroku Buildpack Static](https://github.com/heroku/heroku-buildpack-static) to handle your site's static files.
 
 1. Create a file called `static.json` in the root of your project with the content below:
 

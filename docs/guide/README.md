@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Statusfy is a Status Page System that is easy to use and completely Open Source. You can create a Static Generated or Server Rendered System and easily deploy it to a variety of hosting services.
+description: Statusfy is a Status Page System that is easy to use and completely Open Source. You can create a Static Generated or Server Rendered System and easily deploy it to several hosting services.
 date: 2018-10-12T17:28:04Z
 ---
 
@@ -12,7 +12,7 @@ Statusfy is a Status Page System that is easy to use and completely Open Source.
 
 ## How It Works
 
-A Statusfy site is a Status Page System Generator that acts as a web application, created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind CSS](https://tailwindcss.com/). But don't worry, you don't need to know how to use these amazing technologies. Just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the necesary pieces for your Status Page System.
+A Statusfy site is a Status Page System Generator that acts as a web application, created with [Vue](http://vuejs.org/), [Nuxt.js](https://nuxtjs.org/) and [Tailwind CSS](https://tailwindcss.com/). But don't worry, you don't need to know how to use these fantastic technologies. Just create your [Incidents](../guide/incidents.md) using Markdown and **Statusfy** generates all the necessary pieces for your Status Page System.
 
 The final web application can be [generated or built](../guide/deploy.md) from a single CLI and can be [easily configured](../guide/pwa.md) or [customized](../guide/theme-customization.md) to your style requirements. 
 

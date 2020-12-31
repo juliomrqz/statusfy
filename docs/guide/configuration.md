@@ -1,17 +1,17 @@
 ---
 title: Configuration
-description: Statusfy is easy to configure, supporting different files formats. You define one main config file and the System does its job.
+description: Statusfy is easy to configure, supports different file formats. You define one main config file, and the System does its job.
 date: 2018-10-12T17:28:04Z
 permalink: /guide/configuration
 ---
 
 # Configuration
 
-Statusfy is easy to configure, supporting different files formats. You define one main config file and the System does its job.
+Statusfy is easy to configure, supporting different file formats. You define one main config file, and the System does its job.
 
 ## Config File
 
-Without any configuration, Statusfy will use default values in order to make work properly your Status Page System. The configuration file must be placed at the root of your project:
+Without any configuration, Statusfy will use default values to make work properly your Status Page System. The configuration file must be placed at the root of your project:
 
 ```
 .
