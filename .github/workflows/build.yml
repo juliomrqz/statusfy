@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Setup node ${{ matrix.node }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
 
