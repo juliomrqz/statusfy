@@ -19,7 +19,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "statusfy": "1.0.0-alpha.0"
+    "statusfy": "0.5.0"
   },
   "engines": {
     "node": ">=10",
