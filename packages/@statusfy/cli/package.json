@@ -35,7 +35,7 @@
   "devDependencies": {
     "@statusfy/common": "1.0.0-alpha.0",
     "@statusfy/config": "1.0.0-alpha.0",
-    "@statusfy/core": "1.0.0-alpha.0",
+    "@statusfy/core": "0.5.0",
     "@types/fs-extra": "9.0.6",
     "@types/inquirer": "7.3.1",
     "@types/lodash": "4.14.167",
