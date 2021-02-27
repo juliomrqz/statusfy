@@ -34,8 +34,8 @@
     "@statusfy/editor": "1.0.0-alpha.0"
   },
   "engines": {
-    "node": ">=10",
-    "npm": ">=5"
+    "node": ">=v10.24.0",
+    "npm": ">=5.10.0"
   },
   "collective": {
     "url": "https://opencollective.com/statusfy",
