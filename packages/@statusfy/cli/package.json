@@ -46,7 +46,7 @@
     "@types/yaml": "1.9.7",
     "@zeit/ncc": "0.22.3",
     "chalk": "4.1.2",
-    "commander": "6.2.1",
+    "commander": "8.1.0",
     "consola": "2.15.3",
     "fs-extra": "10.0.0",
     "inquirer": "8.1.2",
