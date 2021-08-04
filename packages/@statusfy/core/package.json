@@ -29,13 +29,13 @@
     "statuspage"
   ],
   "dependencies": {
-    "@11ty/eleventy": "0.11.1",
+    "@11ty/eleventy": "0.12.1",
     "@statusfy/markdown": "1.0.0-alpha.0",
-    "chokidar": "3.5.1",
+    "chokidar": "3.5.2",
     "nunjucks": "3.2.3"
   },
   "engines": {
-    "node": ">=v10.24.0",
+    "node": ">=v10.24.1",
     "npm": ">=5.10.0"
   }
 }
