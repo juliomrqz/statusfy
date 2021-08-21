@@ -35,7 +35,7 @@
   },
   "engines": {
     "node": ">=v10.24.1",
-    "npm": ">=7.20.6"
+    "npm": ">=7.21.0"
   },
   "collective": {
     "url": "https://opencollective.com/statusfy",
