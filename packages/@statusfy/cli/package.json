@@ -49,7 +49,7 @@
     "commander": "8.2.0",
     "consola": "2.15.3",
     "fs-extra": "10.0.0",
-    "inquirer": "8.1.2",
+    "inquirer": "8.1.4",
     "locale-code": "2.0.2",
     "lodash": "4.17.21",
     "lru-cache": "6.0.0",
