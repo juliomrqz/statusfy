@@ -1,0 +1,109 @@
+{
+  "title": "시스템 상태",
+  "description": "사용자에게 영향을 미칠 수 있는 당사 서비스에 대한 실시간 및 과거 서비스 중단에 대한 최신 정보를 제공합니다.",
+  "labels": {
+    "contact": "연락",
+    "support": "지원",
+    "home": "홈",
+    "powered-by": "Powered by",
+    "legal": "법적 고지",
+    "privacy": "개인정보보호"
+  },
+  "statuses": {
+    "under-maintenance": "유지보수 중",
+    "degraded-performance": "성능 저하",
+    "partial-outage": "부분 중단",
+    "major-outage": "주요 중단",
+    "operational": "정상 작동 중"
+  },
+  "dates": {
+    "formats": {
+      "short": "YYYY, MMM D",
+      "long": "MMM D, HH:mm UTC",
+      "month": "YYYY MMMM"
+    }
+  },
+  "incidents": {
+    "incidents": "사건",
+    "incident": "사건",
+    "scheduled": "예약된 유지보수",
+    "incidents-history": "사건 기록",
+    "incidents-history-description": "당사의 서비스에 대한 현재 및 과거 운영 중단입니다.",
+    "incidents-history-days-since-latest": "마지막 사건 이후 1일이 지났습니다 | 마지막 사건 이후 {days}일이 지났습니다.",
+    "latest-incidents": "마지막 사건",
+    "current-status": "현재 상태",
+    "current-status-description": "사용자에게 영향을 미칠 수 있는 당사 서비스에 대한 실시간 및 과거 서비스 중단에 대한 최신 정보를 제공합니다.",
+    "no-incidents": "보고된 사건 없음.",
+    "resolved": "해결됨",
+    "unresolved": "해결되지 않음",
+    "paginator": {
+      "previous": "이전 페이지",
+      "next": "다음 페이지",
+      "page": "페이지"
+    },
+    "collapse": {
+      "show": "{count}개의 모든 사건 보기",
+      "hide": "적은 사건 보기"
+    }
+  },
+  "error": {
+    "go-back-link": "홈페이지로 돌아갑니다",
+    "404": {
+      "title": "페이지를 찾을 수 없음",
+      "description": "찾으려는 페이지를 찾을 수 없습니다"
+    },
+    "other": {
+      "title": "오류 발생",
+      "description": "죄송합니다. 귀하의 요청을 처리할 수 없습니다."
+    }
+  },
+  "systems": {
+    "items": {
+      "cdn": {
+        "title": "CDN"
+      },
+      "dns": {
+        "title": "DNS"
+      },
+      "site-delivery": {
+        "title": "사이트 전송"
+      },
+      "api": {
+        "title": "API",
+        "description": "모든 개발자가 접근 가능한 API 엔드포인트입니다."
+      }
+    }
+  },
+  "notifications": {
+    "title": "업데이트 구독",
+    "description": "상태 업데이트를 자동으로 수신하려면 아래 옵션에서 선택하십시오.",
+    "buttons": {
+      "subscribe": "구독",
+      "close": "닫기"
+    },
+    "items": {
+      "icalendar": {
+        "title": "달력",
+        "description": "<a href=\"{url}\" target=\"_blank\" rel=\"noopener\">iCalendar 로 <strong>예약된 유지보수</strong>를 수신받습니다.</a>."
+      },
+      "feeds": {
+        "title": "ATOM&RSS 피드",
+        "description": "<a href=\"{atom_url}\" target=\"_blank\" rel=\"noopener\">Atom 피드</a>로 수신받거나 <a href=\"{rss_url}\" target=\"_blank\" rel=\"noopener\">RSS 피드</a>로 수신받습니다."
+      },
+      "twitter": {
+        "title": "트위터",
+        "description": "또는, <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">프로필</a>을 확인해보세요."
+      },
+      "support": {
+        "title": "지원",
+        "description": "<a href=\"{url}\" target=\"_blank\" rel=\"noopener\">지원</a> 사이트를 방문해보세요."
+      },
+      "webpush": {
+        "title": "푸쉬 알림",
+        "description": "사용자의 브라우저로 알림이 전송됩니다.",
+        "enable": "알림 활성화",
+        "enabled": "알림이 이 브라우저에서 활성화되었습니다."
+      }
+    }
+  }
+}
