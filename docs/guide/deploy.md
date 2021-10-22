@@ -20,6 +20,7 @@ We listed a few different services you can use for hosting your Status Page Syst
 |:--------------------------------------------------:|:------------------:|:--------------------------------------:|
 |            [GitHub Pages](#github-pages)           | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |     [GitLab Pages](#gitlab-pages-and-gitlab-ci)    | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
+|     [Cloudflare Pages](#cloudflare-pages)          | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                 [Netlify](#netlify)                | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                [Firebase](#firebase)               | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
 |                   [Surge](#surge)                  | <FeatureSupport /> | <FeatureSupport :isSuported="false" /> |
@@ -120,6 +121,23 @@ Visit the [GitLab Pages](https://gitlab.com/help/user/project/pages/getting_star
 
 - [Gatsby: Deploying to GitLab Pages](https://www.gatsbyjs.org/docs/deploying-to-gitlab-pages/)
 - [VuePress: Deploying to GitLab Pages and GitLab CI](https://vuepress.vuejs.org/guide/deploy.html#gitlab-pages-and-gitlab-ci)
+
+## Cloudflare Pages
+
+1. Sign into your Cloudflare account and go to Pages.
+2. Create a project.
+3. Connect your Github account with Cloudflare.
+4. Select your Statusfy Github repository
+5. Set up build and deployments:
+   - Project name
+   - Production branch
+   - Framework preset: _None_
+   - Build command: _npm run generate_
+   - Build output directory: _/dist_
+   - Root directory: _/_
+6. After deploying your page, you can view your site through the unique URL assigned. Any time a new commit is made to your production branch, Cloudflare Pages will automatically build and deploy.
+
+See [Cloudflare Pages docs](https://developers.cloudflare.com/pages/get-started) to learn more.
 
 ## Netlify
 
