@@ -141,7 +141,7 @@ If this field is set to true, the Incident is Marked as Resolved.
 - Requirement: `optional`
 - Default: `undefined`
 
-The scheduled start time. This defines the initial of the planned maintenance window.
+The scheduled start time. This defines the initial of the planned maintenance window in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) e.g. `2021-09-02T15:22:37+00:00`.
 
 #### duration <Badge text="0.2.0+"/>
 
