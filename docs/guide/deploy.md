@@ -116,6 +116,24 @@ pages:
 
 Visit the [GitLab Pages](https://gitlab.com/help/user/project/pages/getting_started_part_one.md) to find out about advanced configurations.
 
+## CloudFlare Workers
+
+1. To start, install [CloudFlare Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler)
+
+2. Create `wrangler.toml` at the root of your project with the following content:
+
+```
+name = "status"
+type = "webpack"
+account_id = "YOUR CLOUDFLARE ACCOUNT ID"
+workers_dev = true
+
+[site]
+bucket = "dist"
+```
+
+3. Run `wrangler publish`
+
 ### References
 
 - [Gatsby: Deploying to GitLab Pages](https://www.gatsbyjs.org/docs/deploying-to-gitlab-pages/)
