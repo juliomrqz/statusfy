@@ -40,7 +40,7 @@
     "@types/inquirer": "7.3.3",
     "@types/lodash": "4.14.176",
     "@types/lru-cache": "5.1.1",
-    "@types/node": "14.14.33",
+    "@types/node": "14.18.12",
     "@types/opener": "1.4.0",
     "@types/semver": "7.3.9",
     "@types/yaml": "1.9.7",
