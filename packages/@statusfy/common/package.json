@@ -38,7 +38,7 @@
     "lodash.isstring": "4.0.1",
     "lodash.template": "4.5.0",
     "lru-cache": "6.0.0",
-    "ora": "5.4.1",
+    "ora": "6.1.0",
     "postcss-combine-duplicated-selectors": "10.0.3",
     "postcss-import": "13.0.0",
     "postcss-nested": "5.0.6",
