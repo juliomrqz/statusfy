@@ -30,7 +30,7 @@
     "prod:compile:status": "yarn prod:compile --stats-out ./webpack-stats.json"
   },
   "engines": {
-    "node": ">= v10.24.1"
+    "node": ">= v16.14.2"
   },
   "devDependencies": {
     "@statusfy/common": "1.0.0-alpha.0",
@@ -40,7 +40,7 @@
     "@types/inquirer": "7.3.3",
     "@types/lodash": "4.14.176",
     "@types/lru-cache": "5.1.1",
-    "@types/node": "14.14.33",
+    "@types/node": "16.11.26",
     "@types/opener": "1.4.0",
     "@types/semver": "7.3.9",
     "@types/yaml": "1.9.7",
