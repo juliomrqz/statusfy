@@ -45,7 +45,7 @@
     "@types/semver": "7.3.9",
     "@types/yaml": "1.9.7",
     "@zeit/ncc": "0.22.3",
-    "chalk": "4.1.2",
+    "chalk": "5.0.1",
     "commander": "8.3.0",
     "consola": "2.15.3",
     "fs-extra": "10.0.0",
