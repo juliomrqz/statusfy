@@ -31,7 +31,7 @@
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
     "@statusfy/markdown": "1.0.0-alpha.0",
-    "chokidar": "3.5.2",
+    "chokidar": "3.5.3",
     "nunjucks": "3.2.3"
   },
   "engines": {

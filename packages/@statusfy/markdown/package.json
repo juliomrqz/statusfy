@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/juliomrqz/statusfy#readme",
   "dependencies": {
-    "fs-extra": "10.0.0",
+    "fs-extra": "10.0.1",
     "gray-matter": "4.0.3",
-    "markdown-it": "12.2.0",
+    "markdown-it": "12.3.2",
     "markdown-it-container": "3.0.0",
     "markdown-it-emoji": "2.0.0",
     "toml": "3.0.0",
@@ -33,6 +33,6 @@
   "devDependencies": {
     "@statusfy/test-utils": "1.0.0-alpha.0",
     "@types/fs-extra": "9.0.13",
-    "@types/validator": "13.6.6"
+    "@types/validator": "13.7.2"
   }
 }

@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/juliomrqz/statusfy#readme",
   "dependencies": {
-    "autoprefixer": "10.4.0",
+    "autoprefixer": "10.4.4",
     "chalk": "4.1.2",
     "consola": "2.15.3",
     "cssnano": "4.1.11",
-    "dayjs": "1.10.7",
+    "dayjs": "1.11.0",
     "esm": "3.2.25",
-    "fs-extra": "10.0.0",
+    "fs-extra": "10.0.1",
     "get-port": "5.1.1",
     "gray-matter": "4.0.3",
     "hash-sum": "2.0.0",
@@ -42,8 +42,8 @@
     "postcss-combine-duplicated-selectors": "10.0.3",
     "postcss-import": "13.0.0",
     "postcss-nested": "5.0.6",
-    "postcss-preset-env": "6.7.0",
-    "slugify": "1.6.1",
+    "postcss-preset-env": "6.7.1",
+    "slugify": "1.6.5",
     "tailwindcss": "^1.9.6",
     "toml": "3.0.0",
     "tomlify-j0.4": "3.0.0",
@@ -58,6 +58,6 @@
     "@types/lodash.template": "4.5.0",
     "@types/node": "14.14.33",
     "ts-node": "9.1.1",
-    "typescript": "4.4.4"
+    "typescript": "4.6.3"
   }
 }
