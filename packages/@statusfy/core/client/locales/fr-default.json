@@ -1,0 +1,110 @@
+{
+  "title": "Page de Status Ternoa ",
+  "description": "Cette page fournit des informations sur le status de la blockchain Ternoa et de ses services et projets",
+    "labels": {
+      "contact": "Contact",
+      "support": "Support",
+      "home": "Accueil",
+      "powered-by": "Powered by",
+      "legal": "Mention légale",
+      "privacy": "Cnfidentialité"
+    },
+    "statuses": {
+      "under-maintenance": "En maintenance",
+      "degraded-performance": "Performances dégradées",
+      "partial-outage": "Interruption partielle",
+      "major-outage": "Panne majeure",
+      "operational": "Opérationnel"
+    },
+    "dates": {
+      "formats": {
+        "short": "MMM D, YYYY",
+        "long": "MMM D, HH:mm UTC",
+        "month": "MMMM YYYY"
+      }
+    },
+    "incidents": {
+      "incidents": "Incidents",
+      "incident": "Incident",
+      "scheduled": "Maintenance planifiée",
+      "incidents-history": "Historique des incidents",
+      "incidents-history-description": "Interruptions opérationnelles actuelles et historiques de notre service.",
+      "incidents-history-days-since-latest": "1 jour depuis le dernier incident | {days} jours depuis le dernier incident",
+      "latest-incidents": "Derniers incidents",
+      "current-status": "Statut actuel",
+      "current-status-description": "Tenez-vous au courant des interruptions en temps réel et historiques de notre service qui peuvent vous affecter.",
+      "no-incidents": "Aucun incident signalé.",
+      "resolved": "Résolue",
+      "unresolved": "Non résolu",
+      "paginator": {
+        "previous": "Page précédente",
+        "next": "Page suivante",
+        "page": "Page"
+      },
+      "collapse": {
+        "show": "Afficher tous les {count} incidents",
+        "hide": "Afficher moins d'incidents"
+      }
+    },
+    "error": {
+      "go-back-link": "Retournez à la page d'accueil",
+      "404": {
+        "title": "Page non trouvée",
+        "description": "La page que vous recherchiez n'a pas été trouvée"
+      },
+      "other": {
+        "title": "Une erreur s'est produite",
+        "description": "Nous sommes désolés, mais nous ne pouvons pas répondre à votre demande"
+      }
+    },
+    "systems": {
+      "items": {
+        "cdn": {
+          "title": "CDN"
+        },
+        "dns": {
+          "title": "DNS"
+        },
+        "site-delivery": {
+          "title": "Site delivery"
+        },
+        "api": {
+          "title": "API",
+          "description": "The API Endpoints any developers can access to"
+        }
+      }
+    },
+    "notifications": {
+      "title": "Abonnez-vous aux mises à jour",
+      "description": "Choisissez parmi les options ci-dessous pour recevoir automatiquement les mises à jour de statut.",
+      "buttons": {
+        "subscribe": "S'abonner",
+        "close": "Fermer"
+      },
+      "items": {
+        "icalendar": {
+          "title": "Calendrier",
+          "description": "Recevez des <strong>maintenances planifiées</strong> via <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">iCalendar</a>."
+        },
+        "feeds": {
+          "title": "Flux",
+          "description": "Obtenez <a href=\"{atom_url}\" target=\"_blank\" rel=\"noopener\">le flux Atom</a> ou <a href=\"{rss_url}\" target=\" _blank\" rel=\"noopener\">le flux RSS</a>."
+        },
+        "twitter": {
+          "title": "Twitter",
+          "description": "Ou bien <a href=\"https://twitter.com/{username}\" target=\"_blank\" rel=\"noopener\">consulter notre profil</a>."
+        },
+        "support": {
+          "title": "Support",
+          "description": "Visitez notre <a href=\"{url}\" target=\"_blank\" rel=\"noopener\">Site de support</a>."
+        },
+        "webpush": {
+          "title": "Push",
+          "description": "Notifications envoyées à votre navigateur.",
+          "enable": "Activer les notifications",
+          "enabled": "Les notifications sont activées pour ce navigateur."
+        }
+      }
+    }
+  }
+  
