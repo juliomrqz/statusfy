@@ -1,30 +1,11 @@
+> ⚠️ No longer maintained!!!  Read this https://github.com/juliomrqz/statusfy/discussions/826
+
 <p align="center">
-  <a href="https://www.bazzite.com/blog/introducing-statusfy-marvelous-open-source-status-page-system?utm_source=github&utm_medium=readme&utm_campaign=statusfy" rel="nofollow">
-    <img src="https://img.shields.io/badge/Bazzite-project-blue.svg" alt="Bazzite Project">
-  </a>
-  <a href="https://travis-ci.org/bazzite/statusfy" rel="nofollow">
-    <img src="https://img.shields.io/travis/bazzite/statusfy.svg" alt="Travis">
-  </a>
   <a href="https://www.npmjs.com/package/statusfy" rel="nofollow">
     <img src="https://img.shields.io/npm/v/statusfy.svg" alt="version">
   </a>
   <a href="https://github.com/bazzite/statusfy/blob/develop/LICENSE" rel="nofollow">
     <img src="https://img.shields.io/github/license/bazzite/statusfy.svg" alt="License">
-  </a>
-</p>
-
-<p align="center">
-  <a href="#partners" alt="Partner on Open Collective">
-    <img src="https://opencollective.com/statusfy/tiers/partners/badge.svg" />
-  </a>
-  <a href="#sponsors" alt="Sponsors on Open Collective">
-    <img src="https://opencollective.com/statusfy/tiers/sponsors/badge.svg" />
-  </a>
-  <a href="#backers" alt="Backers on Open Collective">
-    <img src="https://opencollective.com/statusfy/tiers/backers/badge.svg" />
-  </a>
-  <a href="https://bazzite.xyz/StatusfyOpenCollective">
-    <img src="https://img.shields.io/badge/Support%20us-Open%20Collective-0366d6.svg" alt="Support us">
   </a>
 </p>
 
